@@ -1,0 +1,11 @@
+8678d70c104124acbbc3b6a030262ae0e2c81342d61d2f81d87964a302aba9a0
+done: 60 clips, 100296 boxes, 100296 rows in results/profile/targets.csv
+done: 60 clips in results/motion/homographies
+vs box-masked homographies: window difference p95 median 3.991 px, worst DJI_0277_2 11078.085 px (p95), 21260.179 px (max)
+fold0:  5 clips, 2 moving groups,  5878 near-stationary /  14694 boxes: DJI_0081_2 DJI_0175_2 DJI_0229_2 DJI_0293_1 DJI_0295_3
+fold1:  3 clips, 2 moving groups,  7252 near-stationary /  12232 boxes: DJI_0030_9 DJI_0271_2 DJI_0273_1
+fold2:  5 clips, 2 moving groups, 13786 near-stationary /  33290 boxes: DJI_0043_2 DJI_0057_1 DJI_0177_2 DJI_0305_3 DJI_0305_7
+fold3:  8 clips, 2 moving groups,  5855 near-stationary /  10339 boxes: DJI_0117_2 DJI_0121_2 DJI_0131_2 DJI_0157_2 DJI_0163_1 DJI_0217_2 DJI_0241_2 DJI_0319_2
+fold4: 19 clips, 3 moving groups,  5851 near-stationary /  13611 boxes: DJI_0069_1 DJI_0101_2 DJI_0107_1 DJI_0111_2 DJI_0113_3 DJI_0115_2 DJI_0123_6 DJI_0125_1 DJI_0127_1 DJI_0143_1 DJI_0145_1 DJI_0243_2 DJI_0253_1 DJI_0253_2 DJI_0253_3 DJI_0285_3 DJI_0287_1 DJI_0287_2 DJI_0323_2
+wrote /experiment/code/../configs/folds.json
+8678d70c104124acbbc3b6a030262ae0e2c81342d61d2f81d87964a302aba9a0

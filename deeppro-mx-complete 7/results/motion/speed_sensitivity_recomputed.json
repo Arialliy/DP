@@ -1,0 +1,145 @@
+{
+  "estimator_order": [
+    "image_only",
+    "box_masked"
+  ],
+  "speed_sensitivity": [
+    {
+      "clip": "DJI_0049_2",
+      "box_frames": 692,
+      "band_changes": 2,
+      "stored_recompute_max": 3.086420008457935e-14,
+      "delta_median": 0.0009203381549793832,
+      "delta_p95": 0.003520938227778814,
+      "delta_max": 0.006237591006344356
+    },
+    {
+      "clip": "DJI_0109_1",
+      "box_frames": 90,
+      "band_changes": 8,
+      "stored_recompute_max": 2.930988785010413e-14,
+      "delta_median": 0.011720999665612075,
+      "delta_p95": 0.017324620797181355,
+      "delta_max": 0.019061238075643194
+    },
+    {
+      "clip": "DJI_0119_2",
+      "box_frames": 360,
+      "band_changes": 2,
+      "stored_recompute_max": 3.4361402612148595e-14,
+      "delta_median": 0.000989966005021936,
+      "delta_p95": 0.00366730490914286,
+      "delta_max": 0.005440546665234192
+    },
+    {
+      "clip": "DJI_0129_2",
+      "box_frames": 590,
+      "band_changes": 23,
+      "stored_recompute_max": 2.3037127760971998e-14,
+      "delta_median": 0.0061139725675095485,
+      "delta_p95": 0.01497856741685797,
+      "delta_max": 0.03231881589895913
+    },
+    {
+      "clip": "DJI_0155_2",
+      "box_frames": 410,
+      "band_changes": 0,
+      "stored_recompute_max": 2.5091040356528538e-14,
+      "delta_median": 0.0014526113730293222,
+      "delta_p95": 0.006585702284971005,
+      "delta_max": 0.011305913582678517
+    },
+    {
+      "clip": "DJI_0159_2",
+      "box_frames": 250,
+      "band_changes": 3,
+      "stored_recompute_max": 2.8199664825478976e-14,
+      "delta_median": 0.015596873251130017,
+      "delta_p95": 0.06089922760724683,
+      "delta_max": 0.11607218455875756
+    },
+    {
+      "clip": "DJI_0173_2",
+      "box_frames": 450,
+      "band_changes": 0,
+      "stored_recompute_max": 2.9753977059954195e-14,
+      "delta_median": 0.0018877000789773168,
+      "delta_p95": 0.006451202446960126,
+      "delta_max": 0.008993922760643924
+    },
+    {
+      "clip": "DJI_0221_2",
+      "box_frames": 697,
+      "band_changes": 26,
+      "stored_recompute_max": 2.842170943040401e-14,
+      "delta_median": 0.0029162525637342895,
+      "delta_p95": 0.11822598056089811,
+      "delta_max": 1.5239238832084747
+    },
+    {
+      "clip": "DJI_0237_2",
+      "box_frames": 3717,
+      "band_changes": 125,
+      "stored_recompute_max": 4.263256414560601e-14,
+      "delta_median": 0.0037970279153348163,
+      "delta_p95": 0.102447267885137,
+      "delta_max": 11.71722431496265
+    },
+    {
+      "clip": "DJI_0255_1",
+      "box_frames": 600,
+      "band_changes": 4,
+      "stored_recompute_max": 2.9531932455029164e-14,
+      "delta_median": 0.005272585434460408,
+      "delta_p95": 0.03707933967767616,
+      "delta_max": 0.08458734564991177
+    },
+    {
+      "clip": "DJI_0257_2",
+      "box_frames": 1126,
+      "band_changes": 20,
+      "stored_recompute_max": 4.496403249731884e-14,
+      "delta_median": 0.014216281274275648,
+      "delta_p95": 0.09631337443983368,
+      "delta_max": 0.24285183791198595
+    },
+    {
+      "clip": "DJI_0277_2",
+      "box_frames": 985,
+      "band_changes": 0,
+      "stored_recompute_max": 2.930988785010413e-14,
+      "delta_median": 0.018811849641650058,
+      "delta_p95": 0.09748290425487045,
+      "delta_max": 0.3216653230681896
+    },
+    {
+      "clip": "DJI_0303_2",
+      "box_frames": 1487,
+      "band_changes": 11,
+      "stored_recompute_max": 3.6415315207705135e-14,
+      "delta_median": 0.006921981479085737,
+      "delta_p95": 0.159684548214648,
+      "delta_max": 0.49223608898782345
+    },
+    {
+      "clip": "DJI_0307_2",
+      "box_frames": 161,
+      "band_changes": 12,
+      "stored_recompute_max": 2.969846590872294e-14,
+      "delta_median": 0.007082033092920159,
+      "delta_p95": 0.057938365953410786,
+      "delta_max": 0.08036913464203821
+    },
+    {
+      "clip": "DJI_0309_4",
+      "box_frames": 1050,
+      "band_changes": 2,
+      "stored_recompute_max": 3.241851231905457e-14,
+      "delta_median": 0.0042232378626188005,
+      "delta_p95": 0.0639471836981838,
+      "delta_max": 0.20530053358404388
+    }
+  ],
+  "image_checks_executed": false,
+  "script_sha256": "c7bb0fee0d4e1596915a6a830557a1fe5c432a9469c51a3ecb6b9d29e19b8581"
+}

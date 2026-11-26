@@ -1,0 +1,126 @@
+v7 真實資料診斷，2026-11-26（Asia/Taipei）
+
+本次結果不支持「近靜止目標是 DeepPro-Plus 整體漏檢的主因」。近靜止組的
+整體漏檢率較高，但只佔約四分之一漏檢，而且證據集中於少數 clip。也不能
+僅依相機分組，把主因改判為相機運動。MXC 的真實資料訓練、M0c、controls
+尚未執行；目前沒有 MXC 的實測性能或改善幅度。
+
+所有新增程式、修正、權重副本、日誌、快取、結果都在本資料夾。
+資料集：/home/md0/ly/DP/datasets/RGB-T，只讀掛載。
+官方權重副本：inputs/official_rgbt_best_model.pth。
+SHA256：4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc。
+其他專案及其執行中的任務未被修改。
+
+已完成的實際執行
+
+宿主 Python 缺少 scipy、torch，因此使用已有的 deeppro-rgbt Docker 鏡像。
+鏡像固定為 sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594，
+Python 3.10.12、torch 2.2.0a0+81ea7a4、numpy 1.23.5、scipy 1.10.1。
+CUDA 呼叫缺少的 Conv3d 權重格式函式，使用 runtime/ 內附來源與授權的相容補丁。
+
+1. 原包 bash run_mx.sh check：退出碼 0；21 個測試檔、142 個測試函式通過。
+   包含 test_mx.py 的 torch 前後向、合成資料訓練、選權重、推論及快取檢查。
+   60/60 個 clip 的訓練標籤與資料集 segmentation PNG 完全一致。
+2. 新版 profile：退出碼 0；60 個 clip、100296 個框、100296 行速度資料；
+   遮框與純影像 homography 各 60 份，另產生 folds.json。
+3. 官方 DeepPro-Plus 權重在 GPU 2 完成 15 個 test clip、5976 幀的原始座標推論。
+   score.py --author 完成全部 27 個閾值；沒有用補償輸入改動官方基線。
+4. rate_analysis.py 的 clip、pooled 兩種 FA 預算分析已完成。
+5. 固定閾值漏檢歸因已完成；在 1e-5、0.5 下，逐 clip 及全體的 32 組
+   命中數／目標數均與 score.py 完全一致。補充歸因程式的 4 項合成測試通過。
+
+主要結果：官方 ShootingRules 口徑
+
+計數單位是逐幀 mask 的 8 連通目標組件，不是不同實體目標。
+多個框合併成同一組件時，只有全部框屬於同一速度組才歸類；跨組保留 mixed。
+相對速度以 px/frame 計；near_stationary <0.2，intermediate [0.2,0.5)，moving >=0.5。
+
+閾值 1e-5：
+組別                  目標組件幀   漏檢     漏檢率    全部漏檢占比
+near_stationary          1999      344      17.2%       25.8%
+intermediate             1334      211      15.8%       15.8%
+moving                   7878      770       9.8%       57.7%
+mixed                      89        9      10.1%        0.7%
+全部                    11300     1334      11.8%      100.0%
+
+閾值 0.5：全部漏檢 2155；近靜止 503/1999，漏檢率 25.2%、漏檢占比 23.3%；
+移動 1309/7878，漏檢率 16.6%、漏檢占比 60.7%。
+獨立的 box/NMS 指標也不是近靜止占多數：1e-5 下占 699/1963 = 35.6%。
+box 指標與上述官方 component 指標不可混用。
+
+四個主要 clip（1e-5；未列出的差額是 intermediate 或 mixed）：
+clip            全部漏檢   近靜止漏檢   移動漏檢
+DJI_0237_2         508         236          174
+DJI_0049_2         307          81          173
+DJI_0309_4         256           2          232
+DJI_0257_2          92           2           84
+
+0237 與 0049 合計佔近靜止漏檢 317/344 = 92.2%。0237 內近靜止漏檢率為
+236/1615 = 14.6%，低於該 clip 移動組的 174/899 = 19.4%；因此全體較高的
+近靜止漏檢率不能直接當作速度造成失效的因果證據。
+新版靜止相機組的 81 次近靜止漏檢全部來自 0049，且都是同一對行人軌跡
+3000008、3000007 合併成的組件，不能視為多個獨立場景／目標的廣泛證據。
+
+與官方日誌的差異
+
+本次重算為 11300 個組件幀、1334 次漏檢；原日誌為 11303、1362。
+本次使用專案重建 mask 與 float16 logit 快取，沒有宣稱已逐條完全復現原日誌，
+也未將差異歸因於單一原因。以上歸因對應本次重跑的 1334 次漏檢。
+
+相機分組與速度估計的敏感性
+
+configs/splits.json 的分組確為訓練 17/45、測試 6/15 個運動相機 clip。
+新 profile 則為 18/45、7/15：DJI_0257_5 與 DJI_0257_2 跨過 0.3 門檻。
+0257_2：設定檔 0.2842、新遮框估計 0.3504、純影像估計約 0.227 px/frame。
+
+新遮框分組下，運動相機占組件 71.1%、漏檢 69.5%；漏檢率 11.5%，
+靜止相機為 12.5%。沿用設定檔分組時，兩者約為 12.1%、11.4%，方向反轉。
+這不足以判定相機運動是主要失效成因。
+
+只把目標速度的 homography 換成純影像估計，238/12665 = 1.88% 框幀改變
+速度組。保持預測、mask、命中不變重新歸因，近靜止漏檢變成 348/1334 = 26.1%；
+0.5 下為 508/2155 = 23.6%。近靜止不是漏檢多數的結論未改變。
+兩種估計相近仍不等於它們是真實地面速度。
+
+補償檢查與訓練前待處理事項
+
+DJI_0277_2 的 21260 px 最大差異主要涉及共同視野外的 projective 外推，
+不是已量測的配準真值誤差，也不是累積矩陣的浮點不穩定。限制到共同視野後，
+兩個最差窗的網格最大差異為 14.22、9.56 px。DJI_0237_2 的一個窗在共同
+視野內仍可差到 164.47 px，需要單獨檢查。
+
+目前 multirate.choose_coords 有明示例外：rate=1 且 cover<min_cover 時仍選 warp。
+在 0277 的兩個窗，cover=0、穩定度殘差為 NaN，auto 仍選 warp。
+所以「auto 只有在補償更穩定才變形」並非目前程式的完整行為。
+本次未改動此補償策略或任何 homography。官方原始座標基線不受它影響；
+若要啟動 MXC，需先處理低覆蓋率策略，並將研究主張限制到證據能支持的子集。
+
+已套用的兩項小修正
+
+- run_mx.sh：mx_lv 校準對照顯式使用主架構的 gain 設定，避免同時去除兩項因素。
+- checkpoint_selection.py：補上 mxc_lv_absfloor 支援，避免首輪選權重時報錯。
+
+原包完整 check 在修正前完成；修正後新增的兩項定向回歸均通過，且已確認
+原程式會在這兩項檢查失敗。沒有把它描述成對修正版重跑了整個 check。
+原始執行 manifest、修正後 manifest 與原始檔備份分別保存在 runtime/；
+原包 SHA256SUMS 保留，因此四個修改檔的舊 checksum 不再匹配是預期結果。
+
+主要證據檔
+
+logs/check.20261126.log
+runtime/check_passed.json
+runtime/status.json
+runtime/official_diagnostic.json
+runtime/fixes_validation.json
+runtime/source_manifest.json
+runtime/source_manifest.after_fixes.json
+results/scores/official_rgbt/test/summary.json
+results/rate_analysis/test_clip.csv
+results/rate_analysis/test_pooled.csv
+results/miss_attribution/official_rgbt/test/summary.json
+results/miss_attribution/official_rgbt/test/component_groups.csv
+results/miss_attribution/official_rgbt/test/components.csv
+results/miss_attribution/official_rgbt/test/sensitivity.json
+results/miss_attribution/official_rgbt/test/independent_review.json
+results/motion/clips.csv
+results/motion/review.json

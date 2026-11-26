@@ -1,0 +1,37 @@
+/experiment/code/evaluate.py:207: RuntimeWarning: overflow encountered in exp
+  p = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+/experiment/code/evaluate.py:207: RuntimeWarning: overflow encountered in exp
+  p = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+/experiment/code/evaluate.py:207: RuntimeWarning: overflow encountered in exp
+  p = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+/experiment/code/evaluate.py:207: RuntimeWarning: overflow encountered in exp
+  p = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+official_rgbt test CPM 0.6096 AP 0.6464 Pd@0.125=0.3390 Pd@0.25=0.4516 Pd@0.5=0.5677 Pd@1=0.7012 Pd@2=0.7792 Pd@4=0.8189
+  author th=0      Pd=[11300/11300, 1.00000] Fa=[1954443182, 9.980735e-01] IoU=0.000571
+  author th=1e-20  Pd=[11300/11300, 1.00000] Fa=[1954275201, 9.979877e-01] IoU=0.000538
+  author th=1e-10  Pd=[11300/11300, 1.00000] Fa=[1945641668, 9.935788e-01] IoU=0.000422
+  author th=1e-08  Pd=[11299/11300, 0.99991] Fa=[1924061784, 9.825587e-01] IoU=0.000357
+  author th=1e-07  Pd=[11297/11300, 0.99973] Fa=[1760212696, 8.988860e-01] IoU=0.000327
+  author th=1e-06  Pd=[10744/11300, 0.95080] Fa=[103169813, 5.268562e-02] IoU=0.004092
+  author th=1e-05  Pd=[9966/11300, 0.88195] Fa=[775943, 3.962500e-04] IoU=0.194342
+  author th=0.0001 Pd=[9688/11300, 0.85735] Fa=[257370, 1.314309e-04] IoU=0.250468
+  author th=0.001  Pd=[9522/11300, 0.84265] Fa=[195676, 9.992566e-05] IoU=0.249004
+  author th=0.01   Pd=[9392/11300, 0.83115] Fa=[165437, 8.448354e-05] IoU=0.242992
+  author th=0.1    Pd=[9264/11300, 0.81982] Fa=[141349, 7.218255e-05] IoU=0.235718
+  author th=0.2    Pd=[9226/11300, 0.81646] Fa=[134298, 6.858182e-05] IoU=0.233113
+  author th=0.3    Pd=[9193/11300, 0.81354] Fa=[129734, 6.625113e-05] IoU=0.231352
+  author th=0.35   Pd=[9186/11300, 0.81292] Fa=[127917, 6.532324e-05] IoU=0.230576
+  author th=0.4    Pd=[9172/11300, 0.81168] Fa=[126144, 6.441783e-05] IoU=0.229853
+  author th=0.45   Pd=[9155/11300, 0.81018] Fa=[124497, 6.357676e-05] IoU=0.229139
+  author th=0.5    Pd=[9145/11300, 0.80929] Fa=[122890, 6.275611e-05] IoU=0.228453
+  author th=0.55   Pd=[9132/11300, 0.80814] Fa=[121225, 6.190585e-05] IoU=0.227792
+  author th=0.6    Pd=[9117/11300, 0.80681] Fa=[119571, 6.106120e-05] IoU=0.227075
+  author th=0.65   Pd=[9095/11300, 0.80487] Fa=[117864, 6.018949e-05] IoU=0.226354
+  author th=0.7    Pd=[9085/11300, 0.80398] Fa=[116041, 5.925854e-05] IoU=0.225509
+  author th=0.8    Pd=[9051/11300, 0.80097] Fa=[111927, 5.715765e-05] IoU=0.223518
+  author th=0.85   Pd=[9022/11300, 0.79841] Fa=[109333, 5.583297e-05] IoU=0.222252
+  author th=0.9    Pd=[8993/11300, 0.79584] Fa=[105748, 5.400222e-05] IoU=0.220586
+  author th=0.95   Pd=[8935/11300, 0.79071] Fa=[100210, 5.117414e-05] IoU=0.217686
+  author th=0.99   Pd=[8803/11300, 0.77903] Fa=[87479, 4.467281e-05] IoU=0.210316
+  author th=1      Pd=[6137/11300, 0.54310] Fa=[14314, 7.309716e-06] IoU=0.000000
+  author headline (threshold 0.5): IoU=0.228453 Pd=0.80929 Fa=6.275611e-05; AUC over 27 thresholds 0.97269

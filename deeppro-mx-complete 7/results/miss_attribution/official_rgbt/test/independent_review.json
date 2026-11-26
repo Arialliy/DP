@@ -1,0 +1,691 @@
+{
+  "status": "independent_read_only_interpretation",
+  "source_files": {
+    "results/miss_attribution/official_rgbt/test/summary.json": {
+      "sha256": "31a157861c7799ff9974a729c0675f52be54f00863231e8293883a0e6893bcbf"
+    },
+    "results/miss_attribution/official_rgbt/test/components.csv": {
+      "sha256": "b749974cba01556e59140c833663e28dcad22fd533740108eed45a5be5cfe17d"
+    },
+    "configs/splits.json": {
+      "sha256": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464"
+    },
+    "results/rate_analysis/test_clip.csv": {
+      "sha256": "90d741cbc46e11193decb0bc8ff3cfcc1bd3a7c83f3cf760240a2bc50b953a0b"
+    },
+    "results/rate_analysis/test_pooled.csv": {
+      "sha256": "b04e6004630ffebad04a9e97fce62122c503c09c25bf1a618a8d05770296b99c"
+    },
+    "code/vtdata.py": {
+      "sha256": "8840dce46bbe54a2ae701b6a751fb53f23f8afa110032606cb523600f34af2d8"
+    }
+  },
+  "unit": "Target-frame mask components for author metrics; separate box-frame units for rate_analysis.",
+  "threshold": 1e-05,
+  "conclusion": {
+    "stationarity_is_main_source_of_misses": "not supported by these counts",
+    "stationarity_is_higher_risk_subset": "supported observationally, concentrated in a few clips",
+    "camera_motion_is_main_cause": "not established; no raw-versus-compensated intervention was evaluated",
+    "mxc_mechanism_or_benefit": "not tested by this attribution"
+  },
+  "headline": {
+    "all": {
+      "threshold": 1e-05,
+      "clip": "all",
+      "camera_group": "all",
+      "target_group": "all",
+      "targets": 11300,
+      "hits": 9966,
+      "misses": 1334,
+      "recall": 0.8819469026548673,
+      "miss_rate": 0.11805309734513274,
+      "exposure_share": 1.0,
+      "miss_share": 1.0,
+      "merged_components": 1135
+    },
+    "near_stationary": {
+      "threshold": 1e-05,
+      "clip": "all",
+      "camera_group": "all",
+      "target_group": "near_stationary",
+      "targets": 1999,
+      "hits": 1655,
+      "misses": 344,
+      "recall": 0.8279139569784892,
+      "miss_rate": 0.17208604302151076,
+      "exposure_share": 0.17690265486725665,
+      "miss_share": 0.25787106446776614,
+      "merged_components": 659
+    },
+    "moving": {
+      "threshold": 1e-05,
+      "clip": "all",
+      "camera_group": "all",
+      "target_group": "moving",
+      "targets": 7878,
+      "hits": 7108,
+      "misses": 770,
+      "recall": 0.9022594567149023,
+      "miss_rate": 0.09774054328509774,
+      "exposure_share": 0.6971681415929204,
+      "miss_share": 0.5772113943028486,
+      "merged_components": 379
+    },
+    "near_vs_moving_miss_rate_ratio": 1.7606413596408594,
+    "stationary_exposure_share": {
+      "numerator": 1999,
+      "denominator": 11300,
+      "value": 0.17690265486725665,
+      "formula": "1999/11300"
+    },
+    "stationary_miss_share": {
+      "numerator": 344,
+      "denominator": 1334,
+      "value": 0.25787106446776614,
+      "formula": "344/1334"
+    }
+  },
+  "threshold_0_5_sensitivity": {
+    "all": {
+      "threshold": 0.5,
+      "clip": "all",
+      "camera_group": "all",
+      "target_group": "all",
+      "targets": 11300,
+      "hits": 9145,
+      "misses": 2155,
+      "recall": 0.8092920353982301,
+      "miss_rate": 0.19070796460176992,
+      "exposure_share": 1.0,
+      "miss_share": 1.0,
+      "merged_components": 1135
+    },
+    "near_stationary": {
+      "threshold": 0.5,
+      "clip": "all",
+      "camera_group": "all",
+      "target_group": "near_stationary",
+      "targets": 1999,
+      "hits": 1496,
+      "misses": 503,
+      "recall": 0.7483741870935467,
+      "miss_rate": 0.25162581290645325,
+      "exposure_share": 0.17690265486725665,
+      "miss_share": 0.2334106728538283,
+      "merged_components": 659
+    },
+    "moving": {
+      "threshold": 0.5,
+      "clip": "all",
+      "camera_group": "all",
+      "target_group": "moving",
+      "targets": 7878,
+      "hits": 6569,
+      "misses": 1309,
+      "recall": 0.8338410764153339,
+      "miss_rate": 0.16615892358466616,
+      "exposure_share": 0.6971681415929204,
+      "miss_share": 0.6074245939675174,
+      "merged_components": 379
+    }
+  },
+  "top_four_clips": {
+    "DJI_0237_2": {
+      "all": {
+        "threshold": 1e-05,
+        "clip": "DJI_0237_2",
+        "camera_group": "all",
+        "target_group": "all",
+        "targets": 2943,
+        "hits": 2435,
+        "misses": 508,
+        "recall": 0.8273870200475705,
+        "miss_rate": 0.1726129799524295,
+        "exposure_share": 1.0,
+        "miss_share": 1.0,
+        "merged_components": 653
+      },
+      "near_stationary": {
+        "threshold": 1e-05,
+        "clip": "DJI_0237_2",
+        "camera_group": "all",
+        "target_group": "near_stationary",
+        "targets": 1615,
+        "hits": 1379,
+        "misses": 236,
+        "recall": 0.8538699690402477,
+        "miss_rate": 0.14613003095975233,
+        "exposure_share": 0.5487597689432552,
+        "miss_share": 0.4645669291338583,
+        "merged_components": 569
+      },
+      "intermediate": {
+        "threshold": 1e-05,
+        "clip": "DJI_0237_2",
+        "camera_group": "all",
+        "target_group": "intermediate",
+        "targets": 356,
+        "hits": 266,
+        "misses": 90,
+        "recall": 0.7471910112359551,
+        "miss_rate": 0.25280898876404495,
+        "exposure_share": 0.12096500169894665,
+        "miss_share": 0.17716535433070865,
+        "merged_components": 5
+      },
+      "moving": {
+        "threshold": 1e-05,
+        "clip": "DJI_0237_2",
+        "camera_group": "all",
+        "target_group": "moving",
+        "targets": 899,
+        "hits": 725,
+        "misses": 174,
+        "recall": 0.8064516129032258,
+        "miss_rate": 0.1935483870967742,
+        "exposure_share": 0.3054706082229018,
+        "miss_share": 0.3425196850393701,
+        "merged_components": 6
+      }
+    },
+    "DJI_0049_2": {
+      "all": {
+        "threshold": 1e-05,
+        "clip": "DJI_0049_2",
+        "camera_group": "all",
+        "target_group": "all",
+        "targets": 602,
+        "hits": 295,
+        "misses": 307,
+        "recall": 0.4900332225913621,
+        "miss_rate": 0.5099667774086378,
+        "exposure_share": 1.0,
+        "miss_share": 1.0,
+        "merged_components": 90
+      },
+      "near_stationary": {
+        "threshold": 1e-05,
+        "clip": "DJI_0049_2",
+        "camera_group": "all",
+        "target_group": "near_stationary",
+        "targets": 90,
+        "hits": 9,
+        "misses": 81,
+        "recall": 0.1,
+        "miss_rate": 0.9,
+        "exposure_share": 0.14950166112956811,
+        "miss_share": 0.26384364820846906,
+        "merged_components": 90
+      },
+      "intermediate": {
+        "threshold": 1e-05,
+        "clip": "DJI_0049_2",
+        "camera_group": "all",
+        "target_group": "intermediate",
+        "targets": 56,
+        "hits": 3,
+        "misses": 53,
+        "recall": 0.05357142857142857,
+        "miss_rate": 0.9464285714285714,
+        "exposure_share": 0.09302325581395349,
+        "miss_share": 0.17263843648208468,
+        "merged_components": 0
+      },
+      "moving": {
+        "threshold": 1e-05,
+        "clip": "DJI_0049_2",
+        "camera_group": "all",
+        "target_group": "moving",
+        "targets": 456,
+        "hits": 283,
+        "misses": 173,
+        "recall": 0.6206140350877193,
+        "miss_rate": 0.3793859649122807,
+        "exposure_share": 0.7574750830564784,
+        "miss_share": 0.5635179153094463,
+        "merged_components": 0
+      }
+    },
+    "DJI_0309_4": {
+      "all": {
+        "threshold": 1e-05,
+        "clip": "DJI_0309_4",
+        "camera_group": "all",
+        "target_group": "all",
+        "targets": 1050,
+        "hits": 794,
+        "misses": 256,
+        "recall": 0.7561904761904762,
+        "miss_rate": 0.2438095238095238,
+        "exposure_share": 1.0,
+        "miss_share": 1.0,
+        "merged_components": 0
+      },
+      "near_stationary": {
+        "threshold": 1e-05,
+        "clip": "DJI_0309_4",
+        "camera_group": "all",
+        "target_group": "near_stationary",
+        "targets": 2,
+        "hits": 0,
+        "misses": 2,
+        "recall": 0.0,
+        "miss_rate": 1.0,
+        "exposure_share": 0.0019047619047619048,
+        "miss_share": 0.0078125,
+        "merged_components": 0
+      },
+      "intermediate": {
+        "threshold": 1e-05,
+        "clip": "DJI_0309_4",
+        "camera_group": "all",
+        "target_group": "intermediate",
+        "targets": 44,
+        "hits": 22,
+        "misses": 22,
+        "recall": 0.5,
+        "miss_rate": 0.5,
+        "exposure_share": 0.0419047619047619,
+        "miss_share": 0.0859375,
+        "merged_components": 0
+      },
+      "moving": {
+        "threshold": 1e-05,
+        "clip": "DJI_0309_4",
+        "camera_group": "all",
+        "target_group": "moving",
+        "targets": 1004,
+        "hits": 772,
+        "misses": 232,
+        "recall": 0.7689243027888446,
+        "miss_rate": 0.23107569721115537,
+        "exposure_share": 0.9561904761904761,
+        "miss_share": 0.90625,
+        "merged_components": 0
+      }
+    },
+    "DJI_0257_2": {
+      "all": {
+        "threshold": 1e-05,
+        "clip": "DJI_0257_2",
+        "camera_group": "all",
+        "target_group": "all",
+        "targets": 1126,
+        "hits": 1034,
+        "misses": 92,
+        "recall": 0.9182948490230906,
+        "miss_rate": 0.08170515097690942,
+        "exposure_share": 1.0,
+        "miss_share": 1.0,
+        "merged_components": 0
+      },
+      "near_stationary": {
+        "threshold": 1e-05,
+        "clip": "DJI_0257_2",
+        "camera_group": "all",
+        "target_group": "near_stationary",
+        "targets": 32,
+        "hits": 30,
+        "misses": 2,
+        "recall": 0.9375,
+        "miss_rate": 0.0625,
+        "exposure_share": 0.028419182948490232,
+        "miss_share": 0.021739130434782608,
+        "merged_components": 0
+      },
+      "intermediate": {
+        "threshold": 1e-05,
+        "clip": "DJI_0257_2",
+        "camera_group": "all",
+        "target_group": "intermediate",
+        "targets": 89,
+        "hits": 83,
+        "misses": 6,
+        "recall": 0.9325842696629213,
+        "miss_rate": 0.06741573033707865,
+        "exposure_share": 0.07904085257548846,
+        "miss_share": 0.06521739130434782,
+        "merged_components": 0
+      },
+      "moving": {
+        "threshold": 1e-05,
+        "clip": "DJI_0257_2",
+        "camera_group": "all",
+        "target_group": "moving",
+        "targets": 1005,
+        "hits": 921,
+        "misses": 84,
+        "recall": 0.9164179104477612,
+        "miss_rate": 0.08358208955223881,
+        "exposure_share": 0.8925399644760214,
+        "miss_share": 0.9130434782608695,
+        "merged_components": 0
+      }
+    }
+  },
+  "concentration": {
+    "stationary_misses_in_0237_plus_0049": {
+      "numerator": 317,
+      "denominator": 344,
+      "value": 0.9215116279069767,
+      "formula": "317/344"
+    },
+    "stationary_exposure_in_0237": {
+      "numerator": 1615,
+      "denominator": 1999,
+      "value": 0.807903951975988,
+      "formula": "1615/1999"
+    },
+    "stationary_misses_in_0237": {
+      "numerator": 236,
+      "denominator": 344,
+      "value": 0.686046511627907,
+      "formula": "236/344"
+    },
+    "all_misses_in_top_four": {
+      "numerator": 1163,
+      "denominator": 1334,
+      "value": 0.8718140929535232,
+      "formula": "1163/1334"
+    }
+  },
+  "within_clip_counterexample": {
+    "clip": "DJI_0237_2",
+    "near_stationary_miss_rate": {
+      "numerator": 236,
+      "denominator": 1615,
+      "value": 0.14613003095975233,
+      "formula": "236/1615"
+    },
+    "moving_miss_rate": {
+      "numerator": 174,
+      "denominator": 899,
+      "value": 0.1935483870967742,
+      "formula": "174/899"
+    },
+    "interpretation": "The pooled stationary-versus-moving contrast does not hold in this dominant stationary-exposure clip; scene/category confounding matters."
+  },
+  "static_camera_stationary_misses": {
+    "misses": 81,
+    "clips": [
+      "DJI_0049_2"
+    ],
+    "merged_track_sets": {
+      "3000008;3000007": 81
+    },
+    "tracks": {
+      "3000008": {
+        "category_id": 3,
+        "category": "pedestrian",
+        "within_category_track": 8
+      },
+      "3000007": {
+        "category_id": 3,
+        "category": "pedestrian",
+        "within_category_track": 7
+      }
+    },
+    "interpretation": "All 81 fixed-threshold misses are repeated component-frame observations of one merged pair of pedestrian tracks in DJI_0049_2, not 81 independent targets or evidence across many static-camera scenes."
+  },
+  "camera_group_disagreements": [
+    {
+      "clip": "DJI_0257_2",
+      "fresh_speed": 0.3503863712541432,
+      "config_speed": 0.2842,
+      "fresh_group": "moving",
+      "config_group": "static"
+    }
+  ],
+  "camera_grouping_sensitivity": {
+    "fresh_profile": {
+      "static": {
+        "clips": [
+          "DJI_0049_2",
+          "DJI_0109_1",
+          "DJI_0119_2",
+          "DJI_0129_2",
+          "DJI_0155_2",
+          "DJI_0173_2",
+          "DJI_0255_1",
+          "DJI_0307_2"
+        ],
+        "clip_count": 8,
+        "targets": 3263,
+        "misses": 407,
+        "miss_rate": {
+          "numerator": 407,
+          "denominator": 3263,
+          "value": 0.12473184186331597,
+          "formula": "407/3263"
+        },
+        "exposure_share": {
+          "numerator": 3263,
+          "denominator": 11300,
+          "value": 0.28876106194690265,
+          "formula": "3263/11300"
+        },
+        "miss_share": {
+          "numerator": 407,
+          "denominator": 1334,
+          "value": 0.30509745127436283,
+          "formula": "407/1334"
+        }
+      },
+      "moving": {
+        "clips": [
+          "DJI_0159_2",
+          "DJI_0221_2",
+          "DJI_0237_2",
+          "DJI_0257_2",
+          "DJI_0277_2",
+          "DJI_0303_2",
+          "DJI_0309_4"
+        ],
+        "clip_count": 7,
+        "targets": 8037,
+        "misses": 927,
+        "miss_rate": {
+          "numerator": 927,
+          "denominator": 8037,
+          "value": 0.11534154535274356,
+          "formula": "927/8037"
+        },
+        "exposure_share": {
+          "numerator": 8037,
+          "denominator": 11300,
+          "value": 0.7112389380530973,
+          "formula": "8037/11300"
+        },
+        "miss_share": {
+          "numerator": 927,
+          "denominator": 1334,
+          "value": 0.6949025487256372,
+          "formula": "927/1334"
+        }
+      }
+    },
+    "original_config": {
+      "static": {
+        "clips": [
+          "DJI_0049_2",
+          "DJI_0109_1",
+          "DJI_0119_2",
+          "DJI_0129_2",
+          "DJI_0155_2",
+          "DJI_0173_2",
+          "DJI_0255_1",
+          "DJI_0257_2",
+          "DJI_0307_2"
+        ],
+        "clip_count": 9,
+        "targets": 4389,
+        "misses": 499,
+        "miss_rate": {
+          "numerator": 499,
+          "denominator": 4389,
+          "value": 0.11369332421964001,
+          "formula": "499/4389"
+        },
+        "exposure_share": {
+          "numerator": 4389,
+          "denominator": 11300,
+          "value": 0.38840707964601767,
+          "formula": "4389/11300"
+        },
+        "miss_share": {
+          "numerator": 499,
+          "denominator": 1334,
+          "value": 0.3740629685157421,
+          "formula": "499/1334"
+        }
+      },
+      "moving": {
+        "clips": [
+          "DJI_0159_2",
+          "DJI_0221_2",
+          "DJI_0237_2",
+          "DJI_0277_2",
+          "DJI_0303_2",
+          "DJI_0309_4"
+        ],
+        "clip_count": 6,
+        "targets": 6911,
+        "misses": 835,
+        "miss_rate": {
+          "numerator": 835,
+          "denominator": 6911,
+          "value": 0.12082187816524381,
+          "formula": "835/6911"
+        },
+        "exposure_share": {
+          "numerator": 6911,
+          "denominator": 11300,
+          "value": 0.6115929203539823,
+          "formula": "6911/11300"
+        },
+        "miss_share": {
+          "numerator": 835,
+          "denominator": 1334,
+          "value": 0.6259370314842578,
+          "formula": "835/1334"
+        }
+      }
+    }
+  },
+  "separate_box_fa_budget_evidence": [
+    {
+      "mode": "clip",
+      "budget_fa_per_frame": 0.25,
+      "target_group": "near_stationary",
+      "hits": 914,
+      "boxes": 2850,
+      "recall": {
+        "numerator": 914,
+        "denominator": 2850,
+        "value": 0.32070175438596493,
+        "formula": "914/2850"
+      }
+    },
+    {
+      "mode": "clip",
+      "budget_fa_per_frame": 0.25,
+      "target_group": "moving",
+      "hits": 5329,
+      "boxes": 8373,
+      "recall": {
+        "numerator": 5329,
+        "denominator": 8373,
+        "value": 0.6364504956407501,
+        "formula": "5329/8373"
+      }
+    },
+    {
+      "mode": "clip",
+      "budget_fa_per_frame": 1.0,
+      "target_group": "near_stationary",
+      "hits": 1300,
+      "boxes": 2850,
+      "recall": {
+        "numerator": 1300,
+        "denominator": 2850,
+        "value": 0.45614035087719296,
+        "formula": "1300/2850"
+      }
+    },
+    {
+      "mode": "clip",
+      "budget_fa_per_frame": 1.0,
+      "target_group": "moving",
+      "hits": 6480,
+      "boxes": 8373,
+      "recall": {
+        "numerator": 6480,
+        "denominator": 8373,
+        "value": 0.773916159082766,
+        "formula": "6480/8373"
+      }
+    },
+    {
+      "mode": "pooled",
+      "budget_fa_per_frame": 0.25,
+      "target_group": "near_stationary",
+      "hits": 686,
+      "boxes": 2850,
+      "recall": {
+        "numerator": 686,
+        "denominator": 2850,
+        "value": 0.24070175438596492,
+        "formula": "686/2850"
+      }
+    },
+    {
+      "mode": "pooled",
+      "budget_fa_per_frame": 0.25,
+      "target_group": "moving",
+      "hits": 4549,
+      "boxes": 8373,
+      "recall": {
+        "numerator": 4549,
+        "denominator": 8373,
+        "value": 0.543293920936343,
+        "formula": "4549/8373"
+      }
+    },
+    {
+      "mode": "pooled",
+      "budget_fa_per_frame": 1.0,
+      "target_group": "near_stationary",
+      "hits": 1565,
+      "boxes": 2850,
+      "recall": {
+        "numerator": 1565,
+        "denominator": 2850,
+        "value": 0.5491228070175439,
+        "formula": "1565/2850"
+      }
+    },
+    {
+      "mode": "pooled",
+      "budget_fa_per_frame": 1.0,
+      "target_group": "moving",
+      "hits": 6377,
+      "boxes": 8373,
+      "recall": {
+        "numerator": 6377,
+        "denominator": 8373,
+        "value": 0.761614713961543,
+        "formula": "6377/8373"
+      }
+    }
+  ],
+  "cautions": [
+    "Author component hits and NMS/greedy box hits are different metrics with different denominators; do not mix their totals.",
+    "rate_analysis uses original-config camera groups; attribution uses fresh-profile groups. All-camera rate summaries avoid this grouping mismatch.",
+    "Clip-matched FA thresholds and pooled FA thresholds are different operating policies; pooled recall is not uniformly lower, so their difference alone does not establish a universal calibration gap.",
+    "The fresh camera grouping changes DJI_0257_2 from static to moving; apparent camera-group miss-rate ordering reverses under the original grouping.",
+    "Frames and components repeat tracks; do not treat counts as independent physical targets or infer statistical significance from raw sample size.",
+    "Relative-speed groups depend on estimated homographies and annotations; classification does not prove why an individual detection failed.",
+    "The actual reproduction has 11300 components and 1334 misses at 1e-5; the released log has 11303 and 1362. These are not identical replications."
+  ],
+  "suggested_claim": "官方模型对近静止目标的召回较弱，但近静止目标仅占残余漏检的一部分，且证据集中于少数场景。MXC针对该困难子集提出场景校准机制；相机补偿的收益和运动 exemplar 的额外贡献仍需独立验证。"
+}

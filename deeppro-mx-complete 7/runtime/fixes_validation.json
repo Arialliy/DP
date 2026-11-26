@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "checked_at": "2026-11-26T22:00:58.169408+08:00",
+  "original_full_check": "runtime/check_passed.json",
+  "original_tests": 142,
+  "targeted_tests": [
+    "test_all_controls_keep_selection_and_main_gain",
+    "test_mxc_absfloor_checkpoint_selection"
+  ],
+  "log": "logs/fixes_check.20261126.log",
+  "log_sha256": "8d5dba2a572dde08cae5309e4c350b67806da8c15622a60fd55c2e6091a8be49",
+  "patch": "runtime/reviewed_fixes/runtime-fixes.patch",
+  "patch_sha256": "0b438df8bc7b2874e0d744c47d5c8bf9316a541c88566bd34f3c0b6f209280d6",
+  "source_manifest": "runtime/source_manifest.after_fixes.json"
+}

@@ -1,0 +1,2 @@
+PASS: all 4 controls, main architecture overrides and gain matching
+PASS: absfloor full fake-data selection, 3 windows, nonzero calibration

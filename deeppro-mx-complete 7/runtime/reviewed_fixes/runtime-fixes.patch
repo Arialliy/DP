@@ -1,0 +1,130 @@
+--- a/run_mx.sh
++++ b/run_mx.sh
+@@ -158,12 +158,14 @@
+ 
+ controls() {    # the same recipe and selection, one component removed at a time
+     require_m0
++    local gain=1
++    case "$ARCH" in mxc_*) gain=2 ;; esac  # train.py's effective default for the main architecture
+     # no exemplars in training, in the per-epoch selection (selection_bank none) and in inference
+     train_one "${RUN}_noex" "$ARCH" --ex-p-none 1 && eval_one "${RUN}_noex" --bank none
+     # no motion: exemplars are the clip's strongest blobs (no annotation, no motion), in all three stages
+     train_one "${RUN}_self" "$ARCH" --ex-source self && eval_one "${RUN}_self" --bank self
+     train_one "${RUN}_nogain" "$ARCH" --gain-aug 1 && eval_one "${RUN}_nogain"
+-    train_one "mx_s$SEED" mx_lv && eval_one "mx_s$SEED"
++    train_one "mx_s$SEED" mx_lv --gain-aug "$gain" && eval_one "mx_s$SEED"
+ }
+ 
+ case "${1:-}" in
+--- a/code/checkpoint_selection.py
++++ b/code/checkpoint_selection.py
+@@ -44,7 +44,7 @@
+ OVERLAP = 4
+ THRESHOLD = 0.5
+ MX_NEEDS = ('valid', 'pvalid', 'ex', 'ex_valid')
+-MX_ARCHS = ('mx_lv', 'mx_lv_abs', 'mxc_lv')
++MX_ARCHS = ('mx_lv', 'mx_lv_abs', 'mxc_lv', 'mxc_lv_absfloor')
+ SUPPORTED = {
+     'lv_full': ('valid',),
+     'lvh_full': ('valid', 'pvalid', 'hist', 'hvalid'),
+--- a/code/test_run_mx.py
++++ b/code/test_run_mx.py
+@@ -162,6 +162,54 @@
+         assert run('train', work, env).returncode == 2
+ 
+ 
++def test_all_controls_keep_selection_and_main_gain():
++    """Run all four controls with stand-in training/evaluation and inspect their arguments."""
++    import json
++    with tempfile.TemporaryDirectory() as d:
++        work, env = _setup(d, 'round')
++        wrapper = WRAPPER.replace('  */train.py)',
++                                  '  */infer_mx.py|*/score.py) echo "$@" >> eval_started; exit 0 ;;\n'
++                                  '  */train.py)')
++        open(env['PY'], 'w').write(wrapper.replace('{python}', sys.executable))
++        for folder in ('profile', 'motion', 'calib_diag'):
++            os.makedirs(f'{work}/results/{folder}')
++        for name in ('profile/targets.csv', 'motion/motion.json'):
++            path = f'{work}/results/{name}'
++            open(path, 'w').write('{}\n')
++            os.utime(path, (1, 1))
++        json.dump({'decision': {'go': False}}, open(f'{work}/results/calib_diag/summary.json', 'w'))
++        env.update(RUN='control_fixture', SELECT='val_iou', TRAIN_SPLIT='train', SELECT_SPLIT='val',
++                   EVAL_SPLIT='val', M0_GATE='0')
++        for arch, gain in (('mxc_lv', '2'), ('mxc_lv_absfloor', '2'), ('mx_lv', '1')):
++            env['ARCH'] = arch
++            r = run('controls', work, env)
++            assert r.returncode == 0, (arch, r.stderr[-1500:])
++            commands = [row.split() for row in open(f'{work}/train_started')]
++            assert len(commands) == 4
++            by_run = {row[row.index('--run') + 1]: row for row in commands}
++            for row in commands:
++                assert row[row.index('--checkpoint-selection') + 1] == 'val_iou'
++                assert row[row.index('--selection-split') + 1] == 'val'
++                assert row[row.index('--split') + 1] == 'train'
++            for suffix in ('noex', 'self', 'nogain'):
++                row = by_run[f'control_fixture_{suffix}']
++                assert row[row.index('--arch') + 1] == arch
++            noex, own = by_run['control_fixture_noex'], by_run['control_fixture_self']
++            assert noex[noex.index('--ex-p-none') + 1] == '1'
++            assert own[own.index('--ex-source') + 1] == 'self'
++            nogain, mx = by_run['control_fixture_nogain'], by_run['mx_s46']
++            assert nogain[nogain.index('--gain-aug') + 1] == '1'
++            assert mx[mx.index('--arch') + 1] == 'mx_lv'
++            assert mx[mx.index('--gain-aug') + 1] == gain
++            evaluations = [row.split() for row in open(f'{work}/eval_started')]
++            assert len(evaluations) == 8
++            infer = {row[row.index('--run') + 1]: row for row in evaluations[::2]}
++            for name, bank in (('control_fixture_noex', 'none'), ('control_fixture_self', 'self')):
++                assert infer[name][infer[name].index('--bank') + 1] == bank
++            os.remove(f'{work}/train_started')
++            os.remove(f'{work}/eval_started')
++
++
+ def test_usage_and_missing_root():
+     with tempfile.TemporaryDirectory() as d:
+         work, env = _setup(d, 'round')
+--- a/code/test_mx.py
++++ b/code/test_mx.py
+@@ -380,6 +380,41 @@
+             vtdata._ANN_CACHE.clear()
+ 
+ 
++def test_mxc_absfloor_checkpoint_selection():
++    """The fixed-floor ablation completes real selection windows, including calibration."""
++    from argparse import Namespace
++    import checkpoint_selection
++    import export_masks
++    import fake_dataset
++    import vtdata
++    old = vtdata.DATA_ROOT, vtdata.ANN_DIR, vtdata.OFFICIAL_LISTS, os.getcwd()
++    video = np.full((90, 48, 48), 70, np.float32)
++    video[:, 22:25, 22:25] = 110
++    boxes = [np.array([(22, 22, 3, 3, 1, 0)], float) for _ in video]
++    with tempfile.TemporaryDirectory() as d:
++        try:
++            fake_dataset.write(d, {'fakeB': (video, boxes, 'train2017')})
++            vtdata.DATA_ROOT, vtdata.ANN_DIR, vtdata.OFFICIAL_LISTS = d, None, d
++            vtdata._ANN_CACHE.clear()
++            export_masks.export_clip(('fakeB', os.path.join(d, 'segmentations'), 6.0, 'floor', False))
++            os.makedirs(os.path.join(d, 'results/motion/homographies'))
++            np.save(os.path.join(d, 'results/motion/homographies/fakeB.npy'),
++                    np.repeat(np.eye(3)[None], len(video) - 1, 0))
++            os.chdir(d)
++            model, needs = models.build('mxc_lv_absfloor')
++            args = Namespace(arch='mxc_lv_absfloor', selection_bank='self')
++            result = checkpoint_selection.evaluate_window_iou(model, needs, args, clips=['fakeB'], split='val')
++            assert result['complete'] and result['windows'] == result['expected_windows'] == 3
++            assert np.isfinite(result['iou']) and result['protocol']['arch'] == 'mxc_lv_absfloor'
++            assert result['protocol']['exemplars']['bank'] == 'self'
++            assert result['per_clip']['fakeB']['exemplars']['exemplars'] > 0
++            assert torch.isfinite(model.last_cal).all() and model.last_cal.abs().sum() > 0
++        finally:
++            vtdata.DATA_ROOT, vtdata.ANN_DIR, vtdata.OFFICIAL_LISTS = old[:3]
++            os.chdir(old[3])
++            vtdata._ANN_CACHE.clear()
++
++
+ def test_mxc_training_with_checkpoint_selection():
+     """mxc_lv trains with --gain-aug and both per-epoch selections; the selection scores MX
+     windows with inference's exemplars (same candidates as infer_mx.py)."""

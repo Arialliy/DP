@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "container": "dp-mxc-v7-official-rgbt-20261126",
+  "container_id": "23c8430cd9db2f4c64c18cebcbe6a4779596aec18813d1411c333f85306f351a",
+  "started_at": "2026-11-26T21:47:04.848933+08:00",
+  "stages": [
+    "official_checkpoint_inference",
+    "score"
+  ],
+  "training": false,
+  "gpu": 2,
+  "source_manifest_sha256": "8678d70c104124acbbc3b6a030262ae0e2c81342d61d2f81d87964a302aba9a0",
+  "launcher_sha256": "57ac100fec060dd7b743f63b81a6f91cbdb1e624cf8e197c278bc9cdb9502b5f",
+  "exit_code": 0,
+  "completed_at": "2026-11-26T21:54:20.143445+08:00",
+  "score_summary": "results/scores/official_rgbt/test/summary.json"
+}

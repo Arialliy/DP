@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "stage": "profile_completed",
+  "started_at": "2026-11-26T21:47:03.366137+08:00",
+  "updated_at": "2026-11-26T21:51:45.049360+08:00",
+  "pid": 446527,
+  "source_manifest_sha256": "8678d70c104124acbbc3b6a030262ae0e2c81342d61d2f81d87964a302aba9a0",
+  "image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+  "container": "dp-mxc-v7-prepare-20261126",
+  "container_id": "c20f49fd823f9da6b8a4350c1e385b11541945fa6fd57c1448e2403aa69782b7",
+  "container_state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-11-26T13:47:04.25807283Z",
+    "FinishedAt": "2026-11-26T13:51:29.513649654Z"
+  },
+  "artifacts": [
+    "results/profile/targets.csv",
+    "results/profile/targets.json",
+    "results/motion/clips.csv",
+    "results/motion/motion.json",
+    "configs/folds.json"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "source": "/home/md0/ly/DP/log/sem_seg/RGB-T__2025-01-14_15-27__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth",
+  "copy": "inputs/official_rgbt_best_model.pth",
+  "sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "purpose": "Official DeepPro-Plus frozen-checkpoint missed-detection attribution; no training"
+}

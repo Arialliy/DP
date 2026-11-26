@@ -1,0 +1,765 @@
+{
+  "recorded_at": "2026-11-26T22:00:50.049224+08:00",
+  "status": "diagnostic_completed_no_model_run",
+  "record_type": "fact ledger of completed calculations; optional script preserved for reproduction",
+  "estimator_order": [
+    "image_only",
+    "box_masked"
+  ],
+  "execution": {
+    "geometry": "host NumPy 2.3.5",
+    "image_checks": "CPU-only read-only Docker; no GPU or model",
+    "image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594"
+  },
+  "conclusion": "The large window discrepancy is dominated by projective extrapolation outside shared view; it is not ground-truth registration error and is not a cumulative floating-point instability. Local weak-consensus fits occur in both estimators; valid-region disagreement and rate-1 low-coverage routing need separate attention.",
+  "test_clip_geometry": [
+    {
+      "clip": "DJI_0049_2",
+      "pair_diff_mean_px": 0.003217602959813053,
+      "pair_diff_p95_px": 0.005642521599211421,
+      "reported_window_diff_p95_px": 0.11135220459324559,
+      "reported_window_diff_max_px": 0.11279303891115944,
+      "chain_vs_local_max_px": [
+        9.25343817704044e-13,
+        1.1425385788607957e-12
+      ],
+      "camera_speed_image": 0.03449971241410295,
+      "camera_speed_masked": 0.03484728646531621
+    },
+    {
+      "clip": "DJI_0109_1",
+      "pair_diff_mean_px": 0.03569166932497585,
+      "pair_diff_p95_px": 0.07217660714088434,
+      "reported_window_diff_p95_px": 1.6675687534950725,
+      "reported_window_diff_max_px": 1.6728448704034915,
+      "chain_vs_local_max_px": [
+        9.374856803373542e-13,
+        1.374858882450988e-12
+      ],
+      "camera_speed_image": 0.22562191441461427,
+      "camera_speed_masked": 0.2326058767164307
+    },
+    {
+      "clip": "DJI_0119_2",
+      "pair_diff_mean_px": 0.004711821177157516,
+      "pair_diff_p95_px": 0.0080516773551288,
+      "reported_window_diff_p95_px": 0.13726921789070598,
+      "reported_window_diff_max_px": 0.14495875309554523,
+      "chain_vs_local_max_px": [
+        1.3086337768551559e-12,
+        1.5515233899300462e-12
+      ],
+      "camera_speed_image": 0.03248953035963845,
+      "camera_speed_masked": 0.03225068078602675
+    },
+    {
+      "clip": "DJI_0129_2",
+      "pair_diff_mean_px": 0.023137680471429337,
+      "pair_diff_p95_px": 0.04477019936622104,
+      "reported_window_diff_p95_px": 1.4749263331269098,
+      "reported_window_diff_max_px": 1.507201172086304,
+      "chain_vs_local_max_px": [
+        1.0247593068766006e-12,
+        1.1869254318424454e-12
+      ],
+      "camera_speed_image": 0.04203870003557408,
+      "camera_speed_masked": 0.03960061430119325
+    },
+    {
+      "clip": "DJI_0155_2",
+      "pair_diff_mean_px": 0.004652967521993661,
+      "pair_diff_p95_px": 0.010690424671224734,
+      "reported_window_diff_p95_px": 0.3387317789154134,
+      "reported_window_diff_max_px": 0.43285803538949774,
+      "chain_vs_local_max_px": [
+        1.1425385788607957e-12,
+        1.1325970970785463e-12
+      ],
+      "camera_speed_image": 0.04351006444105858,
+      "camera_speed_masked": 0.04244079162743371
+    },
+    {
+      "clip": "DJI_0159_2",
+      "pair_diff_mean_px": 0.1506046245762467,
+      "pair_diff_p95_px": 0.5365502134626838,
+      "reported_window_diff_p95_px": 6.885614497752432,
+      "reported_window_diff_max_px": 7.4748244923106455,
+      "chain_vs_local_max_px": [
+        1.1991132345047497e-12,
+        9.779711566628324e-13
+      ],
+      "camera_speed_image": 0.3223100811000062,
+      "camera_speed_masked": 0.30843766388125965
+    },
+    {
+      "clip": "DJI_0173_2",
+      "pair_diff_mean_px": 0.021496163685994538,
+      "pair_diff_p95_px": 0.08101201457234741,
+      "reported_window_diff_p95_px": 1.6815407927285695,
+      "reported_window_diff_max_px": 1.9742630286821263,
+      "chain_vs_local_max_px": [
+        9.779711566628324e-13,
+        1.2586036646942222e-12
+      ],
+      "camera_speed_image": 0.05461380918997861,
+      "camera_speed_masked": 0.05315997102595177
+    },
+    {
+      "clip": "DJI_0221_2",
+      "pair_diff_mean_px": 0.11808526592534062,
+      "pair_diff_p95_px": 0.17166096932757408,
+      "reported_window_diff_p95_px": 14.537479711916449,
+      "reported_window_diff_max_px": 43.615900559135525,
+      "chain_vs_local_max_px": [
+        1.4559018921847493e-12,
+        1.368970808788651e-12
+      ],
+      "camera_speed_image": 0.5590987457540232,
+      "camera_speed_masked": 0.6048951105244061
+    },
+    {
+      "clip": "DJI_0237_2",
+      "pair_diff_mean_px": 0.37768747950288817,
+      "pair_diff_p95_px": 0.6787615881205646,
+      "reported_window_diff_p95_px": 104.31060953391852,
+      "reported_window_diff_max_px": 217.56568722528965,
+      "chain_vs_local_max_px": [
+        1.4559018921847493e-12,
+        1.2710574864626038e-12
+      ],
+      "camera_speed_image": 0.8653180872045102,
+      "camera_speed_masked": 1.0121514782917518
+    },
+    {
+      "clip": "DJI_0255_1",
+      "pair_diff_mean_px": 0.04522985243898559,
+      "pair_diff_p95_px": 0.2356532353331371,
+      "reported_window_diff_p95_px": 4.041909927754259,
+      "reported_window_diff_max_px": 4.438593578728155,
+      "chain_vs_local_max_px": [
+        1.492072072824918e-12,
+        1.5463081705019526e-12
+      ],
+      "camera_speed_image": 0.1962040611981688,
+      "camera_speed_masked": 0.1920967219858163
+    },
+    {
+      "clip": "DJI_0257_2",
+      "pair_diff_mean_px": 0.30051994963176865,
+      "pair_diff_p95_px": 1.0093649407802041,
+      "reported_window_diff_p95_px": 24.946563061886685,
+      "reported_window_diff_max_px": 43.72793513760699,
+      "chain_vs_local_max_px": [
+        1.7138078682911936e-12,
+        1.2466735028886722e-12
+      ],
+      "camera_speed_image": 0.22730015880669407,
+      "camera_speed_masked": 0.3503863712541432
+    },
+    {
+      "clip": "DJI_0277_2",
+      "pair_diff_mean_px": 0.1341173546896776,
+      "pair_diff_p95_px": 0.872019007071401,
+      "reported_window_diff_p95_px": 11078.085304075239,
+      "reported_window_diff_max_px": 21260.179148968182,
+      "chain_vs_local_max_px": [
+        1.2973105879182874e-09,
+        2.9999541770795337e-10
+      ],
+      "camera_speed_image": 6.24719523677525,
+      "camera_speed_masked": 6.243455975990445
+    },
+    {
+      "clip": "DJI_0303_2",
+      "pair_diff_mean_px": 0.08894389623540201,
+      "pair_diff_p95_px": 0.4665082461974911,
+      "reported_window_diff_p95_px": 11.6088112065005,
+      "reported_window_diff_max_px": 16.37737884343382,
+      "chain_vs_local_max_px": [
+        1.5793880253852199e-12,
+        3.984314141433755e-12
+      ],
+      "camera_speed_image": 2.5732030419797267,
+      "camera_speed_masked": 2.5849975984491818
+    },
+    {
+      "clip": "DJI_0307_2",
+      "pair_diff_mean_px": 0.07797262720029871,
+      "pair_diff_p95_px": 0.16068374958645307,
+      "reported_window_diff_p95_px": 6.404251178263491,
+      "reported_window_diff_max_px": 7.2832587821440224,
+      "chain_vs_local_max_px": [
+        9.374856803373542e-13,
+        8.658131612109979e-13
+      ],
+      "camera_speed_image": 0.14725560415985217,
+      "camera_speed_masked": 0.14078852012305676
+    },
+    {
+      "clip": "DJI_0309_4",
+      "pair_diff_mean_px": 0.07153431948883436,
+      "pair_diff_p95_px": 0.33576578729536966,
+      "reported_window_diff_p95_px": 13.820984545551399,
+      "reported_window_diff_max_px": 29.620878803393015,
+      "chain_vs_local_max_px": [
+        1.3258049636636544e-12,
+        1.1425385788607957e-12
+      ],
+      "camera_speed_image": 1.2270307682440886,
+      "camera_speed_masked": 1.228160580166577
+    }
+  ],
+  "local_recomposition_focus": {
+    "clip": "DJI_0277_2",
+    "window_difference_p95_px": 11078.085304075132,
+    "window_difference_max_px": 21260.17914896797,
+    "chain_vs_local_max_px": [
+      1.2973105879182874e-09,
+      2.9999541770795337e-10
+    ],
+    "worst": {
+      "a": 326,
+      "b": 366,
+      "ref": 346,
+      "frame": 333,
+      "point": [
+        79.875,
+        511.0
+      ],
+      "image_xy": [
+        -53949.00332826744,
+        15546.08970178477
+      ],
+      "masked_xy": [
+        -33501.44274483046,
+        9724.364559450507
+      ]
+    }
+  },
+  "common_fov": [
+    {
+      "clip": "DJI_0277_2",
+      "a": 324,
+      "b": 364,
+      "whole_grid33_max_px": 895.9914591822915,
+      "common_fov_grid33_max_px": 14.21841820799782,
+      "min_common_grid_fraction": 0.0,
+      "horizon_cross_frames": [
+        0,
+        0
+      ]
+    },
+    {
+      "clip": "DJI_0277_2",
+      "a": 326,
+      "b": 366,
+      "whole_grid33_max_px": 20978404.377497274,
+      "common_fov_grid33_max_px": 9.564779015240582,
+      "min_common_grid_fraction": 0.0,
+      "horizon_cross_frames": [
+        9,
+        9
+      ]
+    },
+    {
+      "clip": "DJI_0309_2",
+      "a": 504,
+      "b": 544,
+      "whole_grid33_max_px": 18787.9466539091,
+      "common_fov_grid33_max_px": 28.647592715759142,
+      "min_common_grid_fraction": 0.0,
+      "horizon_cross_frames": [
+        0,
+        0
+      ]
+    },
+    {
+      "clip": "DJI_0237_2",
+      "a": 324,
+      "b": 364,
+      "whole_grid33_max_px": 217.56568722528968,
+      "common_fov_grid33_max_px": 164.46889098401647,
+      "min_common_grid_fraction": 0.7300275482093664,
+      "horizon_cross_frames": [
+        0,
+        0
+      ]
+    }
+  ],
+  "common_fov_definition": "33x33 grid; retain reference points mapping into BOTH source pixel-center rectangles 0<=x<=639 and 0<=y<=511; maximum over valid points and all frames of each listed 40-frame window. This is sampled geometric overlap, not verified registration accuracy.",
+  "common_fov_reporting_note": "Initial console analysis used <640/<512. Final saved values recomputed cheaply with exact stabilize._grid_valid endpoint bounds; maxima were unchanged.",
+  "routing": [
+    {
+      "clip": "DJI_0277_2",
+      "a": 324,
+      "b": 364,
+      "image": {
+        "raw": null,
+        "warp": null,
+        "cover": 0.0,
+        "auto": "warp"
+      },
+      "masked": {
+        "raw": null,
+        "warp": null,
+        "cover": 0.0,
+        "auto": "warp"
+      }
+    },
+    {
+      "clip": "DJI_0277_2",
+      "a": 326,
+      "b": 366,
+      "image": {
+        "raw": null,
+        "warp": null,
+        "cover": 0.0,
+        "auto": "warp"
+      },
+      "masked": {
+        "raw": null,
+        "warp": null,
+        "cover": 0.0,
+        "auto": "warp"
+      }
+    },
+    {
+      "clip": "DJI_0309_2",
+      "a": 504,
+      "b": 544,
+      "image": {
+        "raw": 29.815625,
+        "warp": 13.142785644531251,
+        "cover": 0.06884765625,
+        "auto": "warp"
+      },
+      "masked": {
+        "raw": 27.8125,
+        "warp": 9.771224975585938,
+        "cover": 0.071435546875,
+        "auto": "warp"
+      }
+    },
+    {
+      "clip": "DJI_0237_2",
+      "a": 324,
+      "b": 364,
+      "image": {
+        "raw": 20.143749999999997,
+        "warp": 18.267681884765622,
+        "cover": 0.83271484375,
+        "auto": "raw"
+      },
+      "masked": {
+        "raw": 19.75,
+        "warp": 9.17396240234375,
+        "cover": 0.974169921875,
+        "auto": "warp"
+      }
+    }
+  ],
+  "routing_code": {
+    "zero_coverage": "code/multirate.py:170-171 returns undefined residuals",
+    "forced_warp": "code/multirate.py:192-193 precedes nonfinite-residual fallback: cover<0.1 returns warp for k=1, skip for k>1",
+    "nonfinite_fallback": "code/multirate.py:196-198",
+    "thresholds": {
+      "k": 1,
+      "min_cover": 0.1,
+      "margin": 0.1,
+      "abs_tol": 0.5
+    }
+  },
+  "local_fit_checks": [
+    {
+      "clip": "DJI_0277_2",
+      "pair_start": 333,
+      "corners": [
+        786,
+        787
+      ],
+      "inlier_fraction": [
+        0.8575063613231552,
+        0.8360864040660737
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0277_2",
+      "pair_start": 334,
+      "corners": [
+        632,
+        625
+      ],
+      "inlier_fraction": [
+        0.27531645569620256,
+        0.2944
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0277_2",
+      "pair_start": 336,
+      "corners": [
+        655,
+        660
+      ],
+      "inlier_fraction": [
+        0.4580152671755725,
+        0.4727272727272727
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0277_2",
+      "pair_start": 344,
+      "corners": [
+        641,
+        647
+      ],
+      "inlier_fraction": [
+        0.5039001560062403,
+        0.5316846986089645
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0309_2",
+      "pair_start": 511,
+      "corners": [
+        542,
+        549
+      ],
+      "inlier_fraction": [
+        0.13653136531365315,
+        0.21493624772313297
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0309_2",
+      "pair_start": 513,
+      "corners": [
+        553,
+        560
+      ],
+      "inlier_fraction": [
+        0.12839059674502712,
+        0.1125
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0309_2",
+      "pair_start": 519,
+      "corners": [
+        698,
+        712
+      ],
+      "inlier_fraction": [
+        0.16332378223495703,
+        0.17696629213483145
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0237_2",
+      "pair_start": 339,
+      "corners": [
+        710,
+        700
+      ],
+      "inlier_fraction": [
+        0.2056338028169014,
+        0.20714285714285716
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0237_2",
+      "pair_start": 340,
+      "corners": [
+        523,
+        499
+      ],
+      "inlier_fraction": [
+        0.06692160611854685,
+        0.06412825651302605
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0237_2",
+      "pair_start": 341,
+      "corners": [
+        454,
+        440
+      ],
+      "inlier_fraction": [
+        0.06607929515418502,
+        0.075
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "DJI_0237_2",
+      "pair_start": 342,
+      "corners": [
+        769,
+        769
+      ],
+      "inlier_fraction": [
+        0.2483745123537061,
+        0.22366710013003901
+      ],
+      "recomputed_stored_matrix_max_abs_difference": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "speed_sensitivity": {
+    "method": "Symmetric +/-5-frame track endpoints; compose at most10 consecutive pair matrices, without global-chain inversion. Recompute masked speeds and swap only H to image-only for sensitivity.",
+    "code": "code/profile_motion.py:93-112",
+    "bands": [
+      "[0,0.2)",
+      "[0.2,0.5)",
+      "[0.5,infinity)"
+    ],
+    "box_frames": 12665,
+    "band_changes": 238,
+    "band_change_fraction": 0.01879194630872483,
+    "per_clip": [
+      {
+        "clip": "DJI_0049_2",
+        "box_frames": 692,
+        "band_changes": 2,
+        "stored_recompute_max": 3.086420008457935e-14,
+        "delta_median": 0.0009203381549793832,
+        "delta_p95": 0.003520938227778814,
+        "delta_max": 0.006237591006344356
+      },
+      {
+        "clip": "DJI_0109_1",
+        "box_frames": 90,
+        "band_changes": 8,
+        "stored_recompute_max": 2.930988785010413e-14,
+        "delta_median": 0.011720999665612075,
+        "delta_p95": 0.017324620797181355,
+        "delta_max": 0.019061238075643194
+      },
+      {
+        "clip": "DJI_0119_2",
+        "box_frames": 360,
+        "band_changes": 2,
+        "stored_recompute_max": 3.4361402612148595e-14,
+        "delta_median": 0.000989966005021936,
+        "delta_p95": 0.00366730490914286,
+        "delta_max": 0.005440546665234192
+      },
+      {
+        "clip": "DJI_0129_2",
+        "box_frames": 590,
+        "band_changes": 23,
+        "stored_recompute_max": 2.3037127760971998e-14,
+        "delta_median": 0.0061139725675095485,
+        "delta_p95": 0.01497856741685797,
+        "delta_max": 0.03231881589895913
+      },
+      {
+        "clip": "DJI_0155_2",
+        "box_frames": 410,
+        "band_changes": 0,
+        "stored_recompute_max": 2.5091040356528538e-14,
+        "delta_median": 0.0014526113730293222,
+        "delta_p95": 0.006585702284971005,
+        "delta_max": 0.011305913582678517
+      },
+      {
+        "clip": "DJI_0159_2",
+        "box_frames": 250,
+        "band_changes": 3,
+        "stored_recompute_max": 2.8199664825478976e-14,
+        "delta_median": 0.015596873251130017,
+        "delta_p95": 0.06089922760724683,
+        "delta_max": 0.11607218455875756
+      },
+      {
+        "clip": "DJI_0173_2",
+        "box_frames": 450,
+        "band_changes": 0,
+        "stored_recompute_max": 2.9753977059954195e-14,
+        "delta_median": 0.0018877000789773168,
+        "delta_p95": 0.006451202446960126,
+        "delta_max": 0.008993922760643924
+      },
+      {
+        "clip": "DJI_0221_2",
+        "box_frames": 697,
+        "band_changes": 26,
+        "stored_recompute_max": 2.842170943040401e-14,
+        "delta_median": 0.0029162525637342895,
+        "delta_p95": 0.11822598056089811,
+        "delta_max": 1.5239238832084747
+      },
+      {
+        "clip": "DJI_0237_2",
+        "box_frames": 3717,
+        "band_changes": 125,
+        "stored_recompute_max": 4.263256414560601e-14,
+        "delta_median": 0.0037970279153348163,
+        "delta_p95": 0.102447267885137,
+        "delta_max": 11.71722431496265
+      },
+      {
+        "clip": "DJI_0255_1",
+        "box_frames": 600,
+        "band_changes": 4,
+        "stored_recompute_max": 2.9531932455029164e-14,
+        "delta_median": 0.005272585434460408,
+        "delta_p95": 0.03707933967767616,
+        "delta_max": 0.08458734564991177
+      },
+      {
+        "clip": "DJI_0257_2",
+        "box_frames": 1126,
+        "band_changes": 20,
+        "stored_recompute_max": 4.496403249731884e-14,
+        "delta_median": 0.014216281274275648,
+        "delta_p95": 0.09631337443983368,
+        "delta_max": 0.24285183791198595
+      },
+      {
+        "clip": "DJI_0277_2",
+        "box_frames": 985,
+        "band_changes": 0,
+        "stored_recompute_max": 2.930988785010413e-14,
+        "delta_median": 0.018811849641650058,
+        "delta_p95": 0.09748290425487045,
+        "delta_max": 0.3216653230681896
+      },
+      {
+        "clip": "DJI_0303_2",
+        "box_frames": 1487,
+        "band_changes": 11,
+        "stored_recompute_max": 3.6415315207705135e-14,
+        "delta_median": 0.006921981479085737,
+        "delta_p95": 0.159684548214648,
+        "delta_max": 0.49223608898782345
+      },
+      {
+        "clip": "DJI_0307_2",
+        "box_frames": 161,
+        "band_changes": 12,
+        "stored_recompute_max": 2.969846590872294e-14,
+        "delta_median": 0.007082033092920159,
+        "delta_p95": 0.057938365953410786,
+        "delta_max": 0.08036913464203821
+      },
+      {
+        "clip": "DJI_0309_4",
+        "box_frames": 1050,
+        "band_changes": 2,
+        "stored_recompute_max": 3.241851231905457e-14,
+        "delta_median": 0.0042232378626188005,
+        "delta_p95": 0.0639471836981838,
+        "delta_max": 0.20530053358404388
+      }
+    ],
+    "csv": "results/motion/image_speed_sensitivity.csv"
+  },
+  "camera_classification_sensitivity": [
+    {
+      "clip": "DJI_0257_2",
+      "masked": 0.3503863712541432,
+      "image": 0.22730015880669407
+    }
+  ],
+  "source_and_input_sha256": {
+    "code/stabilize.py": "8d723216daae358454c464e9f9694dc462c992b4933cd012d252624cc7e4e97d",
+    "code/profile_motion.py": "1f24295c3d8c5c45eefba425411d7cfd44a5a71d6b6f56bb9029588d3fc22dda",
+    "code/motion_image.py": "bcfb56d7bbd6ea85baf0ce1a2ffb1178e9f9496c1ade514da76e1ad6768f9984",
+    "code/multirate.py": "747300adad6df8b177af3916c970e112db7fbe2cb0eddf8d568120a631974224",
+    "code/vtdata.py": "8840dce46bbe54a2ae701b6a751fb53f23f8afa110032606cb523600f34af2d8",
+    "configs/splits.json": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464",
+    "runtime/inspect_motion.py": "c7bb0fee0d4e1596915a6a830557a1fe5c432a9469c51a3ecb6b9d29e19b8581",
+    "results/profile/targets.csv": "5f640e851b148aa98f175d0f640edc122732c4b1a153e31ea561b722b042a37e",
+    "results/profile/targets.json": "01a584532a56f2039c4ff8764cb512f1c14626acdb1543f1d935782cb59a8aa0",
+    "results/profile/clips.csv": "2283b04f2491ede95bc6559e8b3898a4f7f4e159d5b7f597023ab157cbd06829",
+    "results/motion/clips.csv": "bcf330dac8b03aa0ec813020841b5ff4a99c5954ffd4a3797d78c2535b876bc8",
+    "results/motion/motion.json": "75a5d9d162efaf8d30a161bc171786a05c68b0133aaf62aa41328296bc4b7db3",
+    "results/motion/image_speed_sensitivity.csv": "7530e0abc281091a9a9d402db6db957046821311edb1f193ca553f2b1c9d1d5c",
+    "results/motion/homographies/DJI_0049_2.npy": "30d625d533e5768db4442eff5c9ded014bcebc6b14a68c3682c98bf555f72344",
+    "results/profile/homographies/DJI_0049_2.npy": "a0b522f348071c88eb060bb761013eeacb2d6f6a85a329fa2b574bccc2fff0d5",
+    "results/motion/homographies/DJI_0109_1.npy": "c4e1c56be5c61e503c1c41c256b4531b9d427f3b87e863f6415c8df19d611135",
+    "results/profile/homographies/DJI_0109_1.npy": "e9b3d3c29040273bb7ce8d72992950be883e41b252ac71960f6dca22f24add49",
+    "results/motion/homographies/DJI_0119_2.npy": "ea95f7d1e21d9386747074acdd3deb417683969f13980a921a0db7e0923d2a61",
+    "results/profile/homographies/DJI_0119_2.npy": "a70b195a47a12dc48a5d6b8e3975b582975bfdb5c6897605eb4f0b1d27ce8409",
+    "results/motion/homographies/DJI_0129_2.npy": "3578a6723809dbc16f070f1e2c797ad4a60c322aac967d001289d3f6c540ffe7",
+    "results/profile/homographies/DJI_0129_2.npy": "8636c1e4ef0d10b9fa0dbf06e42fc28e32eee94392110fa72d4af40583f2e92f",
+    "results/motion/homographies/DJI_0155_2.npy": "5edd28867fed2624bfb6ee8b3d53151d78fc154c2bc694c7f5f5af4480af79e2",
+    "results/profile/homographies/DJI_0155_2.npy": "30ce69993a39d81ef4afe8f6e56c49b358cd59c6bd33051093e5295707956c41",
+    "results/motion/homographies/DJI_0159_2.npy": "02b476efb1ea6a32fb66d1f925c1ff610593038f23d71f84941bb60ded07a38e",
+    "results/profile/homographies/DJI_0159_2.npy": "71c9e19de03b545de02369c21e871567d73361243b1fd42984441c9b7bcdc043",
+    "results/motion/homographies/DJI_0173_2.npy": "254899f49dbc0ce08e65945f0566b043468393457f121cb58575cee666ca230d",
+    "results/profile/homographies/DJI_0173_2.npy": "e49d9dc803665caf0c09dc5911fd3c5fca81c89256021d24201f936270a051f4",
+    "results/motion/homographies/DJI_0221_2.npy": "82d75f9c990d0403f70b412280c3720185364aa67407ff6c9e22dda752939130",
+    "results/profile/homographies/DJI_0221_2.npy": "979d70ac377e29d2ee6755d83101b4323953cdc3e1d0fce3e7a43b2becf6496b",
+    "results/motion/homographies/DJI_0237_2.npy": "19bfa610e6d29c92c9f8334544c4b5d74f505425f6e7c4b5d27671b59fba1ff9",
+    "results/profile/homographies/DJI_0237_2.npy": "94220b2cd510f11956aac9c398d7a1d915a3920028d3079b265556a67b79fc04",
+    "results/motion/homographies/DJI_0255_1.npy": "3f906a49a7ea69e2d86dd02ec52ba7fe6e838d852255fddac3e8f2ce440b8aa3",
+    "results/profile/homographies/DJI_0255_1.npy": "c6a6108e67dd1e486b94289787e1663bc34f93d45ec1059dfc8b6a7d49c09a42",
+    "results/motion/homographies/DJI_0257_2.npy": "bf1f8b90f09f1bdb6490234e80c751a34ca00f4ce202e2f67086fed059326fcc",
+    "results/profile/homographies/DJI_0257_2.npy": "4bdd4eb1e638feb350bc485df3c73438d7e807f6c7382fe62ae6c6af5467b4d4",
+    "results/motion/homographies/DJI_0277_2.npy": "d0dbba5cdc9c6a7620b317976f4e04159820d949cc6a0bb7316a1a0e6bdc9d3e",
+    "results/profile/homographies/DJI_0277_2.npy": "b590159a3703d3e813dd73783e11c681f5c9c6fed78d64a1fceaf3e28f366106",
+    "results/motion/homographies/DJI_0303_2.npy": "6003b8dcdcf6cb1503378839095234cae0796c8b44019e54bdfb727f95fb7db3",
+    "results/profile/homographies/DJI_0303_2.npy": "4a8018e5627dc8b9296bb9c02a31e8d799834f53f9eab07984c845e3a2305fa8",
+    "results/motion/homographies/DJI_0307_2.npy": "53e68f51bacd92669e6a055d068de28879d34b9da1774e50711a7d064d726697",
+    "results/profile/homographies/DJI_0307_2.npy": "e2ee4ba1a24681052d0929496ac588c4c2ab1bc16a0f4054e295c8acaa0f4df6",
+    "results/motion/homographies/DJI_0309_4.npy": "6a8ef14a01b5c30759d1a7ded54a359148b6d9450e40f25201163c472d61f2fc",
+    "results/profile/homographies/DJI_0309_4.npy": "8caaa8708c0308726831d41a21b1e79bb46943c06d8dbef50929d1c927ef624e",
+    "results/motion/homographies/DJI_0309_2.npy": "32375ee7a46bd3d344bd21f410f0ef0becc48e4032773dd5b828f54dce95f76b",
+    "results/profile/homographies/DJI_0309_2.npy": "98f384efd132c35a6fa31b867c31171058576e76e471797be32ee1ae37d10095"
+  },
+  "limitations": [
+    "Neither estimator is ground truth; agreement does not prove correctness, and disagreement does not identify which one is wrong.",
+    "Outside-shared-view extrema near a projective pole depend strongly on sampling grid; do not report them as pixel registration error.",
+    "The 33x33 common-FOV statistic is a sampled geometric comparison; it is not image-content alignment validation.",
+    "Low RANSAC inlier fractions indicate weak consensus on the tracked corners; they alone do not prove every estimated transform is wrong.",
+    "Camera grouping uses a clip mean; speed groups depend on thresholds and homography estimates.",
+    "Component attribution must map alternate box-frame bands through the existing merged/mixed/unknown rules.",
+    "Observational missed-detection strata cannot establish stationarity as the causal mechanism.",
+    "Official raw-coordinate DeepPro-Plus predictions do not use these homographies; their speed-stratified interpretation does."
+  ],
+  "scope": "Read source/matrices/images only; wrote this review, its reproduction script and alternate-speed CSV only inside v7. No source/matrix changes and no training/model run."
+}

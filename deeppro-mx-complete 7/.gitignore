@@ -1,0 +1,7 @@
+# Full-frame prediction caches can be regenerated from the included code and checkpoint.
+/cache/
+
+# Ephemeral runner state and partially written outputs.
+/runtime/runner.log
+/runtime/runner.lock
+*.tmp

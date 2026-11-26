@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "recorded_at": "2026-11-26T21:47:03.191082+08:00",
+  "log": "logs/check.20261126.log",
+  "log_sha256": "34548dc66e9383e04adeef7a4b02b73d2ff597b7168926d0ebc29b090e0c27b8",
+  "source_manifest_sha256": "8678d70c104124acbbc3b6a030262ae0e2c81342d61d2f81d87964a302aba9a0",
+  "command": "bash run_mx.sh check",
+  "complete_suite": true
+}

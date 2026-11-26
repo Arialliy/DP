@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "completed_at": "2026-11-26T22:00:58.169702+08:00",
+  "container": "dp-mxc-v7-attribution-20261126",
+  "summary": "results/miss_attribution/official_rgbt/test/summary.json",
+  "rate_analysis": [
+    "results/rate_analysis/test_clip.csv",
+    "results/rate_analysis/test_pooled.csv"
+  ],
+  "source_manifest_at_launch": "runtime/source_manifest.json"
+}

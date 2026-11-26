@@ -1,0 +1,2 @@
+EXPECTED FAILURE on original source: test_all_controls_keep_selection_and_main_gain '--gain-aug' is not in list
+EXPECTED FAILURE on original source: test_mxc_absfloor_checkpoint_selection Unsupported selection interface: arch='mxc_lv_absfloor', needs=('valid', 'pvalid', 'ex', 'ex_valid')

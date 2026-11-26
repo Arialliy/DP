@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "tests": [
+    "test_component_hits_equal_author_sweep",
+    "test_cross_band_merge_and_unknown_are_not_arbitrarily_attributed",
+    "test_official_top_left_edge_can_remain_missed_at_probability_one",
+    "test_aggregation_denominators_and_score_validation"
+  ],
+  "script_sha256": "a99e7d6d3cb8e86f6f95da02b244122fa3cde7be5bacfa1fcc328baee996036b"
+}

@@ -1,0 +1,34 @@
+/experiment/runtime/attribute_misses.py:106: RuntimeWarning: overflow encountered in exp
+  probability = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+/experiment/runtime/attribute_misses.py:106: RuntimeWarning: overflow encountered in exp
+  probability = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+/experiment/runtime/attribute_misses.py:106: RuntimeWarning: overflow encountered in exp
+  probability = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+/experiment/runtime/attribute_misses.py:106: RuntimeWarning: overflow encountered in exp
+  probability = 1.0 / (1.0 + np.exp(-logits[t].astype(np.float32)))
+DJI_0109_1: 90 component-frames; 0 vanished box-frames
+DJI_0049_2: 602 component-frames; 0 vanished box-frames
+DJI_0119_2: 360 component-frames; 0 vanished box-frames
+DJI_0159_2: 250 component-frames; 0 vanished box-frames
+DJI_0155_2: 410 component-frames; 0 vanished box-frames
+DJI_0129_2: 590 component-frames; 0 vanished box-frames
+DJI_0173_2: 450 component-frames; 0 vanished box-frames
+DJI_0221_2: 697 component-frames; 0 vanished box-frames
+DJI_0255_1: 600 component-frames; 0 vanished box-frames
+DJI_0257_2: 1126 component-frames; 0 vanished box-frames
+DJI_0307_2: 161 component-frames; 0 vanished box-frames
+DJI_0237_2: 2943 component-frames; 0 vanished box-frames
+DJI_0277_2: 985 component-frames; 0 vanished box-frames
+DJI_0303_2: 986 component-frames; 0 vanished box-frames
+DJI_0309_4: 1050 component-frames; 0 vanished box-frames
+p>=1e-05             all: miss 1334/11300 (11.8%); miss share 100.0%
+p>=1e-05    intermediate: miss 211/1334 (15.8%); miss share 15.8%
+p>=1e-05           mixed: miss 9/89 (10.1%); miss share 0.7%
+p>=1e-05          moving: miss 770/7878 (9.8%); miss share 57.7%
+p>=1e-05 near_stationary: miss 344/1999 (17.2%); miss share 25.8%
+p>=0.5             all: miss 2155/11300 (19.1%); miss share 100.0%
+p>=0.5    intermediate: miss 314/1334 (23.5%); miss share 14.6%
+p>=0.5           mixed: miss 29/89 (32.6%); miss share 1.3%
+p>=0.5          moving: miss 1309/7878 (16.6%); miss share 60.7%
+p>=0.5 near_stationary: miss 503/1999 (25.2%); miss share 23.3%
+Wrote results/miss_attribution/official_rgbt/test; author counts verified against results/scores/official_rgbt/test/summary.json
