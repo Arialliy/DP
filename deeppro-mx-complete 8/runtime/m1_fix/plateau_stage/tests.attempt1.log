@@ -1,0 +1,30 @@
+{"suite": "test_mx_data", "test": "test_background_point_avoids_boxes", "status": "passed", "seconds": 0.2587233000085689}
+{"suite": "test_mx_data", "test": "test_detection_bank_modes", "status": "passed", "seconds": 0.004745875994558446}
+{"suite": "test_mx_data", "test": "test_draw_exemplars_stays_outside_the_window", "status": "passed", "seconds": 0.22017479300848208}
+{"suite": "test_mx_data", "test": "test_exemplar_sample_shapes_fakes_and_frames", "status": "passed", "seconds": 0.3142787600081647}
+{"suite": "test_mx_data", "test": "test_frame_peaks_deduplicates_before_top100", "status": "passed", "seconds": 0.0032583519932813942}
+{"suite": "test_mx_data", "test": "test_frame_peaks_diagonal_members_are_one_eight_connected_plateau", "status": "passed", "seconds": 0.0005131919897394255}
+{"suite": "test_mx_data", "test": "test_frame_peaks_equal_scores_sort_representatives_in_row_major_order", "status": "passed", "seconds": 0.0011000300000887364}
+{"suite": "test_mx_data", "test": "test_frame_peaks_floor_is_strict_and_empty_shape_is_preserved", "status": "passed", "seconds": 0.0008620870066806674}
+{"suite": "test_mx_data", "test": "test_frame_peaks_isolated_scores_and_sorting_are_unchanged", "status": "passed", "seconds": 0.001197660996695049}
+{"suite": "test_mx_data", "test": "test_frame_peaks_nonconvex_plateau_uses_an_actual_peak", "status": "passed", "seconds": 0.001288868996198289}
+{"suite": "test_mx_data", "test": "test_frame_peaks_separate_equal_plateaus_and_centroid_ties", "status": "passed", "seconds": 0.0005678269953932613}
+{"suite": "test_mx_data", "test": "test_frame_peaks_single_pixel_is_one_blob", "status": "passed", "seconds": 0.0006725849962094799}
+{"suite": "test_mx_data", "test": "test_greedy_select_and_pools", "status": "passed", "seconds": 0.00030148099176585674}
+{"suite": "test_mx_data", "test": "test_paper_label_rule_is_the_exported_mask", "status": "passed", "seconds": 0.03153985200333409}
+{"suite": "test_mx_data", "test": "test_patches_centre_edge_padding_and_normalisation", "status": "passed", "seconds": 0.00035445799585431814}
+{"suite": "test_mx_data", "test": "test_peak_rows", "status": "passed", "seconds": 0.00011255498975515366}
+{"suite": "test_mx_data", "test": "test_read_speeds_and_moving_table", "status": "passed", "seconds": 0.006644403008976951}
+{"suite": "test_mx_data", "test": "test_self_bank_is_label_free_and_outside_the_window", "status": "passed", "seconds": 0.0335611750051612}
+{"suite": "test_miss_recovery", "test": "test_box_hits_follow_the_mask", "status": "passed", "seconds": 0.00034350299392826855}
+{"suite": "test_miss_recovery", "test": "test_box_hits_keep_official_top_left_edge_behavior", "status": "passed", "seconds": 0.0035599939874373376}
+Traceback (most recent call last):
+  File "/experiment/runtime/m1_fix/plateau_stage/validate_stage.py", line 26, in <module>
+    func()
+  File "/experiment/runtime/m1_fix/plateau_stage/fixed/code/test_miss_recovery.py", line 128, in test_command_line_on_a_dataset_on_disk
+    res = m1.main(['--run', 'fake', '--split', ','.join(data), '--nproc', '1', '--per-frame', '60'])
+  File "/experiment/runtime/m1_fix/plateau_stage/fixed/code/miss_recovery.py", line 412, in main
+    clips = splits.clips(args.split)
+  File "/experiment/runtime/m1_fix/plateau_stage/fixed/code/splits.py", line 57, in clips
+    s = json.load(open(SPLIT_FILE))
+FileNotFoundError: [Errno 2] No such file or directory: '/experiment/runtime/m1_fix/plateau_stage/fixed/code/../configs/splits.json'

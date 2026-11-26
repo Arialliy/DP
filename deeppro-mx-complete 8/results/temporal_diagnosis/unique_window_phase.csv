@@ -1,0 +1,13 @@
+threshold,relative_position_start,relative_position_stop,scope,components,hits,misses,miss_rate
+1e-05,0,4,single_coverage_frames_only,132,101,31,0.23484848484848486
+1e-05,4,10,single_coverage_frames_only,1811,1584,227,0.12534511319712865
+1e-05,10,20,single_coverage_frames_only,2953,2587,366,0.12394175414832374
+1e-05,20,30,single_coverage_frames_only,2907,2571,336,0.11558307533539731
+1e-05,30,36,single_coverage_frames_only,1780,1588,192,0.10786516853932585
+1e-05,36,40,single_coverage_frames_only,96,74,22,0.22916666666666666
+0.5,0,4,single_coverage_frames_only,132,87,45,0.3409090909090909
+0.5,4,10,single_coverage_frames_only,1811,1435,376,0.20762009939260076
+0.5,10,20,single_coverage_frames_only,2953,2388,565,0.19133084998306807
+0.5,20,30,single_coverage_frames_only,2907,2356,551,0.1895424836601307
+0.5,30,36,single_coverage_frames_only,1780,1466,314,0.17640449438202246
+0.5,36,40,single_coverage_frames_only,96,64,32,0.3333333333333333

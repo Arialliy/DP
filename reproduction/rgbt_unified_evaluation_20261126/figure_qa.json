@@ -1,0 +1,15 @@
+{
+  "reviewed_at": "2026-11-26T14:14:52.846039+00:00",
+  "source_csv_sha256": "1cc2e558add38a157256a1400555f4e3ab159ec8e0d74ef15726a0d27af5fcb1",
+  "png_sha256": "2b956e130e88de9c95954e045edae65f093ff93605d9a8708ded39076558ec1f",
+  "active_curves": 3,
+  "visual_review": "passed",
+  "checks": [
+    "Both axes and scientific-notation scale visible",
+    "Legend text readable and not clipped",
+    "All three current curves and status labels visible",
+    "Original 27 points preserved; no invented endpoints",
+    "Full-range and low-Fa views both present"
+  ],
+  "scope": "This review applies only to the recorded hashes. Later automatic updates require a new visual review."
+}

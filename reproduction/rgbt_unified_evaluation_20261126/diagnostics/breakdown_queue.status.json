@@ -1,0 +1,20 @@
+{
+  "pid": 655469,
+  "jobs": [
+    "author_released_reference",
+    "deeppro_plus_416648f66cbee93f",
+    "deeppro_plus_c1c818212eb0c1d8"
+  ],
+  "state": "completed",
+  "gpu": 2,
+  "updated_at": "2026-11-26T18:17:10.835324+00:00",
+  "paused_scheduler_pid": 614951,
+  "stage": "inference_and_diagnostics",
+  "current_job": "deeppro_plus_c1c818212eb0c1d8",
+  "completed_jobs": [
+    "author_released_reference",
+    "deeppro_plus_416648f66cbee93f",
+    "deeppro_plus_c1c818212eb0c1d8"
+  ],
+  "restored_scheduler_pid": 665267
+}

@@ -1,0 +1,134 @@
+audit DJI_0049_2 miss frames 89
+audit DJI_0119_2 miss frames 6
+audit DJI_0155_2 miss frames 27
+audit DJI_0221_2 miss frames 39
+audit DJI_0237_2 miss frames 223
+audit DJI_0255_1 miss frames 50
+audit DJI_0257_2 miss frames 92
+audit DJI_0277_2 miss frames 4
+audit DJI_0303_2 miss frames 40
+audit DJI_0307_2 miss frames 17
+audit DJI_0309_4 miss frames 251
+{
+  "frames": 838,
+  "all": {
+    "misses": 1545,
+    "loss_stage": {
+      "outside_top100": 364,
+      "retained": 548,
+      "suppressed_by_9x9_nms": 435,
+      "below_contrast_floor": 198
+    },
+    "has_r3_candidate": 548,
+    "has_mask_eligible_selected_candidate": 650,
+    "mask_eligible_but_no_r3": 102,
+    "r3_eligible_but_no_mask": 0,
+    "within_7px_image_border": 50,
+    "local_abs_contrast_r3": {
+      "n": 1545,
+      "min": 0.1969757080078125,
+      "p25": 9.996841430664062,
+      "median": 17.611740112304688,
+      "p75": 29.640159606933594,
+      "max": 63.846588134765625
+    },
+    "nearest_retained_distance": {
+      "n": 1545,
+      "min": 0.0,
+      "p25": 1.5,
+      "median": 10.0,
+      "p75": 48.0,
+      "max": 300.5
+    },
+    "retained_candidate_scores": {
+      "n": 548,
+      "min": -7.449693553753374,
+      "p25": -0.8566536340367519,
+      "median": 0.09334860657062459,
+      "p75": 0.8380878605913223,
+      "max": 2.7239214803343264
+    },
+    "passed_existing_pooled1": 4,
+    "passed_existing_clip1": 58
+  },
+  "DJI_0309_4": {
+    "misses": 256,
+    "loss_stage": {
+      "outside_top100": 28,
+      "below_contrast_floor": 176,
+      "suppressed_by_9x9_nms": 47,
+      "retained": 5
+    },
+    "has_r3_candidate": 5,
+    "has_mask_eligible_selected_candidate": 18,
+    "mask_eligible_but_no_r3": 13,
+    "r3_eligible_but_no_mask": 0,
+    "within_7px_image_border": 1,
+    "local_abs_contrast_r3": {
+      "n": 256,
+      "min": 0.1969757080078125,
+      "p25": 1.2256927490234375,
+      "median": 1.9150886535644531,
+      "p75": 3.799091339111328,
+      "max": 43.94886779785156
+    },
+    "nearest_retained_distance": {
+      "n": 256,
+      "min": 0.5,
+      "p25": 50.25,
+      "median": 86.0,
+      "p75": 89.25,
+      "max": 141.0
+    },
+    "retained_candidate_scores": {
+      "n": 5,
+      "min": -1.3614051234888902,
+      "p25": -1.1588676442315993,
+      "median": -0.24956202156909368,
+      "p75": 0.054668069668023955,
+      "max": 0.7762505576221207
+    },
+    "passed_existing_pooled1": 0,
+    "passed_existing_clip1": 0
+  },
+  "DJI_0255_1": {
+    "misses": 50,
+    "loss_stage": {
+      "outside_top100": 2,
+      "below_contrast_floor": 1,
+      "retained": 45,
+      "suppressed_by_9x9_nms": 2
+    },
+    "has_r3_candidate": 45,
+    "has_mask_eligible_selected_candidate": 47,
+    "mask_eligible_but_no_r3": 2,
+    "r3_eligible_but_no_mask": 0,
+    "within_7px_image_border": 0,
+    "local_abs_contrast_r3": {
+      "n": 50,
+      "min": 2.6950836181640625,
+      "p25": 6.175662994384766,
+      "median": 9.39141845703125,
+      "p75": 15.0899658203125,
+      "max": 28.76514434814453
+    },
+    "nearest_retained_distance": {
+      "n": 50,
+      "min": 0.5,
+      "p25": 0.5,
+      "median": 1.0,
+      "p75": 1.875,
+      "max": 172.5
+    },
+    "retained_candidate_scores": {
+      "n": 45,
+      "min": -7.449693553753374,
+      "p25": -5.174508963729058,
+      "median": -3.95540696839493,
+      "p75": -1.9827435456924327,
+      "max": 0.5227753316102572
+    },
+    "passed_existing_pooled1": 0,
+    "passed_existing_clip1": 17
+  }
+}

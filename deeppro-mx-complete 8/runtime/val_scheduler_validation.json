@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checks": [
+    "main container is adopted only; absent main and no val record launch nothing",
+    "partial val selection cannot release controls",
+    "a complete selection with wrong clips cannot release controls",
+    "compute process, memory=500 MiB, and reserved main GPU each block reuse",
+    "idle <500 MiB launches exact noex recipe once, records diagnostics and SHA",
+    "scheduler restart adopts running worker; no duplicate and no GPU reuse while initializing",
+    "second idle GPU launches self concurrently, preserves self bank",
+    "failed worker is terminal and not retried; subsequent task can use its freed GPU",
+    "exit0 requires all32 selections and verified score; mx preserves gain2",
+    "exit0 without final artifacts is failed; noapp uses mxc_lv",
+    "main failure halts new launch requests without stopping existing workers",
+    "created-container recovery waits for idle GPU then starts same container once",
+    "six-run plan has no official/test stage and never creates main"
+  ],
+  "gpu_calls": 0,
+  "docker_calls": 0,
+  "training_runs": 0,
+  "fixture_roots": [
+    "/home/md0/ly/DP/deeppro-mx-complete 8/runtime/test_fixtures/val_scheduler/validation_r3rqa97d",
+    "/home/md0/ly/DP/deeppro-mx-complete 8/runtime/test_fixtures/val_scheduler/validation_lwunob0w"
+  ],
+  "note": "Synthetic state and score fixtures only; not experimental results."
+}

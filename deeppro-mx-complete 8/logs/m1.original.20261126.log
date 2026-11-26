@@ -1,0 +1,211 @@
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0109_1   targets=    90 candidates=   9000 windows=3
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0049_2   targets=   692 candidates=   8835 windows=3
+DJI_0119_2   targets=   360 candidates=  17721 windows=5
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0159_2   targets=   250 candidates=  24744 windows=7
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0155_2   targets=   410 candidates=  41000 windows=12
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0173_2   targets=   450 candidates=  44524 windows=13
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0129_2   targets=   590 candidates=  58945 windows=17
+DJI_0221_2   targets=   697 candidates=  58276 windows=17
+DJI_0307_2   targets=   161 candidates=  17795 windows=5
+DJI_0277_2   targets=   985 candidates=  36174 windows=11
+DJI_0255_1   targets=   600 candidates=  56054 windows=17
+DJI_0237_2   targets=  3717 candidates=  37928 windows=12
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0257_2   targets=  1126 candidates=  57255 windows=17
+/experiment/code/miss_recovery.py:137: RuntimeWarning: overflow encountered in exp
+  prob = 1.0 / (1.0 + np.exp(-np.asarray(logits[t], np.float32)))
+DJI_0303_2   targets=  1487 candidates=  56669 windows=16
+DJI_0309_4   targets=  1050 candidates=  60025 windows=17
+
+== pooled budget 0.25 / official th 1e-05 (candidates per frame admitted; box level)
+group                     targets  misses recovered   frac  recall    +rec
+all                         12665    1545        45   0.03   0.878   0.882
+frames < 60                  2261     644        29   0.05   0.715   0.728
+frames >= 60                10404     901        16   0.02   0.913   0.915
+speed near                   2850     521        36   0.07   0.817   0.830
+speed mid                    1442     232         7   0.03   0.839   0.844
+speed moving                 8373     792         2   0.00   0.905   0.906
+camera static                4479     587         2   0.00   0.869   0.869
+camera moving                8186     958        43   0.04   0.883   0.888
+category 1                    463     151         0   0.00   0.674   0.674
+category 3                   3775     870        39   0.04   0.770   0.780
+category 4                    135      25         0   0.00   0.815   0.815
+category 5                   3343     206         6   0.03   0.938   0.940
+category 6                   4949     293         0   0.00   0.941   0.941
+clip DJI_0049_2               692     395         2   0.01   0.429   0.432
+clip DJI_0119_2               360       6         0   0.00   0.983   0.983
+clip DJI_0155_2               410      27         0   0.00   0.934   0.934
+clip DJI_0221_2               697      39         0   0.00   0.944   0.944
+clip DJI_0237_2              3717     614        43   0.07   0.835   0.846
+clip DJI_0255_1               600      50         0   0.00   0.917   0.917
+clip DJI_0257_2              1126      92         0   0.00   0.918   0.918
+clip DJI_0277_2               985       4         0   0.00   0.996   0.996
+clip DJI_0303_2              1487      45         0   0.00   0.970   0.970
+clip DJI_0307_2               161      17         0   0.00   0.894   0.894
+clip DJI_0309_4              1050     256         0   0.00   0.756   0.756
+
+== pooled budget 0.25 / official th 0.5 (candidates per frame admitted; box level)
+group                     targets  misses recovered   frac  recall    +rec
+all                         12665    2583        67   0.03   0.796   0.801
+frames < 60                  2261     870        31   0.04   0.615   0.629
+frames >= 60                10404    1713        36   0.02   0.835   0.839
+speed near                   2850     843        50   0.06   0.704   0.722
+speed mid                    1442     366         9   0.02   0.746   0.752
+speed moving                 8373    1374         8   0.01   0.836   0.837
+camera static                4479     864         3   0.00   0.807   0.808
+camera moving                8186    1719        64   0.04   0.790   0.798
+category 1                    463     243         0   0.00   0.475   0.475
+category 3                   3775    1366        56   0.04   0.638   0.653
+category 4                    135      54         0   0.00   0.600   0.600
+category 5                   3343     447        11   0.02   0.866   0.870
+category 6                   4949     473         0   0.00   0.904   0.904
+clip DJI_0049_2               692     465         3   0.01   0.328   0.332
+clip DJI_0119_2               360      36         0   0.00   0.900   0.900
+clip DJI_0155_2               410      55         0   0.00   0.866   0.866
+clip DJI_0159_2               250      11         3   0.27   0.956   0.968
+clip DJI_0173_2               450      18         0   0.00   0.960   0.960
+clip DJI_0221_2               697      80         0   0.00   0.885   0.885
+clip DJI_0237_2              3717    1144        61   0.05   0.692   0.709
+clip DJI_0255_1               600      77         0   0.00   0.872   0.872
+clip DJI_0257_2              1126     196         0   0.00   0.826   0.826
+clip DJI_0277_2               985       9         0   0.00   0.991   0.991
+clip DJI_0303_2              1487     137         0   0.00   0.908   0.908
+clip DJI_0307_2               161      17         0   0.00   0.894   0.894
+clip DJI_0309_4              1050     338         0   0.00   0.678   0.678
+
+== pooled budget 1 / official th 1e-05 (candidates per frame admitted; box level)
+group                     targets  misses recovered   frac  recall    +rec
+all                         12665    1545       102   0.07   0.878   0.886
+frames < 60                  2261     644        53   0.08   0.715   0.739
+frames >= 60                10404     901        49   0.05   0.913   0.918
+speed near                   2850     521        79   0.15   0.817   0.845
+speed mid                    1442     232        15   0.06   0.839   0.850
+speed moving                 8373     792         8   0.01   0.905   0.906
+camera static                4479     587         4   0.01   0.869   0.870
+camera moving                8186     958        98   0.10   0.883   0.895
+category 1                    463     151         1   0.01   0.674   0.676
+category 3                   3775     870        83   0.10   0.770   0.792
+category 4                    135      25         0   0.00   0.815   0.815
+category 5                   3343     206        18   0.09   0.938   0.944
+category 6                   4949     293         0   0.00   0.941   0.941
+clip DJI_0049_2               692     395         4   0.01   0.429   0.435
+clip DJI_0119_2               360       6         0   0.00   0.983   0.983
+clip DJI_0155_2               410      27         0   0.00   0.934   0.934
+clip DJI_0221_2               697      39         2   0.05   0.944   0.947
+clip DJI_0237_2              3717     614        96   0.16   0.835   0.861
+clip DJI_0255_1               600      50         0   0.00   0.917   0.917
+clip DJI_0257_2              1126      92         0   0.00   0.918   0.918
+clip DJI_0277_2               985       4         0   0.00   0.996   0.996
+clip DJI_0303_2              1487      45         0   0.00   0.970   0.970
+clip DJI_0307_2               161      17         0   0.00   0.894   0.894
+clip DJI_0309_4              1050     256         0   0.00   0.756   0.756
+
+== pooled budget 1 / official th 0.5 (candidates per frame admitted; box level)
+group                     targets  misses recovered   frac  recall    +rec
+all                         12665    2583       173   0.07   0.796   0.810
+frames < 60                  2261     870        66   0.08   0.615   0.644
+frames >= 60                10404    1713       107   0.06   0.835   0.846
+speed near                   2850     843       130   0.15   0.704   0.750
+speed mid                    1442     366        25   0.07   0.746   0.764
+speed moving                 8373    1374        18   0.01   0.836   0.838
+camera static                4479     864         6   0.01   0.807   0.808
+camera moving                8186    1719       167   0.10   0.790   0.810
+category 1                    463     243         3   0.01   0.475   0.482
+category 3                   3775    1366       126   0.09   0.638   0.672
+category 4                    135      54         0   0.00   0.600   0.600
+category 5                   3343     447        44   0.10   0.866   0.879
+category 6                   4949     473         0   0.00   0.904   0.904
+clip DJI_0049_2               692     465         5   0.01   0.328   0.335
+clip DJI_0119_2               360      36         0   0.00   0.900   0.900
+clip DJI_0155_2               410      55         0   0.00   0.866   0.866
+clip DJI_0159_2               250      11        11   1.00   0.956   1.000
+clip DJI_0173_2               450      18         0   0.00   0.960   0.960
+clip DJI_0221_2               697      80         3   0.04   0.885   0.890
+clip DJI_0237_2              3717    1144       153   0.13   0.692   0.733
+clip DJI_0255_1               600      77         0   0.00   0.872   0.872
+clip DJI_0257_2              1126     196         1   0.01   0.826   0.827
+clip DJI_0277_2               985       9         0   0.00   0.991   0.991
+clip DJI_0303_2              1487     137         0   0.00   0.908   0.908
+clip DJI_0307_2               161      17         0   0.00   0.894   0.894
+clip DJI_0309_4              1050     338         0   0.00   0.678   0.678
+
+== pooled budget 2 / official th 1e-05 (candidates per frame admitted; box level)
+group                     targets  misses recovered   frac  recall    +rec
+all                         12665    1545       162   0.10   0.878   0.891
+frames < 60                  2261     644        85   0.13   0.715   0.753
+frames >= 60                10404     901        77   0.09   0.913   0.921
+speed near                   2850     521       122   0.23   0.817   0.860
+speed mid                    1442     232        24   0.10   0.839   0.856
+speed moving                 8373     792        16   0.02   0.905   0.907
+camera static                4479     587         8   0.01   0.869   0.871
+camera moving                8186     958       154   0.16   0.883   0.902
+category 1                    463     151         4   0.03   0.674   0.683
+category 3                   3775     870       139   0.16   0.770   0.806
+category 4                    135      25         0   0.00   0.815   0.815
+category 5                   3343     206        19   0.09   0.938   0.944
+category 6                   4949     293         0   0.00   0.941   0.941
+clip DJI_0049_2               692     395         8   0.02   0.429   0.441
+clip DJI_0119_2               360       6         0   0.00   0.983   0.983
+clip DJI_0155_2               410      27         0   0.00   0.934   0.934
+clip DJI_0221_2               697      39         2   0.05   0.944   0.947
+clip DJI_0237_2              3717     614       152   0.25   0.835   0.876
+clip DJI_0255_1               600      50         0   0.00   0.917   0.917
+clip DJI_0257_2              1126      92         0   0.00   0.918   0.918
+clip DJI_0277_2               985       4         0   0.00   0.996   0.996
+clip DJI_0303_2              1487      45         0   0.00   0.970   0.970
+clip DJI_0307_2               161      17         0   0.00   0.894   0.894
+clip DJI_0309_4              1050     256         0   0.00   0.756   0.756
+
+== pooled budget 2 / official th 0.5 (candidates per frame admitted; box level)
+group                     targets  misses recovered   frac  recall    +rec
+all                         12665    2583       289   0.11   0.796   0.819
+frames < 60                  2261     870       115   0.13   0.615   0.666
+frames >= 60                10404    1713       174   0.10   0.835   0.852
+speed near                   2850     843       199   0.24   0.704   0.774
+speed mid                    1442     366        44   0.12   0.746   0.777
+speed moving                 8373    1374        46   0.03   0.836   0.841
+camera static                4479     864        13   0.02   0.807   0.810
+camera moving                8186    1719       276   0.16   0.790   0.824
+category 1                    463     243        13   0.05   0.475   0.503
+category 3                   3775    1366       221   0.16   0.638   0.697
+category 4                    135      54         0   0.00   0.600   0.600
+category 5                   3343     447        54   0.12   0.866   0.882
+category 6                   4949     473         1   0.00   0.904   0.905
+clip DJI_0049_2               692     465        10   0.02   0.328   0.342
+clip DJI_0119_2               360      36         0   0.00   0.900   0.900
+clip DJI_0155_2               410      55         0   0.00   0.866   0.866
+clip DJI_0159_2               250      11        11   1.00   0.956   1.000
+clip DJI_0173_2               450      18         0   0.00   0.960   0.960
+clip DJI_0221_2               697      80         5   0.06   0.885   0.892
+clip DJI_0237_2              3717    1144       260   0.23   0.692   0.762
+clip DJI_0255_1               600      77         1   0.01   0.872   0.873
+clip DJI_0257_2              1126     196         2   0.01   0.826   0.828
+clip DJI_0277_2               985       9         0   0.00   0.991   0.991
+clip DJI_0303_2              1487     137         0   0.00   0.908   0.908
+clip DJI_0307_2               161      17         0   0.00   0.894   0.894
+clip DJI_0309_4              1050     338         0   0.00   0.678   0.678

@@ -1,0 +1,132 @@
+[
+  {
+    "threshold": 1e-05,
+    "period": "first60",
+    "frames": 900,
+    "frame_share": 0.15060240963855423,
+    "component_share": 0.18663716814159292,
+    "miss_share": 0.4085457271364318,
+    "components": 2109,
+    "hits": 1564,
+    "misses": 545,
+    "miss_rate": 0.25841631104789
+  },
+  {
+    "threshold": 1e-05,
+    "period": "later",
+    "frames": 5076,
+    "frame_share": 0.8493975903614458,
+    "component_share": 0.8133628318584071,
+    "miss_share": 0.5914542728635682,
+    "components": 9191,
+    "hits": 8402,
+    "misses": 789,
+    "miss_rate": 0.08584484822108585
+  },
+  {
+    "threshold": 0.5,
+    "period": "first60",
+    "frames": 900,
+    "frame_share": 0.15060240963855423,
+    "component_share": 0.18663716814159292,
+    "miss_share": 0.34663573085846866,
+    "components": 2109,
+    "hits": 1362,
+    "misses": 747,
+    "miss_rate": 0.3541963015647226
+  },
+  {
+    "threshold": 0.5,
+    "period": "later",
+    "frames": 5076,
+    "frame_share": 0.8493975903614458,
+    "component_share": 0.8133628318584071,
+    "miss_share": 0.6533642691415313,
+    "components": 9191,
+    "hits": 7783,
+    "misses": 1408,
+    "miss_rate": 0.1531933413121532
+  }
+]
+[
+  {
+    "threshold": 1e-05,
+    "clip": "DJI_0255_1",
+    "cutoff": 40,
+    "period": "early",
+    "components": 40,
+    "hits": 3,
+    "misses": 37,
+    "miss_rate": 0.925
+  },
+  {
+    "threshold": 1e-05,
+    "clip": "DJI_0255_1",
+    "cutoff": 40,
+    "period": "later",
+    "components": 560,
+    "hits": 547,
+    "misses": 13,
+    "miss_rate": 0.023214285714285715
+  },
+  {
+    "threshold": 1e-05,
+    "clip": "DJI_0307_2",
+    "cutoff": 40,
+    "period": "early",
+    "components": 21,
+    "hits": 4,
+    "misses": 17,
+    "miss_rate": 0.8095238095238095
+  },
+  {
+    "threshold": 1e-05,
+    "clip": "DJI_0307_2",
+    "cutoff": 40,
+    "period": "later",
+    "components": 140,
+    "hits": 140,
+    "misses": 0,
+    "miss_rate": 0.0
+  },
+  {
+    "threshold": 0.5,
+    "clip": "DJI_0255_1",
+    "cutoff": 40,
+    "period": "early",
+    "components": 40,
+    "hits": 0,
+    "misses": 40,
+    "miss_rate": 1.0
+  },
+  {
+    "threshold": 0.5,
+    "clip": "DJI_0255_1",
+    "cutoff": 40,
+    "period": "later",
+    "components": 560,
+    "hits": 523,
+    "misses": 37,
+    "miss_rate": 0.06607142857142857
+  },
+  {
+    "threshold": 0.5,
+    "clip": "DJI_0307_2",
+    "cutoff": 40,
+    "period": "early",
+    "components": 21,
+    "hits": 4,
+    "misses": 17,
+    "miss_rate": 0.8095238095238095
+  },
+  {
+    "threshold": 0.5,
+    "clip": "DJI_0307_2",
+    "cutoff": 40,
+    "period": "later",
+    "components": 140,
+    "hits": 140,
+    "misses": 0,
+    "miss_rate": 0.0
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "scope": "All 60 completed v8 homography outputs; matrix geometry only, no images or model execution",
+  "clips": 60,
+  "frame_pairs": 25051,
+  "pair_methods": {
+    "homography": 24956,
+    "affine": 6,
+    "shift": 1,
+    "identity": 88
+  },
+  "windows": 720,
+  "test_windows": 172,
+  "low_cover_windows": [
+    {
+      "clip": "DJI_0277_2",
+      "test": true,
+      "window": 9,
+      "first": 324,
+      "last": 363,
+      "lowres_cover": 0.0,
+      "auto_low_cover_raw": true,
+      "common_view_fraction_min": 0.0,
+      "common_view_fraction_mean": 0.3598025711662075,
+      "frame_comparisons_without_common_view": 13,
+      "common_view_diff_max": 14.218418207997814
+    },
+    {
+      "clip": "DJI_0277_2",
+      "test": true,
+      "window": 10,
+      "first": 326,
+      "last": 365,
+      "lowres_cover": 0.0,
+      "auto_low_cover_raw": true,
+      "common_view_fraction_min": 0.0,
+      "common_view_fraction_mean": 0.4540863177226814,
+      "frame_comparisons_without_common_view": 12,
+      "common_view_diff_max": 9.564779015240902
+    }
+  ],
+  "no_common_view_comparisons": 34,
+  "minimum_cover": 0.0,
+  "minimum_test_cover": 0.0,
+  "notes": [
+    "Coverage exactly follows the 4x low-resolution block-centre geometry and >=75% visibility rule; it does not measure photometric residual.",
+    "For auto at rate 1, cover<0.1 forces raw; otherwise raw-vs-warp requires measured stationarity residuals.",
+    "Common-view disagreement compares two estimated maps; neither is ground truth.",
+    "The source compare() maps an empty common view to zero difference; zero-common counts above audit whether this hides any window/frame comparisons.",
+    "Per-pair inlier residuals are not persisted by motion_image.py; <=1px applies only to accepted homographies, not affine/shift/identity fallbacks."
+  ]
+}

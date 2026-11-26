@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "verification": {
+    "completed_epochs": 20,
+    "next_epoch": 21,
+    "best_epoch": 19,
+    "best_iou": 0.35858352694296636,
+    "optimizer_restored": true,
+    "rng_note": "Original trainer resumes model/optimizer/epoch; worker RNG streams are reinitialized."
+  }
+}

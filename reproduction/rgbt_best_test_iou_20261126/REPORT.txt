@@ -1,10 +1,10 @@
 RGB-T 四模型：每轮测试 IoU 选择最佳权重
-更新：2026-11-26T19:37:10.174075+08:00
+更新：2026-11-27T02:21:17.522168+08:00
 保留研究数据流程、模型和训练配置；45训练 / 15测试；32 epochs；seed46；batch4。
 每轮完整测试172窗口，sigmoid > 0.5，全局IoU；同分保存较晚轮次。
-GPU 2: LV → MRTP；GPU 0: LVH → LVH-dec；GPU 1未使用。
+GPU 2 已预留，不再安排任务；GPU 0: LVH → MRTP续训 → LVH-dec；GPU 1: 既有DeepPro-Plus。
 
-DeepPro-LV | GPU 2 | running/eval | 训练 17/32 | 评估 16/32 | best 0.234774 @ epoch 16 | 评估窗口 54/172 | DJI_0173_2
-DeepPro-LVH | GPU 0 | running/eval | 训练 5/32 | 评估 4/32 | best 0.096875 @ epoch 4 | 评估窗口 170/172 | DJI_0309_4
-MRTP | GPU 2 | queued/waiting | 训练 0/32 | 评估 0/32 | best 未产生
-LVH-dec | GPU 0 | queued/waiting | 训练 0/32 | 评估 0/32 | best 未产生
+DeepPro-LV | GPU 2 | completed/completed | 训练 32/32 | 评估 32/32 | best 0.234774 @ epoch 16
+DeepPro-LVH | GPU 0 | completed/completed | 训练 32/32 | 评估 32/32 | best 0.338000 @ epoch 30
+MRTP | GPU 0 | completed/completed | 训练 32/32 | 评估 32/32 | best 0.358584 @ epoch 19
+LVH-dec | GPU 0 | running/eval | 训练 19/32 | 评估 18/32 | best 0.295421 @ epoch 18 | 评估窗口 4/172 | DJI_0109_1

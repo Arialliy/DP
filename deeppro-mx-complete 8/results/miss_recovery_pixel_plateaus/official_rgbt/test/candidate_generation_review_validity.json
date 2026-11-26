@@ -1,0 +1,102 @@
+{
+  "method": "For finite uint8 JPEG inputs, local_contrast validity depends only on counts of valid image pixels; exact rectangle-intersection counts reproduce cv2 BORDER_CONSTANT sums of an all-ones mask. No contrast features or proposals recalculated.",
+  "shapes": {
+    "DJI_0049_2": [
+      512,
+      640
+    ],
+    "DJI_0119_2": [
+      512,
+      640
+    ],
+    "DJI_0155_2": [
+      512,
+      640
+    ],
+    "DJI_0221_2": [
+      512,
+      640
+    ],
+    "DJI_0237_2": [
+      512,
+      640
+    ],
+    "DJI_0255_1": [
+      512,
+      640
+    ],
+    "DJI_0257_2": [
+      512,
+      640
+    ],
+    "DJI_0277_2": [
+      512,
+      640
+    ],
+    "DJI_0303_2": [
+      512,
+      640
+    ],
+    "DJI_0307_2": [
+      512,
+      640
+    ],
+    "DJI_0309_4": [
+      512,
+      640
+    ]
+  },
+  "validity_counts": {
+    "(512, 640)": {
+      "inner_min": 4,
+      "ring_min": 48,
+      "invalid_pixels": 0,
+      "total_pixels": 327680
+    }
+  },
+  "groups": {
+    "all": {
+      "targets": 1545,
+      "fully_defined": 1545,
+      "partly_undefined": 0,
+      "all_undefined": 0,
+      "empty_region": 0,
+      "r3_region_clipped_by_image_border": 1
+    },
+    "outside_top100": {
+      "targets": 364,
+      "fully_defined": 364,
+      "partly_undefined": 0,
+      "all_undefined": 0,
+      "empty_region": 0,
+      "r3_region_clipped_by_image_border": 0
+    },
+    "retained": {
+      "targets": 548,
+      "fully_defined": 548,
+      "partly_undefined": 0,
+      "all_undefined": 0,
+      "empty_region": 0,
+      "r3_region_clipped_by_image_border": 0
+    },
+    "suppressed_by_9x9_nms": {
+      "targets": 435,
+      "fully_defined": 435,
+      "partly_undefined": 0,
+      "all_undefined": 0,
+      "empty_region": 0,
+      "r3_region_clipped_by_image_border": 1
+    },
+    "below_contrast_floor": {
+      "targets": 198,
+      "fully_defined": 198,
+      "partly_undefined": 0,
+      "all_undefined": 0,
+      "empty_region": 0,
+      "r3_region_clipped_by_image_border": 0
+    }
+  },
+  "source_finite": "JPEG uint8 pixels converted to float32; box-filter sums bounded by 225*255=57375; no input NaN/Inf or overflow",
+  "all_original_jpegs_rechecked": false,
+  "note": "Image dimensions and finite uint8 format checked using first source JPEG of each clip; previous complete proposal audit read every 838 missed frame and matched stored points exactly."
+}

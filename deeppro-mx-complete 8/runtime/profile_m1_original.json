@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "container": "dp-mta-v8-profile-m1-original-20261126",
+  "container_id": "f780cc754b319b7505f4e74da2fac51e4d11b2eec3a2840e4d7524135aba01e9",
+  "started_at": "2026-11-26T22:45:25.740746+08:00",
+  "stages": [
+    "profile",
+    "original_M1_oracle_location_only"
+  ],
+  "training_authorized_by_this_result": false,
+  "profile_completed": true,
+  "profile_completed_recorded_at": "2026-11-26T22:52:06.970766+08:00",
+  "current_stage": "original_M1_oracle_location_only",
+  "motion_manifest_sha256": "5757f9760d3fc9a41d999f43ec61301778a3b9fac5d058fd3a1aa5abad84e1f8",
+  "exit_code": 0,
+  "finished_at": "2026-11-26T14:52:32.73402806Z",
+  "archived_output": "results/miss_recovery_oracle_location"
+}

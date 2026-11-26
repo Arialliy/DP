@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "reviewer": "v8_runtime_review",
+  "patch_sha256": "e51d8d16d332c30ed9b1f7e59c8526fe911838cfa21b31eca6eca140c5b51f55",
+  "blocking_issues": [],
+  "checked": [
+    "actual proposals only",
+    "finite score and teacher guard",
+    "threshold-stable one-to-one matching",
+    "conservative tied clutter threshold",
+    "maximum-matching geometric ceiling",
+    "leave-whole-recording-out normalization and fit",
+    "fixed predeclared gate"
+  ],
+  "limitations": [
+    "Per-box recovery, not official merged components",
+    "Clutter budget counts candidates farther than 8 pixels from every target; it is not total false detections or official pixel Fa",
+    "Threshold calibration uses evaluated labels; diagnostic only",
+    "Group candidate ceilings are independent bounds and not additive"
+  ]
+}

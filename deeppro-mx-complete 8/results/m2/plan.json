@@ -1,0 +1,96 @@
+{
+  "kind": "M2_prediction_only_backcast",
+  "version": 1,
+  "recorded_at": "2026-11-27T01:33:43.680678",
+  "status": "parameters_fixed_before_M2_measurements",
+  "purpose": "Training-free temporal backcasting diagnostic; do not infer its result from M1 failure",
+  "models": [
+    "raw_stop",
+    "raw_cv"
+  ],
+  "coords": "raw",
+  "homography_enabled": false,
+  "clips": [
+    "DJI_0049_2",
+    "DJI_0109_1",
+    "DJI_0119_2",
+    "DJI_0129_2",
+    "DJI_0155_2",
+    "DJI_0159_2",
+    "DJI_0173_2",
+    "DJI_0221_2",
+    "DJI_0237_2",
+    "DJI_0255_1",
+    "DJI_0257_2",
+    "DJI_0277_2",
+    "DJI_0303_2",
+    "DJI_0307_2",
+    "DJI_0309_4"
+  ],
+  "predictions": "cache/preds/official_rgbt",
+  "teacher_checkpoint": "inputs/official_rgbt_best_model.pth",
+  "clip_list_source": "configs/splits.json#/official_test",
+  "clip_list_source_sha256": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464",
+  "parameters": {
+    "early_first": 0,
+    "early_last": 59,
+    "teacher_first": 60,
+    "teacher_probability_min": 0.5,
+    "teacher_logit_min_inclusive": 0.0,
+    "teacher_peak_nms_size": 9,
+    "teacher_peak_topk": 300,
+    "association_max_gap": 3,
+    "association_max_px_per_frame": 10.0,
+    "fit_first_window_frames": 40,
+    "minimum_fit_points": 10,
+    "minimum_fit_span": 9,
+    "maximum_fit_rms_px": 3.0,
+    "candidate_nms_radius_px": 3.0,
+    "evaluation_radius_px": 3.0,
+    "distance_bin_upper_frames": [
+      30,
+      60,
+      120,
+      240
+    ]
+  },
+  "teacher_extraction": "Local maxima as evaluate.peaks with existing logit floor -12, then inclusive logit>=0; retain exact-zero logits. Deterministic score desc/y/x order before top300. No early-frame values are used for proposals.",
+  "association": "At each teacher frame, Hungarian maximum-valid-cardinality/minimum-distance one-to-one match to last observations; dt<=3 and Euclidean distance<=10*dt. Invalid assignments have cost exceeding the maximum sum of valid costs and are discarded. Unmatched detections start new tracks; no GT IDs or GT speed.",
+  "fitting": "For a track with first detection t0, use only observations with t in [t0,t0+39]. Require >=10 observations spanning >=9 frames. raw_stop uses coordinatewise median; raw_cv uses time-centered OLS x/y. Each model independently requires Euclidean RMS residual<=3px on the same fit observations. Never choose a model using GT.",
+  "projection": "Each accepted track predicts every frame 0..59 with no horizon truncation. Preserve every raw projected point and finite/in-image/NMS status. Non-finite/out-of-image points are recorded, not submitted as image candidates.",
+  "candidate_nms": "Separate per model/frame; rank by descending fit-point count, descending median teacher logit, then deterministic track ID. Suppress points at Euclidean distance<=3px from a retained point, recording suppressor.",
+  "generation_isolation": "Generate from NPY arrays (shape supplies frame count/H/W), cached prediction metadata and this plan only. Do not load Scene, boxes, masks, targets.csv, or any GT in generation. Seal tracks/teacher_points/points plus SHA256 in manifest before evaluation; evaluate in a separate process.",
+  "evaluation": "Match all retained image candidates to all GT box centres one-to-one with maximum-valid-cardinality/minimum Euclidean distance<=3px. Matching is independent of baseline hit/miss. Every unmatched candidate is wrong, including duplicates, distances3..8px and frames without GT; no exclusion band.",
+  "baseline_thresholds": {
+    "primary": 0.5,
+    "secondary": 1e-05
+  },
+  "baseline_hit_source": "results/m2/inputs/m1_targets_baseline.csv",
+  "expected_first60_baseline_misses": {
+    "0.5": 870,
+    "1e-05": 644
+  },
+  "metrics": [
+    "early original misses recovered and recovery fraction",
+    "actual wrong image candidates per early frame",
+    "candidate precision",
+    "raw/in-image/NMS retained/suppressed/out-of-image counts",
+    "per-clip results",
+    "post-hoc teacher coverage and track purity",
+    "backcast-distance bands 1-30/31-60/61-120/121-240/>240"
+  ],
+  "teacher_coverage": "Evaluation only: match teacher detections to GT by the same3px one-to-one rule. Report any later teacher for each early GT track, and >=10 matched fit observations in one independently accepted predicted track. Never use coverage/purity to filter predictions.",
+  "limitations": [
+    "Primary unit is GT box, not merged official connected component.",
+    "M2 uses Euclidean3px; M1 used Chebyshev3px.",
+    "Missing annotations are not assumed to be real targets: unmatched predictions count as wrong under supplied GT.",
+    "Long backcasting and identity ambiguity may fail; report distances and all false candidates.",
+    "Both stop/CV results are reported; no GT-driven choice or parameter tuning."
+  ],
+  "M2_GO_threshold": null,
+  "training_authorization": false,
+  "source_policy": "No GPU, no model inference, no training, no image-based proposals, no homography in this diagnostic.",
+  "baseline_hit_source_original": "results/miss_recovery/official_rgbt/test/targets.csv",
+  "baseline_hit_source_sha256": "d98c103bdf2c88133aa73be5e815f2f66e006d40ed972d4ab4dbf3a2e3eb89c6",
+  "baseline_source_amendment": "Before any real M2 generation: byte-identical frozen copy requested by root to avoid M1 rerun/archive races; no algorithm parameters changed."
+}

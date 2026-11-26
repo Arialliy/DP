@@ -1,0 +1,17 @@
+{
+  "job_id": "deeppro_plus_416648f66cbee93f",
+  "model": "DeepPro-Plus",
+  "model_id": "deeppro_plus",
+  "arch": "deeppro_plus",
+  "created_at": "2026-11-26T17:16:07.327416+00:00",
+  "checkpoint": "checkpoints/deeppro_plus_416648f66cbee93f/best_model.pth",
+  "checkpoint_sha256": "416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db",
+  "train_config": "checkpoints/deeppro_plus_416648f66cbee93f/train_config.json",
+  "training_epochs_completed": 32,
+  "final_checkpoint": true,
+  "variants": [
+    "native"
+  ],
+  "primary_variant": "native",
+  "source_checkpoint": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth"
+}

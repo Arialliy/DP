@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": [
+    "all matches pre-existing independent M1 audit",
+    "exact_frames_0_59 matches pre-existing independent M1 audit",
+    "exact_frames_60_onward matches pre-existing independent M1 audit",
+    "all recorded source SHA-256 values verified after analysis",
+    "all 172 window ownership/counts reconcile; 5,976 frames and 12,665 target rows counted once"
+  ],
+  "new_model_forwards": 0,
+  "new_training_runs": 0,
+  "output_sha256": {
+    "analysis.json": "19655cb15defaa1869788734cd1266fb3905e0962f2d34e8e23f0fdceae93368",
+    "analysis_stdout.json": "1719cf20a74da87be46d369482c8e18151e441b1a91b21b7310ba6edf39b5378",
+    "analysis_zh.txt": "095db14230004cc4b1cb08c0feb439b3d5c9f1fb3d8c8e77cec220bf11f2f106",
+    "clip_comparison.csv": "22747ed5e0bd35775e24d81b75d0c910217c42e78a39e3fcee2e8065d937fd40",
+    "target_time_groups.csv": "1c63d9a786f437366a7c840e1ee2281215f2eaa0323585cf76f036b06f40ba98",
+    "window_analysis.csv": "384c492816a1e42ba416bd0fe6e43bd01e5c5cd0bf613313b461240cabee8e6e",
+    "window_associations.csv": "4fcb2465e30687d4dfc2220a72e7f4b14d833fadb3aadab90aa29d24603fd975",
+    "window_groups.csv": "9473159a8f57b9aa896c1302748513aa6c4fdb6fa935b61457384971e5492248",
+    "within_clip_correlations.csv": "42ce2fc65536a88c170a9cef8e96bfffde7a099e1d8f3c12d8920778c3f78a39"
+  }
+}

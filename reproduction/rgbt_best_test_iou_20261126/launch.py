@@ -13,10 +13,15 @@ def main():
     parser.add_argument('--start', action='store_true', help='Start detached scheduler after source/data/preflight checks')
     args = parser.parse_args()
     cfg = read_config()
+    planned = [model for model in cfg['models']
+               if cfg['gpu_assignment'][model['arch']] in cfg.get('allowed_gpus', (0, 2))
+               and cfg['gpu_assignment'][model['arch']] not in cfg.get('reserved_gpus', ())
+               and read_json(ROOT / 'jobs' / (model['arch'] + '.json'), {}).get('state')
+               not in ('completed', 'failed')]
     plan = [{'arch': model['arch'], 'gpu': cfg['gpu_assignment'][model['arch']],
              'container': container_name(model['arch']),
              'command': docker_command(container_name(model['arch']), cfg['gpu_assignment'][model['arch']],
-                                       'job.py', [model['arch']], detach=True)} for model in cfg['models']]
+                                       'job.py', [model['arch']], detach=True)} for model in planned]
     if not args.start:
         print(json.dumps({'mode': 'preview_only', 'output_root': str(ROOT), 'jobs': plan}, indent=2))
         return

@@ -1,0 +1,376 @@
+{
+  "queue": "20261126-s46-val",
+  "specs": [
+    {
+      "run": "mta_val_s46",
+      "arch": "mta_lv",
+      "extra": [],
+      "bank": null,
+      "main": true
+    },
+    {
+      "run": "mta_val_s46_noex",
+      "arch": "mta_lv",
+      "extra": [
+        "--ex-p-none",
+        "1"
+      ],
+      "bank": "none"
+    },
+    {
+      "run": "mta_val_s46_self",
+      "arch": "mta_lv",
+      "extra": [
+        "--ex-source",
+        "self"
+      ],
+      "bank": "self"
+    },
+    {
+      "run": "mta_val_s46_nogain",
+      "arch": "mta_lv",
+      "extra": [
+        "--gain-aug",
+        "1"
+      ],
+      "bank": null
+    },
+    {
+      "run": "mta_val_s46_mx",
+      "arch": "mx_lv",
+      "extra": [
+        "--gain-aug",
+        "2"
+      ],
+      "bank": null
+    },
+    {
+      "run": "mta_val_s46_noapp",
+      "arch": "mxc_lv",
+      "extra": [],
+      "bank": null
+    }
+  ],
+  "commands": {
+    "mta_val_s46": [
+      [
+        "python",
+        "code/train.py",
+        "--run",
+        "mta_val_s46",
+        "--arch",
+        "mta_lv",
+        "--split",
+        "train",
+        "--seed",
+        "46",
+        "--epochs",
+        "32",
+        "--batch",
+        "4",
+        "--checkpoint-selection",
+        "val_iou",
+        "--selection-split",
+        "val",
+        "--label-rule",
+        "paper_k6_floor",
+        "--device",
+        "cuda"
+      ],
+      [
+        "python",
+        "code/infer_mx.py",
+        "--run",
+        "mta_val_s46",
+        "--ckpt",
+        "runs/mta_val_s46/best_model.pth",
+        "--clips",
+        "val",
+        "--device",
+        "cuda",
+        "--save-arms"
+      ],
+      [
+        "python",
+        "code/score.py",
+        "--run",
+        "mta_val_s46",
+        "--split",
+        "val",
+        "--author",
+        "--label-rule",
+        "paper_k6_floor"
+      ]
+    ],
+    "mta_val_s46_noex": [
+      [
+        "python",
+        "code/train.py",
+        "--run",
+        "mta_val_s46_noex",
+        "--arch",
+        "mta_lv",
+        "--split",
+        "train",
+        "--seed",
+        "46",
+        "--epochs",
+        "32",
+        "--batch",
+        "4",
+        "--checkpoint-selection",
+        "val_iou",
+        "--selection-split",
+        "val",
+        "--label-rule",
+        "paper_k6_floor",
+        "--device",
+        "cuda",
+        "--ex-p-none",
+        "1"
+      ],
+      [
+        "python",
+        "code/infer_mx.py",
+        "--run",
+        "mta_val_s46_noex",
+        "--ckpt",
+        "runs/mta_val_s46_noex/best_model.pth",
+        "--clips",
+        "val",
+        "--device",
+        "cuda",
+        "--save-arms",
+        "--bank",
+        "none"
+      ],
+      [
+        "python",
+        "code/score.py",
+        "--run",
+        "mta_val_s46_noex",
+        "--split",
+        "val",
+        "--author",
+        "--label-rule",
+        "paper_k6_floor"
+      ]
+    ],
+    "mta_val_s46_self": [
+      [
+        "python",
+        "code/train.py",
+        "--run",
+        "mta_val_s46_self",
+        "--arch",
+        "mta_lv",
+        "--split",
+        "train",
+        "--seed",
+        "46",
+        "--epochs",
+        "32",
+        "--batch",
+        "4",
+        "--checkpoint-selection",
+        "val_iou",
+        "--selection-split",
+        "val",
+        "--label-rule",
+        "paper_k6_floor",
+        "--device",
+        "cuda",
+        "--ex-source",
+        "self"
+      ],
+      [
+        "python",
+        "code/infer_mx.py",
+        "--run",
+        "mta_val_s46_self",
+        "--ckpt",
+        "runs/mta_val_s46_self/best_model.pth",
+        "--clips",
+        "val",
+        "--device",
+        "cuda",
+        "--save-arms",
+        "--bank",
+        "self"
+      ],
+      [
+        "python",
+        "code/score.py",
+        "--run",
+        "mta_val_s46_self",
+        "--split",
+        "val",
+        "--author",
+        "--label-rule",
+        "paper_k6_floor"
+      ]
+    ],
+    "mta_val_s46_nogain": [
+      [
+        "python",
+        "code/train.py",
+        "--run",
+        "mta_val_s46_nogain",
+        "--arch",
+        "mta_lv",
+        "--split",
+        "train",
+        "--seed",
+        "46",
+        "--epochs",
+        "32",
+        "--batch",
+        "4",
+        "--checkpoint-selection",
+        "val_iou",
+        "--selection-split",
+        "val",
+        "--label-rule",
+        "paper_k6_floor",
+        "--device",
+        "cuda",
+        "--gain-aug",
+        "1"
+      ],
+      [
+        "python",
+        "code/infer_mx.py",
+        "--run",
+        "mta_val_s46_nogain",
+        "--ckpt",
+        "runs/mta_val_s46_nogain/best_model.pth",
+        "--clips",
+        "val",
+        "--device",
+        "cuda",
+        "--save-arms"
+      ],
+      [
+        "python",
+        "code/score.py",
+        "--run",
+        "mta_val_s46_nogain",
+        "--split",
+        "val",
+        "--author",
+        "--label-rule",
+        "paper_k6_floor"
+      ]
+    ],
+    "mta_val_s46_mx": [
+      [
+        "python",
+        "code/train.py",
+        "--run",
+        "mta_val_s46_mx",
+        "--arch",
+        "mx_lv",
+        "--split",
+        "train",
+        "--seed",
+        "46",
+        "--epochs",
+        "32",
+        "--batch",
+        "4",
+        "--checkpoint-selection",
+        "val_iou",
+        "--selection-split",
+        "val",
+        "--label-rule",
+        "paper_k6_floor",
+        "--device",
+        "cuda",
+        "--gain-aug",
+        "2"
+      ],
+      [
+        "python",
+        "code/infer_mx.py",
+        "--run",
+        "mta_val_s46_mx",
+        "--ckpt",
+        "runs/mta_val_s46_mx/best_model.pth",
+        "--clips",
+        "val",
+        "--device",
+        "cuda",
+        "--save-arms"
+      ],
+      [
+        "python",
+        "code/score.py",
+        "--run",
+        "mta_val_s46_mx",
+        "--split",
+        "val",
+        "--author",
+        "--label-rule",
+        "paper_k6_floor"
+      ]
+    ],
+    "mta_val_s46_noapp": [
+      [
+        "python",
+        "code/train.py",
+        "--run",
+        "mta_val_s46_noapp",
+        "--arch",
+        "mxc_lv",
+        "--split",
+        "train",
+        "--seed",
+        "46",
+        "--epochs",
+        "32",
+        "--batch",
+        "4",
+        "--checkpoint-selection",
+        "val_iou",
+        "--selection-split",
+        "val",
+        "--label-rule",
+        "paper_k6_floor",
+        "--device",
+        "cuda"
+      ],
+      [
+        "python",
+        "code/infer_mx.py",
+        "--run",
+        "mta_val_s46_noapp",
+        "--ckpt",
+        "runs/mta_val_s46_noapp/best_model.pth",
+        "--clips",
+        "val",
+        "--device",
+        "cuda",
+        "--save-arms"
+      ],
+      [
+        "python",
+        "code/score.py",
+        "--run",
+        "mta_val_s46_noapp",
+        "--split",
+        "val",
+        "--author",
+        "--label-rule",
+        "paper_k6_floor"
+      ]
+    ]
+  },
+  "gpu_rule": "physical GPU 0/1/2 only; no compute processes AND memory.used < 500 MiB",
+  "barrier": "main run has at least one complete finite full-val selection at threshold 0.5",
+  "main_container": "dp-mta-v8-val-main-20261126",
+  "main_is_adopted_only": true,
+  "m0_gate": false,
+  "m1_gate": false,
+  "official_phase": false,
+  "created_at": "2026-11-26T16:05:05.801503+00:00"
+}

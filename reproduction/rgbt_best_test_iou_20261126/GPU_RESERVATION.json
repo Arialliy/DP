@@ -1,0 +1,12 @@
+{
+  "reserved_gpu": 2,
+  "allowed_research_gpus": [
+    0
+  ],
+  "effective_at": "2026-11-26T13:37:57.158141+00:00",
+  "released_container": "dp-rgbt-best-test-iou-mr-lv-20261126",
+  "resume_checkpoint_epoch": 20,
+  "resume_gpu": 0,
+  "archive": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126/diagnostics/gpu2_reserved_20261126",
+  "training_source_unchanged": true
+}

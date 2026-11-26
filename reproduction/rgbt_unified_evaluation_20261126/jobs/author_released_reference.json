@@ -1,0 +1,17 @@
+{
+  "job_id": "author_released_reference",
+  "model": "DeepPro-Plus (released)",
+  "model_id": "released_reference",
+  "arch": "deeppro_plus",
+  "checkpoint": "checkpoints/author_released_reference/best_model.pth",
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "train_config": "checkpoints/author_released_reference/train_config.json",
+  "training_epochs_completed": null,
+  "final_checkpoint": false,
+  "checkpoint_status": "released",
+  "variants": [
+    "native"
+  ],
+  "primary_variant": "native",
+  "source_checkpoint": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/log/sem_seg/released_rgbt_deepproplus/checkpoints/best_model.pth"
+}

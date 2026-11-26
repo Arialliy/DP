@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "queue": "20261126-s46-val",
+  "created_at": "2026-11-26T16:02:32.059313+00:00",
+  "status": "main_failed_new_launches_halted",
+  "barrier": {
+    "passed": true,
+    "at": "2026-11-26T16:02:32.169469+00:00",
+    "epoch": 1,
+    "iou": 0.123,
+    "windows": 81,
+    "source": "runs/mta_val_s46/eval_log.jsonl"
+  },
+  "jobs": {
+    "mta_val_s46": {
+      "status": "failed",
+      "container_name": "dp-mta-v8-val-main-20261126",
+      "gpu": 2,
+      "arch": "mta_lv",
+      "attempts": 0,
+      "container_id": "fixture-main",
+      "started_at": "2026-11-26T16:02:32.067007+00:00",
+      "error": "container exited, exit=1, OOMKilled=False; ",
+      "finished_at": "2026-11-26T16:02:33.063867+00:00"
+    },
+    "mta_val_s46_noex": {
+      "status": "failed",
+      "container_name": "dp-mta-v8-val-noex-20261126",
+      "gpu": 0,
+      "arch": "mta_lv",
+      "attempts": 1,
+      "started_at": "2026-11-26T16:02:32.276946+00:00",
+      "container_id": "fixture-dp-mta-v8-val-noex-20261126",
+      "error": "container exited, exit=2, OOMKilled=False; ",
+      "finished_at": "2026-11-26T16:02:32.540312+00:00"
+    },
+    "mta_val_s46_self": {
+      "status": "completed",
+      "container_name": "dp-mta-v8-val-self-20261126",
+      "gpu": 1,
+      "arch": "mta_lv",
+      "attempts": 1,
+      "started_at": "2026-11-26T16:02:32.497387+00:00",
+      "container_id": "fixture-dp-mta-v8-val-self-20261126",
+      "finished_at": "2026-11-26T16:02:32.855372+00:00",
+      "exit_code": 0,
+      "checkpoint_sha256": "a6b0a5ea7e4dd99caff86311f469f04f4296bd981800db67783afa8972faa5dc"
+    },
+    "mta_val_s46_nogain": {
+      "status": "failed",
+      "container_name": "dp-mta-v8-val-nogain-20261126",
+      "gpu": 0,
+      "arch": "mta_lv",
+      "attempts": 1,
+      "started_at": "2026-11-26T16:02:32.564460+00:00",
+      "container_id": "fixture-dp-mta-v8-val-nogain-20261126",
+      "error": "container exited 0 but training progress is not completed at epoch 32/32",
+      "finished_at": "2026-11-26T16:02:33.024535+00:00"
+    },
+    "mta_val_s46_mx": {
+      "status": "running",
+      "container_name": "dp-mta-v8-val-mx-20261126",
+      "gpu": 1,
+      "arch": "mx_lv",
+      "attempts": 1,
+      "started_at": "2026-11-26T16:02:32.925787+00:00",
+      "container_id": "fixture-dp-mta-v8-val-mx-20261126"
+    },
+    "mta_val_s46_noapp": {
+      "status": "running",
+      "container_name": "dp-mta-v8-val-noapp-20261126",
+      "gpu": 0,
+      "arch": "mxc_lv",
+      "attempts": 1,
+      "started_at": "2026-11-26T16:02:33.043889+00:00",
+      "container_id": "fixture-dp-mta-v8-val-noapp-20261126"
+    }
+  },
+  "updated_at": "2026-11-26T16:02:33.093867+00:00",
+  "gpu_snapshot": {
+    "at": "2026-11-26T16:02:33.032545+00:00",
+    "devices": {
+      "0": {
+        "memory_mib": 499,
+        "pids": []
+      },
+      "1": {
+        "memory_mib": 0,
+        "pids": []
+      },
+      "2": {
+        "memory_mib": 0,
+        "pids": []
+      }
+    }
+  }
+}

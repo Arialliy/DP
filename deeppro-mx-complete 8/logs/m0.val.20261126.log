@@ -1,0 +1,69 @@
+DJI_0101_2   positives=    0 negatives=  392 windows=4
+DJI_0111_2   positives=    0 negatives=  500 windows=5
+DJI_0069_1   positives= 1098 negatives=  600 windows=12
+DJI_0115_2   positives=  557 negatives=  800 windows=8
+DJI_0113_3   positives=    9 negatives= 1000 windows=10
+DJI_0081_2   positives=  340 negatives= 1000 windows=10
+DJI_0121_2   positives= 1430 negatives= 1000 windows=10
+DJI_0123_6   positives=    0 negatives=  900 windows=9
+DJI_0057_1   positives=  724 negatives= 1600 windows=16
+DJI_0030_9   positives= 7232 negatives=  850 windows=17
+DJI_0131_2   positives=   45 negatives= 1600 windows=16
+DJI_0125_1   positives=    0 negatives= 1300 windows=13
+DJI_0143_1   positives=   88 negatives= 1200 windows=12
+DJI_0145_1   positives=   49 negatives=  800 windows=8
+DJI_0177_2   positives=    9 negatives=  500 windows=10
+DJI_0175_2   positives=   32 negatives= 1278 windows=13
+DJI_0217_2   positives=  709 negatives=  964 windows=11
+DJI_0243_2   positives=  234 negatives=  930 windows=10
+DJI_0043_2   positives=13038 negatives= 1100 windows=11
+DJI_0271_2   positives=    0 negatives=  200 windows=2
+DJI_0241_2   positives= 1271 negatives=  750 windows=15
+DJI_0253_3   positives=   43 negatives=  750 windows=15
+DJI_0229_2   positives= 4789 negatives= 1400 windows=14
+DJI_0287_1   positives=    0 negatives=  650 windows=8
+DJI_0253_2   positives=   56 negatives=  800 windows=16
+DJI_0287_2   positives=    0 negatives= 1282 windows=14
+DJI_0305_3   positives=    4 negatives= 1000 windows=10
+DJI_0305_7   positives=    0 negatives= 1000 windows=10
+DJI_0295_3   positives=  702 negatives= 1600 windows=16
+DJI_0253_1   positives=  664 negatives= 1550 windows=31
+DJI_0323_2   positives= 3010 negatives=  850 windows=17
+DJI_0273_1   positives=   20 negatives= 2540 windows=34
+
+clip            pos   neg      base    shape      cal     full      all cal_self base_max   oracle    gap  closure
+DJI_0030_9     6804   800     0.247    0.789    0.133    0.814    0.798    0.101    0.831    0.956 +0.709     0.80
+DJI_0043_2    13038  1100     0.728    0.672    0.624    0.665    0.681    0.765    0.595    0.789 +0.061    -1.04
+DJI_0057_1      724  1600     0.704    0.513    0.430    0.524    0.490    0.320    0.841    0.809 +0.105    -1.71
+DJI_0081_2      340  1000     0.265    0.727    0.699    0.727    0.706    0.264    0.611    0.855 +0.590     0.78
+DJI_0101_2        0   392       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+DJI_0111_2        0   500       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+DJI_0113_3        9  1000     0.752    0.923    0.534    0.954    0.952    1.000    0.408      nan   +nan      nan  (not eligible)
+DJI_0115_2      557   800     0.260    0.549    0.610    0.677    0.576    0.517    0.542    0.951 +0.691     0.60
+DJI_0121_2     1430  1000     0.269    0.937    0.307    0.941    0.938    0.354    0.460    0.750 +0.482     1.39
+DJI_0123_6        0   900       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+DJI_0125_1        0  1300       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+DJI_0131_2       45  1600     0.471    0.796    1.000    0.991    0.986    1.000    0.266    1.000 +0.529     0.98
+DJI_0143_1       88  1200     0.856    0.863    0.630    0.668    0.734    0.864    0.830    0.771 -0.086      nan  (no gap)
+DJI_0145_1       49   800     0.875    0.553    0.979    0.573    0.581    0.883    0.808    0.698 -0.177      nan  (no gap)
+DJI_0175_2       32  1278     0.619    0.929    0.998    0.972    0.934    0.633    0.534    0.913 +0.293     1.20
+DJI_0177_2        9   500     0.478    0.988    0.590    0.999    0.999    0.604    0.752    0.390 -0.089      nan  (not eligible)
+DJI_0217_2      709   964     0.042    0.460    0.671    0.505    0.456    0.150    0.783    0.997 +0.954     0.49
+DJI_0229_2     4789  1400     0.265    0.561    0.447    0.547    0.547    0.229    0.727    0.845 +0.580     0.49
+DJI_0241_2     1241   750     0.034    0.557    0.246    0.632    0.485    0.178    0.194    0.988 +0.954     0.63
+DJI_0243_2      234   930     0.387    0.705    0.815    0.713    0.700    0.741    0.942    0.916 +0.529     0.62
+DJI_0253_1      664  1550     0.067    0.891    0.096    0.469    0.377    0.078    0.880    0.913 +0.846     0.47
+DJI_0253_2       56   800     0.059    0.926    0.237    0.808    0.784    0.931    0.719    0.710 +0.651     1.15
+DJI_0253_3       43   750     0.731    0.957    0.598    0.995    0.995    0.363    0.730    0.558 -0.173      nan  (no gap)
+DJI_0271_2        0   200       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+DJI_0273_1       20  2540     0.364    0.735    0.888    0.916    0.908    0.999    0.323    1.000 +0.636     0.87
+DJI_0287_1        0   650       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+DJI_0287_2        0  1282       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+DJI_0295_3      702  1600     0.897    0.680    0.670    0.652    0.638    0.876    0.905    0.963 +0.067    -3.68
+DJI_0305_3        4  1000     0.438    0.978    1.000    1.000    1.000    1.000    0.296      nan   +nan      nan  (not eligible)
+DJI_0305_7        0  1000       nan      nan      nan      nan      nan      nan      nan      nan   +nan      nan  (not eligible)
+
+all clips (reported): NO-GO {'a_calibration_clips': True, 'b_median_closure': True, 'c_harm': False, 'e_motion_gain': True}; median closure 0.621 over 16 calibration clips; harmed ['DJI_0043_2', 'DJI_0057_1', 'DJI_0143_1', 'DJI_0145_1', 'DJI_0295_3']
+
+unseen clips (decides): NO-GO {'a_calibration_clips': True, 'b_median_closure': True, 'c_harm': False, 'e_motion_gain': True}; median closure 0.621 over 16 calibration clips; harmed ['DJI_0043_2', 'DJI_0057_1', 'DJI_0143_1', 'DJI_0145_1', 'DJI_0295_3']
+rule: (a) >= 2 calibration clips (eligible: >= 20 positives and negatives; gap >= 0.02); (b) median closure >= 0.3; (c) <= 20% of eligible clips with full < base - 0.03; (e) median motion gain (cal - cal_self) >= 0.02

@@ -1,0 +1,283 @@
+{
+  "status": "pass",
+  "reviewed_at": "2026-11-26T17:48:07.684905+00:00",
+  "scope": "Independent raw_stop coordinate/RMS/median and qualified-teacher examples; no proposal or threshold changes",
+  "stop_tracks_checked": 105,
+  "all_stop_medians_and_rms_recomputed": true,
+  "all_examples_source_annotation_centres_equal_frozen_gt": true,
+  "all_sampled_teacher_xy_addresses_equal_original_npy": true,
+  "nearest_any_gt_result": {
+    "clip": "DJI_0049_2",
+    "t": 59,
+    "teacher_track_id": 2,
+    "point": [
+      171.5,
+      453.0
+    ],
+    "gt_track": 3000006,
+    "gt_centre": [
+      175.0,
+      452.5
+    ],
+    "euclidean_distance": 3.5355339059327378,
+    "radius": 3.0,
+    "match": false
+  },
+  "examples": [
+    {
+      "clip": "DJI_0049_2",
+      "teacher_track_id": 2,
+      "dominant_gt_track": 3000006,
+      "posthoc_purity": 0.9166666666666666,
+      "fit_first": 60,
+      "fit_last": 71,
+      "n_fit": 12,
+      "stop_x": 171.5,
+      "stop_y": 453.0,
+      "recomputed_stop_rms": 2.565800719723442,
+      "nearest_same_gt_early_distance": 3.5355339059327378,
+      "early_gt_samples": [
+        {
+          "t": 0,
+          "x": 228.0,
+          "y": 451.5,
+          "dx": 56.5,
+          "dy": -1.5,
+          "distance": 56.519907997094265
+        },
+        {
+          "t": 59,
+          "x": 175.0,
+          "y": 452.5,
+          "dx": 3.5,
+          "dy": -0.5,
+          "distance": 3.5355339059327378
+        },
+        {
+          "t": 59,
+          "x": 175.0,
+          "y": 452.5,
+          "dx": 3.5,
+          "dy": -0.5,
+          "distance": 3.5355339059327378
+        }
+      ],
+      "teacher_npy_coordinate_checks": [
+        {
+          "t": 60,
+          "x": 175.0,
+          "y": 453.0,
+          "stored_logit": 6.35546875,
+          "original_npy_yx_logit": 6.35546875
+        },
+        {
+          "t": 66,
+          "x": 171.0,
+          "y": 453.0,
+          "stored_logit": 5.01171875,
+          "original_npy_yx_logit": 5.01171875
+        },
+        {
+          "t": 71,
+          "x": 168.0,
+          "y": 453.0,
+          "stored_logit": 6.68359375,
+          "original_npy_yx_logit": 6.68359375
+        }
+      ]
+    },
+    {
+      "clip": "DJI_0109_1",
+      "teacher_track_id": 0,
+      "dominant_gt_track": 6000000,
+      "posthoc_purity": 0.9666666666666667,
+      "fit_first": 60,
+      "fit_last": 89,
+      "n_fit": 30,
+      "stop_x": 591.5,
+      "stop_y": 427.0,
+      "recomputed_stop_rms": 2.9126162351626985,
+      "nearest_same_gt_early_distance": 5.5901699437494745,
+      "early_gt_samples": [
+        {
+          "t": 0,
+          "x": 569.0,
+          "y": 447.5,
+          "dx": -22.5,
+          "dy": 20.5,
+          "distance": 30.438462510448847
+        },
+        {
+          "t": 59,
+          "x": 586.5,
+          "y": 429.5,
+          "dx": -5.0,
+          "dy": 2.5,
+          "distance": 5.5901699437494745
+        },
+        {
+          "t": 59,
+          "x": 586.5,
+          "y": 429.5,
+          "dx": -5.0,
+          "dy": 2.5,
+          "distance": 5.5901699437494745
+        }
+      ],
+      "teacher_npy_coordinate_checks": [
+        {
+          "t": 60,
+          "x": 588.0,
+          "y": 431.0,
+          "stored_logit": 36.03125,
+          "original_npy_yx_logit": 36.03125
+        },
+        {
+          "t": 75,
+          "x": 591.0,
+          "y": 426.0,
+          "stored_logit": 35.1875,
+          "original_npy_yx_logit": 35.1875
+        },
+        {
+          "t": 89,
+          "x": 592.0,
+          "y": 425.0,
+          "stored_logit": 28.046875,
+          "original_npy_yx_logit": 28.046875
+        }
+      ]
+    },
+    {
+      "clip": "DJI_0237_2",
+      "teacher_track_id": 64,
+      "dominant_gt_track": 3000003,
+      "posthoc_purity": 1.0,
+      "fit_first": 107,
+      "fit_last": 146,
+      "n_fit": 40,
+      "stop_x": 399.0,
+      "stop_y": 259.0,
+      "recomputed_stop_rms": 0.7071067811865476,
+      "nearest_same_gt_early_distance": 21.213203435596427,
+      "early_gt_samples": [
+        {
+          "t": 0,
+          "x": 485.0,
+          "y": 305.0,
+          "dx": 86.0,
+          "dy": 46.0,
+          "distance": 97.52948272189288
+        },
+        {
+          "t": 59,
+          "x": 402.0,
+          "y": 280.0,
+          "dx": 3.0,
+          "dy": 21.0,
+          "distance": 21.213203435596427
+        },
+        {
+          "t": 59,
+          "x": 402.0,
+          "y": 280.0,
+          "dx": 3.0,
+          "dy": 21.0,
+          "distance": 21.213203435596427
+        }
+      ],
+      "teacher_npy_coordinate_checks": [
+        {
+          "t": 107,
+          "x": 399.0,
+          "y": 259.0,
+          "stored_logit": 0.337158203125,
+          "original_npy_yx_logit": 0.337158203125
+        },
+        {
+          "t": 127,
+          "x": 399.0,
+          "y": 259.0,
+          "stored_logit": 12.3671875,
+          "original_npy_yx_logit": 12.3671875
+        },
+        {
+          "t": 146,
+          "x": 398.0,
+          "y": 259.0,
+          "stored_logit": 10.875,
+          "original_npy_yx_logit": 10.875
+        }
+      ]
+    },
+    {
+      "clip": "DJI_0237_2",
+      "teacher_track_id": 115,
+      "dominant_gt_track": 3000004,
+      "posthoc_purity": 1.0,
+      "fit_first": 252,
+      "fit_last": 291,
+      "n_fit": 40,
+      "stop_x": 538.0,
+      "stop_y": 133.0,
+      "recomputed_stop_rms": 0.0,
+      "nearest_same_gt_early_distance": 19.557607215607945,
+      "early_gt_samples": [
+        {
+          "t": 0,
+          "x": 634.0,
+          "y": 181.5,
+          "dx": 96.0,
+          "dy": 48.5,
+          "distance": 107.55579947171607
+        },
+        {
+          "t": 59,
+          "x": 539.5,
+          "y": 152.5,
+          "dx": 1.5,
+          "dy": 19.5,
+          "distance": 19.557607215607945
+        },
+        {
+          "t": 59,
+          "x": 539.5,
+          "y": 152.5,
+          "dx": 1.5,
+          "dy": 19.5,
+          "distance": 19.557607215607945
+        }
+      ],
+      "teacher_npy_coordinate_checks": [
+        {
+          "t": 252,
+          "x": 538.0,
+          "y": 133.0,
+          "stored_logit": 9.0546875,
+          "original_npy_yx_logit": 9.0546875
+        },
+        {
+          "t": 272,
+          "x": 538.0,
+          "y": 133.0,
+          "stored_logit": 9.0234375,
+          "original_npy_yx_logit": 9.0234375
+        },
+        {
+          "t": 291,
+          "x": 538.0,
+          "y": 133.0,
+          "stored_logit": 5.1484375,
+          "original_npy_yx_logit": 5.1484375
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "results/m2/summary.json": "cfd4b13688fecda82256c2091d97fa65bed778d57a14406fb266178ab36a9d19",
+    "results/m2/generation/manifest.json": "53fad3c7a395af104e2a6f5efacd1804a4be869ddd08087258822fe2a004d84b",
+    "results/m2/teacher_track_evaluation.csv": "a4726365d7e9c481f7cdf772510f03e923aa36584f8b412d81e1ee6f5f77f43d",
+    "results/m2/inputs/m1_targets_baseline.csv": "d98c103bdf2c88133aa73be5e815f2f66e006d40ed972d4ab4dbf3a2e3eb89c6"
+  },
+  "conclusion": "raw_stop zero matches is reproduced by actual geometric distances. Good later teacher identity/purity does not imply that a fixed later raw-image position equals the same target position during frames0..59."
+}

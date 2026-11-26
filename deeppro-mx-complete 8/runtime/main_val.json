@@ -1,0 +1,18 @@
+{
+  "status": "running",
+  "run": "mta_val_s46",
+  "container_name": "dp-mta-v8-val-main-20261126",
+  "container_id": "44461f9c9fd2837164aa7a1033396a9ba5b4c55d694f0d945fce4400b712efeb",
+  "gpu": 2,
+  "started_at": "2026-11-26T23:54:44.642853+08:00",
+  "protocol": "val",
+  "checkpoint_selection": "val_iou",
+  "selection_split": "val",
+  "epochs": 32,
+  "batch": 4,
+  "stages": [
+    "train",
+    "infer_best_model",
+    "score_official_Pd_Fa_IoU"
+  ]
+}

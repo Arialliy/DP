@@ -1,0 +1,30 @@
+test_gate_considers_outside_history_and_no_fake_history (test_inference.InferenceTests) ... ok
+test_invalid_input_is_rejected_before_scoring (test_inference.InferenceTests) ... ok
+test_lv_matches_native_full_clip_inference (test_inference.InferenceTests) ... ok
+test_lvh_and_dec_match_native_history_and_gate (test_inference.InferenceTests) ... ok
+test_mr_fixed_variants_and_native_cfar (test_inference.InferenceTests) ... ok
+test_original_plus_strict_load_and_forward (test_inference.InferenceTests) ... ok
+test_raw_native_logits_max_and_fp32_storage (test_inference.InferenceTests) ... ok
+test_research_checkpoint_wrapper_and_fp32_enforcement (test_inference.InferenceTests) ... ok
+test_official_metrics (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_official_metrics (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_official_metrics
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/evaluation/tests/test_official_metrics.py", line 20, in <module>
+    REPO_ROOT = Path(os.environ.get('DEEPPRO_ROOT', Path(__file__).resolve().parents[3]))
+  File "/usr/lib/python3.10/pathlib.py", line 530, in __getitem__
+    raise IndexError(idx)
+IndexError: 3
+
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.737s
+
+FAILED (errors=1)

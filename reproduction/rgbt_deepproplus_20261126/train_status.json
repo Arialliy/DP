@@ -2,7 +2,7 @@
   "phase": "train",
   "started_at": "2026-11-26T08:54:57.073912+00:00",
   "log_dir": "retrained_rgbt_deepproplus",
-  "state": "training",
+  "state": "failed",
   "train_command": [
     "train.py",
     "--datapath",
@@ -40,5 +40,27 @@
     "--threshold_eval",
     "0.5"
   ],
-  "updated_at": "2026-11-26T08:54:58.837108+00:00"
+  "updated_at": "2026-11-26T16:14:31.775479+00:00",
+  "test_command": [
+    "/usr/bin/python",
+    "-u",
+    "/work/test.py",
+    "--gpu",
+    "0",
+    "--seqlen",
+    "40",
+    "--dataset",
+    "RGB-T",
+    "--datapath",
+    "/data/RGB-T",
+    "--logpath",
+    "/run/log/",
+    "--log_dir",
+    "retrained_rgbt_deepproplus",
+    "--threshold_eval",
+    "0.5"
+  ],
+  "checkpoint_sha256": "416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db",
+  "error": "CalledProcessError(1, ['/usr/bin/python', '-u', '/work/test.py', '--gpu', '0', '--seqlen', '40', '--dataset', 'RGB-T', '--datapath', '/data/RGB-T', '--logpath', '/run/log/', '--log_dir', 'retrained_rgbt_deepproplus', '--threshold_eval', '0.5'])",
+  "traceback": "Traceback (most recent call last):\n  File \"/run/pipeline.py\", line 79, in main\n    subprocess.run(command, check=True, cwd='/work')\n  File \"/usr/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/usr/bin/python', '-u', '/work/test.py', '--gpu', '0', '--seqlen', '40', '--dataset', 'RGB-T', '--datapath', '/data/RGB-T', '--logpath', '/run/log/', '--log_dir', 'retrained_rgbt_deepproplus', '--threshold_eval', '0.5']' returned non-zero exit status 1.\n"
 }

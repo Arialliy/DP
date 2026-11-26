@@ -1,0 +1,1 @@
+用户最新指令禁止启动MTA/MXC与DeepPro-Plus三seed训练。official_scheduler.py/official_plan.json是已撤回方案的草稿或历史记录，不得执行。允许的当前任务见current_authorization.json。

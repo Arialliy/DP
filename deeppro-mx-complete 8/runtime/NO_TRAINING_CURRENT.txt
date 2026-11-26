@@ -1,0 +1,1 @@
+当前有效指令：M1 NO-GO，不启动MTA；只有确认M1程序有错才修正并重跑。M0c无明确GO不启动MXC。不重训DeepPro-Plus三个seed。只进行M1复核、片头原因分析和免训练M2。所有以前val或official训练计划均为已撤回的历史记录。

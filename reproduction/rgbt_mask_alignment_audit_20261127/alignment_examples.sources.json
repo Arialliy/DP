@@ -1,0 +1,353 @@
+{
+  "created_at": "2026-11-26T17:50:24.165121+00:00",
+  "figure": "/audit/alignment_examples.png",
+  "figure_sha256": "9374957a748e81a516e13f9a4db3af7ac4f32944ff091ba0e1bbf3dabcc2ed4f",
+  "script": "/audit/overlay.py",
+  "script_sha256": "b4bc86364e41250772dd27135fb098de48d99cf7dbed6d1e1266644a22dd5d7b",
+  "annotation_path": "/data/annotations_coco/instances_01_test2017.json",
+  "annotation_sha256": "ad7ba716be63e4b0a9bcae7943ea291b8cfdd9cb1fb762fd336d083fbd848098",
+  "samples": [
+    {
+      "scene": "DJI_0109_1",
+      "frame_stem": "00000",
+      "split": "test",
+      "modality": "01 / infrared",
+      "description": "Single plane",
+      "image_record": {
+        "id": 20180049422,
+        "file_name": "DJI_0109_1/01/00000.jpg",
+        "width": 640,
+        "height": 512
+      },
+      "image_path": "/data/test2017/DJI_0109_1/01/00000.jpg",
+      "image_sha256": "7065dd76118f58e04fd98010390991c185a0128f357ce7d27fdc9463c0d627ff",
+      "image_mode": "L",
+      "mask_path": "/data/segmentations/DJI_0109_1/00000.png",
+      "mask_sha256": "a4b55704bab3b03c333f7ad62d2819f7bbd06c5376eea6e32850fdbc8825268d",
+      "mask_mode": "L",
+      "source_shape_hw": [
+        512,
+        640
+      ],
+      "annotations": [
+        {
+          "segmentation": [
+            [
+              566,
+              444,
+              566,
+              452,
+              573,
+              452,
+              573,
+              444
+            ]
+          ],
+          "area": 56,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180049422,
+          "bbox": [
+            566,
+            444,
+            7,
+            8
+          ],
+          "category_id": 6,
+          "tracking_id": "0",
+          "id": 673292
+        }
+      ],
+      "category_names": {
+        "6": "plane"
+      },
+      "focus_annotation_ids": [
+        673292
+      ],
+      "focus_tracking_ids": [
+        "0"
+      ],
+      "zoom_xyxy_exclusive": [
+        541,
+        420,
+        597,
+        476
+      ],
+      "nonzero_mask_pixels": 52,
+      "foreground_extent_xyxy_exclusive": [
+        566,
+        444,
+        573,
+        452
+      ],
+      "mask_value_range": [
+        0,
+        237
+      ]
+    },
+    {
+      "scene": "DJI_0049_2",
+      "frame_stem": "00000",
+      "split": "test",
+      "modality": "01 / infrared",
+      "description": "Adjacent pedestrians",
+      "image_record": {
+        "id": 20180048152,
+        "file_name": "DJI_0049_2/01/00000.jpg",
+        "width": 640,
+        "height": 512
+      },
+      "image_path": "/data/test2017/DJI_0049_2/01/00000.jpg",
+      "image_sha256": "f710b8ec27ec917c33fa8181f37579f73d1520662cdb6fbe3c20a80409e899a4",
+      "image_mode": "L",
+      "mask_path": "/data/segmentations/DJI_0049_2/00000.png",
+      "mask_sha256": "c86307debb779a73920bdccd7047da61f18e1400d59e12948712d68311859f8f",
+      "mask_mode": "L",
+      "source_shape_hw": [
+        512,
+        640
+      ],
+      "annotations": [
+        {
+          "segmentation": [
+            [
+              514,
+              237,
+              514,
+              244,
+              520,
+              244,
+              520,
+              237
+            ]
+          ],
+          "area": 42,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180048152,
+          "bbox": [
+            514,
+            237,
+            6,
+            7
+          ],
+          "category_id": 3,
+          "tracking_id": "1",
+          "id": 626237
+        },
+        {
+          "segmentation": [
+            [
+              49,
+              99,
+              49,
+              110,
+              58,
+              110,
+              58,
+              99
+            ]
+          ],
+          "area": 99,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180048152,
+          "bbox": [
+            49,
+            99,
+            9,
+            11
+          ],
+          "category_id": 3,
+          "tracking_id": "3",
+          "id": 626238
+        },
+        {
+          "segmentation": [
+            [
+              393,
+              377,
+              393,
+              385,
+              400,
+              385,
+              400,
+              377
+            ]
+          ],
+          "area": 56,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180048152,
+          "bbox": [
+            393,
+            377,
+            7,
+            8
+          ],
+          "category_id": 3,
+          "tracking_id": "4",
+          "id": 626239
+        },
+        {
+          "segmentation": [
+            [
+              202,
+              144,
+              202,
+              154,
+              211,
+              154,
+              211,
+              144
+            ]
+          ],
+          "area": 90,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180048152,
+          "bbox": [
+            202,
+            144,
+            9,
+            10
+          ],
+          "category_id": 3,
+          "tracking_id": "5",
+          "id": 626240
+        },
+        {
+          "segmentation": [
+            [
+              225,
+              448,
+              225,
+              456,
+              232,
+              456,
+              232,
+              448
+            ]
+          ],
+          "area": 56,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180048152,
+          "bbox": [
+            225,
+            448,
+            7,
+            8
+          ],
+          "category_id": 3,
+          "tracking_id": "6",
+          "id": 626241
+        },
+        {
+          "segmentation": [
+            [
+              414,
+              331,
+              414,
+              340,
+              421,
+              340,
+              421,
+              331
+            ]
+          ],
+          "area": 63,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180048152,
+          "bbox": [
+            414,
+            331,
+            7,
+            9
+          ],
+          "category_id": 3,
+          "tracking_id": "8",
+          "id": 626242
+        },
+        {
+          "segmentation": [
+            [
+              417,
+              336,
+              417,
+              344,
+              425,
+              344,
+              425,
+              336
+            ]
+          ],
+          "area": 64,
+          "iscrowd": 0,
+          "ignore": 0,
+          "image_id": 20180048152,
+          "bbox": [
+            417,
+            336,
+            8,
+            8
+          ],
+          "category_id": 3,
+          "tracking_id": "7",
+          "id": 626243
+        }
+      ],
+      "category_names": {
+        "3": "pedestrian"
+      },
+      "focus_annotation_ids": [
+        626242,
+        626243
+      ],
+      "focus_tracking_ids": [
+        "8",
+        "7"
+      ],
+      "zoom_xyxy_exclusive": [
+        391,
+        309,
+        447,
+        365
+      ],
+      "nonzero_mask_pixels": 416,
+      "foreground_extent_xyxy_exclusive": [
+        49,
+        98,
+        520,
+        456
+      ],
+      "mask_value_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "integrity": {
+    "source_images_modified": false,
+    "source_masks_modified": false,
+    "masks_regenerated": false,
+    "grayscale_vmin": 0,
+    "grayscale_vmax": 255,
+    "gamma_applied": false,
+    "display_interpolation": "nearest",
+    "contour": "matplotlib contour at 0.5 of the existing PNG > 0 boolean array",
+    "crop_coordinates": "COCO continuous coordinates; pixel centers u+0.5,v+0.5; crop upper bounds exclusive"
+  },
+  "figure_contract": {
+    "archetype": "diagnostic image plate",
+    "backend": "Python/matplotlib",
+    "conclusion": "Compare original boxes and saved mask locations in two actual frames.",
+    "limitation": "Visual examples do not establish full-dataset correspondence or author-mask equivalence."
+  },
+  "runtime": {
+    "matplotlib": "3.7.5",
+    "numpy": "1.23.5",
+    "gpu_used": false
+  }
+}

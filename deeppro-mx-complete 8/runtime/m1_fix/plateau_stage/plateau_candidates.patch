@@ -1,0 +1,134 @@
+--- a/code/mx_data.py
++++ b/code/mx_data.py
+@@ -224,11 +224,29 @@
+ 
+ def frame_peaks(frame, t, k, floor=SELF_FLOOR, nms=SELF_NMS):
+     """The k strongest blobs of one frame, from the image alone: local maxima of |local
+-    contrast| (stabilize.local_contrast) above floor. -> (m, 4) rows (t, x, y, |contrast|)."""
++    contrast| (stabilize.local_contrast) above floor. Each 8-connected maximum plateau
++    contributes one actual peak pixel nearest its centroid, with (y, x) breaking ties.
++    Equal-score representatives keep row-major order before top-k truncation.
++    -> (m, 4) rows (t, x, y, |contrast|)."""
+     from scipy import ndimage
++    if k <= 0:
++        return np.zeros((0, 4))
+     a = np.abs(np.nan_to_num(st.local_contrast(np.asarray(frame, np.float32)), nan=0.0))
+     peak = (a == ndimage.maximum_filter(a, size=nms, mode='nearest')) & (a > floor)
+-    ys, xs = np.nonzero(peak)
++    labels, count = ndimage.label(peak, structure=np.ones((3, 3), bool))
++    if count == 0:
++        return np.zeros((0, 4))
++    representatives = []
++    for label, region in enumerate(ndimage.find_objects(labels), 1):
++        ys, xs = np.nonzero(labels[region] == label)
++        ys, xs = ys + region[0].start, xs + region[1].start
++        values = a[ys, xs]
++        best = np.flatnonzero(values == values.max())
++        distance = (ys[best] - ys.mean()) ** 2 + (xs[best] - xs.mean()) ** 2
++        chosen = best[np.argmin(distance)]  # nonzero gives row-major (y, x) tie order
++        representatives.append((ys[chosen], xs[chosen]))
++    points = np.asarray(sorted(representatives), dtype=np.int64)
++    ys, xs = points[:, 0], points[:, 1]
+     order = np.argsort(-a[ys, xs], kind='stable')[:k]
+     return np.stack([np.full(len(order), float(t)), xs[order].astype(float), ys[order].astype(float),
+                      a[ys[order], xs[order]].astype(float)], 1).reshape(-1, 4)
+--- a/code/test_mx_data.py
++++ b/code/test_mx_data.py
+@@ -183,6 +183,97 @@
+     assert not none['ex_valid'].any()
+ 
+ 
++def _peaks_from_contrast(contrast, t=0, k=100):
++    """Isolate plateau geometry; end-to-end image tests below keep real local_contrast."""
++    previous = mxd.st.local_contrast
++    try:
++        mxd.st.local_contrast = lambda frame: np.asarray(contrast, np.float32)
++        return mxd.frame_peaks(np.zeros_like(contrast), t, k)
++    finally:
++        mxd.st.local_contrast = previous
++
++
++def test_frame_peaks_single_pixel_is_one_blob():
++    frame = np.zeros((47, 61), np.float32)
++    frame[23, 30] = 90
++    # The real 3x3 inner mean creates nine equal maxima, all from this one point.
++    peaks = mxd.frame_peaks(frame, 7, 100)
++    assert np.array_equal(peaks, [[7., 30., 23., 10.]])
++    assert peaks.dtype == np.float64
++
++
++def test_frame_peaks_deduplicates_before_top100():
++    frame = np.zeros((141, 171), np.float32)
++    strong = [(20 + 30 * x, 20 + 30 * y) for y in range(3) for x in range(4)]
++    for x, y in strong:
++        frame[y, x] = 90
++    frame[110, 140] = 45
++    peaks = mxd.frame_peaks(frame, 0, 100)
++    # Twelve 3x3 plateaus used to consume all 100 slots and hide the 13th blob.
++    assert peaks.shape == (13, 4)
++    assert np.array_equal(peaks[:12, 1:3], strong)
++    assert np.array_equal(peaks[:12, 3], np.full(12, 10.))
++    assert np.array_equal(peaks[-1], [0., 140., 110., 5.])
++
++
++def test_frame_peaks_nonconvex_plateau_uses_an_actual_peak():
++    contrast = np.zeros((31, 31), np.float32)
++    contrast[10, 10:15] = contrast[14, 10:15] = 10
++    contrast[10:15, 10] = contrast[10:15, 14] = 10
++    # The ring centroid (12,12) is not a peak; nearest actual members tie.
++    assert contrast[12, 12] == 0
++    expected = np.array([[0., 12., 10., 10.]])
++    for _ in range(3):
++        peaks = _peaks_from_contrast(contrast)
++        assert np.array_equal(peaks, expected)
++        x, y = peaks[0, 1:3].astype(int)
++        assert contrast[y, x] == peaks[0, 3]
++
++
++def test_frame_peaks_separate_equal_plateaus_and_centroid_ties():
++    contrast = np.zeros((40, 50), np.float32)
++    contrast[8:10, 8:10] = 7
++    contrast[8:10, 30:32] = 7
++    # Four equally close actual members per plateau: smallest (y,x) wins.
++    assert np.array_equal(_peaks_from_contrast(contrast), [[0., 8., 8., 7.], [0., 30., 8., 7.]])
++
++
++def test_frame_peaks_diagonal_members_are_one_eight_connected_plateau():
++    contrast = np.zeros((30, 30), np.float32)
++    contrast[10, 10] = contrast[11, 11] = 8
++    assert np.array_equal(_peaks_from_contrast(contrast), [[0., 10., 10., 8.]])
++
++
++def test_frame_peaks_isolated_scores_and_sorting_are_unchanged():
++    contrast = np.zeros((41, 61), np.float32)
++    contrast[6, 8], contrast[6, 40], contrast[30, 20] = 4., 11., -7.
++    expected = np.array([[3., 40., 6., 11.], [3., 20., 30., 7.], [3., 8., 6., 4.]])
++    assert np.array_equal(_peaks_from_contrast(contrast, t=3), expected)
++    assert np.array_equal(_peaks_from_contrast(contrast, t=3, k=2), expected[:2])
++
++
++def test_frame_peaks_equal_scores_sort_representatives_in_row_major_order():
++    contrast = np.zeros((40, 45), np.float32)
++    contrast[5, 10:31] = contrast[25, 10:31] = 10
++    contrast[5:26, 10] = 10                    # C-shaped component is labelled first
++    contrast[10, 20] = 10                     # but its representative comes first
++    assert np.array_equal(_peaks_from_contrast(contrast), [[0., 20., 10., 10.], [0., 10., 15., 10.]])
++    assert np.array_equal(_peaks_from_contrast(contrast, k=1), [[0., 20., 10., 10.]])
++
++
++def test_frame_peaks_floor_is_strict_and_empty_shape_is_preserved():
++    contrast = np.zeros((41, 61), np.float32)
++    contrast[10, 10] = 3
++    contrast[10, 30] = -3
++    contrast[30, 10] = np.nextafter(np.float32(3), np.float32(np.inf))
++    peaks = _peaks_from_contrast(contrast)
++    assert peaks.shape == (1, 4)
++    assert np.array_equal(peaks[0, 1:3], [10., 30.])
++    assert peaks[0, 3] == contrast[30, 10]
++    assert _peaks_from_contrast(contrast, k=0).shape == (0, 4)
++    assert mxd.frame_peaks(np.zeros((25, 25), np.float32), 0, 100).shape == (0, 4)
++
++
+ if __name__ == '__main__':
+     for name, fn in sorted(globals().items()):
+         if name.startswith('test_') and callable(fn):

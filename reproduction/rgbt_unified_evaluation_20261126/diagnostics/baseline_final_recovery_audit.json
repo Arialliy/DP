@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-11-26T17:15:30.621742+00:00",
+  "change": "Accept final baseline training after 32 evaluated epochs and verified entry into post-training test; retain original pipeline state",
+  "actual_training_state": [
+    32,
+    true,
+    "failed"
+  ],
+  "original_status_preserved_sha256": "053c31e96bf58f439216ec8bce910b03ba70e11a438045d08a4763e1fd1a1dfb",
+  "tests": {
+    "failed_post_test_valid": "passed",
+    "evaluating_post_test_valid": "passed",
+    "only_31_epochs": "passed",
+    "duplicate_33_epoch_records": "passed",
+    "wrong_hash": "passed",
+    "missing_hash": "passed",
+    "missing_test_command": "passed",
+    "empty_test_command": "passed",
+    "wrong_entrypoint": "passed",
+    "still_training": "passed",
+    "existing_completed": "passed",
+    "missing_checkpoint": "passed"
+  },
+  "scheduler_sha256": "65f88ea9ae63bce2f63f06f6055fbb918b9f5873026bd7135b3bd9eefceb009a",
+  "final_checkpoint_sha256": "416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db",
+  "final_best_epoch_1based": 32,
+  "final_best_window_iou": 0.2784205820732258,
+  "optimizer_updates": 7552,
+  "final_weights_equal_epoch32": true,
+  "old_unified_checkpoint_sha256": "c1c818212eb0c1d8d8774e8fd1e6bac75db3e485ef2c5c7c34a4d0860afc87af",
+  "old_unified_best_epoch_1based": 20,
+  "final_weights_differ_from_old_unified": true,
+  "gpu_used": false,
+  "scheduler_restarted": false
+}

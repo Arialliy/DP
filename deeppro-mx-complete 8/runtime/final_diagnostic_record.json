@@ -1,0 +1,75 @@
+{
+  "recorded_at": "2026-11-27T01:55:08.929367+08:00",
+  "status": "completed",
+  "training_authorized": false,
+  "deeppro_plus_three_seed_retraining_started": false,
+  "official_mta_training_started": false,
+  "stopped_historical_val_containers": {
+    "dp-mta-v8-val-main-20261126": {
+      "status": "exited",
+      "running": false,
+      "restart_policy": "no",
+      "exit_code": 137
+    },
+    "dp-mta-v8-val-noex-20261126": {
+      "status": "exited",
+      "running": false,
+      "restart_policy": "no",
+      "exit_code": 137
+    },
+    "dp-mta-v8-val-scheduler-20261126": {
+      "status": "exited",
+      "running": false,
+      "restart_policy": "no",
+      "exit_code": 143
+    }
+  },
+  "m1_decision": {
+    "go": false,
+    "diagnostic_only": true,
+    "applicable": true,
+    "mode": "pooled",
+    "budget": 1.0,
+    "baseline_threshold": 1e-05,
+    "early_frames": 60,
+    "early_minimum": 0.3,
+    "overall_minimum": 0.2,
+    "early_recovered_fraction": 0.0015527950310559005,
+    "overall_recovered_fraction": 0.0025889967637540453,
+    "realized_clutter_per_frame": 1.0,
+    "budget_satisfied": true,
+    "existing_hits_retained": "Logical OR with baseline; appearance hits_covered is reported separately",
+    "reason": "Recovery thresholds not met"
+  },
+  "sources": {
+    "DIAGNOSTICS.txt": "ed01b04ba23b03f4c89068b3c27e9dceb68e74bef6974ec2693d3254d642e4ab",
+    "docs/MTA.md": "49914ec9ca76129bbb9305815daffbbe0be5d11ca80f3adb76b671dce64af48e",
+    "code/mx_data.py": "9077412803b5d94b23a71574616a8ce3a35509eb2910b2f3ecc818e705bc5e84",
+    "code/test_mx_data.py": "3effe73bc59364be0839b2ce76990b8ff4446280444a63e6a5bb8bcb7527e806",
+    "code/miss_recovery.py": "fa7d5148c8e805de03fc8c96a7f89dd5ff5bce4e97a638f7cba42302416bac13",
+    "code/test_miss_recovery.py": "1c9592878bb98c2b0a8727484f15bc3818f514ec0b9ca675e4a8838bb724ce91",
+    "runtime/m2_backcast.py": "edc6616b09fa5b50a2ad8c38b1c9862f4e3675ace2bde5ceeee220f35c6c34ec",
+    "runtime/test_m2_backcast.py": "67e5e2211acc5e8540a7864e8fb3fb243755c1bc0db071b3c75d8e23b1e29981",
+    "runtime/m1_plateau_rerun.json": "91f416ba96d2913e2f0521632516a893425068a23194d9b516f3ea729a5e1fc6",
+    "runtime/current_authorization.json": "7f3c929408b1b5c1e8b8c1ef995e6338da1ea0a836ab4fb67378ee6548767263",
+    "results/miss_recovery/official_rgbt/test/summary.json": "41cb07ead4d3b238731dcc935fe6e1c65f03cee395f9cba372f04a368f66a013",
+    "results/miss_recovery/official_rgbt/test/independent_audit.json": "db69556d9e229affd2ebe3fb386e9d7ca3165a21fded9fb2d0b1da15b260b82c",
+    "results/m2/summary.json": "cfd4b13688fecda82256c2091d97fa65bed778d57a14406fb266178ab36a9d19",
+    "results/m2/arithmetic_review.json": "926a35b974c0ef70206c818a241e3a8dc2e84891b16dd177dbd09c53ce442072",
+    "results/m2/independent_review.json": "db84d1664da12504a22c5fc81c1f1a910a56ae206f11f83b7fde099fb6bbb472",
+    "results/early_cause/analysis_zh.txt": "095db14230004cc4b1cb08c0feb439b3d5c9f1fb3d8c8e77cec220bf11f2f106",
+    "results/frame_inspection/findings_zh.txt": "8fd391d55c87d3aafba004e0d095d35e9c4a932f57f6614c7922d257f5bb4d36"
+  },
+  "final_report_independent_review": {
+    "agent": "/root/v8_runtime_review",
+    "status": "passed",
+    "scope": [
+      "M1/M2 numbers and denominators",
+      "M2 raw coordinate limitations",
+      "M0 pre-fix version provenance",
+      "early-window evidence limitations",
+      "existing official Pd/Fa/IoU/AUC",
+      "no-training authorization and retained stopped-run history"
+    ]
+  }
+}

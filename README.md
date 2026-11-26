@@ -2,6 +2,16 @@
 
 Pytorch implementation of our deep temporal probe network (DeepPro).&nbsp;[**[Paper]**](https://arxiv.org/pdf/2506.12766)
 
+## Local research updates (2026-11-27)
+
+- [DeepPro v8 diagnostic record](<deeppro-mx-complete 8/DIAGNOSTICS.txt>): corrected M1 remains NO-GO; M2 and early-clip inspections are complete. MTA/MXC training is stopped, and no three-seed DeepPro-Plus retraining was started for this diagnostic task.
+- [MTA design and implementation notes](<deeppro-mx-complete 8/docs/MTA.md>) distinguish the proposed mechanism from measured evidence. Interrupted validation runs are retained as historical records.
+- [RGB-T reproduction and evaluation records](reproduction/) include the separate baseline and variant experiments, mask-alignment audits, and direct Pd/Fa/IoU comparisons.
+
+Dataset images and regenerable video/prediction caches remain local. Source, diagnostic tables, logs, and available checkpoints are included. Progress files from running experiments represent the state captured by each commit.
+
+The upstream project description follows.
+
 <img src="https://github.com/TinaLRJ/DeepPro/blob/main/fig1/Fig1-doublecolumn.png" width="800">
 
 <img src="https://github.com/TinaLRJ/DeepPro/blob/main/fig1/case%201__TP%20vs%20Short-term%20ST.gif" width="600">

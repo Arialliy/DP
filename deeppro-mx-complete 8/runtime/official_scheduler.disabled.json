@@ -1,0 +1,12 @@
+{
+  "disabled": true,
+  "recorded_at": "2026-11-26T17:26:28.760586+00:00",
+  "reason": "用户取消全部 MTA/MXC 训练，恢复 M1 NO-GO 门槛；停止 official MTA scheduler 草稿",
+  "draft": "runtime/official_scheduler.py",
+  "draft_sha256": "9b5228b32c86257af50af136506810d806623a0fc647361ab9385b63dbaeb8c1",
+  "official_scheduler_started_by_this_agent": false,
+  "official_training_started_by_this_agent": false,
+  "official_containers_started_by_this_agent": false,
+  "fixture_completed": false,
+  "status": "unfinished_draft_do_not_run"
+}

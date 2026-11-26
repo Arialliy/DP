@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-26T14:14:30.925738+00:00",
+  "previous_pid": 460245,
+  "new_pid": 471640,
+  "reason": "Validate checkpoint archive integrity before registration and expose failed job causes",
+  "scheduler_sha256": "143384e2edd3c5136fb0d7ab18f8de0eefa65966eaeaf8443062e71eb3052866",
+  "evaluation_containers_untouched": true,
+  "allowed_gpus": [
+    2
+  ],
+  "validation_by": "protocol_review agent",
+  "validation_results": {
+    "valid_real_checkpoint": "passed",
+    "seven_invalid_archive_classes": "all rejected without creating jobs",
+    "snapshot_final_promotion": "passed",
+    "failure_reason_and_oom_in_pending": "passed",
+    "existing_final_results_unchanged": "passed"
+  }
+}

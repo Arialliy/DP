@@ -1,0 +1,51 @@
+plateaus DJI_0049_2 90
+plateaus DJI_0109_1 90
+plateaus DJI_0119_2 180
+plateaus DJI_0129_2 590
+plateaus DJI_0155_2 410
+plateaus DJI_0159_2 250
+plateaus DJI_0173_2 450
+plateaus DJI_0221_2 590
+plateaus DJI_0237_2 410
+plateaus DJI_0255_1 600
+plateaus DJI_0257_2 590
+plateaus DJI_0277_2 366
+plateaus DJI_0303_2 577
+plateaus DJI_0307_2 180
+plateaus DJI_0309_4 603
+{
+  "all": {
+    "selected_points": 594289,
+    "selected_plateaus": 591154,
+    "duplicate_slots": 3135,
+    "points_in_multimember_plateaus": 5880,
+    "selected_multimember_plateaus": 2745,
+    "all_peak_pixels": 4877240,
+    "all_plateaus": 4857505,
+    "top100_truncated_plateaus": 17,
+    "available_extra_blobs_after_dedup": 1834,
+    "frames": 5976,
+    "frames_with_duplicate_slots": 998,
+    "largest_plateau": 24,
+    "median_duplicate_slots": 0.0,
+    "duplicate_fraction_of_selected_points": 0.005275211218784127
+  },
+  "misses": {
+    "misses": 1545,
+    "original_with_r3": 548,
+    "gained_r3_coverage": 0,
+    "lost_r3_coverage": 0,
+    "original_top100_excluded": 364,
+    "top100_excluded_near_component_within_first100_after_dedup": 0,
+    "top100_excluded_actual_representative_within_r3_after_dedup": 0
+  },
+  "early": {
+    "misses": 644,
+    "original_with_r3": 221,
+    "gained_r3_coverage": 0,
+    "lost_r3_coverage": 0,
+    "original_top100_excluded": 198,
+    "top100_excluded_near_component_within_first100_after_dedup": 0,
+    "top100_excluded_actual_representative_within_r3_after_dedup": 0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "reviewed_at": "2026-11-27T01:25:53.140137+08:00",
+  "status": "cancelled_by_later_user_instruction",
+  "scope_zh": "只读核对现有实现、官方列表和启动计划；没有运行模型、改源码或操作训练进程。仅本复核文件为新增写入。",
+  "checks": {
+    "official_split": {
+      "status": "pass",
+      "train_clips": 45,
+      "test_clips": 15,
+      "exact_match": "configs/splits.json 和 official_plan.json 与数据集 train.txt/test.txt 逐项一致",
+      "shared_recording_train_clips_retained": [
+        "DJI_0257_5",
+        "DJI_0277_1",
+        "DJI_0307_1",
+        "DJI_0309_1",
+        "DJI_0309_2"
+      ],
+      "test_frames": 5976,
+      "test_windows": 172,
+      "window_frame_instances": 6880
+    },
+    "selection": {
+      "status": "pass",
+      "mode": "original_test_iou",
+      "source": "dataset/test.txt and existing segmentations PNG",
+      "frequency": "every epoch, 32 epochs",
+      "window": 40,
+      "stride": 36,
+      "final_window": "shifted to clip end",
+      "aggregation": "sum intersection / sum union over all windows; overlaps counted per window",
+      "threshold": 0.5,
+      "comparison": "sigmoid(float32_logits)>0.5",
+      "best_update": "complete and finite IoU >= best_iou",
+      "checkpoint": "best_model.pth",
+      "window_limit": null,
+      "selection_split_note_zh": "train.py 的 selection_split 默认字符串可仍为 val，但 original_test_iou 分支忽略该字段，直接读官方 test.txt。"
+    },
+    "inference_scoring": {
+      "status": "pass",
+      "checkpoint": "best_model.pth",
+      "split": "official_test",
+      "label_rule": "paper_k6_floor",
+      "author_edges": "official",
+      "headline": [
+        "Pd",
+        "Fa",
+        "IoU"
+      ],
+      "headline_threshold": 0.5,
+      "supplementary": "same checkpoint, 27 thresholds and AUC",
+      "definition_zh": "Pd 按 mask 连通分量；Fa 为保护区外预测正像素/总像素；IoU 为全局像素交并比。不是 M1 的 box 或噪声候选口径。"
+    },
+    "fresh_initialization": {
+      "status": "pass_at_review_time",
+      "all_six_run_dirs_absent": true,
+      "runs": [
+        "mta_official_s46",
+        "mta_official_s46_noex",
+        "mta_official_s46_self",
+        "mta_official_s46_nogain",
+        "mta_official_s46_mx",
+        "mta_official_s46_noapp"
+      ],
+      "automatic_resume_note_zh": "train.py 若同名 runs/<run>/last.pth 存在会自动恢复；本次全新 official run 名且检查时六个目录均不存在，计划明确不载入 val 权重。"
+    },
+    "controls": {
+      "status": "pass",
+      "noex": "train ex_p_none=1; selection/inference none",
+      "self": "train ex_source=self; selection/inference self",
+      "nogain": "gain_aug=1",
+      "mx": "mx_lv with gain_aug=2",
+      "noapp": "mxc_lv"
+    },
+    "diagnostics": {
+      "status": "pass",
+      "M0_GATE": 0,
+      "M1_GATE": false,
+      "note_zh": "M0/M1 仅记录，不作本次训练开关。"
+    },
+    "main_command": {
+      "status": "pending",
+      "path": "runtime/main_official.command.json",
+      "reason": "review time file not yet present"
+    }
+  },
+  "limitations_zh": [
+    "官方协议用 test mask 逐轮选权重，因此不能称完全未使用 test 标注。",
+    "这是当前协议与实现的复核；尚无本次完整训练及每轮执行结果，需由 eval_log.jsonl 和最终 summary.json 验证。"
+  ],
+  "source_sha256": {
+    "code/splits.py": "58e93a24a2af2328fd6fb2e6a9c7960ed010df1112dc697ffc0bf542884d48d5",
+    "code/train.py": "205e941de5d2781c96bccfdafb615aa63e92ec86deb6619e6d6ab6c40f5a4448",
+    "code/checkpoint_selection.py": "02c01c5f59cecaad5f1613dd26b81bbace31d17a4bafce129173ab5ae4aa3fbb",
+    "code/infer_mx.py": "251e8365784871acb5c6aae207ac841a129ab560f74df907ec724ff25248e448",
+    "code/score.py": "df85c4f597a6a359f87dd01a2dc20b7ce8a9746eec894ecf09fda7af75e8b444",
+    "code/evaluate.py": "29311ffd609c107b623b19a47f4623c9f910937cbb775859df13d9ec3383cca4",
+    "run_mx.sh": "2a342ce03445ddc0486c06a0b5f80f631cbcd605684a084faa411bd76f3416bf",
+    "configs/splits.json": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464"
+  },
+  "source_manifest_match": true,
+  "later_instruction_zh": "用户后续取消 MTA/MXC 及官方训练协议；该文件仅保留此前静态复核历史，不代表训练授权或启动。"
+}

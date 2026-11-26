@@ -1,0 +1,17 @@
+{
+  "job_id": "lv_full_e6ff4903cb0fbd9d",
+  "model": "DeepPro-LV",
+  "model_id": "lv_full",
+  "arch": "lv_full",
+  "created_at": "2026-11-26T13:59:11.320843+00:00",
+  "checkpoint": "checkpoints/lv_full_e6ff4903cb0fbd9d/best_model.pth",
+  "checkpoint_sha256": "e6ff4903cb0fbd9d92a1c2c6a84455640020b8b3a4960978c93ec400d8a9199b",
+  "train_config": "checkpoints/lv_full_e6ff4903cb0fbd9d/train_config.json",
+  "training_epochs_completed": 32,
+  "final_checkpoint": true,
+  "variants": [
+    "native"
+  ],
+  "primary_variant": "native",
+  "source_checkpoint": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/best_model.pth"
+}

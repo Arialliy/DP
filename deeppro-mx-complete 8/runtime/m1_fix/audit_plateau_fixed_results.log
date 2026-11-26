@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "decision": false,
+  "all": {
+    "targets": 12665,
+    "misses": 1545,
+    "recovered": 4,
+    "recovered_fraction": 0.0025889967637540453,
+    "candidate_ceiling": 532
+  },
+  "early": {
+    "targets": 2261,
+    "misses": 644,
+    "recovered": 1,
+    "recovered_fraction": 0.0015527950310559005,
+    "candidate_ceiling": 220
+  },
+  "clutter": 1.0
+}
+{
+  "status": "passed",
+  "settings_equal": true,
+  "baseline_rows_unchanged": 12665,
+  "candidate_count_old": 594289,
+  "candidate_count_new": 592988,
+  "old_early_recovered": 1,
+  "new_early_recovered": 1,
+  "old_all_recovered": 4,
+  "new_all_recovered": 4,
+  "added": 0,
+  "removed": 0
+}

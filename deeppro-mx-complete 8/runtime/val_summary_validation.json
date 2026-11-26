@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "gpu_calls": 0,
+  "training_runs": 0,
+  "fixture_root": "/home/md0/ly/DP/deeppro-mx-complete 8/runtime/test_fixtures/val_summary/validation_b27ezkiy",
+  "checks": [
+    "complete six runs: direct headline metrics, 27-threshold AUC, checkpoint SHA",
+    "direct Pd=0.57 is not overall pd@1=0.999 or pd@0.25=0.888",
+    "missing summary -> pending with blank metrics",
+    "mixed checkpoint weights -> error with blank metrics",
+    "current cache fingerprint changed -> error with blank metrics",
+    "test-based selection -> error with blank metrics",
+    "in-progress training provisional best -> pending with blank metrics",
+    "26 thresholds -> error",
+    "AUC inconsistent with 27 curve points -> error",
+    "scheduler failed overrides stale completed artifacts with blank metrics"
+  ],
+  "final_status": {
+    "mta_val_s46": "complete",
+    "mta_val_s46_noex": "pending",
+    "mta_val_s46_self": "error",
+    "mta_val_s46_nogain": "error",
+    "mta_val_s46_mx": "error",
+    "mta_val_s46_noapp": "pending"
+  },
+  "note": "Synthetic fixture values, never experimental results."
+}

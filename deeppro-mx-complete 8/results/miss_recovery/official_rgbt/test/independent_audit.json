@@ -1,0 +1,401 @@
+{
+  "status": "passed",
+  "decision": false,
+  "groups": {
+    "all": {
+      "targets": 12665,
+      "misses": 1545,
+      "recovered": 4,
+      "recovered_fraction": 0.0025889967637540453,
+      "candidate_ceiling": 532
+    },
+    "frames < 60": {
+      "targets": 2261,
+      "misses": 644,
+      "recovered": 1,
+      "recovered_fraction": 0.0015527950310559005,
+      "candidate_ceiling": 220
+    },
+    "frames >= 60": {
+      "targets": 10404,
+      "misses": 901,
+      "recovered": 3,
+      "recovered_fraction": 0.003329633740288568,
+      "candidate_ceiling": 312
+    },
+    "clip DJI_0109_1": {
+      "targets": 90,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0049_2": {
+      "targets": 692,
+      "misses": 395,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 56
+    },
+    "clip DJI_0119_2": {
+      "targets": 360,
+      "misses": 6,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0159_2": {
+      "targets": 250,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0129_2": {
+      "targets": 590,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0237_2": {
+      "targets": 3717,
+      "misses": 614,
+      "recovered": 4,
+      "recovered_fraction": 0.006514657980456026,
+      "candidate_ceiling": 338
+    },
+    "clip DJI_0155_2": {
+      "targets": 410,
+      "misses": 27,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0173_2": {
+      "targets": 450,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0255_1": {
+      "targets": 600,
+      "misses": 50,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 45
+    },
+    "clip DJI_0277_2": {
+      "targets": 985,
+      "misses": 4,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0257_2": {
+      "targets": 1126,
+      "misses": 92,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 66
+    },
+    "clip DJI_0307_2": {
+      "targets": 161,
+      "misses": 17,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 10
+    },
+    "clip DJI_0221_2": {
+      "targets": 697,
+      "misses": 39,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 10
+    },
+    "clip DJI_0303_2": {
+      "targets": 1487,
+      "misses": 45,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 2
+    },
+    "clip DJI_0309_4": {
+      "targets": 1050,
+      "misses": 256,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 5
+    },
+    "category 1": {
+      "targets": 463,
+      "misses": 151,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 40
+    },
+    "category 3": {
+      "targets": 3775,
+      "misses": 870,
+      "recovered": 4,
+      "recovered_fraction": 0.004597701149425287,
+      "candidate_ceiling": 342
+    },
+    "category 4": {
+      "targets": 135,
+      "misses": 25,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 3
+    },
+    "category 5": {
+      "targets": 3343,
+      "misses": 206,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 92
+    },
+    "category 6": {
+      "targets": 4949,
+      "misses": 293,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 55
+    }
+  },
+  "assigned_candidates": 7403,
+  "all_budget_tables_verified": true,
+  "independent_ceiling": "scipy.sparse.csgraph.maximum_bipartite_matching",
+  "sources": {
+    "summary.json": "41cb07ead4d3b238731dcc935fe6e1c65f03cee395f9cba372f04a368f66a013",
+    "targets.csv": "7a5e9804f52371bd110b00f807d5aaa285a2c138dcfe55e2b42ffb657e347c29",
+    "candidates.csv": "8400e0513dc8bb6fba3e5de1d85848bb85076b458bd5e1ea77b18c129f54034c"
+  },
+  "plateau_fix_comparison": {
+    "archived_old_directory": "results/miss_recovery_pixel_plateaus/official_rgbt/test",
+    "all_settings_exact_equal": true,
+    "settings_fields": [
+      "run",
+      "split",
+      "preds",
+      "targets",
+      "thresholds",
+      "teacher_th",
+      "k",
+      "patch",
+      "shift",
+      "per_frame",
+      "r_pos",
+      "r_neg",
+      "budgets",
+      "early",
+      "seqlen",
+      "out",
+      "nproc"
+    ],
+    "all_frames_exact_equal": true,
+    "box_rows": 12665,
+    "baseline_hits_both_thresholds_exact_equal": true,
+    "baseline_target_metadata_exact_equal": true,
+    "teacher_count_per_target_exact_equal": true,
+    "all_window_diagnostics_and_teacher_counts_exact_equal": true,
+    "teacher_bank_identity_note": "Full teacher banks were not serialized. Teacher count equality is directly verified; teacher extraction/selection source paths were not part of the plateau change.",
+    "original_candidates": {
+      "count": 594289,
+      "per_clip": {
+        "DJI_0049_2": 9000,
+        "DJI_0109_1": 9000,
+        "DJI_0119_2": 18000,
+        "DJI_0129_2": 59000,
+        "DJI_0155_2": 41000,
+        "DJI_0159_2": 25000,
+        "DJI_0173_2": 45000,
+        "DJI_0221_2": 59000,
+        "DJI_0237_2": 41000,
+        "DJI_0255_1": 56689,
+        "DJI_0257_2": 59000,
+        "DJI_0277_2": 36600,
+        "DJI_0303_2": 57700,
+        "DJI_0307_2": 18000,
+        "DJI_0309_4": 60300
+      },
+      "teacher_counts": {
+        "15": 7300,
+        "13": 13500,
+        "9": 6500,
+        "16": 566989
+      },
+      "labels": {
+        "0": 584945,
+        "1": 7411,
+        "-1": 1933
+      },
+      "finite_scores": 594289
+    },
+    "current_candidates": {
+      "count": 592988,
+      "per_clip": {
+        "DJI_0049_2": 9000,
+        "DJI_0109_1": 9000,
+        "DJI_0119_2": 18000,
+        "DJI_0129_2": 59000,
+        "DJI_0155_2": 41000,
+        "DJI_0159_2": 25000,
+        "DJI_0173_2": 45000,
+        "DJI_0221_2": 59000,
+        "DJI_0237_2": 41000,
+        "DJI_0255_1": 55388,
+        "DJI_0257_2": 59000,
+        "DJI_0277_2": 36600,
+        "DJI_0303_2": 57700,
+        "DJI_0307_2": 18000,
+        "DJI_0309_4": 60300
+      },
+      "teacher_counts": {
+        "15": 7300,
+        "13": 13500,
+        "9": 6500,
+        "16": 565688
+      },
+      "labels": {
+        "0": 583648,
+        "1": 7407,
+        "-1": 1933
+      },
+      "finite_scores": 592988
+    },
+    "expected_candidate_count_from_independent_plateau_audit": 592988,
+    "old_groups": {
+      "all": {
+        "targets": 12665,
+        "misses": 1545,
+        "recovered": 4,
+        "candidate_ceiling": 532,
+        "candidate_ceiling_fraction": 0.34433656957928804,
+        "hits_covered": 2008,
+        "recall": 0.878010264508488,
+        "recall_with_recovery": 0.8783260955388867,
+        "recovered_fraction": 0.0025889967637540453
+      },
+      "frames < 60": {
+        "targets": 2261,
+        "misses": 644,
+        "recovered": 1,
+        "candidate_ceiling": 220,
+        "candidate_ceiling_fraction": 0.3416149068322981,
+        "hits_covered": 285,
+        "recall": 0.7151702786377709,
+        "recall_with_recovery": 0.7156125608137992,
+        "recovered_fraction": 0.0015527950310559005
+      },
+      "frames >= 60": {
+        "targets": 10404,
+        "misses": 901,
+        "recovered": 3,
+        "candidate_ceiling": 312,
+        "candidate_ceiling_fraction": 0.3462819089900111,
+        "hits_covered": 1723,
+        "recall": 0.9133986928104575,
+        "recall_with_recovery": 0.9136870434448289,
+        "recovered_fraction": 0.003329633740288568
+      }
+    },
+    "new_groups": {
+      "all": {
+        "targets": 12665,
+        "misses": 1545,
+        "recovered": 4,
+        "candidate_ceiling": 532,
+        "candidate_ceiling_fraction": 0.34433656957928804,
+        "hits_covered": 2009,
+        "recall": 0.878010264508488,
+        "recall_with_recovery": 0.8783260955388867,
+        "recovered_fraction": 0.0025889967637540453
+      },
+      "frames < 60": {
+        "targets": 2261,
+        "misses": 644,
+        "recovered": 1,
+        "candidate_ceiling": 220,
+        "candidate_ceiling_fraction": 0.3416149068322981,
+        "hits_covered": 285,
+        "recall": 0.7151702786377709,
+        "recall_with_recovery": 0.7156125608137992,
+        "recovered_fraction": 0.0015527950310559005
+      },
+      "frames >= 60": {
+        "targets": 10404,
+        "misses": 901,
+        "recovered": 3,
+        "candidate_ceiling": 312,
+        "candidate_ceiling_fraction": 0.3462819089900111,
+        "hits_covered": 1724,
+        "recall": 0.9133986928104575,
+        "recall_with_recovery": 0.9136870434448289,
+        "recovered_fraction": 0.003329633740288568
+      }
+    },
+    "recovered_boxes_added": [],
+    "recovered_boxes_removed": [],
+    "old_clutter_threshold": {
+      "DJI_0109_1": 1.9742152351657078,
+      "DJI_0049_2": 1.9742152351657078,
+      "DJI_0119_2": 1.9742152351657078,
+      "DJI_0159_2": 1.9742152351657078,
+      "DJI_0155_2": 1.9742152351657078,
+      "DJI_0173_2": 1.9742152351657078,
+      "DJI_0237_2": 1.9742152351657078,
+      "DJI_0129_2": 1.9742152351657078,
+      "DJI_0277_2": 1.9742152351657078,
+      "DJI_0221_2": 1.9742152351657078,
+      "DJI_0307_2": 1.9742152351657078,
+      "DJI_0255_1": 1.9742152351657078,
+      "DJI_0257_2": 1.9742152351657078,
+      "DJI_0303_2": 1.9742152351657078,
+      "DJI_0309_4": 1.9742152351657078
+    },
+    "new_clutter_threshold": {
+      "DJI_0109_1": 1.9715812385051843,
+      "DJI_0049_2": 1.9715812385051843,
+      "DJI_0119_2": 1.9715812385051843,
+      "DJI_0159_2": 1.9715812385051843,
+      "DJI_0129_2": 1.9715812385051843,
+      "DJI_0237_2": 1.9715812385051843,
+      "DJI_0155_2": 1.9715812385051843,
+      "DJI_0173_2": 1.9715812385051843,
+      "DJI_0255_1": 1.9715812385051843,
+      "DJI_0277_2": 1.9715812385051843,
+      "DJI_0257_2": 1.9715812385051843,
+      "DJI_0307_2": 1.9715812385051843,
+      "DJI_0221_2": 1.9715812385051843,
+      "DJI_0303_2": 1.9715812385051843,
+      "DJI_0309_4": 1.9715812385051843
+    },
+    "sole_proposal_change": "frame_peaks now merges each 8-connected maximum plateau and picks nearest-to-centroid actual peak pixel; equal-distance y/x tie order; floor3/nms9/k100 unchanged",
+    "shared_selfpeaks_affected": true,
+    "training_performed": false,
+    "misses_with_geometric_candidates": {
+      "old": {
+        "all": 548,
+        "early": 221
+      },
+      "new": {
+        "all": 548,
+        "early": 221
+      }
+    }
+  },
+  "fixed_cutoffs": {
+    "budget": 1.0,
+    "baseline_threshold": 1e-05,
+    "early_frames": 60,
+    "early_minimum": 0.3,
+    "overall_minimum": 0.2
+  },
+  "old_sources": {
+    "summary.json": "c755597b08cfccaafcf2d46078ae0951d811485c614ed04a89a9ddd3bba89d2e",
+    "targets.csv": "d98c103bdf2c88133aa73be5e815f2f66e006d40ed972d4ab4dbf3a2e3eb89c6",
+    "candidates.csv": "4f4450d8a8bc3314786b506dea7ec5dc15f8fb594e40e6fa0fb149fe9d5870f7"
+  }
+}

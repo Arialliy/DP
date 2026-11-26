@@ -1,0 +1,71 @@
+{
+  "status": "completed",
+  "visual_inspection": "Four actual-pixel contact sheets viewed",
+  "local_cpu_forward_runs": {
+    "unique_windows": [
+      [
+        0,
+        40
+      ],
+      [
+        36,
+        76
+      ],
+      [
+        18,
+        58
+      ]
+    ],
+    "executed_forward_count": 5,
+    "reason_for_duplicate_windows": "Original two-window attempt passed target equivalence but failed extra whole-interior tolerance before saving; repeated only to preserve measurements."
+  },
+  "key_findings": {
+    "0255_early40_misses": 37,
+    "0255_early40_targets": 40,
+    "0255_later_misses": 13,
+    "0255_later_targets": 560,
+    "0307_first_annotated_frame": 19,
+    "0307_early40_misses": 17,
+    "0307_early40_targets": 21,
+    "0307_first_hit_both_thresholds": 36,
+    "0307_same_pixels_two_windows_hit_flip": true,
+    "shift18_recovery_1e_5": [
+      17,
+      17
+    ],
+    "shift18_recovery_0_5": [
+      13,
+      17
+    ]
+  },
+  "limitations": [
+    "Visual changes do not establish physical causes or annotation error.",
+    "Window context and temporal index effects remain confounded.",
+    "Whole-ROI numerical identity to GPU cache failed extra tolerance; target equivalence passed and exact errors retained.",
+    "Added false alarms and whole-test performance were not evaluated."
+  ],
+  "artifacts_sha256": {
+    "results/frame_inspection/DJI_0255_1_full_frames.png": "ab76ec4b3dc29ec4ce0ab63e4ffeac083eada2514c06a574a49a742d3bff4d2c",
+    "results/frame_inspection/DJI_0255_1_target_crops.png": "f1afca675ee8661edc1e2d11dee25c487e44833d157bed06023b1c78d5325fb5",
+    "results/frame_inspection/DJI_0255_1_target_frames.csv": "15ee4272a594998bcfe8784fd65894168bfed9ee8db603353c40f7c63374dcc0",
+    "results/frame_inspection/DJI_0307_2_full_frames.png": "342480b17ed14f646a6cbaf9c55ba0e4b55ea9bbd452d29cd414221e96ea12cf",
+    "results/frame_inspection/DJI_0307_2_overlap_control.csv": "fe20d7da45b2cda904359b3e5424291b0cc589c9f88ccacd4213fc31a471a09c",
+    "results/frame_inspection/DJI_0307_2_overlap_control.json": "245d9d908a6dbe9f740706c00d63b94048f8eea053c75d3c72b5be38a6c2e550",
+    "results/frame_inspection/DJI_0307_2_overlap_logits.npz": "ace2d4e960001054e22c1ef561d22a5fdb320a5c04b9ecb902804b7e02272327",
+    "results/frame_inspection/DJI_0307_2_shift18_control.csv": "f396fa10ad3a2866cbe8cb5a2d36118294d25298ef86c8195460da77bf0e6c4e",
+    "results/frame_inspection/DJI_0307_2_shift18_control.json": "9a95b59207e7eca5584a1632f1b8be47ae94026b490ebe2b8e006ac3f0a97d53",
+    "results/frame_inspection/DJI_0307_2_shift18_logits.npy": "201b111c72977badd2f5ee18244ad6c138b3c0edf54f1e9f0167afc0ce078749",
+    "results/frame_inspection/DJI_0307_2_target_crops.png": "5784f04f0c327c2ee553da32823e16b3206e9baf1cba87f7c05b1bed663845c1",
+    "results/frame_inspection/DJI_0307_2_target_frames.csv": "f26e52c127c7fb60d4e82edb7933835d09b6022d240ffaafeaca246c7e506686",
+    "results/frame_inspection/inspection_data.json": "c348ff31a28bb6c38173666f3814abf6f2a6c8262ae3e6057ecaa6c1694c9a58",
+    "results/frame_inspection/review.txt": "462ab3aa666d891d80f6a7e51f6b133618b10f46db34ffc2507581570d9840bb",
+    "results/frame_inspection/findings_zh.txt": "8fd391d55c87d3aafba004e0d095d35e9c4a932f57f6614c7922d257f5bb4d36"
+  },
+  "scripts_sha256": {
+    "runtime/inspect_frames.py": "ad146b121da022839d16f8d960b3633c91ef2af6d600480185b43359f1b29ce8",
+    "runtime/inspect_window_overlap.py": "4df23d513bbf47c9bfe8a255fcb3581c167d59203e454aeb2de9a801e9225db3",
+    "runtime/inspect_shifted_window.py": "335981d5170097ddae39739156b6466b7a54fd59da093c426a58aba1766b7a20"
+  },
+  "annotation_source": "/home/md0/ly/DP/datasets/RGB-T/annotations_coco/instances_01_test2017.json",
+  "annotation_sha256": "ad7ba716be63e4b0a9bcae7943ea291b8cfdd9cb1fb762fd336d083fbd848098"
+}

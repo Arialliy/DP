@@ -1,0 +1,273 @@
+{
+  "models": {
+    "deeppro_plus": {
+      "jobs": [
+        "deeppro_plus_c1c818212eb0c1d8",
+        "deeppro_plus_416648f66cbee93f"
+      ],
+      "training_epochs_completed": 32,
+      "training_final": true,
+      "training_state": "failed",
+      "final_captured": true
+    },
+    "lv_full": {
+      "jobs": [
+        "lv_full_e6ff4903cb0fbd9d"
+      ],
+      "training_epochs_completed": 32,
+      "training_final": true,
+      "training_state": "completed",
+      "final_captured": true
+    },
+    "lvh_full": {
+      "jobs": [
+        "lvh_full_9040811a0c5ebb7f",
+        "lvh_full_847567069b854b07"
+      ],
+      "training_epochs_completed": 32,
+      "training_final": true,
+      "training_state": "completed",
+      "final_captured": true
+    },
+    "mr_lv": {
+      "jobs": [
+        "mr_lv_05d986f5c3080c5c"
+      ],
+      "training_epochs_completed": 32,
+      "training_final": true,
+      "training_state": "completed",
+      "final_captured": true
+    },
+    "lvh_dec": {
+      "jobs": [
+        "lvh_dec_2837b37e6120c362"
+      ],
+      "training_epochs_completed": 18,
+      "training_final": false,
+      "training_state": "running",
+      "final_captured": false
+    }
+  },
+  "report_signature": "{\"active\": [{\"checkpoint_sha256\": \"4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc\", \"path\": \"results/author_released_reference/native/metrics.json\"}, {\"checkpoint_sha256\": \"416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db\", \"path\": \"results/deeppro_plus_416648f66cbee93f/native/metrics.json\"}, {\"checkpoint_sha256\": \"e6ff4903cb0fbd9d92a1c2c6a84455640020b8b3a4960978c93ec400d8a9199b\", \"path\": \"results/lv_full_e6ff4903cb0fbd9d/native/metrics.json\"}, {\"checkpoint_sha256\": \"847567069b854b07f7632be5c9ae9cce2da080671247a338e2ab60695c272a56\", \"path\": \"results/lvh_full_847567069b854b07/native/metrics.json\"}, {\"checkpoint_sha256\": \"05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc\", \"path\": \"results/mr_lv_05d986f5c3080c5c/rate1_auto/metrics.json\"}, {\"checkpoint_sha256\": \"05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc\", \"path\": \"results/mr_lv_05d986f5c3080c5c/multirate_max/metrics.json\"}, {\"checkpoint_sha256\": \"05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc\", \"path\": \"results/mr_lv_05d986f5c3080c5c/multirate_cfar_score/metrics.json\"}, {\"checkpoint_sha256\": \"2837b37e6120c362af2770655ea50b64a1fa5c72e8b005bad28c46acf5dabf7b\", \"path\": \"results/lvh_dec_2837b37e6120c362/native/metrics.json\"}], \"final_flags\": [false, true, true, true, true, true, true, false], \"pending\": [{\"model\": \"LVH-dec\", \"reason\": \"Current best snapshot evaluated; waiting for final 32-epoch checkpoint\"}]}",
+  "updated_at": "2026-11-26T18:21:33.498786+00:00",
+  "jobs": {
+    "deeppro_plus_c1c818212eb0c1d8": {
+      "job_id": "deeppro_plus_c1c818212eb0c1d8",
+      "model": "DeepPro-Plus",
+      "state": "completed",
+      "stage": "completed",
+      "started_at": "2026-11-26T14:06:03.127553+00:00",
+      "best_epoch": 20,
+      "checkpoint_sha256": "c1c818212eb0c1d8d8774e8fd1e6bac75db3e485ef2c5c7c34a4d0860afc87af",
+      "device": "cuda:0",
+      "clips_done": 15,
+      "clips_total": 15,
+      "updated_at": "2026-11-26T14:11:11.581471+00:00",
+      "clip": "DJI_0309_4",
+      "frames_done": 5976,
+      "rate": 1,
+      "used": true,
+      "window": 17,
+      "windows_total": 17,
+      "phase": 0,
+      "coords": "raw",
+      "first_frame": 563,
+      "last_frame": 602,
+      "variant": "native",
+      "scoring_frame": 600,
+      "complete": true,
+      "results": [
+        "results/deeppro_plus_c1c818212eb0c1d8/native/metrics.json"
+      ],
+      "elapsed_seconds": 308.1076388340007
+    },
+    "deeppro_plus_416648f66cbee93f": {
+      "job_id": "deeppro_plus_416648f66cbee93f",
+      "model": "DeepPro-Plus",
+      "state": "completed",
+      "stage": "completed",
+      "started_at": "2026-11-26T17:24:21.883307+00:00",
+      "best_epoch": 32,
+      "checkpoint_sha256": "416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db",
+      "device": "cuda:0",
+      "clips_done": 15,
+      "clips_total": 15,
+      "updated_at": "2026-11-26T17:29:30.751003+00:00",
+      "clip": "DJI_0309_4",
+      "frames_done": 5976,
+      "rate": 1,
+      "used": true,
+      "window": 17,
+      "windows_total": 17,
+      "phase": 0,
+      "coords": "raw",
+      "first_frame": 563,
+      "last_frame": 602,
+      "variant": "native",
+      "scoring_frame": 600,
+      "complete": true,
+      "results": [
+        "results/deeppro_plus_416648f66cbee93f/native/metrics.json"
+      ],
+      "elapsed_seconds": 308.54440628500015
+    },
+    "lv_full_e6ff4903cb0fbd9d": {
+      "job_id": "lv_full_e6ff4903cb0fbd9d",
+      "model": "DeepPro-LV",
+      "state": "completed",
+      "stage": "completed",
+      "started_at": "2026-11-26T14:02:15.863596+00:00",
+      "best_epoch": 16,
+      "checkpoint_sha256": "e6ff4903cb0fbd9d92a1c2c6a84455640020b8b3a4960978c93ec400d8a9199b",
+      "device": "cuda:0",
+      "clips_done": 15,
+      "clips_total": 15,
+      "updated_at": "2026-11-26T14:05:42.087994+00:00",
+      "clip": "DJI_0309_4",
+      "frames_done": 5976,
+      "rate": 1,
+      "used": true,
+      "window": 17,
+      "windows_total": 17,
+      "phase": 0,
+      "coords": "raw",
+      "first_frame": 563,
+      "last_frame": 602,
+      "variant": "native",
+      "scoring_frame": 600,
+      "complete": true,
+      "results": [
+        "results/lv_full_e6ff4903cb0fbd9d/native/metrics.json"
+      ],
+      "elapsed_seconds": 205.8189185759984
+    },
+    "lvh_full_9040811a0c5ebb7f": {
+      "job_id": "lvh_full_9040811a0c5ebb7f",
+      "model": "DeepPro-LVH",
+      "state": "completed",
+      "stage": "completed",
+      "started_at": "2026-11-26T14:11:31.027622+00:00",
+      "best_epoch": 13,
+      "checkpoint_sha256": "9040811a0c5ebb7fc3fe578e16cdc25a1d8375bf08564861c6439d172929d83d",
+      "device": "cuda:0",
+      "clips_done": 15,
+      "clips_total": 15,
+      "updated_at": "2026-11-26T14:19:55.978487+00:00",
+      "clip": "DJI_0309_4",
+      "frames_done": 5976,
+      "rate": 1,
+      "used": true,
+      "window": 17,
+      "windows_total": 17,
+      "phase": 0,
+      "coords": "warp",
+      "first_frame": 563,
+      "last_frame": 602,
+      "variant": "native",
+      "scoring_frame": 600,
+      "complete": true,
+      "results": [
+        "results/lvh_full_9040811a0c5ebb7f/native/metrics.json"
+      ],
+      "elapsed_seconds": 504.522308945001
+    },
+    "lvh_full_847567069b854b07": {
+      "job_id": "lvh_full_847567069b854b07",
+      "model": "DeepPro-LVH",
+      "state": "completed",
+      "stage": "completed",
+      "started_at": "2026-11-26T15:11:23.752812+00:00",
+      "best_epoch": 30,
+      "checkpoint_sha256": "847567069b854b07f7632be5c9ae9cce2da080671247a338e2ab60695c272a56",
+      "device": "cuda:0",
+      "clips_done": 15,
+      "clips_total": 15,
+      "updated_at": "2026-11-26T15:19:55.229398+00:00",
+      "clip": "DJI_0309_4",
+      "frames_done": 5976,
+      "rate": 1,
+      "used": true,
+      "window": 17,
+      "windows_total": 17,
+      "phase": 0,
+      "coords": "warp",
+      "first_frame": 563,
+      "last_frame": 602,
+      "variant": "native",
+      "scoring_frame": 600,
+      "complete": true,
+      "results": [
+        "results/lvh_full_847567069b854b07/native/metrics.json"
+      ],
+      "elapsed_seconds": 511.07667291800317
+    },
+    "mr_lv_05d986f5c3080c5c": {
+      "job_id": "mr_lv_05d986f5c3080c5c",
+      "model": "MRTP",
+      "state": "completed",
+      "stage": "completed",
+      "started_at": "2026-11-26T14:20:14.488100+00:00",
+      "best_epoch": 19,
+      "checkpoint_sha256": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc",
+      "device": "cuda:0",
+      "clips_done": 15,
+      "clips_total": 15,
+      "updated_at": "2026-11-26T14:38:36.351387+00:00",
+      "clip": "DJI_0309_4",
+      "frames_done": 5976,
+      "rate": 4,
+      "used": true,
+      "window": 20,
+      "windows_total": 20,
+      "phase": 3,
+      "coords": "warp",
+      "first_frame": 443,
+      "last_frame": 599,
+      "variant": "multirate_cfar_score",
+      "scoring_frame": 600,
+      "reason": "clip shorter than 40*rate",
+      "complete": true,
+      "results": [
+        "results/mr_lv_05d986f5c3080c5c/rate1_auto/metrics.json",
+        "results/mr_lv_05d986f5c3080c5c/multirate_max/metrics.json",
+        "results/mr_lv_05d986f5c3080c5c/multirate_cfar_score/metrics.json"
+      ],
+      "elapsed_seconds": 1101.4714394080074
+    },
+    "lvh_dec_2837b37e6120c362": {
+      "job_id": "lvh_dec_2837b37e6120c362",
+      "model": "LVH-dec",
+      "state": "completed",
+      "stage": "completed",
+      "started_at": "2026-11-26T17:29:46.678479+00:00",
+      "best_epoch": 1,
+      "checkpoint_sha256": "2837b37e6120c362af2770655ea50b64a1fa5c72e8b005bad28c46acf5dabf7b",
+      "device": "cuda:0",
+      "clips_done": 15,
+      "clips_total": 15,
+      "updated_at": "2026-11-26T17:37:47.413749+00:00",
+      "clip": "DJI_0309_4",
+      "frames_done": 5976,
+      "rate": 1,
+      "used": true,
+      "window": 17,
+      "windows_total": 17,
+      "phase": 0,
+      "coords": "warp",
+      "first_frame": 563,
+      "last_frame": 602,
+      "variant": "native",
+      "scoring_frame": 600,
+      "complete": true,
+      "results": [
+        "results/lvh_dec_2837b37e6120c362/native/metrics.json"
+      ],
+      "elapsed_seconds": 480.2921589049947
+    }
+  },
+  "all_final_complete": false,
+  "evaluation_gpu": [
+    2
+  ],
+  "currently_running": false
+}

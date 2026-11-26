@@ -1,0 +1,30 @@
+{
+  "job_id": "deeppro_plus_c1c818212eb0c1d8",
+  "model": "DeepPro-Plus",
+  "state": "completed",
+  "stage": "completed",
+  "started_at": "2026-11-26T14:06:03.127553+00:00",
+  "best_epoch": 20,
+  "checkpoint_sha256": "c1c818212eb0c1d8d8774e8fd1e6bac75db3e485ef2c5c7c34a4d0860afc87af",
+  "device": "cuda:0",
+  "clips_done": 15,
+  "clips_total": 15,
+  "updated_at": "2026-11-26T14:11:11.581471+00:00",
+  "clip": "DJI_0309_4",
+  "frames_done": 5976,
+  "rate": 1,
+  "used": true,
+  "window": 17,
+  "windows_total": 17,
+  "phase": 0,
+  "coords": "raw",
+  "first_frame": 563,
+  "last_frame": 602,
+  "variant": "native",
+  "scoring_frame": 600,
+  "complete": true,
+  "results": [
+    "results/deeppro_plus_c1c818212eb0c1d8/native/metrics.json"
+  ],
+  "elapsed_seconds": 308.1076388340007
+}

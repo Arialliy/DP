@@ -1,0 +1,12 @@
+clip,track_id,first,last,n_observations,n_fit,fit_first,fit_last,fit_span,teacher_logit,stop_ok,cv_ok,stop_rms,cv_rms,stop_x,stop_y,cv_anchor_t,cv_x,cv_y,cv_vx,cv_vy,fit_status
+DJI_0109_1,0,60,89,30,30,60,89,29,36.59375,True,True,2.9126162351626985,1.3129080693507433,591.5,427.0,74.5,590.7333333333333,427.1,0.23181312569521692,-0.16885428253615128,fitted
+DJI_0109_1,1,60,60,1,1,60,60,0,0.1705322265625,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,2,64,75,11,11,64,75,11,2.07421875,True,True,0.0,0.0,452.0,205.0,69.0909090909091,452.0,205.0,0.0,0.0,fitted
+DJI_0109_1,3,72,75,3,3,72,75,3,6.859375,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,4,81,88,8,8,81,88,7,7.25390625,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,5,89,89,1,1,89,89,0,8.2421875,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,6,89,89,1,1,89,89,0,6.1015625,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,7,89,89,1,1,89,89,0,3.42578125,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,8,89,89,1,1,89,89,0,2.904296875,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,9,89,89,1,1,89,89,0,1.14453125,False,False,,,,,,,,,,insufficient_observations
+DJI_0109_1,10,89,89,1,1,89,89,0,0.603515625,False,False,,,,,,,,,,insufficient_observations

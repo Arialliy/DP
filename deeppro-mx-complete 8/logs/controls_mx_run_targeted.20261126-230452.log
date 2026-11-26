@@ -1,0 +1,3 @@
+bash -n run_mx.sh exit=0
+PASS test_all_controls_keep_selection_and_main_gain (6 cases: legacy 4 controls, MTA 5 controls, default/custom MX_RUN, val_iou and original_test_iou, best_model.pth, split/gain/banks)
+exit_code=0

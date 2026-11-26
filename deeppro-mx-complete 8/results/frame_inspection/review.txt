@@ -1,0 +1,95 @@
+Frame inspection and local temporal-window controls
+
+All files were created inside deeppro-mx-complete 8. Dataset JPEGs and annotations
+were read only. The contact sheets show actual thermal pixels with fixed0..255
+grayscale. Full frames use nearest-neighbour half scale;64x64 crops use nearest-
+neighbour4x enlargement. Left crop is unmarked; right crop has the supplied GT
+box. No image generation, denoising, contrast stretching or synthetic pixels.
+
+DJI_0255_1
+
+The clip has one annotated plane track6000000 throughout600 frames. In the first
+frame its box begins at y=5, close to the image top. The selected early raw crops
+show a very faint compact target against a bright smooth background. The target
+is visibly clearer in the later90/120-frame crops, where the local background
+is darker. The code's maximum absolute local contrast within2 pixels of the
+annotated centre grows from3.06/3.88 gray levels at frames0/10 to40.05/43.34 at
+frames90/120. This is a measured appearance change, not proof of its cause.
+
+At1e-5, the first40 annotated frames have37 misses/40; later frames have13/560.
+First hit is frame29 at1e-5, frame68 at0.5. The transition is not aligned exactly
+with the second window starting at36. Weak early appearance, image position,
+background intensity and temporal context change together; these images alone
+do not distinguish them or establish an annotation error.
+
+DJI_0307_2
+
+The clip contains180 frames, but no supplied target annotation in frames0–18.
+The first plane annotation is frame19, source JPEG00697.jpg, track6000000.
+Thus the reported81% miss rate in frames0–39 means17/21 annotated target-frames,
+not17/40. The unannotated0/10 crops are shown at the first annotated location and
+are explicitly labelled as such; no target identity is assigned there.
+
+A compact bright target is visible in the annotated20/30-frame raw crops, near
+a bright structured background band. In later frames it is more separated from
+that band. All17 baseline misses are frames19–35. The cached hit probability
+jumps from2.6633e-6 at35 to0.999974 at36 and remains a hit thereafter at both
+1e-5 and0.5. Frame36 is exactly the beginning of the second official window.
+This motivated the controlled comparison below; the coincidence by itself was
+not treated as causal proof.
+
+Controlled comparison of identical target pixels in two windows
+
+Same frozen official checkpoint, CPU FP32, eval mode, no training. Constant ROI
+[480,376,608,504] is128x128. All target boxes have at least50px margin, while
+the exact spatial receptive-field radius of this model is9px. TPro mixes all
+40 temporal indices at each spatial location; eval BatchNorm has fixed running
+statistics. Comparing the SAME GT frames36–39:
+
+Frame   p from window[0,40)   p from window[36,76)
+36         3.3868e-6             0.9999734
+37         1.1434e-6             0.9999866
+38         3.6562e-6             0.9999998
+39         1.2271e-6             0.9998710
+
+All four change from miss to hit at BOTH1e-5 and0.5. Fusing these two cropped
+outputs matches cached full-frame target hit decisions for all53 annotated
+frames19–71 at both thresholds. Target maximum probability difference is
+7.15e-7; all pass rtol0.02+atol1e-7. Maximum relative difference is2.65% on
+tiny probabilities, which passes because of the absolute tolerance.
+
+Whole-ROI numerical identity is NOT claimed: the maximum interior probability
+difference from the GPU/float16 cache is0.06363, mean1.13e-5. It remains away
+from crop borders. The exact numerical cause was not isolated. The initial
+extra all-interior tolerance of0.002 failed; the identical two CPU windows were
+repeated once only to preserve outputs before assertions. There are two unique
+window conditions and four executed forwards for that witness.
+
+The controlled difference shows dependence on window context and/or relative
+temporal index despite identical target-frame pixels. It does not separate
+those mechanisms. In particular, it does not justify the categorical statement
+that the clip-head failure is unrelated to windowing merely because every
+window executes the same network.
+
+One additional shifted-window control
+
+Exactly one further CPU forward on window[18,58), same checkpoint and ROI:
+of the17 originally missed target-frames19–35,17/17 are hit at1e-5 and13/17
+(76.5%) at0.5. No new appearance pathway was used. Per-frame probabilities and
+logits are retained. This is a local, one-clip witness only: added global false
+alarms, ROI false alarms and full-test performance were NOT evaluated. It is
+not a demonstrated improvement at a matched false-alarm budget.
+
+Files
+
+DJI_0255_1_full_frames.png / DJI_0255_1_target_crops.png
+DJI_0307_2_full_frames.png / DJI_0307_2_target_crops.png
+*_target_frames.csv: all annotated target-frame hit probabilities and boxes
+inspection_data.json: selected frame hashes, boxes, contrast, counting details
+DJI_0307_2_overlap_control.json/.csv: two-window witness and equivalence checks
+DJI_0307_2_overlap_logits.npz: retained CPU outputs and cached ROI
+DJI_0307_2_shift18_control.json/.csv: one additional placement control
+DJI_0307_2_shift18_logits.npy: its retained CPU output
+
+Reproducible scripts: runtime/inspect_frames.py, inspect_window_overlap.py,
+inspect_shifted_window.py. No additional exploratory model runs were made.

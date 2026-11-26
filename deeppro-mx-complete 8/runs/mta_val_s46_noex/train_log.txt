@@ -1,0 +1,49 @@
+epoch 1/32 lr 1.00e-03 loss 2.4716 iters 175 63s rates {1: 700} warped 0.68 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.49 range 0.50-1.99
+val epoch 1/32 IoU 0.01170635 windows 81 complete True best 0.01170635 epoch 1 109.2s
+epoch 2/32 lr 1.00e-03 loss 2.3315 iters 175 68s rates {1: 700} warped 0.66 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.50-2.00
+val epoch 2/32 IoU 0.01216104 windows 81 complete True best 0.01216104 epoch 2 107.9s
+epoch 3/32 lr 1.00e-03 loss 2.2045 iters 175 64s rates {1: 700} warped 0.66 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.52 range 0.50-1.99
+val epoch 3/32 IoU 0.05403396 windows 81 complete True best 0.05403396 epoch 3 105.4s
+epoch 4/32 lr 1.00e-03 loss 2.0283 iters 175 67s rates {1: 700} warped 0.64 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.50-2.00
+val epoch 4/32 IoU 0.10937913 windows 81 complete True best 0.10937913 epoch 4 106.6s
+epoch 5/32 lr 1.00e-03 loss 1.9324 iters 175 63s rates {1: 700} warped 0.67 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.50-2.00
+val epoch 5/32 IoU 0.11281679 windows 81 complete True best 0.11281679 epoch 5 105.2s
+epoch 6/32 lr 1.00e-03 loss 1.8622 iters 175 64s rates {1: 700} warped 0.70 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.49 range 0.50-1.99
+val epoch 6/32 IoU 0.13063760 windows 81 complete True best 0.13063760 epoch 6 108.5s
+epoch 7/32 lr 1.00e-03 loss 1.8684 iters 175 66s rates {1: 700} warped 0.70 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.50-2.00
+val epoch 7/32 IoU 0.05433901 windows 81 complete True best 0.13063760 epoch 6 107.2s
+epoch 8/32 lr 1.00e-03 loss 1.8797 iters 175 64s rates {1: 700} warped 0.68 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.46 range 0.50-2.00
+val epoch 8/32 IoU 0.09235904 windows 81 complete True best 0.13063760 epoch 6 105.7s
+epoch 9/32 lr 1.00e-03 loss 1.8455 iters 175 67s rates {1: 700} warped 0.71 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.49 range 0.50-2.00
+val epoch 9/32 IoU 0.09248732 windows 81 complete True best 0.13063760 epoch 6 107.5s
+epoch 10/32 lr 1.00e-03 loss 1.7596 iters 175 64s rates {1: 700} warped 0.72 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.48 range 0.50-2.00
+val epoch 10/32 IoU 0.13423588 windows 81 complete True best 0.13423588 epoch 10 102.9s
+epoch 11/32 lr 7.00e-04 loss 1.7690 iters 175 63s rates {1: 700} warped 0.68 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.47 range 0.50-2.00
+val epoch 11/32 IoU 0.16919938 windows 81 complete True best 0.16919938 epoch 11 105.0s
+epoch 12/32 lr 7.00e-04 loss 1.7809 iters 175 65s rates {1: 700} warped 0.70 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.51 range 0.50-2.00
+val epoch 12/32 IoU 0.16084647 windows 81 complete True best 0.16919938 epoch 11 102.8s
+epoch 13/32 lr 7.00e-04 loss 1.7677 iters 175 64s rates {1: 700} warped 0.69 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.48 range 0.50-2.00
+val epoch 13/32 IoU 0.07620017 windows 81 complete True best 0.16919938 epoch 11 105.0s
+epoch 14/32 lr 7.00e-04 loss 1.7758 iters 175 67s rates {1: 700} warped 0.66 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.50-2.00
+val epoch 14/32 IoU 0.10459669 windows 81 complete True best 0.16919938 epoch 11 103.1s
+epoch 15/32 lr 7.00e-04 loss 1.7604 iters 175 64s rates {1: 700} warped 0.64 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.48 range 0.50-2.00
+val epoch 15/32 IoU 0.12403403 windows 81 complete True best 0.16919938 epoch 11 103.9s
+epoch 16/32 lr 7.00e-04 loss 1.7637 iters 175 64s rates {1: 700} warped 0.67 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.50-1.99
+val epoch 16/32 IoU 0.09418072 windows 81 complete True best 0.16919938 epoch 11 105.7s
+epoch 17/32 lr 7.00e-04 loss 1.7378 iters 175 65s rates {1: 700} warped 0.68 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.51 range 0.51-2.00
+val epoch 17/32 IoU 0.17383025 windows 81 complete True best 0.17383025 epoch 17 104.9s
+epoch 18/32 lr 7.00e-04 loss 1.7461 iters 175 66s rates {1: 700} warped 0.71 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.53 range 0.50-1.99
+val epoch 18/32 IoU 0.10691163 windows 81 complete True best 0.17383025 epoch 17 105.4s
+epoch 19/32 lr 7.00e-04 loss 1.7294 iters 175 68s rates {1: 700} warped 0.65 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.52 range 0.50-1.99
+val epoch 19/32 IoU 0.15145966 windows 81 complete True best 0.17383025 epoch 17 102.9s
+epoch 20/32 lr 7.00e-04 loss 1.7743 iters 175 64s rates {1: 700} warped 0.68 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.50-1.99
+val epoch 20/32 IoU 0.13860370 windows 81 complete True best 0.17383025 epoch 17 104.6s
+epoch 21/32 lr 4.90e-04 loss 1.7355 iters 175 65s rates {1: 700} warped 0.68 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.47 range 0.50-1.99
+val epoch 21/32 IoU 0.13596433 windows 81 complete True best 0.17383025 epoch 17 105.0s
+epoch 22/32 lr 4.90e-04 loss 1.7249 iters 175 64s rates {1: 700} warped 0.71 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.50 range 0.51-2.00
+val epoch 22/32 IoU 0.15209421 windows 81 complete True best 0.17383025 epoch 17 100.8s
+epoch 23/32 lr 4.90e-04 loss 1.7321 iters 175 63s rates {1: 700} warped 0.66 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.48 range 0.50-2.00
+val epoch 23/32 IoU 0.09973140 windows 81 complete True best 0.17383025 epoch 17 105.7s
+epoch 24/32 lr 4.90e-04 loss 1.7272 iters 175 67s rates {1: 700} warped 0.67 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.49 range 0.50-1.99
+val epoch 24/32 IoU 0.11137679 windows 81 complete True best 0.17383025 epoch 17 106.0s
+epoch 25/32 lr 4.90e-04 loss 1.6829 iters 175 64s rates {1: 700} warped 0.68 exemplars: samples 0.00 per-sample 0.0 fake 0.00 gain: changed 0.51 range 0.50-1.99

@@ -1,0 +1,188 @@
+{
+  "recorded_at": "2026-11-26T17:28:24.303800+00:00",
+  "purpose": "Preserve CPU checkpoint evidence; do not mistake sample_rate=.05 versus README default .1 for a proven discrepancy from the author-released training run.",
+  "evidence_origin": {
+    "method": "Previously executed torch.load(checkpoint, map_location=\"cpu\", weights_only=False); unique Adam step values across all optimizer-state entries containing step.",
+    "runtime_image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+    "cpu_only": true,
+    "cuda_visible_devices": "",
+    "docker_gpus_flag_used": false,
+    "filesystem_mount": "/home/md0/ly/DP:/dp:ro",
+    "repeated_for_this_record": false,
+    "training_or_queue_changed": false
+  },
+  "author_released_checkpoint": {
+    "path": "/home/md0/ly/DP/log/sem_seg/RGB-T__2025-01-14_15-27__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth",
+    "sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+    "epoch_zero_based": 21,
+    "epoch_one_based": 22,
+    "class_avg_iou": 0.16041548053381177,
+    "unique_adam_step_values": [
+      5192
+    ],
+    "optimizer_param_group": {
+      "lr": 0.00049,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.0001,
+      "amsgrad": false,
+      "maximize": false,
+      "foreach": null,
+      "capturable": false,
+      "differentiable": false,
+      "fused": false
+    },
+    "archived_training_log_path": "/home/md0/ly/DP/log/sem_seg/RGB-T__2025-01-14_15-27__SoftLoUloss_DeepPro-Plus_DataL40/logs/DeepPro-Plus.txt",
+    "archived_training_log_bytes": 0
+  },
+  "current_retraining": {
+    "config_path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/config.json",
+    "training_log_path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/logs/DeepPro-Plus.txt",
+    "sample_rate": 0.05,
+    "candidate_temporal_samples": 18955,
+    "dataset_length_per_epoch": 947,
+    "batch_size": 4,
+    "drop_last": true,
+    "optimizer_updates_per_epoch": 236,
+    "updates_per_epoch_calculation": "floor(floor(18955 * 0.05) / 4) = floor(947 / 4) = 236",
+    "expected_updates_after_22_epochs": 5192,
+    "expected_updates_after_22_epochs_is_derived_not_a_separate_epoch22_checkpoint_read": true,
+    "interim_checkpoint": {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/checkpoints/deeppro_plus_c1c818212eb0c1d8/best_model.pth",
+      "sha256": "c1c818212eb0c1d8d8774e8fd1e6bac75db3e485ef2c5c7c34a4d0860afc87af",
+      "epoch_zero_based": 19,
+      "epoch_one_based": 20,
+      "unique_adam_step_values": [
+        4720
+      ],
+      "class_avg_iou": 0.23704177955260394
+    },
+    "final_best_checkpoint": {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth",
+      "sha256": "416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db",
+      "epoch_zero_based": 31,
+      "epoch_one_based": 32,
+      "unique_adam_step_values": [
+        7552
+      ],
+      "class_avg_iou": 0.2784205820732258,
+      "all_model_tensors_finite": true,
+      "model_state_tensor_count": 100,
+      "same_model_state_as_epoch32_checkpoint": true,
+      "changed_model_state_tensors_against_interim_epoch20": 100
+    }
+  },
+  "interpretation": {
+    "direct_observation": "作者发布权重保存的 Adam step=5192、epoch=21（零起始）；本次每轮236次更新；5192=22×236。",
+    "supported_inference": "在优化器从零开始且连续累积、无step重置，并且epoch含义一致的前提下，作者前22轮平均更新次数与本次每轮236次一致。该证据支持相同训练更新量。",
+    "assumptions": [
+      "The stored epoch is zero-based, as in the available original train.py.",
+      "Adam step accumulated continuously from zero; no reset, imported optimizer state, or unrelated pretraining changed its interpretation.",
+      "Interpreting the average as the same per-epoch budget assumes a stable loader length and one optimizer update per full batch.",
+      "Inferring historical sample_rate additionally requires the same candidate sample list, batch size, drop_last, and training-loop behavior; the empty author log cannot establish all of these."
+    ],
+    "must_not_claim": [
+      "不能声称作者历史 sample_rate 已经由 checkpoint 直接确认为 .05。",
+      "不能把本次 .05 与 README 默认 .1 的差别，误写为已证实不同于作者发布模型的训练设置，或已证实的性能差距根因。",
+      "不能把参数、更新次数相近视为作者原始mask、随机过程和完整运行环境均已逐项复现。",
+      "不能把已完成epoch20快照的全序列指标当作epoch32最终best指标。"
+    ]
+  },
+  "audit_conclusions": [
+    {
+      "claim": "已重验源文件哈希：原架构、损失、采样器和评测源码未改；唯一源文件差异为train.py的sample_rate CLI int→float。",
+      "status": "verified"
+    },
+    {
+      "claim": "本地训练/测试mask为k=6、floor重建标签，未取得作者原始mask；目标数11300对作者11303，不能据接近计数认定逐像素相同。",
+      "status": "verified_limitation"
+    },
+    {
+      "claim": "本次保留原代码未固定训练seed的行为；作者历史seed、历史选择阈值及完整运行环境不可从空训练日志恢复。",
+      "status": "verified_limitation"
+    },
+    {
+      "claim": "作者发布权重在本地数据同阈值.99复测Pd=0.7790265486725664、Fa=4.467026e-5，接近论文工作点，未支持把巨大差距首先归结为评测公式错误。",
+      "status": "measured_reference_with_inference"
+    },
+    {
+      "claim": "标签、初始化/采样随机性、环境可能影响复训结果；尚无控制实验能分解各自贡献或确立单一主因。",
+      "status": "hypotheses_not_causal_findings"
+    }
+  ],
+  "source_references": [
+    {
+      "path": "/home/md0/ly/DP/train.py",
+      "line": 61,
+      "supports": "Original sample_rate default .1 and RGB-T help recommendation .05."
+    },
+    {
+      "path": "/home/md0/ly/DP/train.py",
+      "line": 120,
+      "supports": "Batch loader drop_last=True and time-dependent NumPy worker seed."
+    },
+    {
+      "path": "/home/md0/ly/DP/README.md",
+      "line": 40,
+      "supports": "README training command does not explicitly override sample_rate."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/config.json",
+      "line": 9,
+      "supports": "Current sample_rate .05; seed, selection and mask caveats follow."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/source/data_utils/TrainDataLoader.py",
+      "line": 37,
+      "supports": "Dataset length is int(candidate_count * sample_rate)."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/logs/DeepPro-Plus.txt",
+      "line": 2,
+      "supports": "Actual runtime parameters; 947 samples and fresh initialization at lines3–5."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/logs/DeepPro-Plus.txt",
+      "line": 302,
+      "supports": "Completed epoch32 and best checkpoint save at lines309–315."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/source_manifest.json",
+      "line": 52,
+      "supports": "Original and running DeepPro-Plus network hashes match."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/source_changes.diff",
+      "line": 7,
+      "supports": "Only sample_rate CLI type changed."
+    },
+    {
+      "path": "/home/md0/ly/DP/datasets/RGB-T/mask_protocol/verification.json",
+      "line": 25,
+      "supports": "Local11300 versus author11303 target counts."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/released_metrics.json",
+      "line": 205,
+      "supports": "Released checkpoint .99 Pd/Fa measurement."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/deeppro_plus_c1c818212eb0c1d8/native/metrics.json",
+      "line": 9,
+      "supports": "Old completed evaluation belongs to interim epoch20 checkpoint."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/diagnostics/baseline_final_recovery_audit.json",
+      "line": 25,
+      "supports": "Final checkpoint hash, epoch32 and optimizer update count."
+    },
+    {
+      "path": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/README.txt",
+      "line": 25,
+      "supports": "Compatible local runtime is not the unavailable author original environment."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "reviewed_at": "2026-11-26T17:42:46.853108+00:00",
+  "status": "pass_for_frozen_diagnostic",
+  "review_type": "independent source review plus synthetic-test design and test-log inspection; no real data execution by reviewer",
+  "checks": {
+    "prediction_only_generation": "generate/_generate_clip only consume plan, prediction NPY, metadata and checkpoint SHA; no Scene, boxes, masks or target CSV read before sealed manifest",
+    "teacher": "t>=60 and logit>=0 inclusive, exact zero retained, plateau grouping and deterministic score/y/x top300",
+    "association": "dt<=3, Euclidean distance<=10*dt; penalty exceeds all valid costs, maximum valid cardinality then minimum distance",
+    "fit": "first observation through first+39 only, >=10 observations span>=9, separate stop/CV RMS<=3; later observations do not alter model fit or fit-score rank",
+    "projection": "both accepted models, every early frame, all raw status records retained, independent per-model/frame NMS <=3 using fit count, teacher score, track ID",
+    "evaluation": "sealed generation hashes verified before GT read; matching to all GT one-to-one independently of baseline hit; each unassigned kept point wrong including empty-GT frames and 3..8px distances",
+    "numerical_boundary": "centered closed-form OLS, same estimator/parameters, preserves tested exact x=0 backcast boundary",
+    "output_scope": "box-frame/Euclidean3px diagnostic; no official component claim and no training/GO decision"
+  },
+  "tests": {
+    "count": 15,
+    "passed": true,
+    "log": "logs/m2.synthetic.final.20261127-014117.log",
+    "reviewer_initial_tests": "runtime/test_m2_backcast.py",
+    "added_integration": "No GT file during generation; modified GT does not alter generation hashes; every empty-GT or 5px wrong candidate counted in evaluation",
+    "synthetic_outputs_are_not_dataset_results": true
+  },
+  "sources": {
+    "runtime/m2_backcast.py": "edc6616b09fa5b50a2ad8c38b1c9862f4e3675ace2bde5ceeee220f35c6c34ec",
+    "runtime/test_m2_backcast.py": "67e5e2211acc5e8540a7864e8fb3fb243755c1bc0db071b3c75d8e23b1e29981",
+    "results/m2/plan.json": "5ed6743e4f5595267cda70b64218d1a02a89ba5e5dcfd700f4a2789a99588b86",
+    "logs/m2.synthetic.final.20261127-014117.log": "ca03806cc6c53f80bde754a5e655aa32de999a036e3aad13c1c8ca62114c048c"
+  },
+  "limitations": [
+    "This review does not claim scientific adequacy of the fixed motion assumptions or thresholds.",
+    "Real M2 outputs still require arithmetic/provenance verification after completion."
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "clip": "DJI_0307_2",
+  "device": "cpu",
+  "forwards": 2,
+  "windows": [
+    [
+      0,
+      40
+    ],
+    [
+      36,
+      76
+    ]
+  ],
+  "roi_xyxy": [
+    480,
+    376,
+    608,
+    504
+  ],
+  "coordinate_convention": "zero-based frame indices; native640x512 COCO x/y; crop128x128",
+  "min_gt_box_margin_px": 50.0,
+  "spatial_receptive_field_radius_px": 9,
+  "architecture_basis": "conv_in spatial radius3; two blocks each add1+2; other layers 1x1. TPro mixes all40 time indices independently at each spatial position. BatchNorm uses fixed running statistics in eval.",
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "model_source_sha256": "c486b71c5f92791903a5a64f81a3fde0ddebc654ad2fc1edbd97a97cd28ea2c2",
+  "cached_prediction_sha256": "97d88e90c0843f1c6cce379dd01f757ce38dc17e8bfa3922fd7fc8f6c5183ee5",
+  "input_frame_sha256": {
+    "00678.jpg": "9a224a124da8da0f3c46d47564b7eb2488cb9489e8a36c605b78abec8d2af47a",
+    "00679.jpg": "5965a7793cdf76ef9f34cb649422e56d04d99bd1ee64351cced7c718ce8491da",
+    "00680.jpg": "d5721ca7bdba6762f9fbc1bed33ec25d4cb9c777f6480946030c25e635b4f8e0",
+    "00681.jpg": "bb9254063c385da80bf90e74f67e7d7b286fd085983217a865eb59f083d8a93e",
+    "00682.jpg": "a81dacde054ff5e9343d576f154aaf0f7c4c398de7e74831a6ab8765a882bf17",
+    "00683.jpg": "524d5a10209ac4f58c78a13c37d90b814fe0db0cdecf6a4f3a9198354879c3ae",
+    "00684.jpg": "0d9ea95f2e0f8a09132cfe976e9cbddb8d2ec4c4c5e6c7320c749de90fa977f5",
+    "00685.jpg": "1bb68feb9d2b68a46b46635933a7410f8fea8f337ab34a3dfe7605f3052c2c62",
+    "00686.jpg": "8a17b408563b82054ac127c821d1a592ce1c02d2e7cdf00f9837666bd8653623",
+    "00687.jpg": "fc06db2d7a72280245edbcafedc78a1e7fe0f68c47b9e9c58c97fe694013bb77",
+    "00688.jpg": "047855e31b688ae7e43baa42fc36365bd27dd8f58d17d2080c58ff5f1eec9f87",
+    "00689.jpg": "954a6f167e30151933ed8c10d79ff0ee54105d2c54856d5c2502bb49e606f1e2",
+    "00690.jpg": "73027147cd89826b57e1b9daa4199d50b045d30dce5df9bfcc9cb7813fa4642a",
+    "00691.jpg": "a46773e8d9ed96807cda965b02cebc3054748c460f9fccd1952c8966efd44c6a",
+    "00692.jpg": "2549fa06fd8edbb2e927477433a7b5a7a1759f385b2c54aec0df0d00757fde8b",
+    "00693.jpg": "a28c48eb77fe0f4c1d26e8473bb323daa696069ac5b5f642c1b53a306a274b9b",
+    "00694.jpg": "cd95b12250e3470eb955805fddfd4ccd14c8072af8cb431b35532f1a2730c2f9",
+    "00695.jpg": "42ae0e34452a0254b99caf36fa6045ab981d869a0071ec1843c0d322058fb980",
+    "00696.jpg": "8db24d084fc16c8857548e469dcce2e2fd4a2c36127879fd3225f3e10fb85780",
+    "00697.jpg": "2bba37f128ae8b8cf50cacf5e2de69793711623f4fc8df3c8b084c0f9a27d401",
+    "00698.jpg": "bf58c461f310d7ae53597418dc510914e76a0104874182ffeffd9288ab716083",
+    "00699.jpg": "a32510121ef2ccc91919e77393d4660c3269cdaf1b1bc3874ffdfd3da5ff3bdf",
+    "00700.jpg": "1c5d1f8de04ff93459ea4a3cb1208a6682cf873f741d131b8724acee4800160b",
+    "00701.jpg": "06a964feda833177803cfe91b79f6a25eeea2ec2f3ac5300b781057e246647cd",
+    "00702.jpg": "b885c1f930992cf2be4aa396ad33025d43c0518c282bba43cb2d29c297606d69",
+    "00703.jpg": "ba7ddc950ab5a4bee566fa31d54c7e12372d3117ea5106d111445de1fb768d58",
+    "00704.jpg": "8c507fa8696a9c719220659bd476f207cca28045e94032da2d681f278c243c2c",
+    "00705.jpg": "f392bd0694777b01c1847ee8f3c2a272c64f79e204ca29635cb749d3d5bce8a8",
+    "00706.jpg": "e22ce21be10d1197632c1354af9628e58d1f25876c530e91245eb229a5b96f9e",
+    "00707.jpg": "1e86a8aa67cc66fd9f3efd6702a27509bb895bcedb0b9656840608d5aecece2d",
+    "00708.jpg": "4deb9543680bb05af4645b9d100e109462b397ba37b1ea7b39d4c60e830a639c",
+    "00709.jpg": "68ad47fea024130df9abcac41e2c6e3e8368d702616ea7121a6c0d7f174070af",
+    "00710.jpg": "4130afc885f397900cb0f9561bc0b1b6ac5c19df0a8edcc9ab0fabac73d2ed30",
+    "00711.jpg": "720e0c3ee520831ad1a9acf656667432c53ca1722381943afd23afaedb9ad560",
+    "00712.jpg": "bee80841ff44d68dc936ac85f52bcf050e9d125edc45818abf2b176eed533213",
+    "00713.jpg": "a7bdf49e74817b74c8f7e06125863ddf63a7ee9206fd7d8e5b112d6b11a76787",
+    "00714.jpg": "658a7bb19f78c2d0cb8933008e8a7664a0f92f73f7a1dfdd6b7b9d4d7c233e06",
+    "00715.jpg": "df415deda19064372c6045690ea1480b753ca7c5540faa15284c061d912ccd42",
+    "00716.jpg": "9200c947453e225feccf849cf096384dbda2eb731f29c1d1185ba33758fa0715",
+    "00717.jpg": "5ae27fa7f0a5746a5c3369fdeb81c261dbe58a369dfe523ea7931978216390b6",
+    "00718.jpg": "f4f10473171eccf45474166f3d2004e291fc5be24019b76fbdbdaf8b8fbf1450",
+    "00719.jpg": "98ae89f06dc35790b2ceed80756f7bd569a49555dfb013023863ac9bdbdd8f0d",
+    "00720.jpg": "502b8adb1b4cb5bf7c73111f67e5f0771c71e229b1f158d07bf16b67e1bb4055",
+    "00721.jpg": "ff717f71434be017f7ef84a84e8ae568c2d5d8f0bc42a58997470a7edb668b86",
+    "00722.jpg": "12ad6be6c94f9270fd8044a66e44b11ed239ebbb553ac71060658db923c7b80d",
+    "00723.jpg": "6cf4b5a014445d4f83fea02f91290c48ba0bf599236672dfc7be53da9dee2066",
+    "00724.jpg": "73b565372887df6a6abc6f7c160598b6c3f47a5f9511b95d7027e5eb743b65a9",
+    "00725.jpg": "3a223e1a2d272f88ca0aa5acbfd1de928791065d3963cb62e7c9ca719c68308d",
+    "00726.jpg": "98d3ccb9a50f864b85b85596d3f77629f1514789da41b8ffc9c9cac8007f56f2",
+    "00727.jpg": "2615559ceb3e11a7b43e52486b2c017e7b7c5ae590e2e36ff96389933875d4b8",
+    "00728.jpg": "a7655bf120548789747ae39bbf3351b9ad678d7c8719d34983a18b57e33b02ad",
+    "00729.jpg": "a28c7e13be8f6e3ab3e003e067e0621dce36d46f95c4a0336f8ca22f7d46b942",
+    "00730.jpg": "bab1eeec5217fb61377c0f6f8f240684500005e885c2c03476543d348b350876",
+    "00731.jpg": "63911ef4b2e57a40e42d6f2c1f3aea5bd69dd2d319e35c012c420c2911a8ecce",
+    "00732.jpg": "248371b7c07db68036fb4f132f67b7a80a9cd037dcc9f098a7ff8d733c9f853f",
+    "00733.jpg": "4b6356b506a7578f582860772e6bb1af7469219d3f9246763826ba579325e07c",
+    "00734.jpg": "c161c694be4cc26f104ab1642bb5d02a6527802c3d5c8bb7d98f6c8ddc52d97d",
+    "00735.jpg": "30f920025de8a00ff287eb2b6a9f562e0bad58377b61137ec6dce0ecf6525ee9",
+    "00736.jpg": "4e26286a06a2ad72cc1a5b3bfd4edd7c03e203ba8671791b520d2712f09ebdbe",
+    "00737.jpg": "56ae8a5223eec7b5b676f6b6ceb6d6f029b1cf313bd720428f460d1f672f3371",
+    "00738.jpg": "3f6a9c31ce8ce4a502e3d5bb474d72762a5b92e5fab7dded93d3f97a4481da62",
+    "00739.jpg": "a4c3a1b997830c44e0bf17d9013581e9fe1352debe4d913f4162eb56e86536e8",
+    "00740.jpg": "943d55b04bc99964a50800bb4d872bc73550587e27226d11e323e8b0c6a05b1e",
+    "00741.jpg": "3b478ce4fb5f3b4fc11db16671b35fc51f170bf9e0bf0b899d08457d246f37d3",
+    "00742.jpg": "ac64fdf8b8c2aca5078df433f274c253a6455b3e291a253e18ea234c2c8f5970",
+    "00743.jpg": "11da07d7f0b9dcf1f457c359f984c728eaf9d0d2a820da499c2b67284a5974dc",
+    "00744.jpg": "7ca819a8d48c76faa1e0b3b72012df9fbfa1581284cea87d539ab6c57756883e",
+    "00745.jpg": "dcd35a99446f23c640fd510b341f6dc96742af9a8a8901040c6f9d80c81ca4b8",
+    "00746.jpg": "7302e43e80981ac100588c590a91534882b54d40b8892b5ad01ee853688eb5fb",
+    "00747.jpg": "d6e013c10ab110101bbe5ee33f8e708fae135d2cd08c72cd2edfa0b3afa5f47f",
+    "00748.jpg": "ca8f326d4df26f2119794a6cbcf3ed7a7b75e33e780fabfa8c57e9d6351c0ca4",
+    "00749.jpg": "e4aefd325d87b84b2b0e8e962fb61fcd4365a077c8cd142d6e580ab054da1ef2",
+    "00750.jpg": "59d8df89e35c2e55d9103381b800631709019d201199ab782e4b73c07d308623",
+    "00751.jpg": "42e7c0c51a0154a2e5802e090e23a20396101a942960cb78719b5c6e5c7b699e",
+    "00752.jpg": "d2e7e27e534ef14c506f939cf8d24d463cbbd60084beb71f09f0439772dc30a9",
+    "00753.jpg": "3a612e747072ba98c5042343c07db1c0c091c6a9affb707aa9d16a9751fa3774"
+  },
+  "forward_seconds": [
+    1.480207029992016,
+    1.4863757459970657
+  ],
+  "overlap": [
+    {
+      "frame": 36,
+      "source_file": "00714.jpg",
+      "track": 6000000,
+      "first_window_index": 36,
+      "second_window_index": 0,
+      "first_window_probability": 3.3868082027765922e-06,
+      "second_window_probability": 0.9999734163284302,
+      "fused_crop_probability": 0.9999734163284302,
+      "cached_full_frame_probability": 0.9999741315841675,
+      "first_hit_1e_5": false,
+      "second_hit_1e_5": true,
+      "first_hit_0_5": false,
+      "second_hit_0_5": true
+    },
+    {
+      "frame": 37,
+      "source_file": "00715.jpg",
+      "track": 6000000,
+      "first_window_index": 37,
+      "second_window_index": 1,
+      "first_window_probability": 1.1433627378210076e-06,
+      "second_window_probability": 0.9999866485595703,
+      "fused_crop_probability": 0.9999866485595703,
+      "cached_full_frame_probability": 0.9999872446060181,
+      "first_hit_1e_5": false,
+      "second_hit_1e_5": true,
+      "first_hit_0_5": false,
+      "second_hit_0_5": true
+    },
+    {
+      "frame": 38,
+      "source_file": "00716.jpg",
+      "track": 6000000,
+      "first_window_index": 38,
+      "second_window_index": 2,
+      "first_window_probability": 3.656208946267725e-06,
+      "second_window_probability": 0.9999997615814209,
+      "fused_crop_probability": 0.9999997615814209,
+      "cached_full_frame_probability": 0.9999997615814209,
+      "first_hit_1e_5": false,
+      "second_hit_1e_5": true,
+      "first_hit_0_5": false,
+      "second_hit_0_5": true
+    },
+    {
+      "frame": 39,
+      "source_file": "00717.jpg",
+      "track": 6000000,
+      "first_window_index": 39,
+      "second_window_index": 3,
+      "first_window_probability": 1.2270971865291358e-06,
+      "second_window_probability": 0.999871015548706,
+      "fused_crop_probability": 0.999871015548706,
+      "cached_full_frame_probability": 0.9998717308044434,
+      "first_hit_1e_5": false,
+      "second_hit_1e_5": true,
+      "first_hit_0_5": false,
+      "second_hit_0_5": true
+    }
+  ],
+  "equivalence": {
+    "frames": [
+      0,
+      72
+    ],
+    "all_interior_max_probability_error": 0.06362563371658325,
+    "all_interior_mean_probability_error": 1.1274295502516907e-05,
+    "all_interior_max_logit_error": 0.4069194793701172,
+    "target_frames": [
+      {
+        "frame": 19,
+        "track": 6000000,
+        "cached_probability": 8.380498002225067e-07,
+        "crop_probability": 8.305682399623038e-07,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 20,
+        "track": 6000000,
+        "cached_probability": 7.646537596883718e-06,
+        "crop_probability": 7.663897122256458e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 21,
+        "track": 6000000,
+        "cached_probability": 6.591734290850582e-06,
+        "crop_probability": 6.628067694691708e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 22,
+        "track": 6000000,
+        "cached_probability": 3.7266393064783188e-06,
+        "crop_probability": 3.807333769145771e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 23,
+        "track": 6000000,
+        "cached_probability": 7.002168445069401e-07,
+        "crop_probability": 6.978829105719342e-07,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 24,
+        "track": 6000000,
+        "cached_probability": 1.1277188605163246e-06,
+        "crop_probability": 1.129573547586915e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 25,
+        "track": 6000000,
+        "cached_probability": 3.998099145974265e-06,
+        "crop_probability": 3.960714366257889e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 26,
+        "track": 6000000,
+        "cached_probability": 1.746643988553842e-06,
+        "crop_probability": 1.7277791357628303e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 27,
+        "track": 6000000,
+        "cached_probability": 4.637873189494712e-06,
+        "crop_probability": 4.694064500654349e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 28,
+        "track": 6000000,
+        "cached_probability": 5.896418429074402e-07,
+        "crop_probability": 5.875306783309497e-07,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 29,
+        "track": 6000000,
+        "cached_probability": 3.3145429370051716e-06,
+        "crop_probability": 3.2865855246200226e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 30,
+        "track": 6000000,
+        "cached_probability": 3.9586683442394133e-07,
+        "crop_probability": 3.9122352291087736e-07,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 31,
+        "track": 6000000,
+        "cached_probability": 2.118922850513627e-07,
+        "crop_probability": 2.1101810432355705e-07,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 32,
+        "track": 6000000,
+        "cached_probability": 1.6797313264760305e-06,
+        "crop_probability": 1.6711734360796981e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 33,
+        "track": 6000000,
+        "cached_probability": 6.893610589031596e-07,
+        "crop_probability": 7.076253609739069e-07,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 34,
+        "track": 6000000,
+        "cached_probability": 2.207963916589506e-06,
+        "crop_probability": 2.182500566050294e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 35,
+        "track": 6000000,
+        "cached_probability": 2.6633117613528157e-06,
+        "crop_probability": 2.7213166049477877e-06,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 36,
+        "track": 6000000,
+        "cached_probability": 0.9999741315841675,
+        "crop_probability": 0.9999734163284302,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 37,
+        "track": 6000000,
+        "cached_probability": 0.9999872446060181,
+        "crop_probability": 0.9999866485595703,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 38,
+        "track": 6000000,
+        "cached_probability": 0.9999997615814209,
+        "crop_probability": 0.9999997615814209,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 39,
+        "track": 6000000,
+        "cached_probability": 0.9998717308044434,
+        "crop_probability": 0.999871015548706,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 40,
+        "track": 6000000,
+        "cached_probability": 0.9999977350234985,
+        "crop_probability": 0.9999977350234985,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 41,
+        "track": 6000000,
+        "cached_probability": 0.999998927116394,
+        "crop_probability": 0.999998927116394,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 42,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 43,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 44,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 45,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 46,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 47,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 48,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 49,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 50,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 51,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 52,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 53,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 54,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 55,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 56,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 57,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 58,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 59,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 60,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 61,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 62,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 63,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 64,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 65,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 66,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 67,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 68,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 69,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 70,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      },
+      {
+        "frame": 71,
+        "track": 6000000,
+        "cached_probability": 1.0,
+        "crop_probability": 1.0,
+        "both_threshold_hits_match": true,
+        "probability_within_tolerance": true
+      }
+    ],
+    "target_hit_agreement_both_thresholds": true,
+    "relative_probability_tolerance": 0.02,
+    "absolute_probability_tolerance": 1e-07,
+    "all_interior_probability_tolerance": 0.002,
+    "all_interior_probability_tolerance_passed": false,
+    "target_probability_tolerance_passed": true,
+    "initial_attempt": "Two identical CPU forwards; target tests passed but extra whole-interior .002 check failed before saving. Repeated same two windows only to retain measurements; no new window/context experiment."
+  },
+  "limitations": [
+    "Compares the same frame pixels with different40-frame contexts AND different relative temporal indices; does not separate these two mechanisms.",
+    "Original cache was GPU FP32 output stored as float16; this witness uses CPU FP32. Equivalence is checked numerically on the interior and at target regions.",
+    "No full-frame CPU forward was rerun; spatial equivalence relies on the exact finite receptive field and is checked against the existing fused full-frame cache."
+  ]
+}

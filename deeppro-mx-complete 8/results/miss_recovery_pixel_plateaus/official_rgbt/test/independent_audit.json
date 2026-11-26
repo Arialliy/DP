@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "decision": false,
+  "groups": {
+    "all": {
+      "targets": 12665,
+      "misses": 1545,
+      "recovered": 4,
+      "recovered_fraction": 0.0025889967637540453,
+      "candidate_ceiling": 532
+    },
+    "frames < 60": {
+      "targets": 2261,
+      "misses": 644,
+      "recovered": 1,
+      "recovered_fraction": 0.0015527950310559005,
+      "candidate_ceiling": 220
+    },
+    "frames >= 60": {
+      "targets": 10404,
+      "misses": 901,
+      "recovered": 3,
+      "recovered_fraction": 0.003329633740288568,
+      "candidate_ceiling": 312
+    },
+    "clip DJI_0109_1": {
+      "targets": 90,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0049_2": {
+      "targets": 692,
+      "misses": 395,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 56
+    },
+    "clip DJI_0119_2": {
+      "targets": 360,
+      "misses": 6,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0159_2": {
+      "targets": 250,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0155_2": {
+      "targets": 410,
+      "misses": 27,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0173_2": {
+      "targets": 450,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0237_2": {
+      "targets": 3717,
+      "misses": 614,
+      "recovered": 4,
+      "recovered_fraction": 0.006514657980456026,
+      "candidate_ceiling": 338
+    },
+    "clip DJI_0129_2": {
+      "targets": 590,
+      "misses": 0,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0277_2": {
+      "targets": 985,
+      "misses": 4,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 0
+    },
+    "clip DJI_0221_2": {
+      "targets": 697,
+      "misses": 39,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 10
+    },
+    "clip DJI_0307_2": {
+      "targets": 161,
+      "misses": 17,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 10
+    },
+    "clip DJI_0255_1": {
+      "targets": 600,
+      "misses": 50,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 45
+    },
+    "clip DJI_0257_2": {
+      "targets": 1126,
+      "misses": 92,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 66
+    },
+    "clip DJI_0303_2": {
+      "targets": 1487,
+      "misses": 45,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 2
+    },
+    "clip DJI_0309_4": {
+      "targets": 1050,
+      "misses": 256,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 5
+    },
+    "category 1": {
+      "targets": 463,
+      "misses": 151,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 40
+    },
+    "category 3": {
+      "targets": 3775,
+      "misses": 870,
+      "recovered": 4,
+      "recovered_fraction": 0.004597701149425287,
+      "candidate_ceiling": 342
+    },
+    "category 4": {
+      "targets": 135,
+      "misses": 25,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 3
+    },
+    "category 5": {
+      "targets": 3343,
+      "misses": 206,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 92
+    },
+    "category 6": {
+      "targets": 4949,
+      "misses": 293,
+      "recovered": 0,
+      "recovered_fraction": 0.0,
+      "candidate_ceiling": 55
+    }
+  },
+  "assigned_candidates": 7401,
+  "all_budget_tables_verified": true,
+  "independent_ceiling": "scipy.sparse.csgraph.maximum_bipartite_matching",
+  "sources": {
+    "summary.json": "c755597b08cfccaafcf2d46078ae0951d811485c614ed04a89a9ddd3bba89d2e",
+    "targets.csv": "d98c103bdf2c88133aa73be5e815f2f66e006d40ed972d4ab4dbf3a2e3eb89c6",
+    "candidates.csv": "4f4450d8a8bc3314786b506dea7ec5dc15f8fb594e40e6fa0fb149fe9d5870f7"
+  },
+  "score_limit_audit": "score_limit_audit.json",
+  "score_limit_findings": {
+    "all_candidate_scores_finite": true,
+    "teacher_available_for_all_candidates": true,
+    "pooled_passing_target_count": 4,
+    "pooled_actual_recovered": 4,
+    "clip_passing_target_count": 58,
+    "clip_actual_recovered": 57,
+    "no_new_fit_or_threshold": true
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "dataset": "/home/md0/ly/DP/datasets/RGB-T",
+  "image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+  "official_source": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/source",
+  "artifacts": "/home/md0/ly/DP/reproduction/rgbt_research_models_20261126",
+  "test_clips": [
+    "DJI_0049_2",
+    "DJI_0109_1",
+    "DJI_0119_2",
+    "DJI_0129_2",
+    "DJI_0155_2",
+    "DJI_0159_2",
+    "DJI_0173_2",
+    "DJI_0221_2",
+    "DJI_0237_2",
+    "DJI_0255_1",
+    "DJI_0257_2",
+    "DJI_0277_2",
+    "DJI_0303_2",
+    "DJI_0307_2",
+    "DJI_0309_4"
+  ],
+  "expected_frames": 5976,
+  "expected_targets": 11300,
+  "expected_pixels": 1958215680,
+  "allowed_gpus": [
+    2
+  ],
+  "gpu_priority": [
+    2
+  ],
+  "gpu_authorization": "User requested 先使用gpu2 for unified evaluation; training queue still excludes GPU2.",
+  "models": [
+    {
+      "id": "deeppro_plus",
+      "model": "DeepPro-Plus",
+      "arch": "deeppro_plus",
+      "source_kind": "baseline",
+      "source_root": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126",
+      "checkpoint": "log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth",
+      "train_config": "config.json",
+      "variants": [
+        "native"
+      ],
+      "primary_variant": "native"
+    },
+    {
+      "id": "lv_full",
+      "model": "DeepPro-LV",
+      "arch": "lv_full",
+      "source_kind": "research",
+      "source_root": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126",
+      "checkpoint": "runs/deeppro_lv_rgbt_s46/best_model.pth",
+      "train_config": "runs/deeppro_lv_rgbt_s46/config.json",
+      "run": "deeppro_lv_rgbt_s46",
+      "variants": [
+        "native"
+      ],
+      "primary_variant": "native"
+    },
+    {
+      "id": "lvh_full",
+      "model": "DeepPro-LVH",
+      "arch": "lvh_full",
+      "source_kind": "research",
+      "source_root": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126",
+      "checkpoint": "runs/deeppro_lvh_rgbt_s46/best_model.pth",
+      "train_config": "runs/deeppro_lvh_rgbt_s46/config.json",
+      "run": "deeppro_lvh_rgbt_s46",
+      "variants": [
+        "native"
+      ],
+      "primary_variant": "native"
+    },
+    {
+      "id": "mr_lv",
+      "model": "MRTP",
+      "arch": "mr_lv",
+      "source_kind": "research",
+      "source_root": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126",
+      "checkpoint": "runs/mrtp_rgbt_s46/best_model.pth",
+      "train_config": "runs/mrtp_rgbt_s46/config.json",
+      "run": "mrtp_rgbt_s46",
+      "variants": [
+        "rate1_auto",
+        "multirate_max",
+        "multirate_cfar_score"
+      ],
+      "primary_variant": "multirate_max"
+    },
+    {
+      "id": "lvh_dec",
+      "model": "LVH-dec",
+      "arch": "lvh_dec",
+      "source_kind": "research",
+      "source_root": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126",
+      "checkpoint": "runs/lvh_dec_rgbt_s46/best_model.pth",
+      "train_config": "runs/lvh_dec_rgbt_s46/config.json",
+      "run": "lvh_dec_rgbt_s46",
+      "variants": [
+        "native"
+      ],
+      "primary_variant": "native"
+    }
+  ],
+  "active_results": [
+    {
+      "path": "results/author_released_reference/native/metrics.json",
+      "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+    },
+    {
+      "path": "results/deeppro_plus_416648f66cbee93f/native/metrics.json",
+      "checkpoint_sha256": "416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db"
+    },
+    {
+      "path": "results/lv_full_e6ff4903cb0fbd9d/native/metrics.json",
+      "checkpoint_sha256": "e6ff4903cb0fbd9d92a1c2c6a84455640020b8b3a4960978c93ec400d8a9199b"
+    },
+    {
+      "path": "results/lvh_full_847567069b854b07/native/metrics.json",
+      "checkpoint_sha256": "847567069b854b07f7632be5c9ae9cce2da080671247a338e2ab60695c272a56"
+    },
+    {
+      "path": "results/mr_lv_05d986f5c3080c5c/rate1_auto/metrics.json",
+      "checkpoint_sha256": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc"
+    },
+    {
+      "path": "results/mr_lv_05d986f5c3080c5c/multirate_max/metrics.json",
+      "checkpoint_sha256": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc"
+    },
+    {
+      "path": "results/mr_lv_05d986f5c3080c5c/multirate_cfar_score/metrics.json",
+      "checkpoint_sha256": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc"
+    },
+    {
+      "path": "results/lvh_dec_2837b37e6120c362/native/metrics.json",
+      "checkpoint_sha256": "2837b37e6120c362af2770655ea50b64a1fa5c72e8b005bad28c46acf5dabf7b"
+    }
+  ],
+  "pending_results": [
+    {
+      "model": "LVH-dec",
+      "reason": "Current best snapshot evaluated; waiting for final 32-epoch checkpoint"
+    }
+  ],
+  "outputs": [
+    "REPORT.txt",
+    "metrics.csv",
+    "roc_points.csv",
+    "ROC.png",
+    "ROC.pdf",
+    "ROC.svg"
+  ],
+  "reference_results": [
+    {
+      "path": "results/author_released_reference/native/metrics.json",
+      "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+    }
+  ]
+}

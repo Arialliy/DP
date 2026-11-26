@@ -1,0 +1,22 @@
+{
+  "summary": "/home/md0/ly/DP/deeppro-mx-complete 8/results/miss_recovery/official_rgbt/test/summary.json",
+  "decision": {
+    "go": false,
+    "diagnostic_only": true,
+    "applicable": true,
+    "mode": "pooled",
+    "budget": 1.0,
+    "baseline_threshold": 1e-05,
+    "early_frames": 60,
+    "early_minimum": 0.3,
+    "overall_minimum": 0.2,
+    "early_recovered_fraction": 0.0015527950310559005,
+    "overall_recovered_fraction": 0.0025889967637540453,
+    "realized_clutter_per_frame": 1.0,
+    "budget_satisfied": true,
+    "existing_hits_retained": "Logical OR with baseline; appearance hits_covered is reported separately",
+    "reason": "Recovery thresholds not met"
+  },
+  "gate": false,
+  "user_instruction": "M1 只记录，继续训练和对照"
+}

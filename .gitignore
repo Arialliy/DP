@@ -13,6 +13,12 @@ __pycache__/
 /reproduction/**/*.tmp
 /reproduction/**/nvidia-persistenced/
 
+# Versioned research bundles keep source, diagnostics, and weights, not video caches.
+/deeppro-mx-complete*/cache/
+/deeppro-mx-complete*/runtime/runner.log
+/deeppro-mx-complete*/runtime/runner.lock
+/deeppro-mx-complete*/**/*.tmp
+
 # Machine-local files and credentials.
 .DS_Store
 ._*

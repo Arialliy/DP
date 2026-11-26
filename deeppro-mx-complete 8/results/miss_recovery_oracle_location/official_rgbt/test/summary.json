@@ -1,0 +1,3096 @@
+{
+ "settings": {
+  "run": "official_rgbt",
+  "split": "test",
+  "preds": "cache/preds",
+  "targets": "results/profile/targets.csv",
+  "thresholds": [
+   1e-05,
+   0.5
+  ],
+  "teacher_th": 0.5,
+  "k": 16,
+  "patch": 11,
+  "shift": 2,
+  "per_frame": 100,
+  "r_pos": 3.0,
+  "r_neg": 8.0,
+  "budgets": [
+   0.25,
+   1.0,
+   2.0
+  ],
+  "early": 60,
+  "seqlen": 40,
+  "out": "results/miss_recovery",
+  "nproc": 8
+ },
+ "frames": {
+  "DJI_0049_2": 90,
+  "DJI_0109_1": 90,
+  "DJI_0119_2": 180,
+  "DJI_0129_2": 590,
+  "DJI_0155_2": 410,
+  "DJI_0159_2": 250,
+  "DJI_0173_2": 450,
+  "DJI_0221_2": 590,
+  "DJI_0237_2": 410,
+  "DJI_0255_1": 600,
+  "DJI_0257_2": 590,
+  "DJI_0277_2": 366,
+  "DJI_0303_2": 577,
+  "DJI_0307_2": 180,
+  "DJI_0309_4": 603
+ },
+ "candidates": 584945,
+ "results": {
+  "pooled budget 0.25 / official th 1e-05": {
+   "all": {
+    "targets": 12665,
+    "misses": 1545,
+    "recovered": 45,
+    "hits_covered": 569,
+    "recall": 0.878010264508488,
+    "recall_with_recovery": 0.8815633636004737,
+    "recovered_fraction": 0.02912621359223301
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 644,
+    "recovered": 29,
+    "hits_covered": 82,
+    "recall": 0.7151702786377709,
+    "recall_with_recovery": 0.7279964617425918,
+    "recovered_fraction": 0.04503105590062112
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 901,
+    "recovered": 16,
+    "hits_covered": 487,
+    "recall": 0.9133986928104575,
+    "recall_with_recovery": 0.9149365628604383,
+    "recovered_fraction": 0.017758046614872364
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 521,
+    "recovered": 36,
+    "hits_covered": 86,
+    "recall": 0.8171929824561404,
+    "recall_with_recovery": 0.8298245614035088,
+    "recovered_fraction": 0.0690978886756238
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 232,
+    "recovered": 7,
+    "hits_covered": 27,
+    "recall": 0.8391123439667129,
+    "recall_with_recovery": 0.8439667128987517,
+    "recovered_fraction": 0.03017241379310345
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 792,
+    "recovered": 2,
+    "hits_covered": 456,
+    "recall": 0.9054102472232175,
+    "recall_with_recovery": 0.90564911023528,
+    "recovered_fraction": 0.0025252525252525255
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 587,
+    "recovered": 2,
+    "hits_covered": 104,
+    "recall": 0.8689439607055146,
+    "recall_with_recovery": 0.869390488948426,
+    "recovered_fraction": 0.0034071550255536627
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 958,
+    "recovered": 43,
+    "hits_covered": 465,
+    "recall": 0.8829709259711703,
+    "recall_with_recovery": 0.8882237967261177,
+    "recovered_fraction": 0.04488517745302714
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 151,
+    "recovered": 0,
+    "hits_covered": 8,
+    "recall": 0.673866090712743,
+    "recall_with_recovery": 0.673866090712743,
+    "recovered_fraction": 0.0
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 870,
+    "recovered": 39,
+    "hits_covered": 104,
+    "recall": 0.7695364238410596,
+    "recall_with_recovery": 0.7798675496688742,
+    "recovered_fraction": 0.04482758620689655
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 25,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.8148148148148148,
+    "recall_with_recovery": 0.8148148148148148,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 206,
+    "recovered": 6,
+    "hits_covered": 111,
+    "recall": 0.9383787017648818,
+    "recall_with_recovery": 0.9401734968591086,
+    "recovered_fraction": 0.02912621359223301
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 293,
+    "recovered": 0,
+    "hits_covered": 346,
+    "recall": 0.9407961204283694,
+    "recall_with_recovery": 0.9407961204283694,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 395,
+    "recovered": 2,
+    "hits_covered": 8,
+    "recall": 0.4291907514450867,
+    "recall_with_recovery": 0.4320809248554913,
+    "recovered_fraction": 0.005063291139240506
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 6,
+    "recovered": 0,
+    "hits_covered": 12,
+    "recall": 0.9833333333333333,
+    "recall_with_recovery": 0.9833333333333333,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 1,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 27,
+    "recovered": 0,
+    "hits_covered": 6,
+    "recall": 0.9341463414634147,
+    "recall_with_recovery": 0.9341463414634147,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 38,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 39,
+    "recovered": 0,
+    "hits_covered": 13,
+    "recall": 0.9440459110473458,
+    "recall_with_recovery": 0.9440459110473458,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 614,
+    "recovered": 43,
+    "hits_covered": 156,
+    "recall": 0.8348130212536993,
+    "recall_with_recovery": 0.846381490449287,
+    "recovered_fraction": 0.07003257328990228
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 50,
+    "recovered": 0,
+    "hits_covered": 66,
+    "recall": 0.9166666666666666,
+    "recall_with_recovery": 0.9166666666666666,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 92,
+    "recovered": 0,
+    "hits_covered": 2,
+    "recall": 0.9182948490230906,
+    "recall_with_recovery": 0.9182948490230906,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 4,
+    "recovered": 0,
+    "hits_covered": 190,
+    "recall": 0.9959390862944163,
+    "recall_with_recovery": 0.9959390862944163,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 45,
+    "recovered": 0,
+    "hits_covered": 24,
+    "recall": 0.9697377269670477,
+    "recall_with_recovery": 0.9697377269670477,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 9,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 256,
+    "recovered": 0,
+    "hits_covered": 44,
+    "recall": 0.7561904761904762,
+    "recall_with_recovery": 0.7561904761904762,
+    "recovered_fraction": 0.0
+   }
+  },
+  "pooled budget 0.25 / official th 0.5": {
+   "all": {
+    "targets": 12665,
+    "misses": 2583,
+    "recovered": 67,
+    "hits_covered": 547,
+    "recall": 0.7960521121200158,
+    "recall_with_recovery": 0.8013422818791947,
+    "recovered_fraction": 0.025938830816879598
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 870,
+    "recovered": 31,
+    "hits_covered": 80,
+    "recall": 0.6152145068553737,
+    "recall_with_recovery": 0.6289252543122512,
+    "recovered_fraction": 0.035632183908045977
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 1713,
+    "recovered": 36,
+    "hits_covered": 467,
+    "recall": 0.8353517877739332,
+    "recall_with_recovery": 0.8388119953863898,
+    "recovered_fraction": 0.021015761821366025
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 843,
+    "recovered": 50,
+    "hits_covered": 72,
+    "recall": 0.7042105263157895,
+    "recall_with_recovery": 0.7217543859649123,
+    "recovered_fraction": 0.05931198102016608
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 366,
+    "recovered": 9,
+    "hits_covered": 25,
+    "recall": 0.7461858529819695,
+    "recall_with_recovery": 0.7524271844660194,
+    "recovered_fraction": 0.02459016393442623
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 1374,
+    "recovered": 8,
+    "hits_covered": 450,
+    "recall": 0.8359011107130061,
+    "recall_with_recovery": 0.8368565627612564,
+    "recovered_fraction": 0.005822416302765648
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 864,
+    "recovered": 3,
+    "hits_covered": 103,
+    "recall": 0.8070997990622907,
+    "recall_with_recovery": 0.8077695914266577,
+    "recovered_fraction": 0.003472222222222222
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 1719,
+    "recovered": 64,
+    "hits_covered": 444,
+    "recall": 0.7900073295871,
+    "recall_with_recovery": 0.7978255558270217,
+    "recovered_fraction": 0.03723094822571262
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 243,
+    "recovered": 0,
+    "hits_covered": 8,
+    "recall": 0.47516198704103674,
+    "recall_with_recovery": 0.47516198704103674,
+    "recovered_fraction": 0.0
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 1366,
+    "recovered": 56,
+    "hits_covered": 87,
+    "recall": 0.6381456953642384,
+    "recall_with_recovery": 0.6529801324503312,
+    "recovered_fraction": 0.040995607613469986
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 54,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.6,
+    "recall_with_recovery": 0.6,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 447,
+    "recovered": 11,
+    "hits_covered": 106,
+    "recall": 0.8662877654801077,
+    "recall_with_recovery": 0.8695782231528567,
+    "recovered_fraction": 0.024608501118568233
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 473,
+    "recovered": 0,
+    "hits_covered": 346,
+    "recall": 0.9044251363911902,
+    "recall_with_recovery": 0.9044251363911902,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 465,
+    "recovered": 3,
+    "hits_covered": 7,
+    "recall": 0.32803468208092484,
+    "recall_with_recovery": 0.33236994219653176,
+    "recovered_fraction": 0.0064516129032258064
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 36,
+    "recovered": 0,
+    "hits_covered": 12,
+    "recall": 0.9,
+    "recall_with_recovery": 0.9,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 1,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 55,
+    "recovered": 0,
+    "hits_covered": 6,
+    "recall": 0.8658536585365854,
+    "recall_with_recovery": 0.8658536585365854,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 11,
+    "recovered": 3,
+    "hits_covered": 35,
+    "recall": 0.956,
+    "recall_with_recovery": 0.968,
+    "recovered_fraction": 0.2727272727272727
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 18,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.96,
+    "recall_with_recovery": 0.96,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 80,
+    "recovered": 0,
+    "hits_covered": 13,
+    "recall": 0.8852223816355811,
+    "recall_with_recovery": 0.8852223816355811,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 1144,
+    "recovered": 61,
+    "hits_covered": 138,
+    "recall": 0.6922249125638956,
+    "recall_with_recovery": 0.70863599677159,
+    "recovered_fraction": 0.05332167832167832
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 77,
+    "recovered": 0,
+    "hits_covered": 66,
+    "recall": 0.8716666666666667,
+    "recall_with_recovery": 0.8716666666666667,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 196,
+    "recovered": 0,
+    "hits_covered": 2,
+    "recall": 0.8259325044404974,
+    "recall_with_recovery": 0.8259325044404974,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 9,
+    "recovered": 0,
+    "hits_covered": 190,
+    "recall": 0.9908629441624366,
+    "recall_with_recovery": 0.9908629441624366,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 137,
+    "recovered": 0,
+    "hits_covered": 24,
+    "recall": 0.9078681909885676,
+    "recall_with_recovery": 0.9078681909885676,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 9,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 338,
+    "recovered": 0,
+    "hits_covered": 44,
+    "recall": 0.6780952380952381,
+    "recall_with_recovery": 0.6780952380952381,
+    "recovered_fraction": 0.0
+   }
+  },
+  "pooled budget 1 / official th 1e-05": {
+   "all": {
+    "targets": 12665,
+    "misses": 1545,
+    "recovered": 102,
+    "hits_covered": 1701,
+    "recall": 0.878010264508488,
+    "recall_with_recovery": 0.8860639557836557,
+    "recovered_fraction": 0.06601941747572816
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 644,
+    "recovered": 53,
+    "hits_covered": 196,
+    "recall": 0.7151702786377709,
+    "recall_with_recovery": 0.7386112339672711,
+    "recovered_fraction": 0.08229813664596274
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 901,
+    "recovered": 49,
+    "hits_covered": 1505,
+    "recall": 0.9133986928104575,
+    "recall_with_recovery": 0.9181084198385236,
+    "recovered_fraction": 0.05438401775804662
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 521,
+    "recovered": 79,
+    "hits_covered": 324,
+    "recall": 0.8171929824561404,
+    "recall_with_recovery": 0.8449122807017544,
+    "recovered_fraction": 0.15163147792706333
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 232,
+    "recovered": 15,
+    "hits_covered": 105,
+    "recall": 0.8391123439667129,
+    "recall_with_recovery": 0.8495145631067961,
+    "recovered_fraction": 0.06465517241379311
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 792,
+    "recovered": 8,
+    "hits_covered": 1272,
+    "recall": 0.9054102472232175,
+    "recall_with_recovery": 0.9063656992714678,
+    "recovered_fraction": 0.010101010101010102
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 587,
+    "recovered": 4,
+    "hits_covered": 434,
+    "recall": 0.8689439607055146,
+    "recall_with_recovery": 0.8698370171913373,
+    "recovered_fraction": 0.0068143100511073255
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 958,
+    "recovered": 98,
+    "hits_covered": 1267,
+    "recall": 0.8829709259711703,
+    "recall_with_recovery": 0.8949425849010506,
+    "recovered_fraction": 0.1022964509394572
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 151,
+    "recovered": 1,
+    "hits_covered": 24,
+    "recall": 0.673866090712743,
+    "recall_with_recovery": 0.6760259179265659,
+    "recovered_fraction": 0.006622516556291391
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 870,
+    "recovered": 83,
+    "hits_covered": 353,
+    "recall": 0.7695364238410596,
+    "recall_with_recovery": 0.791523178807947,
+    "recovered_fraction": 0.09540229885057472
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 25,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.8148148148148148,
+    "recall_with_recovery": 0.8148148148148148,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 206,
+    "recovered": 18,
+    "hits_covered": 369,
+    "recall": 0.9383787017648818,
+    "recall_with_recovery": 0.9437630870475621,
+    "recovered_fraction": 0.08737864077669903
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 293,
+    "recovered": 0,
+    "hits_covered": 955,
+    "recall": 0.9407961204283694,
+    "recall_with_recovery": 0.9407961204283694,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 395,
+    "recovered": 4,
+    "hits_covered": 20,
+    "recall": 0.4291907514450867,
+    "recall_with_recovery": 0.434971098265896,
+    "recovered_fraction": 0.010126582278481013
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 6,
+    "recovered": 0,
+    "hits_covered": 28,
+    "recall": 0.9833333333333333,
+    "recall_with_recovery": 0.9833333333333333,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 6,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 27,
+    "recovered": 0,
+    "hits_covered": 51,
+    "recall": 0.9341463414634147,
+    "recall_with_recovery": 0.9341463414634147,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 110,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 3,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 39,
+    "recovered": 2,
+    "hits_covered": 57,
+    "recall": 0.9440459110473458,
+    "recall_with_recovery": 0.9469153515064562,
+    "recovered_fraction": 0.05128205128205128
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 614,
+    "recovered": 96,
+    "hits_covered": 474,
+    "recall": 0.8348130212536993,
+    "recall_with_recovery": 0.8606403013182674,
+    "recovered_fraction": 0.1563517915309446
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 50,
+    "recovered": 0,
+    "hits_covered": 275,
+    "recall": 0.9166666666666666,
+    "recall_with_recovery": 0.9166666666666666,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 92,
+    "recovered": 0,
+    "hits_covered": 31,
+    "recall": 0.9182948490230906,
+    "recall_with_recovery": 0.9182948490230906,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 4,
+    "recovered": 0,
+    "hits_covered": 349,
+    "recall": 0.9959390862944163,
+    "recall_with_recovery": 0.9959390862944163,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 45,
+    "recovered": 0,
+    "hits_covered": 109,
+    "recall": 0.9697377269670477,
+    "recall_with_recovery": 0.9697377269670477,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 20,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 256,
+    "recovered": 0,
+    "hits_covered": 168,
+    "recall": 0.7561904761904762,
+    "recall_with_recovery": 0.7561904761904762,
+    "recovered_fraction": 0.0
+   }
+  },
+  "pooled budget 1 / official th 0.5": {
+   "all": {
+    "targets": 12665,
+    "misses": 2583,
+    "recovered": 173,
+    "hits_covered": 1630,
+    "recall": 0.7960521121200158,
+    "recall_with_recovery": 0.8097118041847612,
+    "recovered_fraction": 0.06697638404955478
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 870,
+    "recovered": 66,
+    "hits_covered": 183,
+    "recall": 0.6152145068553737,
+    "recall_with_recovery": 0.6444051304732419,
+    "recovered_fraction": 0.07586206896551724
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 1713,
+    "recovered": 107,
+    "hits_covered": 1447,
+    "recall": 0.8353517877739332,
+    "recall_with_recovery": 0.8456362937331795,
+    "recovered_fraction": 0.06246351430239346
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 843,
+    "recovered": 130,
+    "hits_covered": 273,
+    "recall": 0.7042105263157895,
+    "recall_with_recovery": 0.7498245614035087,
+    "recovered_fraction": 0.1542111506524318
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 366,
+    "recovered": 25,
+    "hits_covered": 95,
+    "recall": 0.7461858529819695,
+    "recall_with_recovery": 0.7635228848821082,
+    "recovered_fraction": 0.06830601092896176
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 1374,
+    "recovered": 18,
+    "hits_covered": 1262,
+    "recall": 0.8359011107130061,
+    "recall_with_recovery": 0.8380508778215693,
+    "recovered_fraction": 0.013100436681222707
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 864,
+    "recovered": 6,
+    "hits_covered": 432,
+    "recall": 0.8070997990622907,
+    "recall_with_recovery": 0.8084393837910248,
+    "recovered_fraction": 0.006944444444444444
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 1719,
+    "recovered": 167,
+    "hits_covered": 1198,
+    "recall": 0.7900073295871,
+    "recall_with_recovery": 0.810408013681896,
+    "recovered_fraction": 0.09714950552646888
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 243,
+    "recovered": 3,
+    "hits_covered": 22,
+    "recall": 0.47516198704103674,
+    "recall_with_recovery": 0.4816414686825054,
+    "recovered_fraction": 0.012345679012345678
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 1366,
+    "recovered": 126,
+    "hits_covered": 310,
+    "recall": 0.6381456953642384,
+    "recall_with_recovery": 0.671523178807947,
+    "recovered_fraction": 0.09224011713030747
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 54,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.6,
+    "recall_with_recovery": 0.6,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 447,
+    "recovered": 44,
+    "hits_covered": 343,
+    "recall": 0.8662877654801077,
+    "recall_with_recovery": 0.8794495961711039,
+    "recovered_fraction": 0.09843400447427293
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 473,
+    "recovered": 0,
+    "hits_covered": 955,
+    "recall": 0.9044251363911902,
+    "recall_with_recovery": 0.9044251363911902,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 465,
+    "recovered": 5,
+    "hits_covered": 19,
+    "recall": 0.32803468208092484,
+    "recall_with_recovery": 0.3352601156069364,
+    "recovered_fraction": 0.010752688172043012
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 36,
+    "recovered": 0,
+    "hits_covered": 28,
+    "recall": 0.9,
+    "recall_with_recovery": 0.9,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 6,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 55,
+    "recovered": 0,
+    "hits_covered": 51,
+    "recall": 0.8658536585365854,
+    "recall_with_recovery": 0.8658536585365854,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 11,
+    "recovered": 11,
+    "hits_covered": 99,
+    "recall": 0.956,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 1.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 18,
+    "recovered": 0,
+    "hits_covered": 3,
+    "recall": 0.96,
+    "recall_with_recovery": 0.96,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 80,
+    "recovered": 3,
+    "hits_covered": 56,
+    "recall": 0.8852223816355811,
+    "recall_with_recovery": 0.8895265423242468,
+    "recovered_fraction": 0.0375
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 1144,
+    "recovered": 153,
+    "hits_covered": 417,
+    "recall": 0.6922249125638956,
+    "recall_with_recovery": 0.7333871401668012,
+    "recovered_fraction": 0.13374125874125875
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 77,
+    "recovered": 0,
+    "hits_covered": 275,
+    "recall": 0.8716666666666667,
+    "recall_with_recovery": 0.8716666666666667,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 196,
+    "recovered": 1,
+    "hits_covered": 30,
+    "recall": 0.8259325044404974,
+    "recall_with_recovery": 0.8268206039076377,
+    "recovered_fraction": 0.00510204081632653
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 9,
+    "recovered": 0,
+    "hits_covered": 349,
+    "recall": 0.9908629441624366,
+    "recall_with_recovery": 0.9908629441624366,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 137,
+    "recovered": 0,
+    "hits_covered": 109,
+    "recall": 0.9078681909885676,
+    "recall_with_recovery": 0.9078681909885676,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 20,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 338,
+    "recovered": 0,
+    "hits_covered": 168,
+    "recall": 0.6780952380952381,
+    "recall_with_recovery": 0.6780952380952381,
+    "recovered_fraction": 0.0
+   }
+  },
+  "pooled budget 2 / official th 1e-05": {
+   "all": {
+    "targets": 12665,
+    "misses": 1545,
+    "recovered": 162,
+    "hits_covered": 2697,
+    "recall": 0.878010264508488,
+    "recall_with_recovery": 0.8908014212396368,
+    "recovered_fraction": 0.10485436893203884
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 644,
+    "recovered": 85,
+    "hits_covered": 324,
+    "recall": 0.7151702786377709,
+    "recall_with_recovery": 0.7527642636001769,
+    "recovered_fraction": 0.13198757763975155
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 901,
+    "recovered": 77,
+    "hits_covered": 2373,
+    "recall": 0.9133986928104575,
+    "recall_with_recovery": 0.92079969242599,
+    "recovered_fraction": 0.08546059933407325
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 521,
+    "recovered": 122,
+    "hits_covered": 491,
+    "recall": 0.8171929824561404,
+    "recall_with_recovery": 0.86,
+    "recovered_fraction": 0.23416506717850288
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 232,
+    "recovered": 24,
+    "hits_covered": 197,
+    "recall": 0.8391123439667129,
+    "recall_with_recovery": 0.855755894590846,
+    "recovered_fraction": 0.10344827586206896
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 792,
+    "recovered": 16,
+    "hits_covered": 2009,
+    "recall": 0.9054102472232175,
+    "recall_with_recovery": 0.9073211513197181,
+    "recovered_fraction": 0.020202020202020204
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 587,
+    "recovered": 8,
+    "hits_covered": 781,
+    "recall": 0.8689439607055146,
+    "recall_with_recovery": 0.87073007367716,
+    "recovered_fraction": 0.013628620102214651
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 958,
+    "recovered": 154,
+    "hits_covered": 1916,
+    "recall": 0.8829709259711703,
+    "recall_with_recovery": 0.9017835328609821,
+    "recovered_fraction": 0.16075156576200417
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 151,
+    "recovered": 4,
+    "hits_covered": 50,
+    "recall": 0.673866090712743,
+    "recall_with_recovery": 0.6825053995680346,
+    "recovered_fraction": 0.026490066225165563
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 870,
+    "recovered": 139,
+    "hits_covered": 550,
+    "recall": 0.7695364238410596,
+    "recall_with_recovery": 0.8063576158940398,
+    "recovered_fraction": 0.15977011494252874
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 25,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.8148148148148148,
+    "recall_with_recovery": 0.8148148148148148,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 206,
+    "recovered": 19,
+    "hits_covered": 625,
+    "recall": 0.9383787017648818,
+    "recall_with_recovery": 0.9440622195632665,
+    "recovered_fraction": 0.09223300970873786
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 293,
+    "recovered": 0,
+    "hits_covered": 1472,
+    "recall": 0.9407961204283694,
+    "recall_with_recovery": 0.9407961204283694,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 395,
+    "recovered": 8,
+    "hits_covered": 41,
+    "recall": 0.4291907514450867,
+    "recall_with_recovery": 0.4407514450867052,
+    "recovered_fraction": 0.020253164556962026
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 6,
+    "recovered": 0,
+    "hits_covered": 50,
+    "recall": 0.9833333333333333,
+    "recall_with_recovery": 0.9833333333333333,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 42,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 27,
+    "recovered": 0,
+    "hits_covered": 110,
+    "recall": 0.9341463414634147,
+    "recall_with_recovery": 0.9341463414634147,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 142,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 13,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 39,
+    "recovered": 2,
+    "hits_covered": 107,
+    "recall": 0.9440459110473458,
+    "recall_with_recovery": 0.9469153515064562,
+    "recovered_fraction": 0.05128205128205128
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 614,
+    "recovered": 152,
+    "hits_covered": 722,
+    "recall": 0.8348130212536993,
+    "recall_with_recovery": 0.8757062146892656,
+    "recovered_fraction": 0.247557003257329
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 50,
+    "recovered": 0,
+    "hits_covered": 392,
+    "recall": 0.9166666666666666,
+    "recall_with_recovery": 0.9166666666666666,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 92,
+    "recovered": 0,
+    "hits_covered": 90,
+    "recall": 0.9182948490230906,
+    "recall_with_recovery": 0.9182948490230906,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 4,
+    "recovered": 0,
+    "hits_covered": 466,
+    "recall": 0.9959390862944163,
+    "recall_with_recovery": 0.9959390862944163,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 45,
+    "recovered": 0,
+    "hits_covered": 222,
+    "recall": 0.9697377269670477,
+    "recall_with_recovery": 0.9697377269670477,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 43,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 256,
+    "recovered": 0,
+    "hits_covered": 257,
+    "recall": 0.7561904761904762,
+    "recall_with_recovery": 0.7561904761904762,
+    "recovered_fraction": 0.0
+   }
+  },
+  "pooled budget 2 / official th 0.5": {
+   "all": {
+    "targets": 12665,
+    "misses": 2583,
+    "recovered": 289,
+    "hits_covered": 2570,
+    "recall": 0.7960521121200158,
+    "recall_with_recovery": 0.8188709040663246,
+    "recovered_fraction": 0.1118854045683314
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 870,
+    "recovered": 115,
+    "hits_covered": 294,
+    "recall": 0.6152145068553737,
+    "recall_with_recovery": 0.6660769570986289,
+    "recovered_fraction": 0.13218390804597702
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 1713,
+    "recovered": 174,
+    "hits_covered": 2276,
+    "recall": 0.8353517877739332,
+    "recall_with_recovery": 0.8520761245674741,
+    "recovered_fraction": 0.10157618213660245
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 843,
+    "recovered": 199,
+    "hits_covered": 414,
+    "recall": 0.7042105263157895,
+    "recall_with_recovery": 0.7740350877192983,
+    "recovered_fraction": 0.23606168446026096
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 366,
+    "recovered": 44,
+    "hits_covered": 177,
+    "recall": 0.7461858529819695,
+    "recall_with_recovery": 0.7766990291262136,
+    "recovered_fraction": 0.12021857923497267
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 1374,
+    "recovered": 46,
+    "hits_covered": 1979,
+    "recall": 0.8359011107130061,
+    "recall_with_recovery": 0.8413949599904454,
+    "recovered_fraction": 0.033478893740902474
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 864,
+    "recovered": 13,
+    "hits_covered": 776,
+    "recall": 0.8070997990622907,
+    "recall_with_recovery": 0.8100022326412145,
+    "recovered_fraction": 0.015046296296296295
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 1719,
+    "recovered": 276,
+    "hits_covered": 1794,
+    "recall": 0.7900073295871,
+    "recall_with_recovery": 0.8237234302467628,
+    "recovered_fraction": 0.16055846422338568
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 243,
+    "recovered": 13,
+    "hits_covered": 41,
+    "recall": 0.47516198704103674,
+    "recall_with_recovery": 0.5032397408207343,
+    "recovered_fraction": 0.053497942386831275
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 1366,
+    "recovered": 221,
+    "hits_covered": 468,
+    "recall": 0.6381456953642384,
+    "recall_with_recovery": 0.6966887417218544,
+    "recovered_fraction": 0.1617862371888726
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 54,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.6,
+    "recall_with_recovery": 0.6,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 447,
+    "recovered": 54,
+    "hits_covered": 590,
+    "recall": 0.8662877654801077,
+    "recall_with_recovery": 0.8824409213281483,
+    "recovered_fraction": 0.12080536912751678
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 473,
+    "recovered": 1,
+    "hits_covered": 1471,
+    "recall": 0.9044251363911902,
+    "recall_with_recovery": 0.904627197413619,
+    "recovered_fraction": 0.0021141649048625794
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 465,
+    "recovered": 10,
+    "hits_covered": 39,
+    "recall": 0.32803468208092484,
+    "recall_with_recovery": 0.342485549132948,
+    "recovered_fraction": 0.021505376344086023
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 36,
+    "recovered": 0,
+    "hits_covered": 50,
+    "recall": 0.9,
+    "recall_with_recovery": 0.9,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 42,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 55,
+    "recovered": 0,
+    "hits_covered": 110,
+    "recall": 0.8658536585365854,
+    "recall_with_recovery": 0.8658536585365854,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 11,
+    "recovered": 11,
+    "hits_covered": 131,
+    "recall": 0.956,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 1.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 18,
+    "recovered": 0,
+    "hits_covered": 13,
+    "recall": 0.96,
+    "recall_with_recovery": 0.96,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 80,
+    "recovered": 5,
+    "hits_covered": 104,
+    "recall": 0.8852223816355811,
+    "recall_with_recovery": 0.8923959827833573,
+    "recovered_fraction": 0.0625
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 1144,
+    "recovered": 260,
+    "hits_covered": 614,
+    "recall": 0.6922249125638956,
+    "recall_with_recovery": 0.7621737960721011,
+    "recovered_fraction": 0.22727272727272727
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 77,
+    "recovered": 1,
+    "hits_covered": 391,
+    "recall": 0.8716666666666667,
+    "recall_with_recovery": 0.8733333333333333,
+    "recovered_fraction": 0.012987012987012988
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 196,
+    "recovered": 2,
+    "hits_covered": 88,
+    "recall": 0.8259325044404974,
+    "recall_with_recovery": 0.827708703374778,
+    "recovered_fraction": 0.01020408163265306
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 9,
+    "recovered": 0,
+    "hits_covered": 466,
+    "recall": 0.9908629441624366,
+    "recall_with_recovery": 0.9908629441624366,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 137,
+    "recovered": 0,
+    "hits_covered": 222,
+    "recall": 0.9078681909885676,
+    "recall_with_recovery": 0.9078681909885676,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 43,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 338,
+    "recovered": 0,
+    "hits_covered": 257,
+    "recall": 0.6780952380952381,
+    "recall_with_recovery": 0.6780952380952381,
+    "recovered_fraction": 0.0
+   }
+  },
+  "clip budget 0.25 / official th 1e-05": {
+   "all": {
+    "targets": 12665,
+    "misses": 1545,
+    "recovered": 32,
+    "hits_covered": 1922,
+    "recall": 0.878010264508488,
+    "recall_with_recovery": 0.8805369127516779,
+    "recovered_fraction": 0.020711974110032363
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 644,
+    "recovered": 20,
+    "hits_covered": 175,
+    "recall": 0.7151702786377709,
+    "recall_with_recovery": 0.724015922158337,
+    "recovered_fraction": 0.031055900621118012
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 901,
+    "recovered": 12,
+    "hits_covered": 1747,
+    "recall": 0.9133986928104575,
+    "recall_with_recovery": 0.9145520953479431,
+    "recovered_fraction": 0.013318534961154272
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 521,
+    "recovered": 17,
+    "hits_covered": 119,
+    "recall": 0.8171929824561404,
+    "recall_with_recovery": 0.8231578947368421,
+    "recovered_fraction": 0.03262955854126679
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 232,
+    "recovered": 6,
+    "hits_covered": 230,
+    "recall": 0.8391123439667129,
+    "recall_with_recovery": 0.8432732316227461,
+    "recovered_fraction": 0.02586206896551724
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 792,
+    "recovered": 9,
+    "hits_covered": 1573,
+    "recall": 0.9054102472232175,
+    "recall_with_recovery": 0.9064851307774991,
+    "recovered_fraction": 0.011363636363636364
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 587,
+    "recovered": 9,
+    "hits_covered": 1328,
+    "recall": 0.8689439607055146,
+    "recall_with_recovery": 0.8709533377986157,
+    "recovered_fraction": 0.015332197614991482
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 958,
+    "recovered": 23,
+    "hits_covered": 594,
+    "recall": 0.8829709259711703,
+    "recall_with_recovery": 0.8857806010261422,
+    "recovered_fraction": 0.024008350730688934
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 151,
+    "recovered": 0,
+    "hits_covered": 6,
+    "recall": 0.673866090712743,
+    "recall_with_recovery": 0.673866090712743,
+    "recovered_fraction": 0.0
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 870,
+    "recovered": 21,
+    "hits_covered": 53,
+    "recall": 0.7695364238410596,
+    "recall_with_recovery": 0.7750993377483444,
+    "recovered_fraction": 0.02413793103448276
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 25,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.8148148148148148,
+    "recall_with_recovery": 0.8148148148148148,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 206,
+    "recovered": 10,
+    "hits_covered": 454,
+    "recall": 0.9383787017648818,
+    "recall_with_recovery": 0.9413700269219264,
+    "recovered_fraction": 0.04854368932038835
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 293,
+    "recovered": 1,
+    "hits_covered": 1409,
+    "recall": 0.9407961204283694,
+    "recall_with_recovery": 0.9409981814507982,
+    "recovered_fraction": 0.0034129692832764505
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 395,
+    "recovered": 4,
+    "hits_covered": 20,
+    "recall": 0.4291907514450867,
+    "recall_with_recovery": 0.434971098265896,
+    "recovered_fraction": 0.010126582278481013
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 3,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 6,
+    "recovered": 0,
+    "hits_covered": 13,
+    "recall": 0.9833333333333333,
+    "recall_with_recovery": 0.9833333333333333,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 453,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 27,
+    "recovered": 4,
+    "hits_covered": 285,
+    "recall": 0.9341463414634147,
+    "recall_with_recovery": 0.9439024390243902,
+    "recovered_fraction": 0.14814814814814814
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 7,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 4,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 39,
+    "recovered": 1,
+    "hits_covered": 39,
+    "recall": 0.9440459110473458,
+    "recall_with_recovery": 0.945480631276901,
+    "recovered_fraction": 0.02564102564102564
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 614,
+    "recovered": 22,
+    "hits_covered": 75,
+    "recall": 0.8348130212536993,
+    "recall_with_recovery": 0.8407317729351628,
+    "recovered_fraction": 0.035830618892508145
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 50,
+    "recovered": 1,
+    "hits_covered": 466,
+    "recall": 0.9166666666666666,
+    "recall_with_recovery": 0.9183333333333333,
+    "recovered_fraction": 0.02
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 92,
+    "recovered": 0,
+    "hits_covered": 83,
+    "recall": 0.9182948490230906,
+    "recall_with_recovery": 0.9182948490230906,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 4,
+    "recovered": 0,
+    "hits_covered": 279,
+    "recall": 0.9959390862944163,
+    "recall_with_recovery": 0.9959390862944163,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 45,
+    "recovered": 0,
+    "hits_covered": 191,
+    "recall": 0.9697377269670477,
+    "recall_with_recovery": 0.9697377269670477,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 1,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 256,
+    "recovered": 0,
+    "hits_covered": 3,
+    "recall": 0.7561904761904762,
+    "recall_with_recovery": 0.7561904761904762,
+    "recovered_fraction": 0.0
+   }
+  },
+  "clip budget 0.25 / official th 0.5": {
+   "all": {
+    "targets": 12665,
+    "misses": 2583,
+    "recovered": 59,
+    "hits_covered": 1895,
+    "recall": 0.7960521121200158,
+    "recall_with_recovery": 0.8007106198183972,
+    "recovered_fraction": 0.022841656987998452
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 870,
+    "recovered": 23,
+    "hits_covered": 172,
+    "recall": 0.6152145068553737,
+    "recall_with_recovery": 0.6253869969040248,
+    "recovered_fraction": 0.026436781609195402
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 1713,
+    "recovered": 36,
+    "hits_covered": 1723,
+    "recall": 0.8353517877739332,
+    "recall_with_recovery": 0.8388119953863898,
+    "recovered_fraction": 0.021015761821366025
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 843,
+    "recovered": 26,
+    "hits_covered": 110,
+    "recall": 0.7042105263157895,
+    "recall_with_recovery": 0.7133333333333334,
+    "recovered_fraction": 0.03084223013048636
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 366,
+    "recovered": 8,
+    "hits_covered": 228,
+    "recall": 0.7461858529819695,
+    "recall_with_recovery": 0.7517337031900139,
+    "recovered_fraction": 0.02185792349726776
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 1374,
+    "recovered": 25,
+    "hits_covered": 1557,
+    "recall": 0.8359011107130061,
+    "recall_with_recovery": 0.8388868983637884,
+    "recovered_fraction": 0.018195050946142648
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 864,
+    "recovered": 25,
+    "hits_covered": 1312,
+    "recall": 0.8070997990622907,
+    "recall_with_recovery": 0.8126814020986828,
+    "recovered_fraction": 0.028935185185185185
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 1719,
+    "recovered": 34,
+    "hits_covered": 583,
+    "recall": 0.7900073295871,
+    "recall_with_recovery": 0.7941607622770583,
+    "recovered_fraction": 0.01977894124490983
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 243,
+    "recovered": 0,
+    "hits_covered": 6,
+    "recall": 0.47516198704103674,
+    "recall_with_recovery": 0.47516198704103674,
+    "recovered_fraction": 0.0
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 1366,
+    "recovered": 31,
+    "hits_covered": 43,
+    "recall": 0.6381456953642384,
+    "recall_with_recovery": 0.6463576158940397,
+    "recovered_fraction": 0.022693997071742314
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 54,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.6,
+    "recall_with_recovery": 0.6,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 447,
+    "recovered": 20,
+    "hits_covered": 444,
+    "recall": 0.8662877654801077,
+    "recall_with_recovery": 0.8722704157941968,
+    "recovered_fraction": 0.0447427293064877
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 473,
+    "recovered": 8,
+    "hits_covered": 1402,
+    "recall": 0.9044251363911902,
+    "recall_with_recovery": 0.9060416245706203,
+    "recovered_fraction": 0.016913319238900635
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 465,
+    "recovered": 5,
+    "hits_covered": 19,
+    "recall": 0.32803468208092484,
+    "recall_with_recovery": 0.3352601156069364,
+    "recovered_fraction": 0.010752688172043012
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 3,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 36,
+    "recovered": 0,
+    "hits_covered": 13,
+    "recall": 0.9,
+    "recall_with_recovery": 0.9,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 453,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 55,
+    "recovered": 10,
+    "hits_covered": 279,
+    "recall": 0.8658536585365854,
+    "recall_with_recovery": 0.8902439024390244,
+    "recovered_fraction": 0.18181818181818182
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 11,
+    "recovered": 0,
+    "hits_covered": 7,
+    "recall": 0.956,
+    "recall_with_recovery": 0.956,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 18,
+    "recovered": 0,
+    "hits_covered": 4,
+    "recall": 0.96,
+    "recall_with_recovery": 0.96,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 80,
+    "recovered": 2,
+    "hits_covered": 38,
+    "recall": 0.8852223816355811,
+    "recall_with_recovery": 0.8880918220946915,
+    "recovered_fraction": 0.025
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 1144,
+    "recovered": 32,
+    "hits_covered": 65,
+    "recall": 0.6922249125638956,
+    "recall_with_recovery": 0.7008340059187517,
+    "recovered_fraction": 0.027972027972027972
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 77,
+    "recovered": 8,
+    "hits_covered": 459,
+    "recall": 0.8716666666666667,
+    "recall_with_recovery": 0.885,
+    "recovered_fraction": 0.1038961038961039
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 196,
+    "recovered": 2,
+    "hits_covered": 81,
+    "recall": 0.8259325044404974,
+    "recall_with_recovery": 0.827708703374778,
+    "recovered_fraction": 0.01020408163265306
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 9,
+    "recovered": 0,
+    "hits_covered": 279,
+    "recall": 0.9908629441624366,
+    "recall_with_recovery": 0.9908629441624366,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 137,
+    "recovered": 0,
+    "hits_covered": 191,
+    "recall": 0.9078681909885676,
+    "recall_with_recovery": 0.9078681909885676,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 1,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 338,
+    "recovered": 0,
+    "hits_covered": 3,
+    "recall": 0.6780952380952381,
+    "recall_with_recovery": 0.6780952380952381,
+    "recovered_fraction": 0.0
+   }
+  },
+  "clip budget 1 / official th 1e-05": {
+   "all": {
+    "targets": 12665,
+    "misses": 1545,
+    "recovered": 88,
+    "hits_covered": 2924,
+    "recall": 0.878010264508488,
+    "recall_with_recovery": 0.8849585471772602,
+    "recovered_fraction": 0.056957928802589
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 644,
+    "recovered": 46,
+    "hits_covered": 325,
+    "recall": 0.7151702786377709,
+    "recall_with_recovery": 0.735515258735073,
+    "recovered_fraction": 0.07142857142857142
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 901,
+    "recovered": 42,
+    "hits_covered": 2599,
+    "recall": 0.9133986928104575,
+    "recall_with_recovery": 0.917435601691657,
+    "recovered_fraction": 0.04661487236403995
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 521,
+    "recovered": 55,
+    "hits_covered": 295,
+    "recall": 0.8171929824561404,
+    "recall_with_recovery": 0.8364912280701754,
+    "recovered_fraction": 0.10556621880998081
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 232,
+    "recovered": 12,
+    "hits_covered": 308,
+    "recall": 0.8391123439667129,
+    "recall_with_recovery": 0.8474341192787794,
+    "recovered_fraction": 0.05172413793103448
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 792,
+    "recovered": 21,
+    "hits_covered": 2321,
+    "recall": 0.9054102472232175,
+    "recall_with_recovery": 0.9079183088498746,
+    "recovered_fraction": 0.026515151515151516
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 587,
+    "recovered": 19,
+    "hits_covered": 1702,
+    "recall": 0.8689439607055146,
+    "recall_with_recovery": 0.8731859790131726,
+    "recovered_fraction": 0.03236797274275979
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 958,
+    "recovered": 69,
+    "hits_covered": 1222,
+    "recall": 0.8829709259711703,
+    "recall_with_recovery": 0.891399951136086,
+    "recovered_fraction": 0.0720250521920668
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 151,
+    "recovered": 1,
+    "hits_covered": 14,
+    "recall": 0.673866090712743,
+    "recall_with_recovery": 0.6760259179265659,
+    "recovered_fraction": 0.006622516556291391
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 870,
+    "recovered": 59,
+    "hits_covered": 260,
+    "recall": 0.7695364238410596,
+    "recall_with_recovery": 0.7851655629139073,
+    "recovered_fraction": 0.067816091954023
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 25,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.8148148148148148,
+    "recall_with_recovery": 0.8148148148148148,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 206,
+    "recovered": 19,
+    "hits_covered": 762,
+    "recall": 0.9383787017648818,
+    "recall_with_recovery": 0.9440622195632665,
+    "recovered_fraction": 0.09223300970873786
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 293,
+    "recovered": 9,
+    "hits_covered": 1888,
+    "recall": 0.9407961204283694,
+    "recall_with_recovery": 0.9426146696302283,
+    "recovered_fraction": 0.030716723549488054
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 395,
+    "recovered": 5,
+    "hits_covered": 33,
+    "recall": 0.4291907514450867,
+    "recall_with_recovery": 0.43641618497109824,
+    "recovered_fraction": 0.012658227848101266
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 12,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 6,
+    "recovered": 0,
+    "hits_covered": 84,
+    "recall": 0.9833333333333333,
+    "recall_with_recovery": 0.9833333333333333,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 475,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 27,
+    "recovered": 5,
+    "hits_covered": 298,
+    "recall": 0.9341463414634147,
+    "recall_with_recovery": 0.9463414634146341,
+    "recovered_fraction": 0.18518518518518517
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 17,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 23,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 39,
+    "recovered": 2,
+    "hits_covered": 87,
+    "recall": 0.9440459110473458,
+    "recall_with_recovery": 0.9469153515064562,
+    "recovered_fraction": 0.05128205128205128
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 614,
+    "recovered": 67,
+    "hits_covered": 324,
+    "recall": 0.8348130212536993,
+    "recall_with_recovery": 0.8528383104654291,
+    "recovered_fraction": 0.10912052117263844
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 50,
+    "recovered": 9,
+    "hits_covered": 515,
+    "recall": 0.9166666666666666,
+    "recall_with_recovery": 0.9316666666666666,
+    "recovered_fraction": 0.18
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 92,
+    "recovered": 0,
+    "hits_covered": 254,
+    "recall": 0.9182948490230906,
+    "recall_with_recovery": 0.9182948490230906,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 4,
+    "recovered": 0,
+    "hits_covered": 422,
+    "recall": 0.9959390862944163,
+    "recall_with_recovery": 0.9959390862944163,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 45,
+    "recovered": 0,
+    "hits_covered": 317,
+    "recall": 0.9697377269670477,
+    "recall_with_recovery": 0.9697377269670477,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 8,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 256,
+    "recovered": 0,
+    "hits_covered": 55,
+    "recall": 0.7561904761904762,
+    "recall_with_recovery": 0.7561904761904762,
+    "recovered_fraction": 0.0
+   }
+  },
+  "clip budget 1 / official th 0.5": {
+   "all": {
+    "targets": 12665,
+    "misses": 2583,
+    "recovered": 169,
+    "hits_covered": 2843,
+    "recall": 0.7960521121200158,
+    "recall_with_recovery": 0.8093959731543624,
+    "recovered_fraction": 0.06542779713511421
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 870,
+    "recovered": 69,
+    "hits_covered": 302,
+    "recall": 0.6152145068553737,
+    "recall_with_recovery": 0.6457319770013269,
+    "recovered_fraction": 0.07931034482758621
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 1713,
+    "recovered": 100,
+    "hits_covered": 2541,
+    "recall": 0.8353517877739332,
+    "recall_with_recovery": 0.8449634755863129,
+    "recovered_fraction": 0.05837711617046118
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 843,
+    "recovered": 81,
+    "hits_covered": 269,
+    "recall": 0.7042105263157895,
+    "recall_with_recovery": 0.7326315789473684,
+    "recovered_fraction": 0.09608540925266904
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 366,
+    "recovered": 23,
+    "hits_covered": 297,
+    "recall": 0.7461858529819695,
+    "recall_with_recovery": 0.7621359223300971,
+    "recovered_fraction": 0.06284153005464481
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 1374,
+    "recovered": 65,
+    "hits_covered": 2277,
+    "recall": 0.8359011107130061,
+    "recall_with_recovery": 0.84366415860504,
+    "recovered_fraction": 0.04730713245997089
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 864,
+    "recovered": 64,
+    "hits_covered": 1657,
+    "recall": 0.8070997990622907,
+    "recall_with_recovery": 0.8213887028354543,
+    "recovered_fraction": 0.07407407407407407
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 1719,
+    "recovered": 105,
+    "hits_covered": 1186,
+    "recall": 0.7900073295871,
+    "recall_with_recovery": 0.8028341070119717,
+    "recovered_fraction": 0.06108202443280977
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 243,
+    "recovered": 1,
+    "hits_covered": 14,
+    "recall": 0.47516198704103674,
+    "recall_with_recovery": 0.4773218142548596,
+    "recovered_fraction": 0.00411522633744856
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 1366,
+    "recovered": 90,
+    "hits_covered": 229,
+    "recall": 0.6381456953642384,
+    "recall_with_recovery": 0.6619867549668874,
+    "recovered_fraction": 0.06588579795021962
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 54,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.6,
+    "recall_with_recovery": 0.6,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 447,
+    "recovered": 46,
+    "hits_covered": 735,
+    "recall": 0.8662877654801077,
+    "recall_with_recovery": 0.8800478612025127,
+    "recovered_fraction": 0.1029082774049217
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 473,
+    "recovered": 32,
+    "hits_covered": 1865,
+    "recall": 0.9044251363911902,
+    "recall_with_recovery": 0.9108910891089109,
+    "recovered_fraction": 0.06765327695560254
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 465,
+    "recovered": 7,
+    "hits_covered": 31,
+    "recall": 0.32803468208092484,
+    "recall_with_recovery": 0.33815028901734107,
+    "recovered_fraction": 0.015053763440860216
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 12,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 36,
+    "recovered": 6,
+    "hits_covered": 78,
+    "recall": 0.9,
+    "recall_with_recovery": 0.9166666666666666,
+    "recovered_fraction": 0.16666666666666666
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 475,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 55,
+    "recovered": 16,
+    "hits_covered": 287,
+    "recall": 0.8658536585365854,
+    "recall_with_recovery": 0.9048780487804878,
+    "recovered_fraction": 0.2909090909090909
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 11,
+    "recovered": 1,
+    "hits_covered": 16,
+    "recall": 0.956,
+    "recall_with_recovery": 0.96,
+    "recovered_fraction": 0.09090909090909091
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 18,
+    "recovered": 1,
+    "hits_covered": 22,
+    "recall": 0.96,
+    "recall_with_recovery": 0.9622222222222222,
+    "recovered_fraction": 0.05555555555555555
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 80,
+    "recovered": 3,
+    "hits_covered": 86,
+    "recall": 0.8852223816355811,
+    "recall_with_recovery": 0.8895265423242468,
+    "recovered_fraction": 0.0375
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 1144,
+    "recovered": 101,
+    "hits_covered": 290,
+    "recall": 0.6922249125638956,
+    "recall_with_recovery": 0.71939736346516,
+    "recovered_fraction": 0.08828671328671328
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 77,
+    "recovered": 26,
+    "hits_covered": 498,
+    "recall": 0.8716666666666667,
+    "recall_with_recovery": 0.915,
+    "recovered_fraction": 0.33766233766233766
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 196,
+    "recovered": 8,
+    "hits_covered": 246,
+    "recall": 0.8259325044404974,
+    "recall_with_recovery": 0.8330373001776199,
+    "recovered_fraction": 0.04081632653061224
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 9,
+    "recovered": 0,
+    "hits_covered": 422,
+    "recall": 0.9908629441624366,
+    "recall_with_recovery": 0.9908629441624366,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 137,
+    "recovered": 0,
+    "hits_covered": 317,
+    "recall": 0.9078681909885676,
+    "recall_with_recovery": 0.9078681909885676,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 8,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 338,
+    "recovered": 0,
+    "hits_covered": 55,
+    "recall": 0.6780952380952381,
+    "recall_with_recovery": 0.6780952380952381,
+    "recovered_fraction": 0.0
+   }
+  },
+  "clip budget 2 / official th 1e-05": {
+   "all": {
+    "targets": 12665,
+    "misses": 1545,
+    "recovered": 135,
+    "hits_covered": 3541,
+    "recall": 0.878010264508488,
+    "recall_with_recovery": 0.8886695617844453,
+    "recovered_fraction": 0.08737864077669903
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 644,
+    "recovered": 73,
+    "hits_covered": 423,
+    "recall": 0.7151702786377709,
+    "recall_with_recovery": 0.7474568774878373,
+    "recovered_fraction": 0.11335403726708075
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 901,
+    "recovered": 62,
+    "hits_covered": 3118,
+    "recall": 0.9133986928104575,
+    "recall_with_recovery": 0.919357939254133,
+    "recovered_fraction": 0.06881243063263041
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 521,
+    "recovered": 81,
+    "hits_covered": 407,
+    "recall": 0.8171929824561404,
+    "recall_with_recovery": 0.8456140350877193,
+    "recovered_fraction": 0.15547024952015356
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 232,
+    "recovered": 20,
+    "hits_covered": 360,
+    "recall": 0.8391123439667129,
+    "recall_with_recovery": 0.8529819694868238,
+    "recovered_fraction": 0.08620689655172414
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 792,
+    "recovered": 34,
+    "hits_covered": 2774,
+    "recall": 0.9054102472232175,
+    "recall_with_recovery": 0.9094709184282814,
+    "recovered_fraction": 0.04292929292929293
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 587,
+    "recovered": 36,
+    "hits_covered": 1877,
+    "recall": 0.8689439607055146,
+    "recall_with_recovery": 0.8769814690779192,
+    "recovered_fraction": 0.06132879045996593
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 958,
+    "recovered": 99,
+    "hits_covered": 1664,
+    "recall": 0.8829709259711703,
+    "recall_with_recovery": 0.8950647446860494,
+    "recovered_fraction": 0.10334029227557412
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 151,
+    "recovered": 1,
+    "hits_covered": 24,
+    "recall": 0.673866090712743,
+    "recall_with_recovery": 0.6760259179265659,
+    "recovered_fraction": 0.006622516556291391
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 870,
+    "recovered": 89,
+    "hits_covered": 391,
+    "recall": 0.7695364238410596,
+    "recall_with_recovery": 0.7931125827814569,
+    "recovered_fraction": 0.10229885057471265
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 25,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.8148148148148148,
+    "recall_with_recovery": 0.8148148148148148,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 206,
+    "recovered": 25,
+    "hits_covered": 935,
+    "recall": 0.9383787017648818,
+    "recall_with_recovery": 0.9458570146574933,
+    "recovered_fraction": 0.12135922330097088
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 293,
+    "recovered": 20,
+    "hits_covered": 2191,
+    "recall": 0.9407961204283694,
+    "recall_with_recovery": 0.9448373408769448,
+    "recovered_fraction": 0.06825938566552901
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 395,
+    "recovered": 9,
+    "hits_covered": 58,
+    "recall": 0.4291907514450867,
+    "recall_with_recovery": 0.4421965317919075,
+    "recovered_fraction": 0.02278481012658228
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 21,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 6,
+    "recovered": 3,
+    "hits_covered": 107,
+    "recall": 0.9833333333333333,
+    "recall_with_recovery": 0.9916666666666667,
+    "recovered_fraction": 0.5
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 487,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 27,
+    "recovered": 5,
+    "hits_covered": 314,
+    "recall": 0.9341463414634147,
+    "recall_with_recovery": 0.9463414634146341,
+    "recovered_fraction": 0.18518518518518517
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 35,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 37,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 39,
+    "recovered": 2,
+    "hits_covered": 114,
+    "recall": 0.9440459110473458,
+    "recall_with_recovery": 0.9469153515064562,
+    "recovered_fraction": 0.05128205128205128
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 614,
+    "recovered": 97,
+    "hits_covered": 475,
+    "recall": 0.8348130212536993,
+    "recall_with_recovery": 0.8609093354856067,
+    "recovered_fraction": 0.15798045602605862
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 50,
+    "recovered": 17,
+    "hits_covered": 525,
+    "recall": 0.9166666666666666,
+    "recall_with_recovery": 0.945,
+    "recovered_fraction": 0.34
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 92,
+    "recovered": 2,
+    "hits_covered": 317,
+    "recall": 0.9182948490230906,
+    "recall_with_recovery": 0.9200710479573713,
+    "recovered_fraction": 0.021739130434782608
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 4,
+    "recovered": 0,
+    "hits_covered": 512,
+    "recall": 0.9959390862944163,
+    "recall_with_recovery": 0.9959390862944163,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 45,
+    "recovered": 0,
+    "hits_covered": 435,
+    "recall": 0.9697377269670477,
+    "recall_with_recovery": 0.9697377269670477,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 11,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 256,
+    "recovered": 0,
+    "hits_covered": 93,
+    "recall": 0.7561904761904762,
+    "recall_with_recovery": 0.7561904761904762,
+    "recovered_fraction": 0.0
+   }
+  },
+  "clip budget 2 / official th 0.5": {
+   "all": {
+    "targets": 12665,
+    "misses": 2583,
+    "recovered": 255,
+    "hits_covered": 3421,
+    "recall": 0.7960521121200158,
+    "recall_with_recovery": 0.8161863403079352,
+    "recovered_fraction": 0.09872241579558652
+   },
+   "frames < 60": {
+    "targets": 2261,
+    "misses": 870,
+    "recovered": 110,
+    "hits_covered": 386,
+    "recall": 0.6152145068553737,
+    "recall_with_recovery": 0.6638655462184874,
+    "recovered_fraction": 0.12643678160919541
+   },
+   "frames >= 60": {
+    "targets": 10404,
+    "misses": 1713,
+    "recovered": 145,
+    "hits_covered": 3035,
+    "recall": 0.8353517877739332,
+    "recall_with_recovery": 0.8492887351018839,
+    "recovered_fraction": 0.0846468184471687
+   },
+   "speed near": {
+    "targets": 2850,
+    "misses": 843,
+    "recovered": 125,
+    "hits_covered": 363,
+    "recall": 0.7042105263157895,
+    "recall_with_recovery": 0.7480701754385964,
+    "recovered_fraction": 0.14827995255041518
+   },
+   "speed mid": {
+    "targets": 1442,
+    "misses": 366,
+    "recovered": 36,
+    "hits_covered": 344,
+    "recall": 0.7461858529819695,
+    "recall_with_recovery": 0.7711511789181692,
+    "recovered_fraction": 0.09836065573770492
+   },
+   "speed moving": {
+    "targets": 8373,
+    "misses": 1374,
+    "recovered": 94,
+    "hits_covered": 2714,
+    "recall": 0.8359011107130061,
+    "recall_with_recovery": 0.8471276722799475,
+    "recovered_fraction": 0.06841339155749636
+   },
+   "camera static": {
+    "targets": 4479,
+    "misses": 864,
+    "recovered": 93,
+    "hits_covered": 1820,
+    "recall": 0.8070997990622907,
+    "recall_with_recovery": 0.8278633623576691,
+    "recovered_fraction": 0.1076388888888889
+   },
+   "camera moving": {
+    "targets": 8186,
+    "misses": 1719,
+    "recovered": 162,
+    "hits_covered": 1601,
+    "recall": 0.7900073295871,
+    "recall_with_recovery": 0.809797214756902,
+    "recovered_fraction": 0.09424083769633508
+   },
+   "category 1": {
+    "targets": 463,
+    "misses": 243,
+    "recovered": 3,
+    "hits_covered": 22,
+    "recall": 0.47516198704103674,
+    "recall_with_recovery": 0.4816414686825054,
+    "recovered_fraction": 0.012345679012345678
+   },
+   "category 3": {
+    "targets": 3775,
+    "misses": 1366,
+    "recovered": 136,
+    "hits_covered": 344,
+    "recall": 0.6381456953642384,
+    "recall_with_recovery": 0.6741721854304635,
+    "recovered_fraction": 0.09956076134699854
+   },
+   "category 4": {
+    "targets": 135,
+    "misses": 54,
+    "recovered": 0,
+    "hits_covered": 0,
+    "recall": 0.6,
+    "recall_with_recovery": 0.6,
+    "recovered_fraction": 0.0
+   },
+   "category 5": {
+    "targets": 3343,
+    "misses": 447,
+    "recovered": 67,
+    "hits_covered": 893,
+    "recall": 0.8662877654801077,
+    "recall_with_recovery": 0.8863296440323063,
+    "recovered_fraction": 0.14988814317673377
+   },
+   "category 6": {
+    "targets": 4949,
+    "misses": 473,
+    "recovered": 49,
+    "hits_covered": 2162,
+    "recall": 0.9044251363911902,
+    "recall_with_recovery": 0.9143261264902001,
+    "recovered_fraction": 0.10359408033826638
+   },
+   "clip DJI_0049_2": {
+    "targets": 692,
+    "misses": 465,
+    "recovered": 14,
+    "hits_covered": 53,
+    "recall": 0.32803468208092484,
+    "recall_with_recovery": 0.34826589595375723,
+    "recovered_fraction": 0.030107526881720432
+   },
+   "clip DJI_0109_1": {
+    "targets": 90,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 21,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0119_2": {
+    "targets": 360,
+    "misses": 36,
+    "recovered": 11,
+    "hits_covered": 99,
+    "recall": 0.9,
+    "recall_with_recovery": 0.9305555555555556,
+    "recovered_fraction": 0.3055555555555556
+   },
+   "clip DJI_0129_2": {
+    "targets": 590,
+    "misses": 0,
+    "recovered": 0,
+    "hits_covered": 487,
+    "recall": 1.0,
+    "recall_with_recovery": 1.0,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0155_2": {
+    "targets": 410,
+    "misses": 55,
+    "recovered": 17,
+    "hits_covered": 302,
+    "recall": 0.8658536585365854,
+    "recall_with_recovery": 0.9073170731707317,
+    "recovered_fraction": 0.3090909090909091
+   },
+   "clip DJI_0159_2": {
+    "targets": 250,
+    "misses": 11,
+    "recovered": 3,
+    "hits_covered": 32,
+    "recall": 0.956,
+    "recall_with_recovery": 0.968,
+    "recovered_fraction": 0.2727272727272727
+   },
+   "clip DJI_0173_2": {
+    "targets": 450,
+    "misses": 18,
+    "recovered": 1,
+    "hits_covered": 36,
+    "recall": 0.96,
+    "recall_with_recovery": 0.9622222222222222,
+    "recovered_fraction": 0.05555555555555555
+   },
+   "clip DJI_0221_2": {
+    "targets": 697,
+    "misses": 80,
+    "recovered": 5,
+    "hits_covered": 111,
+    "recall": 0.8852223816355811,
+    "recall_with_recovery": 0.8923959827833573,
+    "recovered_fraction": 0.0625
+   },
+   "clip DJI_0237_2": {
+    "targets": 3717,
+    "misses": 1144,
+    "recovered": 154,
+    "hits_covered": 418,
+    "recall": 0.6922249125638956,
+    "recall_with_recovery": 0.7336561743341404,
+    "recovered_fraction": 0.1346153846153846
+   },
+   "clip DJI_0255_1": {
+    "targets": 600,
+    "misses": 77,
+    "recovered": 38,
+    "hits_covered": 504,
+    "recall": 0.8716666666666667,
+    "recall_with_recovery": 0.935,
+    "recovered_fraction": 0.4935064935064935
+   },
+   "clip DJI_0257_2": {
+    "targets": 1126,
+    "misses": 196,
+    "recovered": 12,
+    "hits_covered": 307,
+    "recall": 0.8259325044404974,
+    "recall_with_recovery": 0.8365896980461812,
+    "recovered_fraction": 0.061224489795918366
+   },
+   "clip DJI_0277_2": {
+    "targets": 985,
+    "misses": 9,
+    "recovered": 0,
+    "hits_covered": 512,
+    "recall": 0.9908629441624366,
+    "recall_with_recovery": 0.9908629441624366,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0303_2": {
+    "targets": 1487,
+    "misses": 137,
+    "recovered": 0,
+    "hits_covered": 435,
+    "recall": 0.9078681909885676,
+    "recall_with_recovery": 0.9078681909885676,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0307_2": {
+    "targets": 161,
+    "misses": 17,
+    "recovered": 0,
+    "hits_covered": 11,
+    "recall": 0.8944099378881988,
+    "recall_with_recovery": 0.8944099378881988,
+    "recovered_fraction": 0.0
+   },
+   "clip DJI_0309_4": {
+    "targets": 1050,
+    "misses": 338,
+    "recovered": 0,
+    "hits_covered": 93,
+    "recall": 0.6780952380952381,
+    "recall_with_recovery": 0.6780952380952381,
+    "recovered_fraction": 0.0
+   }
+  }
+ }
+}

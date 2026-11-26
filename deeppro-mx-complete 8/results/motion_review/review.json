@@ -1,0 +1,172 @@
+{
+  "scope": "New v8 profile only. No profile rerun, no old homographies reused, no model execution.",
+  "sources": {
+    "results/miss_recovery_oracle_location/official_rgbt/test/windows.csv": "4f93c25035d6534937958b09e70739903372a80d6724888e4d9f479f4b74bdd8",
+    "results/motion/clips.csv": "98308706afa3fda9d4a4fe4527718502dc7158de395974a2915832f308a71ee3",
+    "results/motion_review/geometry_summary.json": "f34a6a25ab7f3d996998a4053bd3e1c58c8c9a40ccaaa88c2ed86b622088a719"
+  },
+  "pair_methods": {
+    "homography": 24956,
+    "affine": 6,
+    "shift": 1,
+    "identity": 88
+  },
+  "pairs": 25051,
+  "clips": 60,
+  "selected_clip_disagreements": [
+    {
+      "clip": "DJI_0277_2",
+      "test": true,
+      "fallback_pairs": 1,
+      "pair_diff_p95": 0.7435771188566733,
+      "window_diff_p95": 13.856528686606541,
+      "window_diff_max": 14.218418207997752
+    },
+    {
+      "clip": "DJI_0237_2",
+      "test": true,
+      "fallback_pairs": 4,
+      "pair_diff_p95": 0.551549296317602,
+      "window_diff_p95": 87.10335161182653,
+      "window_diff_max": 181.1752216379223
+    },
+    {
+      "clip": "DJI_0221_2",
+      "test": true,
+      "fallback_pairs": 5,
+      "pair_diff_p95": 0.14443371344480427,
+      "window_diff_p95": 31.390436415761485,
+      "window_diff_max": 76.61533915180796
+    },
+    {
+      "clip": "DJI_0257_2",
+      "test": true,
+      "fallback_pairs": 4,
+      "pair_diff_p95": 0.9177022057279773,
+      "window_diff_p95": 26.917014233501888,
+      "window_diff_max": 60.08359076265161
+    },
+    {
+      "clip": "DJI_0163_1",
+      "test": false,
+      "fallback_pairs": 15,
+      "pair_diff_p95": 1.715710638108574,
+      "window_diff_p95": 201.39080139996952,
+      "window_diff_max": 477.0004830392992
+    },
+    {
+      "clip": "DJI_0309_2",
+      "test": false,
+      "fallback_pairs": 19,
+      "pair_diff_p95": 1.1641512984207114,
+      "window_diff_p95": 174.23063143977777,
+      "window_diff_max": 636.4252333326424
+    }
+  ],
+  "default_auto": {
+    "scope": "Default choose_coords(auto, rate=1) evaluated on already-computed M1 stationarity; not a learned-model inference result",
+    "margin": 0.1,
+    "abs_tol": 0.5,
+    "min_cover": 0.1,
+    "windows": 172,
+    "counts": {
+      "warp": 97,
+      "raw": 75
+    },
+    "per_clip": {
+      "DJI_0049_2": {
+        "warp": 3
+      },
+      "DJI_0109_1": {
+        "warp": 3
+      },
+      "DJI_0119_2": {
+        "warp": 5
+      },
+      "DJI_0129_2": {
+        "raw": 15,
+        "warp": 2
+      },
+      "DJI_0155_2": {
+        "raw": 7,
+        "warp": 5
+      },
+      "DJI_0159_2": {
+        "warp": 6,
+        "raw": 1
+      },
+      "DJI_0173_2": {
+        "raw": 13
+      },
+      "DJI_0221_2": {
+        "warp": 10,
+        "raw": 7
+      },
+      "DJI_0237_2": {
+        "warp": 8,
+        "raw": 4
+      },
+      "DJI_0255_1": {
+        "raw": 7,
+        "warp": 10
+      },
+      "DJI_0257_2": {
+        "raw": 11,
+        "warp": 6
+      },
+      "DJI_0277_2": {
+        "warp": 9,
+        "raw": 2
+      },
+      "DJI_0303_2": {
+        "warp": 15,
+        "raw": 1
+      },
+      "DJI_0307_2": {
+        "warp": 2,
+        "raw": 3
+      },
+      "DJI_0309_4": {
+        "warp": 13,
+        "raw": 4
+      }
+    },
+    "low_cover_windows": [
+      {
+        "clip": "DJI_0277_2",
+        "window": 9,
+        "first": 324,
+        "last": 363,
+        "cover": 0.0,
+        "raw": null,
+        "warp": null,
+        "default_auto_choice": "raw",
+        "reason": "cover_below_0.1"
+      },
+      {
+        "clip": "DJI_0277_2",
+        "window": 10,
+        "first": 326,
+        "last": 365,
+        "cover": 0.0,
+        "raw": null,
+        "warp": null,
+        "default_auto_choice": "raw",
+        "reason": "cover_below_0.1"
+      }
+    ]
+  },
+  "geometry_crosscheck": {
+    "max_absolute_cover_difference": 0.0017578125000000666,
+    "low_cover_classification_agrees_on_all_test_windows": true,
+    "authoritative_cover": "Measured M1 cover is used for the default-auto reconstruction; independent host NumPy geometry differs slightly near pixel boundaries."
+  },
+  "limitations": [
+    "Pair/window differences compare annotation-free and box-masked estimates, not registration ground truth.",
+    "Inlier residuals are not saved per pair/window. The <=1 px gate applies to homographies; affine and shift fallbacks only have their separate consensus checks.",
+    "Across all 720 windows, 34 reference-to-frame comparisons have no common grid visibility: 25 in the last two 0277_2 windows and 9 in 0309_2 window 504..543. Source compare() records zero for an empty comparison.",
+    "The two 0277_2 windows with zero stationarity coverage correctly select raw. The large 0237_2 residual at window 324..363 also selects raw.",
+    "Background stationarity and disagreement do not by themselves identify the cause of baseline misses.",
+    "M1 computes its candidate features from raw frames; the homography chain is used for these window diagnostics, not the diagnostic recovery scores."
+  ]
+}

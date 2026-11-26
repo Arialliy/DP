@@ -1,0 +1,11 @@
+{
+  "fingerprint": {
+    "ckpt": "/home/md0/ly/DP/deeppro-mx-complete 8/runtime/test_fixtures/val_scheduler/validation_jzigdp7q/runs/mta_val_s46_self/best_model.pth",
+    "ckpt_sha256": "a6b0a5ea7e4dd99caff86311f469f04f4296bd981800db67783afa8972faa5dc",
+    "clip": "fixture_val_A",
+    "settings": {
+      "bank": "outside"
+    },
+    "code_sha256": "fixture-code"
+  }
+}

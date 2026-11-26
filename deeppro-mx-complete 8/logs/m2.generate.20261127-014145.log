@@ -1,0 +1,16 @@
+generated DJI_0109_1 teacher_points 59 tracks 11 accepted {'raw_stop': 2, 'raw_cv': 2}
+generated DJI_0049_2 teacher_points 117 tracks 5 accepted {'raw_stop': 2, 'raw_cv': 5}
+generated DJI_0119_2 teacher_points 549 tracks 42 accepted {'raw_stop': 7, 'raw_cv': 13}
+generated DJI_0159_2 teacher_points 180 tracks 3 accepted {'raw_stop': 0, 'raw_cv': 1}
+generated DJI_0155_2 teacher_points 742 tracks 15 accepted {'raw_stop': 5, 'raw_cv': 10}
+generated DJI_0129_2 teacher_points 815 tracks 20 accepted {'raw_stop': 1, 'raw_cv': 5}
+generated DJI_0173_2 teacher_points 387 tracks 10 accepted {'raw_stop': 0, 'raw_cv': 0}
+generated DJI_0221_2 teacher_points 763 tracks 58 accepted {'raw_stop': 4, 'raw_cv': 9}
+generated DJI_0237_2 teacher_points 2999 tracks 183 accepted {'raw_stop': 21, 'raw_cv': 42}
+generated DJI_0255_1 teacher_points 537 tracks 27 accepted {'raw_stop': 1, 'raw_cv': 7}
+generated DJI_0257_2 teacher_points 1433 tracks 76 accepted {'raw_stop': 4, 'raw_cv': 18}
+generated DJI_0277_2 teacher_points 4337 tracks 848 accepted {'raw_stop': 38, 'raw_cv': 99}
+generated DJI_0307_2 teacher_points 130 tracks 2 accepted {'raw_stop': 1, 'raw_cv': 2}
+generated DJI_0303_2 teacher_points 1659 tracks 279 accepted {'raw_stop': 9, 'raw_cv': 13}
+generated DJI_0309_4 teacher_points 1831 tracks 350 accepted {'raw_stop': 10, 'raw_cv': 22}
+sealed /experiment/results/m2/generation/manifest.json GT not loaded

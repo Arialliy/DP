@@ -1,0 +1,7 @@
+run,architecture,status,IoU_at_0_5,Pd_at_0_5,Fa_at_0_5,AUC_27_thresholds,threshold_count,best_epoch,selection_mode,selection_split,selection_IoU,checkpoint_sha256,selection_sha256,score_sha256,checkpoint_path,selection_path,score_path,detail
+mta_val_s46,mta_lv,pending,,,,,,,,,,,,,runs/mta_val_s46/best_model.pth,runs/mta_val_s46/best_selection.json,results/scores/mta_val_s46/val/summary.json,"pending: training eval, epoch 13/32"
+mta_val_s46_noex,mta_lv,pending,,,,,,,,,,,,,runs/mta_val_s46_noex/best_model.pth,runs/mta_val_s46_noex/best_selection.json,results/scores/mta_val_s46_noex/val/summary.json,"pending: training train, epoch 25/32"
+mta_val_s46_self,mta_lv,pending,,,,,,,,,,,,,runs/mta_val_s46_self/best_model.pth,runs/mta_val_s46_self/best_selection.json,results/scores/mta_val_s46_self/val/summary.json,pending: training progress is not available
+mta_val_s46_nogain,mta_lv,pending,,,,,,,,,,,,,runs/mta_val_s46_nogain/best_model.pth,runs/mta_val_s46_nogain/best_selection.json,results/scores/mta_val_s46_nogain/val/summary.json,pending: training progress is not available
+mta_val_s46_mx,mx_lv,pending,,,,,,,,,,,,,runs/mta_val_s46_mx/best_model.pth,runs/mta_val_s46_mx/best_selection.json,results/scores/mta_val_s46_mx/val/summary.json,pending: training progress is not available
+mta_val_s46_noapp,mxc_lv,pending,,,,,,,,,,,,,runs/mta_val_s46_noapp/best_model.pth,runs/mta_val_s46_noapp/best_selection.json,results/scores/mta_val_s46_noapp/val/summary.json,pending: training progress is not available

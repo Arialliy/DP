@@ -1,9 +1,9 @@
 {
   "arch": "lv_full",
   "name": "DeepPro-LV",
-  "state": "running",
+  "state": "completed",
   "started_at": "2026-11-26T10:58:15.833217+00:00",
-  "stage": "train",
+  "stage": "completed",
   "command": [
     "python",
     "-u",
@@ -61,5 +61,20 @@
     "homography_and_hotspot_check": "SHA256",
     "reuse_mode": "Docker read-only bind mounts"
   },
-  "updated_at": "2026-11-26T10:58:15.853799+00:00"
+  "updated_at": "2026-11-26T12:15:24.398551+00:00",
+  "epochs_completed": 32,
+  "eval_epochs_completed": 32,
+  "optimizer_updates": 7552,
+  "final_loss": 0.9661,
+  "best_iou": 0.23477409396574203,
+  "best_epoch": 16,
+  "best_checkpoint": "runs/deeppro_lv_rgbt_s46/best_model.pth",
+  "best_sha256": "e6ff4903cb0fbd9d92a1c2c6a84455640020b8b3a4960978c93ec400d8a9199b",
+  "final_checkpoint": "runs/deeppro_lv_rgbt_s46/final.pth",
+  "final_sha256": "f3fb1ce3fc7121a0de18d265ca5ee6ac4bf1db7189055f6c9ac71a48e3938ea7",
+  "last_sha256": "e8cc2f48eb762535f0164b6a886b884e72f93b07da44302fb11c3b333f6cea4e",
+  "parameters": 189715,
+  "strict_load": "passed",
+  "all_tensors_finite": true,
+  "selection_verification": "32 full test evaluations; latest maximum IoU epoch"
 }

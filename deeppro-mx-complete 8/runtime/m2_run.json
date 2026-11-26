@@ -1,0 +1,19 @@
+{
+  "container": "dp-v8-m2-20261127-014145",
+  "id": "3202aedb79cbdba273cdbd7195f3c9eafa31e109fab09ac3e26044e3ab4e3d1e",
+  "started_at": "2026-11-27T01:41:46.330378",
+  "cpu_only": true,
+  "dataset_mounted": false,
+  "model_executed": false,
+  "parameters_fixed": true,
+  "plan_sha256": "5ed6743e4f5595267cda70b64218d1a02a89ba5e5dcfd700f4a2789a99588b86",
+  "code_sha256": "edc6616b09fa5b50a2ad8c38b1c9862f4e3675ace2bde5ceeee220f35c6c34ec",
+  "logs": [
+    "logs/m2.generate.20261127-014145.log",
+    "logs/m2.evaluate.20261127-014145.log"
+  ],
+  "finished_at": "2026-11-26T17:43:13.499228304Z",
+  "exit_code": 0,
+  "status": "completed_and_arithmetic_verified",
+  "summary_sha256": "cfd4b13688fecda82256c2091d97fa65bed778d57a14406fb266178ab36a9d19"
+}

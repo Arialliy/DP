@@ -1,0 +1,79 @@
+All Pd values below are percentages. Interpolated estimates are NOT measurements.
+Retrospective test-set operating-point analysis: exact same-Fa statistics search test-score thresholds under a false-pixel budget. This is not held-out validation.
+
+official_rgbt -> author_released_reference/native [released]
+  Exact matched-Fa from real FP32 scores:
+    Budget Fa=4.46702581812e-05: measured_budget_optimum, reachable=True
+      Measured budget optimum: Pd=77.902655%, Fa=4.467025818e-05, threshold=0.9899974465
+    Budget Fa=0.000452810182788: measured_budget_optimum, reachable=True
+      Measured budget optimum: Pd=88.504425%, Fa=0.0004528091615, threshold=8.660671483e-06
+      Achieved Fa is below the budget; it is not an exact equality of Fa.
+    Budget Fa=0.000613642824063: measured_budget_optimum, reachable=True
+      Measured budget optimum: Pd=89.061947%, Fa=0.0006136407814, threshold=6.472141649e-06
+      Achieved Fa is below the budget; it is not an exact equality of Fa.
+  Supporting saved 27-point ROC (sparse-grid measurements and estimates):
+  Measured operating point: Pd=80.920354%, Fa=6.274896134e-05, threshold=0.5
+  Target Fa=4.46702581812e-05: measured
+    Measured at target: Pd=77.902655%, Fa=4.467025818e-05, threshold=0.99
+    Best measured within budget: Pd=77.902655%, Fa=4.467025818e-05, threshold=0.99
+  Target Fa=0.000452810182788: bracketed
+    Best measured within budget: Pd=88.203540%, Fa=0.0003968475015, threshold=1e-05
+    Lower neighbor: Pd=88.203540%, Fa=0.0003968475015, threshold=1e-05
+    Upper neighbor: Pd=95.079646%, Fa=0.05252540874, threshold=1e-06
+    Linear estimate (NOT measured): Pd=88.210922%
+  Target Fa=0.000613642824063: bracketed
+    Best measured within budget: Pd=88.203540%, Fa=0.0003968475015, threshold=1e-05
+    Lower neighbor: Pd=88.203540%, Fa=0.0003968475015, threshold=1e-05
+    Upper neighbor: Pd=95.079646%, Fa=0.05252540874, threshold=1e-06
+    Linear estimate (NOT measured): Pd=88.232137%
+
+deeppro_plus -> deeppro_plus_416648f66cbee93f/native [final]
+  Exact matched-Fa from real FP32 scores:
+    Budget Fa=4.46702581812e-05: unreachable_saturated, reachable=False
+      threshold_one_still_exceeds_budget_due_to_float32_scores_equal_one
+      FP32 scores equal to 1 still produce too many false positives at threshold=1; no threshold in [0,1] meets this budget.
+      Minimum attainable point: Pd=75.814159%, Fa=9.408973786e-05, threshold=1
+    Budget Fa=0.000452810182788: measured_budget_optimum, reachable=True
+      Measured budget optimum: Pd=89.150442%, Fa=0.0004528101828, threshold=0.9900000095
+    Budget Fa=0.000613642824063: measured_budget_optimum, reachable=True
+      Measured budget optimum: Pd=90.955752%, Fa=0.0006136428241, threshold=0.5797770023
+  Supporting saved 27-point ROC (sparse-grid measurements and estimates):
+  Measured operating point: Pd=91.044248%, Fa=0.0006270606515, threshold=0.5
+  Target Fa=4.46702581812e-05: unavailable
+    Best measured within budget: unavailable
+    No measured point/bracket at this Fa; no extrapolation or added endpoints. Threshold 1 still has false positives under the saved >= rule, consistent with FP32 probabilities saturated at 1; a lower-Fa point is unavailable in this grid.
+  Target Fa=0.000452810182788: measured
+    Measured at target: Pd=89.150442%, Fa=0.0004528101828, threshold=0.99
+    Best measured within budget: Pd=89.150442%, Fa=0.0004528101828, threshold=0.99
+  Target Fa=0.000613642824063: bracketed
+    Best measured within budget: Pd=90.911504%, Fa=0.0006101375922, threshold=0.6
+    Lower neighbor: Pd=90.911504%, Fa=0.0006101375922, threshold=0.6
+    Upper neighbor: Pd=90.982301%, Fa=0.0006186361453, threshold=0.55
+    Linear estimate (NOT measured): Pd=90.940704%
+
+deeppro_plus_interim -> deeppro_plus_c1c818212eb0c1d8/native [interim]
+  Exact matched-Fa from real FP32 scores:
+    Budget Fa=4.46702581812e-05: unreachable_saturated, reachable=False
+      threshold_one_still_exceeds_budget_due_to_float32_scores_equal_one
+      FP32 scores equal to 1 still produce too many false positives at threshold=1; no threshold in [0,1] meets this budget.
+      Minimum attainable point: Pd=75.884956%, Fa=0.0001101354678, threshold=1
+    Budget Fa=0.000452810182788: measured_budget_optimum, reachable=True
+      Measured budget optimum: Pd=88.504425%, Fa=0.0004528101828, threshold=0.9992466569
+    Budget Fa=0.000613642824063: measured_budget_optimum, reachable=True
+      Measured budget optimum: Pd=90.345133%, Fa=0.0006136428241, threshold=0.9900000095
+  Supporting saved 27-point ROC (sparse-grid measurements and estimates):
+  Measured operating point: Pd=92.371681%, Fa=0.0008841533737, threshold=0.5
+  Target Fa=4.46702581812e-05: unavailable
+    Best measured within budget: unavailable
+    No measured point/bracket at this Fa; no extrapolation or added endpoints. Threshold 1 still has false positives under the saved >= rule, consistent with FP32 probabilities saturated at 1; a lower-Fa point is unavailable in this grid.
+  Target Fa=0.000452810182788: bracketed
+    Best measured within budget: Pd=75.884956%, Fa=0.0001101354678, threshold=1
+    Lower neighbor: Pd=75.884956%, Fa=0.0001101354678, threshold=1
+    Upper neighbor: Pd=90.345133%, Fa=0.0006136428241, threshold=0.99
+    Linear estimate (NOT measured): Pd=85.726196%
+  Target Fa=0.000613642824063: measured
+    Measured at target: Pd=90.345133%, Fa=0.0006136428241, threshold=0.99
+    Best measured within budget: Pd=90.345133%, Fa=0.0006136428241, threshold=0.99
+
+Saved JSON: /home/md0/ly/DP/reproduction/rgbt_fa_comparison_20261127/comparison_20261126T181806_150070Z.json
+Saved CSV: /home/md0/ly/DP/reproduction/rgbt_fa_comparison_20261127/comparison_20261126T181806_150070Z.csv

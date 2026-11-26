@@ -1,0 +1,93 @@
+evaluated DJI_0049_2 early_GT 452
+evaluated DJI_0109_1 early_GT 60
+evaluated DJI_0119_2 early_GT 120
+evaluated DJI_0129_2 early_GT 60
+evaluated DJI_0155_2 early_GT 60
+evaluated DJI_0159_2 early_GT 60
+evaluated DJI_0173_2 early_GT 60
+evaluated DJI_0221_2 early_GT 60
+evaluated DJI_0237_2 early_GT 757
+evaluated DJI_0255_1 early_GT 60
+evaluated DJI_0257_2 early_GT 120
+evaluated DJI_0277_2 early_GT 180
+evaluated DJI_0303_2 early_GT 60
+evaluated DJI_0307_2 early_GT 41
+evaluated DJI_0309_4 early_GT 111
+{
+  "raw_stop": {
+    "frames": 900,
+    "teacher_points": 16538,
+    "tracks": 1929,
+    "accepted_tracks": 105,
+    "raw_points": 6300,
+    "in_image_points": 6300,
+    "nms_suppressed": 660,
+    "out_of_bounds": 0,
+    "nonfinite": 0,
+    "kept": 5640,
+    "true_candidates": 0,
+    "wrong_candidates": 5640,
+    "precision": 0.0,
+    "wrong_per_frame": 6.266666666666667,
+    "baseline_thresholds": {
+      "0.5": {
+        "early_targets": 2261,
+        "original_misses": 870,
+        "recovered": 0,
+        "teacher_any_missed": 502,
+        "teacher_qualified_missed": 249,
+        "recovery_fraction": 0.0,
+        "teacher_any_coverage": 0.5770114942528736,
+        "teacher_qualified_coverage": 0.28620689655172415
+      },
+      "1e-05": {
+        "early_targets": 2261,
+        "original_misses": 644,
+        "recovered": 0,
+        "teacher_any_missed": 334,
+        "teacher_qualified_missed": 164,
+        "recovery_fraction": 0.0,
+        "teacher_any_coverage": 0.5186335403726708,
+        "teacher_qualified_coverage": 0.2546583850931677
+      }
+    }
+  },
+  "raw_cv": {
+    "frames": 900,
+    "teacher_points": 16538,
+    "tracks": 1929,
+    "accepted_tracks": 248,
+    "raw_points": 14880,
+    "in_image_points": 10346,
+    "nms_suppressed": 204,
+    "out_of_bounds": 4534,
+    "nonfinite": 0,
+    "kept": 10142,
+    "true_candidates": 121,
+    "wrong_candidates": 10021,
+    "precision": 0.01193058568329718,
+    "wrong_per_frame": 11.134444444444444,
+    "baseline_thresholds": {
+      "0.5": {
+        "early_targets": 2261,
+        "original_misses": 870,
+        "recovered": 28,
+        "teacher_any_missed": 502,
+        "teacher_qualified_missed": 427,
+        "recovery_fraction": 0.03218390804597701,
+        "teacher_any_coverage": 0.5770114942528736,
+        "teacher_qualified_coverage": 0.4908045977011494
+      },
+      "1e-05": {
+        "early_targets": 2261,
+        "original_misses": 644,
+        "recovered": 17,
+        "teacher_any_missed": 334,
+        "teacher_qualified_missed": 288,
+        "recovery_fraction": 0.026397515527950312,
+        "teacher_any_coverage": 0.5186335403726708,
+        "teacher_qualified_coverage": 0.4472049689440994
+      }
+    }
+  }
+}

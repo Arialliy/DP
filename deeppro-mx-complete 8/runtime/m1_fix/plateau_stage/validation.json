@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "main_source_unchanged": true,
+  "modified_files": [
+    "code/mx_data.py",
+    "code/test_mx_data.py"
+  ],
+  "tests": {
+    "test_mx_data": 18,
+    "test_miss_recovery": 11,
+    "total": 29
+  },
+  "real_m1_runs": 0,
+  "model_forwards": 0,
+  "training_runs": 0,
+  "torch_imported": false,
+  "patch_dry_run_exit": 0,
+  "configuration_unchanged": {
+    "contrast": "abs(stabilize.local_contrast), same defaults",
+    "floor": 3.0,
+    "comparison": ">",
+    "nms": 9,
+    "M1_per_frame": 100,
+    "all_other_M1_parameters": "unchanged"
+  },
+  "first_attempt": "test environment lacked configs/splits.json; no candidate test failure; copied unchanged configuration and reran both full suites",
+  "source_sha256": {
+    "original/code/mx_data.py": "55ee16a45a17fcf24f60bd8fde10cdfed25e5328b0d7fe2acc57e76c51e5ef20",
+    "fixed/code/mx_data.py": "9077412803b5d94b23a71574616a8ce3a35509eb2910b2f3ecc818e705bc5e84",
+    "original/code/test_mx_data.py": "cbdd35ebb2c2cd11b2cc70ddc55d7f8edd9c82d2fc2e00a4205aefdd308d27b3",
+    "fixed/code/test_mx_data.py": "3effe73bc59364be0839b2ce76990b8ff4446280444a63e6a5bb8bcb7527e806",
+    "fixed/code/miss_recovery.py": "fa7d5148c8e805de03fc8c96a7f89dd5ff5bce4e97a638f7cba42302416bac13",
+    "fixed/code/test_miss_recovery.py": "1c9592878bb98c2b0a8727484f15bc3818f514ec0b9ca675e4a8838bb724ce91",
+    "fixed/configs/splits.json": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464"
+  },
+  "artifact_sha256": {
+    "plateau_candidates.patch": "2316cf8a60428eb916a5c2a712015fd629d42495a64dbad7672f01eaa1efa5dc",
+    "tests.log": "53d038ebba991956504dcc12336020be43181c32bf76d20e2a8e2b57421726ac",
+    "tests.attempt1.log": "9afb08356b231d968821bb59647f5534825daa26f9f6b79b8d445cd9b3a8c883",
+    "validate_stage.py": "adba1b455db38fc410b3aa14ccb813ee29b3eaebe23e8998614be88384c08f25",
+    "test.command.json": "dda88b0ff3f5efb0d5d6e409cf85ee5b2d53d87ddfbe2a3b3eac67d7b74fc8da",
+    "patch_dry_run.log": "2ad72f7c9df0388b014bbda728a2ce9cc4d086825f451e6f6d9b75c265ba9a9d"
+  },
+  "public_scope": "frame_peaks also serves SelfPeaks and self_bank; future *_self candidate sets change. No training authorized or run.",
+  "representative": "actual maximum-mask pixel nearest 8-connected plateau centroid; equal distance chooses smallest(y,x); equal scores ordered by representative(y,x) before stable topk"
+}

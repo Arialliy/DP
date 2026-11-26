@@ -1,0 +1,10 @@
+{
+  "job_id": "author_released_reference",
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "elapsed_seconds": 426.66892010800075,
+  "updated_at": "2026-11-26T18:02:44.088279+00:00",
+  "stage": "complete",
+  "complete": true,
+  "frames": 5976,
+  "output": "/evaluation/diagnostics/breakdown/author_released_reference.json"
+}

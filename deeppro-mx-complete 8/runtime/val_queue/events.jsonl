@@ -1,0 +1,2 @@
+{"time": "2026-11-26T16:05:07.285663+00:00", "message": "first_full_val_selection_passed", "epoch": 1, "iou": 0.017704100618522067}
+{"time": "2026-11-26T16:14:43.162159+00:00", "message": "task_started", "run": "mta_val_s46_noex", "gpu": 1, "container_id": "797dbc4577ac5743d18c6c2a4c571c860aa9d4accc1214939991388dbfef13d9"}

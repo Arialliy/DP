@@ -1,0 +1,7 @@
+{
+  "interpretation": "Original M1 evaluates features at ground-truth centres even if no actual frame peak exists. Its output is an oracle-location separability diagnostic and will NOT trigger training.",
+  "corrected_gate": "runtime/predeclared_plan.json",
+  "original_source_backup": "runtime/m1_fix/original/code/miss_recovery.py",
+  "planned_original_output_archive": "results/miss_recovery_oracle_location",
+  "corrected_output": "results/miss_recovery"
+}

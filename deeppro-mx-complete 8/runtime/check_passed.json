@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "completed_at": "2026-11-26T22:45:24.642373+08:00",
+  "test_files": 22,
+  "test_functions": 153,
+  "label_clips": 60,
+  "log": "logs/check.20261126.log",
+  "log_sha256": "58bee14f61dbcb9fca9493bf076c15ccb6d4326a322fbe91e1358fb47d394c9e",
+  "source_manifest": "runtime/original_source_manifest.json"
+}

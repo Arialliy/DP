@@ -1,0 +1,1 @@
+{"complete": true, "selection_mode": "val_iou", "split": "val", "threshold": 0.5, "epoch": 1, "iou": 0.123, "windows": 81, "expected_windows": 81, "selection_max_windows": null, "test_clips": ["fixture_val_A", "fixture_val_B"], "protocol": {"split": "val", "clips": ["fixture_val_A", "fixture_val_B"]}}

@@ -1,0 +1,122 @@
+{
+  "status": "diagnostic_complete",
+  "training_authorized": false,
+  "M2_GO_threshold": null,
+  "plan_sha256": "5ed6743e4f5595267cda70b64218d1a02a89ba5e5dcfd700f4a2789a99588b86",
+  "generation_manifest_sha256": "53fad3c7a395af104e2a6f5efacd1804a4be869ddd08087258822fe2a004d84b",
+  "targets_source": "results/m2/inputs/m1_targets_baseline.csv",
+  "targets_sha256": "d98c103bdf2c88133aa73be5e815f2f66e006d40ed972d4ab4dbf3a2e3eb89c6",
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "parameters": {
+    "early_first": 0,
+    "early_last": 59,
+    "teacher_first": 60,
+    "teacher_probability_min": 0.5,
+    "teacher_logit_min_inclusive": 0.0,
+    "teacher_peak_nms_size": 9,
+    "teacher_peak_topk": 300,
+    "association_max_gap": 3,
+    "association_max_px_per_frame": 10.0,
+    "fit_first_window_frames": 40,
+    "minimum_fit_points": 10,
+    "minimum_fit_span": 9,
+    "maximum_fit_rms_px": 3.0,
+    "candidate_nms_radius_px": 3.0,
+    "evaluation_radius_px": 3.0,
+    "distance_bin_upper_frames": [
+      30,
+      60,
+      120,
+      240
+    ]
+  },
+  "coordinate_system": "raw",
+  "unit": "GT boxes; Euclidean3px, not official merged-component Pd",
+  "primary_baseline_threshold": 0.5,
+  "secondary_baseline_threshold": 1e-05,
+  "totals": {
+    "raw_stop": {
+      "frames": 900,
+      "teacher_points": 16538,
+      "tracks": 1929,
+      "accepted_tracks": 105,
+      "raw_points": 6300,
+      "in_image_points": 6300,
+      "nms_suppressed": 660,
+      "out_of_bounds": 0,
+      "nonfinite": 0,
+      "kept": 5640,
+      "true_candidates": 0,
+      "wrong_candidates": 5640,
+      "precision": 0.0,
+      "wrong_per_frame": 6.266666666666667,
+      "baseline_thresholds": {
+        "0.5": {
+          "early_targets": 2261,
+          "original_misses": 870,
+          "recovered": 0,
+          "teacher_any_missed": 502,
+          "teacher_qualified_missed": 249,
+          "recovery_fraction": 0.0,
+          "teacher_any_coverage": 0.5770114942528736,
+          "teacher_qualified_coverage": 0.28620689655172415
+        },
+        "1e-05": {
+          "early_targets": 2261,
+          "original_misses": 644,
+          "recovered": 0,
+          "teacher_any_missed": 334,
+          "teacher_qualified_missed": 164,
+          "recovery_fraction": 0.0,
+          "teacher_any_coverage": 0.5186335403726708,
+          "teacher_qualified_coverage": 0.2546583850931677
+        }
+      }
+    },
+    "raw_cv": {
+      "frames": 900,
+      "teacher_points": 16538,
+      "tracks": 1929,
+      "accepted_tracks": 248,
+      "raw_points": 14880,
+      "in_image_points": 10346,
+      "nms_suppressed": 204,
+      "out_of_bounds": 4534,
+      "nonfinite": 0,
+      "kept": 10142,
+      "true_candidates": 121,
+      "wrong_candidates": 10021,
+      "precision": 0.01193058568329718,
+      "wrong_per_frame": 11.134444444444444,
+      "baseline_thresholds": {
+        "0.5": {
+          "early_targets": 2261,
+          "original_misses": 870,
+          "recovered": 28,
+          "teacher_any_missed": 502,
+          "teacher_qualified_missed": 427,
+          "recovery_fraction": 0.03218390804597701,
+          "teacher_any_coverage": 0.5770114942528736,
+          "teacher_qualified_coverage": 0.4908045977011494
+        },
+        "1e-05": {
+          "early_targets": 2261,
+          "original_misses": 644,
+          "recovered": 17,
+          "teacher_any_missed": 334,
+          "teacher_qualified_missed": 288,
+          "recovery_fraction": 0.026397515527950312,
+          "teacher_any_coverage": 0.5186335403726708,
+          "teacher_qualified_coverage": 0.4472049689440994
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Primary unit is GT box, not merged official connected component.",
+    "M2 uses Euclidean3px; M1 used Chebyshev3px.",
+    "Missing annotations are not assumed to be real targets: unmatched predictions count as wrong under supplied GT.",
+    "Long backcasting and identity ambiguity may fail; report distances and all false candidates.",
+    "Both stop/CV results are reported; no GT-driven choice or parameter tuning."
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "arch": "lvh_full",
   "name": "DeepPro-LVH",
-  "state": "running",
+  "state": "completed",
   "started_at": "2026-11-26T10:58:17.206690+00:00",
-  "stage": "train",
+  "stage": "completed",
   "command": [
     "python",
     "-u",
@@ -63,5 +63,20 @@
     "homography_and_hotspot_check": "SHA256",
     "reuse_mode": "Docker read-only bind mounts"
   },
-  "updated_at": "2026-11-26T10:58:17.226188+00:00"
+  "updated_at": "2026-11-26T15:11:01.511368+00:00",
+  "epochs_completed": 32,
+  "eval_epochs_completed": 32,
+  "optimizer_updates": 7552,
+  "final_loss": 0.9875,
+  "best_iou": 0.3379999000578106,
+  "best_epoch": 30,
+  "best_checkpoint": "runs/deeppro_lvh_rgbt_s46/best_model.pth",
+  "best_sha256": "847567069b854b07f7632be5c9ae9cce2da080671247a338e2ab60695c272a56",
+  "final_checkpoint": "runs/deeppro_lvh_rgbt_s46/final.pth",
+  "final_sha256": "d5b3d93a70168bb62506c649f33539d25966a0ea988c6a288ca2589d9e9ce32a",
+  "last_sha256": "2f607006769f69929355b754e9945093a65e8f0c1839fa85d89e3c60d6b8aafa",
+  "parameters": 191003,
+  "strict_load": "passed",
+  "all_tensors_finite": true,
+  "selection_verification": "32 full test evaluations; latest maximum IoU epoch"
 }

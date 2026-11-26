@@ -1,4 +1,4 @@
-"""GPU 2: LV then MRTP; GPU 0: LVH then LVH-dec. GPU 1 is excluded."""
+"""Schedule on explicitly allowed GPUs; honor the user's reserved GPU."""
 import argparse
 from datetime import datetime
 import fcntl
@@ -61,7 +61,7 @@ def write_report(snapshot, cfg):
     lines = ['RGB-T 四模型：每轮测试 IoU 选择最佳权重', '更新：' + snapshot['updated_at'],
              '保留研究数据流程、模型和训练配置；45训练 / 15测试；32 epochs；seed46；batch4。',
              '每轮完整测试172窗口，sigmoid > 0.5，全局IoU；同分保存较晚轮次。',
-             'GPU 2: LV → MRTP；GPU 0: LVH → LVH-dec；GPU 1未使用。', '']
+             cfg.get('gpu_schedule_description', 'GPU 2: LV → MRTP；GPU 0: LVH → LVH-dec；GPU 1未使用。'), '']
     for model in cfg['models']:
         entry = snapshot['jobs'][model['arch']]
         extra = ''
@@ -123,6 +123,8 @@ def cycle(cfg, allow_launch):
             arch = model['arch']
             entry = snapshot['jobs'][arch]
             gpu = entry['gpu']
+            if gpu not in cfg.get('allowed_gpus', (0, 2)) or gpu in cfg.get('reserved_gpus', ()):
+                continue
             if entry['state'] != 'queued' or gpu in busy or not idle(gpu):
                 continue
             if entry['container'] is not None:

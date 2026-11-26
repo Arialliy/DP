@@ -1,0 +1,12 @@
+{
+  "summary": "results/miss_recovery/official_rgbt/test/summary.json",
+  "summary_sha256": "b7cf4b69cb415926fc5c8e634ad4523cc4e582c58ed674eeb44be4c9849a77f0",
+  "decision": {
+    "go": false,
+    "diagnostic_only": true
+  },
+  "gate": false,
+  "diagnostic_only": true,
+  "user_instruction": "M1 只记录，取消门槛，继续训练和对照",
+  "recorded_at": "2026-11-26T16:03:23.984283+00:00"
+}

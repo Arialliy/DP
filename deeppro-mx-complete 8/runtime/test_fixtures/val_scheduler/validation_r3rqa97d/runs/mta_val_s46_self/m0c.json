@@ -1,0 +1,17 @@
+{
+  "decision": {
+    "go": false
+  },
+  "decision_all": null,
+  "settings": {
+    "split": [
+      "train"
+    ]
+  },
+  "summary": "results/calib_diag/summary.json",
+  "summary_sha256": "240b1b8815648e6f2104462b6863099f52b34a69e21c67d73fe5cc5a33043c4f",
+  "gate": false,
+  "diagnostic_only": true,
+  "user_instruction": "M0/M1 只记录，继续 val 训练和对照",
+  "recorded_at": "2026-11-26T16:03:23.492188+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "backend": "python",
+  "library": "matplotlib",
+  "core_conclusion": "Display the measured detection–false-alarm tradeoffs of the available RGB-T checkpoints, with training/checkpoint status explicit and no presupposed ranking.",
+  "archetype": "quantitative grid",
+  "panels": [
+    {"label": "a", "role": "context", "title": "Full false-alarm range", "x": "false_pixels / evaluated_pixels", "xlim": [0.0, 1.0], "y": "true_targets / targets", "ylim": [0.0, 1.0]},
+    {"label": "b", "role": "primary comparison", "title": "Low false-alarm range", "x": "false_pixels / evaluated_pixels", "xlim": [0.0, 0.001], "y": "true_targets / targets", "ylim": [0.0, 1.0]}
+  ],
+  "evidence": {
+    "source": "Completed evaluation metrics.json files selected by active_results, or all recursive results when that field is absent.",
+    "operating_points": "Plot the supplied threshold points without inserting, smoothing, averaging, fitting, or dropping zero-Fa observations. Straight segments only connect existing points in supplied order.",
+    "auc": "Report the supplied AUC; do not normalize, extrapolate endpoints, or silently recompute it.",
+    "checkpoint_status": "Distinguish released, final-training selected, and interim-training selected checkpoints.",
+    "statistics": "Checkpoint-level descriptive metrics. No confidence intervals, significance tests, or seed-variability claims unless supplied separately.",
+    "missing_data": "Missing, incomplete, invalid, or inactive results are listed explicitly and are never replaced by invented values.",
+    "protocol_comparison": "Differences in target totals and reported protocol metadata remain visible in REPORT.txt and source CSVs."
+  },
+  "export": {
+    "width_mm": 183,
+    "base_height_mm": 112,
+    "formats": ["png", "pdf", "svg"],
+    "png_dpi": 600,
+    "svg_fonttype": "none",
+    "pdf_fonttype": 42,
+    "font_family": "sans-serif",
+    "body_font_pt": 7,
+    "panel_label_pt": 8,
+    "source_data": ["metrics.csv", "roc_points.csv"]
+  },
+  "visual_encoding": {
+    "background": "white",
+    "model_colors": "One restrained color per model family, shared across both panels.",
+    "status_styles": {"final": "solid/circle", "interim": "dashed/square", "released": "dotted/triangle"},
+    "legend": "One shared legend below both panels; includes checkpoint status, selected epoch where available, variant, and AUC."
+  },
+  "qa": {
+    "data": ["finite metrics", "Pd and Fa in [0,1]", "nonnegative integer counts", "Pd matches target counts", "selected checkpoint hash matches when specified", "no synthesized operating points"],
+    "exports": ["editable SVG text", "TrueType PDF text", "legible labels at final size", "legend outside plotting areas", "no label clipping", "both axes retain Fa=0"],
+    "current_state": "Contract and script prepared; actual render/visual QA requires real result files."
+  }
+}

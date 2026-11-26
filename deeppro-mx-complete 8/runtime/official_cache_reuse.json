@@ -1,0 +1,359 @@
+{
+  "status": "verified_and_copied",
+  "recorded_at": "2026-11-26T22:33:05.713486+08:00",
+  "source_root": "/home/md0/ly/DP/deeppro-mx-complete 7",
+  "destination_root": "/home/md0/ly/DP/deeppro-mx-complete 8",
+  "dataset": "/home/md0/ly/DP/datasets/RGB-T",
+  "dataset_mount": "/data/RGB-T",
+  "project_mount": "/experiment",
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "code_fingerprint": "a178a9cbb0945d34d08270030055dcea1369d75f5c034555c0a58c653565646f",
+  "unchanged_loaded_code_modules": {
+    "cachekey.py": "1702d1a2ceac2c2d199d9fe3224d1fab63de029623b5d44fb32af38c27510094",
+    "infer.py": "5a5c5efeb7456ff96e3b28c204e066907fde5036293f108b0f97c89a7b57bcbc",
+    "models.py": "c486b71c5f92791903a5a64f81a3fde0ddebc654ad2fc1edbd97a97cd28ea2c2",
+    "splits.py": "58e93a24a2af2328fd6fb2e6a9c7960ed010df1112dc697ffc0bf542884d48d5",
+    "stabilize.py": "8d723216daae358454c464e9f9694dc462c992b4933cd012d252624cc7e4e97d",
+    "vtdata.py": "8840dce46bbe54a2ae701b6a751fb53f23f8afa110032606cb523600f34af2d8"
+  },
+  "clips": [
+    {
+      "clip": "DJI_0049_2",
+      "frames": 90,
+      "shape": [
+        90,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0109_1",
+      "frames": 90,
+      "shape": [
+        90,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0119_2",
+      "frames": 180,
+      "shape": [
+        180,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0129_2",
+      "frames": 590,
+      "shape": [
+        590,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0155_2",
+      "frames": 410,
+      "shape": [
+        410,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0159_2",
+      "frames": 250,
+      "shape": [
+        250,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0173_2",
+      "frames": 450,
+      "shape": [
+        450,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0221_2",
+      "frames": 590,
+      "shape": [
+        590,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0237_2",
+      "frames": 410,
+      "shape": [
+        410,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0255_1",
+      "frames": 600,
+      "shape": [
+        600,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0257_2",
+      "frames": 590,
+      "shape": [
+        590,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0277_2",
+      "frames": 366,
+      "shape": [
+        366,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0303_2",
+      "frames": 577,
+      "shape": [
+        577,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0307_2",
+      "frames": 180,
+      "shape": [
+        180,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    },
+    {
+      "clip": "DJI_0309_4",
+      "frames": 603,
+      "shape": [
+        603,
+        512,
+        640
+      ],
+      "dtype": "float16"
+    }
+  ],
+  "clip_count": 15,
+  "total_frames": 5976,
+  "copied_files": [
+    {
+      "path": "inputs/official_rgbt_best_model.pth",
+      "bytes": 937131,
+      "sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0049_2.npy",
+      "bytes": 58982528,
+      "sha256": "1f7594e445eed512d55bf63dd9cf1c198b1cee97500618dea8555c3a07a12c4f"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0049_2.json",
+      "bytes": 899,
+      "sha256": "794bce151ff0ed63e8b52b4fd9a254a53d1859e010f383235e41b285effa6bc9"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0109_1.npy",
+      "bytes": 58982528,
+      "sha256": "6ba5069beb0d88239c400e379e7ca61830a0d89978fa86265ca64e27d99f4b85"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0109_1.json",
+      "bytes": 899,
+      "sha256": "826b4f4a297895da3c78de85c4011538fdffbdd5c187f3036590be40a36ab193"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0119_2.npy",
+      "bytes": 117964928,
+      "sha256": "9216c33243f066b1053a1dd9b4c4d7ff7759002ba09c3a6e16703bc47ba6c240"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0119_2.json",
+      "bytes": 900,
+      "sha256": "f73b42e8ccd42bf6eee5bb2acce86f857b2ebcd24124e27b9b02ec54c61c1c5d"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0129_2.npy",
+      "bytes": 386662528,
+      "sha256": "0a535a893cc805244a824ca2cc7cf4c6056944282dda98e5a8c4be7df5769978"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0129_2.json",
+      "bytes": 900,
+      "sha256": "bbada7af73f0b0d0739a45c790439b13f772260672d7c24d8dfdcbb93e18679f"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0155_2.npy",
+      "bytes": 268697728,
+      "sha256": "21c76ea0ed853233dc6f51d04798f96a3f65ada088369e57fd64348098e02b84"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0155_2.json",
+      "bytes": 900,
+      "sha256": "73ebaad42734481cdc588a374dfab3ca0cbd36aa695b8649593a29db8ff3ef94"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0159_2.npy",
+      "bytes": 163840128,
+      "sha256": "a5a1edf5db20912df8f756398b703aae03dd8eb71c255ca0c109955d71f70cb0"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0159_2.json",
+      "bytes": 900,
+      "sha256": "f27320c2f52117f4e3d137e8a2e832ad337a14d7b2c4fd5cb35620ec64bc2f66"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0173_2.npy",
+      "bytes": 294912128,
+      "sha256": "e648b5a5997c92f68ab7f6d426f22581e1348f5e08727855bb3c38b77576dafa"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0173_2.json",
+      "bytes": 900,
+      "sha256": "de6f2f749a53d7162433b28c8aa6c492b73ae9159fb4c9daf747499b59b4c81e"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0221_2.npy",
+      "bytes": 386662528,
+      "sha256": "e2282253d26a633fa91338425d3e01c478d26c294d284d04e19038d6ba2c9218"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0221_2.json",
+      "bytes": 900,
+      "sha256": "567b17c3e4a109c33fa436808966516a4196569c7a743a34d00d371922519657"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0237_2.npy",
+      "bytes": 268697728,
+      "sha256": "9249a8bd23c59131c058546dcb0bda567023eabe9e3b8ff7de61fe4aebdddc47"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0237_2.json",
+      "bytes": 900,
+      "sha256": "f458fb846fdf3f92a4ef4d7707ce1962765689715c4ad5bdab71065e6bfb7cb4"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0255_1.npy",
+      "bytes": 393216128,
+      "sha256": "cd17adbccff6c71d24962d7ee3fbc9daf4ddc1029973af40d33b0e89938ae104"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0255_1.json",
+      "bytes": 900,
+      "sha256": "fad1b31e41dca3c62f8383a1c86843e6a3435f5ff6808628ed954f580dbb5506"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0257_2.npy",
+      "bytes": 386662528,
+      "sha256": "1a34b3bdd01cf758d6f501e224185528558dc8e2a7b288070f38e9f6f9704438"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0257_2.json",
+      "bytes": 900,
+      "sha256": "bfc33f1c39517eccae1697aea9136775d6d604dfab9fbd29796fd1f986ac9f47"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0277_2.npy",
+      "bytes": 239861888,
+      "sha256": "249bf06079dcc0a308d328f7094ae98877c59915e95d291ea6a7cd7a5023be38"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0277_2.json",
+      "bytes": 900,
+      "sha256": "9b9aa19a1513ec2eee1c9a021ee3d1aa1bb9b41323d2759d27e639cbbea734a3"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0303_2.npy",
+      "bytes": 378142848,
+      "sha256": "109914f93a9383bc0319fdc80e7ea78373e4e7f12abe7b27552dc836681f35c2"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0303_2.json",
+      "bytes": 900,
+      "sha256": "7692dde5d12157d0214dd011b457dec6bb3b34c514c78de0d4cdac1691ccf6db"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0307_2.npy",
+      "bytes": 117964928,
+      "sha256": "97d88e90c0843f1c6cce379dd01f757ce38dc17e8bfa3922fd7fc8f6c5183ee5"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0307_2.json",
+      "bytes": 900,
+      "sha256": "7956cfd510da0d5a5b715182271f37eeb6422adc1675e2195545e8a8fc295a50"
+    },
+    {
+      "path": "cache/preds/official_rgbt/DJI_0309_4.npy",
+      "bytes": 395182208,
+      "sha256": "2844089c70d328506b400648b03bd7a424b7d356f0f1bdd37f83a21d5a0cb550"
+    },
+    {
+      "path": "cache/preds/official_rgbt__meta/DJI_0309_4.json",
+      "bytes": 900,
+      "sha256": "10a351ae0b7445152a2db8379a41b8aa99316233aa129da506812e04daad34ad"
+    }
+  ],
+  "compatibility_files": [
+    {
+      "path": "runtime/torch_compat.py",
+      "bytes": 1573,
+      "sha256": "ffe34244affdb83c56418a4108b2a29fcbb27941c25fc3b9ada4f5b7ffb0ddeb"
+    },
+    {
+      "path": "runtime/torch_compat.PYTORCH_LICENSE",
+      "bytes": 3384,
+      "sha256": "47a26beb94e3f6b333a3677fc85d546f1fdfd2f0b3686c26d2fb5b10e0134165"
+    },
+    {
+      "path": "runtime/torch_compat_provenance.json",
+      "bytes": 1633,
+      "sha256": "41199f6ced3d29c945fbd79c3b8efa5ad07de6f680ee4c78613a40d7276b68db"
+    },
+    {
+      "path": "runtime/sitecustomize.py",
+      "bytes": 124,
+      "sha256": "fa5ba475450d22fc6960f456076cdd4e35d9cb8c9b06e08a208b4bc72651fc10"
+    }
+  ],
+  "copy_semantics": "Independent regular files; cp --reflink=auto, never symlinks or hardlinks. Existing matching destinations retained.",
+  "reason": "Frozen deeppro_plus inference uses these identical six code modules, no exemplar or homography inputs; MTA/motion changes do not enter this inference path. Existing prediction metadata retain original provenance.",
+  "limitations": [
+    "Frame counts, official clip list, checkpoint and output/source hashes were verified; raw JPEG bytes were not independently rehashed against the prior inference.",
+    "These are frozen official-model outputs reused as M1 diagnostic inputs, not MTA outputs or a new model evaluation."
+  ],
+  "gpu_or_model_execution": false
+}

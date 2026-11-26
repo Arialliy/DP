@@ -1,0 +1,274 @@
+{
+  "iou": 0.35858352694296636,
+  "intersection": 717687,
+  "union": 2001450,
+  "windows": 172,
+  "window_frames": 6880,
+  "unique_frames": 5976,
+  "expected_windows": 172,
+  "expected_unique_frames": 5976,
+  "complete": true,
+  "selection_max_windows": null,
+  "seconds": 198.9661767380021,
+  "test_clips": [
+    "DJI_0049_2",
+    "DJI_0109_1",
+    "DJI_0119_2",
+    "DJI_0129_2",
+    "DJI_0155_2",
+    "DJI_0159_2",
+    "DJI_0173_2",
+    "DJI_0221_2",
+    "DJI_0237_2",
+    "DJI_0255_1",
+    "DJI_0257_2",
+    "DJI_0277_2",
+    "DJI_0303_2",
+    "DJI_0307_2",
+    "DJI_0309_4"
+  ],
+  "per_clip": {
+    "DJI_0049_2": {
+      "intersection": 29234,
+      "union": 77329,
+      "iou": 0.37804704573963194,
+      "windows": 3,
+      "window_frames": 120,
+      "unique_frames": 90,
+      "source_frames": 90,
+      "coordinates": {
+        "raw": 0,
+        "warp": 3,
+        "gated": 0
+      }
+    },
+    "DJI_0109_1": {
+      "intersection": 6212,
+      "union": 16423,
+      "iou": 0.37825001522255375,
+      "windows": 3,
+      "window_frames": 120,
+      "unique_frames": 90,
+      "source_frames": 90,
+      "coordinates": {
+        "raw": 0,
+        "warp": 3,
+        "gated": 0
+      }
+    },
+    "DJI_0119_2": {
+      "intersection": 18734,
+      "union": 100897,
+      "iou": 0.18567449973735592,
+      "windows": 5,
+      "window_frames": 200,
+      "unique_frames": 180,
+      "source_frames": 180,
+      "coordinates": {
+        "raw": 0,
+        "warp": 5,
+        "gated": 0
+      }
+    },
+    "DJI_0129_2": {
+      "intersection": 32104,
+      "union": 88232,
+      "iou": 0.3638589173995829,
+      "windows": 17,
+      "window_frames": 680,
+      "unique_frames": 590,
+      "source_frames": 590,
+      "coordinates": {
+        "raw": 16,
+        "warp": 1,
+        "gated": 0
+      }
+    },
+    "DJI_0155_2": {
+      "intersection": 21267,
+      "union": 111919,
+      "iou": 0.19002135472975992,
+      "windows": 12,
+      "window_frames": 480,
+      "unique_frames": 410,
+      "source_frames": 410,
+      "coordinates": {
+        "raw": 6,
+        "warp": 6,
+        "gated": 0
+      }
+    },
+    "DJI_0159_2": {
+      "intersection": 10034,
+      "union": 15657,
+      "iou": 0.6408635115283898,
+      "windows": 7,
+      "window_frames": 280,
+      "unique_frames": 250,
+      "source_frames": 250,
+      "coordinates": {
+        "raw": 0,
+        "warp": 7,
+        "gated": 0
+      }
+    },
+    "DJI_0173_2": {
+      "intersection": 18639,
+      "union": 52546,
+      "iou": 0.35471777109580177,
+      "windows": 13,
+      "window_frames": 520,
+      "unique_frames": 450,
+      "source_frames": 450,
+      "coordinates": {
+        "raw": 13,
+        "warp": 0,
+        "gated": 0
+      }
+    },
+    "DJI_0221_2": {
+      "intersection": 39997,
+      "union": 89861,
+      "iou": 0.4450985410801126,
+      "windows": 17,
+      "window_frames": 680,
+      "unique_frames": 590,
+      "source_frames": 590,
+      "coordinates": {
+        "raw": 6,
+        "warp": 11,
+        "gated": 0
+      }
+    },
+    "DJI_0237_2": {
+      "intersection": 110466,
+      "union": 428354,
+      "iou": 0.2578848335722323,
+      "windows": 12,
+      "window_frames": 480,
+      "unique_frames": 410,
+      "source_frames": 410,
+      "coordinates": {
+        "raw": 3,
+        "warp": 9,
+        "gated": 0
+      }
+    },
+    "DJI_0255_1": {
+      "intersection": 33358,
+      "union": 51081,
+      "iou": 0.6530412482136215,
+      "windows": 17,
+      "window_frames": 680,
+      "unique_frames": 600,
+      "source_frames": 600,
+      "coordinates": {
+        "raw": 6,
+        "warp": 11,
+        "gated": 0
+      }
+    },
+    "DJI_0257_2": {
+      "intersection": 150639,
+      "union": 226715,
+      "iou": 0.6644421410140485,
+      "windows": 17,
+      "window_frames": 680,
+      "unique_frames": 590,
+      "source_frames": 590,
+      "coordinates": {
+        "raw": 13,
+        "warp": 4,
+        "gated": 0
+      }
+    },
+    "DJI_0277_2": {
+      "intersection": 58913,
+      "union": 230755,
+      "iou": 0.2553054105003142,
+      "windows": 11,
+      "window_frames": 440,
+      "unique_frames": 366,
+      "source_frames": 366,
+      "coordinates": {
+        "raw": 0,
+        "warp": 11,
+        "gated": 0
+      }
+    },
+    "DJI_0303_2": {
+      "intersection": 124387,
+      "union": 259787,
+      "iou": 0.478803789258123,
+      "windows": 16,
+      "window_frames": 640,
+      "unique_frames": 577,
+      "source_frames": 577,
+      "coordinates": {
+        "raw": 1,
+        "warp": 15,
+        "gated": 0
+      }
+    },
+    "DJI_0307_2": {
+      "intersection": 9184,
+      "union": 60045,
+      "iou": 0.15295195270214007,
+      "windows": 5,
+      "window_frames": 200,
+      "unique_frames": 180,
+      "source_frames": 180,
+      "coordinates": {
+        "raw": 3,
+        "warp": 2,
+        "gated": 0
+      }
+    },
+    "DJI_0309_4": {
+      "intersection": 54519,
+      "union": 191849,
+      "iou": 0.2841766180694192,
+      "windows": 17,
+      "window_frames": 680,
+      "unique_frames": 603,
+      "source_frames": 603,
+      "coordinates": {
+        "raw": 4,
+        "warp": 13,
+        "gated": 0
+      }
+    }
+  },
+  "protocol": {
+    "name": "official_test_window_global_iou",
+    "split": "test",
+    "test_list": "/data/RGB-T/test.txt",
+    "threshold": 0.5,
+    "comparison": "sigmoid(float32_logits) > threshold",
+    "sequence_length": 40,
+    "nominal_overlap": 4,
+    "stride": 36,
+    "overlapping_frames": "counted once per window; no fusion",
+    "labels": "existing segmentations PNGs, uint8 > 0, original frame coordinates",
+    "aggregation": "sum(intersection) / sum(union), not mean window or clip IoU",
+    "checkpoint_update": "iou >= best_iou",
+    "arch": "mr_lv",
+    "selection_rates": [
+      1
+    ],
+    "coordinates": "auto",
+    "history": null,
+    "motion_gate": null,
+    "mr_selection_probe": "rate1 + auto; no CFAR; multi-rate training/final inference unchanged",
+    "stationarity": {
+      "lowres": 4,
+      "margin": 0.1,
+      "abs_tol": 0.5,
+      "min_cover": 0.1
+    }
+  },
+  "epoch": 19,
+  "threshold": 0.5,
+  "split": "official_test",
+  "elapsed_seconds": 198.97096753120422
+}

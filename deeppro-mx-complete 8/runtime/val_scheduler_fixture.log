@@ -1,0 +1,38 @@
+{"time": "2026-11-26T16:03:23.317481+00:00", "message": "first_full_val_selection_passed", "epoch": 1, "iou": 0.123}
+{"time": "2026-11-26T16:03:23.458268+00:00", "message": "task_started", "run": "mta_val_s46_noex", "gpu": 0, "container_id": "fixture-dp-mta-v8-val-noex-20261126"}
+{"time": "2026-11-26T16:03:23.541846+00:00", "message": "task_started", "run": "mta_val_s46_self", "gpu": 1, "container_id": "fixture-dp-mta-v8-val-self-20261126"}
+{"time": "2026-11-26T16:03:23.593122+00:00", "message": "task_failed", "container": "dp-mta-v8-val-noex-20261126", "error": "container exited, exit=2, OOMKilled=False; "}
+{"time": "2026-11-26T16:03:23.838177+00:00", "message": "task_started", "run": "mta_val_s46_nogain", "gpu": 0, "container_id": "fixture-dp-mta-v8-val-nogain-20261126"}
+{"time": "2026-11-26T16:03:23.964574+00:00", "message": "task_completed", "run": "mta_val_s46_self"}
+{"time": "2026-11-26T16:03:24.021356+00:00", "message": "task_started", "run": "mta_val_s46_mx", "gpu": 1, "container_id": "fixture-dp-mta-v8-val-mx-20261126"}
+{"time": "2026-11-26T16:03:24.057034+00:00", "message": "task_failed", "container": "dp-mta-v8-val-nogain-20261126", "error": "container exited 0 but training progress is not completed at epoch 32/32"}
+{"time": "2026-11-26T16:03:24.166509+00:00", "message": "task_started", "run": "mta_val_s46_noapp", "gpu": 0, "container_id": "fixture-dp-mta-v8-val-noapp-20261126"}
+{"time": "2026-11-26T16:03:24.192487+00:00", "message": "task_failed", "container": "dp-mta-v8-val-main-20261126", "error": "container exited, exit=1, OOMKilled=False; "}
+{"time": "2026-11-26T16:03:24.225083+00:00", "message": "first_full_val_selection_passed", "epoch": 1, "iou": 0.123}
+{"time": "2026-11-26T16:03:24.229113+00:00", "message": "resumed_created_container", "run": "mta_val_s46_noex"}
+{
+  "status": "passed",
+  "checks": [
+    "main container is adopted only; absent main and no val record launch nothing",
+    "partial val selection cannot release controls",
+    "a complete selection with wrong clips cannot release controls",
+    "compute process, memory=500 MiB, and reserved main GPU each block reuse",
+    "idle <500 MiB launches exact noex recipe once, records diagnostics and SHA",
+    "scheduler restart adopts running worker; no duplicate and no GPU reuse while initializing",
+    "second idle GPU launches self concurrently, preserves self bank",
+    "failed worker is terminal and not retried; subsequent task can use its freed GPU",
+    "exit0 requires all32 selections and verified score; mx preserves gain2",
+    "exit0 without final artifacts is failed; noapp uses mxc_lv",
+    "main failure halts new launch requests without stopping existing workers",
+    "created-container recovery waits for idle GPU then starts same container once",
+    "six-run plan has no official/test stage and never creates main"
+  ],
+  "gpu_calls": 0,
+  "docker_calls": 0,
+  "training_runs": 0,
+  "fixture_roots": [
+    "/home/md0/ly/DP/deeppro-mx-complete 8/runtime/test_fixtures/val_scheduler/validation_r3rqa97d",
+    "/home/md0/ly/DP/deeppro-mx-complete 8/runtime/test_fixtures/val_scheduler/validation_lwunob0w"
+  ],
+  "note": "Synthetic state and score fixtures only; not experimental results."
+}

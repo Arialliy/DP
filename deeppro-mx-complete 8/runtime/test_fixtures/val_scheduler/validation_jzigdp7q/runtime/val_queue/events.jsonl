@@ -1,0 +1,10 @@
+{"time": "2026-11-26T16:02:32.169500+00:00", "message": "first_full_val_selection_passed", "epoch": 1, "iou": 0.123}
+{"time": "2026-11-26T16:02:32.344471+00:00", "message": "task_started", "run": "mta_val_s46_noex", "gpu": 0, "container_id": "fixture-dp-mta-v8-val-noex-20261126"}
+{"time": "2026-11-26T16:02:32.522579+00:00", "message": "task_started", "run": "mta_val_s46_self", "gpu": 1, "container_id": "fixture-dp-mta-v8-val-self-20261126"}
+{"time": "2026-11-26T16:02:32.540345+00:00", "message": "task_failed", "container": "dp-mta-v8-val-noex-20261126", "error": "container exited, exit=2, OOMKilled=False; "}
+{"time": "2026-11-26T16:02:32.589491+00:00", "message": "task_started", "run": "mta_val_s46_nogain", "gpu": 0, "container_id": "fixture-dp-mta-v8-val-nogain-20261126"}
+{"time": "2026-11-26T16:02:32.855548+00:00", "message": "task_completed", "run": "mta_val_s46_self"}
+{"time": "2026-11-26T16:02:33.006901+00:00", "message": "task_started", "run": "mta_val_s46_mx", "gpu": 1, "container_id": "fixture-dp-mta-v8-val-mx-20261126"}
+{"time": "2026-11-26T16:02:33.024558+00:00", "message": "task_failed", "container": "dp-mta-v8-val-nogain-20261126", "error": "container exited 0 but training progress is not completed at epoch 32/32"}
+{"time": "2026-11-26T16:02:33.055461+00:00", "message": "task_started", "run": "mta_val_s46_noapp", "gpu": 0, "container_id": "fixture-dp-mta-v8-val-noapp-20261126"}
+{"time": "2026-11-26T16:02:33.063896+00:00", "message": "task_failed", "container": "dp-mta-v8-val-main-20261126", "error": "container exited, exit=1, OOMKilled=False; "}

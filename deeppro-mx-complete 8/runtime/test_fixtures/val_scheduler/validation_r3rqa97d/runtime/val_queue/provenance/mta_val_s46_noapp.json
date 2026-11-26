@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-11-26T16:03:24.074877+00:00",
+  "main_source_matches": true,
+  "source_files": {},
+  "runtime_files": {
+    "m0_val.command.json": "c0a26272aa580a0396bfb15174d018e7aecdbc6c246603f5727885e618e433f4",
+    "training_source_manifest.json": "7882c8ca7b33add73ee313897f5f22210c042529c7da2d72130bdab718f6d449"
+  },
+  "docker_image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594"
+}

@@ -1,0 +1,104 @@
+{
+  "status": "failed",
+  "models": {
+    "deeppro_plus": {
+      "arch": "deeppro_plus",
+      "device": "cuda:0",
+      "clip": "DJI_0049_2",
+      "shape": [
+        40,
+        512,
+        640
+      ],
+      "coordinates": "raw",
+      "setup_seconds": 0.00045614100235980004,
+      "window_seconds": 1.3520431420038221,
+      "total_seconds": 1.352716257009888,
+      "probability_min": 2.587565168208016e-31,
+      "probability_max": 1.0,
+      "threads": 4,
+      "status": "passed",
+      "peak_allocated_bytes": 9699872768
+    },
+    "lv_full": {
+      "arch": "lv_full",
+      "device": "cuda:0",
+      "clip": "DJI_0049_2",
+      "shape": [
+        40,
+        512,
+        640
+      ],
+      "coordinates": "raw",
+      "setup_seconds": 0.0002370489964960143,
+      "window_seconds": 0.6264264220080804,
+      "total_seconds": 0.6267832930025179,
+      "probability_min": 1.2377019981829607e-12,
+      "probability_max": 1.0,
+      "threads": 4,
+      "status": "passed",
+      "peak_allocated_bytes": 10181898752
+    },
+    "lvh_full": {
+      "arch": "lvh_full",
+      "device": "cuda:0",
+      "clip": "DJI_0049_2",
+      "shape": [
+        40,
+        512,
+        640
+      ],
+      "coordinates": "warp",
+      "setup_seconds": 0.0012584389914991334,
+      "window_seconds": 1.6159779650042765,
+      "total_seconds": 1.6173591749975458,
+      "probability_min": 1.4990664959357858e-11,
+      "probability_max": 1.0,
+      "threads": 4,
+      "status": "passed",
+      "peak_allocated_bytes": 10199271424
+    },
+    "mr_lv": {
+      "arch": "mr_lv",
+      "device": "cuda:0",
+      "clip": "DJI_0049_2",
+      "shape": [
+        40,
+        512,
+        640
+      ],
+      "coordinates": "warp",
+      "setup_seconds": 0.03677145300025586,
+      "window_seconds": 1.1688028189964825,
+      "total_seconds": 1.3186691279988736,
+      "probability_min": 7.995173099961672e-12,
+      "probability_max": 1.0,
+      "threads": 4,
+      "status": "passed",
+      "peak_allocated_bytes": 10197627904
+    },
+    "lvh_dec": {
+      "arch": "lvh_dec",
+      "device": "cuda:0",
+      "clip": "DJI_0049_2",
+      "shape": [
+        40,
+        512,
+        640
+      ],
+      "coordinates": "warp",
+      "setup_seconds": 0.0011114849912701175,
+      "window_seconds": 1.6477858959988225,
+      "total_seconds": 1.649014434995479,
+      "probability_min": 5.663649549347838e-10,
+      "probability_max": 0.7918872833251953,
+      "threads": 4,
+      "status": "passed",
+      "peak_allocated_bytes": 10199774208
+    }
+  },
+  "device": "NVIDIA GeForce RTX 3090",
+  "unit_tests": "passed; logs/unit_tests.log",
+  "error": "CalledProcessError(1, ['/usr/bin/python', '-u', 'evaluate.py', 'preflight_lv', '--max-clips', '1'])",
+  "traceback": "Traceback (most recent call last):\n  File \"/evaluation/gpu_preflight.py\", line 51, in main\n    subprocess.run([sys.executable, '-u', 'evaluate.py', 'preflight_lv', '--max-clips', '1'], check=True)\n  File \"/usr/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/usr/bin/python', '-u', 'evaluate.py', 'preflight_lv', '--max-clips', '1']' returned non-zero exit status 1.\n"
+}

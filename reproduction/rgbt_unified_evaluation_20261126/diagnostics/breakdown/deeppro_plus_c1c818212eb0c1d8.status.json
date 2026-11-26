@@ -1,0 +1,10 @@
+{
+  "job_id": "deeppro_plus_c1c818212eb0c1d8",
+  "checkpoint_sha256": "c1c818212eb0c1d8d8774e8fd1e6bac75db3e485ef2c5c7c34a4d0860afc87af",
+  "elapsed_seconds": 426.0095573840081,
+  "updated_at": "2026-11-26T18:17:08.716084+00:00",
+  "stage": "complete",
+  "complete": true,
+  "frames": 5976,
+  "output": "/evaluation/diagnostics/breakdown/deeppro_plus_c1c818212eb0c1d8.json"
+}

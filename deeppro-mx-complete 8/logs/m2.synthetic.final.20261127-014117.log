@@ -1,0 +1,103 @@
+test_assignment_agrees_with_independent_tiny_graph_enumeration (__main__.AssignmentTests) ... ok
+test_empty_and_all_invalid_graphs (__main__.AssignmentTests) ... ok
+test_hard_gate_preserves_maximum_cardinality (__main__.AssignmentTests) ... ok
+test_duplicate_candidates_and_no_gt_are_false_candidates (__main__.EvaluationMatchingTests) ... ok
+test_matching_uses_euclidean3_not_square3_and_counts_all_unmatched (__main__.EvaluationMatchingTests) ... ok
+test_first40_frame_fit_ignores_observations_from_frame100 (__main__.FitProjectionTests) ... ok
+test_minimum_points_and_rms_inclusive_boundary (__main__.FitProjectionTests) ... ok
+test_nms_separate_models_uses_count_then_score_then_track_id (__main__.FitProjectionTests) ... ok
+test_projection_is_prediction_only_and_retains_out_of_bounds_records (__main__.FitProjectionTests) ... ok
+test_stop_and_constant_velocity_math (__main__.FitProjectionTests) ... ok
+test_sealed_generation_without_gt_and_gt_replacement_never_changes_proposals (__main__.IsolationIntegrationTests) ... generated synthetic_only teacher_points 40 tracks 1 accepted {'raw_stop': 1, 'raw_cv': 1}
+sealed /experiment/runtime/test_fixtures/m2_a4xa2t42/out_a/generation/manifest.json GT not loaded
+evaluated synthetic_only early_GT 59
+{
+  "raw_stop": {
+    "frames": 60,
+    "teacher_points": 40,
+    "tracks": 1,
+    "accepted_tracks": 1,
+    "raw_points": 60,
+    "in_image_points": 60,
+    "nms_suppressed": 0,
+    "out_of_bounds": 0,
+    "nonfinite": 0,
+    "kept": 60,
+    "true_candidates": 58,
+    "wrong_candidates": 2,
+    "precision": 0.9666666666666667,
+    "wrong_per_frame": 0.03333333333333333,
+    "baseline_thresholds": {
+      "0.5": {
+        "early_targets": 59,
+        "original_misses": 59,
+        "recovered": 58,
+        "teacher_any_missed": 59,
+        "teacher_qualified_missed": 59,
+        "recovery_fraction": 0.9830508474576272,
+        "teacher_any_coverage": 1.0,
+        "teacher_qualified_coverage": 1.0
+      },
+      "1e-05": {
+        "early_targets": 59,
+        "original_misses": 59,
+        "recovered": 58,
+        "teacher_any_missed": 59,
+        "teacher_qualified_missed": 59,
+        "recovery_fraction": 0.9830508474576272,
+        "teacher_any_coverage": 1.0,
+        "teacher_qualified_coverage": 1.0
+      }
+    }
+  },
+  "raw_cv": {
+    "frames": 60,
+    "teacher_points": 40,
+    "tracks": 1,
+    "accepted_tracks": 1,
+    "raw_points": 60,
+    "in_image_points": 60,
+    "nms_suppressed": 0,
+    "out_of_bounds": 0,
+    "nonfinite": 0,
+    "kept": 60,
+    "true_candidates": 58,
+    "wrong_candidates": 2,
+    "precision": 0.9666666666666667,
+    "wrong_per_frame": 0.03333333333333333,
+    "baseline_thresholds": {
+      "0.5": {
+        "early_targets": 59,
+        "original_misses": 59,
+        "recovered": 58,
+        "teacher_any_missed": 59,
+        "teacher_qualified_missed": 59,
+        "recovery_fraction": 0.9830508474576272,
+        "teacher_any_coverage": 1.0,
+        "teacher_qualified_coverage": 1.0
+      },
+      "1e-05": {
+        "early_targets": 59,
+        "original_misses": 59,
+        "recovered": 58,
+        "teacher_any_missed": 59,
+        "teacher_qualified_missed": 59,
+        "recovery_fraction": 0.9830508474576272,
+        "teacher_any_coverage": 1.0,
+        "teacher_qualified_coverage": 1.0
+      }
+    }
+  }
+}
+generated synthetic_only teacher_points 40 tracks 1 accepted {'raw_stop': 1, 'raw_cv': 1}
+sealed /experiment/runtime/test_fixtures/m2_a4xa2t42/out_b/generation/manifest.json GT not loaded
+ok
+test_association_gap3_and_speed_boundary_pass_but_gap4_starts_new (__main__.TeacherAssociationTests) ... ok
+test_association_is_one_to_one_and_maximum_cardinality (__main__.TeacherAssociationTests) ... ok
+test_teacher_t60_and_logit_zero_are_inclusive (__main__.TeacherAssociationTests) ... ok
+test_teacher_top300_ties_are_y_then_x_deterministic (__main__.TeacherAssociationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.177s
+
+OK

@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "queue": "20261126-s46-val",
+  "created_at": "2026-11-26T16:05:07.279852+00:00",
+  "status": "running",
+  "barrier": {
+    "passed": true,
+    "at": "2026-11-26T16:05:07.285649+00:00",
+    "epoch": 1,
+    "iou": 0.017704100618522067,
+    "windows": 81,
+    "source": "runs/mta_val_s46/eval_log.jsonl"
+  },
+  "jobs": {
+    "mta_val_s46": {
+      "status": "running",
+      "container_name": "dp-mta-v8-val-main-20261126",
+      "gpu": 2,
+      "arch": "mta_lv",
+      "attempts": 0,
+      "container_id": "44461f9c9fd2837164aa7a1033396a9ba5b4c55d694f0d945fce4400b712efeb",
+      "started_at": "2026-11-26T15:54:45.588861508Z"
+    },
+    "mta_val_s46_noex": {
+      "status": "running",
+      "container_name": "dp-mta-v8-val-noex-20261126",
+      "gpu": 1,
+      "arch": "mta_lv",
+      "attempts": 1,
+      "started_at": "2026-11-26T16:14:41.907463+00:00",
+      "container_id": "797dbc4577ac5743d18c6c2a4c571c860aa9d4accc1214939991388dbfef13d9"
+    },
+    "mta_val_s46_self": {
+      "status": "pending",
+      "container_name": "dp-mta-v8-val-self-20261126",
+      "gpu": null,
+      "arch": "mta_lv",
+      "attempts": 0
+    },
+    "mta_val_s46_nogain": {
+      "status": "pending",
+      "container_name": "dp-mta-v8-val-nogain-20261126",
+      "gpu": null,
+      "arch": "mta_lv",
+      "attempts": 0
+    },
+    "mta_val_s46_mx": {
+      "status": "pending",
+      "container_name": "dp-mta-v8-val-mx-20261126",
+      "gpu": null,
+      "arch": "mx_lv",
+      "attempts": 0
+    },
+    "mta_val_s46_noapp": {
+      "status": "pending",
+      "container_name": "dp-mta-v8-val-noapp-20261126",
+      "gpu": null,
+      "arch": "mxc_lv",
+      "attempts": 0
+    }
+  },
+  "gpu_snapshot": {
+    "at": "2026-11-26T17:23:44.483489+00:00",
+    "devices": {
+      "0": {
+        "index": 0,
+        "uuid": "GPU-12cdabd0-7910-8f4a-e4d7-e3c7867d1296",
+        "memory_mib": 21848,
+        "pids": [
+          "519719",
+          "556307"
+        ]
+      },
+      "1": {
+        "index": 1,
+        "uuid": "GPU-48b3f9d5-25d4-2398-5483-ee6bd406b655",
+        "memory_mib": 22673,
+        "pids": [
+          "570836"
+        ]
+      },
+      "2": {
+        "index": 2,
+        "uuid": "GPU-3509f974-0eba-2bcb-9469-372003ae4f0a",
+        "memory_mib": 23205,
+        "pids": [
+          "551342"
+        ]
+      }
+    }
+  },
+  "updated_at": "2026-11-26T17:23:44.483550+00:00"
+}

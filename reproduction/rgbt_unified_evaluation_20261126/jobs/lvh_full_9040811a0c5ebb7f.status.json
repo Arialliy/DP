@@ -1,0 +1,30 @@
+{
+  "job_id": "lvh_full_9040811a0c5ebb7f",
+  "model": "DeepPro-LVH",
+  "state": "completed",
+  "stage": "completed",
+  "started_at": "2026-11-26T14:11:31.027622+00:00",
+  "best_epoch": 13,
+  "checkpoint_sha256": "9040811a0c5ebb7fc3fe578e16cdc25a1d8375bf08564861c6439d172929d83d",
+  "device": "cuda:0",
+  "clips_done": 15,
+  "clips_total": 15,
+  "updated_at": "2026-11-26T14:19:55.978487+00:00",
+  "clip": "DJI_0309_4",
+  "frames_done": 5976,
+  "rate": 1,
+  "used": true,
+  "window": 17,
+  "windows_total": 17,
+  "phase": 0,
+  "coords": "warp",
+  "first_frame": 563,
+  "last_frame": 602,
+  "variant": "native",
+  "scoring_frame": 600,
+  "complete": true,
+  "results": [
+    "results/lvh_full_9040811a0c5ebb7f/native/metrics.json"
+  ],
+  "elapsed_seconds": 504.522308945001
+}

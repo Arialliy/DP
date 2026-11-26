@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "container_name": "dp-mta-v8-official-baseline-score-20261127",
+  "container_id": "a7ebe09233c35652fb0d02f0ff3ce9c6f14fed5efd5d88657172a8bf60b27ebd",
+  "started_at": "2026-11-27T01:24:58.859922+08:00",
+  "run": "official_rgbt",
+  "split": "official_test",
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "exit_code": 0,
+  "finished_at": "2026-11-26T17:27:40.858831477Z"
+}

@@ -1,0 +1,42 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--name",
+    "dp-v8-controls-mxrun-test-20261126-230452",
+    "--network",
+    "none",
+    "--user",
+    "1008:1008",
+    "--cpus",
+    "2",
+    "--memory",
+    "4g",
+    "-v",
+    "/home/md0/ly/DP/deeppro-mx-complete 8:/experiment:ro",
+    "-w",
+    "/experiment",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "-e",
+    "CUDA_VISIBLE_DEVICES=",
+    "-e",
+    "OMP_NUM_THREADS=1",
+    "-e",
+    "MKL_NUM_THREADS=1",
+    "-e",
+    "OPENBLAS_NUM_THREADS=1",
+    "--entrypoint",
+    "python",
+    "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+    "-c",
+    "import runpy; tests=runpy.run_path('code/test_run_mx.py'); tests['test_all_controls_keep_selection_and_main_gain'](); print('PASS test_all_controls_keep_selection_and_main_gain (6 cases: legacy 4 controls, MTA 5 controls, default/custom MX_RUN, val_iou and original_test_iou, best_model.pth, split/gain/banks)')"
+  ],
+  "scope": "Targeted CPU stand-in controls argument tests only; no real profile/M0/training/inference",
+  "log": "logs/controls_mx_run_targeted.20261126-230452.log",
+  "files": {
+    "run_mx.sh": "2a342ce03445ddc0486c06a0b5f80f631cbcd605684a084faa411bd76f3416bf",
+    "code/test_run_mx.py": "b4b6d3fc02d26d98ca486ed4869a3d18d020306565d3c38fd0e88ee3a6b9cdb8"
+  }
+}

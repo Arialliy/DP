@@ -1,0 +1,19 @@
+{
+  "selection_mode": "original_test_iou",
+  "split": "val",
+  "threshold": 0.5,
+  "complete": true,
+  "epoch": 23,
+  "iou": 0.456,
+  "test_clips": [
+    "fixture_val_A",
+    "fixture_val_B"
+  ],
+  "protocol": {
+    "split": "val",
+    "clips": [
+      "fixture_val_A",
+      "fixture_val_B"
+    ]
+  }
+}

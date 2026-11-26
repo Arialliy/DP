@@ -1,0 +1,21 @@
+test_gate_considers_outside_history_and_no_fake_history (test_inference.InferenceTests) ... ok
+test_invalid_input_is_rejected_before_scoring (test_inference.InferenceTests) ... ok
+test_lv_matches_native_full_clip_inference (test_inference.InferenceTests) ... ok
+test_lvh_and_dec_match_native_history_and_gate (test_inference.InferenceTests) ... ok
+test_mr_fixed_variants_and_native_cfar (test_inference.InferenceTests) ... ok
+test_original_plus_strict_load_and_forward (test_inference.InferenceTests) ... ok
+test_raw_native_logits_max_and_fp32_storage (test_inference.InferenceTests) ... ok
+test_research_checkpoint_wrapper_and_fp32_enforcement (test_inference.InferenceTests) ... ok
+test_eight_connected_components_and_strict_iou (test_official_metrics.ExactOfficialMetrics) ... ok
+test_empty_targets_and_invalid_inputs (test_official_metrics.ExactOfficialMetrics) ... ok
+test_global_aggregation_and_unaugmented_auc (test_official_metrics.ExactOfficialMetrics) ... ok
+test_random_full_size_mask_and_saturated_probabilities (test_official_metrics.ExactOfficialMetrics) ... ok
+test_real_rgbt_png_masks (test_official_metrics.ExactOfficialMetrics) ... ok
+test_scalar_float32_boundaries (test_official_metrics.ExactOfficialMetrics) ... ok
+test_small_shapes_all_borders (test_official_metrics.ExactOfficialMetrics) ... ok
+test_threshold_zero_and_negative_slice_quirks (test_official_metrics.ExactOfficialMetrics) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 5.825s
+
+OK

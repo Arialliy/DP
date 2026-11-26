@@ -1,0 +1,567 @@
+{
+  "method": "Raw JPEG grayscale unchanged, fixed 0..255 display. Crops nearest-neighbour enlarged. Cyan GT overlay only. Per-box hit matches official eligible-mask dilation; no model was run.",
+  "clips": {
+    "DJI_0255_1": {
+      "frames": 600,
+      "first_annotated_frame": 0,
+      "first_annotated_file": "00000.jpg",
+      "categories": [
+        6
+      ],
+      "track_ids": [
+        6000000
+      ],
+      "rates": {
+        "cut40_th1e-05_early": {
+          "target_frames": 40,
+          "misses": 37
+        },
+        "cut40_th1e-05_later": {
+          "target_frames": 560,
+          "misses": 13
+        },
+        "cut40_th0.5_early": {
+          "target_frames": 40,
+          "misses": 40
+        },
+        "cut40_th0.5_later": {
+          "target_frames": 560,
+          "misses": 37
+        },
+        "cut60_th1e-05_early": {
+          "target_frames": 60,
+          "misses": 45
+        },
+        "cut60_th1e-05_later": {
+          "target_frames": 540,
+          "misses": 5
+        },
+        "cut60_th0.5_early": {
+          "target_frames": 60,
+          "misses": 60
+        },
+        "cut60_th0.5_later": {
+          "target_frames": 540,
+          "misses": 17
+        }
+      },
+      "selected": [
+        {
+          "frame": 0,
+          "file": "00000.jpg",
+          "file_sha256": "0bddc8ea99a46d1ae10dac321f6c145cc696446f8d6fbab29bb49fb566372c36",
+          "gt_boxes": [
+            [
+              414.0,
+              5.0,
+              8.0,
+              7.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            386,
+            0,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 2.5759550226212014e-07,
+          "max_abs_local_contrast_near_selected_point": 3.05682373046875
+        },
+        {
+          "frame": 10,
+          "file": "00010.jpg",
+          "file_sha256": "30ddc596f907c9bdb28e2f76c3556362359b2245a747e1418c56f83d25dc606e",
+          "gt_boxes": [
+            [
+              388.0,
+              13.0,
+              9.0,
+              8.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            360,
+            0,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 2.7420901460573077e-07,
+          "max_abs_local_contrast_near_selected_point": 3.879425048828125
+        },
+        {
+          "frame": 19,
+          "file": "00019.jpg",
+          "file_sha256": "2c10c8313e8e07101d6c7d3117bcd7d515e5680bc9255061bf33d97e28a1a9f8",
+          "gt_boxes": [
+            [
+              360.0,
+              19.0,
+              10.0,
+              8.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            332,
+            0,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 1.8020886045633233e-06,
+          "max_abs_local_contrast_near_selected_point": 7.7045440673828125
+        },
+        {
+          "frame": 20,
+          "file": "00020.jpg",
+          "file_sha256": "cd2118233605bfc652b5a62dcf45f6a33c566c5c559f5b2b3c56149afa28f353",
+          "gt_boxes": [
+            [
+              357.0,
+              20.0,
+              10.0,
+              8.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            330,
+            0,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 2.6425859687151387e-06,
+          "max_abs_local_contrast_near_selected_point": 7.1616058349609375
+        },
+        {
+          "frame": 30,
+          "file": "00030.jpg",
+          "file_sha256": "9bd9727e3d645658c2623fe569046fe46c2ba5a43016106c31c18d67e41823e3",
+          "gt_boxes": [
+            [
+              328.0,
+              29.0,
+              10.0,
+              8.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            300,
+            0,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 1.6373769540223293e-07,
+          "max_abs_local_contrast_near_selected_point": 12.737380981445312
+        },
+        {
+          "frame": 39,
+          "file": "00039.jpg",
+          "file_sha256": "9ca11c52bfb133f70216a6c5916c42bf9eb020a9ecc3ea336cdd026aa8f04a29",
+          "gt_boxes": [
+            [
+              303.0,
+              36.0,
+              11.0,
+              8.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            276,
+            8,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 4.898569386568852e-06,
+          "max_abs_local_contrast_near_selected_point": 17.243682861328125
+        },
+        {
+          "frame": 40,
+          "file": "00040.jpg",
+          "file_sha256": "b020c5b8c1ad49cf0ad2168e0fad54a371fdb4626b209b8141f5d2ffc98cc34a",
+          "gt_boxes": [
+            [
+              302.0,
+              36.0,
+              11.0,
+              9.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            275,
+            8,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 4.775066031470487e-07,
+          "max_abs_local_contrast_near_selected_point": 12.91729736328125
+        },
+        {
+          "frame": 60,
+          "file": "00060.jpg",
+          "file_sha256": "448063b79cdcc037fb6fd4ca13df5a3f2e17d3c0c2fea4cee7558bb85a8925cf",
+          "gt_boxes": [
+            [
+              249.0,
+              50.0,
+              9.0,
+              10.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            221,
+            22,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 0.06620602309703827,
+          "max_abs_local_contrast_near_selected_point": 23.556182861328125
+        },
+        {
+          "frame": 90,
+          "file": "00090.jpg",
+          "file_sha256": "1a28deb86cff88bdfea14e864e6660fc845e422db73daa56dee19153758ffe66",
+          "gt_boxes": [
+            [
+              380.0,
+              82.0,
+              9.0,
+              7.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            352,
+            53,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 1.0,
+          "max_abs_local_contrast_near_selected_point": 40.054298400878906
+        },
+        {
+          "frame": 120,
+          "file": "00120.jpg",
+          "file_sha256": "60cf478d05accb64852680707c1039440a1f7777205f87c84b079f4f5a120e96",
+          "gt_boxes": [
+            [
+              354.0,
+              112.0,
+              8.0,
+              7.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            326,
+            83,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 1.0,
+          "max_abs_local_contrast_near_selected_point": 43.34027862548828
+        }
+      ],
+      "prediction_sha256": "cd17adbccff6c71d24962d7ee3fbc9daf4ddc1029973af40d33b0e89938ae104",
+      "first_hit_1e_5": 29,
+      "first_hit_0_5": 68
+    },
+    "DJI_0307_2": {
+      "frames": 180,
+      "first_annotated_frame": 19,
+      "first_annotated_file": "00697.jpg",
+      "categories": [
+        6
+      ],
+      "track_ids": [
+        6000000
+      ],
+      "rates": {
+        "cut40_th1e-05_early": {
+          "target_frames": 21,
+          "misses": 17
+        },
+        "cut40_th1e-05_later": {
+          "target_frames": 140,
+          "misses": 0
+        },
+        "cut40_th0.5_early": {
+          "target_frames": 21,
+          "misses": 17
+        },
+        "cut40_th0.5_later": {
+          "target_frames": 140,
+          "misses": 0
+        },
+        "cut60_th1e-05_early": {
+          "target_frames": 41,
+          "misses": 17
+        },
+        "cut60_th1e-05_later": {
+          "target_frames": 120,
+          "misses": 0
+        },
+        "cut60_th0.5_early": {
+          "target_frames": 41,
+          "misses": 17
+        },
+        "cut60_th0.5_later": {
+          "target_frames": 120,
+          "misses": 0
+        }
+      },
+      "selected": [
+        {
+          "frame": 0,
+          "file": "00678.jpg",
+          "file_sha256": "9a224a124da8da0f3c46d47564b7eb2488cb9489e8a36c605b78abec8d2af47a",
+          "gt_boxes": [],
+          "crop": [
+            504,
+            397,
+            64,
+            64
+          ],
+          "has_gt": false,
+          "hit_probability": null,
+          "max_abs_local_contrast_near_selected_point": 4.64898681640625
+        },
+        {
+          "frame": 10,
+          "file": "00688.jpg",
+          "file_sha256": "047855e31b688ae7e43baa42fc36365bd27dd8f58d17d2080c58ff5f1eec9f87",
+          "gt_boxes": [],
+          "crop": [
+            504,
+            397,
+            64,
+            64
+          ],
+          "has_gt": false,
+          "hit_probability": null,
+          "max_abs_local_contrast_near_selected_point": 7.1849822998046875
+        },
+        {
+          "frame": 19,
+          "file": "00697.jpg",
+          "file_sha256": "2bba37f128ae8b8cf50cacf5e2de69793711623f4fc8df3c8b084c0f9a27d401",
+          "gt_boxes": [
+            [
+              533.0,
+              426.0,
+              6.0,
+              7.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            504,
+            397,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 8.380498002225067e-07,
+          "max_abs_local_contrast_near_selected_point": 11.3162841796875
+        },
+        {
+          "frame": 20,
+          "file": "00698.jpg",
+          "file_sha256": "bf58c461f310d7ae53597418dc510914e76a0104874182ffeffd9288ab716083",
+          "gt_boxes": [
+            [
+              532.0,
+              426.0,
+              7.0,
+              7.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            503,
+            397,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 7.646537596883718e-06,
+          "max_abs_local_contrast_near_selected_point": 30.111740112304688
+        },
+        {
+          "frame": 30,
+          "file": "00708.jpg",
+          "file_sha256": "4deb9543680bb05af4645b9d100e109462b397ba37b1ea7b39d4c60e830a639c",
+          "gt_boxes": [
+            [
+              530.0,
+              427.0,
+              8.0,
+              9.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            502,
+            399,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 3.9586683442394133e-07,
+          "max_abs_local_contrast_near_selected_point": 31.329544067382812
+        },
+        {
+          "frame": 39,
+          "file": "00717.jpg",
+          "file_sha256": "5ae27fa7f0a5746a5c3369fdeb81c261dbe58a369dfe523ea7931978216390b6",
+          "gt_boxes": [
+            [
+              530.0,
+              427.0,
+              8.0,
+              11.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            502,
+            400,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 0.9998717308044434,
+          "max_abs_local_contrast_near_selected_point": 18.912246704101562
+        },
+        {
+          "frame": 40,
+          "file": "00718.jpg",
+          "file_sha256": "f4f10473171eccf45474166f3d2004e291fc5be24019b76fbdbdaf8b8fbf1450",
+          "gt_boxes": [
+            [
+              530.0,
+              428.0,
+              8.0,
+              10.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            502,
+            400,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 0.9999977350234985,
+          "max_abs_local_contrast_near_selected_point": 19.920455932617188
+        },
+        {
+          "frame": 60,
+          "file": "00738.jpg",
+          "file_sha256": "3f6a9c31ce8ce4a502e3d5bb474d72762a5b92e5fab7dded93d3f97a4481da62",
+          "gt_boxes": [
+            [
+              532.0,
+              427.0,
+              7.0,
+              11.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            503,
+            400,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 1.0,
+          "max_abs_local_contrast_near_selected_point": 34.71527099609375
+        },
+        {
+          "frame": 90,
+          "file": "00768.jpg",
+          "file_sha256": "ade8be8ed0df30096626fe3694dd5b83a0128d12e76885660b56070283e54953",
+          "gt_boxes": [
+            [
+              538.0,
+              427.0,
+              8.0,
+              11.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            510,
+            400,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 1.0,
+          "max_abs_local_contrast_near_selected_point": 41.600372314453125
+        },
+        {
+          "frame": 120,
+          "file": "00798.jpg",
+          "file_sha256": "fbe12be68bc0c947efbe12b93e13f81b80c099e0e79111c5a1f7b006c42a461d",
+          "gt_boxes": [
+            [
+              547.0,
+              426.0,
+              9.0,
+              8.0,
+              6.0,
+              6000000.0
+            ]
+          ],
+          "crop": [
+            519,
+            398,
+            64,
+            64
+          ],
+          "has_gt": true,
+          "hit_probability": 1.0,
+          "max_abs_local_contrast_near_selected_point": 43.98738098144531
+        }
+      ],
+      "prediction_sha256": "97d88e90c0843f1c6cce379dd01f757ce38dc17e8bfa3922fd7fc8f6c5183ee5",
+      "first_hit_1e_5": 36,
+      "first_hit_0_5": 36
+    }
+  }
+}

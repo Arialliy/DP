@@ -10,6 +10,37 @@ import traceback
 from runlib import ROOT, read_config, read_json, save_json, sha256, train_command, verify_artifacts, verify_source
 
 
+def verify_resume(arch, out, resume):
+    """Only continue the explicitly archived, verified checkpoint boundary."""
+    import torch
+    count = resume['completed_epochs']
+    assert not (out / 'final.pth').exists()
+    for name, expected in resume['files'].items():
+        assert sha256(out / name) == expected, 'Resume artifact changed: ' + name
+    last = torch.load(out / 'last.pth', map_location='cpu', weights_only=False)
+    best = torch.load(out / 'best_model.pth', map_location='cpu', weights_only=False)
+    assert last['epoch'] + 1 == count
+    assert last['best_epoch'] == best['best_epoch']
+    assert last['best_iou'] == best['best_iou']
+    assert last['opt']['state']
+    evaluations = [json.loads(line) for line in (out / 'eval_log.jsonl').read_text().splitlines()]
+    assert [row['epoch'] for row in evaluations] == list(range(1, count + 1))
+    assert all(row['complete'] and row['windows'] == 172 for row in evaluations)
+    selected = max(evaluations, key=lambda row: (row['iou'], row['epoch']))
+    assert (best['best_epoch'], best['best_iou']) == (selected['epoch'], selected['iou'])
+    epochs = [int(ep) for ep in re.findall(r'^epoch (\d+)/32 ', (out / 'train_log.txt').read_text(), re.M)]
+    assert epochs == list(range(1, count + 1)), epochs
+    sys.path.insert(0, str(ROOT / 'code'))
+    import models
+    net, _ = models.build(arch)
+    for state in (last['model'], best['model']):
+        net.load_state_dict(state, strict=True)
+        assert all(torch.isfinite(value).all() for value in state.values())
+    return dict(completed_epochs=count, next_epoch=count + 1, best_epoch=best['best_epoch'],
+                best_iou=best['best_iou'], optimizer_restored=True,
+                rng_note='Original trainer resumes model/optimizer/epoch; worker RNG streams are reinitialized.')
+
+
 def verify_completed_run(arch, out, cfg):
     import torch
     sys.path.insert(0, str(ROOT / 'code'))
@@ -87,9 +118,13 @@ def main():
         reused = verify_artifacts()
         assert read_json(ROOT / 'gpu_preflight.json', {}).get('status') == 'passed', 'New GPU preflight required'
         out = ROOT / 'runs' / model['run']
-        for name in ('last.pth', 'final.pth', 'best_model.pth', 'train_log.txt', 'eval_log.jsonl'):
-            if (out / name).exists():
-                raise RuntimeError('Existing run artifact; refusing implicit resume/overwrite: ' + str(out / name))
+        resume = cfg.get('resume_runs', {}).get(arch)
+        if resume:
+            update(resume=verify_resume(arch, out, resume))
+        else:
+            for name in ('last.pth', 'final.pth', 'best_model.pth', 'train_log.txt', 'eval_log.jsonl'):
+                if (out / name).exists():
+                    raise RuntimeError('Existing run artifact; refusing implicit resume/overwrite: ' + str(out / name))
         command = train_command(model)
         update(state='running', stage='train', command=command, run=model['run'], reused_artifacts=reused)
         subprocess.run(command, check=True, cwd=ROOT)

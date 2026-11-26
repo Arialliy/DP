@@ -1,0 +1,32 @@
+{
+  "recorded_before_m1": true,
+  "gate": {
+    "statistic": "actual candidate recovery, box diagnostic, teacher required",
+    "mode": "pooled",
+    "budget_clutter_candidates_per_frame": 1.0,
+    "baseline_probability_threshold": 1e-05,
+    "early_frames": "0-59",
+    "minimum_early_recovery_fraction": 0.3,
+    "minimum_overall_recovery_fraction": 0.2
+  },
+  "first_training_protocol": {
+    "ARCH": "mta_lv",
+    "RUN": "mta_val_s46",
+    "TRAIN_SPLIT": "train",
+    "SELECT": "val_iou",
+    "SELECT_SPLIT": "val",
+    "EVAL_SPLIT": "val",
+    "M0_SPLIT": "train",
+    "SEED": 46,
+    "epochs": 32,
+    "batch": 4
+  },
+  "controls": [
+    "noex",
+    "self",
+    "noapp",
+    "nogain",
+    "mx_lv"
+  ],
+  "official_protocol": "Only after validation training and controls; separate run names; no launch before M1 gate."
+}

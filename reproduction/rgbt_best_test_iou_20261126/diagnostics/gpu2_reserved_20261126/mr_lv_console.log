@@ -1,0 +1,42 @@
+mrtp_rgbt_s46: mr_lv, labels paper_k6_floor, coords auto, rates [1, 2, 4]
+epoch 1/32 lr 1.00e-03 loss 1.5046 iters 236 57s rates {1: 470, 2: 240, 4: 234} warped 0.78
+test epoch 1/32 IoU 0.03066442 windows 172 complete True best 0.03066442 epoch 1 208.2s
+epoch 2/32 lr 1.00e-03 loss 1.4498 iters 236 57s rates {1: 509, 2: 222, 4: 213} warped 0.76
+test epoch 2/32 IoU 0.04475515 windows 172 complete True best 0.04475515 epoch 2 167.9s
+epoch 3/32 lr 1.00e-03 loss 1.2556 iters 236 57s rates {1: 482, 2: 232, 4: 230} warped 0.75
+test epoch 3/32 IoU 0.18612690 windows 172 complete True best 0.18612690 epoch 3 169.5s
+epoch 4/32 lr 1.00e-03 loss 1.1206 iters 236 57s rates {1: 505, 2: 227, 4: 212} warped 0.76
+test epoch 4/32 IoU 0.22874514 windows 172 complete True best 0.22874514 epoch 4 171.2s
+epoch 5/32 lr 1.00e-03 loss 1.0771 iters 236 57s rates {1: 441, 2: 251, 4: 252} warped 0.78
+test epoch 5/32 IoU 0.26763502 windows 172 complete True best 0.26763502 epoch 5 190.1s
+epoch 6/32 lr 1.00e-03 loss 1.0583 iters 236 57s rates {1: 488, 2: 235, 4: 221} warped 0.74
+test epoch 6/32 IoU 0.25602508 windows 172 complete True best 0.26763502 epoch 5 177.2s
+epoch 7/32 lr 1.00e-03 loss 1.0675 iters 236 57s rates {1: 477, 2: 238, 4: 229} warped 0.78
+test epoch 7/32 IoU 0.23158651 windows 172 complete True best 0.26763502 epoch 5 176.4s
+epoch 8/32 lr 1.00e-03 loss 1.0390 iters 236 57s rates {1: 488, 2: 231, 4: 225} warped 0.76
+test epoch 8/32 IoU 0.28030401 windows 172 complete True best 0.28030401 epoch 8 193.8s
+epoch 9/32 lr 1.00e-03 loss 1.0365 iters 236 59s rates {1: 458, 2: 245, 4: 241} warped 0.77
+test epoch 9/32 IoU 0.29560268 windows 172 complete True best 0.29560268 epoch 9 170.2s
+epoch 10/32 lr 1.00e-03 loss 1.0190 iters 236 57s rates {1: 467, 2: 244, 4: 233} warped 0.76
+test epoch 10/32 IoU 0.21392130 windows 172 complete True best 0.29560268 epoch 9 166.9s
+epoch 11/32 lr 7.00e-04 loss 1.0384 iters 236 57s rates {1: 489, 2: 235, 4: 220} warped 0.76
+test epoch 11/32 IoU 0.26540134 windows 172 complete True best 0.29560268 epoch 9 173.3s
+epoch 12/32 lr 7.00e-04 loss 1.0014 iters 236 57s rates {1: 496, 2: 231, 4: 217} warped 0.76
+test epoch 12/32 IoU 0.25409406 windows 172 complete True best 0.29560268 epoch 9 176.7s
+epoch 13/32 lr 7.00e-04 loss 1.0118 iters 236 57s rates {1: 452, 2: 256, 4: 236} warped 0.76
+test epoch 13/32 IoU 0.23689866 windows 172 complete True best 0.29560268 epoch 9 167.3s
+epoch 14/32 lr 7.00e-04 loss 0.9955 iters 236 57s rates {1: 487, 2: 222, 4: 235} warped 0.75
+test epoch 14/32 IoU 0.29151330 windows 172 complete True best 0.29560268 epoch 9 166.8s
+epoch 15/32 lr 7.00e-04 loss 1.0026 iters 236 57s rates {1: 486, 2: 247, 4: 211} warped 0.74
+test epoch 15/32 IoU 0.24048486 windows 172 complete True best 0.29560268 epoch 9 187.1s
+epoch 16/32 lr 7.00e-04 loss 1.0002 iters 236 57s rates {1: 497, 2: 224, 4: 223} warped 0.77
+test epoch 16/32 IoU 0.27138004 windows 172 complete True best 0.29560268 epoch 9 177.0s
+epoch 17/32 lr 7.00e-04 loss 0.9899 iters 236 56s rates {1: 470, 2: 251, 4: 223} warped 0.75
+test epoch 17/32 IoU 0.19035872 windows 172 complete True best 0.29560268 epoch 9 182.4s
+epoch 18/32 lr 7.00e-04 loss 0.9993 iters 236 56s rates {1: 459, 2: 234, 4: 251} warped 0.76
+test epoch 18/32 IoU 0.28331497 windows 172 complete True best 0.29560268 epoch 9 195.4s
+epoch 19/32 lr 7.00e-04 loss 0.9887 iters 236 62s rates {1: 512, 2: 212, 4: 220} warped 0.79
+test epoch 19/32 IoU 0.35858353 windows 172 complete True best 0.35858353 epoch 19 199.0s
+epoch 20/32 lr 7.00e-04 loss 1.0022 iters 236 56s rates {1: 461, 2: 243, 4: 240} warped 0.78
+test epoch 20/32 IoU 0.30030351 windows 172 complete True best 0.35858353 epoch 19 193.8s
+epoch 21/32 lr 4.90e-04 loss 0.9774 iters 236 57s rates {1: 467, 2: 245, 4: 232} warped 0.76

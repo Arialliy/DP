@@ -1,0 +1,144 @@
+{
+  "scope": "Released checkpoint vs epoch-20 interim retrained checkpoint on the same local 15 test clips; final retrained checkpoint is not evaluated yet",
+  "threshold": 0.99,
+  "released_fp": 87474,
+  "retrained_interim_fp": 1201645,
+  "fp_ratio": 13.73716761552004,
+  "per_clip": [
+    {
+      "clip": "DJI_0277_2",
+      "released_fp": 37391,
+      "retrained_interim_fp": 305785,
+      "fp_difference": 268394,
+      "released_tp": 974,
+      "retrained_interim_tp": 979,
+      "targets": 985
+    },
+    {
+      "clip": "DJI_0109_1",
+      "released_fp": 2532,
+      "retrained_interim_fp": 135264,
+      "fp_difference": 132732,
+      "released_tp": 90,
+      "retrained_interim_tp": 90,
+      "targets": 90
+    },
+    {
+      "clip": "DJI_0309_4",
+      "released_fp": 10268,
+      "retrained_interim_fp": 136741,
+      "fp_difference": 126473,
+      "released_tp": 684,
+      "retrained_interim_tp": 718,
+      "targets": 1050
+    },
+    {
+      "clip": "DJI_0303_2",
+      "released_fp": 1757,
+      "retrained_interim_fp": 119618,
+      "fp_difference": 117861,
+      "released_tp": 895,
+      "retrained_interim_tp": 967,
+      "targets": 986
+    },
+    {
+      "clip": "DJI_0307_2",
+      "released_fp": 9947,
+      "retrained_interim_fp": 116892,
+      "fp_difference": 106945,
+      "released_tp": 144,
+      "retrained_interim_tp": 160,
+      "targets": 161
+    },
+    {
+      "clip": "DJI_0221_2",
+      "released_fp": 911,
+      "retrained_interim_fp": 100053,
+      "fp_difference": 99142,
+      "released_tp": 605,
+      "retrained_interim_tp": 650,
+      "targets": 697
+    },
+    {
+      "clip": "DJI_0155_2",
+      "released_fp": 8759,
+      "retrained_interim_fp": 101745,
+      "fp_difference": 92986,
+      "released_tp": 337,
+      "retrained_interim_tp": 389,
+      "targets": 410
+    },
+    {
+      "clip": "DJI_0237_2",
+      "released_fp": 9586,
+      "retrained_interim_fp": 75275,
+      "fp_difference": 65689,
+      "released_tp": 1934,
+      "retrained_interim_tp": 2626,
+      "targets": 2943
+    },
+    {
+      "clip": "DJI_0119_2",
+      "released_fp": 4612,
+      "retrained_interim_fp": 56565,
+      "fp_difference": 51953,
+      "released_tp": 304,
+      "retrained_interim_tp": 317,
+      "targets": 360
+    },
+    {
+      "clip": "DJI_0129_2",
+      "released_fp": 1550,
+      "retrained_interim_fp": 24931,
+      "fp_difference": 23381,
+      "released_tp": 590,
+      "retrained_interim_tp": 590,
+      "targets": 590
+    },
+    {
+      "clip": "DJI_0255_1",
+      "released_fp": 145,
+      "retrained_interim_fp": 14925,
+      "fp_difference": 14780,
+      "released_tp": 510,
+      "retrained_interim_tp": 557,
+      "targets": 600
+    },
+    {
+      "clip": "DJI_0049_2",
+      "released_fp": 3,
+      "retrained_interim_fp": 12812,
+      "fp_difference": 12809,
+      "released_tp": 214,
+      "retrained_interim_tp": 410,
+      "targets": 602
+    },
+    {
+      "clip": "DJI_0257_2",
+      "released_fp": 5,
+      "retrained_interim_fp": 970,
+      "fp_difference": 965,
+      "released_tp": 885,
+      "retrained_interim_tp": 1083,
+      "targets": 1126
+    },
+    {
+      "clip": "DJI_0173_2",
+      "released_fp": 8,
+      "retrained_interim_fp": 69,
+      "fp_difference": 61,
+      "released_tp": 407,
+      "retrained_interim_tp": 423,
+      "targets": 450
+    },
+    {
+      "clip": "DJI_0159_2",
+      "released_fp": 0,
+      "retrained_interim_fp": 0,
+      "fp_difference": 0,
+      "released_tp": 230,
+      "retrained_interim_tp": 250,
+      "targets": 250
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "status": "passed",
+  "scope": "Independent CSV arithmetic, DFS maximum-cardinality matching and Euclidean distance audit; no parameter changes or model reruns",
+  "checks": {
+    "plan_unchanged": true,
+    "baseline_frozen_sha": true,
+    "independent_dfs_maximum_matching_counts_equal": true,
+    "all_reported_matches_one_to_one_and_within3px": true,
+    "generated_point_conservation_and_hashes": true
+  },
+  "independent_true_candidates": {
+    "raw_stop": 0,
+    "raw_cv": 121
+  },
+  "minimum_raw_stop_distance_to_any_early_gt": 3.5355339059327378,
+  "minimum_stop_witness": {
+    "clip": "DJI_0049_2",
+    "t": 59,
+    "track_id": 2,
+    "point": [
+      171.5,
+      453.0
+    ],
+    "gt_box_index": 5,
+    "gt_track": "3000006",
+    "gt": [
+      175.0,
+      452.5
+    ],
+    "distance": 3.5355339059327378
+  },
+  "global_distance_bands": [
+    {
+      "model": "raw_stop",
+      "horizon_band": "1-30",
+      "points": 283,
+      "wrong": 283,
+      "true_candidates": 0,
+      "recovered_at_0_5": 0,
+      "recovered_at_1e_5": 0,
+      "precision": 0.0
+    },
+    {
+      "model": "raw_stop",
+      "horizon_band": "31-60",
+      "points": 536,
+      "wrong": 536,
+      "true_candidates": 0,
+      "recovered_at_0_5": 0,
+      "recovered_at_1e_5": 0,
+      "precision": 0.0
+    },
+    {
+      "model": "raw_stop",
+      "horizon_band": "61-120",
+      "points": 659,
+      "wrong": 659,
+      "true_candidates": 0,
+      "recovered_at_0_5": 0,
+      "recovered_at_1e_5": 0,
+      "precision": 0.0
+    },
+    {
+      "model": "raw_stop",
+      "horizon_band": "121-240",
+      "points": 724,
+      "wrong": 724,
+      "true_candidates": 0,
+      "recovered_at_0_5": 0,
+      "recovered_at_1e_5": 0,
+      "precision": 0.0
+    },
+    {
+      "model": "raw_stop",
+      "horizon_band": ">240",
+      "points": 3438,
+      "wrong": 3438,
+      "true_candidates": 0,
+      "recovered_at_0_5": 0,
+      "recovered_at_1e_5": 0,
+      "precision": 0.0
+    },
+    {
+      "model": "raw_cv",
+      "horizon_band": "1-30",
+      "points": 734,
+      "wrong": 623,
+      "true_candidates": 111,
+      "recovered_at_0_5": 20,
+      "recovered_at_1e_5": 11,
+      "precision": 0.15122615803814715
+    },
+    {
+      "model": "raw_cv",
+      "horizon_band": "31-60",
+      "points": 1221,
+      "wrong": 1219,
+      "true_candidates": 2,
+      "recovered_at_0_5": 2,
+      "recovered_at_1e_5": 1,
+      "precision": 0.001638001638001638
+    },
+    {
+      "model": "raw_cv",
+      "horizon_band": "61-120",
+      "points": 1304,
+      "wrong": 1304,
+      "true_candidates": 0,
+      "recovered_at_0_5": 0,
+      "recovered_at_1e_5": 0,
+      "precision": 0.0
+    },
+    {
+      "model": "raw_cv",
+      "horizon_band": "121-240",
+      "points": 1310,
+      "wrong": 1302,
+      "true_candidates": 8,
+      "recovered_at_0_5": 6,
+      "recovered_at_1e_5": 5,
+      "precision": 0.0061068702290076335
+    },
+    {
+      "model": "raw_cv",
+      "horizon_band": ">240",
+      "points": 5573,
+      "wrong": 5573,
+      "true_candidates": 0,
+      "recovered_at_0_5": 0,
+      "recovered_at_1e_5": 0,
+      "precision": 0.0
+    }
+  ],
+  "primary_recovered_source_identity": [
+    {
+      "clip": "DJI_0049_2",
+      "t": 49,
+      "track_id": 2,
+      "gt_track": "3000006",
+      "teacher_dominant_gt_track": "3000006",
+      "teacher_purity": 0.9166666666666666,
+      "same_as_teacher_dominant": true,
+      "horizon": 11
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 50,
+      "track_id": 1,
+      "gt_track": "3000004",
+      "teacher_dominant_gt_track": "3000004",
+      "teacher_purity": 0.9666666666666667,
+      "same_as_teacher_dominant": true,
+      "horizon": 10
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 50,
+      "track_id": 2,
+      "gt_track": "3000006",
+      "teacher_dominant_gt_track": "3000006",
+      "teacher_purity": 0.9166666666666666,
+      "same_as_teacher_dominant": true,
+      "horizon": 10
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 50,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 11
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 51,
+      "track_id": 1,
+      "gt_track": "3000004",
+      "teacher_dominant_gt_track": "3000004",
+      "teacher_purity": 0.9666666666666667,
+      "same_as_teacher_dominant": true,
+      "horizon": 9
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 51,
+      "track_id": 2,
+      "gt_track": "3000006",
+      "teacher_dominant_gt_track": "3000006",
+      "teacher_purity": 0.9166666666666666,
+      "same_as_teacher_dominant": true,
+      "horizon": 9
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 52,
+      "track_id": 2,
+      "gt_track": "3000006",
+      "teacher_dominant_gt_track": "3000006",
+      "teacher_purity": 0.9166666666666666,
+      "same_as_teacher_dominant": true,
+      "horizon": 8
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 52,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 9
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 53,
+      "track_id": 2,
+      "gt_track": "3000006",
+      "teacher_dominant_gt_track": "3000006",
+      "teacher_purity": 0.9166666666666666,
+      "same_as_teacher_dominant": true,
+      "horizon": 7
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 53,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 8
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 54,
+      "track_id": 1,
+      "gt_track": "3000004",
+      "teacher_dominant_gt_track": "3000004",
+      "teacher_purity": 0.9666666666666667,
+      "same_as_teacher_dominant": true,
+      "horizon": 6
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 54,
+      "track_id": 2,
+      "gt_track": "3000006",
+      "teacher_dominant_gt_track": "3000006",
+      "teacher_purity": 0.9166666666666666,
+      "same_as_teacher_dominant": true,
+      "horizon": 6
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 54,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 7
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 55,
+      "track_id": 1,
+      "gt_track": "3000004",
+      "teacher_dominant_gt_track": "3000004",
+      "teacher_purity": 0.9666666666666667,
+      "same_as_teacher_dominant": true,
+      "horizon": 5
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 55,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 6
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 56,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 5
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 57,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 4
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 58,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 3
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 59,
+      "track_id": 2,
+      "gt_track": "3000006",
+      "teacher_dominant_gt_track": "3000006",
+      "teacher_purity": 0.9166666666666666,
+      "same_as_teacher_dominant": true,
+      "horizon": 1
+    },
+    {
+      "clip": "DJI_0049_2",
+      "t": 59,
+      "track_id": 3,
+      "gt_track": "3000001",
+      "teacher_dominant_gt_track": "3000001",
+      "teacher_purity": 1.0,
+      "same_as_teacher_dominant": true,
+      "horizon": 2
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 20,
+      "track_id": 83,
+      "gt_track": "1000003",
+      "teacher_dominant_gt_track": "",
+      "teacher_purity": 0.0,
+      "same_as_teacher_dominant": false,
+      "horizon": 131
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 21,
+      "track_id": 83,
+      "gt_track": "1000003",
+      "teacher_dominant_gt_track": "",
+      "teacher_purity": 0.0,
+      "same_as_teacher_dominant": false,
+      "horizon": 130
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 22,
+      "track_id": 83,
+      "gt_track": "1000003",
+      "teacher_dominant_gt_track": "",
+      "teacher_purity": 0.0,
+      "same_as_teacher_dominant": false,
+      "horizon": 129
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 23,
+      "track_id": 83,
+      "gt_track": "1000003",
+      "teacher_dominant_gt_track": "",
+      "teacher_purity": 0.0,
+      "same_as_teacher_dominant": false,
+      "horizon": 128
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 24,
+      "track_id": 83,
+      "gt_track": "1000003",
+      "teacher_dominant_gt_track": "",
+      "teacher_purity": 0.0,
+      "same_as_teacher_dominant": false,
+      "horizon": 127
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 25,
+      "track_id": 83,
+      "gt_track": "1000003",
+      "teacher_dominant_gt_track": "",
+      "teacher_purity": 0.0,
+      "same_as_teacher_dominant": false,
+      "horizon": 126
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 27,
+      "track_id": 50,
+      "gt_track": "1000003",
+      "teacher_dominant_gt_track": "1000000",
+      "teacher_purity": 0.9736842105263158,
+      "same_as_teacher_dominant": false,
+      "horizon": 53
+    },
+    {
+      "clip": "DJI_0237_2",
+      "t": 41,
+      "track_id": 53,
+      "gt_track": "3000007",
+      "teacher_dominant_gt_track": "3000008",
+      "teacher_purity": 0.7,
+      "same_as_teacher_dominant": false,
+      "horizon": 41
+    }
+  ],
+  "primary_recovered_same_teacher_dominant": 20,
+  "note": "Teacher identity is post-hoc evidence only. All position matches remain in primary metrics; no filtering by GT identity."
+}

@@ -1,0 +1,49 @@
+六组 val 对照：仅汇总已完成且权重一致的结果
+
+Pd、Fa、IoU 均为官方 component 口径、同一 best_model.pth、概率阈值 0.5 的直接指标。
+Fa 单位是错误前景像素/总像素；AUC 使用官方 27 个阈值。数值均为 0–1 原始比例。
+权重按每轮 val IoU 选取；val 同时参与选权重，结果属于验证集比较，不是独立 test 结果。
+不使用固定 Fa 下的 Pd 替代直接 Pd；未完成/异常项留空，不填零。
+
+run | 状态 | IoU@0.5 | Pd@0.5 | Fa@0.5 | AUC(27) | best epoch
+mta_val_s46 | complete | 0.432 | 0.57 | 0.001 | 0.0011208 | 23
+mta_val_s46_noex | pending | — | — | — | — | —
+mta_val_s46_self | error | — | — | — | — | 23
+mta_val_s46_nogain | error | — | — | — | — | 23
+mta_val_s46_mx | error | — | — | — | — | —
+mta_val_s46_noapp | pending | — | — | — | — | —
+
+状态与来源：
+mta_val_s46: 32 epochs completed; val_iou selected; all val prediction SHA verified
+  results/scores/mta_val_s46/val/summary.json
+  runs/mta_val_s46/best_selection.json
+  runs/mta_val_s46/best_model.pth
+  checkpoint SHA-256: a6b0a5ea7e4dd99caff86311f469f04f4296bd981800db67783afa8972faa5dc
+mta_val_s46_noex: pending: results/scores/mta_val_s46_noex/val/summary.json
+  results/scores/mta_val_s46_noex/val/summary.json
+  runs/mta_val_s46_noex/best_selection.json
+  runs/mta_val_s46_noex/best_model.pth
+  checkpoint SHA-256: pending
+mta_val_s46_self: fixture_val_B: score checkpoint SHA does not match best_model.pth
+  results/scores/mta_val_s46_self/val/summary.json
+  runs/mta_val_s46_self/best_selection.json
+  runs/mta_val_s46_self/best_model.pth
+  checkpoint SHA-256: a6b0a5ea7e4dd99caff86311f469f04f4296bd981800db67783afa8972faa5dc
+mta_val_s46_nogain: fixture_val_A: scored fingerprint differs from current prediction cache
+  results/scores/mta_val_s46_nogain/val/summary.json
+  runs/mta_val_s46_nogain/best_selection.json
+  runs/mta_val_s46_nogain/best_model.pth
+  checkpoint SHA-256: a6b0a5ea7e4dd99caff86311f469f04f4296bd981800db67783afa8972faa5dc
+mta_val_s46_mx: best_selection selection_mode must be val_iou
+  results/scores/mta_val_s46_mx/val/summary.json
+  runs/mta_val_s46_mx/best_selection.json
+  runs/mta_val_s46_mx/best_model.pth
+  checkpoint SHA-256: a6b0a5ea7e4dd99caff86311f469f04f4296bd981800db67783afa8972faa5dc
+mta_val_s46_noapp: pending: training eval, epoch 5/32
+  results/scores/mta_val_s46_noapp/val/summary.json
+  runs/mta_val_s46_noapp/best_selection.json
+  runs/mta_val_s46_noapp/best_model.pth
+  checkpoint SHA-256: pending
+
+生成时间 UTC: 2026-11-26T15:59:23.741576+00:00
+完整 SHA、选权重 IoU 与来源列见 val.csv。

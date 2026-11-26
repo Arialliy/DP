@@ -1,0 +1,3996 @@
+{
+ "run": "official_rgbt",
+ "split": "official_test",
+ "overall": {
+  "gt": 12665,
+  "frames": 5976,
+  "fp_candidates": 236311,
+  "cpm": 0.6096196868008948,
+  "ap": 0.6463868782031472,
+  "pd@0.125": 0.3390446111330438,
+  "thr@0.125": 25.84375,
+  "pd@0.25": 0.4516383734701934,
+  "thr@0.25": 19.328125,
+  "pd@0.5": 0.5677062771417292,
+  "thr@0.5": 13.46875,
+  "pd@1.0": 0.7012238452427951,
+  "thr@1.0": 7.28125,
+  "pd@2.0": 0.7791551519936833,
+  "thr@2.0": -2.126953125,
+  "pd@4.0": 0.8189498618239242,
+  "thr@4.0": -8.9609375
+ },
+ "per_clip": {
+  "DJI_0049_2": {
+   "gt": 692,
+   "frames": 90,
+   "fp_candidates": 6760,
+   "cpm": 0.34657996146435455,
+   "ap": 0.37402064604048624,
+   "pd@0.125": 0.3208092485549133,
+   "thr@0.125": 0.63916015625,
+   "pd@0.25": 0.3309248554913295,
+   "thr@0.25": -0.33935546875,
+   "pd@0.5": 0.33670520231213874,
+   "thr@0.5": -3.060546875,
+   "pd@1.0": 0.3554913294797688,
+   "thr@1.0": -7.87890625,
+   "pd@2.0": 0.36560693641618497,
+   "thr@2.0": -8.671875,
+   "pd@4.0": 0.3699421965317919,
+   "thr@4.0": -9.3359375
+  },
+  "DJI_0109_1": {
+   "gt": 90,
+   "frames": 90,
+   "fp_candidates": 5609,
+   "cpm": 0.8425925925925926,
+   "ap": 0.7486880622609371,
+   "pd@0.125": 0.3888888888888889,
+   "thr@0.125": 35.6875,
+   "pd@0.25": 0.7444444444444445,
+   "thr@0.25": 30.515625,
+   "pd@0.5": 0.9222222222222223,
+   "thr@0.5": 26.3125,
+   "pd@1.0": 1.0,
+   "thr@1.0": 15.8046875,
+   "pd@2.0": 1.0,
+   "thr@2.0": 8.5078125,
+   "pd@4.0": 1.0,
+   "thr@4.0": 2.9921875
+  },
+  "DJI_0119_2": {
+   "gt": 360,
+   "frames": 180,
+   "fp_candidates": 12632,
+   "cpm": 0.47361111111111115,
+   "ap": 0.5116324407747214,
+   "pd@0.125": 0.05555555555555555,
+   "thr@0.125": 29.421875,
+   "pd@0.25": 0.12777777777777777,
+   "thr@0.25": 24.375,
+   "pd@0.5": 0.28055555555555556,
+   "thr@0.5": 19.28125,
+   "pd@1.0": 0.5777777777777777,
+   "thr@1.0": 11.3125,
+   "pd@2.0": 0.8666666666666667,
+   "thr@2.0": 3.396484375,
+   "pd@4.0": 0.9333333333333333,
+   "thr@4.0": -6.12890625
+  },
+  "DJI_0129_2": {
+   "gt": 590,
+   "frames": 590,
+   "fp_candidates": 13222,
+   "cpm": 0.9957627118644069,
+   "ap": 0.9833053399742988,
+   "pd@0.125": 0.9745762711864406,
+   "thr@0.125": 12.1015625,
+   "pd@0.25": 1.0,
+   "thr@0.25": 7.1796875,
+   "pd@0.5": 1.0,
+   "thr@0.5": -0.063720703125,
+   "pd@1.0": 1.0,
+   "thr@1.0": -8.453125,
+   "pd@2.0": 1.0,
+   "thr@2.0": -9.2578125,
+   "pd@4.0": 1.0,
+   "thr@4.0": -10.09375
+  },
+  "DJI_0155_2": {
+   "gt": 410,
+   "frames": 410,
+   "fp_candidates": 22918,
+   "cpm": 0.760569105691057,
+   "ap": 0.764209616017301,
+   "pd@0.125": 0.6390243902439025,
+   "thr@0.125": 16.515625,
+   "pd@0.25": 0.6634146341463415,
+   "thr@0.25": 14.59375,
+   "pd@0.5": 0.6878048780487804,
+   "thr@0.5": 12.8828125,
+   "pd@1.0": 0.7634146341463415,
+   "thr@1.0": 8.484375,
+   "pd@2.0": 0.9,
+   "thr@2.0": -7.3125,
+   "pd@4.0": 0.9097560975609756,
+   "thr@4.0": -9.4375
+  },
+  "DJI_0159_2": {
+   "gt": 250,
+   "frames": 250,
+   "fp_candidates": 3499,
+   "cpm": 0.9993333333333334,
+   "ap": 0.9954418298783193,
+   "pd@0.125": 0.996,
+   "thr@0.125": -8.1953125,
+   "pd@0.25": 1.0,
+   "thr@0.25": -9.125,
+   "pd@0.5": 1.0,
+   "thr@0.5": -9.7734375,
+   "pd@1.0": 1.0,
+   "thr@1.0": -10.3359375,
+   "pd@2.0": 1.0,
+   "thr@2.0": -10.8125,
+   "pd@4.0": 1.0,
+   "thr@4.0": -11.2890625
+  },
+  "DJI_0173_2": {
+   "gt": 450,
+   "frames": 450,
+   "fp_candidates": 19992,
+   "cpm": 0.9922222222222222,
+   "ap": 0.9891724970555767,
+   "pd@0.125": 0.9822222222222222,
+   "thr@0.125": -4.96484375,
+   "pd@0.25": 0.9866666666666667,
+   "thr@0.25": -6.52734375,
+   "pd@0.5": 0.9955555555555555,
+   "thr@0.5": -8.171875,
+   "pd@1.0": 0.9955555555555555,
+   "thr@1.0": -9.1796875,
+   "pd@2.0": 0.9955555555555555,
+   "thr@2.0": -9.8671875,
+   "pd@4.0": 0.9977777777777778,
+   "thr@4.0": -10.40625
+  },
+  "DJI_0221_2": {
+   "gt": 697,
+   "frames": 590,
+   "fp_candidates": 20464,
+   "cpm": 0.8895265423242468,
+   "ap": 0.8660542937576735,
+   "pd@0.125": 0.8077474892395983,
+   "thr@0.125": 8.3125,
+   "pd@0.25": 0.8680057388809183,
+   "thr@0.25": 4.14453125,
+   "pd@0.5": 0.890961262553802,
+   "thr@0.5": -1.4228515625,
+   "pd@1.0": 0.9081779053084649,
+   "thr@1.0": -6.86328125,
+   "pd@2.0": 0.9282639885222381,
+   "thr@2.0": -9.2734375,
+   "pd@4.0": 0.9340028694404591,
+   "thr@4.0": -10.21875
+  },
+  "DJI_0237_2": {
+   "gt": 3717,
+   "frames": 410,
+   "fp_candidates": 14580,
+   "cpm": 0.4183032911846471,
+   "ap": 0.6382681670256376,
+   "pd@0.125": 0.23944040893193436,
+   "thr@0.125": 18.515625,
+   "pd@0.25": 0.2639225181598063,
+   "thr@0.25": 17.109375,
+   "pd@0.5": 0.3050847457627119,
+   "thr@0.5": 15.1953125,
+   "pd@1.0": 0.4245359160613398,
+   "thr@1.0": 10.7734375,
+   "pd@2.0": 0.5735808447672854,
+   "thr@2.0": 5.60546875,
+   "pd@4.0": 0.703255313424805,
+   "thr@4.0": -5.296875
+  },
+  "DJI_0255_1": {
+   "gt": 600,
+   "frames": 600,
+   "fp_candidates": 7648,
+   "cpm": 0.8891666666666665,
+   "ap": 0.8883892692648737,
+   "pd@0.125": 0.86,
+   "thr@0.125": 3.638671875,
+   "pd@0.25": 0.875,
+   "thr@0.25": -3.783203125,
+   "pd@0.5": 0.8866666666666667,
+   "thr@0.5": -8.9765625,
+   "pd@1.0": 0.8966666666666666,
+   "thr@1.0": -10.25,
+   "pd@2.0": 0.905,
+   "thr@2.0": -10.921875,
+   "pd@4.0": 0.9116666666666666,
+   "thr@4.0": -11.3671875
+  },
+  "DJI_0257_2": {
+   "gt": 1126,
+   "frames": 590,
+   "fp_candidates": 9469,
+   "cpm": 0.5815571343990528,
+   "ap": 0.6203315279724719,
+   "pd@0.125": 0.19094138543516873,
+   "thr@0.125": 34.15625,
+   "pd@0.25": 0.25932504440497334,
+   "thr@0.25": 29.03125,
+   "pd@0.5": 0.458259325044405,
+   "thr@0.5": 19.71875,
+   "pd@1.0": 0.7682060390763765,
+   "thr@1.0": 6.49609375,
+   "pd@2.0": 0.9014209591474245,
+   "thr@2.0": -9.8671875,
+   "pd@4.0": 0.911190053285968,
+   "thr@4.0": -10.796875
+  },
+  "DJI_0277_2": {
+   "gt": 985,
+   "frames": 366,
+   "fp_candidates": 32570,
+   "cpm": 0.9416243654822335,
+   "ap": 0.9580967212002619,
+   "pd@0.125": 0.8558375634517766,
+   "thr@0.125": 48.1875,
+   "pd@0.25": 0.9228426395939087,
+   "thr@0.25": 38.65625,
+   "pd@0.5": 0.9522842639593908,
+   "thr@0.5": 30.34375,
+   "pd@1.0": 0.9675126903553299,
+   "thr@1.0": 23.375,
+   "pd@2.0": 0.9736040609137055,
+   "thr@2.0": 16.796875,
+   "pd@4.0": 0.9776649746192894,
+   "thr@4.0": 10.0
+  },
+  "DJI_0303_2": {
+   "gt": 1487,
+   "frames": 577,
+   "fp_candidates": 30439,
+   "cpm": 0.7316745124411567,
+   "ap": 0.7528405031236611,
+   "pd@0.125": 0.5877605917955615,
+   "thr@0.125": 21.796875,
+   "pd@0.25": 0.6973772696704774,
+   "thr@0.25": 15.28125,
+   "pd@0.5": 0.7484868863483524,
+   "thr@0.5": 8.625,
+   "pd@1.0": 0.7666442501681238,
+   "thr@1.0": 1.9091796875,
+   "pd@2.0": 0.788836583725622,
+   "thr@2.0": -5.6328125,
+   "pd@4.0": 0.800941492938803,
+   "thr@4.0": -9.03125
+  },
+  "DJI_0307_2": {
+   "gt": 161,
+   "frames": 180,
+   "fp_candidates": 7366,
+   "cpm": 0.7722567287784678,
+   "ap": 0.7591691874162452,
+   "pd@0.125": 0.6086956521739131,
+   "thr@0.125": 47.6875,
+   "pd@0.25": 0.6459627329192547,
+   "thr@0.25": 40.78125,
+   "pd@0.5": 0.7763975155279503,
+   "thr@0.5": 27.828125,
+   "pd@1.0": 0.8322981366459627,
+   "thr@1.0": 19.6875,
+   "pd@2.0": 0.8757763975155279,
+   "thr@2.0": 12.53125,
+   "pd@4.0": 0.8944099378881988,
+   "thr@4.0": 5.203125
+  },
+  "DJI_0309_4": {
+   "gt": 1050,
+   "frames": 603,
+   "fp_candidates": 29143,
+   "cpm": 0.5782539682539682,
+   "ap": 0.573780482364137,
+   "pd@0.125": 0.4038095238095238,
+   "thr@0.125": 22.828125,
+   "pd@0.25": 0.47619047619047616,
+   "thr@0.25": 18.078125,
+   "pd@0.5": 0.5647619047619048,
+   "thr@0.5": 12.2421875,
+   "pd@1.0": 0.6333333333333333,
+   "thr@1.0": 7.08984375,
+   "pd@2.0": 0.6714285714285714,
+   "thr@2.0": 0.7705078125,
+   "pd@4.0": 0.72,
+   "thr@4.0": -8.3515625
+  }
+ },
+ "predictions": {
+  "DJI_0049_2": {
+   "fingerprint": "9a1dcb39c8468d35",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0109_1": {
+   "fingerprint": "2ef159e9b7d11253",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0119_2": {
+   "fingerprint": "944200cb6a71c106",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0129_2": {
+   "fingerprint": "1004075058c7e9a7",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0155_2": {
+   "fingerprint": "5078049f56a01514",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0159_2": {
+   "fingerprint": "3671dc25b45137fc",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0173_2": {
+   "fingerprint": "94a457e67505d921",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0221_2": {
+   "fingerprint": "56ad18d7d9b8482b",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0237_2": {
+   "fingerprint": "7a4c1f474c8a681c",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0255_1": {
+   "fingerprint": "b7b3255aeaf8b5df",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0257_2": {
+   "fingerprint": "42f6cacf28011eeb",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0277_2": {
+   "fingerprint": "c9daac0038e751e9",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0303_2": {
+   "fingerprint": "86dd2ffd0989e4c6",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0307_2": {
+   "fingerprint": "c5c73d3de88b8f17",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  },
+  "DJI_0309_4": {
+   "fingerprint": "7e45fe36d0d028aa",
+   "ckpt": "/experiment/inputs/official_rgbt_best_model.pth",
+   "ckpt_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+  }
+ },
+ "author_protocol": {
+  "0": {
+   "false_px": 1954443182,
+   "tp": 11300,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 1118671,
+   "union": 1958194453,
+   "Pd": 1.0,
+   "Fa": 0.9980735023018507,
+   "IoU": 0.0005712767689062594
+  },
+  "1e-20": {
+   "false_px": 1954275201,
+   "tp": 11300,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 1053058,
+   "union": 1957872093,
+   "Pd": 1.0,
+   "Fa": 0.997987719616258,
+   "IoU": 0.0005378584248506371
+  },
+  "1e-10": {
+   "false_px": 1945641668,
+   "tp": 11300,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 822088,
+   "union": 1948657894,
+   "Pd": 1.0,
+   "Fa": 0.9935788421426591,
+   "IoU": 0.0004218739484910326
+  },
+  "1e-08": {
+   "false_px": 1924061784,
+   "tp": 11299,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 687837,
+   "union": 1926777555,
+   "Pd": 0.9999115044247787,
+   "Fa": 0.9825586648351218,
+   "IoU": 0.0003569882772482265
+  },
+  "1e-07": {
+   "false_px": 1760212696,
+   "tp": 11297,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 576952,
+   "union": 1762578877,
+   "Pd": 0.9997345132743363,
+   "Fa": 0.8988860185206974,
+   "IoU": 0.00032733400333379806
+  },
+  "1e-06": {
+   "false_px": 103169813,
+   "tp": 10744,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 427450,
+   "union": 104466058,
+   "Pd": 0.9507964601769912,
+   "Fa": 0.05268562296467772,
+   "IoU": 0.00409175964120327
+  },
+  "1e-05": {
+   "false_px": 775943,
+   "tp": 9966,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 373676,
+   "union": 1922771,
+   "Pd": 0.8819469026548673,
+   "Fa": 0.0003962500187926184,
+   "IoU": 0.19434243599471804
+  },
+  "0.0001": {
+   "false_px": 257370,
+   "tp": 9688,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 349524,
+   "union": 1395484,
+   "Pd": 0.8573451327433629,
+   "Fa": 0.00013143087486665412,
+   "IoU": 0.2504679380057385
+  },
+  "0.001": {
+   "false_px": 195676,
+   "tp": 9522,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 331416,
+   "union": 1330965,
+   "Pd": 0.8426548672566372,
+   "Fa": 9.992566293821118e-05,
+   "IoU": 0.24900429387699902
+  },
+  "0.01": {
+   "false_px": 165437,
+   "tp": 9392,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 315675,
+   "union": 1299116,
+   "Pd": 0.8311504424778761,
+   "Fa": 8.448354371261086e-05,
+   "IoU": 0.2429921577441891
+  },
+  "0.1": {
+   "false_px": 141349,
+   "tp": 9264,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 300277,
+   "union": 1273884,
+   "Pd": 0.8198230088495575,
+   "Fa": 7.218254937065972e-05,
+   "IoU": 0.23571769486075655
+  },
+  "0.2": {
+   "false_px": 134298,
+   "tp": 9226,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 295245,
+   "union": 1266530,
+   "Pd": 0.8164601769911505,
+   "Fa": 6.858182240681475e-05,
+   "IoU": 0.23311330959392987
+  },
+  "0.3": {
+   "false_px": 129734,
+   "tp": 9193,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 291916,
+   "union": 1261781,
+   "Pd": 0.8135398230088495,
+   "Fa": 6.625112919124414e-05,
+   "IoU": 0.23135235036824933
+  },
+  "0.35": {
+   "false_px": 127917,
+   "tp": 9186,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 290498,
+   "union": 1259880,
+   "Pd": 0.8129203539823009,
+   "Fa": 6.532324365822666e-05,
+   "IoU": 0.23057592786614597
+  },
+  "0.4": {
+   "false_px": 126144,
+   "tp": 9172,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 289161,
+   "union": 1258024,
+   "Pd": 0.8116814159292035,
+   "Fa": 6.441782756024096e-05,
+   "IoU": 0.22985332553274024
+  },
+  "0.45": {
+   "false_px": 124497,
+   "tp": 9155,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 287869,
+   "union": 1256306,
+   "Pd": 0.8101769911504425,
+   "Fa": 6.357675575348268e-05,
+   "IoU": 0.22913923837026967
+  },
+  "0.5": {
+   "false_px": 122890,
+   "tp": 9145,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 286625,
+   "union": 1254633,
+   "Pd": 0.8092920353982301,
+   "Fa": 6.275611070584421e-05,
+   "IoU": 0.22845326083404469
+  },
+  "0.55": {
+   "false_px": 121225,
+   "tp": 9132,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 285402,
+   "union": 1252908,
+   "Pd": 0.808141592920354,
+   "Fa": 6.1905846857482e-05,
+   "IoU": 0.22779166546945187
+  },
+  "0.6": {
+   "false_px": 119571,
+   "tp": 9117,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 284116,
+   "union": 1251198,
+   "Pd": 0.8068141592920354,
+   "Fa": 6.106120036787776e-05,
+   "IoU": 0.22707517115596412
+  },
+  "0.65": {
+   "false_px": 117864,
+   "tp": 9095,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 282811,
+   "union": 1249418,
+   "Pd": 0.8048672566371682,
+   "Fa": 6.018948842243976e-05,
+   "IoU": 0.22635419051110198
+  },
+  "0.7": {
+   "false_px": 116041,
+   "tp": 9085,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 281329,
+   "union": 1247528,
+   "Pd": 0.8039823008849557,
+   "Fa": 5.92585388755543e-05,
+   "IoU": 0.22550916692851783
+  },
+  "0.8": {
+   "false_px": 111927,
+   "tp": 9051,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 277893,
+   "union": 1243269,
+   "Pd": 0.8009734513274336,
+   "Fa": 5.7157646700081576e-05,
+   "IoU": 0.22351799972491873
+  },
+  "0.85": {
+   "false_px": 109333,
+   "tp": 9022,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 275718,
+   "union": 1240562,
+   "Pd": 0.7984070796460176,
+   "Fa": 5.583297137116173e-05,
+   "IoU": 0.22225249524006055
+  },
+  "0.9": {
+   "false_px": 105748,
+   "tp": 8993,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 272830,
+   "union": 1236840,
+   "Pd": 0.7958407079646018,
+   "Fa": 5.400222308504853e-05,
+   "IoU": 0.22058633291290708
+  },
+  "0.95": {
+   "false_px": 100210,
+   "tp": 8935,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 267995,
+   "union": 1231108,
+   "Pd": 0.79070796460177,
+   "Fa": 5.1174138284910475e-05,
+   "IoU": 0.21768601942315377
+  },
+  "0.99": {
+   "false_px": 87479,
+   "tp": 8803,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 256149,
+   "union": 1217925,
+   "Pd": 0.7790265486725664,
+   "Fa": 4.467281152605212e-05,
+   "IoU": 0.21031590615185664
+  },
+  "1": {
+   "false_px": 14314,
+   "tp": 6137,
+   "targets": 11300,
+   "pixels": 1958215680,
+   "intersection": 0,
+   "union": 1128093,
+   "Pd": 0.5430973451327433,
+   "Fa": 7.309715751024933e-06,
+   "IoU": 0.0
+  }
+ },
+ "author_headline": {
+  "IoU": 0.22845326083404469,
+  "Pd": 0.8092920353982301,
+  "Fa": 6.275611070584421e-05,
+  "threshold": 0.5,
+  "AUC": 0.9726856373464041,
+  "thresholds": [
+   0,
+   1e-20,
+   1e-10,
+   1e-08,
+   1e-07,
+   1e-06,
+   1e-05,
+   0.0001,
+   0.001,
+   0.01,
+   0.1,
+   0.2,
+   0.3,
+   0.35,
+   0.4,
+   0.45,
+   0.5,
+   0.55,
+   0.6,
+   0.65,
+   0.7,
+   0.8,
+   0.85,
+   0.9,
+   0.95,
+   0.99,
+   1
+  ]
+ },
+ "author_label_rule": "paper_k6_floor",
+ "author_edges": "official",
+ "author_protocol_per_clip": {
+  "DJI_0049_2": {
+   "0": {
+    "false_px": 29321469,
+    "tp": 602,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 43069,
+    "union": 29491173
+   },
+   "1e-20": {
+    "false_px": 29320926,
+    "tp": 602,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 41991,
+    "union": 29488760
+   },
+   "1e-10": {
+    "false_px": 29081863,
+    "tp": 602,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 37859,
+    "union": 29237543
+   },
+   "1e-08": {
+    "false_px": 28315632,
+    "tp": 602,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 32107,
+    "union": 28461026
+   },
+   "1e-07": {
+    "false_px": 25221698,
+    "tp": 602,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 24382,
+    "union": 25349992
+   },
+   "1e-06": {
+    "false_px": 2639281,
+    "tp": 514,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 9213,
+    "union": 2695949
+   },
+   "1e-05": {
+    "false_px": 11567,
+    "tp": 295,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 5994,
+    "union": 55549
+   },
+   "0.0001": {
+    "false_px": 885,
+    "tp": 256,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 5503,
+    "union": 44324
+   },
+   "0.001": {
+    "false_px": 161,
+    "tp": 243,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 5196,
+    "union": 43529
+   },
+   "0.01": {
+    "false_px": 89,
+    "tp": 237,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4931,
+    "union": 43414
+   },
+   "0.1": {
+    "false_px": 44,
+    "tp": 233,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4665,
+    "union": 43345
+   },
+   "0.2": {
+    "false_px": 36,
+    "tp": 233,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4597,
+    "union": 43331
+   },
+   "0.3": {
+    "false_px": 28,
+    "tp": 232,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4534,
+    "union": 43316
+   },
+   "0.35": {
+    "false_px": 26,
+    "tp": 231,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4508,
+    "union": 43311
+   },
+   "0.4": {
+    "false_px": 24,
+    "tp": 229,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4483,
+    "union": 43308
+   },
+   "0.45": {
+    "false_px": 22,
+    "tp": 227,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4451,
+    "union": 43303
+   },
+   "0.5": {
+    "false_px": 22,
+    "tp": 227,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4430,
+    "union": 43302
+   },
+   "0.55": {
+    "false_px": 19,
+    "tp": 225,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4412,
+    "union": 43297
+   },
+   "0.6": {
+    "false_px": 18,
+    "tp": 223,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4384,
+    "union": 43294
+   },
+   "0.65": {
+    "false_px": 12,
+    "tp": 222,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4365,
+    "union": 43285
+   },
+   "0.7": {
+    "false_px": 9,
+    "tp": 222,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4341,
+    "union": 43282
+   },
+   "0.8": {
+    "false_px": 6,
+    "tp": 222,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4279,
+    "union": 43274
+   },
+   "0.85": {
+    "false_px": 4,
+    "tp": 222,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4243,
+    "union": 43270
+   },
+   "0.9": {
+    "false_px": 3,
+    "tp": 222,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4212,
+    "union": 43264
+   },
+   "0.95": {
+    "false_px": 3,
+    "tp": 220,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 4123,
+    "union": 43258
+   },
+   "0.99": {
+    "false_px": 3,
+    "tp": 214,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 3920,
+    "union": 43253
+   },
+   "1": {
+    "false_px": 0,
+    "tp": 137,
+    "targets": 602,
+    "pixels": 29491200,
+    "intersection": 0,
+    "union": 43173
+   }
+  },
+  "DJI_0109_1": {
+   "0": {
+    "false_px": 29469033,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 5071,
+    "union": 29491170
+   },
+   "1e-20": {
+    "false_px": 29466345,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 4935,
+    "union": 29488086
+   },
+   "1e-10": {
+    "false_px": 29306486,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 3607,
+    "union": 29323359
+   },
+   "1e-08": {
+    "false_px": 28946507,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 3284,
+    "union": 28960300
+   },
+   "1e-07": {
+    "false_px": 26397065,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 3140,
+    "union": 26408167
+   },
+   "1e-06": {
+    "false_px": 1561322,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 3002,
+    "union": 1568022
+   },
+   "1e-05": {
+    "false_px": 23057,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2888,
+    "union": 28578
+   },
+   "0.0001": {
+    "false_px": 9479,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2816,
+    "union": 14691
+   },
+   "0.001": {
+    "false_px": 6692,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2731,
+    "union": 11811
+   },
+   "0.01": {
+    "false_px": 5297,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2671,
+    "union": 10389
+   },
+   "0.1": {
+    "false_px": 4324,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2609,
+    "union": 9414
+   },
+   "0.2": {
+    "false_px": 4034,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2586,
+    "union": 9123
+   },
+   "0.3": {
+    "false_px": 3862,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2578,
+    "union": 8951
+   },
+   "0.35": {
+    "false_px": 3803,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2572,
+    "union": 8892
+   },
+   "0.4": {
+    "false_px": 3740,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2566,
+    "union": 8829
+   },
+   "0.45": {
+    "false_px": 3686,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2559,
+    "union": 8775
+   },
+   "0.5": {
+    "false_px": 3620,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2554,
+    "union": 8709
+   },
+   "0.55": {
+    "false_px": 3557,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2548,
+    "union": 8646
+   },
+   "0.6": {
+    "false_px": 3503,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2544,
+    "union": 8591
+   },
+   "0.65": {
+    "false_px": 3443,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2534,
+    "union": 8531
+   },
+   "0.7": {
+    "false_px": 3379,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2525,
+    "union": 8467
+   },
+   "0.8": {
+    "false_px": 3256,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2511,
+    "union": 8343
+   },
+   "0.85": {
+    "false_px": 3187,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2500,
+    "union": 8274
+   },
+   "0.9": {
+    "false_px": 3063,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2483,
+    "union": 8149
+   },
+   "0.95": {
+    "false_px": 2902,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2463,
+    "union": 7988
+   },
+   "0.99": {
+    "false_px": 2533,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 2417,
+    "union": 7618
+   },
+   "1": {
+    "false_px": 654,
+    "tp": 90,
+    "targets": 90,
+    "pixels": 29491200,
+    "intersection": 0,
+    "union": 5071
+   }
+  },
+  "DJI_0119_2": {
+   "0": {
+    "false_px": 58878194,
+    "tp": 360,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 26390,
+    "union": 58982382
+   },
+   "1e-20": {
+    "false_px": 58871889,
+    "tp": 360,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 26309,
+    "union": 58975915
+   },
+   "1e-10": {
+    "false_px": 58484531,
+    "tp": 360,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 20316,
+    "union": 58577842
+   },
+   "1e-08": {
+    "false_px": 57450169,
+    "tp": 360,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 16618,
+    "union": 57532509
+   },
+   "1e-07": {
+    "false_px": 51583952,
+    "tp": 360,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 14097,
+    "union": 51653442
+   },
+   "1e-06": {
+    "false_px": 3223762,
+    "tp": 359,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 11431,
+    "union": 3257257
+   },
+   "1e-05": {
+    "false_px": 32633,
+    "tp": 354,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 10083,
+    "union": 59999
+   },
+   "0.0001": {
+    "false_px": 10564,
+    "tp": 348,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 9278,
+    "union": 37364
+   },
+   "0.001": {
+    "false_px": 8055,
+    "tp": 340,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 8648,
+    "union": 34648
+   },
+   "0.01": {
+    "false_px": 7084,
+    "tp": 332,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 8072,
+    "union": 33597
+   },
+   "0.1": {
+    "false_px": 6258,
+    "tp": 328,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 7542,
+    "union": 32735
+   },
+   "0.2": {
+    "false_px": 6025,
+    "tp": 326,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 7342,
+    "union": 32493
+   },
+   "0.3": {
+    "false_px": 5881,
+    "tp": 326,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 7226,
+    "union": 32344
+   },
+   "0.35": {
+    "false_px": 5827,
+    "tp": 326,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 7177,
+    "union": 32289
+   },
+   "0.4": {
+    "false_px": 5784,
+    "tp": 325,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 7133,
+    "union": 32243
+   },
+   "0.45": {
+    "false_px": 5740,
+    "tp": 324,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 7082,
+    "union": 32197
+   },
+   "0.5": {
+    "false_px": 5680,
+    "tp": 324,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 7034,
+    "union": 32135
+   },
+   "0.55": {
+    "false_px": 5631,
+    "tp": 324,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6988,
+    "union": 32085
+   },
+   "0.6": {
+    "false_px": 5574,
+    "tp": 323,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6943,
+    "union": 32027
+   },
+   "0.65": {
+    "false_px": 5530,
+    "tp": 319,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6898,
+    "union": 31976
+   },
+   "0.7": {
+    "false_px": 5475,
+    "tp": 317,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6849,
+    "union": 31919
+   },
+   "0.8": {
+    "false_px": 5348,
+    "tp": 315,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6730,
+    "union": 31791
+   },
+   "0.85": {
+    "false_px": 5269,
+    "tp": 314,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6652,
+    "union": 31707
+   },
+   "0.9": {
+    "false_px": 5149,
+    "tp": 312,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6540,
+    "union": 31583
+   },
+   "0.95": {
+    "false_px": 4969,
+    "tp": 311,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 6372,
+    "union": 31397
+   },
+   "0.99": {
+    "false_px": 4612,
+    "tp": 304,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 5945,
+    "union": 31030
+   },
+   "1": {
+    "false_px": 1236,
+    "tp": 141,
+    "targets": 360,
+    "pixels": 58982400,
+    "intersection": 0,
+    "union": 26390
+   }
+  },
+  "DJI_0129_2": {
+   "0": {
+    "false_px": 193173757,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 39030,
+    "union": 193331189
+   },
+   "1e-20": {
+    "false_px": 193168802,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 35473,
+    "union": 193321298
+   },
+   "1e-10": {
+    "false_px": 192502773,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 25279,
+    "union": 192624742
+   },
+   "1e-08": {
+    "false_px": 191131258,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 22752,
+    "union": 191238090
+   },
+   "1e-07": {
+    "false_px": 175152525,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 21286,
+    "union": 175242682
+   },
+   "1e-06": {
+    "false_px": 7501340,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 19918,
+    "union": 7549323
+   },
+   "1e-05": {
+    "false_px": 35337,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 18850,
+    "union": 76218
+   },
+   "0.0001": {
+    "false_px": 6938,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 18060,
+    "union": 46808
+   },
+   "0.001": {
+    "false_px": 4212,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 17404,
+    "union": 43749
+   },
+   "0.01": {
+    "false_px": 3582,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 16843,
+    "union": 42957
+   },
+   "0.1": {
+    "false_px": 3018,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 16291,
+    "union": 42291
+   },
+   "0.2": {
+    "false_px": 2825,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 16110,
+    "union": 42071
+   },
+   "0.3": {
+    "false_px": 2701,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15985,
+    "union": 41939
+   },
+   "0.35": {
+    "false_px": 2634,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15936,
+    "union": 41869
+   },
+   "0.4": {
+    "false_px": 2587,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15889,
+    "union": 41815
+   },
+   "0.45": {
+    "false_px": 2550,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15845,
+    "union": 41775
+   },
+   "0.5": {
+    "false_px": 2499,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15800,
+    "union": 41718
+   },
+   "0.55": {
+    "false_px": 2461,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15763,
+    "union": 41673
+   },
+   "0.6": {
+    "false_px": 2414,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15725,
+    "union": 41623
+   },
+   "0.65": {
+    "false_px": 2366,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15700,
+    "union": 41570
+   },
+   "0.7": {
+    "false_px": 2307,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15644,
+    "union": 41506
+   },
+   "0.8": {
+    "false_px": 2184,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15512,
+    "union": 41376
+   },
+   "0.85": {
+    "false_px": 2128,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15434,
+    "union": 41313
+   },
+   "0.9": {
+    "false_px": 2028,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15337,
+    "union": 41209
+   },
+   "0.95": {
+    "false_px": 1884,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 15172,
+    "union": 41053
+   },
+   "0.99": {
+    "false_px": 1550,
+    "tp": 590,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 14743,
+    "union": 40685
+   },
+   "1": {
+    "false_px": 71,
+    "tp": 509,
+    "targets": 590,
+    "pixels": 193331200,
+    "intersection": 0,
+    "union": 39059
+   }
+  },
+  "DJI_0155_2": {
+   "0": {
+    "false_px": 134246413,
+    "tp": 410,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 23647,
+    "union": 134348768
+   },
+   "1e-20": {
+    "false_px": 134242967,
+    "tp": 410,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 22666,
+    "union": 134341315
+   },
+   "1e-10": {
+    "false_px": 133281947,
+    "tp": 410,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 18138,
+    "union": 133361841
+   },
+   "1e-08": {
+    "false_px": 130791520,
+    "tp": 410,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 15938,
+    "union": 130862756
+   },
+   "1e-07": {
+    "false_px": 117897180,
+    "tp": 410,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 13827,
+    "union": 117958180
+   },
+   "1e-06": {
+    "false_px": 8307614,
+    "tp": 402,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 11245,
+    "union": 8335858
+   },
+   "1e-05": {
+    "false_px": 54616,
+    "tp": 383,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 10127,
+    "union": 78797
+   },
+   "0.0001": {
+    "false_px": 20662,
+    "tp": 373,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 9594,
+    "union": 44615
+   },
+   "0.001": {
+    "false_px": 17291,
+    "tp": 369,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 9187,
+    "union": 41125
+   },
+   "0.01": {
+    "false_px": 15374,
+    "tp": 362,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8852,
+    "union": 39149
+   },
+   "0.1": {
+    "false_px": 13698,
+    "tp": 361,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8525,
+    "union": 37444
+   },
+   "0.2": {
+    "false_px": 13181,
+    "tp": 358,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8412,
+    "union": 36922
+   },
+   "0.3": {
+    "false_px": 12790,
+    "tp": 357,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8344,
+    "union": 36527
+   },
+   "0.35": {
+    "false_px": 12643,
+    "tp": 357,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8317,
+    "union": 36378
+   },
+   "0.4": {
+    "false_px": 12496,
+    "tp": 356,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8286,
+    "union": 36228
+   },
+   "0.45": {
+    "false_px": 12349,
+    "tp": 355,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8251,
+    "union": 36080
+   },
+   "0.5": {
+    "false_px": 12213,
+    "tp": 355,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8220,
+    "union": 35939
+   },
+   "0.55": {
+    "false_px": 12074,
+    "tp": 355,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8187,
+    "union": 35799
+   },
+   "0.6": {
+    "false_px": 11938,
+    "tp": 354,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8148,
+    "union": 35663
+   },
+   "0.65": {
+    "false_px": 11788,
+    "tp": 353,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8122,
+    "union": 35509
+   },
+   "0.7": {
+    "false_px": 11643,
+    "tp": 353,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8084,
+    "union": 35362
+   },
+   "0.8": {
+    "false_px": 11275,
+    "tp": 351,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 8013,
+    "union": 34993
+   },
+   "0.85": {
+    "false_px": 11038,
+    "tp": 350,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 7973,
+    "union": 34755
+   },
+   "0.9": {
+    "false_px": 10688,
+    "tp": 348,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 7913,
+    "union": 34403
+   },
+   "0.95": {
+    "false_px": 10165,
+    "tp": 345,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 7791,
+    "union": 33879
+   },
+   "0.99": {
+    "false_px": 8762,
+    "tp": 337,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 7559,
+    "union": 32470
+   },
+   "1": {
+    "false_px": 112,
+    "tp": 259,
+    "targets": 410,
+    "pixels": 134348800,
+    "intersection": 0,
+    "union": 23675
+   }
+  },
+  "DJI_0159_2": {
+   "0": {
+    "false_px": 81863132,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 11758,
+    "union": 81919154
+   },
+   "1e-20": {
+    "false_px": 81860303,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 10883,
+    "union": 81911350
+   },
+   "1e-10": {
+    "false_px": 81733240,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 8668,
+    "union": 81773399
+   },
+   "1e-08": {
+    "false_px": 81334925,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 7902,
+    "union": 81369555
+   },
+   "1e-07": {
+    "false_px": 75888044,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 7345,
+    "union": 75917106
+   },
+   "1e-06": {
+    "false_px": 3736352,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 6877,
+    "union": 3751036
+   },
+   "1e-05": {
+    "false_px": 3973,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 6492,
+    "union": 16524
+   },
+   "0.0001": {
+    "false_px": 157,
+    "tp": 250,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 6190,
+    "union": 12439
+   },
+   "0.001": {
+    "false_px": 28,
+    "tp": 247,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5924,
+    "union": 12209
+   },
+   "0.01": {
+    "false_px": 4,
+    "tp": 245,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5686,
+    "union": 12131
+   },
+   "0.1": {
+    "false_px": 1,
+    "tp": 242,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5426,
+    "union": 12095
+   },
+   "0.2": {
+    "false_px": 0,
+    "tp": 242,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5353,
+    "union": 12085
+   },
+   "0.3": {
+    "false_px": 0,
+    "tp": 240,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5288,
+    "union": 12080
+   },
+   "0.35": {
+    "false_px": 0,
+    "tp": 240,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5277,
+    "union": 12077
+   },
+   "0.4": {
+    "false_px": 0,
+    "tp": 240,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5257,
+    "union": 12075
+   },
+   "0.45": {
+    "false_px": 0,
+    "tp": 240,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5237,
+    "union": 12075
+   },
+   "0.5": {
+    "false_px": 0,
+    "tp": 239,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5208,
+    "union": 12075
+   },
+   "0.55": {
+    "false_px": 0,
+    "tp": 239,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5194,
+    "union": 12071
+   },
+   "0.6": {
+    "false_px": 0,
+    "tp": 239,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5171,
+    "union": 12069
+   },
+   "0.65": {
+    "false_px": 0,
+    "tp": 238,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5151,
+    "union": 12066
+   },
+   "0.7": {
+    "false_px": 0,
+    "tp": 238,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5134,
+    "union": 12064
+   },
+   "0.8": {
+    "false_px": 0,
+    "tp": 238,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5076,
+    "union": 12057
+   },
+   "0.85": {
+    "false_px": 0,
+    "tp": 236,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5050,
+    "union": 12053
+   },
+   "0.9": {
+    "false_px": 0,
+    "tp": 235,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 5012,
+    "union": 12047
+   },
+   "0.95": {
+    "false_px": 0,
+    "tp": 233,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 4941,
+    "union": 12044
+   },
+   "0.99": {
+    "false_px": 0,
+    "tp": 230,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 4785,
+    "union": 12033
+   },
+   "1": {
+    "false_px": 0,
+    "tp": 160,
+    "targets": 250,
+    "pixels": 81920000,
+    "intersection": 0,
+    "union": 11980
+   }
+  },
+  "DJI_0173_2": {
+   "0": {
+    "false_px": 147297975,
+    "tp": 450,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 43065,
+    "union": 147456000
+   },
+   "1e-20": {
+    "false_px": 147297971,
+    "tp": 450,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 42770,
+    "union": 147455805
+   },
+   "1e-10": {
+    "false_px": 147278838,
+    "tp": 450,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 32630,
+    "union": 147425346
+   },
+   "1e-08": {
+    "false_px": 146562650,
+    "tp": 450,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 26085,
+    "union": 146697361
+   },
+   "1e-07": {
+    "false_px": 133022640,
+    "tp": 450,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 21210,
+    "union": 133140877
+   },
+   "1e-06": {
+    "false_px": 8446626,
+    "tp": 450,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 14523,
+    "union": 8498475
+   },
+   "1e-05": {
+    "false_px": 21652,
+    "tp": 450,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 12284,
+    "union": 65808
+   },
+   "0.0001": {
+    "false_px": 975,
+    "tp": 448,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 11201,
+    "union": 44726
+   },
+   "0.001": {
+    "false_px": 239,
+    "tp": 445,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 10295,
+    "union": 43829
+   },
+   "0.01": {
+    "false_px": 105,
+    "tp": 442,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 9539,
+    "union": 43584
+   },
+   "0.1": {
+    "false_px": 54,
+    "tp": 437,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8849,
+    "union": 43438
+   },
+   "0.2": {
+    "false_px": 46,
+    "tp": 435,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8585,
+    "union": 43409
+   },
+   "0.3": {
+    "false_px": 41,
+    "tp": 433,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8413,
+    "union": 43396
+   },
+   "0.35": {
+    "false_px": 39,
+    "tp": 433,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8348,
+    "union": 43384
+   },
+   "0.4": {
+    "false_px": 35,
+    "tp": 433,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8283,
+    "union": 43376
+   },
+   "0.45": {
+    "false_px": 34,
+    "tp": 433,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8211,
+    "union": 43367
+   },
+   "0.5": {
+    "false_px": 32,
+    "tp": 432,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8154,
+    "union": 43358
+   },
+   "0.55": {
+    "false_px": 29,
+    "tp": 431,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8083,
+    "union": 43353
+   },
+   "0.6": {
+    "false_px": 26,
+    "tp": 429,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 8000,
+    "union": 43347
+   },
+   "0.65": {
+    "false_px": 26,
+    "tp": 427,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 7940,
+    "union": 43345
+   },
+   "0.7": {
+    "false_px": 24,
+    "tp": 427,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 7867,
+    "union": 43333
+   },
+   "0.8": {
+    "false_px": 23,
+    "tp": 424,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 7701,
+    "union": 43321
+   },
+   "0.85": {
+    "false_px": 23,
+    "tp": 421,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 7574,
+    "union": 43315
+   },
+   "0.9": {
+    "false_px": 20,
+    "tp": 418,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 7406,
+    "union": 43300
+   },
+   "0.95": {
+    "false_px": 19,
+    "tp": 416,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 7143,
+    "union": 43274
+   },
+   "0.99": {
+    "false_px": 8,
+    "tp": 407,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 6483,
+    "union": 43230
+   },
+   "1": {
+    "false_px": 0,
+    "tp": 104,
+    "targets": 450,
+    "pixels": 147456000,
+    "intersection": 0,
+    "union": 43065
+   }
+  },
+  "DJI_0221_2": {
+   "0": {
+    "false_px": 193106040,
+    "tp": 697,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 60513,
+    "union": 193331200
+   },
+   "1e-20": {
+    "false_px": 193105655,
+    "tp": 697,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 59186,
+    "union": 193329903
+   },
+   "1e-10": {
+    "false_px": 192719920,
+    "tp": 697,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 42145,
+    "union": 192912063
+   },
+   "1e-08": {
+    "false_px": 191452166,
+    "tp": 697,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 35396,
+    "union": 191625997
+   },
+   "1e-07": {
+    "false_px": 175615431,
+    "tp": 697,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 30261,
+    "union": 175768555
+   },
+   "1e-06": {
+    "false_px": 10165209,
+    "tp": 669,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 21646,
+    "union": 10236551
+   },
+   "1e-05": {
+    "false_px": 33503,
+    "tp": 658,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 19513,
+    "union": 95688
+   },
+   "0.0001": {
+    "false_px": 5765,
+    "tp": 647,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 18411,
+    "union": 67489
+   },
+   "0.001": {
+    "false_px": 3360,
+    "tp": 634,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 17516,
+    "union": 64869
+   },
+   "0.01": {
+    "false_px": 2401,
+    "tp": 628,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 16692,
+    "union": 63769
+   },
+   "0.1": {
+    "false_px": 1799,
+    "tp": 622,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15855,
+    "union": 63038
+   },
+   "0.2": {
+    "false_px": 1640,
+    "tp": 622,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15585,
+    "union": 62849
+   },
+   "0.3": {
+    "false_px": 1569,
+    "tp": 622,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15383,
+    "union": 62755
+   },
+   "0.35": {
+    "false_px": 1539,
+    "tp": 621,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15281,
+    "union": 62713
+   },
+   "0.4": {
+    "false_px": 1505,
+    "tp": 619,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15208,
+    "union": 62663
+   },
+   "0.45": {
+    "false_px": 1477,
+    "tp": 618,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15135,
+    "union": 62629
+   },
+   "0.5": {
+    "false_px": 1444,
+    "tp": 617,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15066,
+    "union": 62588
+   },
+   "0.55": {
+    "false_px": 1419,
+    "tp": 616,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 15004,
+    "union": 62555
+   },
+   "0.6": {
+    "false_px": 1384,
+    "tp": 616,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 14938,
+    "union": 62515
+   },
+   "0.65": {
+    "false_px": 1347,
+    "tp": 616,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 14859,
+    "union": 62470
+   },
+   "0.7": {
+    "false_px": 1324,
+    "tp": 616,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 14776,
+    "union": 62442
+   },
+   "0.8": {
+    "false_px": 1254,
+    "tp": 615,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 14578,
+    "union": 62355
+   },
+   "0.85": {
+    "false_px": 1213,
+    "tp": 613,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 14436,
+    "union": 62301
+   },
+   "0.9": {
+    "false_px": 1169,
+    "tp": 613,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 14287,
+    "union": 62232
+   },
+   "0.95": {
+    "false_px": 1091,
+    "tp": 610,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 13963,
+    "union": 62131
+   },
+   "0.99": {
+    "false_px": 911,
+    "tp": 605,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 13140,
+    "union": 61871
+   },
+   "1": {
+    "false_px": 30,
+    "tp": 297,
+    "targets": 697,
+    "pixels": 193331200,
+    "intersection": 0,
+    "union": 60514
+   }
+  },
+  "DJI_0237_2": {
+   "0": {
+    "false_px": 133261928,
+    "tp": 2943,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 339935,
+    "union": 134348782
+   },
+   "1e-20": {
+    "false_px": 133260663,
+    "tp": 2943,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 336097,
+    "union": 134345070
+   },
+   "1e-10": {
+    "false_px": 133026026,
+    "tp": 2943,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 275688,
+    "union": 134020962
+   },
+   "1e-08": {
+    "false_px": 131983204,
+    "tp": 2943,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 219769,
+    "union": 132900576
+   },
+   "1e-07": {
+    "false_px": 120664679,
+    "tp": 2942,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 169106,
+    "union": 121463676
+   },
+   "1e-06": {
+    "false_px": 7195384,
+    "tp": 2738,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 107103,
+    "union": 7588684
+   },
+   "1e-05": {
+    "false_px": 52459,
+    "tp": 2435,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 83900,
+    "union": 395057
+   },
+   "0.0001": {
+    "false_px": 27715,
+    "tp": 2319,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 74474,
+    "union": 368594
+   },
+   "0.001": {
+    "false_px": 21905,
+    "tp": 2252,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 67931,
+    "union": 362455
+   },
+   "0.01": {
+    "false_px": 18433,
+    "tp": 2194,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 62675,
+    "union": 358822
+   },
+   "0.1": {
+    "false_px": 15642,
+    "tp": 2136,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 57646,
+    "union": 355918
+   },
+   "0.2": {
+    "false_px": 14910,
+    "tp": 2116,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 56121,
+    "union": 355160
+   },
+   "0.3": {
+    "false_px": 14409,
+    "tp": 2099,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 55110,
+    "union": 354644
+   },
+   "0.35": {
+    "false_px": 14220,
+    "tp": 2097,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 54682,
+    "union": 354445
+   },
+   "0.4": {
+    "false_px": 14009,
+    "tp": 2093,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 54277,
+    "union": 354228
+   },
+   "0.45": {
+    "false_px": 13810,
+    "tp": 2084,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 53889,
+    "union": 354022
+   },
+   "0.5": {
+    "false_px": 13644,
+    "tp": 2080,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 53523,
+    "union": 353853
+   },
+   "0.55": {
+    "false_px": 13449,
+    "tp": 2074,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 53163,
+    "union": 353654
+   },
+   "0.6": {
+    "false_px": 13274,
+    "tp": 2070,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 52813,
+    "union": 353473
+   },
+   "0.65": {
+    "false_px": 13087,
+    "tp": 2062,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 52423,
+    "union": 353283
+   },
+   "0.7": {
+    "false_px": 12886,
+    "tp": 2057,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 51979,
+    "union": 353075
+   },
+   "0.8": {
+    "false_px": 12449,
+    "tp": 2041,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 50949,
+    "union": 352619
+   },
+   "0.85": {
+    "false_px": 12145,
+    "tp": 2026,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 50331,
+    "union": 352307
+   },
+   "0.9": {
+    "false_px": 11732,
+    "tp": 2011,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 49507,
+    "union": 351880
+   },
+   "0.95": {
+    "false_px": 11083,
+    "tp": 1986,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 48165,
+    "union": 351215
+   },
+   "0.99": {
+    "false_px": 9586,
+    "tp": 1934,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 44899,
+    "union": 349686
+   },
+   "1": {
+    "false_px": 386,
+    "tp": 1008,
+    "targets": 2943,
+    "pixels": 134348800,
+    "intersection": 0,
+    "union": 339969
+   }
+  },
+  "DJI_0255_1": {
+   "0": {
+    "false_px": 196454099,
+    "tp": 600,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 35094,
+    "union": 196606449
+   },
+   "1e-20": {
+    "false_px": 196448651,
+    "tp": 600,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 30890,
+    "union": 196586520
+   },
+   "1e-10": {
+    "false_px": 195799439,
+    "tp": 600,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 24335,
+    "union": 195899740
+   },
+   "1e-08": {
+    "false_px": 194287236,
+    "tp": 600,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 22182,
+    "union": 194373989
+   },
+   "1e-07": {
+    "false_px": 181994136,
+    "tp": 600,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 20244,
+    "union": 182067914
+   },
+   "1e-06": {
+    "false_px": 9547778,
+    "tp": 568,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 17222,
+    "union": 9589173
+   },
+   "1e-05": {
+    "false_px": 9182,
+    "tp": 550,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 15872,
+    "union": 46069
+   },
+   "0.0001": {
+    "false_px": 1712,
+    "tp": 532,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 15342,
+    "union": 38256
+   },
+   "0.001": {
+    "false_px": 1090,
+    "tp": 528,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 14932,
+    "union": 37527
+   },
+   "0.01": {
+    "false_px": 778,
+    "tp": 526,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 14527,
+    "union": 37148
+   },
+   "0.1": {
+    "false_px": 546,
+    "tp": 524,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 14097,
+    "union": 36880
+   },
+   "0.2": {
+    "false_px": 489,
+    "tp": 523,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13966,
+    "union": 36812
+   },
+   "0.3": {
+    "false_px": 452,
+    "tp": 523,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13877,
+    "union": 36766
+   },
+   "0.35": {
+    "false_px": 438,
+    "tp": 523,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13838,
+    "union": 36748
+   },
+   "0.4": {
+    "false_px": 425,
+    "tp": 523,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13805,
+    "union": 36733
+   },
+   "0.45": {
+    "false_px": 412,
+    "tp": 523,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13769,
+    "union": 36716
+   },
+   "0.5": {
+    "false_px": 399,
+    "tp": 523,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13732,
+    "union": 36701
+   },
+   "0.55": {
+    "false_px": 383,
+    "tp": 522,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13695,
+    "union": 36685
+   },
+   "0.6": {
+    "false_px": 370,
+    "tp": 522,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13661,
+    "union": 36670
+   },
+   "0.65": {
+    "false_px": 355,
+    "tp": 522,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13618,
+    "union": 36650
+   },
+   "0.7": {
+    "false_px": 345,
+    "tp": 522,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13583,
+    "union": 36635
+   },
+   "0.8": {
+    "false_px": 315,
+    "tp": 521,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13515,
+    "union": 36602
+   },
+   "0.85": {
+    "false_px": 299,
+    "tp": 521,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13453,
+    "union": 36583
+   },
+   "0.9": {
+    "false_px": 272,
+    "tp": 521,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13382,
+    "union": 36554
+   },
+   "0.95": {
+    "false_px": 222,
+    "tp": 518,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 13242,
+    "union": 36501
+   },
+   "0.99": {
+    "false_px": 146,
+    "tp": 510,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 12903,
+    "union": 36407
+   },
+   "1": {
+    "false_px": 0,
+    "tp": 422,
+    "targets": 600,
+    "pixels": 196608000,
+    "intersection": 0,
+    "union": 36229
+   }
+  },
+  "DJI_0257_2": {
+   "0": {
+    "false_px": 192852577,
+    "tp": 1126,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 163764,
+    "union": 193330588
+   },
+   "1e-20": {
+    "false_px": 192845188,
+    "tp": 1126,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 154763,
+    "union": 193303666
+   },
+   "1e-10": {
+    "false_px": 192184039,
+    "tp": 1126,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 114887,
+    "union": 192539661
+   },
+   "1e-08": {
+    "false_px": 190797067,
+    "tp": 1126,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 93069,
+    "union": 191106219
+   },
+   "1e-07": {
+    "false_px": 176792733,
+    "tp": 1126,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 79339,
+    "union": 177061457
+   },
+   "1e-06": {
+    "false_px": 8374749,
+    "tp": 1093,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 65401,
+    "union": 8556883
+   },
+   "1e-05": {
+    "false_px": 14615,
+    "tp": 1034,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 58339,
+    "union": 180452
+   },
+   "0.0001": {
+    "false_px": 467,
+    "tp": 1004,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 54515,
+    "union": 165533
+   },
+   "0.001": {
+    "false_px": 73,
+    "tp": 983,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 51527,
+    "union": 164921
+   },
+   "0.01": {
+    "false_px": 35,
+    "tp": 964,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 48756,
+    "union": 164738
+   },
+   "0.1": {
+    "false_px": 17,
+    "tp": 947,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 46020,
+    "union": 164615
+   },
+   "0.2": {
+    "false_px": 15,
+    "tp": 942,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 45081,
+    "union": 164581
+   },
+   "0.3": {
+    "false_px": 13,
+    "tp": 939,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 44477,
+    "union": 164556
+   },
+   "0.35": {
+    "false_px": 13,
+    "tp": 939,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 44210,
+    "union": 164547
+   },
+   "0.4": {
+    "false_px": 13,
+    "tp": 935,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 43976,
+    "union": 164540
+   },
+   "0.45": {
+    "false_px": 12,
+    "tp": 932,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 43738,
+    "union": 164533
+   },
+   "0.5": {
+    "false_px": 12,
+    "tp": 930,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 43504,
+    "union": 164529
+   },
+   "0.55": {
+    "false_px": 12,
+    "tp": 930,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 43287,
+    "union": 164522
+   },
+   "0.6": {
+    "false_px": 11,
+    "tp": 927,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 43035,
+    "union": 164516
+   },
+   "0.65": {
+    "false_px": 10,
+    "tp": 923,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 42779,
+    "union": 164509
+   },
+   "0.7": {
+    "false_px": 10,
+    "tp": 923,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 42485,
+    "union": 164501
+   },
+   "0.8": {
+    "false_px": 10,
+    "tp": 918,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 41853,
+    "union": 164484
+   },
+   "0.85": {
+    "false_px": 10,
+    "tp": 915,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 41446,
+    "union": 164468
+   },
+   "0.9": {
+    "false_px": 8,
+    "tp": 912,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 40871,
+    "union": 164456
+   },
+   "0.95": {
+    "false_px": 7,
+    "tp": 906,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 39958,
+    "union": 164432
+   },
+   "0.99": {
+    "false_px": 5,
+    "tp": 885,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 37638,
+    "union": 164389
+   },
+   "1": {
+    "false_px": 0,
+    "tp": 590,
+    "targets": 1126,
+    "pixels": 193331200,
+    "intersection": 0,
+    "union": 164018
+   }
+  },
+  "DJI_0277_2": {
+   "0": {
+    "false_px": 119653575,
+    "tp": 985,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 65858,
+    "union": 119921069
+   },
+   "1e-20": {
+    "false_px": 119574169,
+    "tp": 985,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 45881,
+    "union": 119786730
+   },
+   "1e-10": {
+    "false_px": 117958086,
+    "tp": 985,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 37222,
+    "union": 118101306
+   },
+   "1e-08": {
+    "false_px": 114609955,
+    "tp": 985,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 35939,
+    "union": 114732486
+   },
+   "1e-07": {
+    "false_px": 102303333,
+    "tp": 985,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 35150,
+    "union": 102409110
+   },
+   "1e-06": {
+    "false_px": 7849737,
+    "tp": 982,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 34164,
+    "union": 7924051
+   },
+   "1e-05": {
+    "false_px": 277910,
+    "tp": 981,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 33574,
+    "union": 347696
+   },
+   "0.0001": {
+    "false_px": 105563,
+    "tp": 981,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 33079,
+    "union": 175054
+   },
+   "0.001": {
+    "false_px": 82358,
+    "tp": 979,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 32619,
+    "union": 151721
+   },
+   "0.01": {
+    "false_px": 70035,
+    "tp": 979,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 32173,
+    "union": 139318
+   },
+   "0.1": {
+    "false_px": 60110,
+    "tp": 978,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31751,
+    "union": 129334
+   },
+   "0.2": {
+    "false_px": 57213,
+    "tp": 977,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31595,
+    "union": 126421
+   },
+   "0.3": {
+    "false_px": 55283,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31487,
+    "union": 124483
+   },
+   "0.35": {
+    "false_px": 54479,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31452,
+    "union": 123677
+   },
+   "0.4": {
+    "false_px": 53769,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31416,
+    "union": 122964
+   },
+   "0.45": {
+    "false_px": 53080,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31397,
+    "union": 122272
+   },
+   "0.5": {
+    "false_px": 52399,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31372,
+    "union": 121590
+   },
+   "0.55": {
+    "false_px": 51710,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31335,
+    "union": 120898
+   },
+   "0.6": {
+    "false_px": 51004,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31302,
+    "union": 120190
+   },
+   "0.65": {
+    "false_px": 50321,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31262,
+    "union": 119503
+   },
+   "0.7": {
+    "false_px": 49576,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31220,
+    "union": 118754
+   },
+   "0.8": {
+    "false_px": 47816,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31130,
+    "union": 116989
+   },
+   "0.85": {
+    "false_px": 46687,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 31072,
+    "union": 115855
+   },
+   "0.9": {
+    "false_px": 45157,
+    "tp": 976,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 30987,
+    "union": 114322
+   },
+   "0.95": {
+    "false_px": 42832,
+    "tp": 975,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 30850,
+    "union": 111987
+   },
+   "0.99": {
+    "false_px": 37388,
+    "tp": 974,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 30551,
+    "union": 106522
+   },
+   "1": {
+    "false_px": 7476,
+    "tp": 959,
+    "targets": 985,
+    "pixels": 119930880,
+    "intersection": 0,
+    "union": 69031
+   }
+  },
+  "DJI_0303_2": {
+   "0": {
+    "false_px": 188650061,
+    "tp": 986,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 162842,
+    "union": 189064396
+   },
+   "1e-20": {
+    "false_px": 188622853,
+    "tp": 986,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 150063,
+    "union": 189006690
+   },
+   "1e-10": {
+    "false_px": 187571094,
+    "tp": 986,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 110053,
+    "union": 187860505
+   },
+   "1e-08": {
+    "false_px": 185013341,
+    "tp": 985,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 93049,
+    "union": 185270894
+   },
+   "1e-07": {
+    "false_px": 168169720,
+    "tp": 985,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 81307,
+    "union": 168400377
+   },
+   "1e-06": {
+    "false_px": 10395574,
+    "tp": 973,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 69236,
+    "union": 10574349
+   },
+   "1e-05": {
+    "false_px": 74212,
+    "tp": 958,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 63460,
+    "union": 244224
+   },
+   "0.0001": {
+    "false_px": 12390,
+    "tp": 944,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 60268,
+    "union": 181252
+   },
+   "0.001": {
+    "false_px": 7020,
+    "tp": 932,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 57929,
+    "union": 175362
+   },
+   "0.01": {
+    "false_px": 5172,
+    "tp": 924,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 55778,
+    "union": 173166
+   },
+   "0.1": {
+    "false_px": 3893,
+    "tp": 910,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 53600,
+    "union": 171611
+   },
+   "0.2": {
+    "false_px": 3559,
+    "tp": 909,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 52861,
+    "union": 171195
+   },
+   "0.3": {
+    "false_px": 3360,
+    "tp": 907,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 52409,
+    "union": 170944
+   },
+   "0.35": {
+    "false_px": 3284,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 52210,
+    "union": 170852
+   },
+   "0.4": {
+    "false_px": 3200,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 51977,
+    "union": 170748
+   },
+   "0.45": {
+    "false_px": 3112,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 51803,
+    "union": 170638
+   },
+   "0.5": {
+    "false_px": 3051,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 51608,
+    "union": 170553
+   },
+   "0.55": {
+    "false_px": 2968,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 51420,
+    "union": 170455
+   },
+   "0.6": {
+    "false_px": 2884,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 51218,
+    "union": 170351
+   },
+   "0.65": {
+    "false_px": 2810,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 51011,
+    "union": 170262
+   },
+   "0.7": {
+    "false_px": 2733,
+    "tp": 906,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 50801,
+    "union": 170174
+   },
+   "0.8": {
+    "false_px": 2568,
+    "tp": 902,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 50285,
+    "union": 169971
+   },
+   "0.85": {
+    "false_px": 2467,
+    "tp": 901,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 49937,
+    "union": 169833
+   },
+   "0.9": {
+    "false_px": 2341,
+    "tp": 900,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 49507,
+    "union": 169663
+   },
+   "0.95": {
+    "false_px": 2154,
+    "tp": 897,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 48808,
+    "union": 169420
+   },
+   "0.99": {
+    "false_px": 1757,
+    "tp": 895,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 47030,
+    "union": 168890
+   },
+   "1": {
+    "false_px": 214,
+    "tp": 806,
+    "targets": 986,
+    "pixels": 189071360,
+    "intersection": 0,
+    "union": 166436
+   }
+  },
+  "DJI_0307_2": {
+   "0": {
+    "false_px": 58939451,
+    "tp": 161,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 9517,
+    "union": 58981266
+   },
+   "1e-20": {
+    "false_px": 58927770,
+    "tp": 161,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 7442,
+    "union": 58965072
+   },
+   "1e-10": {
+    "false_px": 58584982,
+    "tp": 161,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 5831,
+    "union": 58615274
+   },
+   "1e-08": {
+    "false_px": 57916451,
+    "tp": 161,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 5284,
+    "union": 57943686
+   },
+   "1e-07": {
+    "false_px": 53172462,
+    "tp": 161,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 4739,
+    "union": 53195746
+   },
+   "1e-06": {
+    "false_px": 2801274,
+    "tp": 155,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 4173,
+    "union": 2813235
+   },
+   "1e-05": {
+    "false_px": 39380,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3981,
+    "union": 49617
+   },
+   "0.0001": {
+    "false_px": 23454,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3909,
+    "union": 33638
+   },
+   "0.001": {
+    "false_px": 19477,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3826,
+    "union": 29653
+   },
+   "0.01": {
+    "false_px": 17008,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3759,
+    "union": 27175
+   },
+   "0.1": {
+    "false_px": 14914,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3695,
+    "union": 25075
+   },
+   "0.2": {
+    "false_px": 14240,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3668,
+    "union": 24399
+   },
+   "0.3": {
+    "false_px": 13837,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3651,
+    "union": 23996
+   },
+   "0.35": {
+    "false_px": 13692,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3639,
+    "union": 23851
+   },
+   "0.4": {
+    "false_px": 13507,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3634,
+    "union": 23666
+   },
+   "0.45": {
+    "false_px": 13364,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3626,
+    "union": 23523
+   },
+   "0.5": {
+    "false_px": 13235,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3618,
+    "union": 23392
+   },
+   "0.55": {
+    "false_px": 13078,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3612,
+    "union": 23233
+   },
+   "0.6": {
+    "false_px": 12940,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3609,
+    "union": 23095
+   },
+   "0.65": {
+    "false_px": 12762,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3601,
+    "union": 22915
+   },
+   "0.7": {
+    "false_px": 12596,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3593,
+    "union": 22749
+   },
+   "0.8": {
+    "false_px": 12209,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3574,
+    "union": 22357
+   },
+   "0.85": {
+    "false_px": 11971,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3563,
+    "union": 22118
+   },
+   "0.9": {
+    "false_px": 11644,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3551,
+    "union": 21791
+   },
+   "0.95": {
+    "false_px": 11112,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3534,
+    "union": 21256
+   },
+   "0.99": {
+    "false_px": 9946,
+    "tp": 144,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 3482,
+    "union": 20089
+   },
+   "1": {
+    "false_px": 2549,
+    "tp": 138,
+    "targets": 161,
+    "pixels": 58982400,
+    "intersection": 0,
+    "union": 10093
+   }
+  },
+  "DJI_0309_4": {
+   "0": {
+    "false_px": 197275478,
+    "tp": 1050,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 89118,
+    "union": 197590867
+   },
+   "1e-20": {
+    "false_px": 197261049,
+    "tp": 1050,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 83709,
+    "union": 197565913
+   },
+   "1e-10": {
+    "false_px": 196128404,
+    "tp": 1050,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 65430,
+    "union": 196384311
+   },
+   "1e-08": {
+    "false_px": 193469703,
+    "tp": 1050,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 58463,
+    "union": 193702111
+   },
+   "1e-07": {
+    "false_px": 176337098,
+    "tp": 1049,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 51519,
+    "union": 176541596
+   },
+   "1e-06": {
+    "false_px": 11423811,
+    "tp": 911,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 32296,
+    "union": 11527212
+   },
+   "1e-05": {
+    "false_px": 91847,
+    "tp": 794,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 28319,
+    "union": 182495
+   },
+   "0.0001": {
+    "false_px": 30644,
+    "tp": 762,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 26884,
+    "union": 120701
+   },
+   "0.001": {
+    "false_px": 23715,
+    "tp": 746,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 25751,
+    "union": 113557
+   },
+   "0.01": {
+    "false_px": 20040,
+    "tp": 735,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 24721,
+    "union": 109759
+   },
+   "0.1": {
+    "false_px": 17031,
+    "tp": 722,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 23706,
+    "union": 106651
+   },
+   "0.2": {
+    "false_px": 16085,
+    "tp": 719,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 23383,
+    "union": 105679
+   },
+   "0.3": {
+    "false_px": 15508,
+    "tp": 715,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 23154,
+    "union": 105084
+   },
+   "0.35": {
+    "false_px": 15280,
+    "tp": 713,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 23051,
+    "union": 104847
+   },
+   "0.4": {
+    "false_px": 15050,
+    "tp": 713,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22971,
+    "union": 104608
+   },
+   "0.45": {
+    "false_px": 14849,
+    "tp": 713,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22876,
+    "union": 104401
+   },
+   "0.5": {
+    "false_px": 14640,
+    "tp": 712,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22802,
+    "union": 104191
+   },
+   "0.55": {
+    "false_px": 14435,
+    "tp": 710,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22711,
+    "union": 103982
+   },
+   "0.6": {
+    "false_px": 14231,
+    "tp": 708,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22625,
+    "union": 103774
+   },
+   "0.65": {
+    "false_px": 14007,
+    "tp": 707,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22548,
+    "union": 103544
+   },
+   "0.7": {
+    "false_px": 13734,
+    "tp": 704,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22448,
+    "union": 103265
+   },
+   "0.8": {
+    "false_px": 13214,
+    "tp": 704,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22187,
+    "union": 102737
+   },
+   "0.85": {
+    "false_px": 12892,
+    "tp": 703,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 22054,
+    "union": 102410
+   },
+   "0.9": {
+    "false_px": 12474,
+    "tp": 701,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 21835,
+    "union": 101987
+   },
+   "0.95": {
+    "false_px": 11767,
+    "tp": 694,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 21470,
+    "union": 101273
+   },
+   "0.99": {
+    "false_px": 10272,
+    "tp": 684,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 20654,
+    "union": 99752
+   },
+   "1": {
+    "false_px": 1586,
+    "tp": 517,
+    "targets": 1050,
+    "pixels": 197591040,
+    "intersection": 0,
+    "union": 89390
+   }
+  }
+ }
+}

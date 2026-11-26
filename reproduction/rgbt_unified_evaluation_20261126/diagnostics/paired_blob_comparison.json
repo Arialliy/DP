@@ -1,0 +1,2776 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-26T18:17:52.574950+00:00",
+  "status": "complete",
+  "complete": true,
+  "evidence_status": "no_reference_mismatch_reported",
+  "warnings": [],
+  "split": "official_test",
+  "threshold": 0.99,
+  "variant": "native",
+  "reference": {
+    "job_id": "author_released_reference",
+    "variant": "native",
+    "path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/diagnostics/breakdown/author_released_reference.json",
+    "status": "complete",
+    "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+    "checkpoint_status": "released",
+    "breakdown_status": "complete",
+    "model": "DeepPro-Plus (released)",
+    "breakdown_sha256": "0761e485a3e800144f360a5d82ff04315015144e0607f7e820cafb0169097795",
+    "frames": 5976,
+    "pixels": 1958215680,
+    "targets": 11300,
+    "reference_comparison": {
+      "path": "/evaluation/results/author_released_reference/native/metrics.json",
+      "status": "matched",
+      "count_differences": [],
+      "checked_thresholds": 27,
+      "reference_metrics_sha256": "57fc00dcd7144008d42c707ca2c22cf993a7caf475e090fc69ffddb5f989aba8",
+      "auc_reference": 0.9726924246958749,
+      "auc_actual": 0.9726924246958749,
+      "iou_reference": 0.228457,
+      "iou_actual": 0.22845722210709218,
+      "note": "Integer counts compared exactly. Reference IoU may have been rounded; both values retained."
+    }
+  },
+  "comparisons": [
+    {
+      "retrained": {
+        "job_id": "deeppro_plus_416648f66cbee93f",
+        "variant": "native",
+        "path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/diagnostics/breakdown/deeppro_plus_416648f66cbee93f.json",
+        "status": "complete",
+        "checkpoint_sha256": "416648f66cbee93f9b5968823ee6655ba946655c56064a591e4cedca5919c8db",
+        "checkpoint_status": "final",
+        "breakdown_status": "complete",
+        "model": "DeepPro-Plus",
+        "breakdown_sha256": "44e81e6d5135c614d5c01228ecfb411720c4a6e5232a22e27ecef374b6251e65",
+        "frames": 5976,
+        "pixels": 1958215680,
+        "targets": 11300,
+        "reference_comparison": {
+          "path": "/evaluation/results/deeppro_plus_416648f66cbee93f/native/metrics.json",
+          "status": "matched",
+          "count_differences": [],
+          "checked_thresholds": 27,
+          "reference_metrics_sha256": "8c9e7d0065e6745e8e31ad172c257eda1fd5520d00ae40b49cf3e1cd513ac7d1",
+          "auc_reference": 0.9911766611865404,
+          "auc_actual": 0.9911766611865404,
+          "iou_reference": 0.28266800101803224,
+          "iou_actual": 0.28266800101803224,
+          "note": "Integer counts compared exactly. Reference IoU may have been rounded; both values retained."
+        }
+      },
+      "total_targets": 11300,
+      "reference_hit_targets": 8803,
+      "retrained_hit_targets": 10074,
+      "paired_targets": 8720,
+      "reference_only_hits": 83,
+      "retrained_only_hits": 1354,
+      "both_missed": 1143,
+      "paired_frames": 5379,
+      "reference_area_pixels": {
+        "count": 8720,
+        "mean": 29.698050458715596,
+        "median": 26.0,
+        "quantiles": {
+          "0": 1.0,
+          "5": 5.0,
+          "25": 20.0,
+          "50": 26.0,
+          "75": 32.0,
+          "95": 70.0,
+          "100": 364.0
+        }
+      },
+      "retrained_area_pixels": {
+        "count": 8720,
+        "mean": 80.82511467889908,
+        "median": 57.0,
+        "quantiles": {
+          "0": 1.0,
+          "5": 28.0,
+          "25": 49.0,
+          "50": 57.0,
+          "75": 87.0,
+          "95": 180.0,
+          "100": 1061.0
+        }
+      },
+      "retrained_minus_reference_area_pixels": {
+        "count": 8720,
+        "mean": 51.127064220183485,
+        "median": 33.0,
+        "quantiles": {
+          "0": -27.0,
+          "5": 12.0,
+          "25": 25.0,
+          "50": 33.0,
+          "75": 55.0,
+          "95": 129.0,
+          "100": 879.0
+        }
+      },
+      "retrained_to_reference_area_ratio": {
+        "count": 8720,
+        "mean": 4.3482595339778145,
+        "median": 2.260869565217391,
+        "quantiles": {
+          "0": 0.058823529411764705,
+          "5": 1.5517241379310345,
+          "25": 1.9333333333333333,
+          "50": 2.260869565217391,
+          "75": 3.111111111111111,
+          "95": 11.628749999999945,
+          "100": 148.0
+        }
+      },
+      "retrained_area_direction": {
+        "larger": {
+          "count": 8538,
+          "fraction": 0.9791284403669724
+        },
+        "equal": {
+          "count": 17,
+          "fraction": 0.0019495412844036698
+        },
+        "smaller": {
+          "count": 165,
+          "fraction": 0.018922018348623854
+        }
+      },
+      "unique_associated_reference_components": 10435,
+      "unique_associated_retrained_components": 10258,
+      "status": "complete",
+      "gt_keys_and_areas_identical": true,
+      "per_clip": [
+        {
+          "clip": "DJI_0049_2",
+          "total_targets": 602,
+          "reference_hit_targets": 214,
+          "retrained_hit_targets": 402,
+          "paired_targets": 210,
+          "reference_only_hits": 4,
+          "retrained_only_hits": 192,
+          "both_missed": 196,
+          "paired_frames": 87,
+          "reference_area_pixels": {
+            "count": 210,
+            "mean": 18.904761904761905,
+            "median": 21.5,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 15.25,
+              "50": 21.5,
+              "75": 24.0,
+              "95": 28.0,
+              "100": 36.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 210,
+            "mean": 35.06190476190476,
+            "median": 36.0,
+            "quantiles": {
+              "0": 2.0,
+              "5": 9.0,
+              "25": 26.0,
+              "50": 36.0,
+              "75": 45.0,
+              "95": 57.0,
+              "100": 71.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 210,
+            "mean": 16.15714285714286,
+            "median": 15.0,
+            "quantiles": {
+              "0": -19.0,
+              "5": -10.0,
+              "25": 9.0,
+              "50": 15.0,
+              "75": 22.0,
+              "95": 50.0,
+              "100": 64.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 210,
+            "mean": 4.23344509675362,
+            "median": 1.755,
+            "quantiles": {
+              "0": 0.09523809523809523,
+              "5": 0.4509316770186335,
+              "25": 1.4097222222222223,
+              "50": 1.755,
+              "75": 2.1805555555555554,
+              "95": 18.583333333333353,
+              "100": 57.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 180,
+              "fraction": 0.8571428571428571
+            },
+            "equal": {
+              "count": 1,
+              "fraction": 0.004761904761904762
+            },
+            "smaller": {
+              "count": 29,
+              "fraction": 0.1380952380952381
+            }
+          },
+          "unique_associated_reference_components": 225,
+          "unique_associated_retrained_components": 244
+        },
+        {
+          "clip": "DJI_0109_1",
+          "total_targets": 90,
+          "reference_hit_targets": 90,
+          "retrained_hit_targets": 90,
+          "paired_targets": 90,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 0,
+          "both_missed": 0,
+          "paired_frames": 90,
+          "reference_area_pixels": {
+            "count": 90,
+            "mean": 27.033333333333335,
+            "median": 27.0,
+            "quantiles": {
+              "0": 22.0,
+              "5": 23.0,
+              "25": 25.0,
+              "50": 27.0,
+              "75": 28.0,
+              "95": 31.0,
+              "100": 37.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 90,
+            "mean": 57.644444444444446,
+            "median": 58.0,
+            "quantiles": {
+              "0": 52.0,
+              "5": 53.0,
+              "25": 55.0,
+              "50": 58.0,
+              "75": 60.0,
+              "95": 63.0,
+              "100": 65.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 90,
+            "mean": 30.61111111111111,
+            "median": 30.0,
+            "quantiles": {
+              "0": 24.0,
+              "5": 25.45,
+              "25": 28.0,
+              "50": 30.0,
+              "75": 33.0,
+              "95": 36.0,
+              "100": 38.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 90,
+            "mean": 2.1465975425664325,
+            "median": 2.12,
+            "quantiles": {
+              "0": 1.7567567567567568,
+              "5": 1.8497767857142857,
+              "25": 2.0347906403940885,
+              "50": 2.12,
+              "75": 2.2667378917378915,
+              "95": 2.4706521739130434,
+              "100": 2.6363636363636362
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 90,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 90,
+          "unique_associated_retrained_components": 91
+        },
+        {
+          "clip": "DJI_0119_2",
+          "total_targets": 360,
+          "reference_hit_targets": 304,
+          "retrained_hit_targets": 279,
+          "paired_targets": 258,
+          "reference_only_hits": 46,
+          "retrained_only_hits": 21,
+          "both_missed": 35,
+          "paired_frames": 173,
+          "reference_area_pixels": {
+            "count": 258,
+            "mean": 22.197674418604652,
+            "median": 18.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 10.0,
+              "50": 18.0,
+              "75": 35.0,
+              "95": 45.150000000000006,
+              "100": 55.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 258,
+            "mean": 48.0,
+            "median": 50.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 1.0,
+              "25": 7.25,
+              "50": 50.0,
+              "75": 83.0,
+              "95": 108.30000000000001,
+              "100": 120.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 258,
+            "mean": 25.802325581395348,
+            "median": 33.5,
+            "quantiles": {
+              "0": -15.0,
+              "5": -10.0,
+              "25": 0.0,
+              "50": 33.5,
+              "75": 45.0,
+              "95": 67.15,
+              "100": 111.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 258,
+            "mean": 2.174200753326537,
+            "median": 2.2025641025641027,
+            "quantiles": {
+              "0": 0.0625,
+              "5": 0.23076923076923078,
+              "25": 1.0,
+              "50": 2.2025641025641027,
+              "75": 2.5363675958188154,
+              "95": 4.5,
+              "100": 19.5
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 189,
+              "fraction": 0.7325581395348837
+            },
+            "equal": {
+              "count": 10,
+              "fraction": 0.03875968992248062
+            },
+            "smaller": {
+              "count": 59,
+              "fraction": 0.22868217054263565
+            }
+          },
+          "unique_associated_reference_components": 277,
+          "unique_associated_retrained_components": 354
+        },
+        {
+          "clip": "DJI_0129_2",
+          "total_targets": 590,
+          "reference_hit_targets": 590,
+          "retrained_hit_targets": 590,
+          "paired_targets": 590,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 0,
+          "both_missed": 0,
+          "paired_frames": 590,
+          "reference_area_pixels": {
+            "count": 590,
+            "mean": 25.09491525423729,
+            "median": 24.5,
+            "quantiles": {
+              "0": 5.0,
+              "5": 16.0,
+              "25": 22.0,
+              "50": 24.5,
+              "75": 28.0,
+              "95": 35.0,
+              "100": 58.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 590,
+            "mean": 54.52881355932203,
+            "median": 52.0,
+            "quantiles": {
+              "0": 21.0,
+              "5": 39.0,
+              "25": 49.0,
+              "50": 52.0,
+              "75": 55.0,
+              "95": 102.09999999999991,
+              "100": 132.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 590,
+            "mean": 29.433898305084746,
+            "median": 28.0,
+            "quantiles": {
+              "0": -3.0,
+              "5": 18.0,
+              "25": 24.0,
+              "50": 28.0,
+              "75": 31.0,
+              "95": 62.19999999999982,
+              "100": 99.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 590,
+            "mean": 2.243167839479513,
+            "median": 2.163333333333333,
+            "quantiles": {
+              "0": 0.875,
+              "5": 1.6206896551724137,
+              "25": 1.9259259259259258,
+              "50": 2.163333333333333,
+              "75": 2.391304347826087,
+              "95": 3.0157142857142842,
+              "100": 20.8
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 588,
+              "fraction": 0.9966101694915255
+            },
+            "equal": {
+              "count": 1,
+              "fraction": 0.001694915254237288
+            },
+            "smaller": {
+              "count": 1,
+              "fraction": 0.001694915254237288
+            }
+          },
+          "unique_associated_reference_components": 609,
+          "unique_associated_retrained_components": 594
+        },
+        {
+          "clip": "DJI_0155_2",
+          "total_targets": 410,
+          "reference_hit_targets": 337,
+          "retrained_hit_targets": 389,
+          "paired_targets": 337,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 52,
+          "both_missed": 21,
+          "paired_frames": 337,
+          "reference_area_pixels": {
+            "count": 337,
+            "mean": 22.52818991097923,
+            "median": 25,
+            "quantiles": {
+              "0": 1.0,
+              "5": 5.0,
+              "25": 21.0,
+              "50": 25.0,
+              "75": 27.0,
+              "95": 31.0,
+              "100": 34.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 337,
+            "mean": 49.80118694362018,
+            "median": 51,
+            "quantiles": {
+              "0": 3.0,
+              "5": 35.0,
+              "25": 47.0,
+              "50": 51.0,
+              "75": 55.0,
+              "95": 62.19999999999999,
+              "100": 76.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 337,
+            "mean": 27.272997032640948,
+            "median": 27,
+            "quantiles": {
+              "0": -11.0,
+              "5": 15.0,
+              "25": 23.0,
+              "50": 27.0,
+              "75": 31.0,
+              "95": 41.0,
+              "100": 63.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 337,
+            "mean": 3.427856513476681,
+            "median": 2.074074074074074,
+            "quantiles": {
+              "0": 0.21428571428571427,
+              "5": 1.6177638453500522,
+              "25": 1.88,
+              "50": 2.074074074074074,
+              "75": 2.5185185185185186,
+              "95": 6.859999999999987,
+              "100": 56.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 336,
+              "fraction": 0.9970326409495549
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 1,
+              "fraction": 0.002967359050445104
+            }
+          },
+          "unique_associated_reference_components": 338,
+          "unique_associated_retrained_components": 349
+        },
+        {
+          "clip": "DJI_0159_2",
+          "total_targets": 250,
+          "reference_hit_targets": 230,
+          "retrained_hit_targets": 250,
+          "paired_targets": 230,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 20,
+          "both_missed": 0,
+          "paired_frames": 230,
+          "reference_area_pixels": {
+            "count": 230,
+            "mean": 21.034782608695654,
+            "median": 23.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 6.449999999999999,
+              "25": 18.0,
+              "50": 23.0,
+              "75": 26.0,
+              "95": 29.0,
+              "100": 37.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 230,
+            "mean": 46.44347826086957,
+            "median": 47.0,
+            "quantiles": {
+              "0": 23.0,
+              "5": 33.45,
+              "25": 44.0,
+              "50": 47.0,
+              "75": 51.0,
+              "95": 56.0,
+              "100": 62.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 230,
+            "mean": 25.408695652173915,
+            "median": 25.0,
+            "quantiles": {
+              "0": 2.0,
+              "5": 12.0,
+              "25": 21.0,
+              "50": 25.0,
+              "75": 29.0,
+              "95": 40.55000000000001,
+              "100": 50.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 230,
+            "mean": 3.187674569096032,
+            "median": 2.0454545454545454,
+            "quantiles": {
+              "0": 1.0952380952380953,
+              "5": 1.5461925287356322,
+              "25": 1.8111263736263736,
+              "50": 2.0454545454545454,
+              "75": 2.5286377708978325,
+              "95": 6.2321428571428585,
+              "100": 51.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 230,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 233,
+          "unique_associated_retrained_components": 232
+        },
+        {
+          "clip": "DJI_0173_2",
+          "total_targets": 450,
+          "reference_hit_targets": 407,
+          "retrained_hit_targets": 440,
+          "paired_targets": 403,
+          "reference_only_hits": 4,
+          "retrained_only_hits": 37,
+          "both_missed": 6,
+          "paired_frames": 403,
+          "reference_area_pixels": {
+            "count": 403,
+            "mean": 16.387096774193548,
+            "median": 17,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 10.0,
+              "50": 17.0,
+              "75": 23.0,
+              "95": 27.0,
+              "100": 32.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 403,
+            "mean": 43.45161290322581,
+            "median": 46,
+            "quantiles": {
+              "0": 1.0,
+              "5": 20.0,
+              "25": 39.0,
+              "50": 46.0,
+              "75": 51.0,
+              "95": 58.0,
+              "100": 73.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 403,
+            "mean": 27.06451612903226,
+            "median": 28,
+            "quantiles": {
+              "0": -12.0,
+              "5": 6.0,
+              "25": 21.5,
+              "50": 28.0,
+              "75": 34.0,
+              "95": 41.0,
+              "100": 54.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 403,
+            "mean": 4.85755553554429,
+            "median": 2.45,
+            "quantiles": {
+              "0": 0.14285714285714285,
+              "5": 1.4625,
+              "25": 2.0,
+              "50": 2.45,
+              "75": 3.9642857142857144,
+              "95": 19.899999999999977,
+              "100": 48.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 395,
+              "fraction": 0.9801488833746899
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 8,
+              "fraction": 0.019851116625310174
+            }
+          },
+          "unique_associated_reference_components": 445,
+          "unique_associated_retrained_components": 427
+        },
+        {
+          "clip": "DJI_0221_2",
+          "total_targets": 697,
+          "reference_hit_targets": 605,
+          "retrained_hit_targets": 643,
+          "paired_targets": 604,
+          "reference_only_hits": 1,
+          "retrained_only_hits": 39,
+          "both_missed": 53,
+          "paired_frames": 546,
+          "reference_area_pixels": {
+            "count": 604,
+            "mean": 22.466887417218544,
+            "median": 24.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 6.149999999999999,
+              "25": 19.0,
+              "50": 24.0,
+              "75": 27.0,
+              "95": 32.0,
+              "100": 44.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 604,
+            "mean": 54.97185430463576,
+            "median": 56.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 34.0,
+              "25": 51.0,
+              "50": 56.0,
+              "75": 62.0,
+              "95": 70.0,
+              "100": 98.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 604,
+            "mean": 32.50496688741722,
+            "median": 33.0,
+            "quantiles": {
+              "0": -9.0,
+              "5": 15.0,
+              "25": 26.0,
+              "50": 33.0,
+              "75": 39.0,
+              "95": 50.0,
+              "100": 66.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 604,
+            "mean": 3.645629365883269,
+            "median": 2.3846153846153846,
+            "quantiles": {
+              "0": 0.3333333333333333,
+              "5": 1.6343333333333332,
+              "25": 2.037037037037037,
+              "50": 2.3846153846153846,
+              "75": 2.8,
+              "95": 6.606250000000003,
+              "100": 61.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 600,
+              "fraction": 0.9933774834437086
+            },
+            "equal": {
+              "count": 1,
+              "fraction": 0.0016556291390728477
+            },
+            "smaller": {
+              "count": 3,
+              "fraction": 0.004966887417218543
+            }
+          },
+          "unique_associated_reference_components": 623,
+          "unique_associated_retrained_components": 634
+        },
+        {
+          "clip": "DJI_0237_2",
+          "total_targets": 2943,
+          "reference_hit_targets": 1934,
+          "retrained_hit_targets": 2523,
+          "paired_targets": 1924,
+          "reference_only_hits": 10,
+          "retrained_only_hits": 599,
+          "both_missed": 410,
+          "paired_frames": 404,
+          "reference_area_pixels": {
+            "count": 1924,
+            "mean": 23.387214137214137,
+            "median": 25.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 13.0,
+              "50": 25.0,
+              "75": 32.0,
+              "95": 42.0,
+              "100": 95.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 1924,
+            "mean": 87.05509355509355,
+            "median": 87.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 29.0,
+              "25": 58.0,
+              "50": 87.0,
+              "75": 100.0,
+              "95": 164.0,
+              "100": 197.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 1924,
+            "mean": 63.66787941787942,
+            "median": 56.0,
+            "quantiles": {
+              "0": -12.0,
+              "5": 16.0,
+              "25": 40.0,
+              "50": 56.0,
+              "75": 84.0,
+              "95": 134.0,
+              "100": 188.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 1924,
+            "mean": 8.29387194953522,
+            "median": 3.1176470588235294,
+            "quantiles": {
+              "0": 0.3333333333333333,
+              "5": 1.8846153846153846,
+              "25": 2.4358974358974357,
+              "50": 3.1176470588235294,
+              "75": 5.783385093167702,
+              "95": 33.0,
+              "100": 148.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 1906,
+              "fraction": 0.9906444906444907
+            },
+            "equal": {
+              "count": 2,
+              "fraction": 0.0010395010395010396
+            },
+            "smaller": {
+              "count": 16,
+              "fraction": 0.008316008316008316
+            }
+          },
+          "unique_associated_reference_components": 2360,
+          "unique_associated_retrained_components": 2718
+        },
+        {
+          "clip": "DJI_0255_1",
+          "total_targets": 600,
+          "reference_hit_targets": 510,
+          "retrained_hit_targets": 561,
+          "paired_targets": 510,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 51,
+          "both_missed": 39,
+          "paired_frames": 510,
+          "reference_area_pixels": {
+            "count": 510,
+            "mean": 25.352941176470587,
+            "median": 25.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 13.0,
+              "25": 21.0,
+              "50": 25.0,
+              "75": 31.0,
+              "95": 35.0,
+              "100": 43.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 510,
+            "mean": 56.94313725490196,
+            "median": 55.0,
+            "quantiles": {
+              "0": 24.0,
+              "5": 45.0,
+              "25": 51.0,
+              "50": 55.0,
+              "75": 64.0,
+              "95": 71.0,
+              "100": 82.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 510,
+            "mean": 31.590196078431372,
+            "median": 30.0,
+            "quantiles": {
+              "0": 18.0,
+              "5": 22.0,
+              "25": 27.0,
+              "50": 30.0,
+              "75": 35.0,
+              "95": 45.55000000000001,
+              "100": 69.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 510,
+            "mean": 2.6919997814068655,
+            "median": 2.125,
+            "quantiles": {
+              "0": 1.6333333333333333,
+              "5": 1.7941176470588236,
+              "25": 1.95875,
+              "50": 2.125,
+              "75": 2.4618506493506493,
+              "95": 4.122115384615386,
+              "100": 61.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 510,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 516,
+          "unique_associated_retrained_components": 511
+        },
+        {
+          "clip": "DJI_0257_2",
+          "total_targets": 1126,
+          "reference_hit_targets": 885,
+          "retrained_hit_targets": 1084,
+          "paired_targets": 881,
+          "reference_only_hits": 4,
+          "retrained_only_hits": 203,
+          "both_missed": 38,
+          "paired_frames": 577,
+          "reference_area_pixels": {
+            "count": 881,
+            "mean": 43.114642451759366,
+            "median": 30,
+            "quantiles": {
+              "0": 1.0,
+              "5": 6.0,
+              "25": 20.0,
+              "50": 30.0,
+              "75": 67.0,
+              "95": 106.0,
+              "100": 155.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 881,
+            "mean": 121.98864926220205,
+            "median": 132,
+            "quantiles": {
+              "0": 1.0,
+              "5": 43.0,
+              "25": 55.0,
+              "50": 132.0,
+              "75": 174.0,
+              "95": 231.0,
+              "100": 269.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 881,
+            "mean": 78.87400681044268,
+            "median": 87,
+            "quantiles": {
+              "0": -12.0,
+              "5": 21.0,
+              "25": 33.0,
+              "50": 87.0,
+              "75": 111.0,
+              "95": 157.0,
+              "100": 223.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 881,
+            "mean": 5.059036116217271,
+            "median": 2.64,
+            "quantiles": {
+              "0": 0.1,
+              "5": 1.7037037037037037,
+              "25": 2.103448275862069,
+              "50": 2.64,
+              "75": 4.228571428571429,
+              "95": 14.714285714285714,
+              "100": 120.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 873,
+              "fraction": 0.9909194097616345
+            },
+            "equal": {
+              "count": 1,
+              "fraction": 0.0011350737797956867
+            },
+            "smaller": {
+              "count": 7,
+              "fraction": 0.007945516458569807
+            }
+          },
+          "unique_associated_reference_components": 1498,
+          "unique_associated_retrained_components": 1188
+        },
+        {
+          "clip": "DJI_0277_2",
+          "total_targets": 985,
+          "reference_hit_targets": 974,
+          "retrained_hit_targets": 982,
+          "paired_targets": 974,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 8,
+          "both_missed": 3,
+          "paired_frames": 328,
+          "reference_area_pixels": {
+            "count": 974,
+            "mean": 31.465092402464066,
+            "median": 31.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 25.0,
+              "25": 29.0,
+              "50": 31.0,
+              "75": 34.0,
+              "95": 41.0,
+              "100": 50.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 974,
+            "mean": 62.284394250513344,
+            "median": 61.0,
+            "quantiles": {
+              "0": 6.0,
+              "5": 47.0,
+              "25": 53.25,
+              "50": 61.0,
+              "75": 69.0,
+              "95": 83.0,
+              "100": 111.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 974,
+            "mean": 30.81930184804928,
+            "median": 30.0,
+            "quantiles": {
+              "0": -2.0,
+              "5": 19.0,
+              "25": 25.0,
+              "50": 30.0,
+              "75": 36.0,
+              "95": 44.0,
+              "100": 79.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 974,
+            "mean": 2.1726271749564208,
+            "median": 1.9655172413793103,
+            "quantiles": {
+              "0": 0.75,
+              "5": 1.625,
+              "25": 1.8333333333333333,
+              "50": 1.9655172413793103,
+              "75": 2.103448275862069,
+              "95": 2.318818181818182,
+              "100": 68.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 973,
+              "fraction": 0.9989733059548255
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 1,
+              "fraction": 0.001026694045174538
+            }
+          },
+          "unique_associated_reference_components": 985,
+          "unique_associated_retrained_components": 981
+        },
+        {
+          "clip": "DJI_0303_2",
+          "total_targets": 986,
+          "reference_hit_targets": 895,
+          "retrained_hit_targets": 962,
+          "paired_targets": 895,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 67,
+          "both_missed": 24,
+          "paired_frames": 476,
+          "reference_area_pixels": {
+            "count": 895,
+            "mean": 54.395530726256986,
+            "median": 31,
+            "quantiles": {
+              "0": 1.0,
+              "5": 16.0,
+              "25": 23.0,
+              "50": 31.0,
+              "75": 64.0,
+              "95": 170.89999999999986,
+              "100": 364.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 895,
+            "mean": 172.29385474860337,
+            "median": 103,
+            "quantiles": {
+              "0": 1.0,
+              "5": 41.0,
+              "25": 49.0,
+              "50": 103.0,
+              "75": 152.0,
+              "95": 668.3999999999996,
+              "100": 1061.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 895,
+            "mean": 117.89832402234637,
+            "median": 61,
+            "quantiles": {
+              "0": -27.0,
+              "5": 16.700000000000003,
+              "25": 26.0,
+              "50": 61.0,
+              "75": 111.0,
+              "95": 489.1999999999998,
+              "100": 879.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 895,
+            "mean": 3.3545272613448796,
+            "median": 2.4516129032258065,
+            "quantiles": {
+              "0": 0.2,
+              "5": 1.6146401985111662,
+              "25": 1.9114974937343359,
+              "50": 2.4516129032258065,
+              "75": 3.984375,
+              "95": 7.2340909090909085,
+              "100": 53.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 883,
+              "fraction": 0.9865921787709497
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 12,
+              "fraction": 0.013407821229050279
+            }
+          },
+          "unique_associated_reference_components": 1345,
+          "unique_associated_retrained_components": 1030
+        },
+        {
+          "clip": "DJI_0307_2",
+          "total_targets": 161,
+          "reference_hit_targets": 144,
+          "retrained_hit_targets": 150,
+          "paired_targets": 144,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 6,
+          "both_missed": 11,
+          "paired_frames": 144,
+          "reference_area_pixels": {
+            "count": 144,
+            "mean": 24.520833333333332,
+            "median": 26.0,
+            "quantiles": {
+              "0": 3.0,
+              "5": 12.0,
+              "25": 24.0,
+              "50": 26.0,
+              "75": 27.0,
+              "95": 29.849999999999994,
+              "100": 33.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 144,
+            "mean": 55.31944444444444,
+            "median": 56.0,
+            "quantiles": {
+              "0": 19.0,
+              "5": 40.15,
+              "25": 52.0,
+              "50": 56.0,
+              "75": 61.0,
+              "95": 65.0,
+              "100": 69.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 144,
+            "mean": 30.79861111111111,
+            "median": 30.0,
+            "quantiles": {
+              "0": 15.0,
+              "5": 22.15,
+              "25": 27.0,
+              "50": 30.0,
+              "75": 35.0,
+              "95": 39.0,
+              "100": 43.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 144,
+            "mean": 2.4275997600901693,
+            "median": 2.232051282051282,
+            "quantiles": {
+              "0": 1.7333333333333334,
+              "5": 1.8547192353643966,
+              "25": 2.059615384615385,
+              "50": 2.232051282051282,
+              "75": 2.4022727272727273,
+              "95": 3.435164835164834,
+              "100": 9.333333333333334
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 144,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 145,
+          "unique_associated_retrained_components": 145
+        },
+        {
+          "clip": "DJI_0309_4",
+          "total_targets": 1050,
+          "reference_hit_targets": 684,
+          "retrained_hit_targets": 729,
+          "paired_targets": 670,
+          "reference_only_hits": 14,
+          "retrained_only_hits": 59,
+          "both_missed": 307,
+          "paired_frames": 484,
+          "reference_area_pixels": {
+            "count": 670,
+            "mean": 30.82686567164179,
+            "median": 25.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 9.450000000000003,
+              "25": 21.0,
+              "50": 25.0,
+              "75": 29.0,
+              "95": 109.64999999999986,
+              "100": 169.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 670,
+            "mean": 63.68358208955224,
+            "median": 49.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 14.450000000000003,
+              "25": 45.0,
+              "50": 49.0,
+              "75": 53.0,
+              "95": 228.54999999999995,
+              "100": 308.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 670,
+            "mean": 32.85671641791045,
+            "median": 24.0,
+            "quantiles": {
+              "0": -22.0,
+              "5": 4.0,
+              "25": 20.0,
+              "50": 24.0,
+              "75": 29.0,
+              "95": 117.54999999999995,
+              "100": 184.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 670,
+            "mean": 2.4581041539696753,
+            "median": 1.9259259259259258,
+            "quantiles": {
+              "0": 0.058823529411764705,
+              "5": 1.2422222222222223,
+              "25": 1.75,
+              "50": 1.9259259259259258,
+              "75": 2.2234660033167497,
+              "95": 3.706111111111111,
+              "100": 57.5
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 641,
+              "fraction": 0.9567164179104478
+            },
+            "equal": {
+              "count": 1,
+              "fraction": 0.0014925373134328358
+            },
+            "smaller": {
+              "count": 28,
+              "fraction": 0.041791044776119404
+            }
+          },
+          "unique_associated_reference_components": 746,
+          "unique_associated_retrained_components": 760
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "retrained": {
+        "job_id": "deeppro_plus_c1c818212eb0c1d8",
+        "variant": "native",
+        "path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/diagnostics/breakdown/deeppro_plus_c1c818212eb0c1d8.json",
+        "status": "complete",
+        "checkpoint_sha256": "c1c818212eb0c1d8d8774e8fd1e6bac75db3e485ef2c5c7c34a4d0860afc87af",
+        "checkpoint_status": "interim",
+        "breakdown_status": "complete",
+        "model": "DeepPro-Plus",
+        "breakdown_sha256": "c2ca43eac7c29b412ac2ac54a3ca969364d131bc9104d45591447c4f596a1fa1",
+        "frames": 5976,
+        "pixels": 1958215680,
+        "targets": 11300,
+        "reference_comparison": {
+          "path": "/evaluation/results/deeppro_plus_c1c818212eb0c1d8/native/metrics.json",
+          "status": "matched",
+          "count_differences": [],
+          "checked_thresholds": 27,
+          "reference_metrics_sha256": "05463f7afd3cf913f302b0cf06066fcade4e6d7a5a38bd5cdb66c40acb804389",
+          "auc_reference": 0.9864975993384235,
+          "auc_actual": 0.9864975993384235,
+          "iou_reference": 0.23884431332608136,
+          "iou_actual": 0.23884431332608136,
+          "note": "Integer counts compared exactly. Reference IoU may have been rounded; both values retained."
+        }
+      },
+      "total_targets": 11300,
+      "reference_hit_targets": 8803,
+      "retrained_hit_targets": 10209,
+      "paired_targets": 8749,
+      "reference_only_hits": 54,
+      "retrained_only_hits": 1460,
+      "both_missed": 1037,
+      "paired_frames": 5374,
+      "reference_area_pixels": {
+        "count": 8749,
+        "mean": 29.61435592639159,
+        "median": 26,
+        "quantiles": {
+          "0": 1.0,
+          "5": 5.0,
+          "25": 20.0,
+          "50": 26.0,
+          "75": 32.0,
+          "95": 70.0,
+          "100": 364.0
+        }
+      },
+      "retrained_area_pixels": {
+        "count": 8749,
+        "mean": 80.05886387015659,
+        "median": 58,
+        "quantiles": {
+          "0": 1.0,
+          "5": 32.0,
+          "25": 49.0,
+          "50": 58.0,
+          "75": 88.0,
+          "95": 174.0,
+          "100": 1062.0
+        }
+      },
+      "retrained_minus_reference_area_pixels": {
+        "count": 8749,
+        "mean": 50.444507943765004,
+        "median": 33,
+        "quantiles": {
+          "0": -32.0,
+          "5": 15.0,
+          "25": 25.0,
+          "50": 33.0,
+          "75": 55.0,
+          "95": 122.0,
+          "100": 892.0
+        }
+      },
+      "retrained_to_reference_area_ratio": {
+        "count": 8749,
+        "mean": 4.461607534745053,
+        "median": 2.292929292929293,
+        "quantiles": {
+          "0": 0.043478260869565216,
+          "5": 1.5862068965517242,
+          "25": 1.9642857142857142,
+          "50": 2.292929292929293,
+          "75": 3.185185185185185,
+          "95": 13.0,
+          "100": 174.0
+        }
+      },
+      "retrained_area_direction": {
+        "larger": {
+          "count": 8639,
+          "fraction": 0.9874271345296606
+        },
+        "equal": {
+          "count": 14,
+          "fraction": 0.0016001828780432049
+        },
+        "smaller": {
+          "count": 96,
+          "fraction": 0.010972682592296262
+        }
+      },
+      "unique_associated_reference_components": 10471,
+      "unique_associated_retrained_components": 10121,
+      "status": "complete",
+      "gt_keys_and_areas_identical": true,
+      "per_clip": [
+        {
+          "clip": "DJI_0049_2",
+          "total_targets": 602,
+          "reference_hit_targets": 214,
+          "retrained_hit_targets": 410,
+          "paired_targets": 212,
+          "reference_only_hits": 2,
+          "retrained_only_hits": 198,
+          "both_missed": 190,
+          "paired_frames": 87,
+          "reference_area_pixels": {
+            "count": 212,
+            "mean": 18.81132075471698,
+            "median": 21.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 15.0,
+              "50": 21.0,
+              "75": 24.0,
+              "95": 28.0,
+              "100": 36.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 212,
+            "mean": 42.509433962264154,
+            "median": 42.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 20.0,
+              "25": 33.0,
+              "50": 42.0,
+              "75": 53.25,
+              "95": 66.0,
+              "100": 77.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 212,
+            "mean": 23.69811320754717,
+            "median": 21.0,
+            "quantiles": {
+              "0": -12.0,
+              "5": 4.0,
+              "25": 13.0,
+              "50": 21.0,
+              "75": 32.0,
+              "95": 48.44999999999999,
+              "100": 70.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 212,
+            "mean": 4.771633879429371,
+            "median": 2.1143790849673203,
+            "quantiles": {
+              "0": 0.21428571428571427,
+              "5": 1.1732383808095952,
+              "25": 1.6590909090909092,
+              "50": 2.1143790849673203,
+              "75": 2.645186335403727,
+              "95": 19.799999999999955,
+              "100": 71.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 205,
+              "fraction": 0.9669811320754716
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 7,
+              "fraction": 0.0330188679245283
+            }
+          },
+          "unique_associated_reference_components": 227,
+          "unique_associated_retrained_components": 223
+        },
+        {
+          "clip": "DJI_0109_1",
+          "total_targets": 90,
+          "reference_hit_targets": 90,
+          "retrained_hit_targets": 90,
+          "paired_targets": 90,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 0,
+          "both_missed": 0,
+          "paired_frames": 90,
+          "reference_area_pixels": {
+            "count": 90,
+            "mean": 27.033333333333335,
+            "median": 27.0,
+            "quantiles": {
+              "0": 22.0,
+              "5": 23.0,
+              "25": 25.0,
+              "50": 27.0,
+              "75": 28.0,
+              "95": 31.0,
+              "100": 37.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 90,
+            "mean": 57.12222222222222,
+            "median": 57.0,
+            "quantiles": {
+              "0": 51.0,
+              "5": 52.0,
+              "25": 55.0,
+              "50": 57.0,
+              "75": 59.0,
+              "95": 62.0,
+              "100": 69.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 90,
+            "mean": 30.08888888888889,
+            "median": 30.0,
+            "quantiles": {
+              "0": 23.0,
+              "5": 25.45,
+              "25": 28.0,
+              "50": 30.0,
+              "75": 32.0,
+              "95": 35.0,
+              "100": 38.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 90,
+            "mean": 2.127113692161757,
+            "median": 2.1132478632478633,
+            "quantiles": {
+              "0": 1.7666666666666666,
+              "5": 1.8656756756756758,
+              "25": 2.0083333333333333,
+              "50": 2.1132478632478633,
+              "75": 2.230769230769231,
+              "95": 2.5,
+              "100": 2.6363636363636362
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 90,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 90,
+          "unique_associated_retrained_components": 90
+        },
+        {
+          "clip": "DJI_0119_2",
+          "total_targets": 360,
+          "reference_hit_targets": 304,
+          "retrained_hit_targets": 317,
+          "paired_targets": 292,
+          "reference_only_hits": 12,
+          "retrained_only_hits": 25,
+          "both_missed": 31,
+          "paired_frames": 178,
+          "reference_area_pixels": {
+            "count": 292,
+            "mean": 20.315068493150687,
+            "median": 15.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 8.0,
+              "50": 15.0,
+              "75": 33.0,
+              "95": 45.0,
+              "100": 55.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 292,
+            "mean": 54.22945205479452,
+            "median": 51.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 17.0,
+              "25": 33.0,
+              "50": 51.0,
+              "75": 75.0,
+              "95": 98.44999999999999,
+              "100": 120.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 292,
+            "mean": 33.91438356164384,
+            "median": 35.0,
+            "quantiles": {
+              "0": -8.0,
+              "5": 8.0,
+              "25": 25.0,
+              "50": 35.0,
+              "75": 42.0,
+              "95": 56.0,
+              "100": 114.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 292,
+            "mean": 5.0363607500890355,
+            "median": 2.6666666666666665,
+            "quantiles": {
+              "0": 0.2727272727272727,
+              "5": 1.783961038961039,
+              "25": 2.1465311004784686,
+              "50": 2.6666666666666665,
+              "75": 4.0227272727272725,
+              "95": 14.674999999999983,
+              "100": 55.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 288,
+              "fraction": 0.9863013698630136
+            },
+            "equal": {
+              "count": 2,
+              "fraction": 0.00684931506849315
+            },
+            "smaller": {
+              "count": 2,
+              "fraction": 0.00684931506849315
+            }
+          },
+          "unique_associated_reference_components": 320,
+          "unique_associated_retrained_components": 329
+        },
+        {
+          "clip": "DJI_0129_2",
+          "total_targets": 590,
+          "reference_hit_targets": 590,
+          "retrained_hit_targets": 590,
+          "paired_targets": 590,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 0,
+          "both_missed": 0,
+          "paired_frames": 590,
+          "reference_area_pixels": {
+            "count": 590,
+            "mean": 25.09491525423729,
+            "median": 24.5,
+            "quantiles": {
+              "0": 5.0,
+              "5": 16.0,
+              "25": 22.0,
+              "50": 24.5,
+              "75": 28.0,
+              "95": 35.0,
+              "100": 58.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 590,
+            "mean": 52.53559322033898,
+            "median": 51.0,
+            "quantiles": {
+              "0": 18.0,
+              "5": 36.0,
+              "25": 48.0,
+              "50": 51.0,
+              "75": 54.0,
+              "95": 84.09999999999991,
+              "100": 123.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 590,
+            "mean": 27.440677966101696,
+            "median": 26.0,
+            "quantiles": {
+              "0": -6.0,
+              "5": 17.0,
+              "25": 22.0,
+              "50": 26.0,
+              "75": 29.0,
+              "95": 45.19999999999982,
+              "100": 101.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 590,
+            "mean": 2.157220405906603,
+            "median": 2.117692307692308,
+            "quantiles": {
+              "0": 0.75,
+              "5": 1.5757575757575757,
+              "25": 1.8721739130434782,
+              "50": 2.117692307692308,
+              "75": 2.301177536231884,
+              "95": 2.7652777777777766,
+              "100": 21.2
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 587,
+              "fraction": 0.9949152542372881
+            },
+            "equal": {
+              "count": 1,
+              "fraction": 0.001694915254237288
+            },
+            "smaller": {
+              "count": 2,
+              "fraction": 0.003389830508474576
+            }
+          },
+          "unique_associated_reference_components": 609,
+          "unique_associated_retrained_components": 596
+        },
+        {
+          "clip": "DJI_0155_2",
+          "total_targets": 410,
+          "reference_hit_targets": 337,
+          "retrained_hit_targets": 389,
+          "paired_targets": 337,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 52,
+          "both_missed": 21,
+          "paired_frames": 337,
+          "reference_area_pixels": {
+            "count": 337,
+            "mean": 22.52818991097923,
+            "median": 25,
+            "quantiles": {
+              "0": 1.0,
+              "5": 5.0,
+              "25": 21.0,
+              "50": 25.0,
+              "75": 27.0,
+              "95": 31.0,
+              "100": 34.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 337,
+            "mean": 49.70623145400594,
+            "median": 51,
+            "quantiles": {
+              "0": 5.0,
+              "5": 33.0,
+              "25": 46.0,
+              "50": 51.0,
+              "75": 56.0,
+              "95": 61.0,
+              "100": 70.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 337,
+            "mean": 27.178041543026705,
+            "median": 27,
+            "quantiles": {
+              "0": -2.0,
+              "5": 16.0,
+              "25": 23.0,
+              "50": 27.0,
+              "75": 31.0,
+              "95": 40.0,
+              "100": 50.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 337,
+            "mean": 3.2898378549421676,
+            "median": 2.0833333333333335,
+            "quantiles": {
+              "0": 0.7142857142857143,
+              "5": 1.6057142857142859,
+              "25": 1.88,
+              "50": 2.0833333333333335,
+              "75": 2.5454545454545454,
+              "95": 6.73333333333333,
+              "100": 51.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 336,
+              "fraction": 0.9970326409495549
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 1,
+              "fraction": 0.002967359050445104
+            }
+          },
+          "unique_associated_reference_components": 338,
+          "unique_associated_retrained_components": 346
+        },
+        {
+          "clip": "DJI_0159_2",
+          "total_targets": 250,
+          "reference_hit_targets": 230,
+          "retrained_hit_targets": 250,
+          "paired_targets": 230,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 20,
+          "both_missed": 0,
+          "paired_frames": 230,
+          "reference_area_pixels": {
+            "count": 230,
+            "mean": 21.034782608695654,
+            "median": 23.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 6.449999999999999,
+              "25": 18.0,
+              "50": 23.0,
+              "75": 26.0,
+              "95": 29.0,
+              "100": 37.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 230,
+            "mean": 49.208695652173915,
+            "median": 49.0,
+            "quantiles": {
+              "0": 31.0,
+              "5": 40.0,
+              "25": 46.0,
+              "50": 49.0,
+              "75": 53.0,
+              "95": 58.0,
+              "100": 78.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 230,
+            "mean": 28.17391304347826,
+            "median": 27.5,
+            "quantiles": {
+              "0": 11.0,
+              "5": 18.45,
+              "25": 24.0,
+              "50": 27.5,
+              "75": 31.0,
+              "95": 40.55000000000001,
+              "100": 50.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 230,
+            "mean": 3.3534248080631976,
+            "median": 2.1952380952380954,
+            "quantiles": {
+              "0": 1.5238095238095237,
+              "5": 1.676460331299041,
+              "25": 1.9550395256916997,
+              "50": 2.1952380952380954,
+              "75": 2.7023809523809526,
+              "95": 6.559523809523813,
+              "100": 51.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 230,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 233,
+          "unique_associated_retrained_components": 232
+        },
+        {
+          "clip": "DJI_0173_2",
+          "total_targets": 450,
+          "reference_hit_targets": 407,
+          "retrained_hit_targets": 423,
+          "paired_targets": 397,
+          "reference_only_hits": 10,
+          "retrained_only_hits": 26,
+          "both_missed": 17,
+          "paired_frames": 397,
+          "reference_area_pixels": {
+            "count": 397,
+            "mean": 16.521410579345087,
+            "median": 18,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 10.0,
+              "50": 18.0,
+              "75": 23.0,
+              "95": 27.0,
+              "100": 32.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 397,
+            "mean": 40.81108312342569,
+            "median": 45,
+            "quantiles": {
+              "0": 1.0,
+              "5": 7.800000000000001,
+              "25": 35.0,
+              "50": 45.0,
+              "75": 50.0,
+              "95": 58.0,
+              "100": 70.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 397,
+            "mean": 24.289672544080606,
+            "median": 26,
+            "quantiles": {
+              "0": -22.0,
+              "5": 0.0,
+              "25": 18.0,
+              "50": 26.0,
+              "75": 33.0,
+              "95": 43.0,
+              "100": 54.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 397,
+            "mean": 4.212978021030297,
+            "median": 2.375,
+            "quantiles": {
+              "0": 0.043478260869565216,
+              "5": 1.0,
+              "25": 1.8928571428571428,
+              "50": 2.375,
+              "75": 3.4615384615384617,
+              "95": 12.949999999999989,
+              "100": 53.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 374,
+              "fraction": 0.9420654911838791
+            },
+            "equal": {
+              "count": 5,
+              "fraction": 0.012594458438287154
+            },
+            "smaller": {
+              "count": 18,
+              "fraction": 0.04534005037783375
+            }
+          },
+          "unique_associated_reference_components": 438,
+          "unique_associated_retrained_components": 449
+        },
+        {
+          "clip": "DJI_0221_2",
+          "total_targets": 697,
+          "reference_hit_targets": 605,
+          "retrained_hit_targets": 650,
+          "paired_targets": 601,
+          "reference_only_hits": 4,
+          "retrained_only_hits": 49,
+          "both_missed": 43,
+          "paired_frames": 545,
+          "reference_area_pixels": {
+            "count": 601,
+            "mean": 22.537437603993343,
+            "median": 24,
+            "quantiles": {
+              "0": 1.0,
+              "5": 7.0,
+              "25": 19.0,
+              "50": 24.0,
+              "75": 27.0,
+              "95": 32.0,
+              "100": 44.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 601,
+            "mean": 54.41597337770383,
+            "median": 56,
+            "quantiles": {
+              "0": 2.0,
+              "5": 24.0,
+              "25": 48.0,
+              "50": 56.0,
+              "75": 63.0,
+              "95": 74.0,
+              "100": 112.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 601,
+            "mean": 31.87853577371048,
+            "median": 33,
+            "quantiles": {
+              "0": -21.0,
+              "5": 10.0,
+              "25": 25.0,
+              "50": 33.0,
+              "75": 39.0,
+              "95": 53.0,
+              "100": 80.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 601,
+            "mean": 3.4658174937253547,
+            "median": 2.375,
+            "quantiles": {
+              "0": 0.08695652173913043,
+              "5": 1.5,
+              "25": 1.967741935483871,
+              "50": 2.375,
+              "75": 2.8518518518518516,
+              "95": 5.9,
+              "100": 68.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 584,
+              "fraction": 0.9717138103161398
+            },
+            "equal": {
+              "count": 2,
+              "fraction": 0.0033277870216306157
+            },
+            "smaller": {
+              "count": 15,
+              "fraction": 0.024958402662229616
+            }
+          },
+          "unique_associated_reference_components": 620,
+          "unique_associated_retrained_components": 634
+        },
+        {
+          "clip": "DJI_0237_2",
+          "total_targets": 2943,
+          "reference_hit_targets": 1934,
+          "retrained_hit_targets": 2626,
+          "paired_targets": 1930,
+          "reference_only_hits": 4,
+          "retrained_only_hits": 696,
+          "both_missed": 313,
+          "paired_frames": 404,
+          "reference_area_pixels": {
+            "count": 1930,
+            "mean": 23.322279792746112,
+            "median": 25.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 2.0,
+              "25": 13.0,
+              "50": 25.0,
+              "75": 32.0,
+              "95": 42.0,
+              "100": 95.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 1930,
+            "mean": 85.50880829015544,
+            "median": 87.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 36.0,
+              "25": 61.0,
+              "50": 87.0,
+              "75": 101.0,
+              "95": 138.0,
+              "100": 213.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 1930,
+            "mean": 62.18652849740933,
+            "median": 56.0,
+            "quantiles": {
+              "0": -4.0,
+              "5": 21.0,
+              "25": 43.0,
+              "50": 56.0,
+              "75": 83.0,
+              "95": 115.0,
+              "100": 181.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 1930,
+            "mean": 8.371036955680719,
+            "median": 3.263157894736842,
+            "quantiles": {
+              "0": 0.6363636363636364,
+              "5": 1.9343010752688172,
+              "25": 2.4722222222222223,
+              "50": 3.263157894736842,
+              "75": 5.542424242424243,
+              "95": 34.13749999999999,
+              "100": 174.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 1925,
+              "fraction": 0.9974093264248705
+            },
+            "equal": {
+              "count": 2,
+              "fraction": 0.0010362694300518134
+            },
+            "smaller": {
+              "count": 3,
+              "fraction": 0.0015544041450777201
+            }
+          },
+          "unique_associated_reference_components": 2365,
+          "unique_associated_retrained_components": 2704
+        },
+        {
+          "clip": "DJI_0255_1",
+          "total_targets": 600,
+          "reference_hit_targets": 510,
+          "retrained_hit_targets": 557,
+          "paired_targets": 510,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 47,
+          "both_missed": 43,
+          "paired_frames": 510,
+          "reference_area_pixels": {
+            "count": 510,
+            "mean": 25.352941176470587,
+            "median": 25.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 13.0,
+              "25": 21.0,
+              "50": 25.0,
+              "75": 31.0,
+              "95": 35.0,
+              "100": 43.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 510,
+            "mean": 59.3,
+            "median": 57.0,
+            "quantiles": {
+              "0": 24.0,
+              "5": 44.0,
+              "25": 51.0,
+              "50": 57.0,
+              "75": 69.0,
+              "95": 77.0,
+              "100": 113.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 510,
+            "mean": 33.94705882352941,
+            "median": 33.0,
+            "quantiles": {
+              "0": 6.0,
+              "5": 23.0,
+              "25": 28.0,
+              "50": 33.0,
+              "75": 39.0,
+              "95": 48.0,
+              "100": 80.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 510,
+            "mean": 2.732470195913437,
+            "median": 2.239047619047619,
+            "quantiles": {
+              "0": 1.3333333333333333,
+              "5": 1.9207900207900208,
+              "25": 2.0714285714285716,
+              "50": 2.239047619047619,
+              "75": 2.5238095238095237,
+              "95": 3.9653846153846164,
+              "100": 60.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 510,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 516,
+          "unique_associated_retrained_components": 512
+        },
+        {
+          "clip": "DJI_0257_2",
+          "total_targets": 1126,
+          "reference_hit_targets": 885,
+          "retrained_hit_targets": 1083,
+          "paired_targets": 880,
+          "reference_only_hits": 5,
+          "retrained_only_hits": 203,
+          "both_missed": 38,
+          "paired_frames": 577,
+          "reference_area_pixels": {
+            "count": 880,
+            "mean": 43.152272727272724,
+            "median": 30.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 6.0,
+              "25": 20.0,
+              "50": 30.0,
+              "75": 67.0,
+              "95": 106.04999999999995,
+              "100": 155.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 880,
+            "mean": 121.55681818181819,
+            "median": 131.0,
+            "quantiles": {
+              "0": 5.0,
+              "5": 42.0,
+              "25": 56.0,
+              "50": 131.0,
+              "75": 168.0,
+              "95": 236.04999999999995,
+              "100": 290.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 880,
+            "mean": 78.40454545454546,
+            "median": 77.0,
+            "quantiles": {
+              "0": -10.0,
+              "5": 22.0,
+              "25": 34.0,
+              "50": 77.0,
+              "75": 113.0,
+              "95": 160.04999999999995,
+              "100": 253.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 880,
+            "mean": 5.378909066136273,
+            "median": 2.581140350877193,
+            "quantiles": {
+              "0": 0.4166666666666667,
+              "5": 1.649025974025974,
+              "25": 2.0698729582577133,
+              "50": 2.581140350877193,
+              "75": 4.263736263736264,
+              "95": 16.38749999999999,
+              "100": 131.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 875,
+              "fraction": 0.9943181818181818
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 5,
+              "fraction": 0.005681818181818182
+            }
+          },
+          "unique_associated_reference_components": 1497,
+          "unique_associated_retrained_components": 1172
+        },
+        {
+          "clip": "DJI_0277_2",
+          "total_targets": 985,
+          "reference_hit_targets": 974,
+          "retrained_hit_targets": 979,
+          "paired_targets": 974,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 5,
+          "both_missed": 6,
+          "paired_frames": 328,
+          "reference_area_pixels": {
+            "count": 974,
+            "mean": 31.465092402464066,
+            "median": 31.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 25.0,
+              "25": 29.0,
+              "50": 31.0,
+              "75": 34.0,
+              "95": 41.0,
+              "100": 50.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 974,
+            "mean": 62.34907597535934,
+            "median": 60.0,
+            "quantiles": {
+              "0": 5.0,
+              "5": 46.0,
+              "25": 52.0,
+              "50": 60.0,
+              "75": 68.0,
+              "95": 89.0,
+              "100": 109.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 974,
+            "mean": 30.88398357289528,
+            "median": 29.0,
+            "quantiles": {
+              "0": -15.0,
+              "5": 18.0,
+              "25": 24.0,
+              "50": 29.0,
+              "75": 36.0,
+              "95": 49.0,
+              "100": 77.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 974,
+            "mean": 2.143643646919234,
+            "median": 1.9655172413793103,
+            "quantiles": {
+              "0": 0.3181818181818182,
+              "5": 1.5910675381263617,
+              "25": 1.8,
+              "50": 1.9655172413793103,
+              "75": 2.101923076923077,
+              "95": 2.3947368421052633,
+              "100": 62.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 972,
+              "fraction": 0.997946611909651
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 2,
+              "fraction": 0.002053388090349076
+            }
+          },
+          "unique_associated_reference_components": 985,
+          "unique_associated_retrained_components": 979
+        },
+        {
+          "clip": "DJI_0303_2",
+          "total_targets": 986,
+          "reference_hit_targets": 895,
+          "retrained_hit_targets": 967,
+          "paired_targets": 894,
+          "reference_only_hits": 1,
+          "retrained_only_hits": 73,
+          "both_missed": 18,
+          "paired_frames": 476,
+          "reference_area_pixels": {
+            "count": 894,
+            "mean": 54.45413870246085,
+            "median": 31.5,
+            "quantiles": {
+              "0": 1.0,
+              "5": 16.0,
+              "25": 23.0,
+              "50": 31.5,
+              "75": 64.0,
+              "95": 171.05000000000007,
+              "100": 364.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 894,
+            "mean": 165.38926174496643,
+            "median": 108.5,
+            "quantiles": {
+              "0": 2.0,
+              "5": 45.0,
+              "25": 52.0,
+              "50": 108.5,
+              "75": 145.75,
+              "95": 585.0,
+              "100": 1062.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 894,
+            "mean": 110.9351230425056,
+            "median": 66.0,
+            "quantiles": {
+              "0": -32.0,
+              "5": 19.0,
+              "25": 28.0,
+              "50": 66.0,
+              "75": 107.0,
+              "95": 451.10000000000014,
+              "100": 892.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 894,
+            "mean": 3.426962602568564,
+            "median": 2.516531165311653,
+            "quantiles": {
+              "0": 0.375,
+              "5": 1.596818181818182,
+              "25": 2.0,
+              "50": 2.516531165311653,
+              "75": 3.9310344827586206,
+              "95": 7.0053846153846155,
+              "100": 62.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 883,
+              "fraction": 0.9876957494407159
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 11,
+              "fraction": 0.012304250559284116
+            }
+          },
+          "unique_associated_reference_components": 1344,
+          "unique_associated_retrained_components": 974
+        },
+        {
+          "clip": "DJI_0307_2",
+          "total_targets": 161,
+          "reference_hit_targets": 144,
+          "retrained_hit_targets": 160,
+          "paired_targets": 144,
+          "reference_only_hits": 0,
+          "retrained_only_hits": 16,
+          "both_missed": 1,
+          "paired_frames": 144,
+          "reference_area_pixels": {
+            "count": 144,
+            "mean": 24.520833333333332,
+            "median": 26.0,
+            "quantiles": {
+              "0": 3.0,
+              "5": 12.0,
+              "25": 24.0,
+              "50": 26.0,
+              "75": 27.0,
+              "95": 29.849999999999994,
+              "100": 33.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 144,
+            "mean": 57.979166666666664,
+            "median": 59.0,
+            "quantiles": {
+              "0": 24.0,
+              "5": 43.3,
+              "25": 55.0,
+              "50": 59.0,
+              "75": 63.0,
+              "95": 67.0,
+              "100": 71.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 144,
+            "mean": 33.458333333333336,
+            "median": 33.0,
+            "quantiles": {
+              "0": 20.0,
+              "5": 25.0,
+              "25": 31.0,
+              "50": 33.0,
+              "75": 37.0,
+              "95": 41.849999999999994,
+              "100": 45.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 144,
+            "mean": 2.596676170502383,
+            "median": 2.32,
+            "quantiles": {
+              "0": 1.8333333333333333,
+              "5": 1.9335164835164835,
+              "25": 2.190527065527066,
+              "50": 2.32,
+              "75": 2.5046296296296298,
+              "95": 3.746590909090909,
+              "100": 13.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 144,
+              "fraction": 1.0
+            },
+            "equal": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "smaller": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "unique_associated_reference_components": 145,
+          "unique_associated_retrained_components": 144
+        },
+        {
+          "clip": "DJI_0309_4",
+          "total_targets": 1050,
+          "reference_hit_targets": 684,
+          "retrained_hit_targets": 718,
+          "paired_targets": 668,
+          "reference_only_hits": 16,
+          "retrained_only_hits": 50,
+          "both_missed": 316,
+          "paired_frames": 481,
+          "reference_area_pixels": {
+            "count": 668,
+            "mean": 30.87874251497006,
+            "median": 25.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 9.350000000000001,
+              "25": 21.0,
+              "50": 25.0,
+              "75": 29.0,
+              "95": 109.94999999999993,
+              "100": 169.0
+            }
+          },
+          "retrained_area_pixels": {
+            "count": 668,
+            "mean": 64.81437125748504,
+            "median": 49.0,
+            "quantiles": {
+              "0": 1.0,
+              "5": 12.0,
+              "25": 43.0,
+              "50": 49.0,
+              "75": 55.0,
+              "95": 234.5999999999999,
+              "100": 397.0
+            }
+          },
+          "retrained_minus_reference_area_pixels": {
+            "count": 668,
+            "mean": 33.93562874251497,
+            "median": 24.0,
+            "quantiles": {
+              "0": -18.0,
+              "5": 1.3500000000000014,
+              "25": 19.0,
+              "50": 24.0,
+              "75": 31.0,
+              "95": 129.0,
+              "100": 244.0
+            }
+          },
+          "retrained_to_reference_area_ratio": {
+            "count": 668,
+            "mean": 2.4612166575814878,
+            "median": 1.9292269187986653,
+            "quantiles": {
+              "0": 0.05555555555555555,
+              "5": 1.1133986928104576,
+              "25": 1.7419354838709677,
+              "50": 1.9292269187986653,
+              "75": 2.24,
+              "95": 3.7338235294117625,
+              "100": 55.0
+            }
+          },
+          "retrained_area_direction": {
+            "larger": {
+              "count": 636,
+              "fraction": 0.9520958083832335
+            },
+            "equal": {
+              "count": 2,
+              "fraction": 0.0029940119760479044
+            },
+            "smaller": {
+              "count": 30,
+              "fraction": 0.04491017964071856
+            }
+          },
+          "unique_associated_reference_components": 744,
+          "unique_associated_retrained_components": 737
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "helper_sha256": "346d73dcddd096a3faf535dac2c82514be1809f219b5c35b2a895914d7281f61",
+  "protocol": {
+    "join": [
+      "clip",
+      "frame_id",
+      "target_id"
+    ],
+    "cohort": "GT targets detected by BOTH models at the same threshold",
+    "area": "Sum of whole pixel areas of unique prediction components associated with each GT under original +/-1 hit rule",
+    "ratio": "retrained area / reference area, calculated per jointly detected GT before summarizing",
+    "direction": "Positive area difference means retrained is larger; integer equality is exact",
+    "quantiles": "Linear interpolation between sorted observations at percentiles 0,5,25,50,75,95,100",
+    "limitations": [
+      "The same prediction component can associate with multiple GTs; its whole area is then repeated across GT-level pairs.",
+      "One GT can associate with multiple prediction components. Summed area is not mask overlap, false-positive area, or an independent object estimate.",
+      "Frames and targets are correlated; no independence, significance test, or causal interpretation is asserted.",
+      "Matching removes differing-hit-set composition from this comparison, but conditions on joint detection and does not describe missed targets.",
+      "Released-vs-final and released-vs-interim may use different jointly detected target cohorts; their means/medians alone do not establish a final-vs-interim change.",
+      "No conclusion about the cause of distant clutter or training-mask effects follows from these spatial summaries."
+    ]
+  }
+}

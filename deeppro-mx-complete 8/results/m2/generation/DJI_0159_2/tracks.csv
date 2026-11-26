@@ -1,0 +1,4 @@
+clip,track_id,first,last,n_observations,n_fit,fit_first,fit_last,fit_span,teacher_logit,stop_ok,cv_ok,stop_rms,cv_rms,stop_x,stop_y,cv_anchor_t,cv_x,cv_y,cv_vx,cv_vy,fit_status
+DJI_0159_2,0,60,233,173,40,60,99,39,33.6875,False,True,32.863733810995974,1.615870951091576,336.0,348.0,79.5,336.15,348.625,-2.149343339587242,1.8608818011257036,fitted
+DJI_0159_2,1,99,99,1,1,99,99,0,4.10546875,False,False,,,,,,,,,,insufficient_observations
+DJI_0159_2,2,244,249,6,6,244,249,5,2.1640625,False,False,,,,,,,,,,insufficient_observations

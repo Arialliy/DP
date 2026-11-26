@@ -1,0 +1,10 @@
+{
+  "decision": {
+    "go": false
+  },
+  "settings": {
+    "split": [
+      "train"
+    ]
+  }
+}

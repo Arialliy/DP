@@ -1,0 +1,21 @@
+{
+  "updated_at": "2026-11-27T01:55:08.929367+08:00",
+  "train_mta": false,
+  "train_mxc": false,
+  "train_deeppro_plus_three_seeds": false,
+  "allowed_work": [
+    "M1 candidate-generation and score audit",
+    "early-window residual and frame analysis",
+    "M2 prediction-only backward propagation with GT only for evaluation"
+  ],
+  "M1_rerun_condition": "Only after a confirmed implementation bug is corrected; no parameter changes selected using evaluated labels",
+  "prior_val_training": "stopped; checkpoints and logs retained",
+  "official_mta_training": "never started",
+  "m0_official": "completed NO-GO; historical pre-plateau-fix source version",
+  "official_baseline_score": "completed existing official checkpoint scoring; no training",
+  "status": "authorized_diagnostics_completed",
+  "m1": "confirmed plateau bug fixed; full rerun and independent audit completed; NO-GO",
+  "m2": "completed frozen raw stop/constant-velocity diagnostic; no training",
+  "early_cause": "completed residual analysis and frame/window inspections",
+  "final_report": "DIAGNOSTICS.txt"
+}

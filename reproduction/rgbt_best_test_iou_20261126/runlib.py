@@ -48,6 +48,7 @@ def verify_source():
     assert len(cfg['train_clips']) == 45 and len(cfg['test_clips']) == 15
     assert not set(cfg['train_clips']) & set(cfg['test_clips'])
     assert set(cfg['gpu_assignment'].values()) == {0, 2}
+    assert set(cfg.get('allowed_gpus', (0, 2))).isdisjoint(cfg.get('reserved_gpus', ()))
 
 
 def verify_artifacts():
@@ -87,13 +88,16 @@ def train_command(model, *, smoke=False):
 
 
 def container_name(arch):
+    override = read_config().get('container_overrides', {}).get(arch)
+    if override:
+        return override
     return 'dp-rgbt-best-test-iou-' + arch.replace('_', '-') + '-20261126'
 
 
 def docker_command(name, gpu, script, script_args=(), detach=False):
     cfg = read_config()
-    if int(gpu) not in (0, 2):
-        raise ValueError('Only GPUs 0 and 2 are assigned to this batch')
+    if int(gpu) not in cfg.get('allowed_gpus', (0, 2)) or int(gpu) in cfg.get('reserved_gpus', ()):
+        raise ValueError('GPU is not allowed for this batch: ' + str(gpu))
     artifacts = cfg['artifact_sources']
     mounts = [(str(ROOT), '/experiment', False), (str(ROOT / 'code'), '/experiment/code', True),
               (str(ROOT / 'configs'), '/experiment/configs', True),

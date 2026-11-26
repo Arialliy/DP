@@ -1,0 +1,76 @@
+v8 片头画面检查与局部窗口对照
+
+1. DJI_0255_1：原图中的局部对比确实变化
+
+该片段有一条持续标注的飞机轨迹 6000000。首帧框的上边缘为 y=5，目标靠近
+图像顶部，在早期原图中很弱；第 90、120 帧的目标相对局部背景明显更清楚。
+按现有 local_contrast 算法，标注中心附近 ±2 px 内的最大绝对对比，在第 0、
+10 帧为 3.06、3.88 灰阶，第 90、120 帧为 40.05、43.34 灰阶。
+
+阈值 1e-5 下，前 40 帧漏检 37/40，之后为 13/560；首次达到 0.5 是第 68 帧。
+这些结果支持早期单帧外观也较弱，不能只归因于时间证据。目标位置、背景和
+时间上下文同时变化，尚未证明具体成因，也没有据此判定标注错误。
+
+2. DJI_0307_2：分母与同帧窗口对照
+
+第 0–18 帧没有目标标注；首个标注是第 19 帧（00697.jpg）。因此“前 40 帧
+漏检约 81%”实际为 17/21 个标注目标帧，不是 17/40。17 次漏检恰好是第
+19–35 帧；缓存预测在第 36 帧开始检出，该帧也是第二个窗口的起点。
+
+用同一官方权重、CPU FP32、固定 ROI 对相同的第 36–39 帧重新比较：
+
+目标帧    窗口 [0,40) 的命中概率    窗口 [36,76) 的命中概率
+36             3.3868e-6                   0.9999734
+37             1.1434e-6                   0.9999866
+38             3.6562e-6                   0.9999998
+39             1.2271e-6                   0.9998710
+
+在 1e-5 和 0.5 两个阈值下，四个相同目标帧都由漏检变为检出。此对照说明
+窗口位置／时间上下文会改变相同帧的检测结果；它同时改变了周围 40 帧内容和
+目标在窗口内的相对时间索引，尚不能区分二者。因此，“各窗口都运行同一网络”
+不能作为排除窗口影响的理由。
+
+ROI 为 [480,376,608,504]，尺寸 128×128；目标框最小边距 50 px，模型的空间
+感受野半径为 9 px。融合后的 ROI 预测与原全图缓存，在第 19–71 帧共 53 个
+目标帧的两个阈值命中结果全部相同；目标最大概率差为 7.15e-7。
+这不是整片 ROI 的数值一致性声明：其内部像素的最大概率差为 0.06363，
+额外的 0.002 容差检查未通过。精确误差、检查条件和重复保存输出的记录均保留。
+
+3. shift18：仅一个局部补窗结果
+
+同一模型再计算一次窗口 [18,58)，原来第 19–35 帧的 17 次漏检中：
+  阈值 1e-5：恢复 17/17；
+  阈值 0.5：恢复 13/17（76.5%）。
+
+没有训练，也没有新增外观路径。这只是一个 clip 中 17 个目标帧的局部对照；
+新增全局误报、ROI 误报、匹配误报预算后的收益和完整测试集效果均未评估。
+17/17 不代表全局检测性能提高。没有继续探索其他窗口。
+
+4. 显示方式与证据路径
+
+联系图使用真实热红外 JPEG 像素，统一显示范围 0–255，不做对比拉伸或去噪。
+完整帧最近邻缩至 1/2，64×64 局部裁剪最近邻放大 4 倍；左侧为未标记原像素，
+右侧为同一裁剪加青色 GT 框。无标注的裁剪明确标为“首个 GT 的位置”。
+
+以下路径均相对 v8 根目录：
+
+results/frame_inspection/DJI_0255_1_full_frames.png
+results/frame_inspection/DJI_0255_1_target_crops.png
+results/frame_inspection/DJI_0307_2_full_frames.png
+results/frame_inspection/DJI_0307_2_target_crops.png
+results/frame_inspection/inspection_data.json
+results/frame_inspection/DJI_0255_1_target_frames.csv
+results/frame_inspection/DJI_0307_2_target_frames.csv
+results/frame_inspection/DJI_0307_2_overlap_control.json
+results/frame_inspection/DJI_0307_2_overlap_control.csv
+results/frame_inspection/DJI_0307_2_overlap_logits.npz
+results/frame_inspection/DJI_0307_2_shift18_control.json
+results/frame_inspection/DJI_0307_2_shift18_control.csv
+results/frame_inspection/DJI_0307_2_shift18_logits.npy
+results/frame_inspection/review.json
+runtime/inspect_frames.py
+runtime/inspect_window_overlap.py
+runtime/inspect_shifted_window.py
+
+源数据只读，所有新增文件均在 v8 内。输入帧、权重、脚本及结果哈希保存在
+上述 JSON 文件中。

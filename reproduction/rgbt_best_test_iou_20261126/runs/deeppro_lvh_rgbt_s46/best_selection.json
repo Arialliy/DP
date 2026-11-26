@@ -1,7 +1,7 @@
 {
-  "iou": 0.21936953423746108,
-  "intersection": 625131,
-  "union": 2849671,
+  "iou": 0.3379999000578106,
+  "intersection": 737266,
+  "union": 2181261,
   "windows": 172,
   "window_frames": 6880,
   "unique_frames": 5976,
@@ -9,7 +9,7 @@
   "expected_unique_frames": 5976,
   "complete": true,
   "selection_max_windows": null,
-  "seconds": 402.3155948019994,
+  "seconds": 439.7247522700054,
   "test_clips": [
     "DJI_0049_2",
     "DJI_0109_1",
@@ -29,9 +29,9 @@
   ],
   "per_clip": {
     "DJI_0049_2": {
-      "intersection": 22908,
-      "union": 91253,
-      "iou": 0.25103832202776893,
+      "intersection": 33894,
+      "union": 87007,
+      "iou": 0.38955486340179524,
       "windows": 3,
       "window_frames": 120,
       "unique_frames": 90,
@@ -43,9 +43,9 @@
       }
     },
     "DJI_0109_1": {
-      "intersection": 6091,
-      "union": 17444,
-      "iou": 0.3491745012611786,
+      "intersection": 6088,
+      "union": 18318,
+      "iou": 0.3323506933071296,
       "windows": 3,
       "window_frames": 120,
       "unique_frames": 90,
@@ -57,9 +57,9 @@
       }
     },
     "DJI_0119_2": {
-      "intersection": 11806,
-      "union": 120594,
-      "iou": 0.0978987345970778,
+      "intersection": 17946,
+      "union": 104572,
+      "iou": 0.17161381631794362,
       "windows": 5,
       "window_frames": 200,
       "unique_frames": 180,
@@ -71,9 +71,9 @@
       }
     },
     "DJI_0129_2": {
-      "intersection": 30568,
-      "union": 84438,
-      "iou": 0.3620171013050996,
+      "intersection": 36416,
+      "union": 112828,
+      "iou": 0.32275676250576096,
       "windows": 17,
       "window_frames": 680,
       "unique_frames": 590,
@@ -85,9 +85,9 @@
       }
     },
     "DJI_0155_2": {
-      "intersection": 18435,
-      "union": 780830,
-      "iou": 0.02360949246314819,
+      "intersection": 21829,
+      "union": 178111,
+      "iou": 0.12255840459039588,
       "windows": 12,
       "window_frames": 480,
       "unique_frames": 410,
@@ -99,9 +99,9 @@
       }
     },
     "DJI_0159_2": {
-      "intersection": 8900,
-      "union": 15356,
-      "iou": 0.579578015108101,
+      "intersection": 11448,
+      "union": 15627,
+      "iou": 0.7325782299865617,
       "windows": 7,
       "window_frames": 280,
       "unique_frames": 250,
@@ -113,9 +113,9 @@
       }
     },
     "DJI_0173_2": {
-      "intersection": 11206,
-      "union": 50332,
-      "iou": 0.22264165938170546,
+      "intersection": 21167,
+      "union": 51993,
+      "iou": 0.4071124959129114,
       "windows": 13,
       "window_frames": 520,
       "unique_frames": 450,
@@ -127,9 +127,9 @@
       }
     },
     "DJI_0221_2": {
-      "intersection": 34503,
-      "union": 89394,
-      "iou": 0.3859655010403383,
+      "intersection": 37081,
+      "union": 88767,
+      "iou": 0.4177340678405263,
       "windows": 17,
       "window_frames": 680,
       "unique_frames": 590,
@@ -141,9 +141,9 @@
       }
     },
     "DJI_0237_2": {
-      "intersection": 89986,
-      "union": 418527,
-      "iou": 0.21500643925003643,
+      "intersection": 129995,
+      "union": 442027,
+      "iou": 0.2940883701674332,
       "windows": 12,
       "window_frames": 480,
       "unique_frames": 410,
@@ -155,9 +155,9 @@
       }
     },
     "DJI_0255_1": {
-      "intersection": 29608,
-      "union": 60186,
-      "iou": 0.49194164755923303,
+      "intersection": 32980,
+      "union": 65768,
+      "iou": 0.5014596764383895,
       "windows": 17,
       "window_frames": 680,
       "unique_frames": 600,
@@ -169,9 +169,9 @@
       }
     },
     "DJI_0257_2": {
-      "intersection": 136256,
-      "union": 229237,
-      "iou": 0.5943892129106558,
+      "intersection": 146309,
+      "union": 225020,
+      "iou": 0.6502044262732202,
       "windows": 17,
       "window_frames": 680,
       "unique_frames": 590,
@@ -183,9 +183,9 @@
       }
     },
     "DJI_0277_2": {
-      "intersection": 52773,
-      "union": 236177,
-      "iou": 0.22344682166341345,
+      "intersection": 54778,
+      "union": 175683,
+      "iou": 0.3118002310980573,
       "windows": 11,
       "window_frames": 440,
       "unique_frames": 366,
@@ -197,9 +197,9 @@
       }
     },
     "DJI_0303_2": {
-      "intersection": 116575,
-      "union": 286160,
-      "iou": 0.4073769918926475,
+      "intersection": 127933,
+      "union": 310634,
+      "iou": 0.41184480771583276,
       "windows": 16,
       "window_frames": 640,
       "unique_frames": 577,
@@ -211,9 +211,9 @@
       }
     },
     "DJI_0307_2": {
-      "intersection": 9311,
-      "union": 166327,
-      "iou": 0.05598008741815821,
+      "intersection": 8557,
+      "union": 87168,
+      "iou": 0.0981667584434655,
       "windows": 5,
       "window_frames": 200,
       "unique_frames": 180,
@@ -225,9 +225,9 @@
       }
     },
     "DJI_0309_4": {
-      "intersection": 46205,
-      "union": 203416,
-      "iou": 0.22714535729736107,
+      "intersection": 50845,
+      "union": 217738,
+      "iou": 0.23351459093038424,
       "windows": 17,
       "window_frames": 680,
       "unique_frames": 603,
@@ -266,8 +266,8 @@
     "mr_selection_probe": null,
     "stationarity": null
   },
-  "epoch": 5,
+  "epoch": 30,
   "threshold": 0.5,
   "split": "official_test",
-  "elapsed_seconds": 402.320472240448
+  "elapsed_seconds": 439.73106050491333
 }

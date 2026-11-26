@@ -1,0 +1,51 @@
+已停止：用户要求改用官方45 train / 15 test划分。本文件仅保留旧自定义32/8实验的未完成记录。当前正式结果请看official.txt。
+
+六组 val 对照：仅汇总已完成且权重一致的结果
+
+Pd、Fa、IoU 均用官方评估实现、同一 best_model.pth、概率阈值 0.5：Pd 按合并后的连通组件计，Fa 与 IoU 按像素计。
+Fa 单位是错误前景像素/总像素；AUC 使用官方 27 个阈值。数值均为 0–1 原始比例。
+权重按每轮 val IoU 选取；val 同时参与选权重，结果属于验证集比较，不是独立 test 结果。
+不使用固定 Fa 下的 Pd 替代直接 Pd；未完成/异常项留空，不填零。
+
+run | 状态 | IoU@0.5 | Pd@0.5 | Fa@0.5 | AUC(27) | best epoch
+mta_val_s46 | pending | — | — | — | — | —
+mta_val_s46_noex | pending | — | — | — | — | —
+mta_val_s46_self | pending | — | — | — | — | —
+mta_val_s46_nogain | pending | — | — | — | — | —
+mta_val_s46_mx | pending | — | — | — | — | —
+mta_val_s46_noapp | pending | — | — | — | — | —
+
+状态与来源：
+mta_val_s46: pending: training eval, epoch 13/32
+  results/scores/mta_val_s46/val/summary.json
+  runs/mta_val_s46/best_selection.json
+  runs/mta_val_s46/best_model.pth
+  checkpoint SHA-256: pending
+mta_val_s46_noex: pending: training train, epoch 25/32
+  results/scores/mta_val_s46_noex/val/summary.json
+  runs/mta_val_s46_noex/best_selection.json
+  runs/mta_val_s46_noex/best_model.pth
+  checkpoint SHA-256: pending
+mta_val_s46_self: pending: training progress is not available
+  results/scores/mta_val_s46_self/val/summary.json
+  runs/mta_val_s46_self/best_selection.json
+  runs/mta_val_s46_self/best_model.pth
+  checkpoint SHA-256: pending
+mta_val_s46_nogain: pending: training progress is not available
+  results/scores/mta_val_s46_nogain/val/summary.json
+  runs/mta_val_s46_nogain/best_selection.json
+  runs/mta_val_s46_nogain/best_model.pth
+  checkpoint SHA-256: pending
+mta_val_s46_mx: pending: training progress is not available
+  results/scores/mta_val_s46_mx/val/summary.json
+  runs/mta_val_s46_mx/best_selection.json
+  runs/mta_val_s46_mx/best_model.pth
+  checkpoint SHA-256: pending
+mta_val_s46_noapp: pending: training progress is not available
+  results/scores/mta_val_s46_noapp/val/summary.json
+  runs/mta_val_s46_noapp/best_selection.json
+  runs/mta_val_s46_noapp/best_model.pth
+  checkpoint SHA-256: pending
+
+生成时间 UTC: 2026-11-26T17:23:44.552592+00:00
+完整 SHA、选权重 IoU 与来源列见 val.csv。

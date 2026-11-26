@@ -77,8 +77,7 @@
   "checkpoint_selection": "Every epoch, choose best global test-window IoU at sigmoid > 0.5; ties select latest epoch, matching original template.",
   "precision": "FP32; model training script uses channels_last_3d",
   "gpus": [
-    0,
-    2
+    0
   ],
   "existing_deepproplus_gpu": 1,
   "models": [
@@ -163,10 +162,34 @@
   },
   "gpu_assignment": {
     "lv_full": 2,
-    "mr_lv": 2,
+    "mr_lv": 0,
     "lvh_full": 0,
     "lvh_dec": 0
   },
-  "restart_policy": "Fresh 32-epoch runs; no old checkpoints imported and no implicit resume.",
-  "output_root": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126"
+  "restart_policy": "Fresh runs by default; MRTP explicitly resumes verified epoch20 checkpoint after user reserved GPU2.",
+  "output_root": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126",
+  "allowed_gpus": [
+    0
+  ],
+  "reserved_gpus": [
+    2
+  ],
+  "gpu_schedule_description": "GPU 2 已预留，不再安排任务；GPU 0: LVH → MRTP续训 → LVH-dec；GPU 1: 既有DeepPro-Plus。",
+  "container_overrides": {
+    "mr_lv": "dp-rgbt-best-test-iou-mr-lv-resume-gpu0-20261126"
+  },
+  "resume_runs": {
+    "mr_lv": {
+      "completed_epochs": 20,
+      "archive": "diagnostics/gpu2_reserved_20261126",
+      "files": {
+        "last.pth": "4845f16eab4d1a3a16add38e5d521d092c678b8008bcf748b80656a72eeba08f",
+        "best_model.pth": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc",
+        "train_log.txt": "986ebccf8e70a2f8b1732b38c920ae9efdc070081e4e35c2959169504fc90624",
+        "eval_log.jsonl": "93270152a5cddf4f524e30f9e2568c5af971514c2fae1ecd40578964dafe071f"
+      },
+      "reason": "User requested one GPU left free; reserve physical GPU 2 and resume MRTP on GPU 0.",
+      "rng_note": "Existing trainer does not checkpoint worker RNG; model/optimizer/epoch and best history resume, random sample streams restart."
+    }
+  }
 }

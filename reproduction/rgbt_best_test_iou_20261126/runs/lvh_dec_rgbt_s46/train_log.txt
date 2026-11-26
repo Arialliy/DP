@@ -1,0 +1,37 @@
+epoch 1/32 lr 1.00e-03 loss 2.0081 iters 236 60s
+test epoch 1/32 IoU 0.01933210 windows 172 complete True best 0.01933210 epoch 1 440.1s
+epoch 2/32 lr 1.00e-03 loss 1.9277 iters 236 59s
+test epoch 2/32 IoU 0.05002940 windows 172 complete True best 0.05002940 epoch 2 401.2s
+epoch 3/32 lr 1.00e-03 loss 1.7573 iters 236 59s
+test epoch 3/32 IoU 0.10233793 windows 172 complete True best 0.10233793 epoch 3 389.9s
+epoch 4/32 lr 1.00e-03 loss 1.6193 iters 236 59s
+test epoch 4/32 IoU 0.10244764 windows 172 complete True best 0.10244764 epoch 4 400.6s
+epoch 5/32 lr 1.00e-03 loss 1.5494 iters 236 59s
+test epoch 5/32 IoU 0.13809570 windows 172 complete True best 0.13809570 epoch 5 405.6s
+epoch 6/32 lr 1.00e-03 loss 1.5129 iters 236 59s
+test epoch 6/32 IoU 0.23562116 windows 172 complete True best 0.23562116 epoch 6 422.7s
+epoch 7/32 lr 1.00e-03 loss 1.5014 iters 236 59s
+test epoch 7/32 IoU 0.20956587 windows 172 complete True best 0.23562116 epoch 6 427.7s
+epoch 8/32 lr 1.00e-03 loss 1.4864 iters 236 59s
+test epoch 8/32 IoU 0.20040348 windows 172 complete True best 0.23562116 epoch 6 419.3s
+epoch 9/32 lr 1.00e-03 loss 1.4674 iters 236 59s
+test epoch 9/32 IoU 0.18996984 windows 172 complete True best 0.23562116 epoch 6 419.5s
+epoch 10/32 lr 1.00e-03 loss 1.4397 iters 236 59s
+test epoch 10/32 IoU 0.18773862 windows 172 complete True best 0.23562116 epoch 6 415.7s
+epoch 11/32 lr 7.00e-04 loss 1.4455 iters 236 59s
+test epoch 11/32 IoU 0.25126763 windows 172 complete True best 0.25126763 epoch 11 424.0s
+epoch 12/32 lr 7.00e-04 loss 1.4524 iters 236 61s
+test epoch 12/32 IoU 0.20564524 windows 172 complete True best 0.25126763 epoch 11 408.4s
+epoch 13/32 lr 7.00e-04 loss 1.4274 iters 236 59s
+test epoch 13/32 IoU 0.25557871 windows 172 complete True best 0.25557871 epoch 13 403.7s
+epoch 14/32 lr 7.00e-04 loss 1.4188 iters 236 59s
+test epoch 14/32 IoU 0.17689645 windows 172 complete True best 0.25557871 epoch 13 412.9s
+epoch 15/32 lr 7.00e-04 loss 1.4219 iters 236 59s
+test epoch 15/32 IoU 0.23485469 windows 172 complete True best 0.25557871 epoch 13 403.0s
+epoch 16/32 lr 7.00e-04 loss 1.4108 iters 236 59s
+test epoch 16/32 IoU 0.26338393 windows 172 complete True best 0.26338393 epoch 16 402.1s
+epoch 17/32 lr 7.00e-04 loss 1.4350 iters 236 59s
+test epoch 17/32 IoU 0.29083626 windows 172 complete True best 0.29083626 epoch 17 402.0s
+epoch 18/32 lr 7.00e-04 loss 1.4067 iters 236 59s
+test epoch 18/32 IoU 0.29542065 windows 172 complete True best 0.29542065 epoch 18 400.6s
+epoch 19/32 lr 7.00e-04 loss 1.4178 iters 236 59s

@@ -1,0 +1,1 @@
+epoch 21/32 lr 4.90e-04 loss 0.9774 iters 236 57s rates {1: 467, 2: 245, 4: 232} warped 0.76

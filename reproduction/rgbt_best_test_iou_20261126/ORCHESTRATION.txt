@@ -8,7 +8,10 @@ RGB-T 四模型重训：每轮测试 IoU 选择最佳权重
 seed46、batch4、sample_rate .05、32 epochs、FP32 与 channels_last_3d。
 train_command 与上一批的命令逐项比较，唯一新增选项：
   --checkpoint-selection original_test_iou
-每个模型从头训练，新运行目录不导入旧 checkpoint，不自动恢复或覆盖已有训练文件。
+初始运行从头训练；用户要求预留GPU 2后，MRTP显式从本次运行已完成的第20轮last.pth续训。
+模型、优化器、best历史与20轮评估记录已核验；未完成的第21轮训练日志单独归档，恢复时重跑第21轮。
+原训练器未保存worker RNG状态，因此续训重新初始化随机采样流；训练代码与选权规则不变。
+其余任务仍拒绝隐式恢复或覆盖已有训练文件。
 
 权重选择
 每轮训练后对官方15个测试序列执行完整的172个窗口评估；6880帧实例包含重叠，
@@ -30,12 +33,12 @@ homography/hotspot的SHA256。前次完整缓存SHA256与采样像素验证记�
 reused_metadata/。未复用旧训练权重或无效 targets.csv。
 
 GPU顺序
-GPU 2：DeepPro-LV → MRTP
-GPU 0：DeepPro-LVH → LVH-dec
+GPU 2：用户预留，不再启动本批任务（DeepPro-LV已经完成）
+GPU 0：DeepPro-LVH → MRTP从第21轮续训 → LVH-dec
 同一GPU上一次只运行一个任务。GPU 1不属于本批，既有DeepPro-Plus继续运行。
 容器名前缀为 dp-rgbt-best-test-iou-，与旧任务分离。
 
-预览与启动（由root审核与GPU预检后执行）
+预览与启动（由root审核与GPU预检后执行；已启动，无需重复运行）
   cd /home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126
   python3 launch.py
 默认仅输出命令计划，不启动进程。
@@ -63,3 +66,6 @@ last中的best元数据必须一致。通过后任务才标记completed。
 orchestration_validation.json：旧新训练命令对比、只读挂载、共享数据核验。
 scheduler_validation.json：纯CPU内存模拟队列、无重复启动、正确GPU顺序、
 status-only不启动、预检失败不启动。模拟未调用Docker/GPU或创建后台任务。
+
+GPU预留记录：GPU_RESERVATION.json；续训核验：resume_validation.json。
+原GPU2 MRTP容器及中断前权重/日志保留于diagnostics/gpu2_reserved_20261126。

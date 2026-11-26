@@ -1,0 +1,1847 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-26T17:47:02.447912+00:00",
+  "arguments": [
+    "--runs",
+    "official_rgbt",
+    "lv_full",
+    "lvh_full",
+    "mr_lv",
+    "mr_lv:rate1_auto",
+    "mr_lv:multirate_cfar_score",
+    "lvh_dec",
+    "--split",
+    "test"
+  ],
+  "split": "test",
+  "config_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/config.json",
+  "config_sha256": "763f274ef5117004b49b3963c03f208ee859ff1c03c298ea915b936d689a7d04",
+  "protocol": {
+    "source": "Saved complete ROC results only; no model execution or threshold resweep.",
+    "fa": "False-positive pixels divided by all test image pixels; fractions, not percentages.",
+    "pd": "Detected target components divided by target components; fractions.",
+    "budget_best": "Highest Pd among measured points with Fa <= requested budget; may use a lower Fa.",
+    "linear_estimate": "Descriptive interpolation only, not a measured point or inferred threshold.",
+    "outside_range": "Unavailable at target; no extrapolation or added (0,0)/(1,1) endpoints.",
+    "comparison_limit": "Test ROC comparison is retrospective analysis, not independent validation or threshold selection."
+  },
+  "runs": [
+    {
+      "job_id": "author_released_reference",
+      "model": "DeepPro-Plus (released)",
+      "model_id": "released_reference",
+      "variant": "native",
+      "primary_variant": "native",
+      "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+      "checkpoint_status": "released",
+      "final_checkpoint": false,
+      "best_epoch": 22,
+      "training_epochs_completed": null,
+      "frames": 5976,
+      "pixels": 1958215680,
+      "requested_run": "official_rgbt",
+      "metrics_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/author_released_reference/native/metrics.json",
+      "metrics_sha256": "57fc00dcd7144008d42c707ca2c22cf993a7caf475e090fc69ffddb5f989aba8",
+      "targets": 11300,
+      "measured_point_count": 27,
+      "split": "test",
+      "comparisons": [
+        {
+          "target_fa": 4.467025818116215e-05,
+          "measured_fa_range": [
+            7.307673075112952e-06,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [
+            {
+              "threshold": 0.99,
+              "true_targets": 8803,
+              "targets": 11300,
+              "pd": 0.7790265486725664,
+              "false_pixels": 87474,
+              "fa": 4.467025818116215e-05
+            }
+          ],
+          "best_measured_within_budget": {
+            "threshold": 0.99,
+            "true_targets": 8803,
+            "targets": 11300,
+            "pd": 0.7790265486725664,
+            "false_pixels": 87474,
+            "fa": 4.467025818116215e-05
+          },
+          "bracket": null,
+          "linear_estimate": null,
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "measured",
+          "selected_measured_point": {
+            "threshold": 0.99,
+            "true_targets": 8803,
+            "targets": 11300,
+            "pd": 0.7790265486725664,
+            "false_pixels": 87474,
+            "fa": 4.467025818116215e-05
+          }
+        },
+        {
+          "target_fa": 0.0006136428240631799,
+          "measured_fa_range": [
+            7.307673075112952e-06,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 1e-05,
+            "true_targets": 9967,
+            "targets": 11300,
+            "pd": 0.8820353982300885,
+            "false_pixels": 777113,
+            "fa": 0.0003968475014968729
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 1e-05,
+                "true_targets": 9967,
+                "targets": 11300,
+                "pd": 0.8820353982300885,
+                "false_pixels": 777113,
+                "fa": 0.0003968475014968729
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 1e-06,
+                "true_targets": 10744,
+                "targets": 11300,
+                "pd": 0.9507964601769912,
+                "false_pixels": 102856079,
+                "fa": 0.05252540874353534
+              }
+            ],
+            "selected_lower": {
+              "threshold": 1e-05,
+              "true_targets": 9967,
+              "targets": 11300,
+              "pd": 0.8820353982300885,
+              "false_pixels": 777113,
+              "fa": 0.0003968475014968729
+            },
+            "selected_upper": {
+              "threshold": 1e-06,
+              "true_targets": 10744,
+              "targets": 11300,
+              "pd": 0.9507964601769912,
+              "false_pixels": 102856079,
+              "fa": 0.05252540874353534
+            },
+            "fa_range": [
+              0.0003968475014968729,
+              0.05252540874353534
+            ],
+            "pd_endpoint_range": [
+              0.8820353982300885,
+              0.9507964601769912
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0006136428240631799,
+            "pd": 0.8823213657735924,
+            "measured": false,
+            "interpolation_weight": 0.004158858740790929,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        }
+      ],
+      "measured_at_requested_threshold": [
+        {
+          "threshold": 0.99,
+          "true_targets": 8803,
+          "targets": 11300,
+          "pd": 0.7790265486725664,
+          "false_pixels": 87474,
+          "fa": 4.467025818116215e-05
+        }
+      ],
+      "numerical_claim_checks": {
+        "pd_at_fa_0_0018": {
+          "target_fa": 0.0018,
+          "measured_fa_range": [
+            7.307673075112952e-06,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 1e-05,
+            "true_targets": 9967,
+            "targets": 11300,
+            "pd": 0.8820353982300885,
+            "false_pixels": 777113,
+            "fa": 0.0003968475014968729
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 1e-05,
+                "true_targets": 9967,
+                "targets": 11300,
+                "pd": 0.8820353982300885,
+                "false_pixels": 777113,
+                "fa": 0.0003968475014968729
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 1e-06,
+                "true_targets": 10744,
+                "targets": 11300,
+                "pd": 0.9507964601769912,
+                "false_pixels": 102856079,
+                "fa": 0.05252540874353534
+              }
+            ],
+            "selected_lower": {
+              "threshold": 1e-05,
+              "true_targets": 9967,
+              "targets": 11300,
+              "pd": 0.8820353982300885,
+              "false_pixels": 777113,
+              "fa": 0.0003968475014968729
+            },
+            "selected_upper": {
+              "threshold": 1e-06,
+              "true_targets": 10744,
+              "targets": 11300,
+              "pd": 0.9507964601769912,
+              "false_pixels": 102856079,
+              "fa": 0.05252540874353534
+            },
+            "fa_range": [
+              0.0003968475014968729,
+              0.05252540874353534
+            ],
+            "pd_endpoint_range": [
+              0.8820353982300885,
+              0.9507964601769912
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0018,
+            "pd": 0.8838862503075618,
+            "measured": false,
+            "interpolation_weight": 0.026917153765056746,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        "fa_at_pd_0_888": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.888,
+          "fa": 0.004918681513998046,
+          "lower_pd_point": {
+            "threshold": 1e-05,
+            "true_targets": 9967,
+            "targets": 11300,
+            "pd": 0.8820353982300885,
+            "false_pixels": 777113,
+            "fa": 0.0003968475014968729
+          },
+          "upper_pd_point": {
+            "threshold": 1e-06,
+            "true_targets": 10744,
+            "targets": 11300,
+            "pd": 0.9507964601769912,
+            "false_pixels": 102856079,
+            "fa": 0.05252540874353534
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        },
+        "fa_at_interim_pd_0_9034513274336283": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.9034513274336283,
+          "fa": 0.01663251265023989,
+          "lower_pd_point": {
+            "threshold": 1e-05,
+            "true_targets": 9967,
+            "targets": 11300,
+            "pd": 0.8820353982300885,
+            "false_pixels": 777113,
+            "fa": 0.0003968475014968729
+          },
+          "upper_pd_point": {
+            "threshold": 1e-06,
+            "true_targets": 10744,
+            "targets": 11300,
+            "pd": 0.9507964601769912,
+            "false_pixels": 102856079,
+            "fa": 0.05252540874353534
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        }
+      }
+    },
+    {
+      "job_id": "lv_full_e6ff4903cb0fbd9d",
+      "model": "DeepPro-LV",
+      "model_id": "lv_full",
+      "variant": "native",
+      "primary_variant": "native",
+      "checkpoint_sha256": "e6ff4903cb0fbd9d92a1c2c6a84455640020b8b3a4960978c93ec400d8a9199b",
+      "checkpoint_status": "final",
+      "final_checkpoint": true,
+      "best_epoch": 16,
+      "training_epochs_completed": 32,
+      "frames": 5976,
+      "pixels": 1958215680,
+      "requested_run": "lv_full",
+      "metrics_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/lv_full_e6ff4903cb0fbd9d/native/metrics.json",
+      "metrics_sha256": "290cd0f16dbc96ae859394ad367b308b2755229fdd0ab66cd70c6de45d3f407e",
+      "targets": 11300,
+      "measured_point_count": 27,
+      "split": "test",
+      "comparisons": [
+        {
+          "target_fa": 4.467025818116215e-05,
+          "measured_fa_range": [
+            0.00014953970749534597,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": null,
+          "bracket": null,
+          "linear_estimate": null,
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "unavailable",
+          "reason": "below_measured_fa_range",
+          "explanation": "No measured point/bracket at this Fa; no extrapolation or added endpoints. Threshold 1 still has false positives under the saved >= rule, consistent with FP32 probabilities saturated at 1; a lower-Fa point is unavailable in this grid.",
+          "threshold_one_points": [
+            {
+              "threshold": 1.0,
+              "false_pixels": 292831,
+              "true_targets": 7585,
+              "targets": 11300,
+              "pd": 0.6712389380530973,
+              "fa": 0.00014953970749534597
+            }
+          ]
+        },
+        {
+          "target_fa": 0.0006136428240631799,
+          "measured_fa_range": [
+            0.00014953970749534597,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.9,
+            "false_pixels": 1191026,
+            "true_targets": 9759,
+            "targets": 11300,
+            "pd": 0.8636283185840707,
+            "fa": 0.0006082200301858476
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.9,
+                "false_pixels": 1191026,
+                "true_targets": 9759,
+                "targets": 11300,
+                "pd": 0.8636283185840707,
+                "fa": 0.0006082200301858476
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.85,
+                "false_pixels": 1233236,
+                "true_targets": 9790,
+                "targets": 11300,
+                "pd": 0.8663716814159292,
+                "fa": 0.0006297753677470298
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.9,
+              "false_pixels": 1191026,
+              "true_targets": 9759,
+              "targets": 11300,
+              "pd": 0.8636283185840707,
+              "fa": 0.0006082200301858476
+            },
+            "selected_upper": {
+              "threshold": 0.85,
+              "false_pixels": 1233236,
+              "true_targets": 9790,
+              "targets": 11300,
+              "pd": 0.8663716814159292,
+              "fa": 0.0006297753677470298
+            },
+            "fa_range": [
+              0.0006082200301858476,
+              0.0006297753677470298
+            ],
+            "pd_endpoint_range": [
+              0.8636283185840707,
+              0.8663716814159292
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0006136428240631799,
+            "pd": 0.8643184813396145,
+            "measured": false,
+            "interpolation_weight": 0.25157545605306986,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        }
+      ],
+      "measured_at_requested_threshold": [
+        {
+          "threshold": 0.99,
+          "false_pixels": 990373,
+          "true_targets": 9571,
+          "targets": 11300,
+          "pd": 0.8469911504424779,
+          "fa": 0.0005057527677441537
+        }
+      ],
+      "numerical_claim_checks": {
+        "pd_at_fa_0_0018": {
+          "target_fa": 0.0018,
+          "measured_fa_range": [
+            0.00014953970749534597,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.001,
+            "false_pixels": 2559888,
+            "true_targets": 10384,
+            "targets": 11300,
+            "pd": 0.9189380530973451,
+            "fa": 0.0013072553887424699
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.001,
+                "false_pixels": 2559888,
+                "true_targets": 10384,
+                "targets": 11300,
+                "pd": 0.9189380530973451,
+                "fa": 0.0013072553887424699
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.0001,
+                "false_pixels": 17037943,
+                "true_targets": 10694,
+                "targets": 11300,
+                "pd": 0.9463716814159292,
+                "fa": 0.008700748938952424
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.001,
+              "false_pixels": 2559888,
+              "true_targets": 10384,
+              "targets": 11300,
+              "pd": 0.9189380530973451,
+              "fa": 0.0013072553887424699
+            },
+            "selected_upper": {
+              "threshold": 0.0001,
+              "false_pixels": 17037943,
+              "true_targets": 10694,
+              "targets": 11300,
+              "pd": 0.9463716814159292,
+              "fa": 0.008700748938952424
+            },
+            "fa_range": [
+              0.0013072553887424699,
+              0.008700748938952424
+            ],
+            "pd_endpoint_range": [
+              0.9189380530973451,
+              0.9463716814159292
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0018,
+            "pd": 0.9207663866759739,
+            "measured": false,
+            "interpolation_weight": 0.06664570786614639,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        "fa_at_pd_0_888": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.888,
+          "fa": 0.0008276976092514458,
+          "lower_pd_point": {
+            "threshold": 0.2,
+            "false_pixels": 1557071,
+            "true_targets": 10003,
+            "targets": 11300,
+            "pd": 0.885221238938053,
+            "fa": 0.0007951478562361425
+          },
+          "upper_pd_point": {
+            "threshold": 0.1,
+            "false_pixels": 1656537,
+            "true_targets": 10052,
+            "targets": 11300,
+            "pd": 0.8895575221238938,
+            "fa": 0.0008459420568014245
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        },
+        "fa_at_interim_pd_0_9034513274336283": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.9034513274336283,
+          "fa": 0.001033956325364551,
+          "lower_pd_point": {
+            "threshold": 0.01,
+            "false_pixels": 2015535,
+            "true_targets": 10206,
+            "targets": 11300,
+            "pd": 0.9031858407079646,
+            "fa": 0.0010292711985637863
+          },
+          "upper_pd_point": {
+            "threshold": 0.001,
+            "false_pixels": 2559888,
+            "true_targets": 10384,
+            "targets": 11300,
+            "pd": 0.9189380530973451,
+            "fa": 0.0013072553887424699
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        }
+      }
+    },
+    {
+      "job_id": "lvh_full_847567069b854b07",
+      "model": "DeepPro-LVH",
+      "model_id": "lvh_full",
+      "variant": "native",
+      "primary_variant": "native",
+      "checkpoint_sha256": "847567069b854b07f7632be5c9ae9cce2da080671247a338e2ab60695c272a56",
+      "checkpoint_status": "final",
+      "final_checkpoint": true,
+      "best_epoch": 30,
+      "training_epochs_completed": 32,
+      "frames": 5976,
+      "pixels": 1958215680,
+      "requested_run": "lvh_full",
+      "metrics_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/lvh_full_847567069b854b07/native/metrics.json",
+      "metrics_sha256": "f780d2902aa3a766318cc2288db3ce3d7efd508822ed7eb8f27699979cb342dd",
+      "targets": 11300,
+      "measured_point_count": 27,
+      "split": "test",
+      "comparisons": [
+        {
+          "target_fa": 4.467025818116215e-05,
+          "measured_fa_range": [
+            6.075530965005857e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": null,
+          "bracket": null,
+          "linear_estimate": null,
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "unavailable",
+          "reason": "below_measured_fa_range",
+          "explanation": "No measured point/bracket at this Fa; no extrapolation or added endpoints. Threshold 1 still has false positives under the saved >= rule, consistent with FP32 probabilities saturated at 1; a lower-Fa point is unavailable in this grid.",
+          "threshold_one_points": [
+            {
+              "threshold": 1.0,
+              "false_pixels": 118972,
+              "true_targets": 8800,
+              "targets": 11300,
+              "pd": 0.7787610619469026,
+              "fa": 6.075530965005857e-05
+            }
+          ]
+        },
+        {
+          "target_fa": 0.0006136428240631799,
+          "measured_fa_range": [
+            6.075530965005857e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.1,
+            "false_pixels": 939216,
+            "true_targets": 10249,
+            "targets": 11300,
+            "pd": 0.9069911504424779,
+            "fa": 0.00047962847483684737
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.1,
+                "false_pixels": 939216,
+                "true_targets": 10249,
+                "targets": 11300,
+                "pd": 0.9069911504424779,
+                "fa": 0.00047962847483684737
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.01,
+                "false_pixels": 1226199,
+                "true_targets": 10359,
+                "targets": 11300,
+                "pd": 0.9167256637168142,
+                "fa": 0.0006261817901488767
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.1,
+              "false_pixels": 939216,
+              "true_targets": 10249,
+              "targets": 11300,
+              "pd": 0.9069911504424779,
+              "fa": 0.00047962847483684737
+            },
+            "selected_upper": {
+              "threshold": 0.01,
+              "false_pixels": 1226199,
+              "true_targets": 10359,
+              "targets": 11300,
+              "pd": 0.9167256637168142,
+              "fa": 0.0006261817901488767
+            },
+            "fa_range": [
+              0.00047962847483684737,
+              0.0006261817901488767
+            ],
+            "pd_endpoint_range": [
+              0.9069911504424779,
+              0.9167256637168142
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0006136428240631799,
+            "pd": 0.9158927877661898,
+            "measured": false,
+            "interpolation_weight": 0.9144409250722173,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        }
+      ],
+      "measured_at_requested_threshold": [
+        {
+          "threshold": 0.99,
+          "false_pixels": 499267,
+          "true_targets": 9915,
+          "targets": 11300,
+          "pd": 0.8774336283185841,
+          "fa": 0.00025496016863678676
+        }
+      ],
+      "numerical_claim_checks": {
+        "pd_at_fa_0_0018": {
+          "target_fa": 0.0018,
+          "measured_fa_range": [
+            6.075530965005857e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.0001,
+            "false_pixels": 3353576,
+            "true_targets": 10657,
+            "targets": 11300,
+            "pd": 0.9430973451327433,
+            "fa": 0.0017125672285496151
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.0001,
+                "false_pixels": 3353576,
+                "true_targets": 10657,
+                "targets": 11300,
+                "pd": 0.9430973451327433,
+                "fa": 0.0017125672285496151
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 1e-05,
+                "false_pixels": 42435250,
+                "true_targets": 10953,
+                "targets": 11300,
+                "pd": 0.9692920353982301,
+                "fa": 0.021670365748475674
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.0001,
+              "false_pixels": 3353576,
+              "true_targets": 10657,
+              "targets": 11300,
+              "pd": 0.9430973451327433,
+              "fa": 0.0017125672285496151
+            },
+            "selected_upper": {
+              "threshold": 1e-05,
+              "false_pixels": 42435250,
+              "true_targets": 10953,
+              "targets": 11300,
+              "pd": 0.9692920353982301,
+              "fa": 0.021670365748475674
+            },
+            "fa_range": [
+              0.0017125672285496151,
+              0.021670365748475674
+            ],
+            "pd_endpoint_range": [
+              0.9430973451327433,
+              0.9692920353982301
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0018,
+            "pd": 0.9432121009944637,
+            "measured": false,
+            "interpolation_weight": 0.004380882558920068,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        "fa_at_pd_0_888": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.888,
+          "fa": 0.00031286215810174173,
+          "lower_pd_point": {
+            "threshold": 0.95,
+            "false_pixels": 579578,
+            "true_targets": 9994,
+            "targets": 11300,
+            "pd": 0.884424778761062,
+            "fa": 0.00029597250492856844
+          },
+          "upper_pd_point": {
+            "threshold": 0.9,
+            "false_pixels": 619692,
+            "true_targets": 10043,
+            "targets": 11300,
+            "pd": 0.8887610619469026,
+            "fa": 0.0003164574803118725
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        },
+        "fa_at_interim_pd_0_9034513274336283": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.9034513274336283,
+          "fa": 0.0004381690027958032,
+          "lower_pd_point": {
+            "threshold": 0.3,
+            "false_pixels": 821706,
+            "true_targets": 10195,
+            "targets": 11300,
+            "pd": 0.9022123893805309,
+            "fa": 0.000419619763232618
+          },
+          "upper_pd_point": {
+            "threshold": 0.2,
+            "false_pixels": 865813,
+            "true_targets": 10212,
+            "targets": 11300,
+            "pd": 0.9037168141592921,
+            "fa": 0.0004421438398450573
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        }
+      }
+    },
+    {
+      "job_id": "mr_lv_05d986f5c3080c5c",
+      "model": "MRTP",
+      "model_id": "mr_lv",
+      "variant": "multirate_max",
+      "primary_variant": "multirate_max",
+      "checkpoint_sha256": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc",
+      "checkpoint_status": "final",
+      "final_checkpoint": true,
+      "best_epoch": 19,
+      "training_epochs_completed": 32,
+      "frames": 5976,
+      "pixels": 1958215680,
+      "requested_run": "mr_lv",
+      "metrics_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/mr_lv_05d986f5c3080c5c/multirate_max/metrics.json",
+      "metrics_sha256": "485fa1af3b2a61af30c221fdf12db10c6b9059b86a27405267083539ebc83ddd",
+      "targets": 11300,
+      "measured_point_count": 27,
+      "split": "test",
+      "comparisons": [
+        {
+          "target_fa": 4.467025818116215e-05,
+          "measured_fa_range": [
+            0.00015021634389118975,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": null,
+          "bracket": null,
+          "linear_estimate": null,
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "unavailable",
+          "reason": "below_measured_fa_range",
+          "explanation": "No measured point/bracket at this Fa; no extrapolation or added endpoints. Threshold 1 still has false positives under the saved >= rule, consistent with FP32 probabilities saturated at 1; a lower-Fa point is unavailable in this grid.",
+          "threshold_one_points": [
+            {
+              "threshold": 1.0,
+              "false_pixels": 294156,
+              "true_targets": 8773,
+              "targets": 11300,
+              "pd": 0.7763716814159292,
+              "fa": 0.00015021634389118975
+            }
+          ]
+        },
+        {
+          "target_fa": 0.0006136428240631799,
+          "measured_fa_range": [
+            0.00015021634389118975,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 1.0,
+            "false_pixels": 294156,
+            "true_targets": 8773,
+            "targets": 11300,
+            "pd": 0.7763716814159292,
+            "fa": 0.00015021634389118975
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 1.0,
+                "false_pixels": 294156,
+                "true_targets": 8773,
+                "targets": 11300,
+                "pd": 0.7763716814159292,
+                "fa": 0.00015021634389118975
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.99,
+                "false_pixels": 1888575,
+                "true_targets": 10380,
+                "targets": 11300,
+                "pd": 0.9185840707964602,
+                "fa": 0.0009644366651175013
+              }
+            ],
+            "selected_lower": {
+              "threshold": 1.0,
+              "false_pixels": 294156,
+              "true_targets": 8773,
+              "targets": 11300,
+              "pd": 0.7763716814159292,
+              "fa": 0.00015021634389118975
+            },
+            "selected_upper": {
+              "threshold": 0.99,
+              "false_pixels": 1888575,
+              "true_targets": 10380,
+              "targets": 11300,
+              "pd": 0.9185840707964602,
+              "fa": 0.0009644366651175013
+            },
+            "fa_range": [
+              0.00015021634389118975,
+              0.0009644366651175013
+            ],
+            "pd_endpoint_range": [
+              0.7763716814159292,
+              0.9185840707964602
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0006136428240631799,
+            "pd": 0.8573141306883907,
+            "measured": false,
+            "interpolation_weight": 0.5691659469687705,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        }
+      ],
+      "measured_at_requested_threshold": [
+        {
+          "threshold": 0.99,
+          "false_pixels": 1888575,
+          "true_targets": 10380,
+          "targets": 11300,
+          "pd": 0.9185840707964602,
+          "fa": 0.0009644366651175013
+        }
+      ],
+      "numerical_claim_checks": {
+        "pd_at_fa_0_0018": {
+          "target_fa": 0.0018,
+          "measured_fa_range": [
+            0.00015021634389118975,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.2,
+            "false_pixels": 3375936,
+            "true_targets": 10617,
+            "targets": 11300,
+            "pd": 0.9395575221238938,
+            "fa": 0.0017239857868975904
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.2,
+                "false_pixels": 3375936,
+                "true_targets": 10617,
+                "targets": 11300,
+                "pd": 0.9395575221238938,
+                "fa": 0.0017239857868975904
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.1,
+                "false_pixels": 3657032,
+                "true_targets": 10640,
+                "targets": 11300,
+                "pd": 0.9415929203539823,
+                "fa": 0.0018675327939361613
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.2,
+              "false_pixels": 3375936,
+              "true_targets": 10617,
+              "targets": 11300,
+              "pd": 0.9395575221238938,
+              "fa": 0.0017239857868975904
+            },
+            "selected_upper": {
+              "threshold": 0.1,
+              "false_pixels": 3657032,
+              "true_targets": 10640,
+              "targets": 11300,
+              "pd": 0.9415929203539823,
+              "fa": 0.0018675327939361613
+            },
+            "fa_range": [
+              0.0017239857868975904,
+              0.0018675327939361613
+            ],
+            "pd_endpoint_range": [
+              0.9395575221238938,
+              0.9415929203539823
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0018,
+            "pd": 0.9406353515959401,
+            "measured": false,
+            "interpolation_weight": 0.5295423058314593,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        "fa_at_pd_0_888": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.888,
+          "fa": 0.0007893311623074121,
+          "lower_pd_point": {
+            "threshold": 1.0,
+            "false_pixels": 294156,
+            "true_targets": 8773,
+            "targets": 11300,
+            "pd": 0.7763716814159292,
+            "fa": 0.00015021634389118975
+          },
+          "upper_pd_point": {
+            "threshold": 0.99,
+            "false_pixels": 1888575,
+            "true_targets": 10380,
+            "targets": 11300,
+            "pd": 0.9185840707964602,
+            "fa": 0.0009644366651175013
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        },
+        "fa_at_interim_pd_0_9034513274336283": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.9034513274336283,
+          "fa": 0.0008777959215395925,
+          "lower_pd_point": {
+            "threshold": 1.0,
+            "false_pixels": 294156,
+            "true_targets": 8773,
+            "targets": 11300,
+            "pd": 0.7763716814159292,
+            "fa": 0.00015021634389118975
+          },
+          "upper_pd_point": {
+            "threshold": 0.99,
+            "false_pixels": 1888575,
+            "true_targets": 10380,
+            "targets": 11300,
+            "pd": 0.9185840707964602,
+            "fa": 0.0009644366651175013
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        }
+      }
+    },
+    {
+      "job_id": "mr_lv_05d986f5c3080c5c",
+      "model": "MRTP",
+      "model_id": "mr_lv",
+      "variant": "rate1_auto",
+      "primary_variant": "multirate_max",
+      "checkpoint_sha256": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc",
+      "checkpoint_status": "final",
+      "final_checkpoint": true,
+      "best_epoch": 19,
+      "training_epochs_completed": 32,
+      "frames": 5976,
+      "pixels": 1958215680,
+      "requested_run": "mr_lv:rate1_auto",
+      "metrics_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/mr_lv_05d986f5c3080c5c/rate1_auto/metrics.json",
+      "metrics_sha256": "1eff0c55f03474d3f78f5e641e9da34ed9e0dda1e5aedb5328eb5673f521c763",
+      "targets": 11300,
+      "measured_point_count": 27,
+      "split": "test",
+      "comparisons": [
+        {
+          "target_fa": 4.467025818116215e-05,
+          "measured_fa_range": [
+            2.9432406546759957e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 1.0,
+            "false_pixels": 57635,
+            "true_targets": 7667,
+            "targets": 11300,
+            "pd": 0.6784955752212389,
+            "fa": 2.9432406546759957e-05
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 1.0,
+                "false_pixels": 57635,
+                "true_targets": 7667,
+                "targets": 11300,
+                "pd": 0.6784955752212389,
+                "fa": 2.9432406546759957e-05
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.99,
+                "false_pixels": 350805,
+                "true_targets": 9208,
+                "targets": 11300,
+                "pd": 0.8148672566371682,
+                "fa": 0.00017914523082564632
+              }
+            ],
+            "selected_lower": {
+              "threshold": 1.0,
+              "false_pixels": 57635,
+              "true_targets": 7667,
+              "targets": 11300,
+              "pd": 0.6784955752212389,
+              "fa": 2.9432406546759957e-05
+            },
+            "selected_upper": {
+              "threshold": 0.99,
+              "false_pixels": 350805,
+              "true_targets": 9208,
+              "targets": 11300,
+              "pd": 0.8148672566371682,
+              "fa": 0.00017914523082564632
+            },
+            "fa_range": [
+              2.9432406546759957e-05,
+              0.00017914523082564632
+            ],
+            "pd_endpoint_range": [
+              0.6784955752212389,
+              0.8148672566371682
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 4.467025818116215e-05,
+            "pd": 0.692375558172325,
+            "measured": false,
+            "interpolation_weight": 0.10178053688985915,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        {
+          "target_fa": 0.0006136428240631799,
+          "measured_fa_range": [
+            2.9432406546759957e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.01,
+            "false_pixels": 924713,
+            "true_targets": 9723,
+            "targets": 11300,
+            "pd": 0.8604424778761062,
+            "fa": 0.0004722222426489813
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.01,
+                "false_pixels": 924713,
+                "true_targets": 9723,
+                "targets": 11300,
+                "pd": 0.8604424778761062,
+                "fa": 0.0004722222426489813
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.001,
+                "false_pixels": 3028465,
+                "true_targets": 10636,
+                "targets": 11300,
+                "pd": 0.9412389380530973,
+                "fa": 0.0015465431264445803
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.01,
+              "false_pixels": 924713,
+              "true_targets": 9723,
+              "targets": 11300,
+              "pd": 0.8604424778761062,
+              "fa": 0.0004722222426489813
+            },
+            "selected_upper": {
+              "threshold": 0.001,
+              "false_pixels": 3028465,
+              "true_targets": 10636,
+              "targets": 11300,
+              "pd": 0.9412389380530973,
+              "fa": 0.0015465431264445803
+            },
+            "fa_range": [
+              0.0004722222426489813,
+              0.0015465431264445803
+            ],
+            "pd_endpoint_range": [
+              0.8604424778761062,
+              0.9412389380530973
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0006136428240631799,
+            "pd": 0.8710782967890458,
+            "measured": false,
+            "interpolation_weight": 0.13163718917438946,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        }
+      ],
+      "measured_at_requested_threshold": [
+        {
+          "threshold": 0.99,
+          "false_pixels": 350805,
+          "true_targets": 9208,
+          "targets": 11300,
+          "pd": 0.8148672566371682,
+          "fa": 0.00017914523082564632
+        }
+      ],
+      "numerical_claim_checks": {
+        "pd_at_fa_0_0018": {
+          "target_fa": 0.0018,
+          "measured_fa_range": [
+            2.9432406546759957e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.001,
+            "false_pixels": 3028465,
+            "true_targets": 10636,
+            "targets": 11300,
+            "pd": 0.9412389380530973,
+            "fa": 0.0015465431264445803
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.001,
+                "false_pixels": 3028465,
+                "true_targets": 10636,
+                "targets": 11300,
+                "pd": 0.9412389380530973,
+                "fa": 0.0015465431264445803
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.0001,
+                "false_pixels": 5589082,
+                "true_targets": 10717,
+                "targets": 11300,
+                "pd": 0.9484070796460177,
+                "fa": 0.002854170792872009
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.001,
+              "false_pixels": 3028465,
+              "true_targets": 10636,
+              "targets": 11300,
+              "pd": 0.9412389380530973,
+              "fa": 0.0015465431264445803
+            },
+            "selected_upper": {
+              "threshold": 0.0001,
+              "false_pixels": 5589082,
+              "true_targets": 10717,
+              "targets": 11300,
+              "pd": 0.9484070796460177,
+              "fa": 0.002854170792872009
+            },
+            "fa_range": [
+              0.0015465431264445803,
+              0.002854170792872009
+            ],
+            "pd_endpoint_range": [
+              0.9412389380530973,
+              0.9484070796460177
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0018,
+            "pd": 0.9426283356652692,
+            "measured": false,
+            "interpolation_weight": 0.1938295434264476,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        "fa_at_pd_0_888": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.888,
+          "fa": 0.0008386445024671082,
+          "lower_pd_point": {
+            "threshold": 0.01,
+            "false_pixels": 924713,
+            "true_targets": 9723,
+            "targets": 11300,
+            "pd": 0.8604424778761062,
+            "fa": 0.0004722222426489813
+          },
+          "upper_pd_point": {
+            "threshold": 0.001,
+            "false_pixels": 3028465,
+            "true_targets": 10636,
+            "targets": 11300,
+            "pd": 0.9412389380530973,
+            "fa": 0.0015465431264445803
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        },
+        "fa_at_interim_pd_0_9034513274336283": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.9034513274336283,
+          "fa": 0.0010440951336946128,
+          "lower_pd_point": {
+            "threshold": 0.01,
+            "false_pixels": 924713,
+            "true_targets": 9723,
+            "targets": 11300,
+            "pd": 0.8604424778761062,
+            "fa": 0.0004722222426489813
+          },
+          "upper_pd_point": {
+            "threshold": 0.001,
+            "false_pixels": 3028465,
+            "true_targets": 10636,
+            "targets": 11300,
+            "pd": 0.9412389380530973,
+            "fa": 0.0015465431264445803
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        }
+      }
+    },
+    {
+      "job_id": "mr_lv_05d986f5c3080c5c",
+      "model": "MRTP",
+      "model_id": "mr_lv",
+      "variant": "multirate_cfar_score",
+      "primary_variant": "multirate_max",
+      "checkpoint_sha256": "05d986f5c3080c5c059ca01d1c5409321a4b9ddfa54779c531f946841adcb3cc",
+      "checkpoint_status": "final",
+      "final_checkpoint": true,
+      "best_epoch": 19,
+      "training_epochs_completed": 32,
+      "frames": 5976,
+      "pixels": 1958215680,
+      "requested_run": "mr_lv:multirate_cfar_score",
+      "metrics_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/mr_lv_05d986f5c3080c5c/multirate_cfar_score/metrics.json",
+      "metrics_sha256": "b0bdc59c6fa66034b4accedad2ca2724ba7e5fddb6eb278fab3fa549f3cd8116",
+      "targets": 11300,
+      "measured_point_count": 27,
+      "split": "test",
+      "comparisons": [
+        {
+          "target_fa": 4.467025818116215e-05,
+          "measured_fa_range": [
+            7.770288102278907e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": null,
+          "bracket": null,
+          "linear_estimate": null,
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "unavailable",
+          "reason": "below_measured_fa_range",
+          "explanation": "No measured point/bracket at this Fa; no extrapolation or added endpoints. Threshold 1 still has false positives under the saved >= rule, consistent with FP32 probabilities saturated at 1; a lower-Fa point is unavailable in this grid.",
+          "threshold_one_points": [
+            {
+              "threshold": 1.0,
+              "false_pixels": 152159,
+              "true_targets": 8635,
+              "targets": 11300,
+              "pd": 0.7641592920353982,
+              "fa": 7.770288102278907e-05
+            }
+          ]
+        },
+        {
+          "target_fa": 0.0006136428240631799,
+          "measured_fa_range": [
+            7.770288102278907e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.7,
+            "false_pixels": 1184420,
+            "true_targets": 10349,
+            "targets": 11300,
+            "pd": 0.9158407079646018,
+            "fa": 0.0006048465509172105
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.7,
+                "false_pixels": 1184420,
+                "true_targets": 10349,
+                "targets": 11300,
+                "pd": 0.9158407079646018,
+                "fa": 0.0006048465509172105
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.65,
+                "false_pixels": 1256875,
+                "true_targets": 10371,
+                "targets": 11300,
+                "pd": 0.917787610619469,
+                "fa": 0.000641847071717861
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.7,
+              "false_pixels": 1184420,
+              "true_targets": 10349,
+              "targets": 11300,
+              "pd": 0.9158407079646018,
+              "fa": 0.0006048465509172105
+            },
+            "selected_upper": {
+              "threshold": 0.65,
+              "false_pixels": 1256875,
+              "true_targets": 10371,
+              "targets": 11300,
+              "pd": 0.917787610619469,
+              "fa": 0.000641847071717861
+            },
+            "fa_range": [
+              0.0006048465509172105,
+              0.000641847071717861
+            ],
+            "pd_endpoint_range": [
+              0.9158407079646018,
+              0.917787610619469
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0006136428240631799,
+            "pd": 0.9163035524643615,
+            "measured": false,
+            "interpolation_weight": 0.23773376578566105,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        }
+      ],
+      "measured_at_requested_threshold": [
+        {
+          "threshold": 0.99,
+          "false_pixels": 598594,
+          "true_targets": 10075,
+          "targets": 11300,
+          "pd": 0.8915929203539823,
+          "fa": 0.00030568338621412736
+        }
+      ],
+      "numerical_claim_checks": {
+        "pd_at_fa_0_0018": {
+          "target_fa": 0.0018,
+          "measured_fa_range": [
+            7.770288102278907e-05,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 0.4,
+            "false_pixels": 3014411,
+            "true_targets": 10585,
+            "targets": 11300,
+            "pd": 0.9367256637168142,
+            "fa": 0.0015393661846278342
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 0.4,
+                "false_pixels": 3014411,
+                "true_targets": 10585,
+                "targets": 11300,
+                "pd": 0.9367256637168142,
+                "fa": 0.0015393661846278342
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.35,
+                "false_pixels": 5815098,
+                "true_targets": 10601,
+                "targets": 11300,
+                "pd": 0.9381415929203539,
+                "fa": 0.002969590152602598
+              }
+            ],
+            "selected_lower": {
+              "threshold": 0.4,
+              "false_pixels": 3014411,
+              "true_targets": 10585,
+              "targets": 11300,
+              "pd": 0.9367256637168142,
+              "fa": 0.0015393661846278342
+            },
+            "selected_upper": {
+              "threshold": 0.35,
+              "false_pixels": 5815098,
+              "true_targets": 10601,
+              "targets": 11300,
+              "pd": 0.9381415929203539,
+              "fa": 0.002969590152602598
+            },
+            "fa_range": [
+              0.0015393661846278342,
+              0.002969590152602598
+            ],
+            "pd_endpoint_range": [
+              0.9367256637168142,
+              0.9381415929203539
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0018,
+            "pd": 0.9369836925562679,
+            "measured": false,
+            "interpolation_weight": 0.18223286786420617,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        "fa_at_pd_0_888": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.888,
+          "fa": 0.0002992556025260938,
+          "lower_pd_point": {
+            "threshold": 1.0,
+            "false_pixels": 152159,
+            "true_targets": 8635,
+            "targets": 11300,
+            "pd": 0.7641592920353982,
+            "fa": 7.770288102278907e-05
+          },
+          "upper_pd_point": {
+            "threshold": 0.99,
+            "false_pixels": 598594,
+            "true_targets": 10075,
+            "targets": 11300,
+            "pd": 0.8915929203539823,
+            "fa": 0.00030568338621412736
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        },
+        "fa_at_interim_pd_0_9034513274336283": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.9034513274336283,
+          "fa": 0.0004127755860886584,
+          "lower_pd_point": {
+            "threshold": 0.95,
+            "false_pixels": 775863,
+            "true_targets": 10195,
+            "targets": 11300,
+            "pd": 0.9022123893805309,
+            "fa": 0.0003962091652743788
+          },
+          "upper_pd_point": {
+            "threshold": 0.9,
+            "false_pixels": 887088,
+            "true_targets": 10243,
+            "targets": 11300,
+            "pd": 0.9064601769911504,
+            "fa": 0.0004530083223519076
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        }
+      }
+    },
+    {
+      "job_id": "lvh_dec_2837b37e6120c362",
+      "model": "LVH-dec",
+      "model_id": "lvh_dec",
+      "variant": "native",
+      "primary_variant": "native",
+      "checkpoint_sha256": "2837b37e6120c362af2770655ea50b64a1fa5c72e8b005bad28c46acf5dabf7b",
+      "checkpoint_status": "interim",
+      "final_checkpoint": false,
+      "best_epoch": 1,
+      "training_epochs_completed": 1,
+      "frames": 5976,
+      "pixels": 1958215680,
+      "requested_run": "lvh_dec",
+      "metrics_path": "/home/md0/ly/DP/reproduction/rgbt_unified_evaluation_20261126/results/lvh_dec_2837b37e6120c362/native/metrics.json",
+      "metrics_sha256": "20ccdc5d722bd3369276afc708e136eeba5aa0e3123a0b5000ab461b44f62b0f",
+      "targets": 11300,
+      "measured_point_count": 27,
+      "split": "test",
+      "comparisons": [
+        {
+          "target_fa": 4.467025818116215e-05,
+          "measured_fa_range": [
+            0.00040265278643872364,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": null,
+          "bracket": null,
+          "linear_estimate": null,
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "unavailable",
+          "reason": "below_measured_fa_range",
+          "explanation": "No measured point/bracket at this Fa; no extrapolation or added endpoints. Threshold 1 still has false positives under the saved >= rule, consistent with FP32 probabilities saturated at 1; a lower-Fa point is unavailable in this grid.",
+          "threshold_one_points": [
+            {
+              "threshold": 1.0,
+              "false_pixels": 788481,
+              "true_targets": 3651,
+              "targets": 11300,
+              "pd": 0.32309734513274335,
+              "fa": 0.00040265278643872364
+            }
+          ]
+        },
+        {
+          "target_fa": 0.0006136428240631799,
+          "measured_fa_range": [
+            0.00040265278643872364,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 1.0,
+            "false_pixels": 788481,
+            "true_targets": 3651,
+            "targets": 11300,
+            "pd": 0.32309734513274335,
+            "fa": 0.00040265278643872364
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 1.0,
+                "false_pixels": 788481,
+                "true_targets": 3651,
+                "targets": 11300,
+                "pd": 0.32309734513274335,
+                "fa": 0.00040265278643872364
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.99,
+                "false_pixels": 9070703,
+                "true_targets": 8408,
+                "targets": 11300,
+                "pd": 0.744070796460177,
+                "fa": 0.004632126630709034
+              }
+            ],
+            "selected_lower": {
+              "threshold": 1.0,
+              "false_pixels": 788481,
+              "true_targets": 3651,
+              "targets": 11300,
+              "pd": 0.32309734513274335,
+              "fa": 0.00040265278643872364
+            },
+            "selected_upper": {
+              "threshold": 0.99,
+              "false_pixels": 9070703,
+              "true_targets": 8408,
+              "targets": 11300,
+              "pd": 0.744070796460177,
+              "fa": 0.004632126630709034
+            },
+            "fa_range": [
+              0.00040265278643872364,
+              0.004632126630709034
+            ],
+            "pd_endpoint_range": [
+              0.32309734513274335,
+              0.744070796460177
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0006136428240631799,
+            "pd": 0.34409787796611196,
+            "measured": false,
+            "interpolation_weight": 0.049885646629612215,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        }
+      ],
+      "measured_at_requested_threshold": [
+        {
+          "threshold": 0.99,
+          "false_pixels": 9070703,
+          "true_targets": 8408,
+          "targets": 11300,
+          "pd": 0.744070796460177,
+          "fa": 0.004632126630709034
+        }
+      ],
+      "numerical_claim_checks": {
+        "pd_at_fa_0_0018": {
+          "target_fa": 0.0018,
+          "measured_fa_range": [
+            0.00040265278643872364,
+            0.9980735023018507
+          ],
+          "exact_measured_points": [],
+          "best_measured_within_budget": {
+            "threshold": 1.0,
+            "false_pixels": 788481,
+            "true_targets": 3651,
+            "targets": 11300,
+            "pd": 0.32309734513274335,
+            "fa": 0.00040265278643872364
+          },
+          "bracket": {
+            "lower_fa_points": [
+              {
+                "threshold": 1.0,
+                "false_pixels": 788481,
+                "true_targets": 3651,
+                "targets": 11300,
+                "pd": 0.32309734513274335,
+                "fa": 0.00040265278643872364
+              }
+            ],
+            "upper_fa_points": [
+              {
+                "threshold": 0.99,
+                "false_pixels": 9070703,
+                "true_targets": 8408,
+                "targets": 11300,
+                "pd": 0.744070796460177,
+                "fa": 0.004632126630709034
+              }
+            ],
+            "selected_lower": {
+              "threshold": 1.0,
+              "false_pixels": 788481,
+              "true_targets": 3651,
+              "targets": 11300,
+              "pd": 0.32309734513274335,
+              "fa": 0.00040265278643872364
+            },
+            "selected_upper": {
+              "threshold": 0.99,
+              "false_pixels": 9070703,
+              "true_targets": 8408,
+              "targets": 11300,
+              "pd": 0.744070796460177,
+              "fa": 0.004632126630709034
+            },
+            "fa_range": [
+              0.00040265278643872364,
+              0.004632126630709034
+            ],
+            "pd_endpoint_range": [
+              0.32309734513274335,
+              0.744070796460177
+            ],
+            "range_meaning": "Measured adjacent-point range; not a confidence interval or a new measurement."
+          },
+          "linear_estimate": {
+            "fa": 0.0018,
+            "pd": 0.4621799121032338,
+            "measured": false,
+            "interpolation_weight": 0.330383226143902,
+            "method": "Linear Pd versus Fa between selected adjacent measured Fa groups.",
+            "warning": "Estimate only; sparse ROC samples do not establish actual performance at this Fa."
+          },
+          "duplicate_fa_policy": "Preserve all points; select maximum Pd per Fa for interpolation.",
+          "status": "bracketed"
+        },
+        "fa_at_pd_0_888": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.888,
+          "fa": 0.009793522097002419,
+          "lower_pd_point": {
+            "threshold": 0.95,
+            "false_pixels": 15003640,
+            "true_targets": 9596,
+            "targets": 11300,
+            "pd": 0.8492035398230089,
+            "fa": 0.007661893505009622
+          },
+          "upper_pd_point": {
+            "threshold": 0.9,
+            "false_pixels": 19564398,
+            "true_targets": 10075,
+            "targets": 11300,
+            "pd": 0.8915929203539823,
+            "fa": 0.009990931131753577
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        },
+        "fa_at_interim_pd_0_9034513274336283": {
+          "status": "estimated_not_measured",
+          "target_pd": 0.9034513274336283,
+          "fa": 0.011188714330548872,
+          "lower_pd_point": {
+            "threshold": 0.9,
+            "false_pixels": 19564398,
+            "true_targets": 10075,
+            "targets": 11300,
+            "pd": 0.8915929203539823,
+            "fa": 0.009990931131753577
+          },
+          "upper_pd_point": {
+            "threshold": 0.85,
+            "false_pixels": 23310225,
+            "true_targets": 10289,
+            "targets": 11300,
+            "pd": 0.9105309734513274,
+            "fa": 0.011903808777590832
+          },
+          "duplicate_pd_policy": "Minimum Fa at each distinct Pd.",
+          "warning": "Linear Fa versus Pd on saved samples; no inference or threshold search was performed."
+        }
+      }
+    }
+  ]
+}

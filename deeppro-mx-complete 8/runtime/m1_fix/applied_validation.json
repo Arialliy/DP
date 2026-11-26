@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "tests": 11,
+  "test_names": [
+    "ok test_box_hits_follow_the_mask",
+    "ok test_box_hits_keep_official_top_left_edge_behavior",
+    "ok test_command_line_on_a_dataset_on_disk",
+    "ok test_early_misses_are_recovered_and_hot_spots_are_not",
+    "ok test_gate_uses_exact_predeclared_boundaries",
+    "ok test_loro_excludes_labels_and_features_of_the_whole_heldout_recording",
+    "ok test_no_candidate_means_no_recovery_even_with_a_teacher",
+    "ok test_no_teacher_and_nonfinite_scores_cannot_recover",
+    "ok test_one_candidate_cannot_recover_two_adjacent_targets",
+    "ok test_teacher_is_outside_the_window_and_from_confident_detections",
+    "ok test_tied_clutter_scores_never_exceed_the_budget"
+  ],
+  "log": "logs/test_miss_recovery.applied.20261126.log",
+  "log_sha256": "d3c692b9f2cd9c8d4ff24838df941be5d647fdf16247ebefd54d8fed3a88d630",
+  "main_files_match_reviewed_stage": true
+}

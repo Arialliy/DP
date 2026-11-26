@@ -1,0 +1,3 @@
+2026-11-26 16:14:28,309 - Model - INFO - PARAMETER ...
+2026-11-26 16:14:28,310 - Model - INFO - Namespace(batch_size=1, epoch=None, gpu='0', seqlen=40, datapath='/data/RGB-T', dataset='RGB-T', log_dir='retrained_rgbt_deepproplus', logpath='/run/log/', visual=False, threshold_eval=0.5, attribution=False)
+2026-11-26 16:14:28,594 - Model - INFO - ---- EVALUATION----

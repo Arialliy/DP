@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-27T01:23:44.495881+08:00",
+  "instruction": "按照官方划分",
+  "stopped_scheduler": "dp-mta-v8-val-scheduler-20261126",
+  "stopped_workers": [
+    "dp-mta-v8-val-main-20261126",
+    "dp-mta-v8-val-noex-20261126"
+  ],
+  "weights_and_logs_preserved": true,
+  "will_resume_val_weights": false
+}

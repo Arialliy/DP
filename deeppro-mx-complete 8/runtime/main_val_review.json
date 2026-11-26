@@ -1,0 +1,402 @@
+{
+  "status": "passed_first_complete_validation",
+  "reviewed_at": "2026-11-27T00:05:31.992549",
+  "container": "dp-mta-v8-val-main-20261126",
+  "run": "mta_val_s46",
+  "config_checks": {
+    "train_matches_config_split": true,
+    "train_val_recordings_disjoint": true,
+    "selection_is_val_iou": true,
+    "full_selection_unlimited": true,
+    "main_arch": true,
+    "main_gain": true,
+    "main_exemplars": true,
+    "training_label_rule": true,
+    "m0_record_only": true,
+    "m1_record_only": true,
+    "gpu2": true
+  },
+  "all_config_checks_pass": true,
+  "training": {
+    "epochs": 32,
+    "batch": 4,
+    "seed": 46,
+    "train_clips": 32,
+    "architecture": "mta_lv"
+  },
+  "expected_validation": {
+    "clips": 8,
+    "windows": 81,
+    "unique_frames": 2893,
+    "per_clip": [
+      {
+        "clip": "DJI_0107_1",
+        "source_frames": 70,
+        "windows": 2
+      },
+      {
+        "clip": "DJI_0117_2",
+        "source_frames": 240,
+        "windows": 7
+      },
+      {
+        "clip": "DJI_0127_1",
+        "source_frames": 500,
+        "windows": 14
+      },
+      {
+        "clip": "DJI_0157_2",
+        "source_frames": 470,
+        "windows": 13
+      },
+      {
+        "clip": "DJI_0163_1",
+        "source_frames": 470,
+        "windows": 13
+      },
+      {
+        "clip": "DJI_0285_3",
+        "source_frames": 182,
+        "windows": 5
+      },
+      {
+        "clip": "DJI_0293_1",
+        "source_frames": 363,
+        "windows": 10
+      },
+      {
+        "clip": "DJI_0319_2",
+        "source_frames": 598,
+        "windows": 17
+      }
+    ]
+  },
+  "checkpoint_protocol": {
+    "mode": "val_iou",
+    "evaluated_after_every_epoch": true,
+    "threshold": 0.5,
+    "comparison": "sigmoid(float32_logits) > 0.5",
+    "labels": "existing segmentation PNGs, uint8 > 0, original frame coordinates",
+    "aggregation": "global sum(intersection)/sum(union), every overlapping frame counted per window",
+    "update": "IoU >= best IoU and complete evaluation",
+    "checkpoint": "best_model.pth",
+    "source": "code/train.py:554-578; code/checkpoint_selection.py:275-300"
+  },
+  "diagnostics": {
+    "m0_go": false,
+    "m0_gate": "0",
+    "m1_go": false,
+    "m1_gate": false
+  },
+  "container_state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 551269,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-11-26T15:54:45.588861508Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "progress": {
+    "stage": "eval",
+    "epoch_total": 32,
+    "best_iou": 0.017704100618522067,
+    "best_epoch": 1,
+    "epoch": 2,
+    "eval_clip": "DJI_0127_1",
+    "eval_windows_done": 21,
+    "updated_at_unix": 1795709131.2435849,
+    "train_seconds": 63.29863095283508,
+    "eval_windows_total": 81,
+    "eval_clip_windows_done": 12,
+    "eval_clip_windows_total": 14,
+    "first_frame": 396,
+    "end_frame": 435,
+    "last_iou": 0.017704100618522067,
+    "eval_seconds": 361.67619919776917
+  },
+  "sources": {
+    "runs/mta_val_s46/config.json": "da130aafe912b911aea843392365e538443bbfb28716f682cb2dbbc0cec5bd16",
+    "runs/mta_val_s46/m0c.json": "3a97dd9b4fa04d8a9fc7dd8223a7538fe34531665c8268d5f677430d1553bf16",
+    "runs/mta_val_s46/m1.json": "fe0627c85d3a1a15f4e9b0667e6e7cdaac642e152342fac426fab09fd59f6ce9",
+    "configs/splits.json": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464",
+    "code/train.py": "205e941de5d2781c96bccfdafb615aa63e92ec86deb6619e6d6ab6c40f5a4448",
+    "code/checkpoint_selection.py": "02c01c5f59cecaad5f1613dd26b81bbace31d17a4bafce129173ab5ae4aa3fbb",
+    "runs/mta_val_s46/best_selection.json": "73ffca7bf51da223b8ac8806140e85cbb91a16e8f8e7bdf241cc5d52ff204767",
+    "runs/mta_val_s46/eval_log.jsonl": "eb2b1137202d243b5fb32ace999bbac68bdc17e3b84c54ed3e47f980337e4b09",
+    "runs/mta_val_s46/best_model.pth": "4abe2c41531d5dedd3e30a394be5511116650088cc11131d068e523d8ceeb72e"
+  },
+  "issues": [],
+  "validation_checks": {
+    "first_epoch": true,
+    "complete": true,
+    "full_windows": true,
+    "full_unique_frames": true,
+    "window_frames": true,
+    "expected_val_clips": true,
+    "selection_limit_absent": true,
+    "mode_and_split": true,
+    "original_png_masks": true,
+    "strict_float32_sigmoid_threshold": true,
+    "window_global_iou": true,
+    "iou_counts_match": true,
+    "source_counts_match": true,
+    "exemplar_bank": true,
+    "checkpoint_readable": true,
+    "checkpoint_selection_matches": true,
+    "eval_log_matches": true,
+    "no_oom": true,
+    "training_continues": true,
+    "unchanged_runs/mta_val_s46/config.json": true,
+    "unchanged_runs/mta_val_s46/m0c.json": true,
+    "unchanged_runs/mta_val_s46/m1.json": true,
+    "unchanged_configs/splits.json": true,
+    "unchanged_code/train.py": true,
+    "unchanged_code/checkpoint_selection.py": true
+  },
+  "all_validation_checks_pass": true,
+  "first_validation": {
+    "iou": 0.017704100618522067,
+    "intersection": 623102,
+    "union": 35195349,
+    "windows": 81,
+    "window_frames": 3240,
+    "unique_frames": 2893,
+    "expected_windows": 81,
+    "expected_unique_frames": 2893,
+    "complete": true,
+    "selection_max_windows": null,
+    "seconds": 361.67343033399084,
+    "test_clips": [
+      "DJI_0107_1",
+      "DJI_0117_2",
+      "DJI_0127_1",
+      "DJI_0157_2",
+      "DJI_0163_1",
+      "DJI_0285_3",
+      "DJI_0293_1",
+      "DJI_0319_2"
+    ],
+    "per_clip": {
+      "DJI_0107_1": {
+        "intersection": 6039,
+        "union": 1672834,
+        "iou": 0.0036100414027931045,
+        "windows": 2,
+        "window_frames": 80,
+        "unique_frames": 70,
+        "source_frames": 70,
+        "coordinates": {
+          "raw": 1,
+          "warp": 1,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 10782,
+          "exemplars": 32,
+          "windows_without_exemplars": 0
+        }
+      },
+      "DJI_0117_2": {
+        "intersection": 121807,
+        "union": 4120181,
+        "iou": 0.029563507040103337,
+        "windows": 7,
+        "window_frames": 280,
+        "unique_frames": 240,
+        "source_frames": 240,
+        "coordinates": {
+          "raw": 0,
+          "warp": 7,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 16910,
+          "exemplars": 112,
+          "windows_without_exemplars": 0
+        }
+      },
+      "DJI_0127_1": {
+        "intersection": 22523,
+        "union": 4476808,
+        "iou": 0.005031039973123708,
+        "windows": 14,
+        "window_frames": 560,
+        "unique_frames": 500,
+        "source_frames": 500,
+        "coordinates": {
+          "raw": 5,
+          "warp": 9,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 9996,
+          "exemplars": 224,
+          "windows_without_exemplars": 0
+        }
+      },
+      "DJI_0157_2": {
+        "intersection": 32304,
+        "union": 4080836,
+        "iou": 0.007916025049769213,
+        "windows": 13,
+        "window_frames": 520,
+        "unique_frames": 470,
+        "source_frames": 470,
+        "coordinates": {
+          "raw": 1,
+          "warp": 12,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 27297,
+          "exemplars": 208,
+          "windows_without_exemplars": 0
+        }
+      },
+      "DJI_0163_1": {
+        "intersection": 33954,
+        "union": 3327807,
+        "iou": 0.010203115745594621,
+        "windows": 13,
+        "window_frames": 520,
+        "unique_frames": 470,
+        "source_frames": 470,
+        "coordinates": {
+          "raw": 4,
+          "warp": 9,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 30077,
+          "exemplars": 208,
+          "windows_without_exemplars": 0
+        }
+      },
+      "DJI_0285_3": {
+        "intersection": 9767,
+        "union": 1521613,
+        "iou": 0.006418846316376109,
+        "windows": 5,
+        "window_frames": 200,
+        "unique_frames": 182,
+        "source_frames": 182,
+        "coordinates": {
+          "raw": 0,
+          "warp": 5,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 11153,
+          "exemplars": 80,
+          "windows_without_exemplars": 0
+        }
+      },
+      "DJI_0293_1": {
+        "intersection": 18695,
+        "union": 13081959,
+        "iou": 0.0014290673132364962,
+        "windows": 10,
+        "window_frames": 400,
+        "unique_frames": 363,
+        "source_frames": 363,
+        "coordinates": {
+          "raw": 0,
+          "warp": 10,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 46157,
+          "exemplars": 160,
+          "windows_without_exemplars": 0
+        }
+      },
+      "DJI_0319_2": {
+        "intersection": 378013,
+        "union": 2913311,
+        "iou": 0.12975374067512874,
+        "windows": 17,
+        "window_frames": 680,
+        "unique_frames": 598,
+        "source_frames": 598,
+        "coordinates": {
+          "raw": 11,
+          "warp": 6,
+          "gated": 0
+        },
+        "exemplars": {
+          "candidates": 13501,
+          "exemplars": 272,
+          "windows_without_exemplars": 0
+        }
+      }
+    },
+    "protocol": {
+      "name": "window_global_iou",
+      "split": "val",
+      "test_list": null,
+      "clips": [
+        "DJI_0107_1",
+        "DJI_0117_2",
+        "DJI_0127_1",
+        "DJI_0157_2",
+        "DJI_0163_1",
+        "DJI_0285_3",
+        "DJI_0293_1",
+        "DJI_0319_2"
+      ],
+      "threshold": 0.5,
+      "comparison": "sigmoid(float32_logits) > threshold",
+      "sequence_length": 40,
+      "nominal_overlap": 4,
+      "stride": 36,
+      "overlapping_frames": "counted once per window; no fusion",
+      "labels": "existing segmentations PNGs, uint8 > 0, original frame coordinates",
+      "aggregation": "sum(intersection) / sum(union), not mean window or clip IoU",
+      "checkpoint_update": "iou >= best_iou",
+      "arch": "mta_lv",
+      "selection_rates": [
+        1
+      ],
+      "coordinates": "auto",
+      "history": null,
+      "motion_gate": null,
+      "mr_selection_probe": null,
+      "stationarity": {
+        "lowres": 4,
+        "margin": 0.1,
+        "abs_tol": 0.5,
+        "min_cover": 0.1
+      },
+      "exemplars": {
+        "source": "pass 1: peaks of the variation logits, max over windows",
+        "bank": "outside",
+        "k": 16,
+        "min_score": 0.0
+      }
+    },
+    "epoch": 1,
+    "threshold": 0.5,
+    "split": "val",
+    "selection_mode": "val_iou",
+    "elapsed_seconds": 361.67619919776917
+  },
+  "checkpoint": {
+    "sha256": "4abe2c41531d5dedd3e30a394be5511116650088cc11131d068e523d8ceeb72e",
+    "bytes": 3085116,
+    "epoch_zero_based": 0,
+    "best_epoch": 1,
+    "best_iou": 0.017704100618522067,
+    "selection_mode": "val_iou",
+    "state_tensor_count": 199,
+    "state_numel": 242676,
+    "all_state_tensors_on_cpu": true,
+    "all_state_tensors_finite": true
+  },
+  "checkpoint_review_method": "CPU-only torch.load of an existing saved checkpoint; no model instantiated or executed",
+  "interpretation": "Stage verification of first complete validation and correct checkpoint protocol; epoch-1 IoU is not final model performance. Training is still running; final comparisons remain direct Pd/Fa/IoU using selected best_model.pth."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "container_name": "dp-mta-v8-official-m0-20261127",
+  "container_id": "ae696455e31d27e2d928f31a51ddef97b2d6e9e8c9eb1c6fa6328d3aebca84af",
+  "started_at": "2026-11-27T01:24:58.859922+08:00",
+  "split": "official_train",
+  "gate": false,
+  "exit_code": 0,
+  "finished_at": "2026-11-26T17:29:07.803138264Z"
+}

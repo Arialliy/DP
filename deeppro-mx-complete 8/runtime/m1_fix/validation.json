@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "staging only; main project code untouched",
+  "test_command": "python code/test_miss_recovery.py",
+  "exit_code": 0,
+  "test_count": 11,
+  "tests": [
+    "test_early_misses_are_recovered_and_hot_spots_are_not",
+    "test_teacher_is_outside_the_window_and_from_confident_detections",
+    "test_box_hits_follow_the_mask",
+    "test_command_line_on_a_dataset_on_disk",
+    "test_no_candidate_means_no_recovery_even_with_a_teacher",
+    "test_no_teacher_and_nonfinite_scores_cannot_recover",
+    "test_tied_clutter_scores_never_exceed_the_budget",
+    "test_one_candidate_cannot_recover_two_adjacent_targets",
+    "test_loro_excludes_labels_and_features_of_the_whole_heldout_recording",
+    "test_gate_uses_exact_predeclared_boundaries",
+    "test_box_hits_keep_official_top_left_edge_behavior"
+  ],
+  "docker_image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+  "patched_files": [
+    "code/miss_recovery.py",
+    "code/test_miss_recovery.py"
+  ],
+  "sha256": {
+    "candidate_m1.patch": "e51d8d16d332c30ed9b1f7e59c8526fe911838cfa21b31eca6eca140c5b51f55",
+    "tests.log": "d3c692b9f2cd9c8d4ff24838df941be5d647fdf16247ebefd54d8fed3a88d630",
+    "fixed/code/miss_recovery.py": "fa7d5148c8e805de03fc8c96a7f89dd5ff5bce4e97a638f7cba42302416bac13",
+    "fixed/code/test_miss_recovery.py": "1c9592878bb98c2b0a8727484f15bc3818f514ec0b9ca675e4a8838bb724ce91"
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "job_id": "deeppro_plus_c1c818212eb0c1d8",
+  "model": "DeepPro-Plus",
+  "model_id": "deeppro_plus",
+  "label": "DeepPro-Plus",
+  "arch": "deeppro_plus",
+  "variant": "native",
+  "primary_variant": "native",
+  "checkpoint_sha256": "c1c818212eb0c1d8d8774e8fd1e6bac75db3e485ef2c5c7c34a4d0860afc87af",
+  "best_epoch": 20,
+  "training_epochs_completed": 22,
+  "final_checkpoint": false,
+  "checkpoint_status": "interim",
+  "complete": true,
+  "clips": [
+    "DJI_0049_2",
+    "DJI_0109_1",
+    "DJI_0119_2",
+    "DJI_0129_2",
+    "DJI_0155_2",
+    "DJI_0159_2",
+    "DJI_0173_2",
+    "DJI_0221_2",
+    "DJI_0237_2",
+    "DJI_0255_1",
+    "DJI_0257_2",
+    "DJI_0277_2",
+    "DJI_0303_2",
+    "DJI_0307_2",
+    "DJI_0309_4"
+  ],
+  "frames": 5976,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "protocol": {
+    "arch": "deeppro_plus",
+    "dtype": "float32",
+    "sequence_length": 40,
+    "overlap": 4,
+    "frame_fusion": "maximum over overlapping windows; each source frame output once",
+    "sigmoid": "FP32 torch.sigmoid on the model device; no float16 intermediate",
+    "primary_variant": "native",
+    "variants": {
+      "native": "sigmoid of native frame logits, without score calibration"
+    },
+    "coords": "raw",
+    "evaluation": "original ShootingRules, all 27 thresholds; unique source frames",
+    "detection_threshold_comparison": ">= (original sequential numpy assignments)",
+    "iou_threshold_comparison": "> 0.5",
+    "connectivity": 8,
+    "loc_len1": 1,
+    "loc_len2": 4,
+    "border_behavior": "original NumPy negative/overflow slice behavior retained",
+    "auc": "sklearn.metrics.auc(Fa, Pd), original 27 points, no added endpoints",
+    "labels": "existing uint8 segmentations PNG masks binarized >0"
+  },
+  "elapsed_seconds": 308.1068645780033,
+  "source": "Frozen best-IoU checkpoint; native model inference; common original detector metrics",
+  "auc": 0.9864975993384235,
+  "iou_at_0_5": 0.23884431332608136,
+  "intersection": 703054,
+  "union": 2943566,
+  "pixels": 1958215680,
+  "thresholds": [
+    {
+      "threshold": 0.0,
+      "false_pixels": 1954443182,
+      "true_targets": 11300,
+      "targets": 11300,
+      "pd": 1.0,
+      "fa": 0.9980735023018507
+    },
+    {
+      "threshold": 1e-20,
+      "false_pixels": 1954394498,
+      "true_targets": 11300,
+      "targets": 11300,
+      "pd": 1.0,
+      "fa": 0.9980486408933259
+    },
+    {
+      "threshold": 1e-10,
+      "false_pixels": 1951717381,
+      "true_targets": 11300,
+      "targets": 11300,
+      "pd": 1.0,
+      "fa": 0.996681520290962
+    },
+    {
+      "threshold": 1e-08,
+      "false_pixels": 1938795393,
+      "true_targets": 11300,
+      "targets": 11300,
+      "pd": 1.0,
+      "fa": 0.9900826618853343
+    },
+    {
+      "threshold": 1e-07,
+      "false_pixels": 1910063363,
+      "true_targets": 11300,
+      "targets": 11300,
+      "pd": 1.0,
+      "fa": 0.9754101054895036
+    },
+    {
+      "threshold": 1e-06,
+      "false_pixels": 1446973090,
+      "true_targets": 11286,
+      "targets": 11300,
+      "pd": 0.9987610619469026,
+      "fa": 0.7389242690570224
+    },
+    {
+      "threshold": 1e-05,
+      "false_pixels": 23658362,
+      "true_targets": 10979,
+      "targets": 11300,
+      "pd": 0.9715929203539823,
+      "fa": 0.012081591543583186
+    },
+    {
+      "threshold": 0.0001,
+      "false_pixels": 4651113,
+      "true_targets": 10795,
+      "targets": 11300,
+      "pd": 0.9553097345132744,
+      "fa": 0.0023751791222507215
+    },
+    {
+      "threshold": 0.001,
+      "false_pixels": 3088225,
+      "true_targets": 10695,
+      "targets": 11300,
+      "pd": 0.9464601769911505,
+      "fa": 0.0015770607045695803
+    },
+    {
+      "threshold": 0.01,
+      "false_pixels": 2469010,
+      "true_targets": 10625,
+      "targets": 11300,
+      "pd": 0.9402654867256637,
+      "fa": 0.0012608468133602116
+    },
+    {
+      "threshold": 0.1,
+      "false_pixels": 2039677,
+      "true_targets": 10531,
+      "targets": 11300,
+      "pd": 0.9319469026548672,
+      "fa": 0.0010415997690305494
+    },
+    {
+      "threshold": 0.2,
+      "false_pixels": 1918582,
+      "true_targets": 10501,
+      "targets": 11300,
+      "pd": 0.9292920353982301,
+      "fa": 0.0009797603091402066
+    },
+    {
+      "threshold": 0.3,
+      "false_pixels": 1843035,
+      "true_targets": 10481,
+      "targets": 11300,
+      "pd": 0.9275221238938053,
+      "fa": 0.0009411807998595946
+    },
+    {
+      "threshold": 0.35,
+      "false_pixels": 1812078,
+      "true_targets": 10467,
+      "targets": 11300,
+      "pd": 0.926283185840708,
+      "fa": 0.0009253720203077937
+    },
+    {
+      "threshold": 0.4,
+      "false_pixels": 1783788,
+      "true_targets": 10451,
+      "targets": 11300,
+      "pd": 0.9248672566371682,
+      "fa": 0.0009109251949203063
+    },
+    {
+      "threshold": 0.45,
+      "false_pixels": 1757153,
+      "true_targets": 10443,
+      "targets": 11300,
+      "pd": 0.9241592920353983,
+      "fa": 0.000897323526691401
+    },
+    {
+      "threshold": 0.5,
+      "false_pixels": 1731363,
+      "true_targets": 10438,
+      "targets": 11300,
+      "pd": 0.9237168141592921,
+      "fa": 0.0008841533737489019
+    },
+    {
+      "threshold": 0.55,
+      "false_pixels": 1705999,
+      "true_targets": 10428,
+      "targets": 11300,
+      "pd": 0.9228318584070796,
+      "fa": 0.0008712007657910287
+    },
+    {
+      "threshold": 0.6,
+      "false_pixels": 1680483,
+      "true_targets": 10423,
+      "targets": 11300,
+      "pd": 0.9223893805309734,
+      "fa": 0.0008581705361485003
+    },
+    {
+      "threshold": 0.65,
+      "false_pixels": 1654315,
+      "true_targets": 10414,
+      "targets": 11300,
+      "pd": 0.9215929203539823,
+      "fa": 0.0008448073503323189
+    },
+    {
+      "threshold": 0.7,
+      "false_pixels": 1626703,
+      "true_targets": 10406,
+      "targets": 11300,
+      "pd": 0.9208849557522124,
+      "fa": 0.0008307067585119122
+    },
+    {
+      "threshold": 0.8,
+      "false_pixels": 1563249,
+      "true_targets": 10381,
+      "targets": 11300,
+      "pd": 0.9186725663716814,
+      "fa": 0.0007983027691821975
+    },
+    {
+      "threshold": 0.85,
+      "false_pixels": 1522803,
+      "true_targets": 10365,
+      "targets": 11300,
+      "pd": 0.9172566371681415,
+      "fa": 0.0007776482516981991
+    },
+    {
+      "threshold": 0.9,
+      "false_pixels": 1470504,
+      "true_targets": 10343,
+      "targets": 11300,
+      "pd": 0.9153097345132744,
+      "fa": 0.0007509407748180221
+    },
+    {
+      "threshold": 0.95,
+      "false_pixels": 1386695,
+      "true_targets": 10310,
+      "targets": 11300,
+      "pd": 0.9123893805309734,
+      "fa": 0.0007081421184412128
+    },
+    {
+      "threshold": 0.99,
+      "false_pixels": 1201645,
+      "true_targets": 10209,
+      "targets": 11300,
+      "pd": 0.9034513274336283,
+      "fa": 0.0006136428240631799
+    },
+    {
+      "threshold": 1.0,
+      "false_pixels": 215669,
+      "true_targets": 8575,
+      "targets": 11300,
+      "pd": 0.7588495575221239,
+      "fa": 0.00011013546781527151
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+  "status": "generation_complete",
+  "gt_loaded": false,
+  "plan_path": "results/m2/plan.json",
+  "plan_sha256": "5ed6743e4f5595267cda70b64218d1a02a89ba5e5dcfd700f4a2789a99588b86",
+  "generator_sha256": "edc6616b09fa5b50a2ad8c38b1c9862f4e3675ace2bde5ceeee220f35c6c34ec",
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "parameters": {
+    "early_first": 0,
+    "early_last": 59,
+    "teacher_first": 60,
+    "teacher_probability_min": 0.5,
+    "teacher_logit_min_inclusive": 0.0,
+    "teacher_peak_nms_size": 9,
+    "teacher_peak_topk": 300,
+    "association_max_gap": 3,
+    "association_max_px_per_frame": 10.0,
+    "fit_first_window_frames": 40,
+    "minimum_fit_points": 10,
+    "minimum_fit_span": 9,
+    "maximum_fit_rms_px": 3.0,
+    "candidate_nms_radius_px": 3.0,
+    "evaluation_radius_px": 3.0,
+    "distance_bin_upper_frames": [
+      30,
+      60,
+      120,
+      240
+    ]
+  },
+  "clips": [
+    {
+      "clip": "DJI_0049_2",
+      "shape": [
+        90,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 30,
+      "teacher_points": 117,
+      "teacher_frames_capped": 0,
+      "tracks": 5,
+      "sufficient_fit_tracks": 5,
+      "accepted_tracks": {
+        "raw_stop": 2,
+        "raw_cv": 5
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 120
+        },
+        "raw_cv": {
+          "out_of_bounds": 6,
+          "kept": 294
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0049_2.npy",
+        "prediction_sha256": "1f7594e445eed512d55bf63dd9cf1c198b1cee97500618dea8555c3a07a12c4f",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0049_2.json",
+        "metadata_sha256": "794bce151ff0ed63e8b52b4fd9a254a53d1859e010f383235e41b285effa6bc9"
+      },
+      "files": {
+        "DJI_0049_2/tracks.csv": "36255e0aba89d1ace9ed8e65ad6ad790d9d81a629409155e51e8bb4387ae4708",
+        "DJI_0049_2/teacher_points.csv": "b6094f6f14d028248c2f7827f33f844e20324b1eb4d9a404d12918b24c829b3a",
+        "DJI_0049_2/points.csv": "bb97ab4b865c90334173f322cf0bdf5f729b2d347eb4de52eb7b858b6f83839e",
+        "DJI_0049_2/teacher_frames.csv": "650b03e67f708f91f847f5c125cd34ed1d2298dba1dd5905595e9db1622bbdf8"
+      }
+    },
+    {
+      "clip": "DJI_0109_1",
+      "shape": [
+        90,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 30,
+      "teacher_points": 59,
+      "teacher_frames_capped": 0,
+      "tracks": 11,
+      "sufficient_fit_tracks": 2,
+      "accepted_tracks": {
+        "raw_stop": 2,
+        "raw_cv": 2
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 120
+        },
+        "raw_cv": {
+          "kept": 120
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0109_1.npy",
+        "prediction_sha256": "6ba5069beb0d88239c400e379e7ca61830a0d89978fa86265ca64e27d99f4b85",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0109_1.json",
+        "metadata_sha256": "826b4f4a297895da3c78de85c4011538fdffbdd5c187f3036590be40a36ab193"
+      },
+      "files": {
+        "DJI_0109_1/tracks.csv": "f3c294a32a448d71de43878fe16ecdf78b4a8659f04720984d407adf6e5d535b",
+        "DJI_0109_1/teacher_points.csv": "7f8b9e463485f2615f2523e14b8a276897e0ba04ee4a4feca845847649dede7b",
+        "DJI_0109_1/points.csv": "28ec4f8295a0ae010dee2b88d0fe262a0bbff4241de914bf2178cbe790af10e8",
+        "DJI_0109_1/teacher_frames.csv": "bcfc9b18f5222ea84092438cc5150afe403842eb8f87ea42a09de18f75a8d1da"
+      }
+    },
+    {
+      "clip": "DJI_0119_2",
+      "shape": [
+        180,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 120,
+      "teacher_points": 549,
+      "teacher_frames_capped": 0,
+      "tracks": 42,
+      "sufficient_fit_tracks": 14,
+      "accepted_tracks": {
+        "raw_stop": 7,
+        "raw_cv": 13
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "nms_suppressed": 60,
+          "kept": 360
+        },
+        "raw_cv": {
+          "kept": 605,
+          "nms_suppressed": 60,
+          "out_of_bounds": 115
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0119_2.npy",
+        "prediction_sha256": "9216c33243f066b1053a1dd9b4c4d7ff7759002ba09c3a6e16703bc47ba6c240",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0119_2.json",
+        "metadata_sha256": "f73b42e8ccd42bf6eee5bb2acce86f857b2ebcd24124e27b9b02ec54c61c1c5d"
+      },
+      "files": {
+        "DJI_0119_2/tracks.csv": "2c56242c3f8c01d43071345a257505f3fdff1b0ad367fbe21113251596b7ccee",
+        "DJI_0119_2/teacher_points.csv": "48daa575d99f5a5f777df3d2e29b4e349af3e1e72df4d68771a6701f1dfcbfcb",
+        "DJI_0119_2/points.csv": "3f3fd5f54ee7fb014feaf086fe80eaf03ed27b82bb5e1104af6122d8111c5801",
+        "DJI_0119_2/teacher_frames.csv": "9f7d9db817040eb8e340dfebfb03cb28d7eb87d5aa6b58a0ef3abd3740822ecf"
+      }
+    },
+    {
+      "clip": "DJI_0129_2",
+      "shape": [
+        590,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 530,
+      "teacher_points": 815,
+      "teacher_frames_capped": 0,
+      "tracks": 20,
+      "sufficient_fit_tracks": 5,
+      "accepted_tracks": {
+        "raw_stop": 1,
+        "raw_cv": 5
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 60
+        },
+        "raw_cv": {
+          "kept": 300
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0129_2.npy",
+        "prediction_sha256": "0a535a893cc805244a824ca2cc7cf4c6056944282dda98e5a8c4be7df5769978",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0129_2.json",
+        "metadata_sha256": "bbada7af73f0b0d0739a45c790439b13f772260672d7c24d8dfdcbb93e18679f"
+      },
+      "files": {
+        "DJI_0129_2/tracks.csv": "ae94e56c3c254276d51e1f601c0fb22f5ce6b90265378ceb9690ba4b897b72c2",
+        "DJI_0129_2/teacher_points.csv": "83177d47a2cc48d5b1b62e1f4e39a4b2ce93e013e049da7597d9614c52b615eb",
+        "DJI_0129_2/points.csv": "0df39762343c2b531c04943f3719abc277c19f896667eaba1f474b13275536c9",
+        "DJI_0129_2/teacher_frames.csv": "4e3a31c487ec605c366a225db4743acd9bbd44d606793f35cb59de21209346e2"
+      }
+    },
+    {
+      "clip": "DJI_0155_2",
+      "shape": [
+        410,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 350,
+      "teacher_points": 742,
+      "teacher_frames_capped": 0,
+      "tracks": 15,
+      "sufficient_fit_tracks": 11,
+      "accepted_tracks": {
+        "raw_stop": 5,
+        "raw_cv": 10
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 240,
+          "nms_suppressed": 60
+        },
+        "raw_cv": {
+          "kept": 360,
+          "nms_suppressed": 60,
+          "out_of_bounds": 180
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0155_2.npy",
+        "prediction_sha256": "21c76ea0ed853233dc6f51d04798f96a3f65ada088369e57fd64348098e02b84",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0155_2.json",
+        "metadata_sha256": "73ebaad42734481cdc588a374dfab3ca0cbd36aa695b8649593a29db8ff3ef94"
+      },
+      "files": {
+        "DJI_0155_2/tracks.csv": "20f9f31ab48c871ad615c447dda36e77801eab15a4710553f0f1316fe960d46b",
+        "DJI_0155_2/teacher_points.csv": "621c9541ed62b8c6300c4eeba41f934641c7027db831079369871d2a7524f607",
+        "DJI_0155_2/points.csv": "a19e08dc53db88a8d65376c8c0547bd31db3f4a9b9e299921a1a0d34809a6e30",
+        "DJI_0155_2/teacher_frames.csv": "8285433494f6b1652e6bf363cec27651e7b05efa43fdb10657a6ad456b28a08f"
+      }
+    },
+    {
+      "clip": "DJI_0159_2",
+      "shape": [
+        250,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 190,
+      "teacher_points": 180,
+      "teacher_frames_capped": 0,
+      "tracks": 3,
+      "sufficient_fit_tracks": 1,
+      "accepted_tracks": {
+        "raw_stop": 0,
+        "raw_cv": 1
+      },
+      "projected_counts": {
+        "raw_stop": {},
+        "raw_cv": {
+          "kept": 60
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0159_2.npy",
+        "prediction_sha256": "a5a1edf5db20912df8f756398b703aae03dd8eb71c255ca0c109955d71f70cb0",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0159_2.json",
+        "metadata_sha256": "f27320c2f52117f4e3d137e8a2e832ad337a14d7b2c4fd5cb35620ec64bc2f66"
+      },
+      "files": {
+        "DJI_0159_2/tracks.csv": "213d37ffdd291ba250c821f1f5e3b81a7507676be3e532f8e25b2503a13f2503",
+        "DJI_0159_2/teacher_points.csv": "bd523a7cbd176bc061740e20c354b75253fc49cdb7e67a3f598b490138be9f5d",
+        "DJI_0159_2/points.csv": "08e7e9308f9a2542c84d50c5334d7b7816df3bd450b62ecca1b4e23dd2454f2a",
+        "DJI_0159_2/teacher_frames.csv": "82483cd7b4da58e2ba3c7235170451aac34a3cad544d25a202855d9435ea38cd"
+      }
+    },
+    {
+      "clip": "DJI_0173_2",
+      "shape": [
+        450,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 390,
+      "teacher_points": 387,
+      "teacher_frames_capped": 0,
+      "tracks": 10,
+      "sufficient_fit_tracks": 3,
+      "accepted_tracks": {
+        "raw_stop": 0,
+        "raw_cv": 0
+      },
+      "projected_counts": {
+        "raw_stop": {},
+        "raw_cv": {}
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0173_2.npy",
+        "prediction_sha256": "e648b5a5997c92f68ab7f6d426f22581e1348f5e08727855bb3c38b77576dafa",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0173_2.json",
+        "metadata_sha256": "de6f2f749a53d7162433b28c8aa6c492b73ae9159fb4c9daf747499b59b4c81e"
+      },
+      "files": {
+        "DJI_0173_2/tracks.csv": "fe99a936f76c0ad0d74cf8ce6007f447d36aa471cc2e470b44c356944c71f7a3",
+        "DJI_0173_2/teacher_points.csv": "634c4e43efb0aa677b5b92e37c5aec87ec0cf29d2f4282827878d4fbe263a1c7",
+        "DJI_0173_2/points.csv": "09b5d7e963eb6d3141427ec434e0f585515d13f4edfbb5fd8ee54d84e20c72a6",
+        "DJI_0173_2/teacher_frames.csv": "49efd7042967907315765114f90a8bf009e2b7660d4e1cb585eba1bd0cd78c42"
+      }
+    },
+    {
+      "clip": "DJI_0221_2",
+      "shape": [
+        590,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 530,
+      "teacher_points": 763,
+      "teacher_frames_capped": 0,
+      "tracks": 58,
+      "sufficient_fit_tracks": 13,
+      "accepted_tracks": {
+        "raw_stop": 4,
+        "raw_cv": 9
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "nms_suppressed": 60,
+          "kept": 180
+        },
+        "raw_cv": {
+          "out_of_bounds": 300,
+          "kept": 240
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0221_2.npy",
+        "prediction_sha256": "e2282253d26a633fa91338425d3e01c478d26c294d284d04e19038d6ba2c9218",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0221_2.json",
+        "metadata_sha256": "567b17c3e4a109c33fa436808966516a4196569c7a743a34d00d371922519657"
+      },
+      "files": {
+        "DJI_0221_2/tracks.csv": "356d58dfefff28230ad207fb449ac169bf2651ce3c43ca42a211d4d3d47d145b",
+        "DJI_0221_2/teacher_points.csv": "ef21210852196e655af6d552df9d3d3f4c9149c09e80cbf7bac42e8c01a5a2f6",
+        "DJI_0221_2/points.csv": "6cb21a2bd6b2dac906bcbb36d8f2f0b3749d2d534940c5338eff58efa52b991d",
+        "DJI_0221_2/teacher_frames.csv": "237205ebf38dd552a856bba5258c641df062f7f0476c99b2448dc7dd729ea552"
+      }
+    },
+    {
+      "clip": "DJI_0237_2",
+      "shape": [
+        410,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 350,
+      "teacher_points": 2999,
+      "teacher_frames_capped": 0,
+      "tracks": 183,
+      "sufficient_fit_tracks": 50,
+      "accepted_tracks": {
+        "raw_stop": 21,
+        "raw_cv": 42
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 1020,
+          "nms_suppressed": 240
+        },
+        "raw_cv": {
+          "kept": 1927,
+          "out_of_bounds": 585,
+          "nms_suppressed": 8
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0237_2.npy",
+        "prediction_sha256": "9249a8bd23c59131c058546dcb0bda567023eabe9e3b8ff7de61fe4aebdddc47",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0237_2.json",
+        "metadata_sha256": "f458fb846fdf3f92a4ef4d7707ce1962765689715c4ad5bdab71065e6bfb7cb4"
+      },
+      "files": {
+        "DJI_0237_2/tracks.csv": "965b7dbf88de34b6324d430a04611c7a67a3ee303422d71b5b80aa8f1339caf3",
+        "DJI_0237_2/teacher_points.csv": "eb22bf6dc81c4df69d69e14c07ba8b885d8d5c740974a5d8f5550c088740b160",
+        "DJI_0237_2/points.csv": "08a2d314036b49cd7bae634304b25fe9617846ca805b14bf105b7c47c088645d",
+        "DJI_0237_2/teacher_frames.csv": "a3649731b95370df7b233ec8e53220cd7b2b23b1461c9880c8e03f92115ad5b3"
+      }
+    },
+    {
+      "clip": "DJI_0255_1",
+      "shape": [
+        600,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 540,
+      "teacher_points": 537,
+      "teacher_frames_capped": 0,
+      "tracks": 27,
+      "sufficient_fit_tracks": 9,
+      "accepted_tracks": {
+        "raw_stop": 1,
+        "raw_cv": 7
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 60
+        },
+        "raw_cv": {
+          "out_of_bounds": 216,
+          "kept": 204
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0255_1.npy",
+        "prediction_sha256": "cd17adbccff6c71d24962d7ee3fbc9daf4ddc1029973af40d33b0e89938ae104",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0255_1.json",
+        "metadata_sha256": "fad1b31e41dca3c62f8383a1c86843e6a3435f5ff6808628ed954f580dbb5506"
+      },
+      "files": {
+        "DJI_0255_1/tracks.csv": "1f883951697288142e299524f2162ea9c76dad00c434e9366221fd896bce2760",
+        "DJI_0255_1/teacher_points.csv": "0908548e42275f44e754a7e77fb6413acce609e869be7cd51dbcf238f1189178",
+        "DJI_0255_1/points.csv": "de5d1d4a76804720ff6e4ffedb7cd2a4b4e106fef444ad0771f1c1a92d563b49",
+        "DJI_0255_1/teacher_frames.csv": "50ecf8918e0cffcd34739f2d66c6e7b51bc3eb337e4cd7bcf820a0d90768f6e1"
+      }
+    },
+    {
+      "clip": "DJI_0257_2",
+      "shape": [
+        590,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 530,
+      "teacher_points": 1433,
+      "teacher_frames_capped": 0,
+      "tracks": 76,
+      "sufficient_fit_tracks": 34,
+      "accepted_tracks": {
+        "raw_stop": 4,
+        "raw_cv": 18
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 240
+        },
+        "raw_cv": {
+          "kept": 480,
+          "out_of_bounds": 600
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0257_2.npy",
+        "prediction_sha256": "1a34b3bdd01cf758d6f501e224185528558dc8e2a7b288070f38e9f6f9704438",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0257_2.json",
+        "metadata_sha256": "bfc33f1c39517eccae1697aea9136775d6d604dfab9fbd29796fd1f986ac9f47"
+      },
+      "files": {
+        "DJI_0257_2/tracks.csv": "cbd818234e763f4e811bee17e20c8891125a626b8db9adce415002328b185a64",
+        "DJI_0257_2/teacher_points.csv": "5eeae021c6463cbb85ad90993ec114398aca7fe3166fa36daab774a05fe544ac",
+        "DJI_0257_2/points.csv": "c7e0e60875e065c1d54a393062fca939cda9b81887ce275a7f4e6237993810ec",
+        "DJI_0257_2/teacher_frames.csv": "fac9c444f964c05b85a97c6993a8eadb65eefddf93bd0fd4a06a16f87e7f3478"
+      }
+    },
+    {
+      "clip": "DJI_0277_2",
+      "shape": [
+        366,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 306,
+      "teacher_points": 4337,
+      "teacher_frames_capped": 0,
+      "tracks": 848,
+      "sufficient_fit_tracks": 142,
+      "accepted_tracks": {
+        "raw_stop": 38,
+        "raw_cv": 99
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 2220,
+          "nms_suppressed": 60
+        },
+        "raw_cv": {
+          "kept": 4360,
+          "out_of_bounds": 1550,
+          "nms_suppressed": 30
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0277_2.npy",
+        "prediction_sha256": "249bf06079dcc0a308d328f7094ae98877c59915e95d291ea6a7cd7a5023be38",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0277_2.json",
+        "metadata_sha256": "9b9aa19a1513ec2eee1c9a021ee3d1aa1bb9b41323d2759d27e639cbbea734a3"
+      },
+      "files": {
+        "DJI_0277_2/tracks.csv": "3b957562a809b0fde7a0eabd9d75d7efbe6a3b5afa2732f8620c931f5c20795f",
+        "DJI_0277_2/teacher_points.csv": "95826b64df40db0dc9d20443de2ab7acad515d7b610312aa04d49adb6af52025",
+        "DJI_0277_2/points.csv": "81bb40be93d8a53c120ef0f303187917f38a4d8e3042bb7d8be5f6d4ec3b62f6",
+        "DJI_0277_2/teacher_frames.csv": "ce59b50957079c439b3fb37503e1dfbca3b3f4f390137571e64c396c961e9e7c"
+      }
+    },
+    {
+      "clip": "DJI_0303_2",
+      "shape": [
+        577,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 517,
+      "teacher_points": 1659,
+      "teacher_frames_capped": 0,
+      "tracks": 279,
+      "sufficient_fit_tracks": 24,
+      "accepted_tracks": {
+        "raw_stop": 9,
+        "raw_cv": 13
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 540
+        },
+        "raw_cv": {
+          "kept": 600,
+          "out_of_bounds": 180
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0303_2.npy",
+        "prediction_sha256": "109914f93a9383bc0319fdc80e7ea78373e4e7f12abe7b27552dc836681f35c2",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0303_2.json",
+        "metadata_sha256": "7692dde5d12157d0214dd011b457dec6bb3b34c514c78de0d4cdac1691ccf6db"
+      },
+      "files": {
+        "DJI_0303_2/tracks.csv": "9c010b214379c70ec0b21fd38f565dec5efeeecabc7a5b2d4a60141c699b6445",
+        "DJI_0303_2/teacher_points.csv": "0039eb6a10e7ed7011797041427a42c6e7b6b1af3dcc1356304db3b75b20ea46",
+        "DJI_0303_2/points.csv": "06e8f83074adac640f23f50b64f6f45410f9d167bbd68ef26ce0a1fcc5b679a2",
+        "DJI_0303_2/teacher_frames.csv": "0e25609dbf518c2a88560cdc5a4b57de47cc9f81b5dc25d09108fa6ceb0528b1"
+      }
+    },
+    {
+      "clip": "DJI_0307_2",
+      "shape": [
+        180,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 120,
+      "teacher_points": 130,
+      "teacher_frames_capped": 0,
+      "tracks": 2,
+      "sufficient_fit_tracks": 2,
+      "accepted_tracks": {
+        "raw_stop": 1,
+        "raw_cv": 2
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 60
+        },
+        "raw_cv": {
+          "kept": 120
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0307_2.npy",
+        "prediction_sha256": "97d88e90c0843f1c6cce379dd01f757ce38dc17e8bfa3922fd7fc8f6c5183ee5",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0307_2.json",
+        "metadata_sha256": "7956cfd510da0d5a5b715182271f37eeb6422adc1675e2195545e8a8fc295a50"
+      },
+      "files": {
+        "DJI_0307_2/tracks.csv": "11886a342c3964e8ddb5277fa20ad0d03445623675c9e3d4d6ff6f14f05034ba",
+        "DJI_0307_2/teacher_points.csv": "9892ec6f9b6208ae9aeec9241d7c077b2d5c6e9b96ae3bf6b316d6df5e98ce62",
+        "DJI_0307_2/points.csv": "87ed338d958cc0e42970c744da970bbca6f0fd802e083ab45d8fa166033ae3e0",
+        "DJI_0307_2/teacher_frames.csv": "6a16434afdb66448082ddbeaac947fa5c0a62edf011fa735018e439cbb88c97e"
+      }
+    },
+    {
+      "clip": "DJI_0309_4",
+      "shape": [
+        603,
+        512,
+        640
+      ],
+      "early_frames": 60,
+      "teacher_frames": 543,
+      "teacher_points": 1831,
+      "teacher_frames_capped": 0,
+      "tracks": 350,
+      "sufficient_fit_tracks": 32,
+      "accepted_tracks": {
+        "raw_stop": 10,
+        "raw_cv": 22
+      },
+      "projected_counts": {
+        "raw_stop": {
+          "kept": 420,
+          "nms_suppressed": 180
+        },
+        "raw_cv": {
+          "kept": 472,
+          "out_of_bounds": 802,
+          "nms_suppressed": 46
+        }
+      },
+      "sources": {
+        "prediction": "cache/preds/official_rgbt/DJI_0309_4.npy",
+        "prediction_sha256": "2844089c70d328506b400648b03bd7a424b7d356f0f1bdd37f83a21d5a0cb550",
+        "metadata": "cache/preds/official_rgbt__meta/DJI_0309_4.json",
+        "metadata_sha256": "10a351ae0b7445152a2db8379a41b8aa99316233aa129da506812e04daad34ad"
+      },
+      "files": {
+        "DJI_0309_4/tracks.csv": "a4b130c86abc284cf48faf6ed460b24551d8028446459e8903495aa6f78f74b5",
+        "DJI_0309_4/teacher_points.csv": "0790d110bf6f1a814a77e73943999add5aa4a7f8b1b8560572b7a9e6de65faeb",
+        "DJI_0309_4/points.csv": "b650ba08c156bea46d77d999c69a666d812a4621b7665ffb0ab21385a8962b89",
+        "DJI_0309_4/teacher_frames.csv": "806d7558402ccf478715316fe796e356b01d48b25f1655345033260a71877dec"
+      }
+    }
+  ]
+}

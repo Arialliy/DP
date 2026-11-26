@@ -1,0 +1,133 @@
+{
+ "rule": "Grouped K-fold cross-validation over the non-test clips (train + val of splits.json).\n\nWhy: the validation split has 8 clips, and one of them (DJI_0319_2) holds 80 % of the\nnear-stationary boxes, so a single split cannot support a claim about slow targets.\n\nRules (fixed before any multi-rate model is trained)\n  1. Groups are drone recordings (DJI_XXXX). Recordings that the visual scene review found\n     to show the same site are one group: (DJI_0043, DJI_0057) and (DJI_0113, DJI_0115).\n  2. Moving-camera groups (any clip >= 0.3 px/frame) are dealt first, largest first, to the\n     fold with the fewest moving groups (ties: fewest boxes).\n  3. Static-camera groups are dealt by near-stationary box count (rel_speed < 0.2,\n     results/profile/targets.csv), largest first, to the fold with the fewest such boxes\n     (ties: fewest groups). Without targets.csv every group weighs the same.\n  4. Ties in ordering are broken by the SHA-256 of the group name.\nWrites configs/folds.json. splits.clips('fold2/val') is fold 2 and splits.clips('fold2/train')\nthe other non-test clips, for train.py --split, infer_mr.py --clips and score.py --split.\n\nUsage: python code/folds.py [--k 5] [--targets results/profile/targets.csv]",
+ "k": 5,
+ "folds": [
+  [
+   "DJI_0081_2",
+   "DJI_0175_2",
+   "DJI_0229_2",
+   "DJI_0293_1",
+   "DJI_0295_3"
+  ],
+  [
+   "DJI_0030_9",
+   "DJI_0271_2",
+   "DJI_0273_1"
+  ],
+  [
+   "DJI_0043_2",
+   "DJI_0057_1",
+   "DJI_0177_2",
+   "DJI_0305_3",
+   "DJI_0305_7"
+  ],
+  [
+   "DJI_0117_2",
+   "DJI_0121_2",
+   "DJI_0131_2",
+   "DJI_0157_2",
+   "DJI_0163_1",
+   "DJI_0217_2",
+   "DJI_0241_2",
+   "DJI_0319_2"
+  ],
+  [
+   "DJI_0069_1",
+   "DJI_0101_2",
+   "DJI_0107_1",
+   "DJI_0111_2",
+   "DJI_0113_3",
+   "DJI_0115_2",
+   "DJI_0123_6",
+   "DJI_0125_1",
+   "DJI_0127_1",
+   "DJI_0143_1",
+   "DJI_0145_1",
+   "DJI_0243_2",
+   "DJI_0253_1",
+   "DJI_0253_2",
+   "DJI_0253_3",
+   "DJI_0285_3",
+   "DJI_0287_1",
+   "DJI_0287_2",
+   "DJI_0323_2"
+  ]
+ ],
+ "stats": [
+  {
+   "clips": 5,
+   "groups": [
+    "DJI_0229",
+    "DJI_0293",
+    "DJI_0295",
+    "DJI_0081",
+    "DJI_0175"
+   ],
+   "moving_groups": 2,
+   "near_stationary_boxes": 5878,
+   "boxes": 14694
+  },
+  {
+   "clips": 3,
+   "groups": [
+    "DJI_0273",
+    "DJI_0271",
+    "DJI_0030"
+   ],
+   "moving_groups": 2,
+   "near_stationary_boxes": 7252,
+   "boxes": 12232
+  },
+  {
+   "clips": 5,
+   "groups": [
+    "DJI_0305",
+    "DJI_0177",
+    "DJI_0043+DJI_0057"
+   ],
+   "moving_groups": 2,
+   "near_stationary_boxes": 13786,
+   "boxes": 33290
+  },
+  {
+   "clips": 8,
+   "groups": [
+    "DJI_0241",
+    "DJI_0163",
+    "DJI_0319",
+    "DJI_0121",
+    "DJI_0217",
+    "DJI_0117",
+    "DJI_0131",
+    "DJI_0157"
+   ],
+   "moving_groups": 2,
+   "near_stationary_boxes": 5855,
+   "boxes": 10339
+  },
+  {
+   "clips": 19,
+   "groups": [
+    "DJI_0287",
+    "DJI_0243",
+    "DJI_0285",
+    "DJI_0323",
+    "DJI_0069",
+    "DJI_0253",
+    "DJI_0113+DJI_0115",
+    "DJI_0143",
+    "DJI_0145",
+    "DJI_0127",
+    "DJI_0107",
+    "DJI_0125",
+    "DJI_0123",
+    "DJI_0101",
+    "DJI_0111"
+   ],
+   "moving_groups": 3,
+   "near_stationary_boxes": 5851,
+   "boxes": 13611
+  }
+ ],
+ "counts_from": "results/profile/targets.csv"
+}

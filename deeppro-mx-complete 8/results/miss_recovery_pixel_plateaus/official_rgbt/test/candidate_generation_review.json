@@ -1,0 +1,1090 @@
+{
+  "reviewed_at": "2026-11-26T17:30:19.453520+00:00",
+  "audit_only": true,
+  "no_model_inference_training_or_refitting": true,
+  "parameters_unchanged": {
+    "per_frame": 100,
+    "r_pos": 3.0,
+    "r_neg": 8.0,
+    "contrast_floor": 3.0,
+    "nms_size": 9,
+    "shift": 2
+  },
+  "frame_checks": {
+    "missed_target_frames": 838,
+    "proposals_exact_csv_match": true,
+    "box_centres_tracks_categories_exact_match": true,
+    "existing_video_cache_frames_equal_source_images": 0
+  },
+  "synthetic_checks": {
+    "xy_no_transposition": true,
+    "coco_pixel_centres_match_mask": true,
+    "shift2_does_not_relocate_9x9_peak_contrast": true,
+    "plateau_ties_preserved_then_topk_truncated": {
+      "tied_highest_points": 9
+    },
+    "analytic_mask_geometry_matches_existing_mask_and_official_border": true
+  },
+  "groups": {
+    "all": {
+      "misses": 1545,
+      "loss_stage": {
+        "outside_top100": 364,
+        "retained": 548,
+        "suppressed_by_9x9_nms": 435,
+        "below_contrast_floor": 198
+      },
+      "has_r3_candidate": 548,
+      "has_mask_eligible_selected_candidate": 650,
+      "mask_eligible_but_no_r3": 102,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 50,
+      "local_abs_contrast_r3": {
+        "n": 1545,
+        "min": 0.1969757080078125,
+        "p25": 9.996841430664062,
+        "median": 17.611740112304688,
+        "p75": 29.640159606933594,
+        "max": 63.846588134765625
+      },
+      "nearest_retained_distance": {
+        "n": 1545,
+        "min": 0.0,
+        "p25": 1.5,
+        "median": 10.0,
+        "p75": 48.0,
+        "max": 300.5
+      },
+      "retained_candidate_scores": {
+        "n": 548,
+        "min": -7.449693553753374,
+        "p25": -0.8566536340367519,
+        "median": 0.09334860657062459,
+        "p75": 0.8380878605913223,
+        "max": 2.7239214803343264
+      },
+      "passed_existing_pooled1": 4,
+      "passed_existing_clip1": 58
+    },
+    "early": {
+      "misses": 644,
+      "loss_stage": {
+        "outside_top100": 198,
+        "retained": 221,
+        "suppressed_by_9x9_nms": 217,
+        "below_contrast_floor": 8
+      },
+      "has_r3_candidate": 221,
+      "has_mask_eligible_selected_candidate": 252,
+      "mask_eligible_but_no_r3": 31,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 15,
+      "local_abs_contrast_r3": {
+        "n": 644,
+        "min": 0.43181610107421875,
+        "p25": 12.51089096069336,
+        "median": 21.08901596069336,
+        "p75": 36.888261795043945,
+        "max": 63.846588134765625
+      },
+      "nearest_retained_distance": {
+        "n": 644,
+        "min": 0.0,
+        "p25": 1.5,
+        "median": 10.0,
+        "p75": 39.5,
+        "max": 172.5
+      },
+      "retained_candidate_scores": {
+        "n": 221,
+        "min": -7.449693553753374,
+        "p25": -1.5316607891561935,
+        "median": 0.3887755437032747,
+        "p75": 1.0181044892503948,
+        "max": 2.5059412732076543
+      },
+      "passed_existing_pooled1": 1,
+      "passed_existing_clip1": 35
+    },
+    "later": {
+      "misses": 901,
+      "loss_stage": {
+        "suppressed_by_9x9_nms": 218,
+        "retained": 327,
+        "outside_top100": 166,
+        "below_contrast_floor": 190
+      },
+      "has_r3_candidate": 327,
+      "has_mask_eligible_selected_candidate": 398,
+      "mask_eligible_but_no_r3": 71,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 35,
+      "local_abs_contrast_r3": {
+        "n": 901,
+        "min": 0.1969757080078125,
+        "p25": 4.76641845703125,
+        "median": 15.979164123535156,
+        "p75": 23.559982299804688,
+        "max": 63.37751770019531
+      },
+      "nearest_retained_distance": {
+        "n": 901,
+        "min": 0.0,
+        "p25": 1.5,
+        "median": 8.5,
+        "p75": 81.5,
+        "max": 300.5
+      },
+      "retained_candidate_scores": {
+        "n": 327,
+        "min": -5.174508963729058,
+        "p25": -0.6490406737476779,
+        "median": -0.014041761396401842,
+        "p75": 0.6350514156517564,
+        "max": 2.7239214803343264
+      },
+      "passed_existing_pooled1": 3,
+      "passed_existing_clip1": 23
+    },
+    "DJI_0049_2": {
+      "misses": 395,
+      "loss_stage": {
+        "outside_top100": 135,
+        "retained": 56,
+        "suppressed_by_9x9_nms": 204
+      },
+      "has_r3_candidate": 56,
+      "has_mask_eligible_selected_candidate": 73,
+      "mask_eligible_but_no_r3": 17,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 0,
+      "local_abs_contrast_r3": {
+        "n": 395,
+        "min": 4.493690490722656,
+        "p25": 23.244632720947266,
+        "median": 36.92424774169922,
+        "p75": 45.940650939941406,
+        "max": 63.846588134765625
+      },
+      "nearest_retained_distance": {
+        "n": 395,
+        "min": 0.5,
+        "p25": 5.5,
+        "median": 39.5,
+        "p75": 60.5,
+        "max": 102.5
+      },
+      "retained_candidate_scores": {
+        "n": 56,
+        "min": -0.8748160359916457,
+        "p25": -0.3309475452815289,
+        "median": 0.5054100977149978,
+        "p75": 0.7163498313901586,
+        "max": 1.908671501109208
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0119_2": {
+      "misses": 6,
+      "loss_stage": {
+        "below_contrast_floor": 5,
+        "suppressed_by_9x9_nms": 1
+      },
+      "has_r3_candidate": 0,
+      "has_mask_eligible_selected_candidate": 1,
+      "mask_eligible_but_no_r3": 1,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 0,
+      "local_abs_contrast_r3": {
+        "n": 6,
+        "min": 0.43181610107421875,
+        "p25": 0.49147605895996094,
+        "median": 0.811553955078125,
+        "p75": 1.7637348175048828,
+        "max": 31.575759887695312
+      },
+      "nearest_retained_distance": {
+        "n": 6,
+        "min": 5.0,
+        "p25": 45.25,
+        "median": 46.0,
+        "p75": 46.0,
+        "max": 46.0
+      },
+      "retained_candidate_scores": {
+        "n": 0
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0155_2": {
+      "misses": 27,
+      "loss_stage": {
+        "outside_top100": 25,
+        "below_contrast_floor": 1,
+        "suppressed_by_9x9_nms": 1
+      },
+      "has_r3_candidate": 0,
+      "has_mask_eligible_selected_candidate": 0,
+      "mask_eligible_but_no_r3": 0,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 0,
+      "local_abs_contrast_r3": {
+        "n": 27,
+        "min": 2.5025253295898438,
+        "p25": 17.955806732177734,
+        "median": 22.375,
+        "p75": 25.89078140258789,
+        "max": 35.76514434814453
+      },
+      "nearest_retained_distance": {
+        "n": 27,
+        "min": 83.0,
+        "p25": 93.5,
+        "median": 95.0,
+        "p75": 95.5,
+        "max": 120.0
+      },
+      "retained_candidate_scores": {
+        "n": 0
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0221_2": {
+      "misses": 39,
+      "loss_stage": {
+        "retained": 10,
+        "outside_top100": 6,
+        "suppressed_by_9x9_nms": 23
+      },
+      "has_r3_candidate": 10,
+      "has_mask_eligible_selected_candidate": 32,
+      "mask_eligible_but_no_r3": 22,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 1,
+      "local_abs_contrast_r3": {
+        "n": 39,
+        "min": 3.500762939453125,
+        "p25": 13.885417938232422,
+        "median": 14.816291809082031,
+        "p75": 16.083961486816406,
+        "max": 24.640155792236328
+      },
+      "nearest_retained_distance": {
+        "n": 39,
+        "min": 0.5,
+        "p25": 3.0,
+        "median": 3.5,
+        "p75": 4.5,
+        "max": 300.5
+      },
+      "retained_candidate_scores": {
+        "n": 10,
+        "min": 0.11021721360186015,
+        "p25": 0.6388317406195417,
+        "median": 0.9091202164723817,
+        "p75": 0.9974941198477265,
+        "max": 1.1534366468297526
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0237_2": {
+      "misses": 614,
+      "loss_stage": {
+        "outside_top100": 141,
+        "suppressed_by_9x9_nms": 113,
+        "retained": 354,
+        "below_contrast_floor": 6
+      },
+      "has_r3_candidate": 354,
+      "has_mask_eligible_selected_candidate": 376,
+      "mask_eligible_but_no_r3": 22,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 42,
+      "local_abs_contrast_r3": {
+        "n": 614,
+        "min": 1.1136360168457031,
+        "p25": 12.234378814697266,
+        "median": 16.441287994384766,
+        "p75": 21.752212524414062,
+        "max": 57.205177307128906
+      },
+      "nearest_retained_distance": {
+        "n": 614,
+        "min": 0.0,
+        "p25": 1.0,
+        "median": 2.5,
+        "p75": 10.5,
+        "max": 92.0
+      },
+      "retained_candidate_scores": {
+        "n": 354,
+        "min": -2.2729087943787767,
+        "p25": -0.3003084661374272,
+        "median": 0.3609860123177792,
+        "p75": 0.9879170526760596,
+        "max": 2.7239214803343264
+      },
+      "passed_existing_pooled1": 4,
+      "passed_existing_clip1": 41
+    },
+    "DJI_0255_1": {
+      "misses": 50,
+      "loss_stage": {
+        "outside_top100": 2,
+        "below_contrast_floor": 1,
+        "retained": 45,
+        "suppressed_by_9x9_nms": 2
+      },
+      "has_r3_candidate": 45,
+      "has_mask_eligible_selected_candidate": 47,
+      "mask_eligible_but_no_r3": 2,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 0,
+      "local_abs_contrast_r3": {
+        "n": 50,
+        "min": 2.6950836181640625,
+        "p25": 6.175662994384766,
+        "median": 9.39141845703125,
+        "p75": 15.0899658203125,
+        "max": 28.76514434814453
+      },
+      "nearest_retained_distance": {
+        "n": 50,
+        "min": 0.5,
+        "p25": 0.5,
+        "median": 1.0,
+        "p75": 1.875,
+        "max": 172.5
+      },
+      "retained_candidate_scores": {
+        "n": 45,
+        "min": -7.449693553753374,
+        "p25": -5.174508963729058,
+        "median": -3.95540696839493,
+        "p75": -1.9827435456924327,
+        "max": 0.5227753316102572
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 17
+    },
+    "DJI_0257_2": {
+      "misses": 92,
+      "loss_stage": {
+        "retained": 66,
+        "suppressed_by_9x9_nms": 15,
+        "outside_top100": 11
+      },
+      "has_r3_candidate": 66,
+      "has_mask_eligible_selected_candidate": 77,
+      "mask_eligible_but_no_r3": 11,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 0,
+      "local_abs_contrast_r3": {
+        "n": 92,
+        "min": 7.481689453125,
+        "p25": 16.579708099365234,
+        "median": 20.43181610107422,
+        "p75": 23.860015869140625,
+        "max": 36.5
+      },
+      "nearest_retained_distance": {
+        "n": 92,
+        "min": 0.0,
+        "p25": 1.0,
+        "median": 1.25,
+        "p75": 3.5,
+        "max": 25.5
+      },
+      "retained_candidate_scores": {
+        "n": 66,
+        "min": -4.445174293955625,
+        "p25": -2.576709209193701,
+        "median": -1.603608338847529,
+        "p75": -0.8564506054148395,
+        "max": 0.3394733073002859
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0277_2": {
+      "misses": 4,
+      "loss_stage": {
+        "outside_top100": 4
+      },
+      "has_r3_candidate": 0,
+      "has_mask_eligible_selected_candidate": 0,
+      "mask_eligible_but_no_r3": 0,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 0,
+      "local_abs_contrast_r3": {
+        "n": 4,
+        "min": 4.724113464355469,
+        "p25": 4.744472503662109,
+        "median": 6.171398162841797,
+        "p75": 7.67376708984375,
+        "max": 7.9204559326171875
+      },
+      "nearest_retained_distance": {
+        "n": 4,
+        "min": 103.5,
+        "p25": 106.5,
+        "median": 109.5,
+        "p75": 116.0,
+        "max": 129.5
+      },
+      "retained_candidate_scores": {
+        "n": 0
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0303_2": {
+      "misses": 45,
+      "loss_stage": {
+        "suppressed_by_9x9_nms": 23,
+        "retained": 2,
+        "below_contrast_floor": 9,
+        "outside_top100": 11
+      },
+      "has_r3_candidate": 2,
+      "has_mask_eligible_selected_candidate": 14,
+      "mask_eligible_but_no_r3": 12,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 6,
+      "local_abs_contrast_r3": {
+        "n": 45,
+        "min": 1.438140869140625,
+        "p25": 3.453277587890625,
+        "median": 11.0491943359375,
+        "p75": 19.964645385742188,
+        "max": 55.096588134765625
+      },
+      "nearest_retained_distance": {
+        "n": 45,
+        "min": 2.0,
+        "p25": 6.5,
+        "median": 13.0,
+        "p75": 41.0,
+        "max": 57.5
+      },
+      "retained_candidate_scores": {
+        "n": 2,
+        "min": -1.2333749567754608,
+        "p25": -0.9885785965892087,
+        "median": -0.7437822364029565,
+        "p75": -0.4989858762167044,
+        "max": -0.25418951603045226
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0307_2": {
+      "misses": 17,
+      "loss_stage": {
+        "outside_top100": 1,
+        "retained": 10,
+        "suppressed_by_9x9_nms": 6
+      },
+      "has_r3_candidate": 10,
+      "has_mask_eligible_selected_candidate": 12,
+      "mask_eligible_but_no_r3": 2,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 0,
+      "local_abs_contrast_r3": {
+        "n": 17,
+        "min": 11.3162841796875,
+        "p25": 27.897720336914062,
+        "median": 32.191925048828125,
+        "p75": 36.58270263671875,
+        "max": 40.32450866699219
+      },
+      "nearest_retained_distance": {
+        "n": 17,
+        "min": 0.0,
+        "p25": 0.5,
+        "median": 0.5,
+        "p75": 5.0,
+        "max": 39.5
+      },
+      "retained_candidate_scores": {
+        "n": 10,
+        "min": -0.1348990189960811,
+        "p25": 0.18295019884607588,
+        "median": 1.2530018899170812,
+        "p75": 1.5655353351352768,
+        "max": 1.7270289659095681
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    },
+    "DJI_0309_4": {
+      "misses": 256,
+      "loss_stage": {
+        "outside_top100": 28,
+        "below_contrast_floor": 176,
+        "suppressed_by_9x9_nms": 47,
+        "retained": 5
+      },
+      "has_r3_candidate": 5,
+      "has_mask_eligible_selected_candidate": 18,
+      "mask_eligible_but_no_r3": 13,
+      "r3_eligible_but_no_mask": 0,
+      "within_7px_image_border": 1,
+      "local_abs_contrast_r3": {
+        "n": 256,
+        "min": 0.1969757080078125,
+        "p25": 1.2256927490234375,
+        "median": 1.9150886535644531,
+        "p75": 3.799091339111328,
+        "max": 43.94886779785156
+      },
+      "nearest_retained_distance": {
+        "n": 256,
+        "min": 0.5,
+        "p25": 50.25,
+        "median": 86.0,
+        "p75": 89.25,
+        "max": 141.0
+      },
+      "retained_candidate_scores": {
+        "n": 5,
+        "min": -1.3614051234888902,
+        "p25": -1.1588676442315993,
+        "median": -0.24956202156909368,
+        "p75": 0.054668069668023955,
+        "max": 0.7762505576221207
+      },
+      "passed_existing_pooled1": 0,
+      "passed_existing_clip1": 0
+    }
+  },
+  "existing_score_distributions": {
+    "DJI_0049_2": {
+      "positive": {
+        "n": 153,
+        "min": -0.8748160359916457,
+        "p25": 0.5813140667576361,
+        "median": 1.748526426301646,
+        "p75": 2.4812207126427976,
+        "max": 3.6105270356169874
+      },
+      "clutter": {
+        "n": 8835,
+        "min": -2.6116998135906124,
+        "p25": -0.7451628689148485,
+        "median": 0.0332086276445267,
+        "p75": 0.9472531927323573,
+        "max": 3.1311917183330005
+      },
+      "ambiguous": {
+        "n": 12,
+        "min": -0.9921989142413374,
+        "p25": -0.366131720932919,
+        "median": 0.11620089819309304,
+        "p75": 0.262230405088582,
+        "max": 0.5413502434053079
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 2.408400530138532
+    },
+    "DJI_0109_1": {
+      "positive": {
+        "n": 0
+      },
+      "clutter": {
+        "n": 9000,
+        "min": -3.66454158001177,
+        "p25": -1.7480044656884213,
+        "median": -1.0576208471331365,
+        "p75": -0.007704831725890732,
+        "max": 3.6651965317681463
+      },
+      "ambiguous": {
+        "n": 0
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 2.704279192081098
+    },
+    "DJI_0119_2": {
+      "positive": {
+        "n": 29,
+        "min": -5.629130708913633,
+        "p25": -5.2537483682335795,
+        "median": -5.0800146808113436,
+        "p75": -4.385942023437463,
+        "max": -2.932268767431917
+      },
+      "clutter": {
+        "n": 17721,
+        "min": -6.700048525132583,
+        "p25": -4.445501583737414,
+        "median": -1.7106435100204744,
+        "p75": 0.015940176716869425,
+        "max": 3.354108441157554
+      },
+      "ambiguous": {
+        "n": 250,
+        "min": -6.020612097549629,
+        "p25": -5.3275396494990375,
+        "median": -4.971186058146406,
+        "p75": -3.4410560325852337,
+        "max": -0.35262473406767814
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 2.3804914199608276
+    },
+    "DJI_0129_2": {
+      "positive": {
+        "n": 45,
+        "min": -1.3280338738767639,
+        "p25": 0.6091781912295843,
+        "median": 1.1504743928701182,
+        "p75": 1.5165580722653857,
+        "max": 2.3505105353237394
+      },
+      "clutter": {
+        "n": 58945,
+        "min": -4.550079610620671,
+        "p25": -2.8300059990648956,
+        "median": -1.9745244851353771,
+        "p75": -1.0448573649925779,
+        "max": 1.4954469859254196
+      },
+      "ambiguous": {
+        "n": 10,
+        "min": -0.19573321801377863,
+        "p25": 0.04726904009342933,
+        "median": 0.2880500282559215,
+        "p75": 0.44521569166461217,
+        "max": 0.9433039647951929
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 0.7763142669185511
+    },
+    "DJI_0155_2": {
+      "positive": {
+        "n": 0
+      },
+      "clutter": {
+        "n": 41000,
+        "min": -4.349185412552514,
+        "p25": -2.990479560894837,
+        "median": -2.0479426759376143,
+        "p75": -0.9174246293277692,
+        "max": 1.5725916548534564
+      },
+      "ambiguous": {
+        "n": 0
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 0.9979067171944219
+    },
+    "DJI_0159_2": {
+      "positive": {
+        "n": 233,
+        "min": -1.5258587947576763,
+        "p25": 0.571448994056698,
+        "median": 0.9626435742633794,
+        "p75": 1.7420447771947392,
+        "max": 2.6530662423311027
+      },
+      "clutter": {
+        "n": 24744,
+        "min": -5.426762512744422,
+        "p25": -3.2147934547485653,
+        "median": -2.1578758525493114,
+        "p75": -0.8292042045493854,
+        "max": 2.0519801927165564
+      },
+      "ambiguous": {
+        "n": 23,
+        "min": -4.2160590745306195,
+        "p25": -3.33497395712707,
+        "median": -2.7900458738459655,
+        "p75": -1.8928054306551592,
+        "max": -0.730391203184924
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 1.2894758728964144
+    },
+    "DJI_0173_2": {
+      "positive": {
+        "n": 402,
+        "min": -0.4252952541808408,
+        "p25": 0.7682599941383051,
+        "median": 1.1882967903949297,
+        "p75": 1.584776341507542,
+        "max": 2.5570013118798025
+      },
+      "clutter": {
+        "n": 44524,
+        "min": -3.55931002284004,
+        "p25": -1.4162634439726844,
+        "median": -0.8252356646066122,
+        "p75": -0.23454039276556052,
+        "max": 1.7640888733314757
+      },
+      "ambiguous": {
+        "n": 74,
+        "min": -2.799405309236579,
+        "p25": -1.4831283419327466,
+        "median": 0.9256289534210917,
+        "p75": 1.349345549424548,
+        "max": 2.583518483823787
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 0.8051180372956794
+    },
+    "DJI_0221_2": {
+      "positive": {
+        "n": 614,
+        "min": -1.0742274681470136,
+        "p25": 1.482356280555877,
+        "median": 1.921980233153423,
+        "p75": 2.3507781246552204,
+        "max": 3.2152071597946246
+      },
+      "clutter": {
+        "n": 58276,
+        "min": -3.7868733418257228,
+        "p25": -2.0187309435120673,
+        "median": -1.3021824462178588,
+        "p75": -0.6265367042027911,
+        "max": 2.047919680123201
+      },
+      "ambiguous": {
+        "n": 110,
+        "min": -2.5901951845357405,
+        "p25": -0.28380651374811816,
+        "median": 0.30480534381861374,
+        "p75": 1.425632717820549,
+        "max": 2.512178392946562
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 1.1927248384205045
+    },
+    "DJI_0237_2": {
+      "positive": {
+        "n": 2888,
+        "min": -2.5717402677273618,
+        "p25": 0.3611621067944186,
+        "median": 1.0073880657298147,
+        "p75": 1.9617450528316975,
+        "max": 3.539730882069304
+      },
+      "clutter": {
+        "n": 37928,
+        "min": -4.864048725241778,
+        "p25": -1.8208395213620883,
+        "median": -1.0176949266040896,
+        "p75": -0.38106457674766686,
+        "max": 2.297842990581607
+      },
+      "ambiguous": {
+        "n": 184,
+        "min": -3.7208491467582814,
+        "p25": -1.5784411832959773,
+        "median": -1.078827662003567,
+        "p75": -0.028541520037007058,
+        "max": 1.6481188828930116
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 1.2191567967424317
+    },
+    "DJI_0255_1": {
+      "positive": {
+        "n": 591,
+        "min": -7.449693553753374,
+        "p25": -1.5119965009752292,
+        "median": 1.6108794568693743,
+        "p75": 2.6943900503595266,
+        "max": 3.476010211583344
+      },
+      "clutter": {
+        "n": 56054,
+        "min": -9.647863032695753,
+        "p25": -7.628789141125319,
+        "median": -7.12064397469418,
+        "p75": -6.559597173889276,
+        "max": -0.3443753982129458
+      },
+      "ambiguous": {
+        "n": 44,
+        "min": -10.078325606625018,
+        "p25": -9.013775924962067,
+        "median": -8.51454333208589,
+        "p75": -7.953484866393001,
+        "max": -5.267043177425213
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": -3.1659676528025558
+    },
+    "DJI_0257_2": {
+      "positive": {
+        "n": 1036,
+        "min": -4.445174293955625,
+        "p25": -0.6900185476549306,
+        "median": 0.31430735826309064,
+        "p75": 1.082434512724262,
+        "max": 2.5235148606513746
+      },
+      "clutter": {
+        "n": 57255,
+        "min": -5.561328137806326,
+        "p25": -2.8269660143014548,
+        "median": -2.080503829068578,
+        "p75": -1.2484338348194557,
+        "max": 3.1002576025440844
+      },
+      "ambiguous": {
+        "n": 709,
+        "min": -4.751366764716293,
+        "p25": -1.1668008970452313,
+        "median": 0.5425422417795275,
+        "p75": 1.4214802716374375,
+        "max": 2.8797417092592057
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 0.6219049344982258
+    },
+    "DJI_0277_2": {
+      "positive": {
+        "n": 426,
+        "min": 0.519091335837339,
+        "p25": 2.6779490451749517,
+        "median": 2.9874268956999583,
+        "p75": 3.15363126960668,
+        "max": 3.4090208766391
+      },
+      "clutter": {
+        "n": 36174,
+        "min": -5.642496945088109,
+        "p25": -1.753797614156395,
+        "median": -0.9178795411940395,
+        "p75": 0.016327933842613412,
+        "max": 2.835675282512848
+      },
+      "ambiguous": {
+        "n": 0
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 2.1919184998321426
+    },
+    "DJI_0303_2": {
+      "positive": {
+        "n": 666,
+        "min": -3.8548167741207804,
+        "p25": 0.025028228990395612,
+        "median": 1.0610500704799792,
+        "p75": 1.6514898059544785,
+        "max": 2.8186705009041217
+      },
+      "clutter": {
+        "n": 56669,
+        "min": -5.555440531767143,
+        "p25": -3.199512375740079,
+        "median": -2.388754452161745,
+        "p75": -1.4656154968718267,
+        "max": 1.8821778357375776
+      },
+      "ambiguous": {
+        "n": 365,
+        "min": -5.496193799790963,
+        "p25": -2.287501527186475,
+        "median": -0.8954406537014845,
+        "p75": -0.17183168957347345,
+        "max": 1.3070019662217378
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 0.9804159455108575
+    },
+    "DJI_0307_2": {
+      "positive": {
+        "n": 153,
+        "min": -1.084685091178109,
+        "p25": 1.0933732870955808,
+        "median": 1.586891733276199,
+        "p75": 2.0930240733401315,
+        "max": 3.415026542144275
+      },
+      "clutter": {
+        "n": 17795,
+        "min": -3.778728918671372,
+        "p25": -1.3056789200459162,
+        "median": -0.259416527895249,
+        "p75": 0.7424094914517074,
+        "max": 3.4043489161240417
+      },
+      "ambiguous": {
+        "n": 52,
+        "min": -3.4627150387350634,
+        "p25": -0.832747589762523,
+        "median": -0.302837508870632,
+        "p75": 0.10976935166030088,
+        "max": 1.715570615745917
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 2.6060782113774397
+    },
+    "DJI_0309_4": {
+      "positive": {
+        "n": 175,
+        "min": -2.3294108683584316,
+        "p25": 0.23362825013898897,
+        "median": 1.5048152429421413,
+        "p75": 1.9922490895440466,
+        "max": 2.923796810059488
+      },
+      "clutter": {
+        "n": 60025,
+        "min": -4.53397126132272,
+        "p25": -1.5598437287836604,
+        "median": -0.8070462549887127,
+        "p75": -0.09189667495724724,
+        "max": 3.503699803649257
+      },
+      "ambiguous": {
+        "n": 100,
+        "min": -3.2523609416592105,
+        "p25": -0.6823189996025848,
+        "median": 0.15371806363840665,
+        "p75": 0.7070594550328211,
+        "max": 1.8702590774997057
+      },
+      "existing_pooled1_threshold": 1.9742152351657078,
+      "existing_clip1_threshold": 3.1556449531802437
+    }
+  },
+  "source_sha256": {
+    "code/miss_recovery.py": "fa7d5148c8e805de03fc8c96a7f89dd5ff5bce4e97a638f7cba42302416bac13",
+    "code/mx_data.py": "55ee16a45a17fcf24f60bd8fde10cdfed25e5328b0d7fe2acc57e76c51e5ef20",
+    "code/stabilize.py": "8d723216daae358454c464e9f9694dc462c992b4933cd012d252624cc7e4e97d",
+    "code/vtdata.py": "8840dce46bbe54a2ae701b6a751fb53f23f8afa110032606cb523600f34af2d8",
+    "code/gaussian_masks.py": "5e9050c7791b2684149bb6a2bcebfa6dbd88a6ed317cbbc77f7c58ed34c2066a",
+    "code/exemplar_diag.py": "0391140e2f9c8583c9f21a65f0a0908d6537d5ce7ed61bcb5e764f7d62695e11",
+    "runtime/m1_fix/audit_candidate_generation.py": "ed6c8bd6eda8bc8b776c3d8fcc4c81f299527b28a46611596ac96b03d816c2fc"
+  },
+  "caveat": "Mask-geometry counts use unchanged stored proposals only, not rescored/rethresholded recovery; one-to-one/component merges are not applied to these diagnostic geometry counts.",
+  "conclusion_zh": "坐标、帧号、排序和匹配核对未见错误；但plateau多像素占据top100名额违反k strongest blobs契约，确认计数bug。旧版阶段数字保留；应先归档再只修blob计数，按原参数重算M1。",
+  "inputs_sha256": {
+    "summary.json": "c755597b08cfccaafcf2d46078ae0951d811485c614ed04a89a9ddd3bba89d2e",
+    "targets.csv": "d98c103bdf2c88133aa73be5e815f2f66e006d40ed972d4ab4dbf3a2e3eb89c6",
+    "candidates.csv": "4f4450d8a8bc3314786b506dea7ec5dc15f8fb594e40e6fa0fb149fe9d5870f7"
+  },
+  "interpretation_zh": [
+    "损失类别依固定顺序划分：r3内已有保留峰；否则r3局部对比不超过3；否则没有9×9局部极大；否则局部峰排在前100之外。类别不是原因干预实验。",
+    "对r3内对比的计算只用于检验固定规则，不把GT中心或GT附近像素加入提议、训练、打分。",
+    "同一批既有top100点有650个miss落入单box官方mask+邻域，而r3为548；该几何对比未重新计分、重新标定或应用一对一/component归并，不能称恢复率。",
+    "9×9 maximum_filter的相等比较保留整个平台上的多个点，stable排序后top100按点截断；合成单像素亮点产生9个并列最高点。这是当前实现的明确性质，未按独立blob去重。",
+    "候选为整数像素峰，sample_absmax(round)与patch2d(floor(x+.5))在候选位置一致；teacher可能为plateau小数质心，但对比和NCC两条路径均由patch2d取整。GT中心半像素只用于距离。",
+    "候选在原图坐标生成；homography仅用于M1 windows残差诊断，不参与候选坐标变换。"
+  ],
+  "contrast_validity": {
+    "method": "For finite uint8 JPEG inputs, local_contrast validity depends only on counts of valid image pixels; exact rectangle-intersection counts reproduce cv2 BORDER_CONSTANT sums of an all-ones mask. No contrast features or proposals recalculated.",
+    "shapes": {
+      "DJI_0049_2": [
+        512,
+        640
+      ],
+      "DJI_0119_2": [
+        512,
+        640
+      ],
+      "DJI_0155_2": [
+        512,
+        640
+      ],
+      "DJI_0221_2": [
+        512,
+        640
+      ],
+      "DJI_0237_2": [
+        512,
+        640
+      ],
+      "DJI_0255_1": [
+        512,
+        640
+      ],
+      "DJI_0257_2": [
+        512,
+        640
+      ],
+      "DJI_0277_2": [
+        512,
+        640
+      ],
+      "DJI_0303_2": [
+        512,
+        640
+      ],
+      "DJI_0307_2": [
+        512,
+        640
+      ],
+      "DJI_0309_4": [
+        512,
+        640
+      ]
+    },
+    "validity_counts": {
+      "(512, 640)": {
+        "inner_min": 4,
+        "ring_min": 48,
+        "invalid_pixels": 0,
+        "total_pixels": 327680
+      }
+    },
+    "groups": {
+      "all": {
+        "targets": 1545,
+        "fully_defined": 1545,
+        "partly_undefined": 0,
+        "all_undefined": 0,
+        "empty_region": 0,
+        "r3_region_clipped_by_image_border": 1
+      },
+      "outside_top100": {
+        "targets": 364,
+        "fully_defined": 364,
+        "partly_undefined": 0,
+        "all_undefined": 0,
+        "empty_region": 0,
+        "r3_region_clipped_by_image_border": 0
+      },
+      "retained": {
+        "targets": 548,
+        "fully_defined": 548,
+        "partly_undefined": 0,
+        "all_undefined": 0,
+        "empty_region": 0,
+        "r3_region_clipped_by_image_border": 0
+      },
+      "suppressed_by_9x9_nms": {
+        "targets": 435,
+        "fully_defined": 435,
+        "partly_undefined": 0,
+        "all_undefined": 0,
+        "empty_region": 0,
+        "r3_region_clipped_by_image_border": 1
+      },
+      "below_contrast_floor": {
+        "targets": 198,
+        "fully_defined": 198,
+        "partly_undefined": 0,
+        "all_undefined": 0,
+        "empty_region": 0,
+        "r3_region_clipped_by_image_border": 0
+      }
+    },
+    "source_finite": "JPEG uint8 pixels converted to float32; box-filter sums bounded by 225*255=57375; no input NaN/Inf or overflow",
+    "all_original_jpegs_rechecked": false,
+    "note": "Image dimensions and finite uint8 format checked using first source JPEG of each clip; previous complete proposal audit read every 838 missed frame and matched stored points exactly."
+  },
+  "plateau_semantics_review": "confirmed_blob_count_bug__quantification_complete",
+  "plateau_quantification_file": "candidate_plateau_review.json"
+}

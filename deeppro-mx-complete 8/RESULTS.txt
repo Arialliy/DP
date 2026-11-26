@@ -1,0 +1,77 @@
+最终诊断已完成（2026-11-27T01:55:08.929367+08:00）：当前结论和执行状态见 DIAGNOSTICS.txt。修复候选平台重复计数后，M1 仍 NO-GO（片头1/644、全部4/1545）；M2与片头复核完成。所有MTA/MXC训练停止，未启动官方MTA或DeepPro-Plus三seed重训。以下为历史执行日志，历史“当前”“正在训练”等文字不代表当前状态。
+
+当前指令更新（2026-11-27T01:27:04.933480+08:00）：所有MTA自定义划分训练已停止，官方MTA尚未启动；不重训DeepPro-Plus三seed。当前仅做M1复核、片头原因和M2免训练诊断。此前记录的训练指令已被用户撤回，下面保留历史记录。
+
+DeepPro v8 执行与诊断记录
+记录时间：2026-11-26T23:57:27.374946+08:00
+工作目录：/home/md0/ly/DP/deeppro-mx-complete 8
+数据集：/home/md0/ly/DP/datasets/RGB-T（只读）
+
+当前状态：mta_val_s46 正式训练已在 GPU 2 启动，尚未完成 32 轮，尚无最终 Pd/Fa/IoU。
+用户已明确改为“M1 只记录，继续训练和对照”。M1 的历史 NO-GO 保留，不再阻挡训练。
+模型最终直接比较同一评估协议和阈值下的 Pd、Fa、IoU，主表阈值 0.5；27阈值和AUC为补充。
+不把固定Fa下的召回率或M1每帧候选预算代替三项检测指标。
+
+选最佳权重：每轮完整评估IoU并更新 best_model.pth（并列最优也更新，沿用实现的 >=）。
+当前val协议：32 train clips / 14,152帧；8 val clips / 2,893帧。
+SELECT=val_iou、SELECT_SPLIT=val；32轮、batch4、seed46、paper_k6_floor。
+所有最终推论和评分只使用best_model.pth。后续官方协议使用original_test_iou，独立run名称。
+val六组：mta_val_s46、_noex、_self、_nogain、_mx、_noapp。
+mx组gain保持2；noapp架构mxc_lv；noex/self的样本来源在训练、选权重、推论中一致。
+官方已训练权重见过val中的训练片段，不能把它的val分数冒充与这些组公平训练的baseline。
+
+已完成的检查：原始v8的bash run_mx.sh check全部通过：22个测试文件、153项程序测试，含torch CPU。
+MTA前后向、toy训练、逐轮val选权重和推论路径通过；60/60 clip标签与PNG完全一致。
+应用M1修正后11项针对性测试再次通过；MX_RUN命名与controls协议定向测试通过。
+日志：logs/check.20261126.log、logs/test_miss_recovery.applied.20261126.log、
+logs/controls_mx_run_targeted.20261126-230452.log。
+
+profile全部重跑完成：60 clips、100,296 box速度记录、25,051帧对。
+纯影像估计包含24,956 homography、6 partial affine、1 shift、88 identity，共95次fallback。
+0277_2末两窗cover=0，默认auto回raw；0237_2部分窗口warp残差更大，也回raw。
+共同视野差异是两套估计的分歧，不是真值误差；空共同视野不能解释为配准准确。
+详细复核：results/motion_review/notes.txt；新矩阵：results/motion/homographies。
+train split的M0c也已运行，NO-GO作为诊断记录于runs/mta_val_s46/m0c.json。
+
+M1修正与测量：原版用GT中心直接取特征，缺少实际候选约束，另有-inf和阈值同分问题。
+已修正code/miss_recovery.py及其测试：仅实际单帧峰值可恢复，有限分数/teacher检查，
+一对一匹配，保守同分阈值，真实帧数分母，候选几何上界以及明确的历史gate输出。
+原版输出单独保留：results/miss_recovery_oracle_location/official_rgbt/test。
+有效实际候选输出：results/miss_recovery/official_rgbt/test。
+
+历史预定工作点（pooled 1 clutter candidate/frame、baseline阈值1e-5）：
+  片头：恢复 1/644 = 0.1553%（原门槛30%）；
+  全部：恢复 4/1545 = 0.2589%（原门槛20%）。
+  候选几何上界：片头220/644，全部532/1545。
+  实际背景候选5976/5976=1/frame；没有向数据添加噪声。
+  1545个漏检里997个没有半径3px内的候选；548个有候选，一对一上界532。
+  只有4个漏检框有过阈候选，匹配后仍为4，极低恢复并非匹配竞争误杀。
+这是逐box、人工候选/特征的诊断，非官方合并component指标、非完整网络性能。
+LORO使用其他test录像标注，预算阈值也用评估标注；不能作为不使用test标注的模型结果。
+1/frame是人为工作点，非数据集规定、非官方像素Fa、非每帧必须产生误报。
+失败不能证明所有可学习单帧路径无效。用户已取消其训练门槛。
+独立核对：results/miss_recovery/official_rgbt/test/review_zh.txt及independent_audit.json。
+
+片头现象已复核：官方component口径1e-5时，前60帧占15.06%的帧、40.85%的漏检；
+片头545/2109=25.84%漏检，之后789/9191=8.58%。不是“每段都是同一原因”的证明。
+0255_1的早期原图对比确实更弱；0307_2在0–18帧无标注，前40帧的81%为17/21。
+0307_2的相同36–39帧，在[0,40)窗口均漏、[36,76)窗口均中：窗口上下文/相对位置会影响结果。
+同一冻结模型补算[18,58)局部窗口，恢复原17次漏检中的17/17（1e-5）、13/17（0.5）。
+这是局部目标检查，未衡量新增误报和完整测试集效果，不能当作Pd/Fa/IoU改进。
+0255/0307的真实画面、数值和限制：results/frame_inspection/findings_zh.txt。
+
+官方预测复用：v7的15个clip预测及权重逐文件SHA匹配，v8官方推论代码指纹完全一致。
+因此未重复GPU官方推论；所有复用文件复制在v8内，清单见runtime/official_cache_reuse.json。
+正式训练使用既有固定Docker镜像和runtime下的PyTorch API兼容补丁，不改动宿主或其他项目。
+
+实时主run进度：runs/mta_val_s46/progress.json、train_log.txt；执行计划runtime/execution_plan.json。
+训练源码快照指纹：runtime/training_source_manifest.json。
+主训练命令：runtime/main_val.command.json。M1原门槛在runtime/predeclared_plan.json中保留。
+
+更新：2026-11-27T00:06:35.222617+08:00
+主模型首轮训练与81/81完整val选择已经通过，首轮选权重IoU=0.0177041006，best_model.pth已核验权重有限、内嵌选择信息一致。这不是最终检测性能。
+本次记录时主run为epoch 2/32，stage=eval。
+后台队列已实际启动，接管已有主模型，五组对照按空闲GPU自动执行训练、best_model推论及官方评分；完整val之前不会启动官方协议。
+队列状态：runtime/val_queue/state.json；事件：runtime/val_queue/events.jsonl；使用说明：runtime/VAL_QUEUE_README.txt。
+自动更新汇总：results/comparison/val.txt和val.csv。未完成项留空，最终Pd按合并component，Fa/IoU按像素；三项使用官方实现直接报告。
+主模型首轮独立审查：runtime/main_val_review.json。主源码修改清单：runtime/source_changes.json。

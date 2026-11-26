@@ -1,0 +1,30 @@
+{
+  "job_id": "lvh_dec_2837b37e6120c362",
+  "model": "LVH-dec",
+  "state": "completed",
+  "stage": "completed",
+  "started_at": "2026-11-26T17:29:46.678479+00:00",
+  "best_epoch": 1,
+  "checkpoint_sha256": "2837b37e6120c362af2770655ea50b64a1fa5c72e8b005bad28c46acf5dabf7b",
+  "device": "cuda:0",
+  "clips_done": 15,
+  "clips_total": 15,
+  "updated_at": "2026-11-26T17:37:47.413749+00:00",
+  "clip": "DJI_0309_4",
+  "frames_done": 5976,
+  "rate": 1,
+  "used": true,
+  "window": 17,
+  "windows_total": 17,
+  "phase": 0,
+  "coords": "warp",
+  "first_frame": 563,
+  "last_frame": 602,
+  "variant": "native",
+  "scoring_frame": 600,
+  "complete": true,
+  "results": [
+    "results/lvh_dec_2837b37e6120c362/native/metrics.json"
+  ],
+  "elapsed_seconds": 480.2921589049947
+}
