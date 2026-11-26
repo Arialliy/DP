@@ -1,0 +1,8 @@
+{
+  "name": "DeepPro-LV",
+  "gpu": 2,
+  "container_name": "dp-rgbt-lv-full-20261126",
+  "container": null,
+  "state": "failed",
+  "error": "GPU preflight failed; training was not started. See gpu_preflight.json"
+}

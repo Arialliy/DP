@@ -1,0 +1,6032 @@
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:00:47.041329+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:01:17.153258+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:01:47.267147+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:02:17.379178+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:02:47.503408+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:03:17.606091+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:03:47.722671+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:04:17.832382+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:04:47.945888+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:05:18.060830+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:05:48.170499+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:06:18.284108+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:06:48.397077+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:07:18.508004+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:07:48.621200+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:08:18.737383+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：1/32；完成评估轮数：0
+最近训练loss：0.982586
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:08:48.860586+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.982586
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:09:18.981386+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.982586
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:09:49.101865+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.982586
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:10:19.220661+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.982586
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:10:49.334367+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.982586
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:11:19.459572+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.982586
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:11:49.569257+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.982586
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:12:19.680077+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:12:49.791158+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:13:19.902181+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:13:50.014804+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:14:20.123699+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:14:50.236214+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:15:20.348474+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:15:50.460693+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:16:20.576830+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:16:50.682413+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:17:20.795670+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:17:50.907296+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:18:21.017458+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:18:51.129147+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:19:21.241538+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:19:51.354224+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:20:21.466677+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:20:51.577649+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:21:21.693804+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:21:51.803212+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：2/32；完成评估轮数：1
+最近训练loss：0.935108
+当前best窗口IoU：0.004646
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:22:21.926903+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.935108
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:22:52.043055+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.935108
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:23:22.160833+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.935108
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:23:52.279014+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.935108
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:24:22.395851+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.935108
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:24:52.534521+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.935108
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:25:22.637707+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:25:52.742782+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:26:22.856065+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:26:52.963977+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:27:23.073787+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:27:53.185427+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:28:23.296585+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:28:53.407279+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:29:23.522995+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:29:53.632930+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:30:23.748439+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:30:53.862419+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:31:23.985837+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:31:54.098829+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:32:24.218846+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：evaluating
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:32:54.362785+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:33:24.470397+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:33:54.584508+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:34:24.694029+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:34:54.810067+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:35:24.918006+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：3/32；完成评估轮数：2
+最近训练loss：0.776360
+当前best窗口IoU：0.051795
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:35:55.039497+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.776360
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:36:25.163652+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.776360
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:36:55.281378+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.776360
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:37:25.401414+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.776360
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:37:55.514419+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.776360
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:38:25.632022+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.776360
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:38:55.741038+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:39:25.851419+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:39:55.966649+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:40:26.076837+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:40:56.189678+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:41:26.306758+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:41:56.410893+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:42:26.522866+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:42:56.643307+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:43:26.747180+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:43:56.861845+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:44:26.973422+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:44:57.089446+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:45:27.215422+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:45:57.316292+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:46:27.548255+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:46:58.163585+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:47:28.277300+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:47:58.387624+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:48:28.496720+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:48:58.609274+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：4/32；完成评估轮数：3
+最近训练loss：0.681383
+当前best窗口IoU：0.088839
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:49:28.735421+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.681383
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:49:58.854244+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.681383
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:50:28.975439+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.681383
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:50:59.098705+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.681383
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:51:29.211341+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.681383
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:51:59.332752+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.681383
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:52:29.439082+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:52:59.555266+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:53:29.664469+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:53:59.774283+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:54:29.886653+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:55:00.004848+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:55:30.112437+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:56:00.224005+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:56:30.337244+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:57:00.449356+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:57:30.561739+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:58:00.676076+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:58:30.785967+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:59:00.899231+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T17:59:31.009146+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:00:01.119707+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:00:31.260835+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:01:01.395284+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:01:31.506472+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:02:01.621066+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：5/32；完成评估轮数：4
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:02:31.750030+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:03:01.871456+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:03:31.985454+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:04:02.103680+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:04:32.219686+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:05:02.353308+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.628453
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:05:32.463897+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:06:02.574153+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:06:32.681820+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:07:02.803599+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:07:32.907730+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:08:03.022089+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:08:33.135553+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:09:03.242168+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:09:33.356107+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:10:03.464576+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:10:33.572805+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:11:03.681628+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:11:33.793034+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:12:03.905100+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:12:34.014745+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:13:04.129155+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:13:34.236117+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:14:04.347407+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:14:34.453515+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:15:04.569168+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：6/32；完成评估轮数：5
+最近训练loss：0.594825
+当前best窗口IoU：0.115958
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:15:34.691518+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.594825
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:16:04.812266+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.594825
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:16:34.949016+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.594825
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:17:05.049678+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.594825
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:17:35.178134+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.594825
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:18:05.288027+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.594825
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:18:35.397541+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:19:05.519425+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:19:35.622563+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:20:05.732817+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:20:35.843853+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:21:05.953563+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:21:36.061483+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:22:06.171712+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:22:36.275442+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:23:06.390441+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:23:36.499367+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:24:06.611673+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:24:36.722609+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:25:06.837764+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:25:36.952161+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:26:07.057264+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:26:37.166278+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:27:07.277411+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:27:37.390694+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:28:07.512423+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：7/32；完成评估轮数：6
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:28:37.621720+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:29:07.736372+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:29:37.861208+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:30:07.990608+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:30:38.099250+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:31:08.232595+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:31:38.340892+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:32:08.475329+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.603249
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:32:38.587525+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:33:08.698068+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:33:38.806253+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:34:08.918521+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:34:39.031226+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:35:09.142622+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:35:39.254314+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:36:09.375917+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:36:39.482237+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:37:09.606951+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:37:39.751291+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:38:09.866162+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:38:39.984011+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:39:10.087888+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:39:40.199796+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:40:10.311857+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:40:40.427942+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:41:10.541015+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:41:40.651564+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:42:10.760240+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:42:40.873016+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：8/32；完成评估轮数：7
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:43:10.990224+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:43:41.113735+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:44:11.232845+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:44:41.349903+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:45:11.460619+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:45:41.590347+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.602414
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:46:11.696548+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:46:41.804374+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:47:11.906697+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:47:42.023091+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:48:12.130669+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:48:42.239360+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:49:12.351960+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:49:42.459951+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:50:12.570655+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:50:42.682196+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:51:12.794303+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:51:42.904783+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:52:13.016374+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:52:43.126675+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:53:13.239515+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:53:43.348081+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:54:13.462771+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:54:43.572200+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:55:13.682697+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:55:43.793561+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:56:13.903468+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：9/32；完成评估轮数：8
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:56:44.023707+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:57:14.139577+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:57:44.264315+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:58:14.407489+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:58:44.527173+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:59:14.651480+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.595483
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T18:59:44.759833+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:00:14.872716+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:00:44.987134+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:01:15.098751+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:01:45.214263+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:02:15.313804+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:02:45.428091+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:03:15.541617+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:03:45.659295+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:04:15.759970+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:04:45.878169+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:05:15.993610+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:05:46.106552+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:06:16.217826+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:06:46.332495+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:07:16.442977+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:07:46.556911+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:08:16.666006+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:08:46.774602+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：10/32；完成评估轮数：9
+最近训练loss：0.557620
+当前best窗口IoU：0.171525
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:09:16.893390+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:09:47.013525+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:10:17.140412+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:10:47.258121+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:11:17.379435+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:11:47.502465+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:12:17.623726+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:12:47.758393+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.557620
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:13:17.859149+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:13:47.973506+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:14:18.088393+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:14:48.196289+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:15:18.317223+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:15:48.422537+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:16:18.529692+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:16:48.646494+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:17:18.762389+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:17:48.864401+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:18:18.978868+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:18:49.097204+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:19:19.216810+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:19:49.326621+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:20:19.437843+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:20:49.551012+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:21:19.666689+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:21:49.776116+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:22:19.887337+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:22:50.003628+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：11/32；完成评估轮数：10
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:23:20.132285+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:23:50.248918+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:24:20.368936+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:24:50.483760+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:25:20.614609+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:25:50.742860+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:26:20.860758+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.578501
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:26:50.968810+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:27:21.076799+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:27:51.189393+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:28:21.309376+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:28:51.415203+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:29:21.535273+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:29:51.645478+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:30:21.756093+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:30:51.874876+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:31:21.979148+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:31:52.089390+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:32:22.199061+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:32:52.310028+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:33:22.431162+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:33:52.542056+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:34:22.651061+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:34:52.765297+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:35:22.881814+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:35:52.989828+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:36:23.102396+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：12/32；完成评估轮数：11
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:36:53.226092+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：13/32；完成评估轮数：12
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。
+

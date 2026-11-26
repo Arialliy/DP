@@ -1,0 +1,19 @@
+{
+  "status": "validated",
+  "upstream_version": "v2.5.1",
+  "official_source_url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.5.1/torch/nn/utils/memory_format.py",
+  "official_source_sha256": "cecbc6b568959792183d471ba4e3dd0398ee11523f6c0101ed56fb96fa6c6f85",
+  "official_license_url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.5.1/LICENSE",
+  "license_file": "torch_compat.PYTORCH_LICENSE",
+  "observed_runtime_torch": "2.2.0a0+81ea7a4",
+  "reason": "NVIDIA PyTorch 2.2.0a0 has the Conv2d memory-format utility but lacks the Conv3d helper called by frozen train and inference scripts. The upstream Conv3d helper is pure Python and uses tensor methods already present in this runtime.",
+  "installed_api": "torch.nn.utils.convert_conv3d_weight_memory_format",
+  "installation_scope": "Only add the absent attribute. Existing implementations are left unchanged. No code/ source files or Docker image edits.",
+  "behavior": "Recursively visit module and children. For Conv3d and ConvTranspose3d only, detach and clone weight, make it contiguous in requested format, resize with that format, and assign weight.data. Return the same module.",
+  "numeric_weight_values": "Preserved exactly",
+  "expected_numerical_effect": "Memory layout may select different kernels; small floating-point differences are possible, as with the upstream helper. CPU FP32 and FP64 forward/backward witnesses passed.",
+  "gpu_tested": false,
+  "backport_sha256": "ffe34244affdb83c56418a4108b2a29fcbb27941c25fc3b9ada4f5b7ffb0ddeb",
+  "validation": "torch_compat_validation.json",
+  "recorded_utc": "2026-11-26T09:54:28.194507+00:00"
+}

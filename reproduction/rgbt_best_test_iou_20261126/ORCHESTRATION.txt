@@ -1,0 +1,65 @@
+RGB-T 四模型重训：每轮测试 IoU 选择最佳权重
+
+运行目录
+/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126
+
+训练方法
+保留上一批研究流程的训练选项、数据采样、损失、历史输入、MRTP rates/coords、
+seed46、batch4、sample_rate .05、32 epochs、FP32 与 channels_last_3d。
+train_command 与上一批的命令逐项比较，唯一新增选项：
+  --checkpoint-selection original_test_iou
+每个模型从头训练，新运行目录不导入旧 checkpoint，不自动恢复或覆盖已有训练文件。
+
+权重选择
+每轮训练后对官方15个测试序列执行完整的172个窗口评估；6880帧实例包含重叠，
+覆盖5976个不同帧。使用 sigmoid > 0.5，汇总 intersection/union 计算全局IoU。
+IoU大于或等于历史最佳值即保存 best_model.pth，同分选择较晚轮次。
+同时保留原来的 final.pth、last.pth 和周期 checkpoint。
+正式训练命令不含 --selection-max-windows；该限制仅供独立GPU预检。
+LVH及LVH-dec评估保留原生历史输入、运动补偿和各自门控，预测映射回原图后与PNG比较。
+MRTP选权使用原版40张连续帧窗口（rate=1）及auto坐标，不使用CFAR分数套用0.5概率阈值。
+MRTP训练仍用rates=1,2,4；其最终多速率/CFAR推理代码保持不变。
+
+共享数据
+环境镜像沿用 image-id.txt。Docker 将旧研究目录中的 cache/video、cache/hotspots、
+results/profile/homographies 分别只读挂载到新容器的同名路径；数据集同样只读挂载。
+新目录下的 cache 等空目录是挂载点，实际共享数据仍位于：
+/home/md0/ly/DP/reproduction/rgbt_research_models_20261126
+runlib.verify_artifacts 核对全部60个视频缓存大小与已验证记录，并重新核对全部
+homography/hotspot的SHA256。前次完整缓存SHA256与采样像素验证记录保存在
+reused_metadata/。未复用旧训练权重或无效 targets.csv。
+
+GPU顺序
+GPU 2：DeepPro-LV → MRTP
+GPU 0：DeepPro-LVH → LVH-dec
+同一GPU上一次只运行一个任务。GPU 1不属于本批，既有DeepPro-Plus继续运行。
+容器名前缀为 dp-rgbt-best-test-iou-，与旧任务分离。
+
+预览与启动（由root审核与GPU预检后执行）
+  cd /home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126
+  python3 launch.py
+默认仅输出命令计划，不启动进程。
+  python3 launch.py --start
+此命令核对源码manifest、共享数据和新gpu_preflight.json后启动持久scheduler。
+每个job在启动时再次核对，并拒绝隐式恢复/覆盖旧输出。
+
+查看状态
+  cat REPORT.txt
+  cat STATUS.json
+  python3 scheduler.py --status-only
+status-only只更新状态，不启动任务。REPORT/STATUS显示训练轮次、评估轮次、
+当前评估序列/窗口进度、best_iou、best_epoch，以及失败原因。
+逐模型日志：docker logs dp-rgbt-best-test-iou-<arch中的下划线改为短横线>-20261126
+逐模型输出：runs/<experiment.json中对应run>/
+
+完成检查
+job.py要求32轮训练和32轮完整评估，逐轮236次更新且损失有限。
+验证所有评估的threshold/split/窗口数/帧数、intersection/union与IoU一致；
+核对best_epoch等于含同分处理的全局最大IoU轮次；best_model中的selection内容
+必须对应该轮。best/final/last均严格加载且参数有限，final必须等于last的模型状态，
+last中的best元数据必须一致。通过后任务才标记completed。
+
+已完成的orchestration验证
+orchestration_validation.json：旧新训练命令对比、只读挂载、共享数据核验。
+scheduler_validation.json：纯CPU内存模拟队列、无重复启动、正确GPU顺序、
+status-only不启动、预检失败不启动。模拟未调用Docker/GPU或创建后台任务。

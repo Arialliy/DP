@@ -1,0 +1,18 @@
+{
+  "stage": "completed",
+  "epoch_total": 1,
+  "best_iou": 0.0,
+  "best_epoch": null,
+  "epoch": 1,
+  "eval_clip": "DJI_0049_2",
+  "eval_windows_done": 2,
+  "updated_at_unix": 1795690614.7570484,
+  "train_seconds": 0.6494858264923096,
+  "eval_windows_total": 172,
+  "eval_clip_windows_done": 2,
+  "eval_clip_windows_total": 3,
+  "first_frame": 36,
+  "end_frame": 75,
+  "last_iou": 0.0014397846602909167,
+  "eval_seconds": 4.025466442108154
+}

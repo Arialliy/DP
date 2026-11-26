@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "arch": "lv_full",
+  "best_epoch": 1,
+  "best_iou": 0.0034069541150525268,
+  "windows": 172,
+  "strict_load": true,
+  "finite": true,
+  "matches_same_epoch_last": true
+}

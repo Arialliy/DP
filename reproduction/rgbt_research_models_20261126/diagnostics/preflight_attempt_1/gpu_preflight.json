@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "models": {
+    "lv_full": {
+      "status": "failed",
+      "error": "AttributeError(\"module 'torch.nn.utils' has no attribute 'convert_conv3d_weight_memory_format'\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/experiment/gpu_preflight.py\", line 36, in main\n    train.main()\n  File \"/experiment/code/train.py\", line 335, in main\n    torch.nn.utils.convert_conv3d_weight_memory_format(model, torch.channels_last_3d)\nAttributeError: module 'torch.nn.utils' has no attribute 'convert_conv3d_weight_memory_format'\n"
+    }
+  }
+}

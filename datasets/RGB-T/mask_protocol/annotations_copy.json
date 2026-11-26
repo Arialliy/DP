@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "source": "/home/md0/ly/DP/datasets/RGBT-Tiny/annotations_coco",
+  "destination": "/home/md0/ly/DP/datasets/RGB-T/annotations_coco",
+  "completed_at": "2026-11-26T16:13:35.059870+08:00",
+  "files": [
+    {
+      "file": "instances_00_test2017.json",
+      "bytes": 113117624,
+      "source_sha256": "26260277c31c095c8a6e45d9d5377dc6f8470d62c859905985a1642e6c5ffd1e",
+      "target_sha256": "26260277c31c095c8a6e45d9d5377dc6f8470d62c859905985a1642e6c5ffd1e",
+      "action": "copied"
+    },
+    {
+      "file": "instances_00_train2017.json",
+      "bytes": 271333123,
+      "source_sha256": "e385ae3ab85a6c75f332fd984ffed4c0b23cba1848ca9cbaa9607865eb4222e4",
+      "target_sha256": "e385ae3ab85a6c75f332fd984ffed4c0b23cba1848ca9cbaa9607865eb4222e4",
+      "action": "copied"
+    },
+    {
+      "file": "instances_01_test2017.json",
+      "bytes": 118667359,
+      "source_sha256": "ad7ba716be63e4b0a9bcae7943ea291b8cfdd9cb1fb762fd336d083fbd848098",
+      "target_sha256": "ad7ba716be63e4b0a9bcae7943ea291b8cfdd9cb1fb762fd336d083fbd848098",
+      "action": "copied"
+    },
+    {
+      "file": "instances_01_train2017.json",
+      "bytes": 287336942,
+      "source_sha256": "d334fdf7301aabe1aa14e19c3a60a19ca0eba7c8cde7677ec620cd33bf7148f3",
+      "target_sha256": "d334fdf7301aabe1aa14e19c3a60a19ca0eba7c8cde7677ec620cd33bf7148f3",
+      "action": "copied"
+    }
+  ],
+  "total_bytes": 790455048
+}

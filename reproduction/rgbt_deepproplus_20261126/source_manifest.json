@@ -1,0 +1,78 @@
+{
+  "git_commit": "30892e4e3d703fb273651cccdb6640c84fb99fc6",
+  "files": {
+    "train.py": {
+      "original_sha256": "51d77e855ee798ee5b6371a130f2cab5b823ffe22a192ea52383d879f95f988d",
+      "run_sha256": "5154a411229d774f3cfde53172f479aa5cc61ef0fcd4fdc6844aa2c1ace3278c"
+    },
+    "test.py": {
+      "original_sha256": "99b58962061f101bcaf1cb4e787a46599ab947805444af910d405324cf314b9b",
+      "run_sha256": "99b58962061f101bcaf1cb4e787a46599ab947805444af910d405324cf314b9b"
+    },
+    "ShootingRules.py": {
+      "original_sha256": "888d4a26ff2877dc64550bc919fa60bf18e04e0af795aa8e8c304aa0b1e5c4e2",
+      "run_sha256": "888d4a26ff2877dc64550bc919fa60bf18e04e0af795aa8e8c304aa0b1e5c4e2"
+    },
+    "write_results.py": {
+      "original_sha256": "47984378234a8f6e1ec3e18d83a50af8b93cce52645f1e04042afe52f04654ef",
+      "run_sha256": "47984378234a8f6e1ec3e18d83a50af8b93cce52645f1e04042afe52f04654ef"
+    },
+    "README.md": {
+      "original_sha256": "58505f280be693b75bd2a125299ee1349e349f4db688f5da0fa7aa13d1d42150",
+      "run_sha256": "58505f280be693b75bd2a125299ee1349e349f4db688f5da0fa7aa13d1d42150"
+    },
+    "networks/__init__.py": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "run_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "networks/losses/HAM_loss_MultiFrame.py": {
+      "original_sha256": "4a98c9ceeecc273068381262cf0a0688aa87b72f3b183a237da16e547f0de889",
+      "run_sha256": "4a98c9ceeecc273068381262cf0a0688aa87b72f3b183a237da16e547f0de889"
+    },
+    "networks/losses/HAM_loss.py": {
+      "original_sha256": "cb8e07c2cc5a51d767ca5499c4134292fdbeba4e715c8e936e1a1570cca5271d",
+      "run_sha256": "cb8e07c2cc5a51d767ca5499c4134292fdbeba4e715c8e936e1a1570cca5271d"
+    },
+    "networks/losses/HPM_loss_MultiFrame.py": {
+      "original_sha256": "9c7b4bb994ffec7c324e59f2971eb27380d704ee2b347068aeb731dcfa064d0a",
+      "run_sha256": "9c7b4bb994ffec7c324e59f2971eb27380d704ee2b347068aeb731dcfa064d0a"
+    },
+    "networks/layers/basic.py": {
+      "original_sha256": "000d204655d38ba503a2ad01fc2544fd5136c95dc3fda48dc95f5d059e7827c7",
+      "run_sha256": "000d204655d38ba503a2ad01fc2544fd5136c95dc3fda48dc95f5d059e7827c7"
+    },
+    "networks/layers/TPro.py": {
+      "original_sha256": "90e35e9578ae4e167de5277c2bd88a004dd1ce3bc38feacc8f80200e7aefce87",
+      "run_sha256": "90e35e9578ae4e167de5277c2bd88a004dd1ce3bc38feacc8f80200e7aefce87"
+    },
+    "networks/layers/__init__.py": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "run_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "networks/models/DeepPro-Plus.py": {
+      "original_sha256": "fa46a034a30d8bbb0f677271d6368f033fcb389d682478d331551d8bae087668",
+      "run_sha256": "fa46a034a30d8bbb0f677271d6368f033fcb389d682478d331551d8bae087668"
+    },
+    "networks/models/DeepPro.py": {
+      "original_sha256": "ebd710ca3262bf6cace8d7f3a435e2761146c928c70c6d1fecaa5cc6d2a03473",
+      "run_sha256": "ebd710ca3262bf6cace8d7f3a435e2761146c928c70c6d1fecaa5cc6d2a03473"
+    },
+    "networks/models/DeepPro-Plus_forMovingScenes.py": {
+      "original_sha256": "2eb1e1f03da754403c55aa2d4016310f50bc19a23dfcf1c4d7ae8598107c20eb",
+      "run_sha256": "2eb1e1f03da754403c55aa2d4016310f50bc19a23dfcf1c4d7ae8598107c20eb"
+    },
+    "networks/models/__init__.py": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "run_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data_utils/TestDataLoader.py": {
+      "original_sha256": "03210e84ac9acfc3fd85ef5bcd2c787cfc126e2580e622fca9c3297c3e1c022e",
+      "run_sha256": "03210e84ac9acfc3fd85ef5bcd2c787cfc126e2580e622fca9c3297c3e1c022e"
+    },
+    "data_utils/TrainDataLoader.py": {
+      "original_sha256": "ac94cf5bbfa2a4bcb76f5eeec0e047b999c76d1423afeb1a54136bf535ffa3d4",
+      "run_sha256": "ac94cf5bbfa2a4bcb76f5eeec0e047b999c76d1423afeb1a54136bf535ffa3d4"
+    }
+  },
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+}

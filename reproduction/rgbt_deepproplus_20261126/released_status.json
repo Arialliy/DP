@@ -1,0 +1,28 @@
+{
+  "phase": "released",
+  "started_at": "2026-11-26T08:54:57.274863+00:00",
+  "log_dir": "released_rgbt_deepproplus",
+  "state": "completed",
+  "test_command": [
+    "/usr/bin/python",
+    "-u",
+    "/work/test.py",
+    "--gpu",
+    "0",
+    "--seqlen",
+    "40",
+    "--dataset",
+    "RGB-T",
+    "--datapath",
+    "/data/RGB-T",
+    "--logpath",
+    "/run/log/",
+    "--log_dir",
+    "released_rgbt_deepproplus",
+    "--threshold_eval",
+    "0.5"
+  ],
+  "checkpoint_sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc",
+  "updated_at": "2026-11-26T09:32:34.982914+00:00",
+  "metrics_file": "released_metrics.json"
+}

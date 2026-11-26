@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "scope": "CPU/static orchestration checks; no GPU/container/background jobs launched",
+  "models": [
+    {
+      "arch": "lv_full",
+      "training_options_unchanged_except_selection": true,
+      "read_only_data_artifacts": true,
+      "gpu": 2
+    },
+    {
+      "arch": "lvh_full",
+      "training_options_unchanged_except_selection": true,
+      "read_only_data_artifacts": true,
+      "gpu": 0
+    },
+    {
+      "arch": "mr_lv",
+      "training_options_unchanged_except_selection": true,
+      "read_only_data_artifacts": true,
+      "gpu": 2
+    },
+    {
+      "arch": "lvh_dec",
+      "training_options_unchanged_except_selection": true,
+      "read_only_data_artifacts": true,
+      "gpu": 0
+    }
+  ],
+  "reused_artifacts": {
+    "cache_clips": 60,
+    "frames": 25111,
+    "hotspot_clips": 45,
+    "hotspot_candidates": 9433,
+    "video_check": "size against prior full-SHA256 witness",
+    "homography_and_hotspot_check": "SHA256",
+    "reuse_mode": "Docker read-only bind mounts"
+  },
+  "source_manifest_verified": true,
+  "completion_checks": [
+    "32 complete evaluations",
+    "latest maximum IoU epoch",
+    "best selection metadata matches selected evaluation",
+    "last best metadata matches",
+    "strict best/final/last state loading",
+    "final equals last"
+  ]
+}

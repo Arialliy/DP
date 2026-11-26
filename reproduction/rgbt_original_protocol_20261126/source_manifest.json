@@ -1,0 +1,35 @@
+{
+  "baseline_source": "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/source",
+  "baseline_files": {
+    "train.py": "5154a411229d774f3cfde53172f479aa5cc61ef0fcd4fdc6844aa2c1ace3278c",
+    "write_results.py": "47984378234a8f6e1ec3e18d83a50af8b93cce52645f1e04042afe52f04654ef",
+    "test.py": "99b58962061f101bcaf1cb4e787a46599ab947805444af910d405324cf314b9b",
+    "ShootingRules.py": "888d4a26ff2877dc64550bc919fa60bf18e04e0af795aa8e8c304aa0b1e5c4e2",
+    "README.md": "58505f280be693b75bd2a125299ee1349e349f4db688f5da0fa7aa13d1d42150",
+    "data_utils/TestDataLoader.py": "03210e84ac9acfc3fd85ef5bcd2c787cfc126e2580e622fca9c3297c3e1c022e",
+    "data_utils/TrainDataLoader.py": "ac94cf5bbfa2a4bcb76f5eeec0e047b999c76d1423afeb1a54136bf535ffa3d4",
+    "networks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "networks/losses/HAM_loss_MultiFrame.py": "4a98c9ceeecc273068381262cf0a0688aa87b72f3b183a237da16e547f0de889",
+    "networks/losses/HAM_loss.py": "cb8e07c2cc5a51d767ca5499c4134292fdbeba4e715c8e936e1a1570cca5271d",
+    "networks/losses/HPM_loss_MultiFrame.py": "9c7b4bb994ffec7c324e59f2971eb27380d704ee2b347068aeb731dcfa064d0a",
+    "networks/layers/basic.py": "000d204655d38ba503a2ad01fc2544fd5136c95dc3fda48dc95f5d059e7827c7",
+    "networks/layers/TPro.py": "90e35e9578ae4e167de5277c2bd88a004dd1ce3bc38feacc8f80200e7aefce87",
+    "networks/layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "networks/models/DeepPro-Plus.py": "fa46a034a30d8bbb0f677271d6368f033fcb389d682478d331551d8bae087668",
+    "networks/models/DeepPro.py": "ebd710ca3262bf6cace8d7f3a435e2761146c928c70c6d1fecaa5cc6d2a03473",
+    "networks/models/DeepPro-Plus_forMovingScenes.py": "2eb1e1f03da754403c55aa2d4016310f50bc19a23dfcf1c4d7ae8598107c20eb",
+    "networks/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "research_files": {
+    "research_models/lvh.py": "518521b887bcc126ba19d6aace74bd973301b601f556dc2fd0b72879dc6b6900",
+    "research_models/mr.py": "d74ae66c07599755410524cf656fcfe4371e791971efa584353334ef7211d791",
+    "research_models/infer_mr.py": "4054afa189791f6e6a5e54d9f0768db083f483d9a2d67dd7a7ff57728e203fea",
+    "research_models/multirate.py": "ca3c3f4ace9087e3880ef19698404ca8c4ff9c4a5f34d41d1a5f94948dcf7a84",
+    "research_models/splits.py": "5dd21c1cb2b0c04e36a1dcc20bf1b72e4306cb6e31aa00edf069a22a3c1914f5",
+    "research_models/lv.py": "d62666504ac79ab4db537cf3f8b6c84481b385efb2f4c60c20224bc7fbf437a0",
+    "research_models/models.py": "1548977a4e238403ba1ee9c43148e8661be62266108d6aeded1b4a17e4c99b06",
+    "research_models/vtdata.py": "8fd5e9d48037eb16641935701ca083475648d83e6ec3794832a87f97dfcc5380",
+    "research_models/stabilize.py": "757b317713896ac2c3eb8fe56ab0e1d643f0a6d2668ebaa3b55a9d7e352e59ad",
+    "research_models/__init__.py": "4852c7a9d11068cf8d6d365a0e5c1027a97809d7ed85e7f9fb29b1468cd57672"
+  }
+}

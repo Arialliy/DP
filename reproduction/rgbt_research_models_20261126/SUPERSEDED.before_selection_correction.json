@@ -1,0 +1,7 @@
+{
+  "status": "superseded_by_user_request",
+  "reason": "User requires original DeepPro training and testing protocol, with only the model changed. These runs used research training protocol and are not the requested comparison.",
+  "updated_at": "2026-11-26T10:42:36.854194+00:00",
+  "preserved_all_artifacts": true,
+  "scheduler": "stopped"
+}

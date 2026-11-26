@@ -1,0 +1,6 @@
+{
+  "updated_at": "2026-11-26T10:53:15.718891+00:00",
+  "state": "abandoned_before_launch",
+  "replacement": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126",
+  "reason": "User clarified only checkpoint selection follows original; do not replace research-model training pipeline."
+}

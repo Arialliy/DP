@@ -1,0 +1,256 @@
+{
+  "lv_full": {
+    "tensor_count": 176,
+    "identical": false,
+    "different_keys": [
+      "var.conv_in.0.weight",
+      "var.conv_in.1.bias",
+      "level.e1.0.weight",
+      "level.e1.0.bias",
+      "level.e1.1.bias",
+      "level.e1.3.weight",
+      "level.e1.3.bias",
+      "level.e1.4.bias",
+      "level.e2.0.weight",
+      "level.e2.0.bias",
+      "level.e2.1.bias",
+      "level.e2.3.weight",
+      "level.e2.3.bias",
+      "level.e2.4.bias",
+      "level.e3.0.weight",
+      "level.e3.0.bias",
+      "level.e3.1.bias",
+      "level.e3.3.weight",
+      "level.e3.3.bias",
+      "level.e3.4.bias",
+      "level.d2.0.weight",
+      "level.d2.0.bias",
+      "level.d2.1.bias",
+      "level.d2.3.weight",
+      "level.d2.3.bias",
+      "level.d2.4.bias"
+    ],
+    "max_abs_diff": 7.876800373196602e-05,
+    "largest_differences": [
+      [
+        "level.e2.0.weight",
+        7.876800373196602e-05
+      ],
+      [
+        "level.e3.3.weight",
+        1.6901642084121704e-05
+      ],
+      [
+        "level.e3.0.weight",
+        1.1673197150230408e-05
+      ],
+      [
+        "level.e2.3.weight",
+        4.2263418436050415e-06
+      ],
+      [
+        "level.d2.0.bias",
+        2.0432344172149897e-06
+      ]
+    ],
+    "batchnorm_buffers_identical": true
+  },
+  "lvh_full": {
+    "tensor_count": 178,
+    "identical": false,
+    "different_keys": [
+      "var.conv_in.0.weight",
+      "var.conv_in.0.bias",
+      "var.conv_in.1.bias",
+      "level.e1.0.weight",
+      "level.e1.0.bias",
+      "level.e1.1.bias",
+      "level.e1.3.weight",
+      "level.e1.3.bias",
+      "level.e1.4.bias",
+      "level.e2.0.weight",
+      "level.e2.0.bias",
+      "level.e2.1.bias",
+      "level.e2.3.weight",
+      "level.e2.3.bias",
+      "level.e2.4.bias",
+      "level.e3.0.weight",
+      "level.e3.0.bias",
+      "level.e3.1.weight",
+      "level.e3.1.bias",
+      "level.e3.3.weight",
+      "level.e3.3.bias",
+      "level.e3.4.bias",
+      "level.d2.0.weight",
+      "level.d2.0.bias",
+      "level.d2.1.bias",
+      "level.d2.3.weight",
+      "level.d2.3.bias",
+      "level.d2.4.bias",
+      "gate.net.0.weight"
+    ],
+    "max_abs_diff": 0.00019818777218461037,
+    "largest_differences": [
+      [
+        "level.e3.3.weight",
+        0.00019818777218461037
+      ],
+      [
+        "level.e2.0.weight",
+        0.0001658545807003975
+      ],
+      [
+        "level.e3.0.weight",
+        8.591637015342712e-05
+      ],
+      [
+        "level.e1.3.weight",
+        9.972602128982544e-06
+      ],
+      [
+        "level.e3.4.bias",
+        4.2977044358849525e-06
+      ]
+    ],
+    "batchnorm_buffers_identical": true
+  },
+  "mr_lv": {
+    "tensor_count": 176,
+    "identical": false,
+    "different_keys": [
+      "var.conv_in.0.weight",
+      "var.conv_in.1.bias",
+      "level.e1.0.weight",
+      "level.e1.0.bias",
+      "level.e1.1.bias",
+      "level.e1.3.weight",
+      "level.e1.3.bias",
+      "level.e1.4.bias",
+      "level.e2.0.weight",
+      "level.e2.0.bias",
+      "level.e2.1.bias",
+      "level.e2.3.weight",
+      "level.e2.3.bias",
+      "level.e2.4.bias",
+      "level.e3.0.weight",
+      "level.e3.0.bias",
+      "level.e3.1.bias",
+      "level.e3.3.weight",
+      "level.e3.3.bias",
+      "level.e3.4.bias",
+      "level.d2.0.weight",
+      "level.d2.0.bias",
+      "level.d2.1.bias",
+      "level.d2.3.weight",
+      "level.d2.3.bias",
+      "level.d2.4.bias",
+      "level.head.weight"
+    ],
+    "max_abs_diff": 5.466677248477936e-05,
+    "largest_differences": [
+      [
+        "level.d2.0.weight",
+        5.466677248477936e-05
+      ],
+      [
+        "level.e3.3.weight",
+        1.9282102584838867e-05
+      ],
+      [
+        "level.e1.3.weight",
+        5.204230546951294e-06
+      ],
+      [
+        "var.conv_in.0.weight",
+        4.568137228488922e-06
+      ],
+      [
+        "level.e2.0.bias",
+        4.33711102232337e-06
+      ]
+    ],
+    "batchnorm_buffers_identical": true
+  },
+  "lvh_dec": {
+    "tensor_count": 250,
+    "identical": false,
+    "different_keys": [
+      "var.conv_in.0.weight",
+      "var.conv_in.0.bias",
+      "appear.e1.0.weight",
+      "appear.e1.0.bias",
+      "appear.e1.1.bias",
+      "appear.e1.3.weight",
+      "appear.e1.3.bias",
+      "appear.e1.4.bias",
+      "appear.e2.0.weight",
+      "appear.e2.0.bias",
+      "appear.e2.1.bias",
+      "appear.e2.3.weight",
+      "appear.e2.3.bias",
+      "appear.e2.4.bias",
+      "appear.e3.0.weight",
+      "appear.e3.0.bias",
+      "appear.e3.1.bias",
+      "appear.e3.3.weight",
+      "appear.e3.3.bias",
+      "appear.e3.4.bias",
+      "appear.d2.0.weight",
+      "appear.d2.0.bias",
+      "appear.d2.1.bias",
+      "appear.d2.3.weight",
+      "appear.d2.3.bias",
+      "appear.d2.4.bias",
+      "arrive.e1.0.weight",
+      "arrive.e1.0.bias",
+      "arrive.e1.1.bias",
+      "arrive.e1.3.weight",
+      "arrive.e1.3.bias",
+      "arrive.e1.4.bias",
+      "arrive.e2.0.weight",
+      "arrive.e2.0.bias",
+      "arrive.e2.1.bias",
+      "arrive.e2.3.weight",
+      "arrive.e2.3.bias",
+      "arrive.e2.4.bias",
+      "arrive.e3.0.weight",
+      "arrive.e3.0.bias",
+      "arrive.e3.1.bias",
+      "arrive.e3.3.weight",
+      "arrive.e3.3.bias",
+      "arrive.e3.4.bias",
+      "arrive.d2.0.weight",
+      "arrive.d2.0.bias",
+      "arrive.d2.1.bias",
+      "arrive.d2.3.weight",
+      "arrive.d2.3.bias",
+      "arrive.d2.4.bias",
+      "gate.net.0.weight"
+    ],
+    "max_abs_diff": 0.00011179770808666945,
+    "largest_differences": [
+      [
+        "appear.e3.3.weight",
+        0.00011179770808666945
+      ],
+      [
+        "arrive.e3.0.weight",
+        9.326264262199402e-05
+      ],
+      [
+        "arrive.e3.3.weight",
+        1.3891607522964478e-05
+      ],
+      [
+        "appear.d2.0.weight",
+        7.64802098274231e-06
+      ],
+      [
+        "appear.e3.0.weight",
+        6.280839443206787e-06
+      ]
+    ],
+    "batchnorm_buffers_identical": true
+  },
+  "comparison_note": "Two independently executed GPU updates, same seed and training code; not bitwise identical. cuDNN deterministic=False and inherited TF32 preserved. BatchNorm buffers agree exactly. This is diagnostic, not evidence of bitwise reproducibility."
+}

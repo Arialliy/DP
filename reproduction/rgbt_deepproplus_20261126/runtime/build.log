@@ -1,0 +1,55 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 994B done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for nvcr.io/nvidia/pytorch:24.01-py3
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.1s
+
+#4 [1/4] FROM nvcr.io/nvidia/pytorch:24.01-py3
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 38B done
+#5 DONE 0.1s
+
+#6 [2/4] COPY requirements.txt /tmp/deeppro-rgbt-requirements.txt
+#6 CACHED
+
+#7 [3/4] RUN PIP_CONFIG_FILE=/dev/null PIP_EXTRA_INDEX_URL= python -m pip install --index-url https://pypi.org/simple --no-cache-dir -r /tmp/deeppro-rgbt-requirements.txt
+#7 CACHED
+
+#8 [4/4] RUN python -m pip uninstall -y opencv opencv-python opencv-python-headless opencv-contrib-python opencv-contrib-python-headless && python -c "import shutil; shutil.rmtree('/usr/local/lib/python3.10/dist-packages/cv2', ignore_errors=True)" && PIP_CONFIG_FILE=/dev/null PIP_EXTRA_INDEX_URL= python -m pip install --index-url https://pypi.org/simple --no-cache-dir --no-deps opencv-python-headless==4.8.1.78
+#8 1.148 Found existing installation: opencv 4.7.0
+#8 1.150 Uninstalling opencv-4.7.0:
+#8 1.375   Successfully uninstalled opencv-4.7.0
+#8 1.439 WARNING: Skipping opencv-python as it is not installed.
+#8 1.442 Found existing installation: opencv-python-headless 4.8.1.78
+#8 1.454 Uninstalling opencv-python-headless-4.8.1.78:
+#8 2.340   Successfully uninstalled opencv-python-headless-4.8.1.78
+#8 2.395 WARNING: Skipping opencv-contrib-python as it is not installed.
+#8 2.429 WARNING: Skipping opencv-contrib-python-headless as it is not installed.
+#8 2.429 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 4.114 Collecting opencv-python-headless==4.8.1.78
+#8 4.691   Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+#8 4.876 Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.1 MB)
+#8 19.09    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.1/49.1 MB 2.9 MB/s eta 0:00:00
+#8 19.32 Installing collected packages: opencv-python-headless
+#8 20.36 Successfully installed opencv-python-headless-4.8.1.78
+#8 20.36 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 20.97 
+#8 20.97 [notice] A new release of pip is available: 23.3.2 -> 26.3
+#8 20.97 [notice] To update, run: python -m pip install --upgrade pip
+#8 DONE 23.0s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 1.8s done
+#9 writing image sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594 0.0s done
+#9 naming to docker.io/library/deeppro-rgbt:20261126 0.0s done
+#9 DONE 2.0s

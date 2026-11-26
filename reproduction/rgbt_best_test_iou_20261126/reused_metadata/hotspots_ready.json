@@ -1,0 +1,336 @@
+{
+  "status": "ready",
+  "started_utc": "2026-11-26T09:46:32.840185+00:00",
+  "completed_utc": "2026-11-26T09:50:59.985256+00:00",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "code/hotspots.py",
+    "--split",
+    "official_train",
+    "--nproc",
+    "4"
+  ],
+  "exit_code": 0,
+  "split": "official_train",
+  "clips": 45,
+  "candidates": 9433,
+  "mining_behavior": "Unmodified code/hotspots.py defaults",
+  "records": [
+    {
+      "clip": "DJI_0030_9",
+      "candidates": 132,
+      "path": "cache/hotspots/DJI_0030_9.npz",
+      "sha256": "1a83710b4e17805a4299c8053cb07488321040323e7bb8c4e58dd6931450c54e",
+      "bytes": 3616
+    },
+    {
+      "clip": "DJI_0043_2",
+      "candidates": 220,
+      "path": "cache/hotspots/DJI_0043_2.npz",
+      "sha256": "9ea161c5a0ece0ba81651719a35c72b983a7627fec520d92ff2d3ce1f0e575a6",
+      "bytes": 5376
+    },
+    {
+      "clip": "DJI_0057_1",
+      "candidates": 320,
+      "path": "cache/hotspots/DJI_0057_1.npz",
+      "sha256": "a19318c58280ada9dcacc7b9e857d8a061eee9b212ccf700b970ef68be6bc8ea",
+      "bytes": 7376
+    },
+    {
+      "clip": "DJI_0069_1",
+      "candidates": 240,
+      "path": "cache/hotspots/DJI_0069_1.npz",
+      "sha256": "09f49e16f8f22c0e47a37cde5af77b60b2a34864b6cd4bab56c0cd400b60493c",
+      "bytes": 5776
+    },
+    {
+      "clip": "DJI_0081_2",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0081_2.npz",
+      "sha256": "d10254c5af86a8a36d45b7ddcbeb62769b8ddd08c124010f195314c5167f0771",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0101_2",
+      "candidates": 80,
+      "path": "cache/hotspots/DJI_0101_2.npz",
+      "sha256": "5c544ec89d68c36d0b20f45a5d694dd5a9c4cca7dbe341a005b4c88c75c49915",
+      "bytes": 2576
+    },
+    {
+      "clip": "DJI_0107_1",
+      "candidates": 40,
+      "path": "cache/hotspots/DJI_0107_1.npz",
+      "sha256": "81b8909df00eb7b87e860a3b270cc4fb1afaaaa37c912f238d541d963655fbc7",
+      "bytes": 1776
+    },
+    {
+      "clip": "DJI_0111_2",
+      "candidates": 100,
+      "path": "cache/hotspots/DJI_0111_2.npz",
+      "sha256": "72db493fc0105545a2c7a0db2591fd145c3d64089356915e4d67c18208af2f9a",
+      "bytes": 2976
+    },
+    {
+      "clip": "DJI_0113_3",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0113_3.npz",
+      "sha256": "4d141f3a40588a58e29cdcb4be838420e74a43b0ebab3ed6bc5d641a00532531",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0115_2",
+      "candidates": 160,
+      "path": "cache/hotspots/DJI_0115_2.npz",
+      "sha256": "0ab8e4dcd4aac9bf5339b55edef9fee06d7965fa1b350113d2a92de13fde311e",
+      "bytes": 4176
+    },
+    {
+      "clip": "DJI_0117_2",
+      "candidates": 140,
+      "path": "cache/hotspots/DJI_0117_2.npz",
+      "sha256": "9a45a7a8e3dc979c7fc9e5aca50deb2ed76a84e47196e6e21f948d7442653099",
+      "bytes": 3776
+    },
+    {
+      "clip": "DJI_0121_2",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0121_2.npz",
+      "sha256": "e40964e8c67fdaf091de5d42a4378a3981a64f28862c55e7c074572ed55fda94",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0123_6",
+      "candidates": 180,
+      "path": "cache/hotspots/DJI_0123_6.npz",
+      "sha256": "611ada9e82a5576cc2ffb201a53cafcc75f5fbeb7144e2fb15c302cf7ec2e604",
+      "bytes": 4576
+    },
+    {
+      "clip": "DJI_0125_1",
+      "candidates": 260,
+      "path": "cache/hotspots/DJI_0125_1.npz",
+      "sha256": "be517197ff6576faa8cf0911092b8f5c1bf9c021c9c2998a10118fd08c93db9a",
+      "bytes": 6176
+    },
+    {
+      "clip": "DJI_0127_1",
+      "candidates": 280,
+      "path": "cache/hotspots/DJI_0127_1.npz",
+      "sha256": "7dc7fc81e73aa035754ce789aea73bfc0df10d526651d9114c4f9678064fdc86",
+      "bytes": 6576
+    },
+    {
+      "clip": "DJI_0131_2",
+      "candidates": 320,
+      "path": "cache/hotspots/DJI_0131_2.npz",
+      "sha256": "f524b7d7f14873220243450ab8063aa9ef50757474cb3d5dfa8f5f78a078734f",
+      "bytes": 7376
+    },
+    {
+      "clip": "DJI_0143_1",
+      "candidates": 240,
+      "path": "cache/hotspots/DJI_0143_1.npz",
+      "sha256": "583567bfb092b8b2d75781a3b39c6ea967aa33d7481eef25641c7db28587d708",
+      "bytes": 5776
+    },
+    {
+      "clip": "DJI_0145_1",
+      "candidates": 160,
+      "path": "cache/hotspots/DJI_0145_1.npz",
+      "sha256": "98b6de7c2e7e1658137f2fb792ab002eabaa328c2cc96344812308aa10b39c03",
+      "bytes": 4176
+    },
+    {
+      "clip": "DJI_0157_2",
+      "candidates": 260,
+      "path": "cache/hotspots/DJI_0157_2.npz",
+      "sha256": "fadd5d706de15f89da0622db525f481209e1af0bc177e9dfe9ec677d85237ace",
+      "bytes": 6176
+    },
+    {
+      "clip": "DJI_0163_1",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0163_1.npz",
+      "sha256": "d52a9caa54303b431defda54e5371ba1f73a7934dbee924f0b93890262eae3a9",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0175_2",
+      "candidates": 260,
+      "path": "cache/hotspots/DJI_0175_2.npz",
+      "sha256": "be615e42024d5f5d206fb1a5d4d7c602bba258dd37c828a4c2ad5eb736257bbd",
+      "bytes": 6176
+    },
+    {
+      "clip": "DJI_0177_2",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0177_2.npz",
+      "sha256": "b8ce508989f1f76434fa28f171f639670beb57d868533c1c4b00f6ad04b70524",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0217_2",
+      "candidates": 220,
+      "path": "cache/hotspots/DJI_0217_2.npz",
+      "sha256": "30e57dec37c34e3b2f7bc8d62b720ee1807aa833bc372fc95fffdf1544af8a00",
+      "bytes": 5376
+    },
+    {
+      "clip": "DJI_0229_2",
+      "candidates": 280,
+      "path": "cache/hotspots/DJI_0229_2.npz",
+      "sha256": "4a5b974ff18d3ce228c785c47ae58c061a9bc9863bd9b20bdd5ebdd7d21c009e",
+      "bytes": 6576
+    },
+    {
+      "clip": "DJI_0241_2",
+      "candidates": 290,
+      "path": "cache/hotspots/DJI_0241_2.npz",
+      "sha256": "e3770071fb8de561e6f8a0e2ebe5b1993e7690523691b0adb19eabb3440bc284",
+      "bytes": 6776
+    },
+    {
+      "clip": "DJI_0243_2",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0243_2.npz",
+      "sha256": "85ab88c0ec809a1ed4526147e2cf52784af42ec2e80302c5f55a6356c7aff9e3",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0253_1",
+      "candidates": 0,
+      "path": "cache/hotspots/DJI_0253_1.npz",
+      "sha256": "9ea14a8f9b45945bd27f9c5976c95db870b7eaabd5129ef740a0daeecee4369c",
+      "bytes": 976
+    },
+    {
+      "clip": "DJI_0253_2",
+      "candidates": 0,
+      "path": "cache/hotspots/DJI_0253_2.npz",
+      "sha256": "9ea14a8f9b45945bd27f9c5976c95db870b7eaabd5129ef740a0daeecee4369c",
+      "bytes": 976
+    },
+    {
+      "clip": "DJI_0253_3",
+      "candidates": 0,
+      "path": "cache/hotspots/DJI_0253_3.npz",
+      "sha256": "9ea14a8f9b45945bd27f9c5976c95db870b7eaabd5129ef740a0daeecee4369c",
+      "bytes": 976
+    },
+    {
+      "clip": "DJI_0257_5",
+      "candidates": 160,
+      "path": "cache/hotspots/DJI_0257_5.npz",
+      "sha256": "e0bb0db1e342945f08b7dc7dd6e13da181f046b7dd81edafc59a0e689209f32c",
+      "bytes": 4176
+    },
+    {
+      "clip": "DJI_0271_2",
+      "candidates": 40,
+      "path": "cache/hotspots/DJI_0271_2.npz",
+      "sha256": "5a59649246f130be1958a3784021494001b10c2706bf643ba366b73eb54411d6",
+      "bytes": 1776
+    },
+    {
+      "clip": "DJI_0273_1",
+      "candidates": 680,
+      "path": "cache/hotspots/DJI_0273_1.npz",
+      "sha256": "07fe5421fbcaa168c195fa878a3ebf78f1ca2e635b861789dea43ad72a7c3c9f",
+      "bytes": 14576
+    },
+    {
+      "clip": "DJI_0277_1",
+      "candidates": 320,
+      "path": "cache/hotspots/DJI_0277_1.npz",
+      "sha256": "f9d9a09aee7cc81fb817fdcde622c44ffe222451027b51fbcf7237e03cfccf69",
+      "bytes": 7376
+    },
+    {
+      "clip": "DJI_0285_3",
+      "candidates": 100,
+      "path": "cache/hotspots/DJI_0285_3.npz",
+      "sha256": "84a80f30ee0b1ac4609522860a54a55c92a54e42a57ffb5198e91099d23b0270",
+      "bytes": 2976
+    },
+    {
+      "clip": "DJI_0287_1",
+      "candidates": 151,
+      "path": "cache/hotspots/DJI_0287_1.npz",
+      "sha256": "c1d8232cd656a6bd86668d33d02cc88e0203eb675494bd44fdc62ffae299e784",
+      "bytes": 3996
+    },
+    {
+      "clip": "DJI_0287_2",
+      "candidates": 280,
+      "path": "cache/hotspots/DJI_0287_2.npz",
+      "sha256": "9ea2670dec55f5081a16bdc5c97542e29b486f4771308c31491b66cd41e8569f",
+      "bytes": 6576
+    },
+    {
+      "clip": "DJI_0293_1",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0293_1.npz",
+      "sha256": "a99f4fbf6bf14632f00f0e699cc9b376a014e79b670b2be74a01290e27e5fde4",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0295_3",
+      "candidates": 320,
+      "path": "cache/hotspots/DJI_0295_3.npz",
+      "sha256": "563dc0b7ea79ce75849d3243ee416928051d77f0c5936581171a83a135102c35",
+      "bytes": 7376
+    },
+    {
+      "clip": "DJI_0305_3",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0305_3.npz",
+      "sha256": "96b220b6b9d7f6f819740a8c163d7a0abec3401851ead10c5e50a0bf31bc20c5",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0305_7",
+      "candidates": 200,
+      "path": "cache/hotspots/DJI_0305_7.npz",
+      "sha256": "9f96eb5a36e856018329278f010b37e6080b1f1e1ebc341096b83a2f0544f423",
+      "bytes": 4976
+    },
+    {
+      "clip": "DJI_0307_1",
+      "candidates": 140,
+      "path": "cache/hotspots/DJI_0307_1.npz",
+      "sha256": "5a24f4a07a2c6aa58edeb44aff97b7cf79e246548a1063a7e06103ece372b898",
+      "bytes": 3776
+    },
+    {
+      "clip": "DJI_0309_1",
+      "candidates": 240,
+      "path": "cache/hotspots/DJI_0309_1.npz",
+      "sha256": "dcfad1d46bccdfca34e956a61102652aa37e0e083e28b603d4df56eb6c2c775c",
+      "bytes": 5776
+    },
+    {
+      "clip": "DJI_0309_2",
+      "candidates": 340,
+      "path": "cache/hotspots/DJI_0309_2.npz",
+      "sha256": "8e2ff7392d7ccd36b47f68b9dbbafd07a0966a0db64b1f3bf7701943491e7a26",
+      "bytes": 7776
+    },
+    {
+      "clip": "DJI_0319_2",
+      "candidates": 340,
+      "path": "cache/hotspots/DJI_0319_2.npz",
+      "sha256": "99c20f70441de99ec647d5721224fe0cf28b57c2793ab6f475f92fcc6d82cdca",
+      "bytes": 7776
+    },
+    {
+      "clip": "DJI_0323_2",
+      "candidates": 340,
+      "path": "cache/hotspots/DJI_0323_2.npz",
+      "sha256": "48af8daaf38a47f35b2a5b1ec4a41cebd56f50d152f13d588aef3041b224dea5",
+      "bytes": 7776
+    }
+  ]
+}

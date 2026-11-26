@@ -1,0 +1,109 @@
+DeepPro-Plus RGB-T protocol audit, 2026-11-26 (Asia/Taipei)
+
+Sources
+- Local README.md; train.py; test.py; data_utils/{TrainDataLoader,TestDataLoader}.py;
+  networks/models/DeepPro-Plus.py; networks/layers/{basic,TPro}.py;
+  ShootingRules.py; write_results.py.
+- log/sem_seg/RGB-T__2025-01-14_15-27__SoftLoUloss_DeepPro-Plus_DataL40/
+  {DeepPro-Plus.py,checkpoints/best_model.pth,eval_ShootingRules_LocLen2_4.txt}.
+- datasets/RGB-T/mask_protocol/{generation,verification}.json.
+- Primary paper, latest arXiv v5 (27 March 2026), sections IV-A, IV-F and appendix E:
+  https://arxiv.org/html/2506.12766v5
+
+Paper and released-checkpoint evidence
+The paper uses 45 training and 15 test scenes, rough Gaussian labels, 32 epochs,
+batch 4, Adam initial learning rate .001, factor .7 each 10 epochs, 128-square
+crops, Soft-IoU, 40 frames with 10% inference overlap and max/union fusion.
+Appendix E specifies 8 temporal probes for Plus. Table X reports Pd 77.83%,
+Fa 4.47e-5, AUC .9730. The local archived curve reproduces the rounded Pd/Fa
+table entries specifically at threshold .99: TP 8797/11303, FP 87526,
+Pd .77829 and Fa 4.469681e-5. That threshold association is an inference from
+the archived numeric match, not an explicit threshold statement in the paper.
+The archived 27-point curve integrates to approximately .96912177 using the
+archived integer TP/FP counts and 1,958,215,680 test pixels. Thus the paper v5
+AUC .9730 is not exactly recovered even from the local archived curve. Keep
+the archived reference and latest paper reference distinct.
+
+Checkpoint read on CPU with nvcr.io/nvidia/pytorch:24.01-py3:
+epoch=21 (zero based; 22nd epoch); class_avg_iou=.16041548053381177;
+optimizer lr=.00049, betas=(.9,.999), eps=1e-8, weight_decay=.0001.
+Model parameter count is 70,913 scalar parameters (283,652 float32 bytes).
+Archived model source is byte-identical to current networks/models/DeepPro-Plus.py.
+Archived training log is an empty file, so historical RGB-T sample rate, seed,
+and selection threshold cannot be recovered from that log.
+
+Executable training protocol
+RGB-T uses infrared frames only: train2017/<scene>/01; labels are
+segmentations/<scene>. Gray normalization is (pixel-85.0799)/47.4845.
+Masks are loaded as uint8 / 255, then every nonzero value becomes one.
+Sampling is length-weighted over candidate temporal clips; short clips are
+zero-padded before or after according to sample index parity. With probability
+.75, cropping centers near a target if a target exists in the chosen middle
+frame. Sampling is with replacement. No horizontal/vertical augmentation.
+Train DataLoader has workers=4, shuffle=True, drop_last=True.
+There are 18,955 candidate temporal clips, 947 samples per epoch at .05,
+236 complete batch-four updates per epoch, and 172 test windows covering
+5,976 distinct test frames (1,958,215,680 pixels).
+Original train.py defines seed_everything but never invokes it; NumPy worker
+seeds depend on time.time(), while Python random and Torch affect crops.
+Do not label the unmodified procedure deterministic or seed46.
+The default training selection metric is global foreground IoU at .5,
+evaluated on all test clips every epoch with overlapping frames counted in
+each clip. Final test.py instead merges overlap before counting each frame.
+Best checkpoint selection therefore uses the supplied test set, as in the
+original code; this is not an independent held-out validation protocol.
+
+Known execution issues and minimal handling
+1. train.py:61 declares --sample_rate type=int although RGB-T help says .05.
+   A copied source snapshot changing only this type to float enables intended
+   --sample_rate 0.05; original no-argument default is .1. Record this change.
+2. np.random.choice(samplelist) relies on ragged object-array conversion.
+   NumPy 1.24+ raises; NumPy 1.23.5 supports the original operation with warning.
+3. train.py's automatic final test command omits --logpath and
+   --threshold_eval and ignores test exit status. Use default ./log/ through
+   a dedicated mount, or invoke a separately checked explicit final test.
+4. test.py requires batch_size=1: sequence fusion assumes scalar frame indices.
+   All current sequences exceed 40 frames; no short-sequence TPro shape issue.
+5. Avoid --visual for the base reproduction: output names use 0-based ordinal
+   indices, whereas some actual scene filenames start well above zero.
+6. CPU RAM is material: test.py holds full-sequence float32 predictions and
+   two float64 mask tensors, then creates float64 IoU arrays. For the longest
+   603-frame test clip, these arrays have a baseline around 3.7 GiB before
+   copies/intermediates. Allocate at least 16 GiB RAM per evaluator, preferably
+   24-32 GiB; host has ample RAM. GPU full-frame forward must be exercised.
+7. ShootingRules recomputes components for every frame and all 27 thresholds;
+   final ROC is CPU-heavy. Absence of progress between scene updates does not
+   imply a hang. It counts pixels outside 9x9 target neighborhoods as false
+   alarms, and considers a component found if any prediction lies within 3x3
+   of any target pixel. Its unclamped boundary slicing is preserved upstream.
+8. Final THOP FLOPs omit custom difference-convolution treatment and use
+   200x300 inputs. Treat printed profiling values as code diagnostics, not a
+   verified reproduction of paper efficiency tables.
+
+Mask caveat
+Current labels were generated locally (k=6, floor storage), not supplied exact
+author masks. Prior verification reports 11,300 connected target components
+versus archived 11,303: DJI_0237_2 has 2943 versus 2947; DJI_0303_2 has 986 versus
+985. Thirteen of fifteen scene counts match. Preserve this caveat when
+comparing either released or retrained model against the paper; counts alone
+cannot certify pixel-identical labels. Do not tune masks against test scores.
+
+Commands (inside the isolated compatible runtime, cwd at copied source root)
+python train.py --model DeepPro-Plus --seqlen 40 --dataset RGB-T --datapath /data --sample_rate 0.05 --epoch 32 --batch_size 4 --learning_rate 0.001 --decay_rate 0.0001 --step_size 10 --lr_decay 0.7 --threshold_eval 0.5 --gpu 0 --gpu_num 1 --log_dir RGB-T_retrain_20261126
+python test.py --seqlen 40 --dataset RGB-T --datapath /data --batch_size 1 --gpu 0 --logpath ./log/ --log_dir RGB-T_retrain_20261126 --threshold_eval 0.5
+The fixed ROC grid already includes .5 and .99 regardless of threshold_eval;
+there is no need to rerun inference merely to report both Pd/Fa operating points.
+
+Meaningful preflight checks
+- Import train and test, exercise original sampler into a batch of shape
+  (4,1,40,128,128), labels (4,40,128,128), finite normalized images and binary
+  targets; confirm float sample_rate .05 and expected data size.
+- Original model train forward/backward/Adam update with finite loss/gradients;
+  save/load a checkpoint including NumPy-valued IoU metadata.
+- Released-checkpoint strict load and one full-resolution 40x512x640 forward
+  on the selected GPU; measure actual peak memory before full job launch.
+- Verify actual evaluation windows cover every ordinal frame exactly after
+  fusion, including final windows with >4 overlap; a 90-frame clip has windows
+  [0,39], [36,75], [50,89]. Validate this with real loader first_end values.
+- Run complete released-checkpoint evaluation as the reference and retain
+  all 27 thresholds, per-sequence target counts, global IoU, Pd, Fa, AUC.

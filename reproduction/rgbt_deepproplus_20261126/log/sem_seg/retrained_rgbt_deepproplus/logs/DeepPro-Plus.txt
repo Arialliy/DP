@@ -1,0 +1,127 @@
+2026-11-26 08:54:58,840 - Model - INFO - PARAMETER ...
+2026-11-26 08:54:58,840 - Model - INFO - Namespace(model='DeepPro-Plus', batch_size=4, epoch=32, learning_rate=0.001, gpu='0', gpu_num=1, optimizer='Adam', datapath='/data/RGB-T', dataset='RGB-T', log_dir='retrained_rgbt_deepproplus', savepath='/run/log/', decay_rate=0.0001, seqlen=40, patch_size=128, step_size=10, sample_rate=0.05, lr_decay=0.7, threshold_eval=0.5)
+2026-11-26 08:55:02,578 - Model - INFO - The number of training data is: 947
+2026-11-26 08:55:02,578 - Model - INFO - The number of test data is: 15 sequences
+2026-11-26 08:55:03,701 - Model - INFO - No existing model, starting training from scratch...
+2026-11-26 08:55:03,701 - Model - INFO - **** Epoch 1 (1/32) ****
+2026-11-26 08:55:03,701 - Model - INFO - Learning rate:0.001000
+2026-11-26 08:58:42,837 - Model - INFO - Training mean loss: 0.982586
+2026-11-26 08:58:42,837 - Model - INFO - Training accuracy (IoU) of prediction: 0.024530
+2026-11-26 08:58:42,837 - Model - INFO - ---- EPOCH 001 EVALUATION ----
+2026-11-26 09:08:33,281 - Model - INFO - Eval mean loss: 0.996741
+2026-11-26 09:08:33,282 - Model - INFO - Eval avg class IoU of prediction: 0.004646
+2026-11-26 09:08:33,282 - Model - INFO - Save model...
+2026-11-26 09:08:33,282 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth
+2026-11-26 09:08:33,309 - Model - INFO - Saving model....
+2026-11-26 09:08:33,309 - Model - INFO - Best mIoU_mid: 0.004646
+2026-11-26 09:08:33,309 - Model - INFO - **** Epoch 2 (2/32) ****
+2026-11-26 09:08:33,309 - Model - INFO - Learning rate:0.001000
+2026-11-26 09:12:11,226 - Model - INFO - Training mean loss: 0.935108
+2026-11-26 09:12:11,227 - Model - INFO - Training accuracy (IoU) of prediction: 0.054922
+2026-11-26 09:12:11,227 - Model - INFO - ---- EPOCH 002 EVALUATION ----
+2026-11-26 09:21:56,525 - Model - INFO - Eval mean loss: 0.969457
+2026-11-26 09:21:56,526 - Model - INFO - Eval avg class IoU of prediction: 0.051795
+2026-11-26 09:21:56,526 - Model - INFO - Save model...
+2026-11-26 09:21:56,526 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth
+2026-11-26 09:21:56,549 - Model - INFO - Saving model....
+2026-11-26 09:21:56,549 - Model - INFO - Best mIoU_mid: 0.051795
+2026-11-26 09:21:56,549 - Model - INFO - **** Epoch 3 (3/32) ****
+2026-11-26 09:21:56,549 - Model - INFO - Learning rate:0.001000
+2026-11-26 09:25:21,168 - Model - INFO - Training mean loss: 0.776360
+2026-11-26 09:25:21,168 - Model - INFO - Training accuracy (IoU) of prediction: 0.200021
+2026-11-26 09:25:21,168 - Model - INFO - ---- EPOCH 003 EVALUATION ----
+2026-11-26 09:35:44,218 - Model - INFO - Eval mean loss: 0.835212
+2026-11-26 09:35:44,219 - Model - INFO - Eval avg class IoU of prediction: 0.088839
+2026-11-26 09:35:44,219 - Model - INFO - Save model...
+2026-11-26 09:35:44,219 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth
+2026-11-26 09:35:44,245 - Model - INFO - Saving model....
+2026-11-26 09:35:44,245 - Model - INFO - Best mIoU_mid: 0.088839
+2026-11-26 09:35:44,245 - Model - INFO - **** Epoch 4 (4/32) ****
+2026-11-26 09:35:44,245 - Model - INFO - Learning rate:0.001000
+2026-11-26 09:38:50,591 - Model - INFO - Training mean loss: 0.681383
+2026-11-26 09:38:50,591 - Model - INFO - Training accuracy (IoU) of prediction: 0.293537
+2026-11-26 09:38:50,592 - Model - INFO - ---- EPOCH 004 EVALUATION ----
+2026-11-26 09:49:14,176 - Model - INFO - Eval mean loss: 0.779536
+2026-11-26 09:49:14,177 - Model - INFO - Eval avg class IoU of prediction: 0.115958
+2026-11-26 09:49:14,177 - Model - INFO - Save model...
+2026-11-26 09:49:14,177 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth
+2026-11-26 09:49:14,204 - Model - INFO - Saving model....
+2026-11-26 09:49:14,204 - Model - INFO - Best mIoU_mid: 0.115958
+2026-11-26 09:49:14,204 - Model - INFO - **** Epoch 5 (5/32) ****
+2026-11-26 09:49:14,204 - Model - INFO - Learning rate:0.001000
+2026-11-26 09:52:27,774 - Model - INFO - Training mean loss: 0.628453
+2026-11-26 09:52:27,775 - Model - INFO - Training accuracy (IoU) of prediction: 0.353504
+2026-11-26 09:52:27,775 - Model - INFO - Save model...
+2026-11-26 09:52:27,775 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/epoch_5_model.pth
+2026-11-26 09:52:27,800 - Model - INFO - Saving model....
+2026-11-26 09:52:27,801 - Model - INFO - ---- EPOCH 005 EVALUATION ----
+2026-11-26 10:02:04,717 - Model - INFO - Eval mean loss: 0.735504
+2026-11-26 10:02:04,717 - Model - INFO - Eval avg class IoU of prediction: 0.102455
+2026-11-26 10:02:04,717 - Model - INFO - Best mIoU_mid: 0.115958
+2026-11-26 10:02:04,717 - Model - INFO - **** Epoch 6 (6/32) ****
+2026-11-26 10:02:04,717 - Model - INFO - Learning rate:0.001000
+2026-11-26 10:05:23,892 - Model - INFO - Training mean loss: 0.594825
+2026-11-26 10:05:23,893 - Model - INFO - Training accuracy (IoU) of prediction: 0.395185
+2026-11-26 10:05:23,893 - Model - INFO - ---- EPOCH 006 EVALUATION ----
+2026-11-26 10:15:10,317 - Model - INFO - Eval mean loss: 0.647124
+2026-11-26 10:15:10,317 - Model - INFO - Eval avg class IoU of prediction: 0.171525
+2026-11-26 10:15:10,317 - Model - INFO - Save model...
+2026-11-26 10:15:10,317 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth
+2026-11-26 10:15:10,341 - Model - INFO - Saving model....
+2026-11-26 10:15:10,341 - Model - INFO - Best mIoU_mid: 0.171525
+2026-11-26 10:15:10,341 - Model - INFO - **** Epoch 7 (7/32) ****
+2026-11-26 10:15:10,341 - Model - INFO - Learning rate:0.001000
+2026-11-26 10:18:06,199 - Model - INFO - Training mean loss: 0.603249
+2026-11-26 10:18:06,199 - Model - INFO - Training accuracy (IoU) of prediction: 0.385287
+2026-11-26 10:18:06,200 - Model - INFO - ---- EPOCH 007 EVALUATION ----
+2026-11-26 10:28:19,776 - Model - INFO - Eval mean loss: 0.629849
+2026-11-26 10:28:19,777 - Model - INFO - Eval avg class IoU of prediction: 0.153267
+2026-11-26 10:28:19,777 - Model - INFO - Best mIoU_mid: 0.171525
+2026-11-26 10:28:19,777 - Model - INFO - **** Epoch 8 (8/32) ****
+2026-11-26 10:28:19,777 - Model - INFO - Learning rate:0.001000
+2026-11-26 10:32:32,453 - Model - INFO - Training mean loss: 0.602414
+2026-11-26 10:32:32,453 - Model - INFO - Training accuracy (IoU) of prediction: 0.400809
+2026-11-26 10:32:32,454 - Model - INFO - ---- EPOCH 008 EVALUATION ----
+2026-11-26 10:42:56,597 - Model - INFO - Eval mean loss: 0.640772
+2026-11-26 10:42:56,598 - Model - INFO - Eval avg class IoU of prediction: 0.138664
+2026-11-26 10:42:56,598 - Model - INFO - Best mIoU_mid: 0.171525
+2026-11-26 10:42:56,598 - Model - INFO - **** Epoch 9 (9/32) ****
+2026-11-26 10:42:56,598 - Model - INFO - Learning rate:0.001000
+2026-11-26 10:46:11,322 - Model - INFO - Training mean loss: 0.595483
+2026-11-26 10:46:11,323 - Model - INFO - Training accuracy (IoU) of prediction: 0.410822
+2026-11-26 10:46:11,323 - Model - INFO - ---- EPOCH 009 EVALUATION ----
+2026-11-26 10:56:24,622 - Model - INFO - Eval mean loss: 0.647668
+2026-11-26 10:56:24,623 - Model - INFO - Eval avg class IoU of prediction: 0.166213
+2026-11-26 10:56:24,623 - Model - INFO - Best mIoU_mid: 0.171525
+2026-11-26 10:56:24,623 - Model - INFO - **** Epoch 10 (10/32) ****
+2026-11-26 10:56:24,623 - Model - INFO - Learning rate:0.001000
+2026-11-26 10:59:18,927 - Model - INFO - Training mean loss: 0.557620
+2026-11-26 10:59:18,927 - Model - INFO - Training accuracy (IoU) of prediction: 0.443078
+2026-11-26 10:59:18,927 - Model - INFO - Save model...
+2026-11-26 10:59:18,927 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/epoch_10_model.pth
+2026-11-26 10:59:18,953 - Model - INFO - Saving model....
+2026-11-26 10:59:18,954 - Model - INFO - ---- EPOCH 010 EVALUATION ----
+2026-11-26 11:09:15,714 - Model - INFO - Eval mean loss: 0.624970
+2026-11-26 11:09:15,715 - Model - INFO - Eval avg class IoU of prediction: 0.205427
+2026-11-26 11:09:15,715 - Model - INFO - Save model...
+2026-11-26 11:09:15,715 - Model - INFO - Saving at /run/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth
+2026-11-26 11:09:15,741 - Model - INFO - Saving model....
+2026-11-26 11:09:15,741 - Model - INFO - Best mIoU_mid: 0.205427
+2026-11-26 11:09:15,741 - Model - INFO - **** Epoch 11 (11/32) ****
+2026-11-26 11:09:15,741 - Model - INFO - Learning rate:0.000700
+2026-11-26 11:12:57,952 - Model - INFO - Training mean loss: 0.578501
+2026-11-26 11:12:57,952 - Model - INFO - Training accuracy (IoU) of prediction: 0.428372
+2026-11-26 11:12:57,953 - Model - INFO - ---- EPOCH 011 EVALUATION ----
+2026-11-26 11:23:03,089 - Model - INFO - Eval mean loss: 0.608166
+2026-11-26 11:23:03,089 - Model - INFO - Eval avg class IoU of prediction: 0.196291
+2026-11-26 11:23:03,089 - Model - INFO - Best mIoU_mid: 0.205427
+2026-11-26 11:23:03,090 - Model - INFO - **** Epoch 12 (12/32) ****
+2026-11-26 11:23:03,090 - Model - INFO - Learning rate:0.000700
+2026-11-26 11:26:35,463 - Model - INFO - Training mean loss: 0.561886
+2026-11-26 11:26:35,463 - Model - INFO - Training accuracy (IoU) of prediction: 0.458398
+2026-11-26 11:26:35,463 - Model - INFO - ---- EPOCH 012 EVALUATION ----
+2026-11-26 11:36:45,185 - Model - INFO - Eval mean loss: 0.592649
+2026-11-26 11:36:45,186 - Model - INFO - Eval avg class IoU of prediction: 0.182861
+2026-11-26 11:36:45,186 - Model - INFO - Best mIoU_mid: 0.205427
+2026-11-26 11:36:45,186 - Model - INFO - **** Epoch 13 (13/32) ****
+2026-11-26 11:36:45,186 - Model - INFO - Learning rate:0.000700

@@ -1,0 +1,20 @@
+{
+  "base": {
+    "tag": "nvcr.io/nvidia/pytorch:24.01-py3",
+    "id": "sha256:8470a68886ff2f480d76858d930fb72d0e680e69276fc1d068fe8b6625b4cb9f",
+    "created": "2024-01-25T05:13:50.47453137Z",
+    "repo_digests": [
+      "nvcr.io/nvidia/pytorch@sha256:afd682405d620a620f61f38cb9d9bbc6a5230817699a48e9ed193546e81fb2ee"
+    ]
+  },
+  "runtime": {
+    "tag": "deeppro-rgbt:20261126",
+    "id": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+    "created": "2026-11-26T16:52:43.790509827+08:00",
+    "repo_digests": []
+  },
+  "build_inputs_sha256": {
+    "Dockerfile": "4692e61468314250b0e1eb6f4e52c23e520bf135e2f1b0e0bd2a02196c04113a",
+    "requirements.txt": "5a1ee805dd161fb32b2bb1f5603c583f36a8983ea5fe2c21762683cdb95d18a6"
+  }
+}

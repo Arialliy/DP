@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "in-memory fakes only; no Docker/GPU execution",
+  "checks": [
+    "status-only never starts work",
+    "LV then MRTP on GPU2",
+    "LVH then dec on GPU0",
+    "no overlapping jobs per GPU",
+    "no GPU1 assignment",
+    "terminal detection",
+    "failed preflight prevents starts"
+  ],
+  "simulated_launch_order": [
+    [
+      "lv_full",
+      "device=2"
+    ],
+    [
+      "lvh_full",
+      "device=0"
+    ],
+    [
+      "mr_lv",
+      "device=2"
+    ],
+    [
+      "lvh_dec",
+      "device=0"
+    ]
+  ]
+}

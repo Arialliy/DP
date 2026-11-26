@@ -1,0 +1,19 @@
+{
+  "status": "ready",
+  "started_utc": "2026-11-26T09:46:32.840185+00:00",
+  "completed_utc": "2026-11-26T09:50:59.985256+00:00",
+  "command": [
+    "/usr/bin/python",
+    "-u",
+    "code/hotspots.py",
+    "--split",
+    "official_train",
+    "--nproc",
+    "4"
+  ],
+  "exit_code": 0,
+  "split": "official_train",
+  "clips": 45,
+  "candidates": 9433,
+  "mining_behavior": "Unmodified code/hotspots.py defaults"
+}

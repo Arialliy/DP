@@ -8,6 +8,11 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
+# Reproduction video/prediction caches and checkpoints still being written.
+/reproduction/**/cache/
+/reproduction/**/*.tmp
+/reproduction/**/nvidia-persistenced/
+
 # Machine-local files and credentials.
 .DS_Store
 ._*

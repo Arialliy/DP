@@ -1,0 +1,6 @@
+{
+  "state": "queued",
+  "arch": "mr_lv",
+  "name": "MRTP",
+  "gpu": 2
+}

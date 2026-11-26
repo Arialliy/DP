@@ -1,0 +1,30 @@
+{
+  "container": "dp-research-rgbt-preprocess-20261126",
+  "id": "83b41fc490b0561d2ec4effb4588dd09db222b3897ffeab43ae3af82b4e068c9",
+  "image_id": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+  "started_at": "2026-11-26T09:45:24.015897422Z",
+  "command": [
+    "-lc",
+    "exec python -u jobs/prepare_data.py > logs/preprocessing.log 2>&1"
+  ],
+  "cpu_count": 4.0,
+  "memory_bytes": 17179869184,
+  "gpu_device_requests": null,
+  "mounts": [
+    {
+      "source": "/home/md0/ly/DP/reproduction/rgbt_research_models_20261126",
+      "destination": "/experiment",
+      "writable": true
+    },
+    {
+      "source": "/home/md0/ly/DP/datasets/RGB-T",
+      "destination": "/data/RGB-T",
+      "writable": false
+    },
+    {
+      "source": "/home/md0/ly/DP/deeppro-mx-complete/results/profile/homographies",
+      "destination": "/homographies_source",
+      "writable": false
+    }
+  ]
+}

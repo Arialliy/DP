@@ -1,0 +1,2278 @@
+{
+  "captured_at": "2026-11-26T19:38:04.532314+08:00",
+  "base_commit": "7c35758f0468b7278b61ed03fa3b33c7e0f8ae04",
+  "purpose": "Current workspace publication snapshot, including in-progress experiment artifacts. Not a claim that all experiments finished.",
+  "scope": "Code, documentation, split lists, experiment records, derived results and small checkpoints; raw dataset images, video/prediction caches, archives, environments and transient files excluded.",
+  "running_containers_at_capture": [
+    "dp-rgbt-best-test-iou-lvh-full-20261126",
+    "dp-rgbt-best-test-iou-lv-full-20261126",
+    "deeppro-rgbt-train-20261126"
+  ],
+  "notes": {
+    "rgbt_best_test_iou_20261126": "Best-IoU selection experiments in progress; consult captured STATUS.json and logs.",
+    "rgbt_deepproplus_20261126": "Released checkpoint evaluation available; retraining still in progress at capture.",
+    "rgbt_research_models_20261126": "Archived earlier protocol; some model runs completed and others stopped early.",
+    "rgbt_original_protocol_20261126": "Abandoned before training launch, retained as a provenance record."
+  },
+  "checks": {
+    "staged_artifact_files": 439,
+    "staged_artifact_bytes": 70115706,
+    "checkpoint_zip_integrity_passed": 41,
+    "python_ast_parsed": 168,
+    "syntax_errors": [],
+    "whitespace_check": {
+      "exit_code": 2,
+      "messages": [
+        "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff:12: trailing whitespace.",
+        "+ ",
+        "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff:20: trailing whitespace.",
+        "+ ",
+        "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff:29: trailing whitespace.",
+        "+ ",
+        "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff:30: trailing whitespace.",
+        "+ ",
+        "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff:125: trailing whitespace.",
+        "+ ",
+        "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff:126: trailing whitespace.",
+        "+ ",
+        "reproduction/rgbt_deepproplus_20261126/monitor.log:6032: new blank line at EOF.",
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.before_cv2_cleanup.log:45: trailing whitespace.",
+        "+#8 12.11 ",
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.before_cv2_fix.log:129: trailing whitespace.",
+        "+#7 69.74 ",
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.initial_extra_index.log:109: new blank line at EOF.",
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.log:45: trailing whitespace.",
+        "+#8 20.97 "
+      ],
+      "stderr": "",
+      "notice_files": {
+        "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff": 6,
+        "reproduction/rgbt_deepproplus_20261126/monitor.log": 1,
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.before_cv2_cleanup.log": 1,
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.before_cv2_fix.log": 1,
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.initial_extra_index.log": 1,
+        "reproduction/rgbt_deepproplus_20261126/runtime/build.log": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/README.md": 2,
+        "reproduction/rgbt_deepproplus_20261126/source/ShootingRules.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/data_utils/TestDataLoader.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/data_utils/TrainDataLoader.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/networks/layers/TPro.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/networks/layers/basic.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/networks/losses/HAM_loss.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/networks/losses/HAM_loss_MultiFrame.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/networks/losses/HPM_loss_MultiFrame.py": 1,
+        "reproduction/rgbt_deepproplus_20261126/source/train.py": 2,
+        "reproduction/rgbt_deepproplus_20261126/source/write_results.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/README.md": 2,
+        "reproduction/rgbt_original_protocol_20261126/source/ShootingRules.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/data_utils/TestDataLoader.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/data_utils/TrainDataLoader.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/networks/layers/TPro.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/networks/layers/basic.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/networks/losses/HAM_loss.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/networks/losses/HAM_loss_MultiFrame.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/networks/losses/HPM_loss_MultiFrame.py": 1,
+        "reproduction/rgbt_original_protocol_20261126/source/train.py": 2,
+        "reproduction/rgbt_original_protocol_20261126/source/write_results.py": 1
+      },
+      "interpretation": "Whitespace notices are retained in original source snapshots, raw logs and patch artifacts to preserve recorded content; no whitespace normalization of experiment evidence was performed."
+    }
+  },
+  "artifacts": [
+    {
+      "path": ".gitignore",
+      "bytes": 884,
+      "sha256": "75dabc3f352c9c3f8c8ea5af2c35ba045c8879115ddfd61b7fc5bc73f2dca02d"
+    },
+    {
+      "path": "datasets/RGB-T/mask_protocol/annotations_copy.json",
+      "bytes": 1421,
+      "sha256": "defd467048b0bd300671a44828deb38ce93a7c09735df114aaacc790d3a6f775"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/ORCHESTRATION.txt",
+      "bytes": 3765,
+      "sha256": "9b30472508c23f35ea027e2dec95b94d11d2531bf0d7cdfee42e13566b75b177"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/REPORT.txt",
+      "bytes": 755,
+      "sha256": "64db48777504fae97793a1979771dbf7f3b34e02471f00c7b0a41fae631fc521"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/STATUS.json",
+      "bytes": 5997,
+      "sha256": "e6dee0e3f6285fb7fc86240679698b545ee71c8548c908154984f8a6a3445331"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/check_labels.py",
+      "bytes": 4182,
+      "sha256": "915fe493dd4766b7ce568e521e2285096e6d8da4086d65fd6b6699583a7d2f96"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/check_mask_protocol.py",
+      "bytes": 5124,
+      "sha256": "9e9171d702f4e52e7e9cccc75a58aedcc7be2d533fd81e8db5bed9c136e5cd90"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/checkpoint_selection.py",
+      "bytes": 14245,
+      "sha256": "5d371eef99a3f6c31287e742b74492a52dba408da68b34a92db589d611d1f431"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/compare_datasets.py",
+      "bytes": 8697,
+      "sha256": "b0ae23f3e1605a486db744187d057b3e83a4ed1923f0b1ea99fd717ae1a189a6"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/compare_groups.py",
+      "bytes": 9264,
+      "sha256": "4abb8a2f4023733cc920c8c51653d1b67982a2d98d34ead0ae787d489f6d8975"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/diagnose_history.py",
+      "bytes": 13789,
+      "sha256": "82cf43b5a9dc6383490cf3c905d5fde7f2fbd021eb9fd85eff8378667b506a3c"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/evaluate.py",
+      "bytes": 5834,
+      "sha256": "5651572e9012f4860b1b11e8fd906e3ee7264937b6f2cce626806a3f7b16fd45"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/exemplar_diag.py",
+      "bytes": 21347,
+      "sha256": "3619edec2943980b29c634f65a415a4ccb7c78fc4fe1ffe89d62a0288122142d"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/export_masks.py",
+      "bytes": 6102,
+      "sha256": "8cd7578c9a8dc1d8209157e1daa3fdb8376ebf3d46e9cc49f7e00388d1d784a4"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/fake_dataset.py",
+      "bytes": 3060,
+      "sha256": "588794f55d0ecf2e833882698bfa4d78be7af755459298210f6dc5f8427c2b55"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/folds.py",
+      "bytes": 4725,
+      "sha256": "fa3a2cd8c83a9c77c4d40bad62571a2e7d8c461f9fcda85bd103e4e71325b056"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/gaussian_masks.py",
+      "bytes": 6476,
+      "sha256": "5e9050c7791b2684149bb6a2bcebfa6dbd88a6ed317cbbc77f7c58ed34c2066a"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/hotspots.py",
+      "bytes": 3788,
+      "sha256": "19242a5278eb839796d8d52117d64c332ed4fbcf0937b2b10eee74d6b9654dc7"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/infer.py",
+      "bytes": 8956,
+      "sha256": "0baa1a7ff961a6e63109674a123ad423cefbcd808278bec042a199a36d09a4a2"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/infer_mr.py",
+      "bytes": 13329,
+      "sha256": "4b20e183b34e332bf4e3c14379ee0c6024d20c1ef18db31f1fa8b3ffe5430483"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/infer_mx.py",
+      "bytes": 13026,
+      "sha256": "9d60504bffc3dfaded8079e232df3a02c35e68a4bfd2ee39aa568a8119e71fe6"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/lv.py",
+      "bytes": 7226,
+      "sha256": "e065a2ece6fbffbc7d05d0787e3400777e85cd4a6fc161a913f4ded414708e11"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/lvh.py",
+      "bytes": 11386,
+      "sha256": "6e77d7fada0ca9c17fd0a6b430c179bc66e5a9b4504791c10c5122a402615efe"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/lvh_data.py",
+      "bytes": 5093,
+      "sha256": "4cd699dc7174eee9ead0f4f1d6738d0190891b1f735f9d36a17b700b95dd6d60"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/models.py",
+      "bytes": 4809,
+      "sha256": "c486b71c5f92791903a5a64f81a3fde0ddebc654ad2fc1edbd97a97cd28ea2c2"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/mr.py",
+      "bytes": 818,
+      "sha256": "62aca2c32bb803c361ae0256b4c60d0fd515c6b788494fb4030b1f64e6252f6f"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/mr_data.py",
+      "bytes": 4489,
+      "sha256": "398a819f6d5a1bbf43d8ae72ace4e01255c5e6a4d787421a8171c651d5badc59"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/multirate.py",
+      "bytes": 11518,
+      "sha256": "747300adad6df8b177af3916c970e112db7fbe2cb0eddf8d568120a631974224"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/mx.py",
+      "bytes": 10596,
+      "sha256": "11839d5c8ada828ed687a58ca0553800528e8621805c3eb932091bfc9b6ca760"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/mx_data.py",
+      "bytes": 13023,
+      "sha256": "b9d0cf7386b1775d6c7a5c3c586c2ea9bc1c1fb0583c0141e87bb52c9d201cc6"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/profile_motion.py",
+      "bytes": 6956,
+      "sha256": "5111eee28abb95bd609c3f99b41e964cbfc3d0c2e2712f718b5b24e5665654c8"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/rate_analysis.py",
+      "bytes": 11545,
+      "sha256": "1cb0620130a802120e7a1c700aff9314300e4910f5f194d168e49bf8b56127e6"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/score.py",
+      "bytes": 3955,
+      "sha256": "313fe3658711c4c9ee8e256be2763a66ff28d824f0a26a9d91695794268e050d"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/splits.py",
+      "bytes": 3307,
+      "sha256": "1df97f2db611ad100937efe0cc46baba018dcef28ccf26a3377924c93901847b"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/stabilize.py",
+      "bytes": 10542,
+      "sha256": "0a8f4d604f8ed7af54ebf2a7b3f896da1ecc800643a5b050282e294a1bc3b3ad"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_compare_datasets.py",
+      "bytes": 6512,
+      "sha256": "d9f3ac7958e544ef8ef58907c060802d7f9b8d6617930a2602a39a5696bf2066"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_dataset_layout.py",
+      "bytes": 13813,
+      "sha256": "ec4c5f8a7ce1c117ac9eb4cd1f6ace172b233ab655b93b6afb5af732830d9844"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_diagnose_history.py",
+      "bytes": 1659,
+      "sha256": "1052005d8024fd380835115907634e8b7edb968ee9f7ab365056e7cde83ed24a"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_exemplar_diag.py",
+      "bytes": 8498,
+      "sha256": "2888e4bc12421dc7b7747d5be757bfc7520750c14ddfc57024068c6efcb3eefc"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_folds.py",
+      "bytes": 2550,
+      "sha256": "61c07f3d12e9099515fb33c165d509a0df1c8a1d348e2762a003a2509988e366"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_gaussian_masks.py",
+      "bytes": 4823,
+      "sha256": "33345a8d6c81434b3d94b02f04aa9a9437bb75a0426055a7f75439c4338025fb"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_infer_mr.py",
+      "bytes": 5157,
+      "sha256": "02c0d1260b2dbc26ba883ead087ca1421a497e47fc48ecbf3711ade1b816d653"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_infer_mx.py",
+      "bytes": 5579,
+      "sha256": "624e92533489f875663ea83a072c90dca9dc1fb2e15d8941667cf8ed818219ce"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_lvh.py",
+      "bytes": 9052,
+      "sha256": "b3bc3da30085ae214a10d695c16acd3304ea7c7d868a58a99bf7e70868cabf9d"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_lvh_data.py",
+      "bytes": 4430,
+      "sha256": "c836b64be4a344d2531d7f56e8fc9ecccf757c752717ea11dbc1fa75f51a0e96"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_mr_data.py",
+      "bytes": 5809,
+      "sha256": "ff99a620cd46ade300d862d9e940dc2311dd0f774adda4eca245d2007f4fb453"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_multirate.py",
+      "bytes": 8961,
+      "sha256": "73748fd02c5a95ef3eb239d5af641669d09c5d133e908d575de111ab8372fb75"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_mx.py",
+      "bytes": 12969,
+      "sha256": "bf8ccfe16a7482cdf470c09217fc3b5fdf899f640261dfa1bde35b5567613599"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_mx_data.py",
+      "bytes": 7257,
+      "sha256": "6a7316b92a95e6cb68b35717417f76c675706eb3888965b95ff95b2913ecd95e"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_run_mx.py",
+      "bytes": 6293,
+      "sha256": "1b277aa60b5c0207d7480f76120f988321e9f27bbebedfabead3b0d0f43a8509"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/test_stabilize.py",
+      "bytes": 5280,
+      "sha256": "407b5c14a14d253efa5994f7af68c2db249e614b0ba03afbd1843b6a14e72462"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/train.py",
+      "bytes": 28555,
+      "sha256": "1f29a2386d673a6958fe69e6e4865bbf442afc53f9089ccc8127a6bcce83ab85"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/code/vtdata.py",
+      "bytes": 8140,
+      "sha256": "8840dce46bbe54a2ae701b6a751fb53f23f8afa110032606cb523600f34af2d8"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/configs/splits.json",
+      "bytes": 5671,
+      "sha256": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/experiment.json",
+      "bytes": 3901,
+      "sha256": "b4a2c40ade9bf28a3e0c652ba85a24052af5f35b96cfdec59e1ba2958c992ae0"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/first_best_checkpoint_validation.json",
+      "bytes": 196,
+      "sha256": "ab9f07389adbdd2325f7d1526fbd44f6fbdff2b3f40e507f8226dc0c14fe7adf"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/gpu_preflight.json",
+      "bytes": 6577,
+      "sha256": "9a472099a22b11ad86b228c9abe8ff66b4db9bae06d0b6eff0b91df06209f0ed"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/gpu_preflight.py",
+      "bytes": 3361,
+      "sha256": "9bfdaf6e13ddcf35af0a35c17994056d59f255410e0eed5cdb25e931f1831035"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/image-id.txt",
+      "bytes": 72,
+      "sha256": "7e8e3158d9e18a737ad4de472464e54f49b3917faac7bca329e227bce2ac2b74"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/job.py",
+      "bytes": 5781,
+      "sha256": "2d9a10a842f1c40049d534f8310461da0829fdc182b7e01df44ea9a1d86fb58b"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/jobs/lv_full.json",
+      "bytes": 1220,
+      "sha256": "e81fc27e690f3306fcc1788f40c73a074994d28670784afdd27ff15ab1e8bcd5"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/jobs/lv_full_launch.json",
+      "bytes": 1645,
+      "sha256": "46ceb3716714272d3ab36bb146fbfc926175b287dc42d7584952b08a9497915e"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/jobs/lvh_dec.json",
+      "bytes": 78,
+      "sha256": "105da103717c780e901c953b7a8e76bb9d39c215999c0c4b98f5eb947be9edd3"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/jobs/lvh_full.json",
+      "bytes": 1258,
+      "sha256": "54094a10470db9740c44a1cded30781bda48cf12dc8876917af860b1617daac9"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/jobs/lvh_full_launch.json",
+      "bytes": 1647,
+      "sha256": "c28daba8f1a2d7de06f944c866855b202d3802c6db46d5d226677106263ae7cd"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/jobs/mr_lv.json",
+      "bytes": 73,
+      "sha256": "d383b26686107212b982c63bcfede2d7d60670a8ecb1267f9d24826657c533a1"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/jobs/test_orchestration.py",
+      "bytes": 3779,
+      "sha256": "3ba584a5529e4173d8ba9f8df4a4672f1d1f1aa7b520e3e597f4410452a42ab7"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/launch.py",
+      "bytes": 1995,
+      "sha256": "50fdd332a59c5aea913a29929f2cd7a8161dcd29d8f94121d545e3ae56850f2a"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/launch_plan.json",
+      "bytes": 8762,
+      "sha256": "ac133c45c413b32b5b54343c79685dc4ef5f5355d3f13f914c4323bffb25d863"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/logs/preflight_launch.json",
+      "bytes": 1644,
+      "sha256": "0cd0bc8fe3206a4bf261131cf0425c5d6c1ce89af1725c3b88ca488e467729d6"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/logs/scheduler.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/orchestration_validation.json",
+      "bytes": 1315,
+      "sha256": "4a0e56932ff468ce57eccf42fcb993b3beca5b13cd6eaaf8ae0248c86ac64d72"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/preflight_training_equivalence.json",
+      "bytes": 6163,
+      "sha256": "71b1130d7cc6923b8750360cec9715c0f60b8b331bae8ae5f013c1501ac896fd"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/reused_metadata/cache_ready.json",
+      "bytes": 1661,
+      "sha256": "88248bfdca6b0f99643ae2c7ba416d7b10f46b80a89da44f3828b7517795b272"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/reused_metadata/data_ready.json",
+      "bytes": 95534,
+      "sha256": "a140bb9b916d33d2d3e7fdfc5be6d09a59d4bd3e001c225c3431d7e4da58ec97"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/reused_metadata/hotspots_ready.json",
+      "bytes": 10187,
+      "sha256": "dc29a9c972dfa2438b01639d50a514a703390a9a0da7a44e529f5ca16abe2351"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/reused_metadata/preprocessing_provenance.json",
+      "bytes": 95534,
+      "sha256": "a140bb9b916d33d2d3e7fdfc5be6d09a59d4bd3e001c225c3431d7e4da58ec97"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runlib.py",
+      "bytes": 5845,
+      "sha256": "1ce00e3ff5bb4a54cfc7dee7eea16e9f48dd62c04ebd7ebec720630c81037448"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/best_model.pth",
+      "bytes": 2437040,
+      "sha256": "e6ff4903cb0fbd9d92a1c2c6a84455640020b8b3a4960978c93ec400d8a9199b"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/best_selection.json",
+      "bytes": 6014,
+      "sha256": "ddc02da8a3c273f883a97c84d3237b1c6481cf24c24ed823492acf62bc387725"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/config.json",
+      "bytes": 1575,
+      "sha256": "b27397d95eb63fbebf637aadab31407683ac7a0d588157e89cee08b63bb697f8"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/epoch_16.pth",
+      "bytes": 821126,
+      "sha256": "87b476cd31ac5aa3a2634b56a2718643d5f72e436e5e1a8ff955f1c785fe48ae"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/epoch_8.pth",
+      "bytes": 820434,
+      "sha256": "a1d05c9331856bb8291b739def7137a0493fb4b5a965b989a656f09dc6923f3a"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/eval_log.jsonl",
+      "bytes": 72726,
+      "sha256": "d0b50226d2366ace451247d0170de2da5fd2d15897e3e63ed6fe0531d81dbda6"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/last.pth",
+      "bytes": 2430716,
+      "sha256": "33132a08a5c3664f220055229287cc143d7d3246c71303201595b70e2fe3d01a"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/progress.json",
+      "bytes": 455,
+      "sha256": "f760135e24fe52c70aa5eda441784b6ba782eaa35ab9e85565db1ab5967dd9a7"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lv_rgbt_s46/train_log.txt",
+      "bytes": 2244,
+      "sha256": "e848c7c9ed2f7d561014351e0d3e8b4e930fbcc84fd560809ba2ffb6d033fc16"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lvh_rgbt_s46/best_model.pth",
+      "bytes": 2454936,
+      "sha256": "ffb56a624bb5207dea43dde2dd4c7854b31a922a5f0a06f9adc3d2ae9b4f7a83"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lvh_rgbt_s46/best_selection.json",
+      "bytes": 6093,
+      "sha256": "4114df98fc54fe35eb8bbb9e2bba806e34f2f3b1a589977df32e0eab5783018b"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lvh_rgbt_s46/config.json",
+      "bytes": 1612,
+      "sha256": "2e25d4e40453e9db88c7c9846461bf8f5f963d5fe121b26a870f93d228516c42"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lvh_rgbt_s46/eval_log.jsonl",
+      "bytes": 23046,
+      "sha256": "8187bc8cbb7d822479dc73bdb6bbd9a5810e828ca7cc9082366925fb76822af7"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lvh_rgbt_s46/last.pth",
+      "bytes": 2448500,
+      "sha256": "8d24d556ec6d650191f53e655fad39b19eb9662c64fdce272ec9234b80fdbed4"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lvh_rgbt_s46/progress.json",
+      "bytes": 445,
+      "sha256": "faecd1c610a7c8dab41cc4cde4917f526f6c34262b55e80f05fd4382ac0089d8"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/deeppro_lvh_rgbt_s46/train_log.txt",
+      "bytes": 685,
+      "sha256": "f291bf3c539e65a1b4fd254109b2ed99877577681df6beec93ecbc9685acd2f9"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lv_full/config.json",
+      "bytes": 1572,
+      "sha256": "05ba31f5adf075e6c5c05c65cd4ef4efbd6265a1caf4096a68ab60b4aa4e955c"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lv_full/eval_log.jsonl",
+      "bytes": 1521,
+      "sha256": "fad1e3f4c6dafffe835a3bef3fbf910d43f6a5930b9e5fb9d1cb1eb8aff32b97"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lv_full/final.pth",
+      "bytes": 812330,
+      "sha256": "21798819149433422c5aaa12a3c4648d9b3dadce8cb59b34a3db4a8e06792e06"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lv_full/last.pth",
+      "bytes": 2430716,
+      "sha256": "061046c0c610a0626a6dd64489a13a065d5d211d0e100ae73ac6ab71c2e23f14"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lv_full/progress.json",
+      "bytes": 443,
+      "sha256": "87e4c79d0f2c3344674b0246743e22c103a431859c602a7184638a594c121710"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lv_full/train_log.txt",
+      "bytes": 132,
+      "sha256": "a958e496b91edf314c26636a46be238ac22a9dddb38e3db6e766f6d6838260ee"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_dec/config.json",
+      "bytes": 1606,
+      "sha256": "c2b272cdee06e40af3ae58b139c8e864906a7deb404e71d1cc23707712d864c7"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_dec/eval_log.jsonl",
+      "bytes": 1575,
+      "sha256": "a4c3528f598630aca9e11d8620a3dcf6f708d620126259b83ea39239978e4dc2"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_dec/final.pth",
+      "bytes": 1314562,
+      "sha256": "4d3f40465cee78e3dd9259db2d4c36ba073d59c89806f57dd5d85b7738065254"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_dec/last.pth",
+      "bytes": 3933422,
+      "sha256": "9435405d8250001980be35ff23691adeadba98335af1a056f22cfd5bf06169d9"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_dec/progress.json",
+      "bytes": 443,
+      "sha256": "f18ddc7b917f2cde1a9a8a64d68dec6f71547fd91163afb4d0f75c5070e50bb0"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_dec/train_log.txt",
+      "bytes": 132,
+      "sha256": "aad97bc3e9a134760479a5a27d87a0520343c2c92311c93639708377918abe21"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_full/config.json",
+      "bytes": 1609,
+      "sha256": "51e9f080fabbabff7901aa1373a7aef37881876bad4c10df3a4262eb72d1d276"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_full/eval_log.jsonl",
+      "bytes": 1576,
+      "sha256": "09558596250c2aba9cbc362ddab5983989ac257b83d882e6e915882c4bf7d7ad"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_full/final.pth",
+      "bytes": 818082,
+      "sha256": "47c152465b987bcfa629eb02539f4f17da81b5334be9d870ff513a4455578008"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_full/last.pth",
+      "bytes": 2448500,
+      "sha256": "d7bd2043aa23c38a68dfe2c23c156fc1d28aa564ec0600e1e02d2f924d0fa2f6"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_full/progress.json",
+      "bytes": 443,
+      "sha256": "24da0e657538c395ef0d5984782706d4bb5ca94c70ef83d637365dae399a0466"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_lvh_full/train_log.txt",
+      "bytes": 132,
+      "sha256": "7df1bd62a6fb3615cf7216160a97ffb9284395836b026de1dc0d2540ee804d0c"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_mr_lv/config.json",
+      "bytes": 1607,
+      "sha256": "a049958165b0ddc87c61f2056233ffed3483180af3ac4e2b1e99642c6ead5fae"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_mr_lv/eval_log.jsonl",
+      "bytes": 1643,
+      "sha256": "31b40ea53531291618716969c8d65ae51dba95df0383595068a688d86c58f4eb"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_mr_lv/final.pth",
+      "bytes": 812906,
+      "sha256": "191953ded9be2e65e79f9c41870bf4edb175ab50b82c2c72e7f7ca97bdf6c8f8"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_mr_lv/last.pth",
+      "bytes": 2432444,
+      "sha256": "7d1951c13b2a3ecff873916db0690e1b48947ef53fcd3712e2da81a46c8a4456"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_mr_lv/progress.json",
+      "bytes": 444,
+      "sha256": "5ac66882dfb4d716cecf69a3bf56b28e8a94c966a4b39f2c8ce29a2bfa4444c4"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runs/preflight_mr_lv/train_log.txt",
+      "bytes": 169,
+      "sha256": "518d6563a43a6212ec4904144c4284786ef4fe943fa95ccf71090ccdfbbe636e"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/runtime_precision.json",
+      "bytes": 183,
+      "sha256": "518bf1c3a228a8c00734af6444106cba260d6a941e3ed7115fb72955e23fcda3"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/scheduler.py",
+      "bytes": 7835,
+      "sha256": "a1a9caeecd95997920709cc4343295284da409746c4ba23cfe0ec509a150535d"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/scheduler_validation.json",
+      "bytes": 544,
+      "sha256": "6b14e80cc4bf4c2993410991664ec35c49e33881bfcd4659534ae054ef6e117a"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/selection_validation.json",
+      "bytes": 2153,
+      "sha256": "3b3f96c0e41a8d63b9cb1a511145e4d7f9b79023c193b0c4e76b049363085df7"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/source_manifest.json",
+      "bytes": 5018,
+      "sha256": "77eadba7a163e63d8775cbd1fcf7622f738705d8a0302d954b5bf2d1cfbc4dab"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/torch_compat.PYTORCH_LICENSE",
+      "bytes": 3384,
+      "sha256": "47a26beb94e3f6b333a3677fc85d546f1fdfd2f0b3686c26d2fb5b10e0134165"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/torch_compat.py",
+      "bytes": 1573,
+      "sha256": "ffe34244affdb83c56418a4108b2a29fcbb27941c25fc3b9ada4f5b7ffb0ddeb"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/torch_compat_provenance.json",
+      "bytes": 1633,
+      "sha256": "41199f6ced3d29c945fbd79c3b8efa5ad07de6f680ee4c78613a40d7276b68db"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/torch_compat_validation.json",
+      "bytes": 1573,
+      "sha256": "db08664df9114446a07951e984f1177f25063a781c5db118c419184b6f33bbd1"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/train_entry.py",
+      "bytes": 285,
+      "sha256": "6f676e05056ef7a33bae2f5673f14985fc38b8e3173a67a785c7c9c4113a4e4b"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/trainer_changes.diff",
+      "bytes": 6858,
+      "sha256": "d8ec212571f02543b347c118aab20680b4ac01355c95bc7252776a182453ce37"
+    },
+    {
+      "path": "reproduction/rgbt_best_test_iou_20261126/verify_selection.py",
+      "bytes": 11716,
+      "sha256": "3b2a6b263b2cf50ac6637badf8df5585388f42a2140b105f6cca0e95563dd2f2"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/README.txt",
+      "bytes": 4414,
+      "sha256": "b7abb801c3ac88fd0e431165e02108886d09d8aecd0bb327ccf8f43ec3697c84"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/REPORT.txt",
+      "bytes": 850,
+      "sha256": "520d686075e22f4d3d210b8a027f58cdc73441ba7c2590e3b3274c9a21111f20"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/STATUS.json",
+      "bytes": 905,
+      "sha256": "926716a2c9a5d4a96e7180900b174247811fac5b9034284f1993f7bc2f5e3522"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/author_eval.txt",
+      "bytes": 30631,
+      "sha256": "86d0d71effc927f9528c35ff11c678fcb4ebcf8736598d68b638a29fe465a1e7"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/author_metrics.json",
+      "bytes": 5285,
+      "sha256": "1b6814aa0d8644ccc82dba5a0fcfee507c3aaf9f6d63840cccf7e6c0cc75c332"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/config.json",
+      "bytes": 897,
+      "sha256": "856c77411469f1408b05d978d1c76da5e5522250574d1be8c917d6729c768599"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/data_audit.json",
+      "bytes": 15992,
+      "sha256": "03e62640140398964b4e65569d0bbb2a9837b486b670380640ca39b0fb608499"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/first_checkpoint_check.json",
+      "bytes": 203,
+      "sha256": "a806d00664a0ab4edc7e464ee994de49a698418d7794aa61fce52a5e994ce0f4"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/released_rgbt_deepproplus/DeepPro-Plus.py",
+      "bytes": 3902,
+      "sha256": "fa46a034a30d8bbb0f677271d6368f033fcb389d682478d331551d8bae087668"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/released_rgbt_deepproplus/checkpoints/best_model.pth",
+      "bytes": 937131,
+      "sha256": "4fd4aa2736d9a33f2bf1459099068d8b4a7e202ff80aecdb4a3277fd13c7abcc"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/released_rgbt_deepproplus/eval.txt",
+      "bytes": 49923,
+      "sha256": "3b2882b0ca5cbdedb53e63e21c3b62e83b72ab77f394803fab6da76418f08702"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/released_rgbt_deepproplus/logs/DeepPro-Plus.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/DeepPro-Plus.py",
+      "bytes": 3902,
+      "sha256": "fa46a034a30d8bbb0f677271d6368f033fcb389d682478d331551d8bae087668"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/best_model.pth",
+      "bytes": 939426,
+      "sha256": "e4572c3f30dc660162106dbc444ec6e192a2217a90e7b9d4597c178f83327537"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/epoch_10_model.pth",
+      "bytes": 940418,
+      "sha256": "959687df9c6eefceb5b63c715e452bc3af1d3bc36cab78b97a47b22ee4bbe43d"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/checkpoints/epoch_5_model.pth",
+      "bytes": 940122,
+      "sha256": "265e7487ab25efb782d601d8ffb85633ecb102ed65e43b6fbc3c8277296457c3"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/log/sem_seg/retrained_rgbt_deepproplus/logs/DeepPro-Plus.txt",
+      "bytes": 9614,
+      "sha256": "1683c329e7ac59c21a23dcdd8a45d35dda56fe8de8c077e5a68558b9f3af9826"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/monitor.log",
+      "bytes": 252497,
+      "sha256": "0b5dbb4f88c4af15b9aca56022fbfb9d16e74b2808184c4fab8969168da2de71"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/monitor.py",
+      "bytes": 1702,
+      "sha256": "7edaba535ad8f374d109b1800b24f50397f55596f13ea93bcb4605900c3364e7"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/pipeline.py",
+      "bytes": 4550,
+      "sha256": "4c95920e03980420af06bcd49b6c8432502feec2274b55180c1865a78a5d633f"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/preflight.failed_deterministic_workspace.log",
+      "bytes": 4041,
+      "sha256": "394c922ff16631d7dcc811e031f9e08da6e72bcb357d62d703cb81adc7292a10"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/preflight.failed_opencv.log",
+      "bytes": 2245,
+      "sha256": "46da503e244100bbbb1e75b8f1ebfb54cf68554391c3a4e0e6f3d81d662cdaad"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/preflight.json",
+      "bytes": 668,
+      "sha256": "3ae247ec74d2248ccdf3771b9cfc82db71401806ddbd7610a332bf4abe4980e4"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/preflight.log",
+      "bytes": 1036,
+      "sha256": "d29574eef9aadf23be6c9380090fed68ffc1fc83a6af90beeb9c8b29354b6b2c"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/preflight.py",
+      "bytes": 4039,
+      "sha256": "8a0fac3823946ea9dd5b9efc98af99204e47799bb7c30fa40f5f9cb3cdf1098e"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/preflight_launch.json",
+      "bytes": 862,
+      "sha256": "ded9ca836d9acd574d3e89dab1d71cf3dfdab75ba9b5d75087be56678f2b72b1"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/protocol_review.txt",
+      "bytes": 7416,
+      "sha256": "861fbd512fd80282f81866131acc228f6e2d251073803be1243cd858955ab7ff"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/released_console.log",
+      "bytes": 35199,
+      "sha256": "2ffcd54c7c1e63e6c59028608f1dbb55ff4030801250ed44b9144126e8339c74"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/released_launch.json",
+      "bytes": 878,
+      "sha256": "db412f01aa184dca27f1805bebc4e814f0f7b427905776f666e4c27091cedd4e"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/released_metrics.json",
+      "bytes": 5096,
+      "sha256": "2f5228b91774fb3660949fc10db0a5f77c637bd3346ab7519f9c3cc27a3d5af9"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/released_status.json",
+      "bytes": 642,
+      "sha256": "5d2b2a99c646a1a51bb543aa3fb04fc11d6dce0107e080df0f65641504186d45"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/report.py",
+      "bytes": 2786,
+      "sha256": "742610192469381ae83152d8a56a28bc96032965c7a686297b56f41870b62ca6"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/reproduce.py",
+      "bytes": 2396,
+      "sha256": "5483b519acbe0b669bab75d49e67c7ad6ebdfaaa8af7b7bce765bd1d81f27ea5"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/Dockerfile",
+      "bytes": 955,
+      "sha256": "4692e61468314250b0e1eb6f4e52c23e520bf135e2f1b0e0bd2a02196c04113a"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/README.md",
+      "bytes": 1277,
+      "sha256": "f30335137737bd5a595944657f82427a7b136b6fe509843499dbe756ebb6c8fb"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/build.before_cv2_cleanup.log",
+      "bytes": 3042,
+      "sha256": "7b06836d457ca6708a8cac871aa264c91dbcf493aa3b32d4298d68206bebfc32"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/build.before_cv2_fix.log",
+      "bytes": 12731,
+      "sha256": "ff5b40fdcd176576ac23d2952919a846debd586645a20a74d6125086c698c9ca"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/build.initial_extra_index.log",
+      "bytes": 10975,
+      "sha256": "1f62adf3848e4ef9d5841f3e8549343d7c1a28f4ddd8640138e310d75d8809bc"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/build.log",
+      "bytes": 3152,
+      "sha256": "b9c22f09c69a1e14db9ce9030a5afc9baad2734597448fd36f41b3c0378fd983"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/environment.json",
+      "bytes": 959,
+      "sha256": "65ccc1e6c3c95b09fd84273ebfaf3d25d5365ee66c6481fa63c8a66e7938b5b3"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/image-id.txt",
+      "bytes": 72,
+      "sha256": "7e8e3158d9e18a737ad4de472464e54f49b3917faac7bca329e227bce2ac2b74"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/image.json",
+      "bytes": 758,
+      "sha256": "faaf3d59876a5f35baec5812e736f7afd08bbc0461e94bcb102c05a43d5a60db"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/pip-freeze.txt",
+      "bytes": 12273,
+      "sha256": "3b7051d8fba64d9c41498c6d649be22eddf7b2c61276285ad1763ec7b6d48e54"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/requirements.txt",
+      "bytes": 245,
+      "sha256": "5a1ee805dd161fb32b2bb1f5603c583f36a8983ea5fe2c21762683cdb95d18a6"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/smoke.before_cv2_cleanup.stderr.log",
+      "bytes": 1880,
+      "sha256": "8737188c9d5235f06f8eabe7857ffdcf23aecb62f9bb4b3cf2ff6dfe7ff81515"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/smoke.before_cv2_fix.stderr.log",
+      "bytes": 1880,
+      "sha256": "cf3f51a65907ba31d71b82245f782bf4ebfd29b2854a7305b1ddc1c072be479f"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/smoke.py",
+      "bytes": 1871,
+      "sha256": "c7bd0d4df8168ec3aca66d954e6588150859802ee2eb1d8d22f462405b366125"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/runtime/smoke.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/README.md",
+      "bytes": 8645,
+      "sha256": "58505f280be693b75bd2a125299ee1349e349f4db688f5da0fa7aa13d1d42150"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/ShootingRules.py",
+      "bytes": 2284,
+      "sha256": "888d4a26ff2877dc64550bc919fa60bf18e04e0af795aa8e8c304aa0b1e5c4e2"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/data_utils/TestDataLoader.py",
+      "bytes": 7160,
+      "sha256": "03210e84ac9acfc3fd85ef5bcd2c787cfc126e2580e622fca9c3297c3e1c022e"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/data_utils/TrainDataLoader.py",
+      "bytes": 8033,
+      "sha256": "ac94cf5bbfa2a4bcb76f5eeec0e047b999c76d1423afeb1a54136bf535ffa3d4"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/layers/TPro.py",
+      "bytes": 3813,
+      "sha256": "90e35e9578ae4e167de5277c2bd88a004dd1ce3bc38feacc8f80200e7aefce87"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/layers/basic.py",
+      "bytes": 8268,
+      "sha256": "000d204655d38ba503a2ad01fc2544fd5136c95dc3fda48dc95f5d059e7827c7"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/losses/HAM_loss.py",
+      "bytes": 2933,
+      "sha256": "cb8e07c2cc5a51d767ca5499c4134292fdbeba4e715c8e936e1a1570cca5271d"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/losses/HAM_loss_MultiFrame.py",
+      "bytes": 3228,
+      "sha256": "4a98c9ceeecc273068381262cf0a0688aa87b72f3b183a237da16e547f0de889"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/losses/HPM_loss_MultiFrame.py",
+      "bytes": 3232,
+      "sha256": "9c7b4bb994ffec7c324e59f2971eb27380d704ee2b347068aeb731dcfa064d0a"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/models/DeepPro-Plus.py",
+      "bytes": 3902,
+      "sha256": "fa46a034a30d8bbb0f677271d6368f033fcb389d682478d331551d8bae087668"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/models/DeepPro-Plus_forMovingScenes.py",
+      "bytes": 5615,
+      "sha256": "2eb1e1f03da754403c55aa2d4016310f50bc19a23dfcf1c4d7ae8598107c20eb"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/models/DeepPro.py",
+      "bytes": 6137,
+      "sha256": "ebd710ca3262bf6cace8d7f3a435e2761146c928c70c6d1fecaa5cc6d2a03473"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/networks/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/test.py",
+      "bytes": 10473,
+      "sha256": "99b58962061f101bcaf1cb4e787a46599ab947805444af910d405324cf314b9b"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/train.py",
+      "bytes": 13060,
+      "sha256": "5154a411229d774f3cfde53172f479aa5cc61ef0fcd4fdc6844aa2c1ace3278c"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source/write_results.py",
+      "bytes": 5462,
+      "sha256": "47984378234a8f6e1ec3e18d83a50af8b93cce52645f1e04042afe52f04654ef"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source_changes.diff",
+      "bytes": 1016,
+      "sha256": "d418f13fbd24f0205d44d8cfe55bd438d2222fd43bbdfcffbc718db48e925648"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/source_manifest.json",
+      "bytes": 4158,
+      "sha256": "e81346988187fd73a1a5314dc889f70a0847b8b2a39628dbb28dc97989a7a1c4"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/train_launch.json",
+      "bytes": 872,
+      "sha256": "e90a216845767aa423de3ac14c72ace0c2ea9dc7751e169c345bf63899311139"
+    },
+    {
+      "path": "reproduction/rgbt_deepproplus_20261126/train_status.json",
+      "bytes": 782,
+      "sha256": "ef43a5c25e82c0ad7757c57d6639e794474af739b237511d2a2e82d789600e38"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/SUPERSEDED.json",
+      "bytes": 293,
+      "sha256": "b8b9c10ec85d5104437b7e2a9ab098fd5205b342fa63c68421b3d9ea1d2d9514"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/config.json",
+      "bytes": 1967,
+      "sha256": "f86997d084cb9a1987baff6bca9f71f86bad5255b965fc0894f20e82f40d5783"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/image-id.txt",
+      "bytes": 72,
+      "sha256": "7e8e3158d9e18a737ad4de472464e54f49b3917faac7bca329e227bce2ac2b74"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/README.md",
+      "bytes": 8645,
+      "sha256": "58505f280be693b75bd2a125299ee1349e349f4db688f5da0fa7aa13d1d42150"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/ShootingRules.py",
+      "bytes": 2284,
+      "sha256": "888d4a26ff2877dc64550bc919fa60bf18e04e0af795aa8e8c304aa0b1e5c4e2"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/data_utils/TestDataLoader.py",
+      "bytes": 7160,
+      "sha256": "03210e84ac9acfc3fd85ef5bcd2c787cfc126e2580e622fca9c3297c3e1c022e"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/data_utils/TrainDataLoader.py",
+      "bytes": 8033,
+      "sha256": "ac94cf5bbfa2a4bcb76f5eeec0e047b999c76d1423afeb1a54136bf535ffa3d4"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/layers/TPro.py",
+      "bytes": 3813,
+      "sha256": "90e35e9578ae4e167de5277c2bd88a004dd1ce3bc38feacc8f80200e7aefce87"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/layers/basic.py",
+      "bytes": 8268,
+      "sha256": "000d204655d38ba503a2ad01fc2544fd5136c95dc3fda48dc95f5d059e7827c7"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/losses/HAM_loss.py",
+      "bytes": 2933,
+      "sha256": "cb8e07c2cc5a51d767ca5499c4134292fdbeba4e715c8e936e1a1570cca5271d"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/losses/HAM_loss_MultiFrame.py",
+      "bytes": 3228,
+      "sha256": "4a98c9ceeecc273068381262cf0a0688aa87b72f3b183a237da16e547f0de889"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/losses/HPM_loss_MultiFrame.py",
+      "bytes": 3232,
+      "sha256": "9c7b4bb994ffec7c324e59f2971eb27380d704ee2b347068aeb731dcfa064d0a"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/models/DeepPro-LV.py",
+      "bytes": 539,
+      "sha256": "94de7ef8ea346bd3cfc2c14e19c9d0d57e51ffa5d54d7623b2f71115486838d2"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/models/DeepPro-Plus.py",
+      "bytes": 3902,
+      "sha256": "fa46a034a30d8bbb0f677271d6368f033fcb389d682478d331551d8bae087668"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/models/DeepPro-Plus_forMovingScenes.py",
+      "bytes": 5615,
+      "sha256": "2eb1e1f03da754403c55aa2d4016310f50bc19a23dfcf1c4d7ae8598107c20eb"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/models/DeepPro.py",
+      "bytes": 6137,
+      "sha256": "ebd710ca3262bf6cace8d7f3a435e2761146c928c70c6d1fecaa5cc6d2a03473"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/models/MRTP-Network-Rate1.py",
+      "bytes": 460,
+      "sha256": "0cec9acd05125f11cec6d3eb675c7c2e8ee9013c926b36f3f995daafc5c079df"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/networks/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/__init__.py",
+      "bytes": 54,
+      "sha256": "4852c7a9d11068cf8d6d365a0e5c1027a97809d7ed85e7f9fb29b1468cd57672"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/infer_mr.py",
+      "bytes": 13325,
+      "sha256": "4054afa189791f6e6a5e54d9f0768db083f483d9a2d67dd7a7ff57728e203fea"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/lv.py",
+      "bytes": 7227,
+      "sha256": "d62666504ac79ab4db537cf3f8b6c84481b385efb2f4c60c20224bc7fbf437a0"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/lvh.py",
+      "bytes": 11388,
+      "sha256": "518521b887bcc126ba19d6aace74bd973301b601f556dc2fd0b72879dc6b6900"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/models.py",
+      "bytes": 4822,
+      "sha256": "1548977a4e238403ba1ee9c43148e8661be62266108d6aeded1b4a17e4c99b06"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/mr.py",
+      "bytes": 820,
+      "sha256": "d74ae66c07599755410524cf656fcfe4371e791971efa584353334ef7211d791"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/multirate.py",
+      "bytes": 11525,
+      "sha256": "ca3c3f4ace9087e3880ef19698404ca8c4ff9c4a5f34d41d1a5f94948dcf7a84"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/splits.py",
+      "bytes": 3200,
+      "sha256": "5dd21c1cb2b0c04e36a1dcc20bf1b72e4306cb6e31aa00edf069a22a3c1914f5"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/stabilize.py",
+      "bytes": 10549,
+      "sha256": "757b317713896ac2c3eb8fe56ab0e1d643f0a6d2668ebaa3b55a9d7e352e59ad"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/research_models/vtdata.py",
+      "bytes": 4363,
+      "sha256": "8fd5e9d48037eb16641935701ca083475648d83e6ec3794832a87f97dfcc5380"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/test.py",
+      "bytes": 10473,
+      "sha256": "99b58962061f101bcaf1cb4e787a46599ab947805444af910d405324cf314b9b"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/train.py",
+      "bytes": 13060,
+      "sha256": "5154a411229d774f3cfde53172f479aa5cc61ef0fcd4fdc6844aa2c1ace3278c"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source/write_results.py",
+      "bytes": 5462,
+      "sha256": "47984378234a8f6e1ec3e18d83a50af8b93cce52645f1e04042afe52f04654ef"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source_changes_from_repository.diff",
+      "bytes": 1016,
+      "sha256": "d418f13fbd24f0205d44d8cfe55bd438d2222fd43bbdfcffbc718db48e925648"
+    },
+    {
+      "path": "reproduction/rgbt_original_protocol_20261126/source_manifest.json",
+      "bytes": 2959,
+      "sha256": "0aa19b73864da7afe4edc66a57ea0ce396e3f8dc43c1702d2451e2a9673c71b3"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/README.txt",
+      "bytes": 4994,
+      "sha256": "ac44f1ec4ba592a56f0bb5f6bdd246de157c3d05f686893dab7d59db1659e8fe"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/REPORT.before_protocol_correction.txt",
+      "bytes": 541,
+      "sha256": "38f43e3978b17c5f19160b5b7d75f7d8ec961e4b4f3bffc0c757a085696c9a53"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/REPORT.txt",
+      "bytes": 763,
+      "sha256": "11e2654a5ff88a8293abcf25a48f3dd78467c8d4e64c4bb4983d64d80d3e3199"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/STATUS.before_selection_correction.json",
+      "bytes": 7258,
+      "sha256": "8625220c0a21dbe8d5662eaf4bae2a4de060b035933843977247434e8aa5fc71"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/STATUS.json",
+      "bytes": 7497,
+      "sha256": "381fd07251ed5e2fe14032b9f44336c18441760932cd3bba2a5486ca0f1516db"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/SUPERSEDED.before_selection_correction.json",
+      "bytes": 345,
+      "sha256": "6d8945a7e851ceec5be1e0593108699ea46e4605cb4a8fd049454de817602a7c"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/SUPERSEDED.json",
+      "bytes": 544,
+      "sha256": "ecc60bab88f39fede6f5fa88b274e72305c5f3eae7e932997b4beecb53769ff8"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/cache_ready.json",
+      "bytes": 1661,
+      "sha256": "88248bfdca6b0f99643ae2c7ba416d7b10f46b80a89da44f3828b7517795b272"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/check_labels.py",
+      "bytes": 4182,
+      "sha256": "915fe493dd4766b7ce568e521e2285096e6d8da4086d65fd6b6699583a7d2f96"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/check_mask_protocol.py",
+      "bytes": 5124,
+      "sha256": "9e9171d702f4e52e7e9cccc75a58aedcc7be2d533fd81e8db5bed9c136e5cd90"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/checkpoint_selection.py",
+      "bytes": 14052,
+      "sha256": "b171ca4ffd45a1b519d009fc9532afd1c350dc2aa75c891e7be913017ade21a2"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/compare_datasets.py",
+      "bytes": 8697,
+      "sha256": "b0ae23f3e1605a486db744187d057b3e83a4ed1923f0b1ea99fd717ae1a189a6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/compare_groups.py",
+      "bytes": 9264,
+      "sha256": "4abb8a2f4023733cc920c8c51653d1b67982a2d98d34ead0ae787d489f6d8975"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/diagnose_history.py",
+      "bytes": 13789,
+      "sha256": "82cf43b5a9dc6383490cf3c905d5fde7f2fbd021eb9fd85eff8378667b506a3c"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/evaluate.py",
+      "bytes": 5834,
+      "sha256": "5651572e9012f4860b1b11e8fd906e3ee7264937b6f2cce626806a3f7b16fd45"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/exemplar_diag.py",
+      "bytes": 21347,
+      "sha256": "3619edec2943980b29c634f65a415a4ccb7c78fc4fe1ffe89d62a0288122142d"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/export_masks.py",
+      "bytes": 6102,
+      "sha256": "8cd7578c9a8dc1d8209157e1daa3fdb8376ebf3d46e9cc49f7e00388d1d784a4"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/fake_dataset.py",
+      "bytes": 3060,
+      "sha256": "588794f55d0ecf2e833882698bfa4d78be7af755459298210f6dc5f8427c2b55"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/folds.py",
+      "bytes": 4725,
+      "sha256": "fa3a2cd8c83a9c77c4d40bad62571a2e7d8c461f9fcda85bd103e4e71325b056"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/gaussian_masks.py",
+      "bytes": 6476,
+      "sha256": "5e9050c7791b2684149bb6a2bcebfa6dbd88a6ed317cbbc77f7c58ed34c2066a"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/hotspots.py",
+      "bytes": 3788,
+      "sha256": "19242a5278eb839796d8d52117d64c332ed4fbcf0937b2b10eee74d6b9654dc7"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/infer.py",
+      "bytes": 8956,
+      "sha256": "0baa1a7ff961a6e63109674a123ad423cefbcd808278bec042a199a36d09a4a2"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/infer_mr.py",
+      "bytes": 13329,
+      "sha256": "4b20e183b34e332bf4e3c14379ee0c6024d20c1ef18db31f1fa8b3ffe5430483"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/infer_mx.py",
+      "bytes": 13026,
+      "sha256": "9d60504bffc3dfaded8079e232df3a02c35e68a4bfd2ee39aa568a8119e71fe6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/lv.py",
+      "bytes": 7226,
+      "sha256": "e065a2ece6fbffbc7d05d0787e3400777e85cd4a6fc161a913f4ded414708e11"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/lvh.py",
+      "bytes": 11386,
+      "sha256": "6e77d7fada0ca9c17fd0a6b430c179bc66e5a9b4504791c10c5122a402615efe"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/lvh_data.py",
+      "bytes": 5093,
+      "sha256": "4cd699dc7174eee9ead0f4f1d6738d0190891b1f735f9d36a17b700b95dd6d60"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/models.py",
+      "bytes": 4809,
+      "sha256": "c486b71c5f92791903a5a64f81a3fde0ddebc654ad2fc1edbd97a97cd28ea2c2"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/mr.py",
+      "bytes": 818,
+      "sha256": "62aca2c32bb803c361ae0256b4c60d0fd515c6b788494fb4030b1f64e6252f6f"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/mr_data.py",
+      "bytes": 4489,
+      "sha256": "398a819f6d5a1bbf43d8ae72ace4e01255c5e6a4d787421a8171c651d5badc59"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/multirate.py",
+      "bytes": 11518,
+      "sha256": "747300adad6df8b177af3916c970e112db7fbe2cb0eddf8d568120a631974224"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/mx.py",
+      "bytes": 10596,
+      "sha256": "11839d5c8ada828ed687a58ca0553800528e8621805c3eb932091bfc9b6ca760"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/mx_data.py",
+      "bytes": 13023,
+      "sha256": "b9d0cf7386b1775d6c7a5c3c586c2ea9bc1c1fb0583c0141e87bb52c9d201cc6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/profile_motion.py",
+      "bytes": 6956,
+      "sha256": "5111eee28abb95bd609c3f99b41e964cbfc3d0c2e2712f718b5b24e5665654c8"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/rate_analysis.py",
+      "bytes": 11545,
+      "sha256": "1cb0620130a802120e7a1c700aff9314300e4910f5f194d168e49bf8b56127e6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/score.py",
+      "bytes": 3955,
+      "sha256": "313fe3658711c4c9ee8e256be2763a66ff28d824f0a26a9d91695794268e050d"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/splits.py",
+      "bytes": 3307,
+      "sha256": "1df97f2db611ad100937efe0cc46baba018dcef28ccf26a3377924c93901847b"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/stabilize.py",
+      "bytes": 10542,
+      "sha256": "0a8f4d604f8ed7af54ebf2a7b3f896da1ecc800643a5b050282e294a1bc3b3ad"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_compare_datasets.py",
+      "bytes": 6512,
+      "sha256": "d9f3ac7958e544ef8ef58907c060802d7f9b8d6617930a2602a39a5696bf2066"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_dataset_layout.py",
+      "bytes": 13813,
+      "sha256": "ec4c5f8a7ce1c117ac9eb4cd1f6ace172b233ab655b93b6afb5af732830d9844"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_diagnose_history.py",
+      "bytes": 1659,
+      "sha256": "1052005d8024fd380835115907634e8b7edb968ee9f7ab365056e7cde83ed24a"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_exemplar_diag.py",
+      "bytes": 8498,
+      "sha256": "2888e4bc12421dc7b7747d5be757bfc7520750c14ddfc57024068c6efcb3eefc"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_folds.py",
+      "bytes": 2550,
+      "sha256": "61c07f3d12e9099515fb33c165d509a0df1c8a1d348e2762a003a2509988e366"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_gaussian_masks.py",
+      "bytes": 4823,
+      "sha256": "33345a8d6c81434b3d94b02f04aa9a9437bb75a0426055a7f75439c4338025fb"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_infer_mr.py",
+      "bytes": 5157,
+      "sha256": "02c0d1260b2dbc26ba883ead087ca1421a497e47fc48ecbf3711ade1b816d653"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_infer_mx.py",
+      "bytes": 5579,
+      "sha256": "624e92533489f875663ea83a072c90dca9dc1fb2e15d8941667cf8ed818219ce"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_lvh.py",
+      "bytes": 9052,
+      "sha256": "b3bc3da30085ae214a10d695c16acd3304ea7c7d868a58a99bf7e70868cabf9d"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_lvh_data.py",
+      "bytes": 4430,
+      "sha256": "c836b64be4a344d2531d7f56e8fc9ecccf757c752717ea11dbc1fa75f51a0e96"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_mr_data.py",
+      "bytes": 5809,
+      "sha256": "ff99a620cd46ade300d862d9e940dc2311dd0f774adda4eca245d2007f4fb453"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_multirate.py",
+      "bytes": 8961,
+      "sha256": "73748fd02c5a95ef3eb239d5af641669d09c5d133e908d575de111ab8372fb75"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_mx.py",
+      "bytes": 12969,
+      "sha256": "bf8ccfe16a7482cdf470c09217fc3b5fdf899f640261dfa1bde35b5567613599"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_mx_data.py",
+      "bytes": 7257,
+      "sha256": "6a7316b92a95e6cb68b35717417f76c675706eb3888965b95ff95b2913ecd95e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_run_mx.py",
+      "bytes": 6293,
+      "sha256": "1b277aa60b5c0207d7480f76120f988321e9f27bbebedfabead3b0d0f43a8509"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/test_stabilize.py",
+      "bytes": 5280,
+      "sha256": "407b5c14a14d253efa5994f7af68c2db249e614b0ba03afbd1843b6a14e72462"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/train.py",
+      "bytes": 24977,
+      "sha256": "c7e261f8258c5e110ab024b51e62d9448890b4b8eb4c7820d449a5e5727918b9"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/code/vtdata.py",
+      "bytes": 8140,
+      "sha256": "8840dce46bbe54a2ae701b6a751fb53f23f8afa110032606cb523600f34af2d8"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/configs/splits.json",
+      "bytes": 5671,
+      "sha256": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/data_ready.json",
+      "bytes": 95534,
+      "sha256": "a140bb9b916d33d2d3e7fdfc5be6d09a59d4bd3e001c225c3431d7e4da58ec97"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/diagnostics/preflight_attempt_1/gpu_preflight.json",
+      "bytes": 621,
+      "sha256": "d1cc79372b2ab50f25608e850dd32336075871e5552645a408df8bebd3cbe296"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/diagnostics/preflight_attempt_1/gpu_preflight.log",
+      "bytes": 2158,
+      "sha256": "297853a89720a30e6f10c84b32dd246553bfc61c392e4f241bcf20b58538f383"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/diagnostics/preflight_attempt_1/gpu_preflight_launch.json",
+      "bytes": 1181,
+      "sha256": "f75abb70e6961f6f567d1c177bea5b84b2f09c26fdd8e7963a5a3101d6113279"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/diagnostics/preflight_attempt_1/lv_full.json",
+      "bytes": 214,
+      "sha256": "6c58d8d567cd53948a89a5cc9bab40883236920670c9dbc3a72906e3fcd603f6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/diagnostics/preflight_attempt_1/lvh_dec.json",
+      "bytes": 211,
+      "sha256": "7d198d524440d9062e69df5a34824eeafeb0670e6abfa073f6ac7cadb0b8ffb1"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/diagnostics/preflight_attempt_1/lvh_full.json",
+      "bytes": 216,
+      "sha256": "a413c6ee58934215457a25d11eb30ec44feaf5a8af983b1096a105c67916165d"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/diagnostics/preflight_attempt_1/mr_lv.json",
+      "bytes": 206,
+      "sha256": "7ddc3bb3a7abe22bb20ffc82e365213ef514f885b3a9184a69f7b5c27dbab427"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/experiment.json",
+      "bytes": 2877,
+      "sha256": "0fa11e925122a94bbf59dbc5a28c39ae2a9a444ec62cbf3490c6a7807f92e2b9"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/gpu_preflight.json",
+      "bytes": 5381,
+      "sha256": "6a0034dc6fb3f3b3052090e1e52b12a08bc3d7fe30b6eb3b152c204625a04a5b"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/gpu_preflight.py",
+      "bytes": 2796,
+      "sha256": "ee698b4ab6a111d3717c7f2f0e30e59758ad8d4701f83ac0d4cad27cdd824c83"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/gpu_preflight_launch.json",
+      "bytes": 1181,
+      "sha256": "f75abb70e6961f6f567d1c177bea5b84b2f09c26fdd8e7963a5a3101d6113279"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/hotspots_ready.json",
+      "bytes": 10187,
+      "sha256": "dc29a9c972dfa2438b01639d50a514a703390a9a0da7a44e529f5ca16abe2351"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/hotspots_status.json",
+      "bytes": 414,
+      "sha256": "353b3f2dcaf527cbbcc68d8f45c2cf454fcab756759c0a3dbc654f2ed3806c9b"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/job.py",
+      "bytes": 2753,
+      "sha256": "ea68d0b5520d44fcadf4501eaae54d367d239d83e7c3c9ca2e58df9446349483"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/lv_full.json",
+      "bytes": 1167,
+      "sha256": "7fba5b3b75c982594fc6c1b0cc5f7cf929ae525b4978e2e12a96f53b533968b7"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/lv_full_launch.json",
+      "bytes": 1181,
+      "sha256": "9728a7758ef98a58321ae8d08cde7a9024b790dc602122ee192c86777df32173"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/lvh_dec.before_selection_correction.json",
+      "bytes": 920,
+      "sha256": "06fcbe52177530f4671f8522be961513091e3657c4a6bedbfa4e6b4533c8befe"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/lvh_dec.json",
+      "bytes": 1158,
+      "sha256": "26dd2e082a35ce926747bb991d1f7bf300164e118e45e42b2dba955e6dd4c3f3"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/lvh_dec_launch.json",
+      "bytes": 1181,
+      "sha256": "fa37d43826180410e6c2339217f0559cd0b221203afb0903ab890e03b17e5276"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/lvh_full.json",
+      "bytes": 1206,
+      "sha256": "42783bb6fa113e0789cbb5dadd8e0c56a9c4694f4c07ed37a8e91361239d3ff4"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/lvh_full_launch.json",
+      "bytes": 1183,
+      "sha256": "d6df07eb73f4907824e382375772d4ce03b7149a1c6b40427f768acaabd7d912"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/mr_lv.before_selection_correction.json",
+      "bytes": 894,
+      "sha256": "bef14b651f044ba52580d9b517f2d9783993665e1a33afb40220ed5ebd46df23"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/mr_lv.json",
+      "bytes": 1132,
+      "sha256": "e27ce585cefa5d17a06a2741405ef458bfea9caaa29aa199bb33d8e4c8e786f9"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/mr_lv_launch.json",
+      "bytes": 1177,
+      "sha256": "44caadb9773afe654cd0c5f569116e84b7b6e16388dc8cbabd3c62d9593e02e5"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/prepare_data.py",
+      "bytes": 7730,
+      "sha256": "93c63c2d17250878c0c421562bc02126cc2110cecf0dc7a1656fa63eb86399f7"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/jobs/test_torch_compat.py",
+      "bytes": 5779,
+      "sha256": "1e94fae08bd9e5dfbbb655610a36042ceebafad47e257e8b1c0427619d6e8d45"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/launch_preflight.py",
+      "bytes": 1485,
+      "sha256": "fa49d08cda89c2e8810f05a19927f0faf8ede8a4bd44ead824f29b99ddd78475"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/logs/gpu_preflight.log",
+      "bytes": 5895,
+      "sha256": "ac8926a0c0b8d5249f661309b86390dc5d981d6483eb26d41bce9a665d411a59"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/logs/hotspots.log",
+      "bytes": 1611,
+      "sha256": "8e240982f0437d6fe9ab659cbea934ca2163fc9e3f0350eacd090570665f98a6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/logs/lv_full_console.log",
+      "bytes": 1666,
+      "sha256": "120c19b1d6901ab774d515b3147a883543eb15e97c89a9c078085906a76f95c6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/logs/lvh_full_console.log",
+      "bytes": 1668,
+      "sha256": "c3db0c32923d1d2e739764a6770257cefb2809f151792f56512af946e94006dc"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/logs/preprocessing.log",
+      "bytes": 2919,
+      "sha256": "676007a0397a00058af5d7f815514a0c8a1240f90ba3b989bd950c9cfc63a922"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/logs/scheduler.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/logs/torch_compat_validation.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/preprocessing_launch.json",
+      "bytes": 915,
+      "sha256": "da04a08d95fd8faaec4fdf4163c563835d6a39fed46551994ce289f28b2ae8ca"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/preprocessing_provenance.json",
+      "bytes": 95534,
+      "sha256": "a140bb9b916d33d2d3e7fdfc5be6d09a59d4bd3e001c225c3431d7e4da58ec97"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0030_9.npy",
+      "bytes": 42536,
+      "sha256": "fed33d523c11b39955d1ca581f792f60843e01d247c5fcb0e2a9db50c5754ba4"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0043_2.npy",
+      "bytes": 27416,
+      "sha256": "d27e01f559a37f86020e4ca9be5b83fc0ba9de9face09c621f143a8cd689bfe1"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0049_2.npy",
+      "bytes": 6536,
+      "sha256": "a0b522f348071c88eb060bb761013eeacb2d6f6a85a329fa2b574bccc2fff0d5"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0057_1.npy",
+      "bytes": 40376,
+      "sha256": "3cd2599a9055650d305d1dd706d48be6299b08fd0e9c3cbf3f3133b30880d7f8"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0069_1.npy",
+      "bytes": 30296,
+      "sha256": "e5615c9b86f2e256a99f408161f2061ebce08381599eac1e51e364a985f1b20b"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0081_2.npy",
+      "bytes": 25256,
+      "sha256": "c407a2dbebaef4ba73a7b4cad3a4f1f1d612fa2c771b8697bdb780f967e9fc13"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0101_2.npy",
+      "bytes": 8696,
+      "sha256": "e4c70637970baf699e1db7a5978d5ffab2a7324d8804f96e1fb798a23aa07331"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0107_1.npy",
+      "bytes": 5096,
+      "sha256": "32fc90e3e2256c7eda904e1f4368a4084785ad0bf8515d283130429b032365c7"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0109_1.npy",
+      "bytes": 6536,
+      "sha256": "e9b3d3c29040273bb7ce8d72992950be883e41b252ac71960f6dca22f24add49"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0111_2.npy",
+      "bytes": 13016,
+      "sha256": "776c778be334af79e33f1bb9f1eea89b26bcf68f23c3592e38e5b43f06f2c188"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0113_3.npy",
+      "bytes": 23816,
+      "sha256": "42e5c2852a67e892ca30402e9e30677adb18c0ab5320a8f46ef12b9df54d153a"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0115_2.npy",
+      "bytes": 20936,
+      "sha256": "4ff8eedfe2503f28b2375a29783a57676a4a9867661885cd778f70ce5ff282a8"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0117_2.npy",
+      "bytes": 17336,
+      "sha256": "68e4186b1530b3c89b9b178699965556b07b80a42955091de6c1982b72d17559"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0119_2.npy",
+      "bytes": 13016,
+      "sha256": "a70b195a47a12dc48a5d6b8e3975b582975bfdb5c6897605eb4f0b1d27ce8409"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0121_2.npy",
+      "bytes": 25256,
+      "sha256": "ad52963b8a4d5d7ffe95368363132fc4798c17052e89a51658d4b3c1dc81823d"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0123_6.npy",
+      "bytes": 22376,
+      "sha256": "fb8f45ec2d8804d814974e6353ef275ab543a8c401e3350751a342f5a495d7cf"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0125_1.npy",
+      "bytes": 31736,
+      "sha256": "d750cbfda380262667dc4127d5ed4ec362cdec143e8c6e4fb37c3455f2ce0a1a"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0127_1.npy",
+      "bytes": 36056,
+      "sha256": "6425082fa3329ea3342c502ae4df16a33a85ed4f2a8c386f84fc6bd9b21fb125"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0129_2.npy",
+      "bytes": 42536,
+      "sha256": "8636c1e4ef0d10b9fa0dbf06e42fc28e32eee94392110fa72d4af40583f2e92f"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0131_2.npy",
+      "bytes": 39656,
+      "sha256": "cdd9f4de6ef357e6ffe05b0ee611520a56dbf520909d3033e04a233be7bf90f1"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0143_1.npy",
+      "bytes": 31016,
+      "sha256": "5be8685acc97c965b8ec9db5ca9e15637d2ab3d7b9b160310b76c0233279bda8"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0145_1.npy",
+      "bytes": 20216,
+      "sha256": "e6152bdcd7a72ffce08969eba3202c706c6407ae3d5481297d8675fa5593cd17"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0155_2.npy",
+      "bytes": 29576,
+      "sha256": "30ce69993a39d81ef4afe8f6e56c49b358cd59c6bd33051093e5295707956c41"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0157_2.npy",
+      "bytes": 33896,
+      "sha256": "ff4a9e6dd8482b7148ad0b42ded9b10fe41f4d3c524abb8b6f75c42c22f85467"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0159_2.npy",
+      "bytes": 18056,
+      "sha256": "71c9e19de03b545de02369c21e871567d73361243b1fd42984441c9b7bcdc043"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0163_1.npy",
+      "bytes": 33896,
+      "sha256": "e82dcc876c2aa86ecd42f9dabb343b60fa88e67610478ceb1b443ec198c0cb00"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0173_2.npy",
+      "bytes": 32456,
+      "sha256": "e49d9dc803665caf0c09dc5911fd3c5fca81c89256021d24201f936270a051f4"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0175_2.npy",
+      "bytes": 32456,
+      "sha256": "cc63e8c377ebdbdf330cd08ca9fc23e4a33f2949a3d59e26bfeec03df18153db"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0177_2.npy",
+      "bytes": 25976,
+      "sha256": "fb05407853d61b952d3c8ab6c3a7a6a6d326fc1bb10e252353d6203bc7510b63"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0217_2.npy",
+      "bytes": 27416,
+      "sha256": "55712238648dfab291214e30212e3e4f30cb3415c6cfc203667370b765415684"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0221_2.npy",
+      "bytes": 42536,
+      "sha256": "979d70ac377e29d2ee6755d83101b4323953cdc3e1d0fce3e7a43b2becf6496b"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0229_2.npy",
+      "bytes": 34616,
+      "sha256": "a58b54ea7fd287c984d416c7715b505a6383f5dcfc0a5b472d90d63874ad1bcb"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0237_2.npy",
+      "bytes": 29576,
+      "sha256": "94220b2cd510f11956aac9c398d7a1d915a3920028d3079b265556a67b79fc04"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0241_2.npy",
+      "bytes": 36776,
+      "sha256": "d5e4e9f6f8120a529754bd7eea9607b893b288ceabd166b6435cad440e89d43e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0243_2.npy",
+      "bytes": 24536,
+      "sha256": "785db2c6608f8881cbdb3c828cdadf761e7a3d1dc13995c9510a2f5f8e181521"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0253_1.npy",
+      "bytes": 78536,
+      "sha256": "5f46279d3b890dc7ec5d36d88e26f2c804d9beb4dcaa83391ef7263d57746529"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0253_2.npy",
+      "bytes": 41816,
+      "sha256": "f05e007bcfc1a16bfae2b4bc823e082fd5de5ed28c69a37cd637be02d5519274"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0253_3.npy",
+      "bytes": 37496,
+      "sha256": "cb0d6b3d074a1dcac60b0547d3ecba7d50500fe207209ac2f804cf9854bf0433"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0255_1.npy",
+      "bytes": 43256,
+      "sha256": "c6a6108e67dd1e486b94289787e1663bc34f93d45ec1059dfc8b6a7d49c09a42"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0257_2.npy",
+      "bytes": 42536,
+      "sha256": "4bdd4eb1e638feb350bc485df3c73438d7e807f6c7382fe62ae6c6af5467b4d4"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0257_5.npy",
+      "bytes": 18776,
+      "sha256": "1797522e157546f182bada744e4e27d97a5d0e16f0cf4561e64ac0de62b2cfa1"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0271_2.npy",
+      "bytes": 5096,
+      "sha256": "c58274a44c4fe8cab0586b58033e58b06a4d6d798fdf093e69a358bbc61e922d"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0273_1.npy",
+      "bytes": 87392,
+      "sha256": "d9da2f56336ca6d46246dde8ec7f050190507d5c6ebc2cdca4d23f31d2ade058"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0277_1.npy",
+      "bytes": 39656,
+      "sha256": "080f4b6beb47fec01d9a86ab11f5287a5325afefd51c485fdf3993b81057dbfb"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0277_2.npy",
+      "bytes": 26408,
+      "sha256": "b590159a3703d3e813dd73783e11c681f5c9c6fed78d64a1fceaf3e28f366106"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0285_3.npy",
+      "bytes": 13160,
+      "sha256": "968d4824e921fe4a2747db1bafd95b59bc7f897ca7707222ba81df7c5d8c2273"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0287_1.npy",
+      "bytes": 19712,
+      "sha256": "eb36f7d3148652d9deedd3e68644e138849f20dbf6078eff335e4e76aff75d7e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0287_2.npy",
+      "bytes": 35336,
+      "sha256": "a698a863e1f7f60bf76e79e798c36d9e8910c147cfe24c5f3c3e962b6debfc71"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0293_1.npy",
+      "bytes": 26192,
+      "sha256": "b7b034b1ae6200ded3cb95095ea3f8b25128986e794fa7176f3103ba16ef0097"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0295_3.npy",
+      "bytes": 39656,
+      "sha256": "10948ee8d3fa2f2cf592e708c3432370a91a2f062455f7427f543d06edc1bd19"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0303_2.npy",
+      "bytes": 41600,
+      "sha256": "4a8018e5627dc8b9296bb9c02a31e8d799834f53f9eab07984c845e3a2305fa8"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0305_3.npy",
+      "bytes": 24032,
+      "sha256": "e3fbc8feb8cf131a48fa7ebe3dbc87ef5aa3638ade3dfa840ce06f2c0032d180"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0305_7.npy",
+      "bytes": 24536,
+      "sha256": "c4e7875ea71d88d8bfe7cb4acbdb12a39c6450ec2807cc423e046df672627c6b"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0307_1.npy",
+      "bytes": 18056,
+      "sha256": "4159eb497a170d11f18fdadca499a508040d48ee91de13e78777ec29310b6f17"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0307_2.npy",
+      "bytes": 13016,
+      "sha256": "e2ee4ba1a24681052d0929496ac588c4c2ab1bc16a0f4054e295c8acaa0f4df6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0309_1.npy",
+      "bytes": 31160,
+      "sha256": "3a2acabc97b234a5e17eabca2c54b209c877e10749c0e454db2a46b42b6eeaac"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0309_2.npy",
+      "bytes": 43112,
+      "sha256": "98f384efd132c35a6fa31b867c31171058576e76e471797be32ee1ae37d10095"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0309_4.npy",
+      "bytes": 43472,
+      "sha256": "8caaa8708c0308726831d41a21b1e79bb46943c06d8dbef50929d1c927ef624e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0319_2.npy",
+      "bytes": 43112,
+      "sha256": "fb4e4fd08533bf24750bc042cb4ed511b886dcdf4a5eae0a2c34ec7ea633c818"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/results/profile/homographies/DJI_0323_2.npy",
+      "bytes": 42752,
+      "sha256": "ef63928542265c3049a8e2b0d0ac23a072e9bcfa9170937ce772303d1be8843b"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runlib.py",
+      "bytes": 3135,
+      "sha256": "2bfc7d6f8218bf4a50e12f14e6efc01325efa904f95b54eb6e3e7ac6b4a8c53a"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lv_rgbt_s46/config.json",
+      "bytes": 1497,
+      "sha256": "adf8b4b857cea20129ace70aac813d0032366809be5e902c6245351671defd4e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lv_rgbt_s46/epoch_16.pth",
+      "bytes": 821126,
+      "sha256": "1b061c1fd52cbf726b5e3c61f488c21a1c31ead4243160f8ad01f3b52f161616"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lv_rgbt_s46/epoch_24.pth",
+      "bytes": 821126,
+      "sha256": "383455d7baf84d81939f756db27ecc4ec8d5fbdaa5a0e03165d3653100af0199"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lv_rgbt_s46/epoch_8.pth",
+      "bytes": 820434,
+      "sha256": "a342e2fb88bf4fe2300c913eff6b9806baa5a72418998bd97d57b75d5953a56e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lv_rgbt_s46/final.pth",
+      "bytes": 812330,
+      "sha256": "472a58484e2bd51ffccae2034544c2ae0edff7f4c4ea275c7200d46476d7f764"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lv_rgbt_s46/last.pth",
+      "bytes": 2430652,
+      "sha256": "5a2ca3f20005fb538b3c988edfe1aa7f16d22f86477c953174c978116323fd2c"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lv_rgbt_s46/train_log.txt",
+      "bytes": 1591,
+      "sha256": "d3e63c88d30f7c3f9ba85040674ec039242dbd12b5b1d52cba5ade34ebffdb8c"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lvh_rgbt_s46/config.json",
+      "bytes": 1534,
+      "sha256": "2f36abc7b47ee5ebd5ee4c130cd217a1963b2dea9e1e8e7ae296c86882d5104e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lvh_rgbt_s46/epoch_16.pth",
+      "bytes": 826948,
+      "sha256": "24f26e80d49bb12497f4d3121096d71fcd883959ee6bcc70cb8bcb269302f9ba"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lvh_rgbt_s46/epoch_24.pth",
+      "bytes": 826948,
+      "sha256": "c6e97ec640c68447b194163c61aaf015b14e92c681c8867c3958f580595d6c84"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lvh_rgbt_s46/epoch_8.pth",
+      "bytes": 826254,
+      "sha256": "25ce73910acedaea5b195b511d29ada18dd9d7133dc5b886edadc3515e2b225e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lvh_rgbt_s46/final.pth",
+      "bytes": 818082,
+      "sha256": "9bd09dc605d96e5bef9d5192d73155e5193c7dfe2ef2e189c4b1c9a567ac5593"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lvh_rgbt_s46/last.pth",
+      "bytes": 2448436,
+      "sha256": "3b97f2dd4900621e272aaed2fb7b0a3ad04077aac5321b4272eb1206af654cef"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/deeppro_lvh_rgbt_s46/train_log.txt",
+      "bytes": 1591,
+      "sha256": "b0e9cd9cd13b18e1bd539c660d1b2b71e536097a72a9ac7e5cb0276c030a6aed"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/lvh_dec_rgbt_s46/config.json",
+      "bytes": 1528,
+      "sha256": "d60ac880fe833c0cffdec1229d7728eb8c927fc516b48fa9cd41b934f1f43642"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/lvh_dec_rgbt_s46/epoch_8.pth",
+      "bytes": 1326846,
+      "sha256": "8f86787a92814096b76b717c2bbe6ec0a0fda3234e05f38d0004ba6f42168b58"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/lvh_dec_rgbt_s46/last.pth",
+      "bytes": 3933358,
+      "sha256": "8397353e4208f164339de912fa3381919e51ca787280edba383f7825b89556b6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/lvh_dec_rgbt_s46/train_log.txt",
+      "bytes": 741,
+      "sha256": "35f40eb48b48af220fb84a1da7533bbb36ecf012dc78ca37c4a13e9a2cc58750"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/mrtp_rgbt_s46/config.json",
+      "bytes": 1528,
+      "sha256": "3127b30acebd3f4079f8a6d0f611045d3bf3ea356021801612979653aa660b51"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/mrtp_rgbt_s46/epoch_16.pth",
+      "bytes": 821702,
+      "sha256": "ac0436d8d9d87b8b55cbebd521ae2310a2c11460dc2c973b780448ad93318162"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/mrtp_rgbt_s46/epoch_8.pth",
+      "bytes": 821010,
+      "sha256": "17ffe59b254c5deef499838d021d4f88e224f4e408514be6289984c50c2aa255"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/mrtp_rgbt_s46/last.pth",
+      "bytes": 2432380,
+      "sha256": "b061289e776e5038dac2667dbfbd6a858e29093dc8673a7b4a3eabb6470cdc91"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/mrtp_rgbt_s46/train_log.txt",
+      "bytes": 1479,
+      "sha256": "3e18caec86499c39fe770407763937273c36401fdf01648c0b79eaf6747dbdad"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lv_full/config.json",
+      "bytes": 1497,
+      "sha256": "dd9ae4f5a96c59b695c62397335342e75b14e1850a092192ed7ed1e7673a414e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lv_full/final.pth",
+      "bytes": 812330,
+      "sha256": "037fc47c16a239275a171c68e0eca64f12ad81d604444879031c1f96e113ac53"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lv_full/last.pth",
+      "bytes": 2430652,
+      "sha256": "11bbe6297296d1f379d10a6c565ce71686f56d1063120364884cf170bb6e6391"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lv_full/train_log.txt",
+      "bytes": 45,
+      "sha256": "bcae03b49812147348ed152833387281b90013a9030904a2c8e92d067f50a7eb"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_dec/config.json",
+      "bytes": 1531,
+      "sha256": "604ca7ddef0844c17d822f865ea085bb5922218218c3e01f7251d2ca3f4114a2"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_dec/final.pth",
+      "bytes": 1314562,
+      "sha256": "326d8ae01d30ebb7427ef2d2c51e796e7db23f407e486ae5c753a6c5060100dd"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_dec/last.pth",
+      "bytes": 3933358,
+      "sha256": "a1376f89a545037964a9c6d36406f15838b24bfd0bfba0fc65899a3aba4ecba2"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_dec/train_log.txt",
+      "bytes": 45,
+      "sha256": "3a66a460544b4d552308abcafc79a6306f06fdef200fc1dcb678c4a6c6960210"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_full/config.json",
+      "bytes": 1534,
+      "sha256": "4bf0e0f60d084ef24268b487f8a950cd88aa8a091e0c565756d135ae0530bd4c"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_full/final.pth",
+      "bytes": 818082,
+      "sha256": "9b45e5f2ced2cedd3f41069af5677a80bcec7ac5bbf0e0d5680189eecbd6d148"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_full/last.pth",
+      "bytes": 2448436,
+      "sha256": "7edf1c0865b82e6adf5e4b497bece7757544040bd8cb856bd3ce4b623014bcfd"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_lvh_full/train_log.txt",
+      "bytes": 45,
+      "sha256": "bed11ca853ed587035285546de1795cc3f7c851358e77870ec711ce6c153e93f"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_mr_lv/config.json",
+      "bytes": 1532,
+      "sha256": "bfcb320ba5e84c60aa0374e1b98c3a36af5c486b8f249aa5e731fc594105b25f"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_mr_lv/final.pth",
+      "bytes": 812906,
+      "sha256": "389d5d2f1778d01c6c1e81ccb949f2706428bededa49a7c30304fd1f3076e41d"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_mr_lv/last.pth",
+      "bytes": 2432380,
+      "sha256": "6c08b211bf0a79a8726cae220c0dca3ec8028962d300d7b83cce73990862ee79"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runs/preflight_mr_lv/train_log.txt",
+      "bytes": 82,
+      "sha256": "7e77ee622e16e67fd6edfd301f8c5a9f39fb6f9c2608a97a6eb64861991dade6"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/runtime_precision.json",
+      "bytes": 183,
+      "sha256": "518bf1c3a228a8c00734af6444106cba260d6a941e3ed7115fb72955e23fcda3"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/scheduler.py",
+      "bytes": 5532,
+      "sha256": "c23ab8dbfbf9fea510aece8b8ef44bed78db0619dc9142b93c551d7762666b6e"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/source_RUN.md",
+      "bytes": 3772,
+      "sha256": "ecef7b679fdbb10fee421101ee771173f0d29d4de1cde7d6e1bf6e62174235c2"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/source_SHA256SUMS",
+      "bytes": 4791,
+      "sha256": "139f9dce79f994a10fca3b084acf1a54d42a41693bba082038b6b07bb068c4f9"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/source_manifest.json",
+      "bytes": 4666,
+      "sha256": "bdf87daa19e3a27d846d2bdeecce38850e5e3abf0cdbabd47a8fb9d9106aa7a0"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/torch_compat.PYTORCH_LICENSE",
+      "bytes": 3384,
+      "sha256": "47a26beb94e3f6b333a3677fc85d546f1fdfd2f0b3686c26d2fb5b10e0134165"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/torch_compat.py",
+      "bytes": 1573,
+      "sha256": "ffe34244affdb83c56418a4108b2a29fcbb27941c25fc3b9ada4f5b7ffb0ddeb"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/torch_compat_provenance.json",
+      "bytes": 1633,
+      "sha256": "41199f6ced3d29c945fbd79c3b8efa5ad07de6f680ee4c78613a40d7276b68db"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/torch_compat_validation.json",
+      "bytes": 1573,
+      "sha256": "db08664df9114446a07951e984f1177f25063a781c5db118c419184b6f33bbd1"
+    },
+    {
+      "path": "reproduction/rgbt_research_models_20261126/train_entry.py",
+      "bytes": 285,
+      "sha256": "6f676e05056ef7a33bae2f5673f14985fc38b8e3173a67a785c7c9c4113a4e4b"
+    }
+  ]
+}

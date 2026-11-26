@@ -1,0 +1,19 @@
+DeepPro-Plus / RGB-T 复现记录
+更新：2026-11-26T19:36:53.226092+08:00
+配置：32 epochs / batch4 / seq40 / patch128 / sample_rate .05
+本地重建mask：11,300测试目标；作者日志11,303。
+原实现以测试集IoU选择best checkpoint；随机种子未固定。
+
+released 阶段：completed
+AUC=0.97269, IoU@0.5=0.228457
+threshold=0.50: Pd=80.9204% (9144/11300), Fa=6.274896e-05 (122876 false pixels)
+threshold=0.99: Pd=77.9027% (8803/11300), Fa=4.467026e-05 (87474 false pixels)
+
+train 阶段：training
+已进入epoch：13/32；完成评估轮数：12
+最近训练loss：0.561886
+当前best窗口IoU：0.205427
+
+参照：论文Pd=77.83%, Fa=4.47e-5, AUC=.9730；
+作者存档曲线AUC重算=.96912177，.99阈值Pd/Fa与论文表格对应。
+完整配置、指令、环境和限制见README.txt、config.json、protocol_review.txt。

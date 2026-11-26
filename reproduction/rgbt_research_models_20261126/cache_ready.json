@@ -1,0 +1,29 @@
+{
+  "status": "ready",
+  "started_utc": "2026-11-26T09:45:24.506793+00:00",
+  "completed_utc": "2026-11-26T09:46:31.472254+00:00",
+  "image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+  "dataset_host": "/home/md0/ly/DP/datasets/RGB-T",
+  "dataset_container": "/data/RGB-T",
+  "train_clips": 45,
+  "test_clips": 15,
+  "clips": 60,
+  "frames": 25111,
+  "train_frames": 19135,
+  "test_frames": 5976,
+  "cache_bytes": 8228380160,
+  "cache_rule": "Per-frame np.clip(Scene.image(i), 0, 255).astype(np.uint8); exact same pixels as train.clip_array",
+  "validation": "Shape/dtype for every clip; first/middle/last decoded frame equality for all 60 clips",
+  "homography_source_host": "/home/md0/ly/DP/deeppro-mx-complete/results/profile/homographies",
+  "homography_copy_scope": "Only the 60 official clip .npy files, byte-identical; shape and finite validation repeated",
+  "invalid_targets_csv_copied": false,
+  "targets_csv_present": false,
+  "inputs_sha256": {
+    "/experiment/experiment.json": "0fa11e925122a94bbf59dbc5a28c39ae2a9a444ec62cbf3490c6a7807f92e2b9",
+    "/experiment/configs/splits.json": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464",
+    "/data/RGB-T/train.txt": "273735b9da40ac2c4a18828f1d3e848851a33339d23325e3f4564b0575b61b6d",
+    "/data/RGB-T/test.txt": "102505309d793edc918fe3004a2d0de382634d83bcc1a9d6b7c0c14eff808bc4",
+    "/data/RGB-T/annotations_coco/instances_01_train2017.json": "d334fdf7301aabe1aa14e19c3a60a19ca0eba7c8cde7677ec620cd33bf7148f3",
+    "/data/RGB-T/annotations_coco/instances_01_test2017.json": "ad7ba716be63e4b0a9bcae7943ea291b8cfdd9cb1fb762fd336d083fbd848098"
+  }
+}

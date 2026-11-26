@@ -1,0 +1,41 @@
+/work/data_utils/TrainDataLoader.py:65: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  sample = np.random.choice(self.samplelist, p=self.sample_p)
+Traceback (most recent call last):
+  File "/run/preflight.py", line 66, in <module>
+    _, logits = model(images.unsqueeze(0).float().cuda())
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1510, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1519, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/work/networks/models/DeepPro-Plus.py", line 27, in forward
+    seq_feats = self.layer1(seq_feats)  ## 20.771G
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1510, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1519, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/container.py", line 216, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1510, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1519, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/work/networks/layers/basic.py", line 140, in forward
+    out = self.conv2(out)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1510, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1519, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/work/networks/layers/basic.py", line 107, in forward
+    return F.conv3d(input, grad_weight, self.bias, self.stride, self.padding, self.dilation, self.groups)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.09 GiB. GPU 0 has a total capacity of 23.56 GiB of which 9.23 GiB is free. Including non-PyTorch memory, this process has 14.31 GiB memory in use. Of the allocated memory 2.88 GiB is allocated by PyTorch, and 11.10 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/reproduce.py", line 51, in <module>
+    main()
+    ~~~~^^
+  File "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/reproduce.py", line 47, in main
+    subprocess.run(command, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['docker', 'run', '--name', 'deeppro-rgbt-preflight-20261126', '--network', 'none', '--gpus', 'device=1', '--cpus', '8', '--memory', '48g', '--shm-size', '8g', '--user', '1008:1008', '-v', '/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/source:/work:ro', '-v', '/home/md0/ly/DP/datasets/RGB-T:/data/RGB-T:ro', '-v', '/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126:/run', '-w', '/work', '-e', 'OMP_NUM_THREADS=4', '-e', 'MKL_NUM_THREADS=4', '-e', 'OPENBLAS_NUM_THREADS=4', '-e', 'PYTHONDONTWRITEBYTECODE=1', '-e', 'PYTHONUNBUFFERED=1', '-e', 'MPLCONFIGDIR=/tmp/mpl', '-e', 'PYTHONPATH=/work', '-e', 'TZ=Asia/Taipei', '--rm', '--entrypoint', 'python', 'sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594', '-u', '/run/preflight.py']' returned non-zero exit status 1.

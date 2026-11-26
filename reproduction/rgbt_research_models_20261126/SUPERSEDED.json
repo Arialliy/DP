@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-11-26T10:53:15.718891+00:00",
+  "state": "archived_pre_selection_runs",
+  "replacement": "/home/md0/ly/DP/reproduction/rgbt_best_test_iou_20261126",
+  "reason": "User confirmed original test-set best-IoU checkpoint selection only; retain all research-model training recipes. Restart 32 epochs in a new run because prior epochs were not all evaluated or saved.",
+  "preserved_runs": {
+    "lv_full": "completed_32",
+    "lvh_full": "completed_32",
+    "mr_lv": "stopped_after_16",
+    "lvh_dec": "stopped_after_15"
+  }
+}

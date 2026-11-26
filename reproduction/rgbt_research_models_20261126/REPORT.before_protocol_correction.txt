@@ -1,0 +1,10 @@
+RGB-T 四模型训练
+更新：2026-11-26T18:40:07.482510+08:00
+45训练序列 / 15测试序列；32 epochs；seed46；batch4；sample_rate .05；paper_k6_floor。
+GPU 1保留给既有DeepPro-Plus；每张新增GPU一次运行一个模型。
+采用最后一轮final.pth，不使用测试集选择checkpoint。
+
+DeepPro-LV | GPU 2 | completed | 32/32 epochs | loss=0.9699
+DeepPro-LVH | GPU 0 | completed | 32/32 epochs | loss=0.9873
+MRTP | GPU 2 | training | 16/32 epochs | loss=1.0009
+LVH-dec | GPU 0 | training | 14/32 epochs | loss=1.4118

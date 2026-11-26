@@ -1,0 +1,26 @@
+/work/data_utils/TrainDataLoader.py:65: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  sample = np.random.choice(self.samplelist, p=self.sample_p)
+{
+  "status": "passed",
+  "torch": "2.2.0a0+81ea7a4",
+  "numpy": "1.23.5",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "training_windows_available": 18955,
+  "training_samples_per_epoch": 947,
+  "training_updates_per_epoch": 236,
+  "test_sequences": 15,
+  "test_windows": 172,
+  "full_resolution_shape": [
+    1,
+    40,
+    512,
+    640
+  ],
+  "full_resolution_forward_seconds": 0.7565154129988514,
+  "training_peak_allocated_bytes": 6332573696,
+  "evaluation_peak_allocated_bytes": 9801405440,
+  "original_sampler_forward_backward_adam": "passed",
+  "released_checkpoint_strict_load": "passed",
+  "test_frame_coverage": "passed",
+  "elapsed_seconds": 10.687460473003739
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "epoch_zero_based": 0,
+  "eval_window_iou": 0.004645516702329746,
+  "parameters": 70913,
+  "checkpoint_bytes": 939426,
+  "strict_load": "passed",
+  "all_tensors_finite": true
+}

@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/experiment/gpu_preflight.py", line 67, in <module>
+    main()
+  File "/experiment/gpu_preflight.py", line 36, in main
+    train.main()
+  File "/experiment/code/train.py", line 335, in main
+    torch.nn.utils.convert_conv3d_weight_memory_format(model, torch.channels_last_3d)
+AttributeError: module 'torch.nn.utils' has no attribute 'convert_conv3d_weight_memory_format'. Did you mean: 'convert_conv2d_weight_memory_format'?
+Traceback (most recent call last):
+  File "/home/md0/ly/DP/reproduction/rgbt_research_models_20261126/launch_preflight.py", line 32, in <module>
+    main()
+    ~~~~^^
+  File "/home/md0/ly/DP/reproduction/rgbt_research_models_20261126/launch_preflight.py", line 27, in main
+    subprocess.run(command, check=True, cwd=ROOT)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['docker', 'run', '--name', 'dp-rgbt-four-preflight-20261126', '--network', 'none', '--gpus', 'device=2', '--user', '1008:1008', '--cpus', '8', '--memory', '48g', '--shm-size', '8g', '-v', '/home/md0/ly/DP/reproduction/rgbt_research_models_20261126:/experiment', '-v', '/home/md0/ly/DP/reproduction/rgbt_research_models_20261126/code:/experiment/code:ro', '-v', '/home/md0/ly/DP/reproduction/rgbt_research_models_20261126/configs:/experiment/configs:ro', '-v', '/home/md0/ly/DP/datasets/RGB-T:/data/RGB-T:ro', '-w', '/experiment', '-e', 'VT_ROOT=/data/RGB-T', '-e', 'OFFICIAL_LISTS=/data/RGB-T', '-e', 'VT_ANN_DIR=/data/RGB-T/annotations_coco', '-e', 'HOMOGRAPHY_DIR=/experiment/results/profile/homographies', '-e', 'OMP_NUM_THREADS=4', '-e', 'MKL_NUM_THREADS=4', '-e', 'OPENBLAS_NUM_THREADS=1', '-e', 'OPENCV_FOR_THREADS_NUM=1', '-e', 'PYTHONDONTWRITEBYTECODE=1', '-e', 'PYTHONUNBUFFERED=1', '-e', 'MPLCONFIGDIR=/tmp/mpl', '--rm', '--entrypoint', 'python', 'sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594', '-u', '/experiment/gpu_preflight.py']' returned non-zero exit status 1.

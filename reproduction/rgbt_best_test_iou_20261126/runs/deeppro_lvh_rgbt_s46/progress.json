@@ -1,0 +1,18 @@
+{
+  "stage": "train",
+  "epoch_total": 32,
+  "best_iou": 0.21936953423746108,
+  "best_epoch": 5,
+  "epoch": 6,
+  "eval_clip": null,
+  "eval_windows_done": 0,
+  "updated_at_unix": 1795693033.1997552,
+  "train_seconds": 58.11523151397705,
+  "eval_windows_total": 172,
+  "eval_clip_windows_done": 17,
+  "eval_clip_windows_total": 17,
+  "first_frame": 563,
+  "end_frame": 602,
+  "last_iou": 0.21936953423746108,
+  "eval_seconds": 402.320472240448
+}

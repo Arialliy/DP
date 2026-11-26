@@ -1,0 +1,6 @@
+{
+  "state": "queued",
+  "arch": "lvh_dec",
+  "name": "LVH-dec",
+  "gpu": 0
+}

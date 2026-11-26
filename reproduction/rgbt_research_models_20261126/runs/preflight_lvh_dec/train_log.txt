@@ -1,0 +1,1 @@
+epoch 1/1 lr 1.00e-03 loss 2.1371 iters 1 1s

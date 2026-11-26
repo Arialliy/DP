@@ -1,0 +1,15 @@
+epoch 1/32 lr 1.00e-03 loss 2.0081 iters 236 60s
+epoch 2/32 lr 1.00e-03 loss 1.9279 iters 236 60s
+epoch 3/32 lr 1.00e-03 loss 1.7569 iters 236 61s
+epoch 4/32 lr 1.00e-03 loss 1.6126 iters 236 61s
+epoch 5/32 lr 1.00e-03 loss 1.5455 iters 236 61s
+epoch 6/32 lr 1.00e-03 loss 1.5048 iters 236 61s
+epoch 7/32 lr 1.00e-03 loss 1.4915 iters 236 61s
+epoch 8/32 lr 1.00e-03 loss 1.4804 iters 236 60s
+epoch 9/32 lr 1.00e-03 loss 1.4625 iters 236 60s
+epoch 10/32 lr 1.00e-03 loss 1.4374 iters 236 60s
+epoch 11/32 lr 7.00e-04 loss 1.4386 iters 236 60s
+epoch 12/32 lr 7.00e-04 loss 1.4449 iters 236 60s
+epoch 13/32 lr 7.00e-04 loss 1.4179 iters 236 60s
+epoch 14/32 lr 7.00e-04 loss 1.4118 iters 236 60s
+epoch 15/32 lr 7.00e-04 loss 1.4176 iters 236 60s

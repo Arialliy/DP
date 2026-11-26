@@ -1,0 +1,2611 @@
+{
+  "status": "ready",
+  "started_utc": "2026-11-26T09:45:24.506793+00:00",
+  "completed_utc": "2026-11-26T09:46:31.472254+00:00",
+  "image": "sha256:ea2c24a3a72cad22047223725869da1044de36feb1c5d0a19f23544a9cc3e594",
+  "dataset_host": "/home/md0/ly/DP/datasets/RGB-T",
+  "dataset_container": "/data/RGB-T",
+  "train_clips": 45,
+  "test_clips": 15,
+  "clips": 60,
+  "frames": 25111,
+  "train_frames": 19135,
+  "test_frames": 5976,
+  "cache_bytes": 8228380160,
+  "cache_rule": "Per-frame np.clip(Scene.image(i), 0, 255).astype(np.uint8); exact same pixels as train.clip_array",
+  "validation": "Shape/dtype for every clip; first/middle/last decoded frame equality for all 60 clips",
+  "homography_source_host": "/home/md0/ly/DP/deeppro-mx-complete/results/profile/homographies",
+  "homography_copy_scope": "Only the 60 official clip .npy files, byte-identical; shape and finite validation repeated",
+  "invalid_targets_csv_copied": false,
+  "targets_csv_present": false,
+  "inputs_sha256": {
+    "/experiment/experiment.json": "0fa11e925122a94bbf59dbc5a28c39ae2a9a444ec62cbf3490c6a7807f92e2b9",
+    "/experiment/configs/splits.json": "f2ce03914b8e3bbf03f8bd39ded82210a0e5e3d6ed338e2342db0922d42a6464",
+    "/data/RGB-T/train.txt": "273735b9da40ac2c4a18828f1d3e848851a33339d23325e3f4564b0575b61b6d",
+    "/data/RGB-T/test.txt": "102505309d793edc918fe3004a2d0de382634d83bcc1a9d6b7c0c14eff808bc4",
+    "/data/RGB-T/annotations_coco/instances_01_train2017.json": "d334fdf7301aabe1aa14e19c3a60a19ca0eba7c8cde7677ec620cd33bf7148f3",
+    "/data/RGB-T/annotations_coco/instances_01_test2017.json": "ad7ba716be63e4b0a9bcae7943ea291b8cfdd9cb1fb762fd336d083fbd848098"
+  },
+  "records": [
+    {
+      "clip": "DJI_0030_9",
+      "split": "train2017",
+      "frames": 590,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0030_9.npy",
+      "dtype": "uint8",
+      "cache_bytes": 193331328,
+      "cache_sha256": "34d7e5fb3ee825393850a6afc9b6f13dccb98201d40336437cfebe22ba478ef2",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "bb801b03f69542ca970ebad3a59d87a59b9152abfa8b9c8bad534fe67262f39d",
+          "decoded_uint8_sha256": "3368ef76e341c167744d49c7fcb51be90a73855704ef46b39641fa2f4dda9a95",
+          "exact_equal": true
+        },
+        {
+          "index": 295,
+          "frame": "00295.jpg",
+          "image_sha256": "06a44404275e7d9f0c861fd324e9463c8ce6a5700105198acab1a0f0f21f0ac4",
+          "decoded_uint8_sha256": "858cf9d0cfa2c1470e297073c3800ad52fc7b60382249ca7c983cc5c4590b5c6",
+          "exact_equal": true
+        },
+        {
+          "index": 589,
+          "frame": "00589.jpg",
+          "image_sha256": "4b8552cfcc2744ad5e29e574fafd8ba04e0bb57a39d0b9524f2aadbd44f70cb6",
+          "decoded_uint8_sha256": "6de3c6b13945a53b42f9514945b44026ac607761145d48883521e22aa0bbcca8",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0030_9.npy",
+      "homography_sha256": "fed33d523c11b39955d1ca581f792f60843e01d247c5fcb0e2a9db50c5754ba4",
+      "homography_shape": [
+        589,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0043_2",
+      "split": "train2017",
+      "frames": 380,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0043_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 124518528,
+      "cache_sha256": "0514cd32099e5b8ff23f897acdf903c8aabb325b464947bd7cf857f38832c521",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "ead88e352220bc919be09646a9b1ae894a8dc3553983fe6f8407bf940f9281c2",
+          "decoded_uint8_sha256": "b9a49f0687b5b4563c012668751760d9e094f2940b84057d782283a3ba2232d1",
+          "exact_equal": true
+        },
+        {
+          "index": 190,
+          "frame": "00190.jpg",
+          "image_sha256": "73fd07b74af9c9fa17bb083be2c85c91aed472ab7087624a232dc3725e38192f",
+          "decoded_uint8_sha256": "3042fef5be2cac4bc4ae29c9a9648be95e31922d60b0dec22599578b87716738",
+          "exact_equal": true
+        },
+        {
+          "index": 379,
+          "frame": "00379.jpg",
+          "image_sha256": "296152e652f8ff328f9cf669a856c8f2fc2169865f540961983181d50f09c393",
+          "decoded_uint8_sha256": "db033acadeef52ebb1cf7521cf9c2dc278b8b1b6eafb2eace755ee433e7ed9c1",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0043_2.npy",
+      "homography_sha256": "d27e01f559a37f86020e4ca9be5b83fc0ba9de9face09c621f143a8cd689bfe1",
+      "homography_shape": [
+        379,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0057_1",
+      "split": "train2017",
+      "frames": 560,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0057_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 183500928,
+      "cache_sha256": "b113f8f7aeaff29381fbf0c0de613bc9775af60692cc6707dad7208b8f1d4ec3",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "7e370118a170d12846a3eefb50b47947fc71aaab49b8db06c1e05395aca58a81",
+          "decoded_uint8_sha256": "6f5cf84bf009e5865a7f87dc5d8b1e0cf690b65f029b74b523d4e3fc7cbe76cb",
+          "exact_equal": true
+        },
+        {
+          "index": 280,
+          "frame": "00280.jpg",
+          "image_sha256": "ff0bd3f9269707850e4dccfccd753ef5b8c71201003a9e88a78ea9f8476843b5",
+          "decoded_uint8_sha256": "bd386bd7029097962d06b220f6dc7b74c80f820c2a0a32f0e1cdd6bac7ffb3d5",
+          "exact_equal": true
+        },
+        {
+          "index": 559,
+          "frame": "00559.jpg",
+          "image_sha256": "b640ad044cfc18e5415432fff71eddb839e4e8d4231cb78f2f4e1f412edab3a3",
+          "decoded_uint8_sha256": "d27ba400aeeade2cd3acc4561e7208c6697e27fc3e2423ae4551ae94ce99ae06",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0057_1.npy",
+      "homography_sha256": "3cd2599a9055650d305d1dd706d48be6299b08fd0e9c3cbf3f3133b30880d7f8",
+      "homography_shape": [
+        559,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0069_1",
+      "split": "train2017",
+      "frames": 420,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0069_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 137625728,
+      "cache_sha256": "640a9c4a22eabe6c7756911707c41660c01acb2467b3afdf0305214c84f06b83",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "35dbb49149e50b5bb00a5fc1dee13e58451a362dbd660f9f3880ad6506bffc1f",
+          "decoded_uint8_sha256": "7b31e05bc03009471ce6d2c45270c487c4ac8697e3656573229cada559e82328",
+          "exact_equal": true
+        },
+        {
+          "index": 210,
+          "frame": "00210.jpg",
+          "image_sha256": "4c4c71d6923ee7572818d57a17c707daf7e27d655528b005e75273f0eeeda33c",
+          "decoded_uint8_sha256": "762583e995f7e0adc03036125af14ccb636ce5606cd4f4801b9ad1ee886e47d5",
+          "exact_equal": true
+        },
+        {
+          "index": 419,
+          "frame": "00419.jpg",
+          "image_sha256": "1701aac80fc011a565010ec21de6fda925e7f5e3223c96a3d9c7abdb26a5ca2a",
+          "decoded_uint8_sha256": "a606a5de3777747d34247529b4cfeb6e6609fffd060e2ed6952462b79b73b090",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0069_1.npy",
+      "homography_sha256": "e5615c9b86f2e256a99f408161f2061ebce08381599eac1e51e364a985f1b20b",
+      "homography_shape": [
+        419,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0081_2",
+      "split": "train2017",
+      "frames": 350,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0081_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 114688128,
+      "cache_sha256": "b6193625c6a6b2aab727bb3cc0c9a1fa0bd453d5921cbbcdfe39ac1d700ae7a7",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "3ff8e978a6969613f134bfec76cd16f8f4ce02945e669247ac8d0b6d4fa501b4",
+          "decoded_uint8_sha256": "c344f9941d86dc0dc2f19757bcd8340f64926189e93d92e20054985c3f926038",
+          "exact_equal": true
+        },
+        {
+          "index": 175,
+          "frame": "00175.jpg",
+          "image_sha256": "a79e95c1ce06d379c4c7bad79e46567dd4cb8bba0015a053de3edd8ec07cf266",
+          "decoded_uint8_sha256": "a1bb20da2b3b8239a77cf2b880422f1df9c1c7449f328d931e844e9b6ec0699e",
+          "exact_equal": true
+        },
+        {
+          "index": 349,
+          "frame": "00349.jpg",
+          "image_sha256": "c26fe06b5f9d3d597062a4cbe6d5ebebb9f0907f7ba40a0cd6d998a3e43042f6",
+          "decoded_uint8_sha256": "ee47d8accb7db557b6a2b1bb6cb00512b35b77615177d907fa64e1d28dda5000",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0081_2.npy",
+      "homography_sha256": "c407a2dbebaef4ba73a7b4cad3a4f1f1d612fa2c771b8697bdb780f967e9fc13",
+      "homography_shape": [
+        349,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0101_2",
+      "split": "train2017",
+      "frames": 120,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0101_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 39321728,
+      "cache_sha256": "80a1162366f38469d0d0a8d29c8664605bf7759adb79776213ec6506d07c127f",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "d351770bd7036d7ef4f83054ae159a1486e88f99710f0e77dd7d871a2bb4ce13",
+          "decoded_uint8_sha256": "55a6fcd1e89d9e0bb94e50a8d1f0fdac05f1c03da9ae47df33328099f3d9ad88",
+          "exact_equal": true
+        },
+        {
+          "index": 60,
+          "frame": "00060.jpg",
+          "image_sha256": "47f4d38afce478335cf3c86acf98a7fe4520411f15f6a8cdf2fbf2d11c49029f",
+          "decoded_uint8_sha256": "41f920a2f4d2b24887644ceee81bbec830c16d116f3737891aaef6032e9185dc",
+          "exact_equal": true
+        },
+        {
+          "index": 119,
+          "frame": "00119.jpg",
+          "image_sha256": "148deb0e40c654d480362c0535988edde3edb4603815e39fb4b97a1a0dc2a08f",
+          "decoded_uint8_sha256": "f0510469ed0ec91c863457c2e38b3a6a6a1565cc0cd1df5cd841713cb8d7dd6c",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0101_2.npy",
+      "homography_sha256": "e4c70637970baf699e1db7a5978d5ffab2a7324d8804f96e1fb798a23aa07331",
+      "homography_shape": [
+        119,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0107_1",
+      "split": "train2017",
+      "frames": 70,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0107_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 22937728,
+      "cache_sha256": "77df64f04ba54c0dd676f519c47f8537cb234eff19d17225cdd540a63697d439",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "e48ed7c5f266c25a25e336ef0df5f987952c1d2a472ce864ac0a860a5da45e0d",
+          "decoded_uint8_sha256": "c90ff05ae314fdb8b4a352aa1086c045324db1158c12c26aae60209b9de32b4c",
+          "exact_equal": true
+        },
+        {
+          "index": 35,
+          "frame": "00035.jpg",
+          "image_sha256": "55989dfe561d6cc0ea274088fdd421d7a4e79f2878cc6fcc02c745740c27a029",
+          "decoded_uint8_sha256": "8f0043650c8ffeca3039929af4ea43ac71492995f596e0e75afedf381bb53b88",
+          "exact_equal": true
+        },
+        {
+          "index": 69,
+          "frame": "00069.jpg",
+          "image_sha256": "dba996ebe03510cd91cde45369a9aab1b134b317f8d4e571e0f39b6d4f9ffdf3",
+          "decoded_uint8_sha256": "e452ac38bccbb386d939efa246e26ba74e8553b214c38b9086a0ad2427d9c50c",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0107_1.npy",
+      "homography_sha256": "32fc90e3e2256c7eda904e1f4368a4084785ad0bf8515d283130429b032365c7",
+      "homography_shape": [
+        69,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0111_2",
+      "split": "train2017",
+      "frames": 180,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0111_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 58982528,
+      "cache_sha256": "bdf34498d28b0407125056ca8c6d4c12fc4103405307f501a75c8427ecfa2089",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "3f0596c186402bf27a857eb23ab9dff5e8830bd3da7fc32a9d4fbf34b9eef52b",
+          "decoded_uint8_sha256": "ed703a37780e60f1704a99de77dd9d6700c1f0b01232fbd40b6f436f94baf326",
+          "exact_equal": true
+        },
+        {
+          "index": 90,
+          "frame": "00090.jpg",
+          "image_sha256": "fdb561ea13cf3ca468d8e942148bdddf9f34989cb2ad42cd9e7620d17583cd42",
+          "decoded_uint8_sha256": "5d8901ff7373bdc42de73afd0a47ef011ef6b23182bf22a8469a6fdc4ff949d0",
+          "exact_equal": true
+        },
+        {
+          "index": 179,
+          "frame": "00179.jpg",
+          "image_sha256": "3accfe9cb5ce6865b22a151511978e38e6bcef63ce6e9cb4dcf11490e4399524",
+          "decoded_uint8_sha256": "9fb4a10c53d0c1267be2d2470749dfa1bae5f7d5ee02a556ef52087c8270d55b",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0111_2.npy",
+      "homography_sha256": "776c778be334af79e33f1bb9f1eea89b26bcf68f23c3592e38e5b43f06f2c188",
+      "homography_shape": [
+        179,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0113_3",
+      "split": "train2017",
+      "frames": 330,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0113_3.npy",
+      "dtype": "uint8",
+      "cache_bytes": 108134528,
+      "cache_sha256": "dc878e389faeff9e40cdb932e6d699a5a3615be11f380ee2d28a592374975064",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "4c93605becf0356381563075019f9f59c86322dfc704ea37f5da907f8d65b4a5",
+          "decoded_uint8_sha256": "30220c80a1b690019088d6eca6c19a695121bf98ff749f296ced6687dfa0cd31",
+          "exact_equal": true
+        },
+        {
+          "index": 165,
+          "frame": "00165.jpg",
+          "image_sha256": "7e39e74926749f0337af69af0daab666ed931d17ed4e4f656a8b7da3752206c2",
+          "decoded_uint8_sha256": "3e9488d4ace5050791766fad95119316ed74680706950d71ffa6af7464e9b90e",
+          "exact_equal": true
+        },
+        {
+          "index": 329,
+          "frame": "00329.jpg",
+          "image_sha256": "c45d011d2f6b755e7549fccb29064848d32b98ef5e931d89520c0a92355eb216",
+          "decoded_uint8_sha256": "a508c47321dcd82a64ba0a2a6f3bdbc50aa0d8848d24f60f62e43041d60cde4c",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0113_3.npy",
+      "homography_sha256": "42e5c2852a67e892ca30402e9e30677adb18c0ab5320a8f46ef12b9df54d153a",
+      "homography_shape": [
+        329,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0115_2",
+      "split": "train2017",
+      "frames": 290,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0115_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 95027328,
+      "cache_sha256": "c70b523bac963045c9f40c12d5bb8cc470696fa57595fb5e8a414f448158d8da",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "99b88e5e19288f35d226f0f5fd944f5de70aeb8cbe6e0a8050d0b123bcf5cc51",
+          "decoded_uint8_sha256": "d4b84f03fcb824326693d0fd8462d2b049da087903755cfb4bccbbd82915909f",
+          "exact_equal": true
+        },
+        {
+          "index": 145,
+          "frame": "00145.jpg",
+          "image_sha256": "f2e1b9a2c599cbd1ef1422d2da63c70aad24de97281cfd802a1dfc9591bcb776",
+          "decoded_uint8_sha256": "de8b1fd637cc87edb6b63f99ad906b6f59745b9a065dd09803518caff72e6b64",
+          "exact_equal": true
+        },
+        {
+          "index": 289,
+          "frame": "00289.jpg",
+          "image_sha256": "eebaf973a6de0058bacbbb15e371aae3e51bf137d9ab7d4dce886843d8952328",
+          "decoded_uint8_sha256": "d21b9c87a2ea23fd1eea19e1bc80cca919074af6743615dfdaba652e544390a7",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0115_2.npy",
+      "homography_sha256": "4ff8eedfe2503f28b2375a29783a57676a4a9867661885cd778f70ce5ff282a8",
+      "homography_shape": [
+        289,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0117_2",
+      "split": "train2017",
+      "frames": 240,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0117_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 78643328,
+      "cache_sha256": "a69e43e6c4afc572cf4031761090471e5a640de374178e6a346ca2d440bea3e5",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "dee3dbae36b687e238eac603e2bdac7bd92eed3ffdfffa2b6e2524b8d470f58a",
+          "decoded_uint8_sha256": "c16ed1369f3be8d2121ce379e3a6ba34b0d64c690ad88806a3255c01b01741f1",
+          "exact_equal": true
+        },
+        {
+          "index": 120,
+          "frame": "00120.jpg",
+          "image_sha256": "2bf1a4db6e05a0061909a12faf11676cf748f51ac965c9e30dbf4286de383d68",
+          "decoded_uint8_sha256": "8867badafdd7013fec3546581dcee680474fb9b4c934e63ee57d04192c6793e2",
+          "exact_equal": true
+        },
+        {
+          "index": 239,
+          "frame": "00239.jpg",
+          "image_sha256": "0ad76e19fdb9baaa8a510828dd0d8cb177102c57c1814a13649bef6a27fb237a",
+          "decoded_uint8_sha256": "c6d0c2b2491b1a407875b6e388ae8dc6c267a4b536e9f1547069da23bf1f4f22",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0117_2.npy",
+      "homography_sha256": "68e4186b1530b3c89b9b178699965556b07b80a42955091de6c1982b72d17559",
+      "homography_shape": [
+        239,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0121_2",
+      "split": "train2017",
+      "frames": 350,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0121_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 114688128,
+      "cache_sha256": "4a65ac898f721cf64ffdb6fb061d70a425fdcd7d22e9eb149d1266e561be7ac2",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "33d8ed3b7f46fbcf84439c3db50ab1f01a07169dc4aacbb3ab631fd95eb7a082",
+          "decoded_uint8_sha256": "e9071967aadf31814b948fcfa9b726f27d78f99f0b51e2c7efc4e2dc23ec8cdb",
+          "exact_equal": true
+        },
+        {
+          "index": 175,
+          "frame": "00175.jpg",
+          "image_sha256": "c8ead4121c9a805c10bf609bcae63f97d1c984cbc0b5ca5801546a2277973eab",
+          "decoded_uint8_sha256": "63755b3da3eca9ca4437330bca680992c50456a7e23a4f646a03a925ca5beba1",
+          "exact_equal": true
+        },
+        {
+          "index": 349,
+          "frame": "00349.jpg",
+          "image_sha256": "59b018496a4c0094ef7da47afe99b1eec2d09f62c9466f5c44b2dc12475dc928",
+          "decoded_uint8_sha256": "ff4ed92093450846668a22daf4c2119f9381e4c8755174e7e5b594cba88adde7",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0121_2.npy",
+      "homography_sha256": "ad52963b8a4d5d7ffe95368363132fc4798c17052e89a51658d4b3c1dc81823d",
+      "homography_shape": [
+        349,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0123_6",
+      "split": "train2017",
+      "frames": 310,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0123_6.npy",
+      "dtype": "uint8",
+      "cache_bytes": 101580928,
+      "cache_sha256": "2b6672c635b2c9182f91a99629ee2cc2eb92ac49d4b477da3e76cb11344d187a",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "64f936c522fbdc4176ae687d50c768d00b9a456e141045e15f0b950a4ca8ed56",
+          "decoded_uint8_sha256": "9d92d80d10d64d4360d6e54f031d951958593128d4e0b906787649c48a2bb279",
+          "exact_equal": true
+        },
+        {
+          "index": 155,
+          "frame": "00155.jpg",
+          "image_sha256": "66bd8f07c30e4ab17973161d7152275012f26f650175b6e49f05115dcba09ee3",
+          "decoded_uint8_sha256": "69432286b756178c56f9630b47cfc6f70bbd6b99be61757346366d65f85f0c5f",
+          "exact_equal": true
+        },
+        {
+          "index": 309,
+          "frame": "00309.jpg",
+          "image_sha256": "03a0cd8960f3753225671b6aa5fcdb4f216d1c875148c6b3dac67a1f77a237cc",
+          "decoded_uint8_sha256": "bcc7c953d483c6ac21d3d1b39ed2fc75184783d91c2e4cd95fa1d86ffbde2855",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0123_6.npy",
+      "homography_sha256": "fb8f45ec2d8804d814974e6353ef275ab543a8c401e3350751a342f5a495d7cf",
+      "homography_shape": [
+        309,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0125_1",
+      "split": "train2017",
+      "frames": 440,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0125_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 144179328,
+      "cache_sha256": "a3a62c9d5822cc0eaa041395b5b76b221d8564920faea25efdaee4f4e85ed499",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "51b7f1e7b0c24a7a19ffd2062d359fe25262490987eeaa7f3667749cc3506e19",
+          "decoded_uint8_sha256": "2b86c7349aa2f691f0547e4cd4b2df8c4368a439d47535b9a1a687f0dbb70eb1",
+          "exact_equal": true
+        },
+        {
+          "index": 220,
+          "frame": "00220.jpg",
+          "image_sha256": "6daaa9086b9a10604e3b14b94646e6150f93051bdedd748fa5d29013996eb585",
+          "decoded_uint8_sha256": "6ad4bd79720f6a53d9488ce14cb8ff574572f61e5ea8c72b1d12eddf17181657",
+          "exact_equal": true
+        },
+        {
+          "index": 439,
+          "frame": "00439.jpg",
+          "image_sha256": "af8c593ba60c10543cd09418014df27e5dafd888d0a1fc555b9eef08f593a272",
+          "decoded_uint8_sha256": "2d891adb86a3d6dd0c1df9d81ba0b2980bdbc8c7eef4e6d3a5bea7f66dc35408",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0125_1.npy",
+      "homography_sha256": "d750cbfda380262667dc4127d5ed4ec362cdec143e8c6e4fb37c3455f2ce0a1a",
+      "homography_shape": [
+        439,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0127_1",
+      "split": "train2017",
+      "frames": 500,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0127_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 163840128,
+      "cache_sha256": "5aa00b96379a0cdea3cdcd2dc6920a8f57d208c67e0c9b4eb2c752f8b45e83b8",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "d678f7f75f53ff1d572c04ba8f785d32eed1b696a4037e68d4e00581c720869a",
+          "decoded_uint8_sha256": "c6e6a6574e4d6034d1daa9e9aa30e0917edca3bc7189c14fbbe0c61b2fe86fed",
+          "exact_equal": true
+        },
+        {
+          "index": 250,
+          "frame": "00250.jpg",
+          "image_sha256": "7ad6a954095a1939662094c65b711b7611cf65d4a6a73bb5bb53dbec4b7e19a6",
+          "decoded_uint8_sha256": "fb543b21c14804127b88d3c03547d73a53b21f0d1159f347ce3a298f02ed25b1",
+          "exact_equal": true
+        },
+        {
+          "index": 499,
+          "frame": "00499.jpg",
+          "image_sha256": "3fafffc3feb4744198c93e1036859ed4dff743345d1a57ad602fc14254bd6e8a",
+          "decoded_uint8_sha256": "a22cde57f131103f7b07025f2bf92c5b54a859a5b74000c823f71ee6eb0bd7cc",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0127_1.npy",
+      "homography_sha256": "6425082fa3329ea3342c502ae4df16a33a85ed4f2a8c386f84fc6bd9b21fb125",
+      "homography_shape": [
+        499,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0131_2",
+      "split": "train2017",
+      "frames": 550,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0131_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 180224128,
+      "cache_sha256": "6617c6cc0b0327351a6ff4c1f64b463e01b70cc61005363b56c0bfc6b3d00385",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "d3cc6ebd7138205939e53288261e3d334675f1187f568fdf0ec57fe5bb7c5353",
+          "decoded_uint8_sha256": "ea5fe9f3ef865fe6cde3271da6baa90d567897bd33a4e9706429bc8847cbf942",
+          "exact_equal": true
+        },
+        {
+          "index": 275,
+          "frame": "00275.jpg",
+          "image_sha256": "1d996305e4bfd98c1383412cd1432bb19f5ec40cc7605712339b2ef18737f6a2",
+          "decoded_uint8_sha256": "76b39cb964e7c97b51f50eb296dc28e75f3a76b8a6ed87f3e5b92155e87dc92b",
+          "exact_equal": true
+        },
+        {
+          "index": 549,
+          "frame": "00549.jpg",
+          "image_sha256": "dcea1465a4364ee768a6916bdc66bcbad534ee22802a253319c1bd2acf1c69b2",
+          "decoded_uint8_sha256": "b1b91f5c14c6b8957c00242d085ce3658bc070763c256ced25859efb6df45339",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0131_2.npy",
+      "homography_sha256": "cdd9f4de6ef357e6ffe05b0ee611520a56dbf520909d3033e04a233be7bf90f1",
+      "homography_shape": [
+        549,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0143_1",
+      "split": "train2017",
+      "frames": 430,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0143_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 140902528,
+      "cache_sha256": "7452f8fd83696862bfd2ae1ecc1544bed09dc7d58182ad4119b287da93810d21",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "38fc32dcf24a2706126421f9594deea53b21fee805e5136f2102f77cc43d7da7",
+          "decoded_uint8_sha256": "91ddb198693174f7feee7258160ea76dc81b5adee18ebca2d0974cd4825d353d",
+          "exact_equal": true
+        },
+        {
+          "index": 215,
+          "frame": "00215.jpg",
+          "image_sha256": "def79ea1392fc09036347a9216d1f78c5b2738cb353a3cff5da38c3a08cb6704",
+          "decoded_uint8_sha256": "0835b7e5062a9506d80adc3925213dd18013df13ed697780691a911a76785de4",
+          "exact_equal": true
+        },
+        {
+          "index": 429,
+          "frame": "00429.jpg",
+          "image_sha256": "2646857417fd8c4c6d096ee18a270adca8e16edac08b21a6e5fc96a57df1dced",
+          "decoded_uint8_sha256": "ecac2d3a7cdebbf95023c674c33314a160de0b4c8e03e0644365884099500c84",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0143_1.npy",
+      "homography_sha256": "5be8685acc97c965b8ec9db5ca9e15637d2ab3d7b9b160310b76c0233279bda8",
+      "homography_shape": [
+        429,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0145_1",
+      "split": "train2017",
+      "frames": 280,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0145_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 91750528,
+      "cache_sha256": "e8ab9e68b7942efb6d2f33d7ff61c2ed1a6ca90893cf33cb22141456118188be",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "7e5dceee5fceb8358bbf4bd1f1773ec30d90b0832c4acbf889a7bd8f6bcf4a11",
+          "decoded_uint8_sha256": "9062fe9d8d521278f13e6f3ef308ac74c5d01914c1a5663803a0ddc65b0a82c9",
+          "exact_equal": true
+        },
+        {
+          "index": 140,
+          "frame": "00140.jpg",
+          "image_sha256": "9c03574be2bac10348e7580f298d0197845c17372c5a714dbf49ef92519a4339",
+          "decoded_uint8_sha256": "a4f02c5af14d3cd2ab8b86ab89121a79940df5e0c015934f2c25854326d88f44",
+          "exact_equal": true
+        },
+        {
+          "index": 279,
+          "frame": "00279.jpg",
+          "image_sha256": "849359694ccaef8da3c60370d6ac6f2b90c8d08ee23ac21a25778c0230f762ae",
+          "decoded_uint8_sha256": "547b56cead3d349159b402799ce81fb70e76b78fa44ba5b650b58c7bff34fcf9",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0145_1.npy",
+      "homography_sha256": "e6152bdcd7a72ffce08969eba3202c706c6407ae3d5481297d8675fa5593cd17",
+      "homography_shape": [
+        279,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0157_2",
+      "split": "train2017",
+      "frames": 470,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0157_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 154009728,
+      "cache_sha256": "e665a29c1d2ffdcdde44dfb30a77c5e2371d48834411d420ab125ec60399d178",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "b1bca6eb66f6889ba976583cae7142bf73d8c70b0deffc9c19c92e25c29b7b88",
+          "decoded_uint8_sha256": "41429319485e3e586af42fad08d7c3585559966ac4a6756ee45f9762171915ca",
+          "exact_equal": true
+        },
+        {
+          "index": 235,
+          "frame": "00235.jpg",
+          "image_sha256": "02fb0c6294ac22b342ae8a2d1ff34b37dbd5a5d2caa71807f90bde362efb0b63",
+          "decoded_uint8_sha256": "f71b35686ce48f94f070de8132af16bddf425b7521f24a872bc98d8f33be9f79",
+          "exact_equal": true
+        },
+        {
+          "index": 469,
+          "frame": "00469.jpg",
+          "image_sha256": "72fd86578d1ccc12286edb2cdda8b68ed638c81bea9e18e51891cc442fed2ab0",
+          "decoded_uint8_sha256": "277cd1a6bdff1350f478b08b547a3b30c2f4451203b08aed31a95ec6994d08ed",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0157_2.npy",
+      "homography_sha256": "ff4a9e6dd8482b7148ad0b42ded9b10fe41f4d3c524abb8b6f75c42c22f85467",
+      "homography_shape": [
+        469,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0163_1",
+      "split": "train2017",
+      "frames": 470,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0163_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 154009728,
+      "cache_sha256": "7e034d86aae1ddb401c01983700084ebead047fc89139104ef30506a620d29e1",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "46a64993d4cd24fdc35830ad5086ed1e0980ed65e86374814faf66976d532017",
+          "decoded_uint8_sha256": "d0510bea6cd4ebe2ca6643b2d081b9f2b3f2d872e5923bfd036b9fbc5c3e2c08",
+          "exact_equal": true
+        },
+        {
+          "index": 235,
+          "frame": "00235.jpg",
+          "image_sha256": "8ca1fdfe4d9a6d7716e7035af9c2544019e7cf6b171273535e6e588492175e2f",
+          "decoded_uint8_sha256": "60ddcf61065324156ac38d9ccbef59141e72f6d8f074bf8c458af36304c792d6",
+          "exact_equal": true
+        },
+        {
+          "index": 469,
+          "frame": "00469.jpg",
+          "image_sha256": "ead0ce0964da1628d65fd6209ab23912e32c32945ddc0d3d34416d53b6b23efb",
+          "decoded_uint8_sha256": "b0ece9a4820c290f4c8ec0fd991a1b6f1de6937c121ac92bf97304e524066697",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0163_1.npy",
+      "homography_sha256": "e82dcc876c2aa86ecd42f9dabb343b60fa88e67610478ceb1b443ec198c0cb00",
+      "homography_shape": [
+        469,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0175_2",
+      "split": "train2017",
+      "frames": 450,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0175_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 147456128,
+      "cache_sha256": "a0682f16f3ac429ad9a90c725d6e861a6ef4384d04226296840596b13b075697",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "f65dbf2662624055f6dd04579af1bcbbe504e5c1ae8ace952a71632914906bec",
+          "decoded_uint8_sha256": "e6cfcf09ec815b7323b42f916c65303142296667e1afaba89341a9dff9504fab",
+          "exact_equal": true
+        },
+        {
+          "index": 225,
+          "frame": "00225.jpg",
+          "image_sha256": "5241f15e5b3b8df1d2cd420e6a1f523b9f70e81c8922e17cf99fec2cd9f47f40",
+          "decoded_uint8_sha256": "af0abacb1f5ec97d199e147b1859a5f32da2dfe45ae114e89f3981de3e12abbe",
+          "exact_equal": true
+        },
+        {
+          "index": 449,
+          "frame": "00449.jpg",
+          "image_sha256": "8b01c78b2123c40021a77c92cda1f1ca8a9185f852db6ee75d395178e7e8cc18",
+          "decoded_uint8_sha256": "8680e61376e04af82215bda91f6078b1baa1a270a79c111e4b0ad1d940aa1cf8",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0175_2.npy",
+      "homography_sha256": "cc63e8c377ebdbdf330cd08ca9fc23e4a33f2949a3d59e26bfeec03df18153db",
+      "homography_shape": [
+        449,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0177_2",
+      "split": "train2017",
+      "frames": 360,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0177_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 117964928,
+      "cache_sha256": "485e0a7111f00b6ad0898d10054271d7ef7ddee168ff489e2c9c6529872c7f47",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "5f2f34ad52ce4a33853a7f7e6063e0c417f26d0b71873b97bc9e73e12e0a0e75",
+          "decoded_uint8_sha256": "7d5385353e393c7066e2ad4068d01b640a6e7b38350a52188cda0cafdc4beb2a",
+          "exact_equal": true
+        },
+        {
+          "index": 180,
+          "frame": "00180.jpg",
+          "image_sha256": "edcb7e45d0f1919505552b2935077f449dc0c11ad2a8ccbbec99fba57b6007f9",
+          "decoded_uint8_sha256": "24bc57553e61ecafe5c64c11cd4b603a727b1a13604b33a1f4b1804b98807b25",
+          "exact_equal": true
+        },
+        {
+          "index": 359,
+          "frame": "00359.jpg",
+          "image_sha256": "20b295f6d81ce7231d9a95cdba23ae3fa1b28a94f7216546d529f3f3cab1db42",
+          "decoded_uint8_sha256": "b81359f14e5e70da21589b1afefe6bda3dc503017f77be2f6fc690d3839dfae2",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0177_2.npy",
+      "homography_sha256": "fb05407853d61b952d3c8ab6c3a7a6a6d326fc1bb10e252353d6203bc7510b63",
+      "homography_shape": [
+        359,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0217_2",
+      "split": "train2017",
+      "frames": 380,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0217_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 124518528,
+      "cache_sha256": "d5fd9aeb6c0948d436c941c7d2d66af46a97793b5eae4b7d7063d99da078c4d4",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "d5ce3b4852f6a2b4bcebd34bb709c007fa006cf22fb632bd7058c98eb4e44ee8",
+          "decoded_uint8_sha256": "ba02aaa55ea58c009e044af11e810959360d885a4b205661e26f927dd5c31070",
+          "exact_equal": true
+        },
+        {
+          "index": 190,
+          "frame": "00190.jpg",
+          "image_sha256": "89270f319c7e2b1b441c17c21a02e7e3401904319873fbc6a818d1997c2a4f20",
+          "decoded_uint8_sha256": "b635a18d69063e468ea3246bde0848cca0600b6bc14173304e88940b58118778",
+          "exact_equal": true
+        },
+        {
+          "index": 379,
+          "frame": "00379.jpg",
+          "image_sha256": "354cfc988e4cb6b86e318459cc82adb6995a2606b47018a9814ef61ba2d49233",
+          "decoded_uint8_sha256": "9dcd508b8b36d06d495e24880b838452967a4cd580dea8f3dfb1128dfbf204c2",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0217_2.npy",
+      "homography_sha256": "55712238648dfab291214e30212e3e4f30cb3415c6cfc203667370b765415684",
+      "homography_shape": [
+        379,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0229_2",
+      "split": "train2017",
+      "frames": 480,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0229_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 157286528,
+      "cache_sha256": "1a7d0caae4a9ef0eb27d2a6f0d52a84a0fae7869ad8fd255109ae8f9d5dffb8a",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "b67ca306927748395d17ef80046a71fadcfcdb886f43e92a34456f00a1c8768c",
+          "decoded_uint8_sha256": "f0e06d2d638c44a7b6e2c7d288b1c8e78e3f5f79bf15d585db9fa6dbeaa4f330",
+          "exact_equal": true
+        },
+        {
+          "index": 240,
+          "frame": "00240.jpg",
+          "image_sha256": "a315a8c44ca38e0291b7869fe8616e476c4c0e307271a4f598b30df34f03ec0a",
+          "decoded_uint8_sha256": "18db22108499e71a5d60a1faf2c587bd2e5fbbb9c65b13b9c9d17bcb67427ab3",
+          "exact_equal": true
+        },
+        {
+          "index": 479,
+          "frame": "00479.jpg",
+          "image_sha256": "d9fcc2f1447fa5436023ab51c93c46f982d810409df033495a6620eb023468eb",
+          "decoded_uint8_sha256": "ff8971ef59f34b718f45fb74d4cf052f3b6b65f10492e127a7df6f3e297c1ed6",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0229_2.npy",
+      "homography_sha256": "a58b54ea7fd287c984d416c7715b505a6383f5dcfc0a5b472d90d63874ad1bcb",
+      "homography_shape": [
+        479,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0241_2",
+      "split": "train2017",
+      "frames": 510,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0241_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 167116928,
+      "cache_sha256": "1c07dad003bcdbf89065a6ffe2a4efe80656826a384e24d52d87522b51c18ef1",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "f8c569a84c79092cca1595b66b818df9fd6ac4a0d00e6c0ef23e546558440a4b",
+          "decoded_uint8_sha256": "3accb4ab8562b0e4169815d14809d570e7a36bec31965262156237f5947518f8",
+          "exact_equal": true
+        },
+        {
+          "index": 255,
+          "frame": "00255.jpg",
+          "image_sha256": "ab87b53cd230ad3037ba9753e102186d51487fed68b001fc4e557661293b41c7",
+          "decoded_uint8_sha256": "5e9352e5f4ac8b17770b6a9e2ab72f2b2e3f40cf1d471c4cfcc89403aadf1c63",
+          "exact_equal": true
+        },
+        {
+          "index": 509,
+          "frame": "00509.jpg",
+          "image_sha256": "b54356ebb032bc6c837a261c885d6ae49b7dc26e213fde2337630567da471ec3",
+          "decoded_uint8_sha256": "9f0b547ddea63abb3281247bf3bc69c973ad38a9c40ce0913678f26929da9006",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0241_2.npy",
+      "homography_sha256": "d5e4e9f6f8120a529754bd7eea9607b893b288ceabd166b6435cad440e89d43e",
+      "homography_shape": [
+        509,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0243_2",
+      "split": "train2017",
+      "frames": 340,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0243_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 111411328,
+      "cache_sha256": "ac05c0d17fea3fe7b7c54b5cfcdcbc1eae4461e5bacddd7c986010b51ab36951",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "1bc2e0953b683dc9509e044fa4364ca0bba25c319775871e0718b9e162cce5e3",
+          "decoded_uint8_sha256": "efb3f0633be7551167e63eabd39abcd3e64138740837a75f31674a6e8f500b96",
+          "exact_equal": true
+        },
+        {
+          "index": 170,
+          "frame": "00170.jpg",
+          "image_sha256": "165d14871adc6d49a77e23675ad2fab1787318ba77388ce90567c56081f6dc53",
+          "decoded_uint8_sha256": "e19b298529edd5b8f4ad5c9fe1054cbe89cf544455bf60ed8838fd2177cda9a9",
+          "exact_equal": true
+        },
+        {
+          "index": 339,
+          "frame": "00339.jpg",
+          "image_sha256": "b8b7ae8c7e593d5d8f1c22d9803559160463677de38f012ccf7a09c6c2375188",
+          "decoded_uint8_sha256": "2828537eeb5e75562609d137a8a0f8e28a46daa379a4f1739771029526aacd88",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0243_2.npy",
+      "homography_sha256": "785db2c6608f8881cbdb3c828cdadf761e7a3d1dc13995c9510a2f5f8e181521",
+      "homography_shape": [
+        339,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0253_1",
+      "split": "train2017",
+      "frames": 1090,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0253_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 357171328,
+      "cache_sha256": "f16e51bebe0596ae70d3bf2c0c98950252850d7d0aae533452eca2d2e501882b",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "e04a484d3c71a8575348d327243c2b4dbf17bf18b3543e717aa858295ae60ba4",
+          "decoded_uint8_sha256": "1122e393984b1c3678045805dff87dcf97377274440230d9d4e660990300a7c7",
+          "exact_equal": true
+        },
+        {
+          "index": 545,
+          "frame": "00545.jpg",
+          "image_sha256": "691e76292b7c56751029d7b62f537d3a9d498fff5cf88476c47de6af1ba0752c",
+          "decoded_uint8_sha256": "a2aa70aa47c777b98fa17b39cde799a6e0887c1f1cdbbbde9dadf2319d5d0811",
+          "exact_equal": true
+        },
+        {
+          "index": 1089,
+          "frame": "01089.jpg",
+          "image_sha256": "bb9bfbf16259528e92a569bf94dc8045a96472772b55b429834e286f980f070b",
+          "decoded_uint8_sha256": "8eff6b73029fb7a8641bbd43541fb5b988e454147792b28caf0ed65546ff46bf",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0253_1.npy",
+      "homography_sha256": "5f46279d3b890dc7ec5d36d88e26f2c804d9beb4dcaa83391ef7263d57746529",
+      "homography_shape": [
+        1089,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0253_2",
+      "split": "train2017",
+      "frames": 580,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0253_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 190054528,
+      "cache_sha256": "6e6dc8d7afde84523b8a23f93b5b0118ae41f98c77d87fbf7b05ea985270808e",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "c3751697668b48fad64e335cc75514b22b4808ca9f93493fdd226214cbed7a3e",
+          "decoded_uint8_sha256": "8b352bc378b4ce57380ecf473d223edb64fa12ae2e3ac7059acfe52b62c44cf9",
+          "exact_equal": true
+        },
+        {
+          "index": 290,
+          "frame": "00290.jpg",
+          "image_sha256": "4929569a8cf346a554e00a9340aa5c3be0d3b514eed56e50406accb6aa197d54",
+          "decoded_uint8_sha256": "1f18721d37e33c680fa70dc3dd511f3acd9ceddae803a178c2a9ef91e424733a",
+          "exact_equal": true
+        },
+        {
+          "index": 579,
+          "frame": "00579.jpg",
+          "image_sha256": "ebc6251ff451e6a91118a8aa855ded3899c6c725a50348bc480c9aa05ebcf040",
+          "decoded_uint8_sha256": "b46e6c6e48e3320ee6facf98488d76742f78ec6352d67cd7ec2f1d7c924ec725",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0253_2.npy",
+      "homography_sha256": "f05e007bcfc1a16bfae2b4bc823e082fd5de5ed28c69a37cd637be02d5519274",
+      "homography_shape": [
+        579,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0253_3",
+      "split": "train2017",
+      "frames": 520,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0253_3.npy",
+      "dtype": "uint8",
+      "cache_bytes": 170393728,
+      "cache_sha256": "d8b133c1d3e723c14daf38dfd6bf807b691dc707c1dd786837220921da1a7956",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "aa7e3b018c77a67e7d3a78923c898344079116ca22e44b4a125885b0ea5cd938",
+          "decoded_uint8_sha256": "160123fd269e525b5542f0ea01a8ac22d0e3b3217ddb1d16d9021ecbe1b4c133",
+          "exact_equal": true
+        },
+        {
+          "index": 260,
+          "frame": "00260.jpg",
+          "image_sha256": "e488a9ae005a406279d31033ba4469e7d331a4840a04fefc50998a9e19d4c651",
+          "decoded_uint8_sha256": "686b28ea4b3bece9baabdf099493b7b1a84461b490143f90373c0e46dac90ff6",
+          "exact_equal": true
+        },
+        {
+          "index": 519,
+          "frame": "00519.jpg",
+          "image_sha256": "2596e15158d6c6cdebb6ee3d9ff905b018786b77bad4e20b3c2aa6f0e774a056",
+          "decoded_uint8_sha256": "f147a0308fc1bd2ce121471a2ecb2819ad74e9802e4bf34083b7d1a3ae7b0207",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0253_3.npy",
+      "homography_sha256": "cb0d6b3d074a1dcac60b0547d3ecba7d50500fe207209ac2f804cf9854bf0433",
+      "homography_shape": [
+        519,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0257_5",
+      "split": "train2017",
+      "frames": 260,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0257_5.npy",
+      "dtype": "uint8",
+      "cache_bytes": 85196928,
+      "cache_sha256": "ae8afe55b85442652a00a6285329d93c0ac7c202ce581cbd6986b17e3af8d48f",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "73e2babe52f89c9b1075b8533f3100308b56d17846971ee142d060c2df48578e",
+          "decoded_uint8_sha256": "8fae6e6d59c07f5009c0863e3f375d32f28a91621cf84aa0f231d72764341209",
+          "exact_equal": true
+        },
+        {
+          "index": 130,
+          "frame": "00130.jpg",
+          "image_sha256": "120107c29e55cecfd28bdd829b3912b70815204c315984f784ad216d0d913102",
+          "decoded_uint8_sha256": "176e305e47bfc3a8013e21a943d29982a794f46cffd44eaacfd5a709a4eab8b4",
+          "exact_equal": true
+        },
+        {
+          "index": 259,
+          "frame": "00259.jpg",
+          "image_sha256": "797342f023480b80f73a8a182df4f65691424e127f86728c20a470cc1b6443fc",
+          "decoded_uint8_sha256": "29c3907cc1e9da7110b59148373e095e838b0ce31354900d6bfb79c0110f7ed3",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0257_5.npy",
+      "homography_sha256": "1797522e157546f182bada744e4e27d97a5d0e16f0cf4561e64ac0de62b2cfa1",
+      "homography_shape": [
+        259,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0271_2",
+      "split": "train2017",
+      "frames": 70,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0271_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 22937728,
+      "cache_sha256": "f0c132b37ec922601412181048455d96f30e7eb26e38a065b0f9279829a37288",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00013.jpg",
+          "image_sha256": "4b4a68f8843fd20af3abb381128fc035e01920f47b316ba7c10563d75745b6b3",
+          "decoded_uint8_sha256": "b557b9e3f0163cc3ec01a5255cfc57fb178454fe55deb9af5c7345812c31df57",
+          "exact_equal": true
+        },
+        {
+          "index": 35,
+          "frame": "00048.jpg",
+          "image_sha256": "033849401b5e44c9dcc9ec9c43ccd591153237a0ab4094134a8e0f86ff586328",
+          "decoded_uint8_sha256": "89dac3b53faaf92eb42b909dfd98a223bface055dd15d9a4be3518b71d2ca31d",
+          "exact_equal": true
+        },
+        {
+          "index": 69,
+          "frame": "00082.jpg",
+          "image_sha256": "d496cc1085d86586a97390054bfa0e1fdf7d24a791cc43398dfe1704ec38deb9",
+          "decoded_uint8_sha256": "3d1a12a77be3257e48d905e81feb484740f5192f138ccb8afb9cb3d2b3b64ee3",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0271_2.npy",
+      "homography_sha256": "c58274a44c4fe8cab0586b58033e58b06a4d6d798fdf093e69a358bbc61e922d",
+      "homography_shape": [
+        69,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0273_1",
+      "split": "train2017",
+      "frames": 1213,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0273_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 397475968,
+      "cache_sha256": "1f97848d9b905c9a632634a091b9d06860937b5c4a73d62d35247323a95fff9f",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00300.jpg",
+          "image_sha256": "d8b006a639caa9171f8ffbadef94b6dbe43f1c0c331d928da73ce1b96e16b37f",
+          "decoded_uint8_sha256": "1aa5be0fef6a094f26343d548a023a453d4123fed8c295ef7ce41c897837660b",
+          "exact_equal": true
+        },
+        {
+          "index": 606,
+          "frame": "00906.jpg",
+          "image_sha256": "c56d10fd9b4af3ccf947a13574c12ca8edc58e4a2f672d7e4b76d1c011160f19",
+          "decoded_uint8_sha256": "5496f284bddcb410ca85ef46389aebe4e41913696fb3ecc8aee16da8cf9874c0",
+          "exact_equal": true
+        },
+        {
+          "index": 1212,
+          "frame": "01512.jpg",
+          "image_sha256": "16ea0631ea274556de1573370f41e0bb9ba114e6b7214268fb356c5bf137b665",
+          "decoded_uint8_sha256": "0f37ed0a0112ef7af19f6e5e1a73ccbc2bc7596dee67e55393024cf890a0b289",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0273_1.npy",
+      "homography_sha256": "d9da2f56336ca6d46246dde8ec7f050190507d5c6ebc2cdca4d23f31d2ade058",
+      "homography_shape": [
+        1212,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0277_1",
+      "split": "train2017",
+      "frames": 550,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0277_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 180224128,
+      "cache_sha256": "3d419d0d7d7df84b63d46d3f49afe37be474509c8483e6991fa9c0481ae9fda6",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00274.jpg",
+          "image_sha256": "96ad515c6c53a35e6c1cc72f24ac750f848cedbb630410cbdcfcdb8ca9c10acb",
+          "decoded_uint8_sha256": "a37051499f2e125ecc6ac100bd39da7a9e4cd744022ceded4847b952b70c6131",
+          "exact_equal": true
+        },
+        {
+          "index": 275,
+          "frame": "00549.jpg",
+          "image_sha256": "e8a0f152c0a970acb69cb3df54ab96d110c4b6dbc7788c6fd44f51ac2ac3e072",
+          "decoded_uint8_sha256": "403206cbac8d838d83c97d888c3caf1b80d61afd23de6849171857d88ff19fa3",
+          "exact_equal": true
+        },
+        {
+          "index": 549,
+          "frame": "00823.jpg",
+          "image_sha256": "4b1e190e123cebebb77acb3e14b3fd8a5e326b3574f4fda7ca748c467197b1ff",
+          "decoded_uint8_sha256": "ed799ab20ba978a1e9e228ccf4a443ba974ed4871f4ad344aaa4aaf6cb333de6",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0277_1.npy",
+      "homography_sha256": "080f4b6beb47fec01d9a86ab11f5287a5325afefd51c485fdf3993b81057dbfb",
+      "homography_shape": [
+        549,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0285_3",
+      "split": "train2017",
+      "frames": 182,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0285_3.npy",
+      "dtype": "uint8",
+      "cache_bytes": 59637888,
+      "cache_sha256": "497d0127c77fb772948f32adc2fd93e3a27316f836e47d7e798093342af6088f",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00422.jpg",
+          "image_sha256": "e86777d447803c1bb6264654793eb8c214aa340eb3bcb96fb010b45650c8c7c8",
+          "decoded_uint8_sha256": "936b4bb3b882654e71052a602d87a7de23ab4151194ccdc8ec9818827243b6e3",
+          "exact_equal": true
+        },
+        {
+          "index": 91,
+          "frame": "00513.jpg",
+          "image_sha256": "f814c13366d73a94b3c03087453636d80fb838f61444741ccaefd5e495005852",
+          "decoded_uint8_sha256": "73ac985e3ee5270d3533d209c08cde4a99736ebb0c1e05227864a6a175218816",
+          "exact_equal": true
+        },
+        {
+          "index": 181,
+          "frame": "00603.jpg",
+          "image_sha256": "065a5e7e00ebb72d352c344c7f7147cf621aec394b78927d0abc6869c5c62d4a",
+          "decoded_uint8_sha256": "83cc73f487f6c63705a2fcff4c9428a4415385b1f7cdde7a4ddbc5c0460d72fd",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0285_3.npy",
+      "homography_sha256": "968d4824e921fe4a2747db1bafd95b59bc7f897ca7707222ba81df7c5d8c2273",
+      "homography_shape": [
+        181,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0287_1",
+      "split": "train2017",
+      "frames": 273,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0287_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 89456768,
+      "cache_sha256": "91061f6408b7fc0155acc85fdf8fb9b7daefa97217cc2d7e2e5793ee5b1ba30a",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00331.jpg",
+          "image_sha256": "837b2c84d2d9940ba80ecaf0f0edcf6fbacbf25063ca575fc46faaa0c8cc84bc",
+          "decoded_uint8_sha256": "8b9a0d3b8e9fc1b8cd9c00d7ec7564d4133e014bec26d7906fe76231a9c848e3",
+          "exact_equal": true
+        },
+        {
+          "index": 136,
+          "frame": "00467.jpg",
+          "image_sha256": "adb497f05bfb18dad89ddb7cd7a186a8c2067d0846f88c9b648edc8775b36e54",
+          "decoded_uint8_sha256": "5a6366953b4fed382895232f502aee2e836740a11fcfd7780d506ed6f7808051",
+          "exact_equal": true
+        },
+        {
+          "index": 272,
+          "frame": "00603.jpg",
+          "image_sha256": "cd0072e6029955ddf0dde70ca024f2f4f76a64962e15504c99a85c0ff5db288f",
+          "decoded_uint8_sha256": "bc9b67a015d4b9268f5f76f3ef339e8b057512a3ef425bea806e0a246cb00486",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0287_1.npy",
+      "homography_sha256": "eb36f7d3148652d9deedd3e68644e138849f20dbf6078eff335e4e76aff75d7e",
+      "homography_shape": [
+        272,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0287_2",
+      "split": "train2017",
+      "frames": 490,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0287_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 160563328,
+      "cache_sha256": "bae160321d064a69f6ad8f65a58ec1164df7a7f9f17f7b1c2eb50f608948f6d3",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00623.jpg",
+          "image_sha256": "c122663216d2c692ba7f7f51699590c019d355796317d067f0fbd8aa32540c1f",
+          "decoded_uint8_sha256": "36e454f1d0d4da76980161ba73fc6214b4d14a209f46107a8db8ef168ef306e6",
+          "exact_equal": true
+        },
+        {
+          "index": 245,
+          "frame": "00868.jpg",
+          "image_sha256": "50946ca4d25a81930da002978d37a04decb8ceba57753ab1e2f1c714afac0026",
+          "decoded_uint8_sha256": "0bf56b0597d3f0dc305519a117d12f048d8b82ed157f8a0b98977016abad1781",
+          "exact_equal": true
+        },
+        {
+          "index": 489,
+          "frame": "01112.jpg",
+          "image_sha256": "8cc46bfb33a6245f8dd32dc1ac5a5d56168b18927a0aecf8ea79be48f43599c4",
+          "decoded_uint8_sha256": "14e8fe4e7b5473edc3055240e82565edcc484c28fb36d78e8abd6144f105e285",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0287_2.npy",
+      "homography_sha256": "a698a863e1f7f60bf76e79e798c36d9e8910c147cfe24c5f3c3e962b6debfc71",
+      "homography_shape": [
+        489,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0293_1",
+      "split": "train2017",
+      "frames": 363,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0293_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 118947968,
+      "cache_sha256": "050daf1d2775483e90b734ed348a38080e183b8b423417fd4fe3b1f2daff8f90",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00001.jpg",
+          "image_sha256": "5bbf0ea0e231a0141322734083c811e6669bb926f162f16a161225d8156a9ef8",
+          "decoded_uint8_sha256": "bf3c54d0cb35efbe493475ffb6edc800ba8cb803da96947ed84b9744e547bd05",
+          "exact_equal": true
+        },
+        {
+          "index": 181,
+          "frame": "00182.jpg",
+          "image_sha256": "c256eb22665b8ff2fa8c60a4b7ee88ff34732dc7ca1da8787c16ccdb1c6b4453",
+          "decoded_uint8_sha256": "5b3144b2a1636f6a10508996084c7fc3ee3ad7e9886eeaf2fee4b0ec1741f641",
+          "exact_equal": true
+        },
+        {
+          "index": 362,
+          "frame": "00363.jpg",
+          "image_sha256": "8474e0b9777db0bd56d409fa20b94c0a6e29d01d41d982326faddf81bb802862",
+          "decoded_uint8_sha256": "2f3f5bcaa919df7fb7b5203db56029a1cb788123c483304357ba341fc59531ad",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0293_1.npy",
+      "homography_sha256": "b7b034b1ae6200ded3cb95095ea3f8b25128986e794fa7176f3103ba16ef0097",
+      "homography_shape": [
+        362,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0295_3",
+      "split": "train2017",
+      "frames": 550,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0295_3.npy",
+      "dtype": "uint8",
+      "cache_bytes": 180224128,
+      "cache_sha256": "8e24da871d7244dd9048047e5d58dafd8b864a7aeff2ee325b0a0df9a6da73ea",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "86ccf12fa5c707a29e41857d8698251ee4f863d22699668fbb2a6b6ab8bf1805",
+          "decoded_uint8_sha256": "909ac42b3daff1f1c74dc697dbe89155166b8af9dea8dfd01ea416707702d83e",
+          "exact_equal": true
+        },
+        {
+          "index": 275,
+          "frame": "00275.jpg",
+          "image_sha256": "572eb5d699ef10ba4d314df6e415d0686cd9a192d5491f33923d53d48e36ef60",
+          "decoded_uint8_sha256": "3fa2d6f788c57aeaf5b8b99d816c8b067ddf67ae59cb7560fa82bd5766a262a6",
+          "exact_equal": true
+        },
+        {
+          "index": 549,
+          "frame": "00549.jpg",
+          "image_sha256": "aaea2c8d577f7bbb7a9a285ddb083441de6ad3c43cfbd2091e974b945fad3ec6",
+          "decoded_uint8_sha256": "ab597c665e35605df9940a64376c63e00f24fc6252b5d6da941eedd3cb93d1d4",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0295_3.npy",
+      "homography_sha256": "10948ee8d3fa2f2cf592e708c3432370a91a2f062455f7427f543d06edc1bd19",
+      "homography_shape": [
+        549,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0305_3",
+      "split": "train2017",
+      "frames": 333,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0305_3.npy",
+      "dtype": "uint8",
+      "cache_bytes": 109117568,
+      "cache_sha256": "e7dd6173d1d30b00d0aa7079a8265cb83cf826d3e609fa687cc696d6bda175ac",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00556.jpg",
+          "image_sha256": "b3929ed1c4ea80eedd390e95867161db91e1c558c430181bc11bc104f24e67b1",
+          "decoded_uint8_sha256": "d3e72131c5111384ca0fa085673d9825b7f3d104127c18eb9d45ae23beb0a345",
+          "exact_equal": true
+        },
+        {
+          "index": 166,
+          "frame": "00722.jpg",
+          "image_sha256": "55600d31c600a97cb8d7a1279626918fa82298bd95d45c47176cfcdba6f169de",
+          "decoded_uint8_sha256": "629bb828edb50a1fbfdaecb680eab59721fb2409c8ced9dece5517edd81736c0",
+          "exact_equal": true
+        },
+        {
+          "index": 332,
+          "frame": "00888.jpg",
+          "image_sha256": "d04e8f3ecc41a9a792d430921063b05de8383b20f8a8e51e82ab4b824c96f88f",
+          "decoded_uint8_sha256": "86b804d3050f108e121e45d4039b92c5718b4199aa59ba0c196394fd2a20ecba",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0305_3.npy",
+      "homography_sha256": "e3fbc8feb8cf131a48fa7ebe3dbc87ef5aa3638ade3dfa840ce06f2c0032d180",
+      "homography_shape": [
+        332,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0305_7",
+      "split": "train2017",
+      "frames": 340,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0305_7.npy",
+      "dtype": "uint8",
+      "cache_bytes": 111411328,
+      "cache_sha256": "ee5a3d9b25b66ecd3655d1051800ecd9873a12f7fb267586a1862ef6b67d07a7",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "01785.jpg",
+          "image_sha256": "f63a6d0cad9d28cc90d1c9cbd5a303cd99fec72c011f13fd0c62d14fb1256e5e",
+          "decoded_uint8_sha256": "fdbbe586040a3c6ffdcd236fed45c4f763749e4ea58b5acd10ed328ba9bfe5ab",
+          "exact_equal": true
+        },
+        {
+          "index": 170,
+          "frame": "01955.jpg",
+          "image_sha256": "8a7d696bdf37a3ed9737aca434d57d1bc6b11f3eb252e927428a63431952b860",
+          "decoded_uint8_sha256": "b13b134a8d8303ffee56ec0bc99a5974b7c4976c44a77adb9091fd9fe35b33ce",
+          "exact_equal": true
+        },
+        {
+          "index": 339,
+          "frame": "02124.jpg",
+          "image_sha256": "dcdac1a1f08295499797162a8534388e5ce0392a529c06742fdeea367ff4b59f",
+          "decoded_uint8_sha256": "dcee39268016dd824289298f7b6b20a82d191f323f7ca6171c6705564223894c",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0305_7.npy",
+      "homography_sha256": "c4e7875ea71d88d8bfe7cb4acbdb12a39c6450ec2807cc423e046df672627c6b",
+      "homography_shape": [
+        339,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0307_1",
+      "split": "train2017",
+      "frames": 250,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0307_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 81920128,
+      "cache_sha256": "07a67fde1470b2d1196bfe44ab92663eba7b191211edfb3e05bf304e8cea99a0",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00001.jpg",
+          "image_sha256": "b8bfc7f1d542e30543a1e1b40053968822d50b28aaeeacb0f1af41cec1cf0f9b",
+          "decoded_uint8_sha256": "d77dbceb89d1f330b96495d5aa045e6fa3d3b1ff0f2a99160d872924c415dd29",
+          "exact_equal": true
+        },
+        {
+          "index": 125,
+          "frame": "00126.jpg",
+          "image_sha256": "245e99ec7d1859367d1d4e2bb39f0e7f2516d273ec28293ac3f55606299f5dd8",
+          "decoded_uint8_sha256": "4a91e4c0b45fa7d70d02cd220e5621d78799174feb640e8361bb3e51389cf212",
+          "exact_equal": true
+        },
+        {
+          "index": 249,
+          "frame": "00250.jpg",
+          "image_sha256": "aff9de6fd8a686626aa36a66295271b7c51d279ae94fe7e060f92750f19896c0",
+          "decoded_uint8_sha256": "303c830e71693cae6b2cd82b814b1224dd65e2cf993a246646351384b8049727",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0307_1.npy",
+      "homography_sha256": "4159eb497a170d11f18fdadca499a508040d48ee91de13e78777ec29310b6f17",
+      "homography_shape": [
+        249,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0309_1",
+      "split": "train2017",
+      "frames": 432,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0309_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 141557888,
+      "cache_sha256": "3b946613ddbcbebc593eea0cfb8c4c7c0f6f63f5d1ca79f663cd49f42fc10bf8",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00001.jpg",
+          "image_sha256": "b593f2442a456280adb964c495139f1022f18f7af380ae2cbac559a28538deaa",
+          "decoded_uint8_sha256": "4c1de1db6626c0c0652199ae9b4005ccd039123fbfed08b6169c97cbe6bc58d0",
+          "exact_equal": true
+        },
+        {
+          "index": 216,
+          "frame": "00217.jpg",
+          "image_sha256": "2562bd0120645f17e16ba7403d7fce9e75d9cf0560c2d42e9fd5985cbe02d0f2",
+          "decoded_uint8_sha256": "f215909441951f1797dcd093789678238e2d1812535ef2241cd927728e4e76fb",
+          "exact_equal": true
+        },
+        {
+          "index": 431,
+          "frame": "00432.jpg",
+          "image_sha256": "3cb74ab8640ced03bc3d788ec8112b0ec55dfb51143113a53f8023dfc938dd5e",
+          "decoded_uint8_sha256": "42f710c150b339924370889f5fa883c7daa2ea5be57b9bf1dabf6a8828af6d23",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0309_1.npy",
+      "homography_sha256": "3a2acabc97b234a5e17eabca2c54b209c877e10749c0e454db2a46b42b6eeaac",
+      "homography_shape": [
+        431,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0309_2",
+      "split": "train2017",
+      "frames": 598,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0309_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 195952768,
+      "cache_sha256": "48be9f246c01e31a3d39dfd70211c170a530898af44ce9182e2a30ba3c1e7785",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00452.jpg",
+          "image_sha256": "1deb4b0cc5f7203c03f107f89f7965aac7defa74b233fecb6858930b310a0e2d",
+          "decoded_uint8_sha256": "f8d5cb3c586d1b1f21189065958cda42e35ed94389aa59619aa4d6b6e1fd3678",
+          "exact_equal": true
+        },
+        {
+          "index": 299,
+          "frame": "00751.jpg",
+          "image_sha256": "f581ea2e9837de4c8696b217a6c8c7c4c41bf429544d22f9c2a548afce296b3b",
+          "decoded_uint8_sha256": "5a81b7cca9cc68c1a12192e50ce9edaf7deaf6afa5440839060c12bbcfa7e5ff",
+          "exact_equal": true
+        },
+        {
+          "index": 597,
+          "frame": "01049.jpg",
+          "image_sha256": "0d27e220d949d1eef14b110303633c1aa620218d9da5a260d424ba6194e40d61",
+          "decoded_uint8_sha256": "ede5453c31779a96ac63723e0a452bc280358e0e536f6a96e0e9cbd0b94da2fc",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0309_2.npy",
+      "homography_sha256": "98f384efd132c35a6fa31b867c31171058576e76e471797be32ee1ae37d10095",
+      "homography_shape": [
+        597,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0319_2",
+      "split": "train2017",
+      "frames": 598,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0319_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 195952768,
+      "cache_sha256": "8cb974809aa26f3571f5c788de56a3a5426bbe4fa4015218565928a00ba5d725",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00445.jpg",
+          "image_sha256": "7296174b9c6fac1763103337aa51f224617e4d48cd9623a00d06131f039847c2",
+          "decoded_uint8_sha256": "1a3c93717db011e511ff5a95671dc39a96ca4861667315d306afe845008712f4",
+          "exact_equal": true
+        },
+        {
+          "index": 299,
+          "frame": "00744.jpg",
+          "image_sha256": "01791dd98dd1bcd9b501059a573bca1851fd2cea9aedc50ec977e7a7f9682071",
+          "decoded_uint8_sha256": "b775394012e1c71bba9b52fe014a209ad33001459f77f633535e22776859ffce",
+          "exact_equal": true
+        },
+        {
+          "index": 597,
+          "frame": "01042.jpg",
+          "image_sha256": "8265765331272af2d8b50f254777a377982601b21954e6f76b6b205b26f3ce54",
+          "decoded_uint8_sha256": "ff7fd7e25428a6b5060349478fdcd98f9a83123f7dc0cfa3375458332949ec63",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0319_2.npy",
+      "homography_sha256": "fb4e4fd08533bf24750bc042cb4ed511b886dcdf4a5eae0a2c34ec7ea633c818",
+      "homography_shape": [
+        597,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0323_2",
+      "split": "train2017",
+      "frames": 593,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0323_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 194314368,
+      "cache_sha256": "d02838892e2d9fa82e49e4f9dee3f663c45db5edf1f5338a19fca9e01d1b0337",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00234.jpg",
+          "image_sha256": "33b6b049de7de8ff6a58bbc9118537bf4358197336ae1759a51f90ee3323b426",
+          "decoded_uint8_sha256": "3350b77e71e8b3d1e29be838d4f51229d9ce1a37dbd7ea019df0095544351eb5",
+          "exact_equal": true
+        },
+        {
+          "index": 296,
+          "frame": "00530.jpg",
+          "image_sha256": "a523ee590759a69c95f71eb7fbfcae79eb4bb5c01a0ed71773beac97286e9da3",
+          "decoded_uint8_sha256": "9872c6bf37ad42acad63937976aa6aea081ec9c3c8284aa90db9028e9474549b",
+          "exact_equal": true
+        },
+        {
+          "index": 592,
+          "frame": "00826.jpg",
+          "image_sha256": "f02a4cfcfdd65a721ef66853ce07469cafb023d4b22a303c650e4fe3db4ac56c",
+          "decoded_uint8_sha256": "1bb1458e21e8b0116d27e25d952f1a29a9324053fb58f40bc29e407067351c5a",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0323_2.npy",
+      "homography_sha256": "ef63928542265c3049a8e2b0d0ac23a072e9bcfa9170937ce772303d1be8843b",
+      "homography_shape": [
+        592,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0049_2",
+      "split": "test2017",
+      "frames": 90,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0049_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 29491328,
+      "cache_sha256": "76d5b45d0983ce24e0bd34572ab23069ef36ad9496d9f9b941bd20db79ef77d5",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "f710b8ec27ec917c33fa8181f37579f73d1520662cdb6fbe3c20a80409e899a4",
+          "decoded_uint8_sha256": "10a15db785c9e837402dd7b0c094ffe64bc4990c6ec359332b4ce2a0e2b2117d",
+          "exact_equal": true
+        },
+        {
+          "index": 45,
+          "frame": "00045.jpg",
+          "image_sha256": "d4b29d5500147543f7817d408efa1a045a7f181dcd0836785d2ed2beb8470784",
+          "decoded_uint8_sha256": "2e5571d3d1e2e50439e345a0170be20077ff6b71ab664e4a27e1e5248db7b860",
+          "exact_equal": true
+        },
+        {
+          "index": 89,
+          "frame": "00089.jpg",
+          "image_sha256": "7d8a28a50e44a77db0591f31b2e2f83df363c100a9ba044e0e0c9a13378a59bb",
+          "decoded_uint8_sha256": "a6c89e4b28d7e678e413170c84dc5e55c26fa2d7fe51df84f4b9311705ca70bd",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0049_2.npy",
+      "homography_sha256": "a0b522f348071c88eb060bb761013eeacb2d6f6a85a329fa2b574bccc2fff0d5",
+      "homography_shape": [
+        89,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0109_1",
+      "split": "test2017",
+      "frames": 90,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0109_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 29491328,
+      "cache_sha256": "bd8bd6d51456294b6885f5f1d00ec265b1a0222e6171df31b89e050576adb001",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "7065dd76118f58e04fd98010390991c185a0128f357ce7d27fdc9463c0d627ff",
+          "decoded_uint8_sha256": "e74736bce858abe7e049115d0f6804eaf96aa6f49f8879510e9e49bf532e1f45",
+          "exact_equal": true
+        },
+        {
+          "index": 45,
+          "frame": "00045.jpg",
+          "image_sha256": "3b0733cfaa7d8bef0cab504a0c564cc1ce6ecdb8cd4c2791aa79ecd51ed3d57c",
+          "decoded_uint8_sha256": "fe915ad0a2da4b5210f9e92e6f2d0f8739f0b6fcaad419bba93613bbd0b97c30",
+          "exact_equal": true
+        },
+        {
+          "index": 89,
+          "frame": "00089.jpg",
+          "image_sha256": "f1e596dd4ae1a881ce171f9b4ce52362d2907bc3576dc8436706bb5a94221de1",
+          "decoded_uint8_sha256": "e8eb03dafaca8d2d11fbb5b3cd9eedd392fa2b501ba71dfb6e4ea9c1a56abee8",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0109_1.npy",
+      "homography_sha256": "e9b3d3c29040273bb7ce8d72992950be883e41b252ac71960f6dca22f24add49",
+      "homography_shape": [
+        89,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0119_2",
+      "split": "test2017",
+      "frames": 180,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0119_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 58982528,
+      "cache_sha256": "195d018593c926bded0864b3d96dab54910e0c234e60043bc73cb50c8129ad18",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "8742ca209b6c5867d56ed95e663ae56a2ade87723db9e450169d4a6143755904",
+          "decoded_uint8_sha256": "adf59d152e67599fe724b44911d203241f89cfd487f7b7b2ae81eedecdcbe4f7",
+          "exact_equal": true
+        },
+        {
+          "index": 90,
+          "frame": "00090.jpg",
+          "image_sha256": "95f20bdcded947ba37538e8a9d9709cd78af5f323b0be243ec51aea987f3d36a",
+          "decoded_uint8_sha256": "8b725577e0fca6112c7683e2ef27b2aabd19c2834c0f881efc2888905841f8e6",
+          "exact_equal": true
+        },
+        {
+          "index": 179,
+          "frame": "00179.jpg",
+          "image_sha256": "1b31ae283897dbb21d36691f454f57c3d62a605a3a43ec1100132be31ede1599",
+          "decoded_uint8_sha256": "50b0ed12e8d5a1c2a5f1cf85397d7de387af48d4c09c8f7c3bf105728a2a0bef",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0119_2.npy",
+      "homography_sha256": "a70b195a47a12dc48a5d6b8e3975b582975bfdb5c6897605eb4f0b1d27ce8409",
+      "homography_shape": [
+        179,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0129_2",
+      "split": "test2017",
+      "frames": 590,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0129_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 193331328,
+      "cache_sha256": "e3fa8dfd94d8c35e7f262d76bee12ec237df67d8de0578329163b4ff316b59b6",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "76b38e413b491053d68287c130eb6072de8ecbebd2ffe0ade9770c08adf491d2",
+          "decoded_uint8_sha256": "1fd4a20baad2667148a6cba16451065c914ecb834fd6fd4c4ca85c6b0e04726e",
+          "exact_equal": true
+        },
+        {
+          "index": 295,
+          "frame": "00295.jpg",
+          "image_sha256": "26a8d5fcc31458a53e143853ddff15c935fe0f6b7a52758fe79b0b0529ed2059",
+          "decoded_uint8_sha256": "83b0efb82090b7bf6a49385bceaa7b06574cabe13f7e1594208eecb32b9a2c38",
+          "exact_equal": true
+        },
+        {
+          "index": 589,
+          "frame": "00589.jpg",
+          "image_sha256": "9926052915ad3fbd73170437eacf4c3aabe6572668fccda455333bec4db907a4",
+          "decoded_uint8_sha256": "31377eff1c99fdebc94f8053f75d38431ec529170c82c4df3ff35b29d8c1157d",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0129_2.npy",
+      "homography_sha256": "8636c1e4ef0d10b9fa0dbf06e42fc28e32eee94392110fa72d4af40583f2e92f",
+      "homography_shape": [
+        589,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0155_2",
+      "split": "test2017",
+      "frames": 410,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0155_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 134348928,
+      "cache_sha256": "9dbd660872ce1db8cad90adb448b7c8b3d130f5ecf60a71db263f71c89fec69f",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "8f415d265cd78a2a1a7f45ed52a9b9c0a110ad7c2281fa2e15033497f4f811c8",
+          "decoded_uint8_sha256": "50d10088483c9dd7a76b38c09b01abc6e2ad56c0e142af1964229bb01adbcd4c",
+          "exact_equal": true
+        },
+        {
+          "index": 205,
+          "frame": "00205.jpg",
+          "image_sha256": "5ee7bff3d76fa5e44831f9e68f2112e91cf5ae86f5efaf5c7729c17691a6baa0",
+          "decoded_uint8_sha256": "e17bc86257ac0465187036527b082c88fe2d355f1acadea37b53e0ca1408088c",
+          "exact_equal": true
+        },
+        {
+          "index": 409,
+          "frame": "00409.jpg",
+          "image_sha256": "02e3b3618a81eefa20cbdf713409165cc76b3996bbf6d47eb3ff378fb1e5a598",
+          "decoded_uint8_sha256": "8400bc454c528c511c6014558a6694ef11ab86a5a0eb0e0a3663e9c64ec8d72d",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0155_2.npy",
+      "homography_sha256": "30ce69993a39d81ef4afe8f6e56c49b358cd59c6bd33051093e5295707956c41",
+      "homography_shape": [
+        409,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0159_2",
+      "split": "test2017",
+      "frames": 250,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0159_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 81920128,
+      "cache_sha256": "114bcbefea7cbd691aa00dca58d8f5dfdb879ee085f92c764557bf17adddbb22",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "129731367c4c9240183e6b1e100304cde4f2b96527de93f1c7b6e88fa5039344",
+          "decoded_uint8_sha256": "c3bc607d44d27e0dfcab7f9da42ae9ef1867f9137f94ba4d297c11c1f78c32a0",
+          "exact_equal": true
+        },
+        {
+          "index": 125,
+          "frame": "00125.jpg",
+          "image_sha256": "c5456617e1ebed23f39151c8dddce6ad7894f054eed63e25f6c23b8fb86b3178",
+          "decoded_uint8_sha256": "ea05d6ad9d2e99763b8df64d1d146648361f97594e7b5b3a8005ccc84d0a7611",
+          "exact_equal": true
+        },
+        {
+          "index": 249,
+          "frame": "00249.jpg",
+          "image_sha256": "b3ea9ba0bf6824836c47733f506a5f8e7948242a97b0e453b893221f611ded58",
+          "decoded_uint8_sha256": "2098d0ba1faf9d17b81534e3f23f6085641450f8ce5d3f9cc458cfc514168077",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0159_2.npy",
+      "homography_sha256": "71c9e19de03b545de02369c21e871567d73361243b1fd42984441c9b7bcdc043",
+      "homography_shape": [
+        249,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0173_2",
+      "split": "test2017",
+      "frames": 450,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0173_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 147456128,
+      "cache_sha256": "3a5093acb6656da4dacccc59f36d23e2d340623477670fa1fe16c1cc33798bdb",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "72b5d7923966131f1b65edfc71c6a0e5de30b1c3bb1d46a39572b75f3e20aad7",
+          "decoded_uint8_sha256": "557611c9ab7328d57a5e67a93fdd7bfe30283ea1afca52343287fa437600ab86",
+          "exact_equal": true
+        },
+        {
+          "index": 225,
+          "frame": "00225.jpg",
+          "image_sha256": "b4c8d62eeb625dad897df9e9cfbfec69179605d04caec7a0104e905b6c31356b",
+          "decoded_uint8_sha256": "76fffdb72f27463c8c6a8f0588cc93780a1eebcfba06bea52753dc0627f8e11c",
+          "exact_equal": true
+        },
+        {
+          "index": 449,
+          "frame": "00449.jpg",
+          "image_sha256": "65a0b077d39b74e0ef61acfdbf050053696d4b214af4c5ab90c4d4d8051d883e",
+          "decoded_uint8_sha256": "a8df289dae9455a87eff68cb3d80f456abd3de842d0c1c5155522e233df15718",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0173_2.npy",
+      "homography_sha256": "e49d9dc803665caf0c09dc5911fd3c5fca81c89256021d24201f936270a051f4",
+      "homography_shape": [
+        449,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0221_2",
+      "split": "test2017",
+      "frames": 590,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0221_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 193331328,
+      "cache_sha256": "5f33e446829012c2be845eec3b107e6e22b2278ee233da2c60a3f4877c22623d",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "179ede064c7f8c7f381bf7c09703c9516512155d29697067aaff5ffd8ff670b0",
+          "decoded_uint8_sha256": "8376c100d51e7eb72b559687c9fa7336ee2ecf170c36ba0b01dce89c9becc670",
+          "exact_equal": true
+        },
+        {
+          "index": 295,
+          "frame": "00295.jpg",
+          "image_sha256": "0ddcc599bc34ef1f4fbca93889a56ebeb9ed41f08376d3be2188b0590c1d1460",
+          "decoded_uint8_sha256": "e0906d86ea4f20913f8235eb1d069e48e318eacb105c8594735add0fb1b1ac15",
+          "exact_equal": true
+        },
+        {
+          "index": 589,
+          "frame": "00589.jpg",
+          "image_sha256": "e995b61e62b2f7e0896c2c0aa9ab7868e22604174e3bd9696dd71e300dc7651a",
+          "decoded_uint8_sha256": "bb69e076fdd1b508764a00544570eac5fb57d10418f92b9178fc0435634e2922",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0221_2.npy",
+      "homography_sha256": "979d70ac377e29d2ee6755d83101b4323953cdc3e1d0fce3e7a43b2becf6496b",
+      "homography_shape": [
+        589,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0237_2",
+      "split": "test2017",
+      "frames": 410,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0237_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 134348928,
+      "cache_sha256": "a12605b8a87d201cb8d3dfa02967df44e030eae35fd86d735c96126e6b451d3f",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "0edd8de39f98e57e4875cf05c87abec09def8d838c3bd3170ce90d1dbb5f471c",
+          "decoded_uint8_sha256": "e8950f2c2edf6d6047a83d2266481d70327123f466bf5ed24a4e142032a51f50",
+          "exact_equal": true
+        },
+        {
+          "index": 205,
+          "frame": "00205.jpg",
+          "image_sha256": "ceec60ce01b3c413cccc7697b1c05a6e2ba68799c04307bb88b13b616693618d",
+          "decoded_uint8_sha256": "c2964eef4646839d1660679096b5f6aadb0ba937557a7ed45230245af272bc00",
+          "exact_equal": true
+        },
+        {
+          "index": 409,
+          "frame": "00409.jpg",
+          "image_sha256": "a6e54046af3bb6d30260e77b765e49dda633432b0e20d521ae952ccf959cfc39",
+          "decoded_uint8_sha256": "c369903090c606290c87bd88420acf9441d37439feb0c5ba34f2359bbccbde69",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0237_2.npy",
+      "homography_sha256": "94220b2cd510f11956aac9c398d7a1d915a3920028d3079b265556a67b79fc04",
+      "homography_shape": [
+        409,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0255_1",
+      "split": "test2017",
+      "frames": 600,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0255_1.npy",
+      "dtype": "uint8",
+      "cache_bytes": 196608128,
+      "cache_sha256": "8ebf5c2514f6260b90ff25ba1f97cab2e39b27b0c966bbff1034c51670311da7",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "0bddc8ea99a46d1ae10dac321f6c145cc696446f8d6fbab29bb49fb566372c36",
+          "decoded_uint8_sha256": "8e9d0159cc09bd827bdfe4ec2bafb4bcd9171d50d1322ab952da30b5308ca3cd",
+          "exact_equal": true
+        },
+        {
+          "index": 300,
+          "frame": "00300.jpg",
+          "image_sha256": "bd735d9ee07f4a557769beebea77219c2fdab67ddea6ed5c32dad32e2fe91838",
+          "decoded_uint8_sha256": "ee6d24037368e922c0e0e7956422aa6374ebc934f5bc081dca5d23178a62dcc0",
+          "exact_equal": true
+        },
+        {
+          "index": 599,
+          "frame": "00599.jpg",
+          "image_sha256": "898ea98d2824c74ea47212a35f8e3bb6a13fc317a120157aa56c5385901e7c2f",
+          "decoded_uint8_sha256": "844ccdf3574e471bbae67f7f13cf03b3d26d61a5b345c7a33bef4b2abc6b69f8",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0255_1.npy",
+      "homography_sha256": "c6a6108e67dd1e486b94289787e1663bc34f93d45ec1059dfc8b6a7d49c09a42",
+      "homography_shape": [
+        599,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0257_2",
+      "split": "test2017",
+      "frames": 590,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0257_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 193331328,
+      "cache_sha256": "012595e9b25423fac092397013ca3bf3f8c4a82a2ab58175d050f669ac853542",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00000.jpg",
+          "image_sha256": "ac68a5e76249a4400cc09b8a474e03fb3389c5895b945497030c5fc52c4f3313",
+          "decoded_uint8_sha256": "eb74e3b85752586052d67a18a5e7e16d7483a485ed07a88c3b1a0dce7face5ed",
+          "exact_equal": true
+        },
+        {
+          "index": 295,
+          "frame": "00295.jpg",
+          "image_sha256": "188ee46b8e6cdb7501278775760905723806786c6b6b4c987f9bc39112f922fc",
+          "decoded_uint8_sha256": "076b917474effdf2990f262d93e4e7775179052ba2690e0fd02e3c8ac6645e7d",
+          "exact_equal": true
+        },
+        {
+          "index": 589,
+          "frame": "00589.jpg",
+          "image_sha256": "150f39b8be7914c21c192d19548b4d1c559bf478cd9956ac13593a1157923447",
+          "decoded_uint8_sha256": "a2128f1a1e0076d96b95b9e34b6f65a159475be49886546ec4726f3eb7ea3a74",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0257_2.npy",
+      "homography_sha256": "4bdd4eb1e638feb350bc485df3c73438d7e807f6c7382fe62ae6c6af5467b4d4",
+      "homography_shape": [
+        589,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0277_2",
+      "split": "test2017",
+      "frames": 366,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0277_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 119931008,
+      "cache_sha256": "ad76a1332587b51f633dcf3e9581b4b07d6ae9b843e13ce2c20de6fb8ce8d2c0",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00843.jpg",
+          "image_sha256": "defa311ba6ac10de0e81df965cc3d490fe61c94062a501b988ebc5e6b605322d",
+          "decoded_uint8_sha256": "bc061175c62f75dc1e0aa165090e405e146efdd369971727f34ba5f80b2a9e29",
+          "exact_equal": true
+        },
+        {
+          "index": 183,
+          "frame": "01026.jpg",
+          "image_sha256": "927285529b3408186b7cc5216447aedcf455c63faecb6ebf2403e35b547e7665",
+          "decoded_uint8_sha256": "2c953bfd33e649e54d23d366716e12d5cae677771284e07e4f78c80e4b7934e2",
+          "exact_equal": true
+        },
+        {
+          "index": 365,
+          "frame": "01208.jpg",
+          "image_sha256": "4de8d08d4e5c5cfd52d5f2e510ee689f3b36956e281477af9cd47f338caf8575",
+          "decoded_uint8_sha256": "54eaa151c198ecd3e2ab96d21deb7c5adc5eea3ee2d07f07d999fb7913020e67",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0277_2.npy",
+      "homography_sha256": "b590159a3703d3e813dd73783e11c681f5c9c6fed78d64a1fceaf3e28f366106",
+      "homography_shape": [
+        365,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0303_2",
+      "split": "test2017",
+      "frames": 577,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0303_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 189071488,
+      "cache_sha256": "2ac841577a03e1a59f08d348778a11ff5ad82d4874434f4cb586d40a1dd53a7a",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00172.jpg",
+          "image_sha256": "a377044e6e1bacbe222dc558fcdf112e2d5c0a29b9fd4d1c795a76bfbc7868e1",
+          "decoded_uint8_sha256": "1282ec904d835be34560128bce0a3b08947549240c776e92e6bc7926035ff879",
+          "exact_equal": true
+        },
+        {
+          "index": 288,
+          "frame": "00460.jpg",
+          "image_sha256": "974e5f4ac9ca637ba49de40678c204e36a920c234610ba0ccf7b6f2526233b2d",
+          "decoded_uint8_sha256": "88c901e00994fc9b63b921c1a65b88aa2a3dd5821bf15dd54665c58b8277fce7",
+          "exact_equal": true
+        },
+        {
+          "index": 576,
+          "frame": "00748.jpg",
+          "image_sha256": "7161c4f6270cc6366e708fd243a2655b7a0e1ebb0dbe65f5b41f77d3b0297f70",
+          "decoded_uint8_sha256": "987a123d7f8dff71a8b8202671fa9839100473b9e7b3201a5980dd3a8acb78c5",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0303_2.npy",
+      "homography_sha256": "4a8018e5627dc8b9296bb9c02a31e8d799834f53f9eab07984c845e3a2305fa8",
+      "homography_shape": [
+        576,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0307_2",
+      "split": "test2017",
+      "frames": 180,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0307_2.npy",
+      "dtype": "uint8",
+      "cache_bytes": 58982528,
+      "cache_sha256": "f6bf4b72ba670e0700bea80911479850ed0ea80f02fe02e14d0a34aca07a2440",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "00678.jpg",
+          "image_sha256": "9a224a124da8da0f3c46d47564b7eb2488cb9489e8a36c605b78abec8d2af47a",
+          "decoded_uint8_sha256": "03bc91e414c828d8203f0cbeef0e4692c67a755a877aa924328c075ed68df2fb",
+          "exact_equal": true
+        },
+        {
+          "index": 90,
+          "frame": "00768.jpg",
+          "image_sha256": "ade8be8ed0df30096626fe3694dd5b83a0128d12e76885660b56070283e54953",
+          "decoded_uint8_sha256": "fc230840359d78c94c388816d71da7de5ea94bd0ea24ebfe694766d869a7a17f",
+          "exact_equal": true
+        },
+        {
+          "index": 179,
+          "frame": "00857.jpg",
+          "image_sha256": "a06ed76abeba4ce0fce01653dac29e075b0e8df0a63cf5bbde552aac6fce8396",
+          "decoded_uint8_sha256": "2b9eb272653fc49392d760b26c981778ac9dec9feaba630d822bb6c265bbb187",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0307_2.npy",
+      "homography_sha256": "e2ee4ba1a24681052d0929496ac588c4c2ab1bc16a0f4054e295c8acaa0f4df6",
+      "homography_shape": [
+        179,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    },
+    {
+      "clip": "DJI_0309_4",
+      "split": "test2017",
+      "frames": 603,
+      "height": 512,
+      "width": 640,
+      "cache": "cache/video/DJI_0309_4.npy",
+      "dtype": "uint8",
+      "cache_bytes": 197591168,
+      "cache_sha256": "c94fc888f08974831905cfc668bedadddc7540e6c337da00620167590d08b855",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "frame": "01682.jpg",
+          "image_sha256": "444facff594ed9d15ac642f84001cabbd5a8200442dd9be0a2477b7ecff0e8ea",
+          "decoded_uint8_sha256": "e0aad3d3b6ee5429229b3b3a991fbe9a8a1c230f816533b8dd44f0803d300080",
+          "exact_equal": true
+        },
+        {
+          "index": 301,
+          "frame": "01983.jpg",
+          "image_sha256": "3c41c54c2e8b518efa1607fa33de1951a61949780b5519317ae0d2b5ec93adc8",
+          "decoded_uint8_sha256": "77b615bab73f0bdc7283ac1d9c859d5a57c0548ee1c2884f6779984e13f54020",
+          "exact_equal": true
+        },
+        {
+          "index": 602,
+          "frame": "02284.jpg",
+          "image_sha256": "6c3ea975ec99fe6a597a39b09db16f5eb89cc03718efce67a1b890fe3bf27ba2",
+          "decoded_uint8_sha256": "0c708a46ddb8d4bc0ecab4e24375d00d5fbc734b8c2daeef3b35959e81acd4cf",
+          "exact_equal": true
+        }
+      ],
+      "homography": "results/profile/homographies/DJI_0309_4.npy",
+      "homography_sha256": "8caaa8708c0308726831d41a21b1e79bb46943c06d8dbef50929d1c927ef624e",
+      "homography_shape": [
+        602,
+        3,
+        3
+      ],
+      "homography_dtype": "float64",
+      "homography_finite": true
+    }
+  ]
+}

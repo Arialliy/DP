@@ -1,0 +1,8 @@
+{
+  "tensor_dtype": "float32",
+  "autocast": false,
+  "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": "1",
+  "matmul_allow_tf32": true,
+  "cudnn_allow_tf32": true,
+  "torch": "2.2.0a0+81ea7a4"
+}

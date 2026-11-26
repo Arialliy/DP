@@ -1,0 +1,139 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile:
+#1 transferring dockerfile: 426B done
+#1 DONE 0.5s
+
+#2 [internal] load metadata for nvcr.io/nvidia/pytorch:24.01-py3
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context:
+#3 transferring context: 2B done
+#3 DONE 0.8s
+
+#4 [1/3] FROM nvcr.io/nvidia/pytorch:24.01-py3
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 38B done
+#5 DONE 0.1s
+
+#6 [2/3] COPY requirements.txt /tmp/deeppro-rgbt-requirements.txt
+#6 CACHED
+
+#7 [3/3] RUN PIP_CONFIG_FILE=/dev/null PIP_EXTRA_INDEX_URL= python -m pip install --index-url https://pypi.org/simple --no-cache-dir -r /tmp/deeppro-rgbt-requirements.txt
+#7 2.308 Collecting numpy==1.23.5 (from -r /tmp/deeppro-rgbt-requirements.txt (line 1))
+#7 2.868   Downloading numpy-1.23.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.3 kB)
+#7 3.396 Collecting scipy==1.10.1 (from -r /tmp/deeppro-rgbt-requirements.txt (line 2))
+#7 3.661   Downloading scipy-1.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (58 kB)
+#7 3.690      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.9/58.9 kB 2.1 MB/s eta 0:00:00
+#7 4.054 Collecting scikit-image==0.21.0 (from -r /tmp/deeppro-rgbt-requirements.txt (line 3))
+#7 4.253   Downloading scikit_image-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (14 kB)
+#7 4.632 Collecting scikit-learn==1.3.2 (from -r /tmp/deeppro-rgbt-requirements.txt (line 4))
+#7 4.853   Downloading scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+#7 5.164 Collecting opencv-python-headless==4.8.1.78 (from -r /tmp/deeppro-rgbt-requirements.txt (line 5))
+#7 5.374   Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+#7 6.183 Collecting matplotlib==3.7.5 (from -r /tmp/deeppro-rgbt-requirements.txt (line 6))
+#7 6.345   Downloading matplotlib-3.7.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.7 kB)
+#7 6.701 Collecting contourpy==1.1.1 (from -r /tmp/deeppro-rgbt-requirements.txt (line 7))
+#7 6.896   Downloading contourpy-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.9 kB)
+#7 7.188 Collecting PyWavelets==1.4.1 (from -r /tmp/deeppro-rgbt-requirements.txt (line 8))
+#7 7.434   Downloading PyWavelets-1.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.9 kB)
+#7 8.034 Collecting Pillow==9.5.0 (from -r /tmp/deeppro-rgbt-requirements.txt (line 9))
+#7 8.245   Downloading Pillow-9.5.0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+#7 8.510 Collecting imageio==2.31.6 (from -r /tmp/deeppro-rgbt-requirements.txt (line 10))
+#7 8.747   Downloading imageio-2.31.6-py3-none-any.whl.metadata (4.6 kB)
+#7 9.058 Collecting tifffile==2023.7.10 (from -r /tmp/deeppro-rgbt-requirements.txt (line 11))
+#7 9.250   Downloading tifffile-2023.7.10-py3-none-any.whl.metadata (31 kB)
+#7 9.259 Requirement already satisfied: tqdm==4.66.1 in /usr/local/lib/python3.10/dist-packages (from -r /tmp/deeppro-rgbt-requirements.txt (line 12)) (4.66.1)
+#7 9.485 Collecting thop==0.1.1.post2209072238 (from -r /tmp/deeppro-rgbt-requirements.txt (line 13))
+#7 9.679   Downloading thop-0.1.1.post2209072238-py3-none-any.whl.metadata (2.7 kB)
+#7 10.19 Collecting networkx>=2.8 (from scikit-image==0.21.0->-r /tmp/deeppro-rgbt-requirements.txt (line 3))
+#7 10.38   Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+#7 10.41 Requirement already satisfied: packaging>=21 in /usr/local/lib/python3.10/dist-packages (from scikit-image==0.21.0->-r /tmp/deeppro-rgbt-requirements.txt (line 3)) (23.2)
+#7 10.42 Requirement already satisfied: lazy_loader>=0.2 in /usr/local/lib/python3.10/dist-packages (from scikit-image==0.21.0->-r /tmp/deeppro-rgbt-requirements.txt (line 3)) (0.3)
+#7 10.49 Requirement already satisfied: joblib>=1.1.1 in /usr/local/lib/python3.10/dist-packages (from scikit-learn==1.3.2->-r /tmp/deeppro-rgbt-requirements.txt (line 4)) (1.3.2)
+#7 10.49 Requirement already satisfied: threadpoolctl>=2.0.0 in /usr/local/lib/python3.10/dist-packages (from scikit-learn==1.3.2->-r /tmp/deeppro-rgbt-requirements.txt (line 4)) (3.2.0)
+#7 10.58 Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib==3.7.5->-r /tmp/deeppro-rgbt-requirements.txt (line 6)) (0.12.1)
+#7 10.58 Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib==3.7.5->-r /tmp/deeppro-rgbt-requirements.txt (line 6)) (4.47.2)
+#7 10.58 Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib==3.7.5->-r /tmp/deeppro-rgbt-requirements.txt (line 6)) (1.4.5)
+#7 10.61 Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib==3.7.5->-r /tmp/deeppro-rgbt-requirements.txt (line 6)) (3.1.1)
+#7 10.61 Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.10/dist-packages (from matplotlib==3.7.5->-r /tmp/deeppro-rgbt-requirements.txt (line 6)) (2.8.2)
+#7 10.77 Requirement already satisfied: torch in /usr/local/lib/python3.10/dist-packages (from thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (2.2.0a0+81ea7a4)
+#7 10.94 Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil>=2.7->matplotlib==3.7.5->-r /tmp/deeppro-rgbt-requirements.txt (line 6)) (1.16.0)
+#7 10.95 Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from torch->thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (3.13.1)
+#7 10.95 Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/dist-packages (from torch->thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (4.9.0)
+#7 10.95 Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch->thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (1.12)
+#7 10.95 Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch->thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (3.1.3)
+#7 10.95 Requirement already satisfied: fsspec in /usr/local/lib/python3.10/dist-packages (from torch->thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (2023.12.2)
+#7 11.04 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch->thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (2.1.4)
+#7 11.05 Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch->thop==0.1.1.post2209072238->-r /tmp/deeppro-rgbt-requirements.txt (line 13)) (1.3.0)
+#7 11.34 Downloading numpy-1.23.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+#7 15.09    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 4.4 MB/s eta 0:00:00
+#7 15.29 Downloading scipy-1.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.4 MB)
+#7 22.63    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.4/34.4 MB 4.0 MB/s eta 0:00:00
+#7 22.85 Downloading scikit_image-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.8 MB)
+#7 25.64    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.8/13.8 MB 5.1 MB/s eta 0:00:00
+#7 25.82 Downloading scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.8 MB)
+#7 27.59    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 6.1 MB/s eta 0:00:00
+#7 27.79 Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.1 MB)
+#7 36.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.1/49.1 MB 6.4 MB/s eta 0:00:00
+#7 36.68 Downloading matplotlib-3.7.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+#7 38.54    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 6.3 MB/s eta 0:00:00
+#7 38.72 Downloading contourpy-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (301 kB)
+#7 38.75    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.7/301.7 kB 15.5 MB/s eta 0:00:00
+#7 38.93 Downloading PyWavelets-1.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.8 MB)
+#7 39.83    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 7.6 MB/s eta 0:00:00
+#7 40.02 Downloading Pillow-9.5.0-cp310-cp310-manylinux_2_28_x86_64.whl (3.4 MB)
+#7 40.43    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 8.5 MB/s eta 0:00:00
+#7 40.61 Downloading imageio-2.31.6-py3-none-any.whl (313 kB)
+#7 40.65    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.2/313.2 kB 11.0 MB/s eta 0:00:00
+#7 40.83 Downloading tifffile-2023.7.10-py3-none-any.whl (220 kB)
+#7 40.84    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.9/220.9 kB 33.7 MB/s eta 0:00:00
+#7 41.02 Downloading thop-0.1.1.post2209072238-py3-none-any.whl (15 kB)
+#7 41.20 Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+#7 41.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 5.5 MB/s eta 0:00:00
+#7 45.18 Installing collected packages: Pillow, numpy, networkx, tifffile, scipy, PyWavelets, opencv-python-headless, imageio, contourpy, thop, scikit-learn, scikit-image, matplotlib
+#7 45.18   Attempting uninstall: Pillow
+#7 45.18     Found existing installation: pillow 10.2.0
+#7 45.20     Uninstalling pillow-10.2.0:
+#7 45.50       Successfully uninstalled pillow-10.2.0
+#7 45.82   Attempting uninstall: numpy
+#7 45.82     Found existing installation: numpy 1.24.4
+#7 45.94     Uninstalling numpy-1.24.4:
+#7 47.28       Successfully uninstalled numpy-1.24.4
+#7 49.36   Attempting uninstall: networkx
+#7 49.36     Found existing installation: networkx 2.6.3
+#7 49.52     Uninstalling networkx-2.6.3:
+#7 50.27       Successfully uninstalled networkx-2.6.3
+#7 51.68   Attempting uninstall: scipy
+#7 51.68     Found existing installation: scipy 1.12.0
+#7 51.86     Uninstalling scipy-1.12.0:
+#7 54.46       Successfully uninstalled scipy-1.12.0
+#7 58.86   Attempting uninstall: contourpy
+#7 58.87     Found existing installation: contourpy 1.2.0
+#7 58.89     Uninstalling contourpy-1.2.0:
+#7 58.94       Successfully uninstalled contourpy-1.2.0
+#7 59.02   Attempting uninstall: scikit-learn
+#7 59.02     Found existing installation: scikit-learn 1.2.0
+#7 59.15     Uninstalling scikit-learn-1.2.0:
+#7 61.25       Successfully uninstalled scikit-learn-1.2.0
+#7 63.86   Attempting uninstall: matplotlib
+#7 63.86     Found existing installation: matplotlib 3.8.2
+#7 63.94     Uninstalling matplotlib-3.8.2:
+#7 67.47       Successfully uninstalled matplotlib-3.8.2
+#7 68.93 Successfully installed Pillow-9.5.0 PyWavelets-1.4.1 contourpy-1.1.1 imageio-2.31.6 matplotlib-3.7.5 networkx-3.4.2 numpy-1.23.5 opencv-python-headless-4.8.1.78 scikit-image-0.21.0 scikit-learn-1.3.2 scipy-1.10.1 thop-0.1.1.post2209072238 tifffile-2023.7.10
+#7 68.93 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#7 69.74 
+#7 69.74 [notice] A new release of pip is available: 23.3.2 -> 26.3
+#7 69.74 [notice] To update, run: python -m pip install --upgrade pip
+#7 DONE 76.3s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 7.2s done
+#8 writing image sha256:315d86e2fc38ec91633223b75ac336a12565f8683976082e8c97d02203e2bbca 0.0s done
+#8 naming to docker.io/library/deeppro-rgbt:20261126 0.1s done
+#8 DONE 7.4s

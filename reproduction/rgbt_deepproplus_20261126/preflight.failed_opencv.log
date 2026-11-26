@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/run/preflight.py", line 14, in <module>
+    import test  # Verify all final evaluation dependencies.
+  File "/work/test.py", line 18, in <module>
+    import cv2
+  File "/usr/local/lib/python3.10/dist-packages/cv2/__init__.py", line 181, in <module>
+    bootstrap()
+  File "/usr/local/lib/python3.10/dist-packages/cv2/__init__.py", line 175, in bootstrap
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+  File "/usr/local/lib/python3.10/dist-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module
+    py_module = importlib.import_module(module_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.10/dist-packages/cv2/typing/__init__.py", line 169, in <module>
+    LayerId = cv2.dnn.DictValue
+AttributeError: module 'cv2.dnn' has no attribute 'DictValue'
+Traceback (most recent call last):
+  File "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/reproduce.py", line 49, in <module>
+    main()
+    ~~~~^^
+  File "/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/reproduce.py", line 45, in main
+    subprocess.run(command, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['docker', 'run', '--name', 'deeppro-rgbt-preflight-20261126', '--network', 'none', '--gpus', 'device=1', '--cpus', '8', '--memory', '48g', '--shm-size', '8g', '--user', '1008:1008', '-v', '/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126/source:/work:ro', '-v', '/home/md0/ly/DP/datasets/RGB-T:/data/RGB-T:ro', '-v', '/home/md0/ly/DP/reproduction/rgbt_deepproplus_20261126:/run', '-w', '/work', '-e', 'OMP_NUM_THREADS=4', '-e', 'MKL_NUM_THREADS=4', '-e', 'OPENBLAS_NUM_THREADS=4', '-e', 'PYTHONDONTWRITEBYTECODE=1', '-e', 'PYTHONUNBUFFERED=1', '-e', 'MPLCONFIGDIR=/tmp/mpl', '-e', 'PYTHONPATH=/work', '-e', 'TZ=Asia/Taipei', '--entrypoint', 'python', 'deeppro-rgbt:20261126', '-u', '/run/preflight.py']' returned non-zero exit status 1.
