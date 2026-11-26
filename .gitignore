@@ -27,6 +27,8 @@ __MACOSX/
 !/datasets/**/*.txt
 !/datasets/paper-masks/**
 !/datasets/RGBT-Tiny/mask_protocol/**
+!/datasets/RGB-T/mask_protocol/**
+!/datasets/RGB-T/segmentations/MASKS.json
 
 # Downloaded archives are not part of the source release.
 *.zip

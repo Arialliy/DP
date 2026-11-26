@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-11-26T15:06:08.654198+08:00",
+  "dataset_root": "/home/md0/ly/DP/datasets/RGB-T",
+  "source_root": "/home/md0/ly/DP/datasets/RGBT-Tiny",
+  "official_lists": "/home/md0/ly/DP/datasets/RGB-T",
+  "k": 6,
+  "storage": "floor",
+  "ignored_drawn": false,
+  "frames": {
+    "train": 19135,
+    "test": 5976,
+    "total": 25111
+  },
+  "command": [
+    "reproduction/rgbt_masks_20261126/.venv/bin/python",
+    "reproduction/rgbt_masks_20261126/run_paper_masks.py",
+    "export",
+    "--k",
+    "6",
+    "--storage",
+    "floor",
+    "--out",
+    "/home/md0/ly/DP/datasets/RGB-T/segmentations",
+    "--nproc",
+    "12"
+  ],
+  "original_generator_sha256": "8cd7578c9a8dc1d8209157e1daa3fdb8376ebf3d46e9cc49f7e00388d1d784a4",
+  "original_formula_sha256": "5e9050c7791b2684149bb6a2bcebfa6dbd88a6ed317cbbc77f7c58ed34c2066a",
+  "annotations_sha256": {
+    "datasets/RGBT-Tiny/annotations_coco/instances_01_train2017.json": "d334fdf7301aabe1aa14e19c3a60a19ca0eba7c8cde7677ec620cd33bf7148f3",
+    "datasets/RGBT-Tiny/annotations_coco/instances_01_test2017.json": "ad7ba716be63e4b0a9bcae7943ea291b8cfdd9cb1fb762fd336d083fbd848098"
+  },
+  "parameter_check": "../RGBT-Tiny/mask_protocol/check.json",
+  "metadata": "segmentations/MASKS.json",
+  "adaptation": "tracking_id mapped to track_id in memory; original annotation files and Gaussian formula unchanged",
+  "validation_status": "passed",
+  "verification_report": "mask_protocol/verification.json"
+}

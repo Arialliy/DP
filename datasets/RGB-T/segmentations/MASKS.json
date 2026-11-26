@@ -1,0 +1,431 @@
+{
+ "paper": "DeepPro (arXiv:2506.12766), Sec. 4.6: \"For training, we generated rough Gaussian masks as labels according to the bounding boxes provided by its authors.\"",
+ "formula": "g(u, v) = exp(-(u + 0.5 - cx)^2 / (2 sx^2) - (v + 0.5 - cy)^2 / (2 sy^2)), cx = x + w/2, cy = y + h/2, sx = w/k, sy = h/k (COCO boxes, pixel centres at +0.5); per-pixel maximum over the frame's boxes; 8-bit storage as given; the loaders binarise with > 0",
+ "k": 6.0,
+ "storage": "floor",
+ "ignored_drawn": false,
+ "label_semi_axes_in_box_units": 0.5548404948550743,
+ "code": "985ad60",
+ "clips": {
+  "DJI_0030_9": {
+   "frames": 590,
+   "boxes": 8260,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0043_2": {
+   "frames": 380,
+   "boxes": 28843,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0049_2": {
+   "frames": 90,
+   "boxes": 692,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0057_1": {
+   "frames": 560,
+   "boxes": 2129,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0069_1": {
+   "frames": 420,
+   "boxes": 1260,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0081_2": {
+   "frames": 350,
+   "boxes": 4605,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0101_2": {
+   "frames": 120,
+   "boxes": 120,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0107_1": {
+   "frames": 70,
+   "boxes": 70,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0109_1": {
+   "frames": 90,
+   "boxes": 90,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0111_2": {
+   "frames": 180,
+   "boxes": 180,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0113_3": {
+   "frames": 330,
+   "boxes": 330,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0115_2": {
+   "frames": 290,
+   "boxes": 1149,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0117_2": {
+   "frames": 240,
+   "boxes": 829,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0119_2": {
+   "frames": 180,
+   "boxes": 360,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0121_2": {
+   "frames": 350,
+   "boxes": 2100,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0123_6": {
+   "frames": 310,
+   "boxes": 242,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0125_1": {
+   "frames": 440,
+   "boxes": 317,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0127_1": {
+   "frames": 500,
+   "boxes": 500,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0129_2": {
+   "frames": 590,
+   "boxes": 590,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0131_2": {
+   "frames": 550,
+   "boxes": 540,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0143_1": {
+   "frames": 430,
+   "boxes": 430,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0145_1": {
+   "frames": 280,
+   "boxes": 280,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0155_2": {
+   "frames": 410,
+   "boxes": 410,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0157_2": {
+   "frames": 470,
+   "boxes": 446,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0159_2": {
+   "frames": 250,
+   "boxes": 250,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0163_1": {
+   "frames": 470,
+   "boxes": 466,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0173_2": {
+   "frames": 450,
+   "boxes": 450,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0175_2": {
+   "frames": 450,
+   "boxes": 450,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0177_2": {
+   "frames": 360,
+   "boxes": 360,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0217_2": {
+   "frames": 380,
+   "boxes": 1103,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0221_2": {
+   "frames": 590,
+   "boxes": 697,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0229_2": {
+   "frames": 480,
+   "boxes": 6393,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0237_2": {
+   "frames": 410,
+   "boxes": 3717,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0241_2": {
+   "frames": 510,
+   "boxes": 1957,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0243_2": {
+   "frames": 340,
+   "boxes": 668,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0253_1": {
+   "frames": 1090,
+   "boxes": 2180,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0253_2": {
+   "frames": 580,
+   "boxes": 1051,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0253_3": {
+   "frames": 520,
+   "boxes": 797,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0255_1": {
+   "frames": 600,
+   "boxes": 600,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0257_2": {
+   "frames": 590,
+   "boxes": 1126,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0257_5": {
+   "frames": 260,
+   "boxes": 425,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0271_2": {
+   "frames": 70,
+   "boxes": 335,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0273_1": {
+   "frames": 1213,
+   "boxes": 3637,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0277_1": {
+   "frames": 550,
+   "boxes": 1189,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0277_2": {
+   "frames": 366,
+   "boxes": 985,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0285_3": {
+   "frames": 182,
+   "boxes": 182,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0287_1": {
+   "frames": 273,
+   "boxes": 388,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0287_2": {
+   "frames": 490,
+   "boxes": 411,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0293_1": {
+   "frames": 363,
+   "boxes": 273,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0295_3": {
+   "frames": 550,
+   "boxes": 2973,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0303_2": {
+   "frames": 577,
+   "boxes": 1487,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0305_3": {
+   "frames": 333,
+   "boxes": 1005,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0305_7": {
+   "frames": 340,
+   "boxes": 953,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0307_1": {
+   "frames": 250,
+   "boxes": 452,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0307_2": {
+   "frames": 180,
+   "boxes": 161,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0309_1": {
+   "frames": 432,
+   "boxes": 427,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0309_2": {
+   "frames": 598,
+   "boxes": 972,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0309_4": {
+   "frames": 603,
+   "boxes": 1050,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0319_2": {
+   "frames": 598,
+   "boxes": 2898,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  },
+  "DJI_0323_2": {
+   "frames": 593,
+   "boxes": 3056,
+   "ignored_skipped": 0,
+   "empty_skipped": 0,
+   "vanished": 0
+  }
+ }
+}

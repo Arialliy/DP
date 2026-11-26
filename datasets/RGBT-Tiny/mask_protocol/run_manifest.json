@@ -46,10 +46,13 @@
   "adapter_sha256": "f7f061fcc05a8074f915bfe5718275cd901188b872f0b79b1941d807e2ea9149",
   "reference_log": "log/sem_seg/RGB-T__2025-01-14_15-27__SoftLoUloss_DeepPro-Plus_DataL40/eval_ShootingRules_LocLen2_4.txt",
   "adaptation": "tracking_id converted to integer track_id in memory; original JSON and supplied paper-masks source unchanged",
-  "export_status": "not_started_pending_parameter_review",
+  "export_status": "completed_and_verified",
   "check_status": "completed",
   "check_exit_code": 0,
   "completed_at": "2026-11-26T14:47:52.631270+08:00",
   "exact_variants": [],
-  "best_variant": "k6_floor_without_ignored"
+  "best_variant": "k6_floor_without_ignored",
+  "export_root": "/home/md0/ly/DP/datasets/RGB-T",
+  "selected_variant": "k6_floor_without_ignored",
+  "export_verification": "/home/md0/ly/DP/datasets/RGB-T/mask_protocol/verification.json"
 }

@@ -1,0 +1,2676 @@
+{
+  "status": "passed",
+  "completed_at": "2026-11-26T15:07:37.216059+08:00",
+  "root": "/home/md0/ly/DP/datasets/RGB-T",
+  "source": "/home/md0/ly/DP/datasets/RGBT-Tiny",
+  "k": 6,
+  "storage": "floor",
+  "ignored_drawn": false,
+  "counts": {
+    "train": {
+      "clips": 45,
+      "frames": 19135
+    },
+    "test": {
+      "clips": 15,
+      "frames": 5976
+    }
+  },
+  "total_pngs": 25111,
+  "mask_bytes": 20795632,
+  "sample_frames_recomputed": 180,
+  "ignored_skipped": 0,
+  "empty_boxes_skipped": 0,
+  "export_vanished_boxes": 0,
+  "test_targets": 11300,
+  "author_test_targets": 11303,
+  "test_clips_matching_author": 13,
+  "absolute_count_difference": 5,
+  "all_test_counts_match_selected_scan": true,
+  "counting_backend": "scipy.ndimage.label",
+  "connectivity": 8,
+  "reference_protocol": "/home/md0/ly/DP/datasets/RGBT-Tiny/mask_protocol/check.json",
+  "MASKS_json_sha256": "222352da77d98706cc5b2bb17c286df91d25bb8ca168aabf8857ad8f6e6d92b7",
+  "per_clip": {
+    "DJI_0030_9": {
+      "split": "train",
+      "frames": 590,
+      "mask_bytes": 1116337,
+      "fully_decoded_masks": 590,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 590,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 14,
+          "pixels_equal": true,
+          "png_sha256": "17d02290db87c79b6bef988a8a0dfd188cb92c7f2b49eee6f66988db8f03274b"
+        },
+        {
+          "frame": "00295.jpg",
+          "boxes": 14,
+          "pixels_equal": true,
+          "png_sha256": "485455e51016435ea13c23006a40fa22387ec94727fd207712e4187beb181425"
+        },
+        {
+          "frame": "00589.jpg",
+          "boxes": 14,
+          "pixels_equal": true,
+          "png_sha256": "c8b5c8dc17470c1f50f84e8b82152cc9b903cd761f68379bbc08e337ffefeac4"
+        }
+      ],
+      "boxes": 8260,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0043_2": {
+      "split": "train",
+      "frames": 380,
+      "mask_bytes": 2086094,
+      "fully_decoded_masks": 380,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 380,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 69,
+          "pixels_equal": true,
+          "png_sha256": "e4e1b88fd804e317d95f492ef99d0b59e425713ee06d26943e7528a54bf0c847"
+        },
+        {
+          "frame": "00190.jpg",
+          "boxes": 75,
+          "pixels_equal": true,
+          "png_sha256": "748a0db04be659beae29f0156c630e2ba156fae534160a75887a2e60aa3ddbd8"
+        },
+        {
+          "frame": "00379.jpg",
+          "boxes": 79,
+          "pixels_equal": true,
+          "png_sha256": "e9b34a648231bfcbe95991c9c92c96f0baefca8dba59462a0331a811ba72cd5b"
+        }
+      ],
+      "boxes": 28843,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0049_2": {
+      "split": "test",
+      "frames": 90,
+      "mask_bytes": 102177,
+      "fully_decoded_masks": 90,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 90,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 7,
+          "pixels_equal": true,
+          "png_sha256": "c86307debb779a73920bdccd7047da61f18e1400d59e12948712d68311859f8f"
+        },
+        {
+          "frame": "00045.jpg",
+          "boxes": 8,
+          "pixels_equal": true,
+          "png_sha256": "ec78bed78aa104f7b8c4c406e428966f1edc7244cce8261de98e2ef0bad9a634"
+        },
+        {
+          "frame": "00089.jpg",
+          "boxes": 8,
+          "pixels_equal": true,
+          "png_sha256": "8c6c1342a36bae42f4d8839501eac666149b539d83a416891dc18dc9249c84ec"
+        }
+      ],
+      "boxes": 692,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 602,
+      "expected_scan_targets": 602,
+      "author_targets": 602,
+      "difference_from_author": 0
+    },
+    "DJI_0057_1": {
+      "split": "train",
+      "frames": 560,
+      "mask_bytes": 513633,
+      "fully_decoded_masks": 560,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 560,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "6d860e5e315f1aea8236815f0b8b4ee367270ae9d9fb94b57112ca1bff0e05f7"
+        },
+        {
+          "frame": "00280.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "13ef37108cc37b1f595ab6e4b650e7d48716cfb44394c7ed81988f64bb6ff816"
+        },
+        {
+          "frame": "00559.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "36c111ea69cc6897c63240c48d1f660fbc8c21844e727b072de7c6dc982f8322"
+        }
+      ],
+      "boxes": 2129,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0069_1": {
+      "split": "train",
+      "frames": 420,
+      "mask_bytes": 480514,
+      "fully_decoded_masks": 420,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 420,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "1fdd667b7aea13663b6295f0c990448c74fc116c37b66645069db3954d0033e9"
+        },
+        {
+          "frame": "00210.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "ad26a660ac2ebeeaca3b2cb22945739fb7167a68c1acdd99d61f994faf834bb2"
+        },
+        {
+          "frame": "00419.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "4a0e26a64300517c4ec2319f979ce7906b19e239c2c3562da557b403d7e713d1"
+        }
+      ],
+      "boxes": 1260,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0081_2": {
+      "split": "train",
+      "frames": 350,
+      "mask_bytes": 840480,
+      "fully_decoded_masks": 350,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 350,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 18,
+          "pixels_equal": true,
+          "png_sha256": "f5db6f52ab39de0a576dc50ed5d630b2b8e0e0fc2ef52902900e15dc989a28c9"
+        },
+        {
+          "frame": "00175.jpg",
+          "boxes": 10,
+          "pixels_equal": true,
+          "png_sha256": "401ea10193cbf688ab7207d4914e0fce2ebcfd1016079ccd9f036c896096a172"
+        },
+        {
+          "frame": "00349.jpg",
+          "boxes": 13,
+          "pixels_equal": true,
+          "png_sha256": "000fb8dca75df8e1c986e08e22e4cdd6565827ba939d5af15481ca641a851abe"
+        }
+      ],
+      "boxes": 4605,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0101_2": {
+      "split": "train",
+      "frames": 120,
+      "mask_bytes": 60900,
+      "fully_decoded_masks": 120,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 120,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "ee0168963885fa2c8d492774fbf2339e1fefa75a96beb0444fe27723b0a92f94"
+        },
+        {
+          "frame": "00060.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "e300cc1bf43cab35e0c7583c63f8b39e5055238d5c1a42f049961da790615efe"
+        },
+        {
+          "frame": "00119.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "0c934ee9b89c5563f4182617ce30e150dd3941e04b8c1ec038290ea8cf7d27e2"
+        }
+      ],
+      "boxes": 120,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0107_1": {
+      "split": "train",
+      "frames": 70,
+      "mask_bytes": 36322,
+      "fully_decoded_masks": 70,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 70,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "da71675d6454d716d88800327e56502c331eb24f65512dc590b14979dc6afca1"
+        },
+        {
+          "frame": "00035.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "00b68907abfbc9d2147c6133c723afb5342187bcbd22ac15a9891bb64dd8e53b"
+        },
+        {
+          "frame": "00069.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "aa1a74401c79fc6a4967571e49e2fc4463c97b5110f1aeabffd92d750f63a184"
+        }
+      ],
+      "boxes": 70,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0109_1": {
+      "split": "test",
+      "frames": 90,
+      "mask_bytes": 45079,
+      "fully_decoded_masks": 90,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 90,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "a4b55704bab3b03c333f7ad62d2819f7bbd06c5376eea6e32850fdbc8825268d"
+        },
+        {
+          "frame": "00045.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "146f86d5f7bcec092891972d311ba7885a29fe362d687559a42702bcc0a63f20"
+        },
+        {
+          "frame": "00089.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "762a3d27ea617af71b80c9c5928053407ead2a47523e87d897bcac2f38f407b7"
+        }
+      ],
+      "boxes": 90,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 90,
+      "expected_scan_targets": 90,
+      "author_targets": 90,
+      "difference_from_author": 0
+    },
+    "DJI_0111_2": {
+      "split": "train",
+      "frames": 180,
+      "mask_bytes": 96475,
+      "fully_decoded_masks": 180,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 180,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "396e268764f2b75fac4df3456a280957a5ecdfa984aae7e2782d37d307dc7c61"
+        },
+        {
+          "frame": "00090.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "bcd4eaf3139fa1855f0ac204eac57343c65b3de9afbc02eee75c5a49a7449453"
+        },
+        {
+          "frame": "00179.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "90c117942f792c630cbed7111bb22497c6599d60b6ac71f71325073afa5395e3"
+        }
+      ],
+      "boxes": 180,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0113_3": {
+      "split": "train",
+      "frames": 330,
+      "mask_bytes": 171621,
+      "fully_decoded_masks": 330,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 330,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "64180e03e87becd2bb348069b131fb882b883200ad484d2c43bef8bb14450f87"
+        },
+        {
+          "frame": "00165.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "6b6f9fef136e6f8f51a28cb126634848b015f72b151b3c3f8b28dbe5de1e20b1"
+        },
+        {
+          "frame": "00329.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "610cab0ab2a80dd1caf9edf74a6bf2bf7ec1db2dfef102e9c01b03415dacffe8"
+        }
+      ],
+      "boxes": 330,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0115_2": {
+      "split": "train",
+      "frames": 290,
+      "mask_bytes": 290878,
+      "fully_decoded_masks": 290,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 290,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "f7d5c510146a13695d9468d5381e1fd04bf66b0189314ed7648e41bb26dae538"
+        },
+        {
+          "frame": "00145.jpg",
+          "boxes": 4,
+          "pixels_equal": true,
+          "png_sha256": "9b0e244cfbbdd995414f7637f65f3cece42bd985ea467cf921b8e8c1482fc595"
+        },
+        {
+          "frame": "00289.jpg",
+          "boxes": 4,
+          "pixels_equal": true,
+          "png_sha256": "f5328526fadc9c547d7e5f06463e55646b75bf14a8d455c8e940627ab70b6bed"
+        }
+      ],
+      "boxes": 1149,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0117_2": {
+      "split": "train",
+      "frames": 240,
+      "mask_bytes": 237017,
+      "fully_decoded_masks": 240,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 240,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "580b995bbea91e1882b300178230811e178a3e97dd3ef052c6c8f0043a27cddc"
+        },
+        {
+          "frame": "00120.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "45c6b5a1f60c0410f19beedb89f50c341606285bff462dc38c492adfb93bf6f3"
+        },
+        {
+          "frame": "00239.jpg",
+          "boxes": 4,
+          "pixels_equal": true,
+          "png_sha256": "df76c0ffcc63c8231620923c161fe58709d8fcd632d693f0e8de0361d82db910"
+        }
+      ],
+      "boxes": 829,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0119_2": {
+      "split": "test",
+      "frames": 180,
+      "mask_bytes": 114241,
+      "fully_decoded_masks": 180,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 180,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "736e5b6bdf49759ce1061295db0ab368cc1b296222393ca34eb324b8951285bd"
+        },
+        {
+          "frame": "00090.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "5999e9df6ced4331777aab4c325e63c7703454803a9fe1743741075e0df7139a"
+        },
+        {
+          "frame": "00179.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "34078e37bb6fdbe0e961eb90410468a58dae835b7eaa1165a45d7a161665d3b4"
+        }
+      ],
+      "boxes": 360,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 360,
+      "expected_scan_targets": 360,
+      "author_targets": 360,
+      "difference_from_author": 0
+    },
+    "DJI_0121_2": {
+      "split": "train",
+      "frames": 350,
+      "mask_bytes": 351818,
+      "fully_decoded_masks": 350,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 350,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 6,
+          "pixels_equal": true,
+          "png_sha256": "1191b423608dd941f0078f3543e8988c895a0d1c422cedfd3969e54a3ac0f7f8"
+        },
+        {
+          "frame": "00175.jpg",
+          "boxes": 6,
+          "pixels_equal": true,
+          "png_sha256": "6e7833fc73f874cbe39c8d0f762b25a5d4bd002aca831fc215831ecd98fecac3"
+        },
+        {
+          "frame": "00349.jpg",
+          "boxes": 6,
+          "pixels_equal": true,
+          "png_sha256": "c12ca23ac4c3be8313204c9c1348d784c92d2e9100734fa401bc95f960c819a4"
+        }
+      ],
+      "boxes": 2100,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0123_6": {
+      "split": "train",
+      "frames": 310,
+      "mask_bytes": 162830,
+      "fully_decoded_masks": 310,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 242,
+      "empty_masks": 68,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        },
+        {
+          "frame": "00155.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "e822d89fe91093e20c86af1df3186b6596bf04463da8a201247f7ac5147a719f"
+        },
+        {
+          "frame": "00309.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "347781c205f23db051eab0c0167a7f31950de45454aed511bb8656fa548dff39"
+        }
+      ],
+      "boxes": 242,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0125_1": {
+      "split": "train",
+      "frames": 440,
+      "mask_bytes": 209318,
+      "fully_decoded_masks": 440,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 317,
+      "empty_masks": 123,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        },
+        {
+          "frame": "00220.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "910a8740e2a9a899ab3b5f054cc26f47e6bf426ada722a191eceb97b239ec722"
+        },
+        {
+          "frame": "00439.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "f501a53d4110fa9fcc18bc55337df722813ac42318b1c3d77c4c2d81da105bda"
+        }
+      ],
+      "boxes": 317,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0127_1": {
+      "split": "train",
+      "frames": 500,
+      "mask_bytes": 249250,
+      "fully_decoded_masks": 500,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 500,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "fb17f626990862cd062d58c5ebb1d86f6b4a3775b3d0041db33221fa672468ce"
+        },
+        {
+          "frame": "00250.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "6e3cf8b30f487c25f30d01271559e12449f1a0e2cb81eba44eba96691c094272"
+        },
+        {
+          "frame": "00499.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "eab6e2476203adf3dfb7067579da54ae705de08b7e291355d6420918f4e46999"
+        }
+      ],
+      "boxes": 500,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0129_2": {
+      "split": "test",
+      "frames": 590,
+      "mask_bytes": 298165,
+      "fully_decoded_masks": 590,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 590,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "40bc8f91d106d9dbcf9c8353ca710c5e6769872117e374ffedca46c8ca4982ee"
+        },
+        {
+          "frame": "00295.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "12d05b21034d4bd419d094803e363ef42d0badd91a622f8174a9773e60e41fd0"
+        },
+        {
+          "frame": "00589.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "9e8bf26eb9c49431dbb478ad887669493513c3273009b81cfa1f07f20130114f"
+        }
+      ],
+      "boxes": 590,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 590,
+      "expected_scan_targets": 590,
+      "author_targets": 590,
+      "difference_from_author": 0
+    },
+    "DJI_0131_2": {
+      "split": "train",
+      "frames": 550,
+      "mask_bytes": 274956,
+      "fully_decoded_masks": 550,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 540,
+      "empty_masks": 10,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "4a54cd86133d74e36f22d1f5350e21b84be16b2dbbe7c5add8250046b5d50bd0"
+        },
+        {
+          "frame": "00275.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "c5e4d6d4b424ceaa8bcbe5b9d97ef5a8de62b228a323463b3175d9335bf5c417"
+        },
+        {
+          "frame": "00549.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        }
+      ],
+      "boxes": 540,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0143_1": {
+      "split": "train",
+      "frames": 430,
+      "mask_bytes": 211049,
+      "fully_decoded_masks": 430,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 430,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "e87db072e657722fcd9641bf2f2807c0edd7a7191a96217ba7b9e080ab4c512a"
+        },
+        {
+          "frame": "00215.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "7d27c41f81bda6c6755cb755cb5942585e8075650db17cb13fcc42ed404be4e2"
+        },
+        {
+          "frame": "00429.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "c28bdaa9fbc92c60f6fb8a1793f8e768a8710d22e31a53d8a9edf1a8c429b7ba"
+        }
+      ],
+      "boxes": 430,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0145_1": {
+      "split": "train",
+      "frames": 280,
+      "mask_bytes": 139259,
+      "fully_decoded_masks": 280,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 280,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "7d63e457a34cbdd7bc32701752a2d439a0ef15de13c06b493e6e191ff98f3fa9"
+        },
+        {
+          "frame": "00140.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "dc36c8a395286899159aed0cd216c65ec03379ebad766389f8e3c8c9823fdd2b"
+        },
+        {
+          "frame": "00279.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "862e3ed2bcec41c367c9393d7377b335db8d9a3d1fb57cb860fbd0b6ff73a6ad"
+        }
+      ],
+      "boxes": 280,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0155_2": {
+      "split": "test",
+      "frames": 410,
+      "mask_bytes": 205638,
+      "fully_decoded_masks": 410,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 410,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "d8e636e2ede367941328281ead09c7db83d7fe850eff64ae867ff579a684ac0c"
+        },
+        {
+          "frame": "00205.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "4d9c2a879493d1c82baf85f10e797ff7c749a6f7dd2851d82bc673b2caf8d845"
+        },
+        {
+          "frame": "00409.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "81aa56fa0da5687e45aa6638fc42312f858867830f504f7c33341c0bb7b9cd23"
+        }
+      ],
+      "boxes": 410,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 410,
+      "expected_scan_targets": 410,
+      "author_targets": 410,
+      "difference_from_author": 0
+    },
+    "DJI_0157_2": {
+      "split": "train",
+      "frames": 470,
+      "mask_bytes": 234315,
+      "fully_decoded_masks": 470,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 446,
+      "empty_masks": 24,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "6283218013eda2572a760ecad1d57081b05e5a9f4f2db57735673452ac84dbf3"
+        },
+        {
+          "frame": "00235.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "5df3b9f2eb92128ac04179e3879180c17574a77651815fb9d2077f3eb006232e"
+        },
+        {
+          "frame": "00469.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "168dfd87eb0cc431acbdcb9fafaafefc3d91ab94a31e6d2a2f7d55fa530b561f"
+        }
+      ],
+      "boxes": 446,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0159_2": {
+      "split": "test",
+      "frames": 250,
+      "mask_bytes": 122462,
+      "fully_decoded_masks": 250,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 250,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "f01d527165e3bb046c3654eac4db2a27dfca032d3f3d58ca930d94c462f87386"
+        },
+        {
+          "frame": "00125.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "e0276edcbddbbb6e68b09fa20b0a8d1d46199ebd6dc8e67897de4fcaf221aead"
+        },
+        {
+          "frame": "00249.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "29e8f6b018f8b614280a217c85f1594c728f499e07f2bbb7150d64430df09598"
+        }
+      ],
+      "boxes": 250,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 250,
+      "expected_scan_targets": 250,
+      "author_targets": 250,
+      "difference_from_author": 0
+    },
+    "DJI_0163_1": {
+      "split": "train",
+      "frames": 470,
+      "mask_bytes": 238194,
+      "fully_decoded_masks": 470,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 466,
+      "empty_masks": 4,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "2c6ae038d017a00e96f0f57b275d6a7f6da31c7030b2b5bdf0b2f30b72dea76e"
+        },
+        {
+          "frame": "00235.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "0ed97af08f697ea9b1e833687bfb23bf8ce60e279dcbfc15c8b1e0112c68b90b"
+        },
+        {
+          "frame": "00469.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "84578d98cb27101a7622642d1eb92d19e489bb82caddb284c914177694d5b145"
+        }
+      ],
+      "boxes": 466,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0173_2": {
+      "split": "test",
+      "frames": 450,
+      "mask_bytes": 242721,
+      "fully_decoded_masks": 450,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 450,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "dfd2c271b403de0d3520aff96c3e7edb8f337a982d9d1f00e9713da2c1897dc1"
+        },
+        {
+          "frame": "00225.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "ba7b9126db8a73a2ecfc3cb9764c070ccd3da2f6501995e8ba7fedc5621cb760"
+        },
+        {
+          "frame": "00449.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "69bf7fcacc603408ced620e6866c37e291257b69c69488f52581f0a27d3b2d5c"
+        }
+      ],
+      "boxes": 450,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 450,
+      "expected_scan_targets": 450,
+      "author_targets": 450,
+      "difference_from_author": 0
+    },
+    "DJI_0175_2": {
+      "split": "train",
+      "frames": 450,
+      "mask_bytes": 226925,
+      "fully_decoded_masks": 450,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 450,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "1bcd25e5977af0c3a4406a76bb5ceef3adab53fa63b7b4351a39d2f484b30122"
+        },
+        {
+          "frame": "00225.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "ae66ebb3869b6b39517cb95498cc198ce78c7f5831fc24a659aa4d47e1c1942e"
+        },
+        {
+          "frame": "00449.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "5cd30a079ec748a9f8529881d3205466c08f0f23b50c80627ba0436427ed7848"
+        }
+      ],
+      "boxes": 450,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0177_2": {
+      "split": "train",
+      "frames": 360,
+      "mask_bytes": 176970,
+      "fully_decoded_masks": 360,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 360,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "c14227c7a1e8b2ac0bb08f3ca5132083dab86c80e244642f1b5aa248393ddf8d"
+        },
+        {
+          "frame": "00180.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "b6747cf5db48fb8da21c080cdd32ad75c7b8b36f635532324f7b86ad2b94584f"
+        },
+        {
+          "frame": "00359.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "e94c88b0ed2f196d1f840e9d3c24f54aaa82e873e29103acc6e8f0712963dcc8"
+        }
+      ],
+      "boxes": 360,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0217_2": {
+      "split": "train",
+      "frames": 380,
+      "mask_bytes": 380342,
+      "fully_decoded_masks": 380,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 380,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "3b8e18a12aee4c0929f13bad44a2f3c715f66cfac343a8092f8bf07186230831"
+        },
+        {
+          "frame": "00190.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "899d9b0201dac5f24012eeee88adbf28ce28d7d87a02a985da3e08b0bf69b967"
+        },
+        {
+          "frame": "00379.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "6bd0688db9a9d0100a854ac13b50a68cf858187063e3870aecf7eb54ee4e6e2d"
+        }
+      ],
+      "boxes": 1103,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0221_2": {
+      "split": "test",
+      "frames": 590,
+      "mask_bytes": 335850,
+      "fully_decoded_masks": 590,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 590,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "4e86f21fa2eb71a3339f00fdd449b97d654d447c88cc4b24da3cb1cba2cf845d"
+        },
+        {
+          "frame": "00295.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "8bed6c915bd1b92c4347767789013bf148add376c3a71ff757538c8c5585b00e"
+        },
+        {
+          "frame": "00589.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "0bd5fdd99a5333cac33029483ba9258b260c8338d8f58fbce0f0a7ca6d11a737"
+        }
+      ],
+      "boxes": 697,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 697,
+      "expected_scan_targets": 697,
+      "author_targets": 697,
+      "difference_from_author": 0
+    },
+    "DJI_0229_2": {
+      "split": "train",
+      "frames": 480,
+      "mask_bytes": 1023528,
+      "fully_decoded_masks": 480,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 480,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 12,
+          "pixels_equal": true,
+          "png_sha256": "a3bc2f56434a61bd659a1ea65b235bf6d7266edf6497b189980a7ea76cabcb55"
+        },
+        {
+          "frame": "00240.jpg",
+          "boxes": 13,
+          "pixels_equal": true,
+          "png_sha256": "b585d621379a95487186421c7ce5a85d4e40b0a6b2f68ee9e94903d782efbba4"
+        },
+        {
+          "frame": "00479.jpg",
+          "boxes": 13,
+          "pixels_equal": true,
+          "png_sha256": "8927c8ae6628ebfbc35fc1547bfdb7c9945026aedf861e40d3012a20b777dde1"
+        }
+      ],
+      "boxes": 6393,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0237_2": {
+      "split": "test",
+      "frames": 410,
+      "mask_bytes": 642938,
+      "fully_decoded_masks": 410,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 410,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 11,
+          "pixels_equal": true,
+          "png_sha256": "f0aaf8d43284ec2f5eef9aa7d0e0d05cc49b856e19ece341b02b7cd31bcda441"
+        },
+        {
+          "frame": "00205.jpg",
+          "boxes": 9,
+          "pixels_equal": true,
+          "png_sha256": "56fc9a4944d5c96b8d4cb6656cdb1b6c1545e46b61fbd71f69bd16b8d8cf36ed"
+        },
+        {
+          "frame": "00409.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "be293b542e79a2acae22d8a1142b46ef1e0ebe5d6a5cbdc32c3854758b8f0b44"
+        }
+      ],
+      "boxes": 3717,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 2943,
+      "expected_scan_targets": 2943,
+      "author_targets": 2947,
+      "difference_from_author": -4
+    },
+    "DJI_0241_2": {
+      "split": "train",
+      "frames": 510,
+      "mask_bytes": 494495,
+      "fully_decoded_masks": 510,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 510,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 7,
+          "pixels_equal": true,
+          "png_sha256": "433b842dff702a095d1bfd460e6ea315e9206e6f97446d82dc1c5672c9af2dbf"
+        },
+        {
+          "frame": "00255.jpg",
+          "boxes": 6,
+          "pixels_equal": true,
+          "png_sha256": "ac230c02b235f53426e2ac884036f048be0693017b912fa9ae3587d0cc7d109a"
+        },
+        {
+          "frame": "00509.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "505c131a04aa7d7cfd6cc9a92ea434d3dc19224e339a7b7faf895849af7a61a5"
+        }
+      ],
+      "boxes": 1957,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0243_2": {
+      "split": "train",
+      "frames": 340,
+      "mask_bytes": 284054,
+      "fully_decoded_masks": 340,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 340,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "f0742c00e831401c32a24bed1791b019684155a4669631ed3418382261519e35"
+        },
+        {
+          "frame": "00170.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "d028cfdf3669ee296b1311fbeaff016dee23f201ed6acb61b250871ff7bc03fa"
+        },
+        {
+          "frame": "00339.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "c4dca655fb8b072329a22dc5f01e5c76ebba6e8980411f32f13fefa12bb2c069"
+        }
+      ],
+      "boxes": 668,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0253_1": {
+      "split": "train",
+      "frames": 1090,
+      "mask_bytes": 710447,
+      "fully_decoded_masks": 1090,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 1090,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "85514b59b4e0d39da295fbdbbae17a3ea9a1b235358f122f1fe8801be934ada7"
+        },
+        {
+          "frame": "00545.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "912ee106c900af6f4b2835a459d044e6728dba72b4aa8ce7d73d2b3217039f4b"
+        },
+        {
+          "frame": "01089.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "1375dc01e171cf23bf6b0daab85d8f9c0dc5eb1d5a1baa6539524c8812468513"
+        }
+      ],
+      "boxes": 2180,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0253_2": {
+      "split": "train",
+      "frames": 580,
+      "mask_bytes": 335663,
+      "fully_decoded_masks": 580,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 580,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "50ce81ddaecea4d3792100fcadb4c59f4254f5bc15fa424c2639eec179a58277"
+        },
+        {
+          "frame": "00290.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "b8fad3d89e665987e756f27225bd75f701cdd0c0552a8be8089d88acc6bf16aa"
+        },
+        {
+          "frame": "00579.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "0740ef07f8d82d9644bad4f31f9631a4f86c83e8448c5748505aeadf53e4ff57"
+        }
+      ],
+      "boxes": 1051,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0253_3": {
+      "split": "train",
+      "frames": 520,
+      "mask_bytes": 292943,
+      "fully_decoded_masks": 520,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 482,
+      "empty_masks": 38,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "d5565d79e86642cbde9e50e32a24b85c3155d6401fd0d41b9c0d1ff993ef994c"
+        },
+        {
+          "frame": "00260.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "553c6a53e996b64cdc8839a6e9500ee4e06b014c78097c66ed07ae631e8969db"
+        },
+        {
+          "frame": "00519.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        }
+      ],
+      "boxes": 797,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0255_1": {
+      "split": "test",
+      "frames": 600,
+      "mask_bytes": 301943,
+      "fully_decoded_masks": 600,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 600,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "1d9f0b38e6ba9ccc94dbbc53269104f8120c1e93a36507413c26f4b4a91fcc38"
+        },
+        {
+          "frame": "00300.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "bd0c3bc25bdfbce28b19642e32837c2f82548644a190b32a8b5a440cf1713b04"
+        },
+        {
+          "frame": "00599.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "86efebca16f21cf0adb6d01ebf72f73d3c1f96e6a28557c81e1552ef811b7e64"
+        }
+      ],
+      "boxes": 600,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 600,
+      "expected_scan_targets": 600,
+      "author_targets": 600,
+      "difference_from_author": 0
+    },
+    "DJI_0257_2": {
+      "split": "test",
+      "frames": 590,
+      "mask_bytes": 401845,
+      "fully_decoded_masks": 590,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 590,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "92360b86a97e0028e98d1d05b5b501b6a27bfe7b34de57a65d6ab1c99473a432"
+        },
+        {
+          "frame": "00295.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "4193b2be5eddfc1a9d6a254cacc3272dacf4248db6a11c5be383d3493be559e4"
+        },
+        {
+          "frame": "00589.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "6898ccfdf0477557a9bdbc2b7f00a3bab9f0a64f4c5ff186b3dbcf6f97731e6d"
+        }
+      ],
+      "boxes": 1126,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 1126,
+      "expected_scan_targets": 1126,
+      "author_targets": 1126,
+      "difference_from_author": 0
+    },
+    "DJI_0257_5": {
+      "split": "train",
+      "frames": 260,
+      "mask_bytes": 144947,
+      "fully_decoded_masks": 260,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 260,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "a47134cc78c4cbba0648226cf56d8d2ac7206f6444fcf7dbfaf89d71a4222629"
+        },
+        {
+          "frame": "00130.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "e594181415e6c46f6f681af4c9243356d5f4a5aabf9c78c9b1b925012d738f98"
+        },
+        {
+          "frame": "00259.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "32070c54ab40a9c450275ef8438bbe07a606c327a8f2c0676c908d662bfd20a4"
+        }
+      ],
+      "boxes": 425,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0271_2": {
+      "split": "train",
+      "frames": 70,
+      "mask_bytes": 63223,
+      "fully_decoded_masks": 70,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 69,
+      "empty_masks": 1,
+      "sample_recomputations": [
+        {
+          "frame": "00013.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "101312f81cfc92169713bcd9dfb06557768076d605a53e5aeb3f482076eabbf7"
+        },
+        {
+          "frame": "00048.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "9c1922b658b7012698c710227a1a1f22a480a7af95d6405ee04b93b6a6cfc99d"
+        },
+        {
+          "frame": "00082.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        }
+      ],
+      "boxes": 335,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0273_1": {
+      "split": "train",
+      "frames": 1213,
+      "mask_bytes": 774163,
+      "fully_decoded_masks": 1213,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 1213,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00300.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "24d1ac5224210a81c759b538f91362edaa463fb169fbff7a909b725de4bd3277"
+        },
+        {
+          "frame": "00906.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "f607a9953fbf5a2d6df3b1ceebce27cab62d2399d52c6760c41e7b875187db8e"
+        },
+        {
+          "frame": "01512.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "84386290ef476e60ecbb8cfe875c867d3b4776a6a3a46c021e5fa17e29995e9a"
+        }
+      ],
+      "boxes": 3637,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0277_1": {
+      "split": "train",
+      "frames": 550,
+      "mask_bytes": 472490,
+      "fully_decoded_masks": 550,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 550,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00274.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "634eed60653f84c2c735d1ec7b30950c640d65518a136c689711ef8392f5d04d"
+        },
+        {
+          "frame": "00549.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "6eacc1a3c33db4dfc93f0d9812b66caf4ac82af0e02350534026e5e51440ee89"
+        },
+        {
+          "frame": "00823.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "418aa3de01529d5ada669a0e0aef94d125f6c70b34aff0a0fb604f8bd93a1835"
+        }
+      ],
+      "boxes": 1189,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0277_2": {
+      "split": "test",
+      "frames": 366,
+      "mask_bytes": 245936,
+      "fully_decoded_masks": 366,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 332,
+      "empty_masks": 34,
+      "sample_recomputations": [
+        {
+          "frame": "00843.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "bab2163baa8292d80c3482f9a2614b0596f69ae2913ad1e2a91750f1c827ddf5"
+        },
+        {
+          "frame": "01026.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "4568de22b4c8b393938b51d471f95a3b5a225373669f0127e46c12778a43831e"
+        },
+        {
+          "frame": "01208.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        }
+      ],
+      "boxes": 985,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 985,
+      "expected_scan_targets": 985,
+      "author_targets": 985,
+      "difference_from_author": 0
+    },
+    "DJI_0285_3": {
+      "split": "train",
+      "frames": 182,
+      "mask_bytes": 91176,
+      "fully_decoded_masks": 182,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 182,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00422.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "7bb5c1cfd1b17f24ddbb9b17f94e93565ccac1f622447455b19350fc8a2c12d6"
+        },
+        {
+          "frame": "00513.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "6bed3f58200afe64bc349b6cbb6b910278f9a4820da849d68ad68f1dda057385"
+        },
+        {
+          "frame": "00603.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "2d008eca98332251ab1c50b89e25ce031c3f2df3021dd322209023d2edbbc497"
+        }
+      ],
+      "boxes": 182,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0287_1": {
+      "split": "train",
+      "frames": 273,
+      "mask_bytes": 163995,
+      "fully_decoded_masks": 273,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 246,
+      "empty_masks": 27,
+      "sample_recomputations": [
+        {
+          "frame": "00331.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        },
+        {
+          "frame": "00467.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "844090fa68f4d4b8842c7518ddef3010bcd353cba6927edcc553a3f34c29e929"
+        },
+        {
+          "frame": "00603.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "b3b74a9edd10b06c924fcb944c9806d24af13438a5faae7844660c8ac2df8c8c"
+        }
+      ],
+      "boxes": 388,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0287_2": {
+      "split": "train",
+      "frames": 490,
+      "mask_bytes": 249044,
+      "fully_decoded_masks": 490,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 411,
+      "empty_masks": 79,
+      "sample_recomputations": [
+        {
+          "frame": "00623.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "c7b7bf55c78e891d5af68b936819fa4f5ce8887d342785c321af7d2637ab1c9d"
+        },
+        {
+          "frame": "00868.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "4f5c509ce207adf90a4e924552281725a87fe7c5dcff18994995e4824ead0ac3"
+        },
+        {
+          "frame": "01112.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        }
+      ],
+      "boxes": 411,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0293_1": {
+      "split": "train",
+      "frames": 363,
+      "mask_bytes": 173082,
+      "fully_decoded_masks": 363,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 273,
+      "empty_masks": 90,
+      "sample_recomputations": [
+        {
+          "frame": "00001.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "d5822cbd5836512486997b38369c8b719c266d2651de3f5a638a7c9acb23c25d"
+        },
+        {
+          "frame": "00182.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        },
+        {
+          "frame": "00363.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "c0422b1558ec7382d8c56a937bb6027cfe2fd88b6609842657bf099bd89f9150"
+        }
+      ],
+      "boxes": 273,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0295_3": {
+      "split": "train",
+      "frames": 550,
+      "mask_bytes": 371928,
+      "fully_decoded_masks": 550,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 550,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00000.jpg",
+          "boxes": 7,
+          "pixels_equal": true,
+          "png_sha256": "c759e2fb8f2674f717691cca8da3631bd5c437b90d5d8dab0fbc5d78b0eff456"
+        },
+        {
+          "frame": "00275.jpg",
+          "boxes": 6,
+          "pixels_equal": true,
+          "png_sha256": "748063e1d829f7d9a07e40507c18967f3ea4e00f1365bc5c5098da3e44d04f60"
+        },
+        {
+          "frame": "00549.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "854c13f15796b03ba37f3cc9b86766a7500ad9f6ab0cde5613133293afe43987"
+        }
+      ],
+      "boxes": 2973,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0303_2": {
+      "split": "test",
+      "frames": 577,
+      "mask_bytes": 411234,
+      "fully_decoded_masks": 577,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 561,
+      "empty_masks": 16,
+      "sample_recomputations": [
+        {
+          "frame": "00172.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "90137c69d369f06f95f7c2b095d34266cbce192ed100286fe4bed41395e2567c"
+        },
+        {
+          "frame": "00460.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "2b0bc912ab00e536c564413579a5ea28050659b56f75c72233e5bcc1b628aca2"
+        },
+        {
+          "frame": "00748.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "403a8a3e3d4c7671c60c6f349ca74ed996696ad77a156f038c3977074d1684db"
+        }
+      ],
+      "boxes": 1487,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 986,
+      "expected_scan_targets": 986,
+      "author_targets": 985,
+      "difference_from_author": 1
+    },
+    "DJI_0305_3": {
+      "split": "train",
+      "frames": 333,
+      "mask_bytes": 222086,
+      "fully_decoded_masks": 333,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 333,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00556.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "6efa28599880f0b6b6d0eddb81cff67e9beb0bdb8f6e0f8975baf6a8faf0d3f9"
+        },
+        {
+          "frame": "00722.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "b01dd4fa5332318cd057859c715db380c7acacabb77e49c2485bbfe7d0a503d8"
+        },
+        {
+          "frame": "00888.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "d0af3f207950dfea359a1601e4cdf9eb3138edd2910d860cda5fb35ce83cfc22"
+        }
+      ],
+      "boxes": 1005,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0305_7": {
+      "split": "train",
+      "frames": 340,
+      "mask_bytes": 239106,
+      "fully_decoded_masks": 340,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 304,
+      "empty_masks": 36,
+      "sample_recomputations": [
+        {
+          "frame": "01785.jpg",
+          "boxes": 4,
+          "pixels_equal": true,
+          "png_sha256": "76a4b1be16d33f155b948ee1287e18c9550da3638345cf136b24c77ea031e517"
+        },
+        {
+          "frame": "01955.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        },
+        {
+          "frame": "02124.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "b52850da9bcfed6c5f5193d4b0e7cbb893d69830c1dcf12c2050d1caf71e95b7"
+        }
+      ],
+      "boxes": 953,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0307_1": {
+      "split": "train",
+      "frames": 250,
+      "mask_bytes": 134367,
+      "fully_decoded_masks": 250,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 151,
+      "empty_masks": 99,
+      "sample_recomputations": [
+        {
+          "frame": "00001.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "ed8475887bcc6dccbf71cc67afb3bbba416bfddb1c97bdccc7aa93a2f7dfc7a8"
+        },
+        {
+          "frame": "00126.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "7f88917cc951e771a3dd369f10df4345d27b39f2029ea2c448e7d83b9c170849"
+        },
+        {
+          "frame": "00250.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        }
+      ],
+      "boxes": 452,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0307_2": {
+      "split": "test",
+      "frames": 180,
+      "mask_bytes": 91068,
+      "fully_decoded_masks": 180,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 161,
+      "empty_masks": 19,
+      "sample_recomputations": [
+        {
+          "frame": "00678.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        },
+        {
+          "frame": "00768.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "3620b08ffdcacb09bd966929edcc86c50931c511d807672d76b701468c5ec01d"
+        },
+        {
+          "frame": "00857.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "8fc30b9054518a6c2fbe92545b6dc9d5de46f4134706cbb4cf1e40f5faf090fd"
+        }
+      ],
+      "boxes": 161,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 161,
+      "expected_scan_targets": 161,
+      "author_targets": 161,
+      "difference_from_author": 0
+    },
+    "DJI_0309_1": {
+      "split": "train",
+      "frames": 432,
+      "mask_bytes": 208433,
+      "fully_decoded_masks": 432,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 325,
+      "empty_masks": 107,
+      "sample_recomputations": [
+        {
+          "frame": "00001.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "2fcf55734b1a2a6ce5b5102d73af1071241e139a3a109ccbbf7f28f6e27fe045"
+        },
+        {
+          "frame": "00217.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "a7beff3636b445205e7c33ba1cc839635eec9d7ebd4fe92da48e63889c5f84fd"
+        },
+        {
+          "frame": "00432.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "a73a901ec2fe0164689bfb1b886ca05b2fd788754f0ccd22ed69b91b0f4effea"
+        }
+      ],
+      "boxes": 427,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0309_2": {
+      "split": "train",
+      "frames": 598,
+      "mask_bytes": 344836,
+      "fully_decoded_masks": 598,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 326,
+      "empty_masks": 272,
+      "sample_recomputations": [
+        {
+          "frame": "00452.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "2f6a4d05c0b8968f3359ce613fb4d92c96cf05f4b8047b5e2634b551c5281dc2"
+        },
+        {
+          "frame": "00751.jpg",
+          "boxes": 0,
+          "pixels_equal": true,
+          "png_sha256": "700dee90ec86a83133bac986fba383112f64d681f68584ef3daf74cc81fcb2d2"
+        },
+        {
+          "frame": "01049.jpg",
+          "boxes": 3,
+          "pixels_equal": true,
+          "png_sha256": "3d720f6f208c9b36d995073fa28040348ce52a785c4a8c2165e534e039e0e6b2"
+        }
+      ],
+      "boxes": 972,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0309_4": {
+      "split": "test",
+      "frames": 603,
+      "mask_bytes": 366753,
+      "fully_decoded_masks": 603,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 601,
+      "empty_masks": 2,
+      "sample_recomputations": [
+        {
+          "frame": "01682.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "2418bee13b4b3c449f2dcd2d5b01dccbc05238787183a932e115e91e89f56509"
+        },
+        {
+          "frame": "01983.jpg",
+          "boxes": 1,
+          "pixels_equal": true,
+          "png_sha256": "176eb1e46d65443543b6fc9163727fe1c083bc615b58891d5f7008afe9dd1253"
+        },
+        {
+          "frame": "02284.jpg",
+          "boxes": 2,
+          "pixels_equal": true,
+          "png_sha256": "128e899283b656b33f8a312e609c89d97bbfc93381f961d211762a4ff40df9ff"
+        }
+      ],
+      "boxes": 1050,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": 1050,
+      "expected_scan_targets": 1050,
+      "author_targets": 1050,
+      "difference_from_author": 0
+    },
+    "DJI_0319_2": {
+      "split": "train",
+      "frames": 598,
+      "mask_bytes": 702561,
+      "fully_decoded_masks": 598,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 598,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00445.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "838fe9b9121e806aafb4442fe05fdeb741b296f61a577864a26d8bc2c7b85ffd"
+        },
+        {
+          "frame": "00744.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "eaecfc9fcfb2e2eee03c38c9b15560a0ee421bb76f67612b34287e69fe0692e5"
+        },
+        {
+          "frame": "01042.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "13d335ea93a3b48f082a3777c3ab9b073064c3a640ea71f6e2aa28d6f0c13a5f"
+        }
+      ],
+      "boxes": 2898,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    },
+    "DJI_0323_2": {
+      "split": "train",
+      "frames": 593,
+      "mask_bytes": 585518,
+      "fully_decoded_masks": 593,
+      "image_mask_names_match": true,
+      "mode": "L",
+      "dtype": "uint8",
+      "size_wh": [
+        640,
+        512
+      ],
+      "images_are_regular_files": true,
+      "masks_with_intermediate_gray_values": 593,
+      "empty_masks": 0,
+      "sample_recomputations": [
+        {
+          "frame": "00234.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "f447dc0b41caa66d37c5039e5e7adcc4ccf7cf00820cc0fd741217d061065a6b"
+        },
+        {
+          "frame": "00530.jpg",
+          "boxes": 5,
+          "pixels_equal": true,
+          "png_sha256": "1eac74e5c125b0bc28152dab941130e6979bc1aaad5bb130d395725112db4bb4"
+        },
+        {
+          "frame": "00826.jpg",
+          "boxes": 6,
+          "pixels_equal": true,
+          "png_sha256": "3c341d22b3cef45ffe0f3ad1dfb613d10b0504a7de37cc0da186f1280d4eaaee"
+        }
+      ],
+      "boxes": 3056,
+      "ignored_skipped": 0,
+      "empty_skipped": 0,
+      "export_vanished": 0,
+      "test_targets": null,
+      "expected_scan_targets": null,
+      "author_targets": null,
+      "difference_from_author": null
+    }
+  }
+}

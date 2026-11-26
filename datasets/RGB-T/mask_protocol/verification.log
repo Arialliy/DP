@@ -1,0 +1,95 @@
+PASS DJI_0030_9: 590 masks
+PASS DJI_0043_2: 380 masks
+PASS DJI_0057_1: 560 masks
+PASS DJI_0069_1: 420 masks
+PASS DJI_0081_2: 350 masks
+PASS DJI_0101_2: 120 masks
+PASS DJI_0107_1: 70 masks
+PASS DJI_0111_2: 180 masks
+PASS DJI_0113_3: 330 masks
+PASS DJI_0115_2: 290 masks
+PASS DJI_0117_2: 240 masks
+PASS DJI_0121_2: 350 masks
+PASS DJI_0123_6: 310 masks
+PASS DJI_0125_1: 440 masks
+PASS DJI_0127_1: 500 masks
+PASS DJI_0131_2: 550 masks
+PASS DJI_0143_1: 430 masks
+PASS DJI_0145_1: 280 masks
+PASS DJI_0157_2: 470 masks
+PASS DJI_0163_1: 470 masks
+PASS DJI_0175_2: 450 masks
+PASS DJI_0177_2: 360 masks
+PASS DJI_0217_2: 380 masks
+PASS DJI_0229_2: 480 masks
+PASS DJI_0241_2: 510 masks
+PASS DJI_0243_2: 340 masks
+PASS DJI_0253_1: 1090 masks
+PASS DJI_0253_2: 580 masks
+PASS DJI_0253_3: 520 masks
+PASS DJI_0257_5: 260 masks
+PASS DJI_0271_2: 70 masks
+PASS DJI_0273_1: 1213 masks
+PASS DJI_0277_1: 550 masks
+PASS DJI_0285_3: 182 masks
+PASS DJI_0287_1: 273 masks
+PASS DJI_0287_2: 490 masks
+PASS DJI_0293_1: 363 masks
+PASS DJI_0295_3: 550 masks
+PASS DJI_0305_3: 333 masks
+PASS DJI_0305_7: 340 masks
+PASS DJI_0307_1: 250 masks
+PASS DJI_0309_1: 432 masks
+PASS DJI_0309_2: 598 masks
+PASS DJI_0319_2: 598 masks
+PASS DJI_0323_2: 593 masks
+PASS DJI_0049_2: 90 masks, test targets=602
+PASS DJI_0109_1: 90 masks, test targets=90
+PASS DJI_0119_2: 180 masks, test targets=360
+PASS DJI_0129_2: 590 masks, test targets=590
+PASS DJI_0155_2: 410 masks, test targets=410
+PASS DJI_0159_2: 250 masks, test targets=250
+PASS DJI_0173_2: 450 masks, test targets=450
+PASS DJI_0221_2: 590 masks, test targets=697
+PASS DJI_0237_2: 410 masks, test targets=2943
+PASS DJI_0255_1: 600 masks, test targets=600
+PASS DJI_0257_2: 590 masks, test targets=1126
+PASS DJI_0277_2: 366 masks, test targets=985
+PASS DJI_0303_2: 577 masks, test targets=986
+PASS DJI_0307_2: 180 masks, test targets=161
+PASS DJI_0309_4: 603 masks, test targets=1050
+{
+  "status": "passed",
+  "completed_at": "2026-11-26T15:07:37.216059+08:00",
+  "root": "/home/md0/ly/DP/datasets/RGB-T",
+  "source": "/home/md0/ly/DP/datasets/RGBT-Tiny",
+  "k": 6,
+  "storage": "floor",
+  "ignored_drawn": false,
+  "counts": {
+    "train": {
+      "clips": 45,
+      "frames": 19135
+    },
+    "test": {
+      "clips": 15,
+      "frames": 5976
+    }
+  },
+  "total_pngs": 25111,
+  "mask_bytes": 20795632,
+  "sample_frames_recomputed": 180,
+  "ignored_skipped": 0,
+  "empty_boxes_skipped": 0,
+  "export_vanished_boxes": 0,
+  "test_targets": 11300,
+  "author_test_targets": 11303,
+  "test_clips_matching_author": 13,
+  "absolute_count_difference": 5,
+  "all_test_counts_match_selected_scan": true,
+  "counting_backend": "scipy.ndimage.label",
+  "connectivity": 8,
+  "reference_protocol": "/home/md0/ly/DP/datasets/RGBT-Tiny/mask_protocol/check.json",
+  "MASKS_json_sha256": "222352da77d98706cc5b2bb17c286df91d25bb8ca168aabf8857ad8f6e6d92b7"
+}
+Wrote /home/md0/ly/DP/datasets/RGB-T/mask_protocol/verification.json

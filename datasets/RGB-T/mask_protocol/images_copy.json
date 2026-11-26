@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "completed_at": "2026-11-26T15:05:10.770186+08:00",
+  "source": "/home/md0/ly/DP/datasets/RGBT-Tiny/images",
+  "target": "/home/md0/ly/DP/datasets/RGB-T",
+  "channel": "01 (thermal)",
+  "copy_type": "independent regular files; no symlinks or source hardlinks",
+  "all_file_names_and_sha256_match": true,
+  "frames": 25111,
+  "bytes": 415869653,
+  "copied": 25111,
+  "retained": 0,
+  "splits": {
+    "train": {
+      "clips": 45,
+      "frames": 19135,
+      "bytes": 325948726
+    },
+    "test": {
+      "clips": 15,
+      "frames": 5976,
+      "bytes": 89920927
+    }
+  },
+  "sha256_manifest": "mask_protocol/images_sha256.csv",
+  "sha256_manifest_sha256": "008772b798f4147316f09277872b89405347c1c5cb320da1a488c9b9a0a9c31a",
+  "script_sha256": "643ad2aec9e0704555694bc34681cb7537466ae0d91c18a7c883cdf62ced8f5a"
+}
