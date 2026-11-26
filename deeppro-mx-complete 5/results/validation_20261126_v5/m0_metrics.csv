@@ -1,0 +1,9 @@
+clip,key_clip,eligible,positives_with_exemplars,negatives_with_exemplars,auc_lr_base,auc_lr_full,gain,passes_gain_threshold
+DJI_0107_1,False,False,0,100,,,,False
+DJI_0117_2,True,True,433,350,0.700765423952491,0.8037413394919168,0.10297591553942587,True
+DJI_0127_1,False,True,39,700,0.8425274725274725,0.9634065934065934,0.1208791208791209,True
+DJI_0157_2,False,False,5,650,,,,False
+DJI_0163_1,False,False,1,650,,,,False
+DJI_0285_3,False,False,0,250,,,,False
+DJI_0293_1,False,False,0,500,,,,False
+DJI_0319_2,True,True,1945,850,0.9751912898835626,0.9817553304097989,0.00656404052623627,False

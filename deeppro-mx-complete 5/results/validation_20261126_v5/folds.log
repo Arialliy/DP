@@ -1,0 +1,39 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.01 (build 80741402)
+PyTorch Version 2.2.0a0+81ea7a4
+
+Container image Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+Copyright (c) 2014-2023 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+fold0:  5 clips, 2 moving groups,  5878 near-stationary /  14694 boxes: DJI_0081_2 DJI_0175_2 DJI_0229_2 DJI_0293_1 DJI_0295_3
+fold1:  3 clips, 2 moving groups,  7252 near-stationary /  12232 boxes: DJI_0030_9 DJI_0271_2 DJI_0273_1
+fold2:  5 clips, 2 moving groups, 13786 near-stationary /  33290 boxes: DJI_0043_2 DJI_0057_1 DJI_0177_2 DJI_0305_3 DJI_0305_7
+fold3:  8 clips, 2 moving groups,  5855 near-stationary /  10339 boxes: DJI_0117_2 DJI_0121_2 DJI_0131_2 DJI_0157_2 DJI_0163_1 DJI_0217_2 DJI_0241_2 DJI_0319_2
+fold4: 19 clips, 3 moving groups,  5851 near-stationary /  13611 boxes: DJI_0069_1 DJI_0101_2 DJI_0107_1 DJI_0111_2 DJI_0113_3 DJI_0115_2 DJI_0123_6 DJI_0125_1 DJI_0127_1 DJI_0143_1 DJI_0145_1 DJI_0243_2 DJI_0253_1 DJI_0253_2 DJI_0253_3 DJI_0285_3 DJI_0287_1 DJI_0287_2 DJI_0323_2
+wrote /work/code/../configs/folds.json

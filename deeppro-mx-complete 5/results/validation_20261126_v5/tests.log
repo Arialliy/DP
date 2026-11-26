@@ -1,0 +1,240 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.01 (build 80741402)
+PyTorch Version 2.2.0a0+81ea7a4
+
+Container image Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+Copyright (c) 2014-2023 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+{
+  "python": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+  "torch": "2.2.0a0+81ea7a4",
+  "numpy": "1.24.4",
+  "scipy": "1.12.0",
+  "opencv": "4.7.0",
+  "pillow": "10.2.0"
+}
+
+== test_gaussian_masks.py (required first) ==
+ok test_author_counts_and_log_parsing
+ok test_counting_merges_neighbours_as_sigma_grows
+ok test_heatmap_is_the_formula
+ok test_legacy_rule_equals_k6_round_for_boxes_of_3px_or_more
+ok test_peak_and_centre_convention
+ok test_png_round_trip_through_the_authors_loader
+ok test_support_matches_the_8_bit_levels
+ok test_tiny_boxes_follow_the_formula_not_a_floor
+
+GAUSSIAN_TESTS_PASSED
+
+== code/test_compare_datasets.py ==
+DIFF        C_1: frames 6/6, 1 images differ, 1 frames with other boxes, boxes 12/12, tracks 2/2, 0 track conflicts, 0 of 0 boxes at shared positions unconfirmed
+SAME        D_2: frames 3/3, 0 images differ, 0 frames with other boxes, boxes 6/6, tracks 2/2, 0 track conflicts, 0 of 0 boxes at shared positions unconfirmed
+
+1/2 clips SAME; totals {'frames_a': 9, 'frames_b': 9, 'boxes_a': 18, 'boxes_b': 18, 'images_differing': 1, 'frames_with_box_differences': 1, 'duplicate_position_boxes': 0, 'unconfirmed_boxes': 0}; differ: C_1
+ok test_a_moved_box_and_a_changed_image_are_found
+ok test_boxes_at_a_shared_position_need_their_pairing_confirmed
+UNCONFIRMED C_1: frames 2/2, 0 images differ, 0 frames with other boxes, boxes 4/4, tracks 0/0, 0 track conflicts, 4 of 4 boxes at shared positions unconfirmed
+
+0/1 clips SAME; totals {'frames_a': 2, 'frames_b': 2, 'boxes_a': 4, 'boxes_b': 4, 'images_differing': 0, 'frames_with_box_differences': 0, 'duplicate_position_boxes': 4, 'unconfirmed_boxes': 4}; track relation cannot be confirmed: C_1
+ok test_exit_status_two_when_only_unconfirmed
+SAME        C_1: frames 6/6, 0 images differ, 0 frames with other boxes, boxes 12/12, tracks 2/2, 0 track conflicts, 0 of 0 boxes at shared positions unconfirmed
+SAME        D_2: frames 3/3, 0 images differ, 0 frames with other boxes, boxes 6/6, tracks 2/2, 0 track conflicts, 0 of 0 boxes at shared positions unconfirmed
+
+2/2 clips SAME; totals {'frames_a': 9, 'frames_b': 9, 'boxes_a': 18, 'boxes_b': 18, 'images_differing': 0, 'frames_with_box_differences': 0, 'duplicate_position_boxes': 0, 'unconfirmed_boxes': 0}
+ok test_same_data_with_other_track_numbering_is_the_same
+ok test_two_targets_merged_into_one_track_are_a_conflict
+
+== code/test_dataset_layout.py ==
+ok test_boxes_come_from_the_annotation_folder
+ok test_m0_exit_status_stops_a_pipeline
+OK   A_1: 12 frames, 0 missing, 0 frames / 0 pixels differ of 348 label pixels
+OK   B_2: 12 frames, 0 missing, 0 frames / 0 pixels differ of 348 label pixels
+
+2/2 clips: labels of rule paper_k6_floor equal /tmp/tmp8a8x5rrf/RGB-T/segmentations
+DIFF A_1: 12 frames, 0 missing, 12 frames / 84 pixels differ of 432 label pixels
+DIFF B_2: 12 frames, 0 missing, 12 frames / 84 pixels differ of 432 label pixels
+
+0/2 clips: labels of rule sigma_sixth equal /tmp/tmp8a8x5rrf/RGB-T/segmentations; differ: A_1, B_2
+ok test_paper_labels_equal_the_exported_pngs
+done: 2 clips, 289 boxes, 289 rows in results/profile/targets.csv
+pan_1        pos=    0 neg=    0 AUC contrast=nan ncc_L=nan |ncc|=nan ncc_med=nan gain=+nan
+stat_1       pos=  105 neg=    0 AUC contrast=nan ncc_L=nan |ncc|=nan ncc_med=nan gain=+nan
+
+clip           pos   neg  contrast  ncc_L  |ncc|  ncc_med  ncc_det  lr_base  lr_full    gain
+pan_1            0     0       nan    nan    nan      nan      nan      nan      nan    +nan  (not eligible)
+stat_1         105     0       nan    nan    nan      nan      nan      nan      nan    +nan  (not eligible)
+
+NO-GO: gain >= 0.1 on every key clip present and on >= 60% of eligible clips (>= 1 positives and negatives); passed 0/0 eligible clips; key clips {}
+ok test_profile_motion_feeds_m0_with_annotations_inside_the_root
+r A_1 CPM 0.0000 AP 0.0000 Pd@0.125=0.0000 Pd@0.25=0.0000 Pd@0.5=0.0000 Pd@1=0.0000 Pd@2=0.0000 Pd@4=0.0000
+  author th=0.5 Pd=0.0000 Fa=0.000e+00
+  author th=0.99 Pd=0.0000 Fa=0.000e+00
+r A_1 CPM 0.0000 AP 0.0000 Pd@0.125=0.0000 Pd@0.25=0.0000 Pd@0.5=0.0000 Pd@1=0.0000 Pd@2=0.0000 Pd@4=0.0000
+  author th=0.5 Pd=0.0000 Fa=0.000e+00
+  author th=0.99 Pd=0.0000 Fa=0.000e+00
+ok test_score_author_protocol_uses_the_paper_masks_by_default
+ok test_targets_from_other_annotations_are_refused
+ok test_tracking_ids_within_categories_become_distinct_tracks
+
+== code/test_diagnose_history.py ==
+{'annotations': 49, 'near_stationary': 49, 'near_categories': {'arrives_or_moved_before': 49}, 'near_static_whole_clip_fraction': 0.0, 'near_resident': 36, 'near_resident_with_history': 36, 'negatives': 250, 'negatives_with_history': 218, 'windows': 5, 'auc_L': 0.9724770642201835, 'auc_D': 1.0, 'spots_per_window_at_half_recall_L': 1.2, 'spots_per_window_at_half_recall_D': 0.0}
+ok test_process
+
+== code/test_exemplar_diag.py ==
+ok test_car_shaped_hot_spots_give_no_go
+syn          pos=  480 neg=   35 AUC contrast=0.386 ncc_L=1.000 |ncc|=1.000 ncc_med=1.000 gain=+0.356
+
+clip           pos   neg  contrast  ncc_L  |ncc|  ncc_med  ncc_det  lr_base  lr_full    gain
+syn            480    35     0.386  1.000  1.000    1.000      nan    0.644    1.000  +0.356
+
+GO: gain >= 0.1 on every key clip present and on >= 60% of eligible clips (>= 10 positives and negatives); passed 1/1 eligible clips; key clips {'syn': True}
+ok test_command_line_on_a_dataset_on_disk
+ok test_detection_exemplars_are_used
+ok test_exemplars_separate_parked_cars_from_hot_spots
+ok test_heldout_logistic_auc
+ok test_ncc_matrix
+ok test_no_moving_targets_means_no_exemplars_and_no_decision
+ok test_warped_windows_follow_a_panning_camera
+
+== code/test_folds.py ==
+ok test_every_clip_once_and_groups_intact
+ok test_fold_names_resolve
+ok test_moving_groups_and_near_stationary_are_spread
+
+== code/test_infer_mr.py ==
+ok test_auto_coordinates_compensate_a_panning_camera
+ok test_fusion_keeps_slow_and_fast_targets
+ok test_short_clip_marks_slow_rate_unused
+
+== code/test_infer_mx.py ==
+ok test_arms_are_float16_and_fused_float32
+ok test_causal_bank_and_none_bank
+ok test_coordinates_are_decided_once_and_shared_by_both_passes
+ok test_gt_and_random_banks
+ok test_min_score_and_clip_bank
+ok test_outside_bank_uses_other_windows_only
+
+== code/test_lvh.py ==
+ok test_arrival_target_ignores_resident_targets
+ok test_dec_heads_and_losses
+ok test_focal_has_gradient_without_targets
+ok test_history_changes_level_input
+ok test_masked_decomposition_ignores_invalid
+ok test_masked_decomposition_matches_lv
+ok test_mr_lv_equals_lv_full_on_recorded_frames_up_to_cover
+ok test_multirate_inference_with_real_networks
+ok test_noisy_or_heads_do_not_veto_each_other
+ok test_persistent_target_ramp
+ok test_stabilized_inference_runs
+ok test_variants_forward_backward
+
+== code/test_lvh_data.py ==
+ok test_build_sample_aligns_labels_and_frames
+ok test_history_label_occupancy_arrived_vs_resident
+ok test_hotspot_center_moves_to_sample_reference
+ok test_mining_finds_hot_spot_not_car
+ok test_motion_gate_uses_recorded_frames_on_static_camera
+ok test_short_window_padding
+
+== code/test_mr_data.py ==
+ok test_centre_and_crop
+ok test_decide_follows_the_stationarity_rule
+ok test_draw_spec_rates_and_skip_fallback
+ok test_identity_warp_equals_raw
+ok test_rate_tables_and_windows
+ok test_raw_sample_equals_direct_crop
+ok test_short_window_padding_matches_trainset_convention
+ok test_warp_sample_holds_the_parked_car_still
+
+== code/test_multirate.py ==
+ok test_assemble_scores_every_frame_at_every_rate
+ok test_blind_zone_and_its_removal_by_rate
+ok test_cfar_reference_and_fusion
+ok test_constants_match_evaluate
+ok test_detectable_band
+ok test_fast_pan_is_skipped_at_slow_rates_only
+ok test_peak_scores_match_evaluate_peaks
+ok test_plan_windows_cover_every_frame_once_per_rate
+ok test_rate_parsing
+ok test_scale_homography_matches_block_means
+ok test_stationarity_keeps_recorded_frames_when_compensation_is_wrong
+ok test_stationarity_prefers_compensation_when_the_camera_drifts
+
+== code/test_mx.py ==
+ok test_encoder_patch_equals_full_frame
+ok test_invalid_exemplars_are_ignored
+ok test_invalid_frames_do_not_change_the_output
+ok test_masked_median_and_erosion
+ok test_match_loss_without_exemplars_is_zero
+ok test_polarity_both_matches_an_inverted_target
+  parameters mx_lv: 228917
+ok test_registered_forward_backward
+ok test_self_exemplar_matches_with_similarity_one
+mx_test: mx_lv, labels paper_k6_floor, coords auto, rates [1]
+epoch 1/1 lr 1.00e-03 loss 3.5014 iters 4 62s rates {1: 8} warped 0.00 exemplars: samples 1.00 per-sample 6.1 fake 0.16
+mx_test_outside: mx_lv bank=outside coords=auto K=16 min_score=0.0
+mx_test_outside fakeA frames=90 windows=3 warped=0 candidates=27000 exemplars/window=16.0 25.1s
+mx_test_causal: mx_lv bank=causal coords=auto K=16 min_score=0.0
+mx_test_causal fakeA frames=90 windows=3 warped=0 candidates=27000 exemplars/window=10.7 25.0s
+mx_test_gt: mx_lv bank=gt coords=auto K=16 min_score=0.0
+mx_test_gt fakeA frames=90 windows=3 warped=0 candidates=0 exemplars/window=6.0 14.1s
+mx_test_none: mx_lv bank=none coords=auto K=16 min_score=0.0
+mx_test_none fakeA frames=90 windows=3 warped=0 candidates=0 exemplars/window=0.0 13.9s
+mx_test_outside fakeA CPM 0.2912 AP 0.3376 Pd@0.125=0.0444 Pd@0.25=0.1139 Pd@0.5=0.2111 Pd@1=0.3778 Pd@2=0.5000 Pd@4=0.5000
+  author th=0.5 Pd=1.0000 Fa=9.794e-01
+  author th=0.99 Pd=0.0000 Fa=0.000e+00
+ok test_training_and_inference_end_to_end
+
+== code/test_mx_data.py ==
+ok test_background_point_avoids_boxes
+ok test_detection_bank_modes
+ok test_draw_exemplars_stays_outside_the_window
+ok test_exemplar_sample_shapes_fakes_and_frames
+ok test_greedy_select_and_pools
+ok test_paper_label_rule_is_the_exported_mask
+ok test_patches_centre_edge_padding_and_normalisation
+ok test_peak_rows
+ok test_read_speeds_and_moving_table
+
+== code/test_run_mx.py ==
+ok test_compare_stage_stops_on_differences_and_on_unconfirmed_tracks
+ok test_go_path_trains_and_no_go_path_stops
+ok test_stale_m0_and_old_profile_are_handled
+ok test_usage_and_missing_root
+
+== code/test_stabilize.py ==
+ok test_box_mapping_round_trip
+ok test_chain_and_mapping
+ok test_crop_matches_full_warp
+ok test_gate_chain_static_vs_panning
+ok test_history_separates_hot_spot_from_parked_car
+ok test_warp_back_inverts_warp
+ok test_window_is_stabilized
+
+ALL_TEST_FILES_PASSED

@@ -1,0 +1,53 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.01 (build 80741402)
+PyTorch Version 2.2.0a0+81ea7a4
+
+Container image Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+Copyright (c) 2014-2023 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+DJI_0107_1   pos=    0 neg=  100 AUC contrast=nan ncc_L=nan |ncc|=nan ncc_med=nan gain=+nan
+DJI_0117_2   pos=  433 neg=  350 AUC contrast=0.252 ncc_L=0.644 |ncc|=0.516 ncc_med=0.634 gain=+0.103
+DJI_0163_1   pos=    1 neg=  650 AUC contrast=0.472 ncc_L=0.520 |ncc|=0.257 ncc_med=0.074 gain=+nan
+DJI_0285_3   pos=    0 neg=  250 AUC contrast=nan ncc_L=nan |ncc|=nan ncc_med=nan gain=+nan
+DJI_0127_1   pos=   39 neg=  700 AUC contrast=0.211 ncc_L=0.911 |ncc|=0.901 ncc_med=0.828 gain=+0.121
+DJI_0157_2   pos=    5 neg=  650 AUC contrast=0.621 ncc_L=0.836 |ncc|=0.858 ncc_med=0.976 gain=+nan
+DJI_0293_1   pos=    0 neg=  500 AUC contrast=nan ncc_L=nan |ncc|=nan ncc_med=nan gain=+nan
+DJI_0319_2   pos= 1945 neg=  850 AUC contrast=0.163 ncc_L=0.524 |ncc|=0.379 ncc_med=0.413 gain=+0.007
+
+clip           pos   neg  contrast  ncc_L  |ncc|  ncc_med  ncc_det  lr_base  lr_full    gain
+DJI_0107_1       0   100       nan    nan    nan      nan      nan      nan      nan    +nan  (not eligible)
+DJI_0117_2     433   350     0.252  0.644  0.516    0.634      nan    0.701    0.804  +0.103
+DJI_0127_1      39   700     0.211  0.911  0.901    0.828      nan    0.843    0.963  +0.121
+DJI_0157_2       5   650     0.621  0.836  0.858    0.976      nan      nan      nan    +nan  (not eligible)
+DJI_0163_1       1   650     0.472  0.520  0.257    0.074      nan      nan      nan    +nan  (not eligible)
+DJI_0285_3       0   250       nan    nan    nan      nan      nan      nan      nan    +nan  (not eligible)
+DJI_0293_1       0   500       nan    nan    nan      nan      nan      nan      nan    +nan  (not eligible)
+DJI_0319_2    1945   850     0.163  0.524  0.379    0.413      nan    0.975    0.982  +0.007
+
+NO-GO: gain >= 0.1 on every key clip present and on >= 60% of eligible clips (>= 20 positives and negatives); passed 2/3 eligible clips; key clips {'DJI_0117_2': True, 'DJI_0319_2': False}

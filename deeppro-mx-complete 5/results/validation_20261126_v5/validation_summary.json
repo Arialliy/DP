@@ -1,0 +1,94 @@
+{
+  "package": "/home/md0/ly/DP/deeppro-mx-complete 5",
+  "dataset": "/home/md0/ly/DP/datasets/RGB-T",
+  "completed_at": "2026-11-26T17:48:58.195623+08:00",
+  "status": "completed_no_go",
+  "tests": {
+    "files": 16,
+    "passed": 108,
+    "gaussian_passed": 8,
+    "isolated_failure_gates_passed": 23
+  },
+  "labels": {
+    "frames": 25111,
+    "missing": 0,
+    "differing_frames": 0,
+    "differing_pixels": 0,
+    "label_pixels": 8223870,
+    "clips": 60,
+    "ok_clips": 60
+  },
+  "profile": {
+    "expected_rows": 100296,
+    "actual_rows": 100296,
+    "actual_unique_keys": 100296,
+    "missing_key_occurrences": 0,
+    "extra_key_occurrences": 0,
+    "homography_files": 60,
+    "nan_speed_rows": 1,
+    "max_image_speed_absolute_error": 0.0
+  },
+  "folds": {
+    "unique_clips": 40,
+    "fold_sizes": [
+      5,
+      3,
+      5,
+      8,
+      19
+    ],
+    "no_test_overlap": true,
+    "no_recording_overlap": true
+  },
+  "m0": {
+    "settings": {
+      "split": [
+        "val"
+      ],
+      "clips": null,
+      "targets": "results/profile/targets.csv",
+      "seqlen": 40,
+      "coords": "auto",
+      "patch": 11,
+      "k": 16,
+      "step": 4,
+      "shift": 2,
+      "det_run": null,
+      "det_min_score": 0.0,
+      "min_pos": 20,
+      "delta": 0.1,
+      "frac": 0.6,
+      "key_clips": [
+        "DJI_0117_2",
+        "DJI_0319_2"
+      ],
+      "seed": 0,
+      "out": "results/exemplar_diag",
+      "nproc": 4
+    },
+    "decision": {
+      "go": false,
+      "eligible_clips": [
+        "DJI_0117_2",
+        "DJI_0127_1",
+        "DJI_0319_2"
+      ],
+      "passed_clips": [
+        "DJI_0117_2",
+        "DJI_0127_1"
+      ],
+      "fraction_passed": 0.6666666666666666,
+      "key_clips": {
+        "DJI_0117_2": true,
+        "DJI_0319_2": false
+      },
+      "rule": "gain >= 0.1 on every key clip present and on >= 60% of eligible clips (>= 20 positives and negatives)"
+    },
+    "metrics_csv": "m0_metrics.csv"
+  },
+  "real_training_started": false,
+  "source_files_unchanged": {
+    "checked": 55,
+    "mismatches": []
+  }
+}

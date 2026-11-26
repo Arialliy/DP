@@ -1,0 +1,1469 @@
+{
+  "created_at": "2026-11-26T09:39:41.315368+00:00",
+  "source": "/home/md0/ly/DP/deeppro-mx-complete 5/run_mx.sh",
+  "source_sha256": "c9770f9189b0ab67f1332da58b29271f67e3f68cbc851afc5df49cde4b849ea5",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "scope": "Isolated shell orchestration only. Project Python entry points, data, and model training were stand-ins; inline require_go JSON code was unchanged.",
+  "cases": 23,
+  "passed": 23,
+  "failed": 0,
+  "results": [
+    {
+      "case": "first_test_fails",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n",
+      "stderr": "run_mx.sh: test failed: /home/md0/ly/.tmp/mx failure gates 1awiph7i/bundle with spaces/code/test_001_first.py\n"
+    },
+    {
+      "case": "second_test_fails",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: test failed: /home/md0/ly/.tmp/mx failure gates t597e6t6/bundle with spaces/code/test_002_second.py\n"
+    },
+    {
+      "case": "labels_differ",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: labels differ from /home/md0/ly/.tmp/mx failure gates xpsoo2eh/bundle with spaces/fake RGB-T/segmentations\n"
+    },
+    {
+      "case": "compare_diff",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates 2gxurjax/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates 2gxurjax/bundle with spaces/fake RGB-T"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: the two copies differ: read the report before comparing with earlier results\n"
+    },
+    {
+      "case": "compare_unconfirmed",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates xqjczn4l/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates xqjczn4l/bundle with spaces/fake RGB-T"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: same frames and boxes, but the track relation cannot be confirmed for some clips (boxes at shared positions): read the report\n"
+    },
+    {
+      "case": "profile_fails",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 47,
+      "actual_status": 47,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates n2jx8jzo/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates n2jx8jzo/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    },
+    {
+      "case": "profile_missing_metadata",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates igg8yjbe/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates igg8yjbe/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: profile_motion.py wrote no targets.json\n"
+    },
+    {
+      "case": "folds_fails",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 48,
+      "actual_status": 48,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates jombqb4z/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates jombqb4z/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    },
+    {
+      "case": "m0_no_go",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 3,
+      "actual_status": 3,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates xf3pa00s/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates xf3pa00s/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: M0 says NO-GO; DeepPro-MX is not trained (docs/MX.md, Step 1)\n"
+    },
+    {
+      "case": "m0_error",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates h8renjrv/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates h8renjrv/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: exemplar_diag.py failed (status 49)\n"
+    },
+    {
+      "case": "m0_missing_summary",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates 39tnqkr1/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates 39tnqkr1/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: no M0 result (results/exemplar_diag/summary.json): run 'bash run_mx.sh m0' first\n"
+    },
+    {
+      "case": "m0_stale_summary",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates higo95un/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates higo95un/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: M0 is older than results/profile/targets.csv: run 'bash run_mx.sh m0' again\n"
+    },
+    {
+      "case": "m0_false_go_exit_zero",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 3,
+      "actual_status": 3,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates u7s15j6t/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates u7s15j6t/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        },
+        {
+          "name": "require_go",
+          "args": [
+            "results/exemplar_diag/summary.json"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: M0 says NO-GO; not training\n"
+    },
+    {
+      "case": "training_fails",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 51,
+      "actual_status": 51,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates 81kdls8a/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates 81kdls8a/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        },
+        {
+          "name": "require_go",
+          "args": [
+            "results/exemplar_diag/summary.json"
+          ]
+        },
+        {
+          "name": "train.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--arch",
+            "mx_lv",
+            "--seed",
+            "46",
+            "--device",
+            "cpu",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    },
+    {
+      "case": "training_missing_checkpoint",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates exkl9aw1/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates exkl9aw1/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        },
+        {
+          "name": "require_go",
+          "args": [
+            "results/exemplar_diag/summary.json"
+          ]
+        },
+        {
+          "name": "train.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--arch",
+            "mx_lv",
+            "--seed",
+            "46",
+            "--device",
+            "cpu",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: training ended without runs/gate_run/final.pth\n"
+    },
+    {
+      "case": "inference_fails",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 52,
+      "actual_status": 52,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates aa__zku1/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates aa__zku1/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        },
+        {
+          "name": "require_go",
+          "args": [
+            "results/exemplar_diag/summary.json"
+          ]
+        },
+        {
+          "name": "train.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--arch",
+            "mx_lv",
+            "--seed",
+            "46",
+            "--device",
+            "cpu",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        },
+        {
+          "name": "infer_mx.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--ckpt",
+            "runs/gate_run/final.pth",
+            "--clips",
+            "val",
+            "--device",
+            "cpu",
+            "--save-arms"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    },
+    {
+      "case": "scoring_fails",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 53,
+      "actual_status": 53,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py",
+        "score.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py",
+        "score.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates bds4dzag/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates bds4dzag/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        },
+        {
+          "name": "require_go",
+          "args": [
+            "results/exemplar_diag/summary.json"
+          ]
+        },
+        {
+          "name": "train.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--arch",
+            "mx_lv",
+            "--seed",
+            "46",
+            "--device",
+            "cpu",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        },
+        {
+          "name": "infer_mx.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--ckpt",
+            "runs/gate_run/final.pth",
+            "--clips",
+            "val",
+            "--device",
+            "cpu",
+            "--save-arms"
+          ]
+        },
+        {
+          "name": "score.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--split",
+            "val",
+            "--author",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    },
+    {
+      "case": "positive_go",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 0,
+      "actual_status": 0,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py",
+        "score.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py",
+        "score.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates itomgn20/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates itomgn20/bundle with spaces/fake RGB-T"
+          ]
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        },
+        {
+          "name": "require_go",
+          "args": [
+            "results/exemplar_diag/summary.json"
+          ]
+        },
+        {
+          "name": "train.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--arch",
+            "mx_lv",
+            "--seed",
+            "46",
+            "--device",
+            "cpu",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        },
+        {
+          "name": "infer_mx.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--ckpt",
+            "runs/gate_run/final.pth",
+            "--clips",
+            "val",
+            "--device",
+            "cpu",
+            "--save-arms"
+          ]
+        },
+        {
+          "name": "score.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--split",
+            "val",
+            "--author",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    },
+    {
+      "case": "positive_without_compare",
+      "stage": "all",
+      "passed": true,
+      "expected_status": 0,
+      "actual_status": 0,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py",
+        "score.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "profile_motion.py",
+        "folds.py",
+        "exemplar_diag.py",
+        "require_go",
+        "train.py",
+        "infer_mx.py",
+        "score.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "profile_motion.py",
+          "args": []
+        },
+        {
+          "name": "folds.py",
+          "args": []
+        },
+        {
+          "name": "exemplar_diag.py",
+          "args": [
+            "--split",
+            "val",
+            "--targets",
+            "results/profile/targets.csv"
+          ]
+        },
+        {
+          "name": "require_go",
+          "args": [
+            "results/exemplar_diag/summary.json"
+          ]
+        },
+        {
+          "name": "train.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--arch",
+            "mx_lv",
+            "--seed",
+            "46",
+            "--device",
+            "cpu",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        },
+        {
+          "name": "infer_mx.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--ckpt",
+            "runs/gate_run/final.pth",
+            "--clips",
+            "val",
+            "--device",
+            "cpu",
+            "--save-arms"
+          ]
+        },
+        {
+          "name": "score.py",
+          "args": [
+            "--run",
+            "gate_run",
+            "--split",
+            "val",
+            "--author",
+            "--label-rule",
+            "paper_k6_floor"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    },
+    {
+      "case": "first_test_fails",
+      "stage": "check",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n",
+      "stderr": "run_mx.sh: test failed: /home/md0/ly/.tmp/mx failure gates 5uf8mgnz/bundle with spaces/code/test_001_first.py\n"
+    },
+    {
+      "case": "labels_differ",
+      "stage": "check",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: labels differ from /home/md0/ly/.tmp/mx failure gates 1p9gz8gc/bundle with spaces/fake RGB-T/segmentations\n"
+    },
+    {
+      "case": "compare_unconfirmed",
+      "stage": "check",
+      "passed": true,
+      "expected_status": 1,
+      "actual_status": 1,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates ihjtuujt/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates ihjtuujt/bundle with spaces/fake RGB-T"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": "run_mx.sh: same frames and boxes, but the track relation cannot be confirmed for some clips (boxes at shared positions): read the report\n"
+    },
+    {
+      "case": "positive_go",
+      "stage": "check",
+      "passed": true,
+      "expected_status": 0,
+      "actual_status": 0,
+      "expected_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "actual_calls": [
+        "test_001_first.py",
+        "test_002_second.py",
+        "check_labels.py",
+        "compare_datasets.py"
+      ],
+      "call_arguments": [
+        {
+          "name": "test_001_first.py",
+          "args": []
+        },
+        {
+          "name": "test_002_second.py",
+          "args": []
+        },
+        {
+          "name": "check_labels.py",
+          "args": []
+        },
+        {
+          "name": "compare_datasets.py",
+          "args": [
+            "--a",
+            "/home/md0/ly/.tmp/mx failure gates m0d9xm_z/bundle with spaces/fake older copy",
+            "--b",
+            "/home/md0/ly/.tmp/mx failure gates m0d9xm_z/bundle with spaces/fake RGB-T"
+          ]
+        }
+      ],
+      "stdout": "== test_001_first.py\n== test_002_second.py\n",
+      "stderr": ""
+    }
+  ]
+}

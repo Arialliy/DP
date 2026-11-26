@@ -1,0 +1,95 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 24.01 (build 80741402)
+PyTorch Version 2.2.0a0+81ea7a4
+
+Container image Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+Copyright (c) 2014-2023 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+OK   DJI_0107_1: 70 frames, 0 missing, 0 frames / 0 pixels differ of 5521 label pixels
+OK   DJI_0101_2: 120 frames, 0 missing, 0 frames / 0 pixels differ of 8481 label pixels
+OK   DJI_0111_2: 180 frames, 0 missing, 0 frames / 0 pixels differ of 17603 label pixels
+OK   DJI_0113_3: 330 frames, 0 missing, 0 frames / 0 pixels differ of 24246 label pixels
+OK   DJI_0081_2: 350 frames, 0 missing, 0 frames / 0 pixels differ of 753329 label pixels
+OK   DJI_0115_2: 290 frames, 0 missing, 0 frames / 0 pixels differ of 128225 label pixels
+OK   DJI_0069_1: 420 frames, 0 missing, 0 frames / 0 pixels differ of 332172 label pixels
+OK   DJI_0117_2: 240 frames, 0 missing, 0 frames / 0 pixels differ of 126741 label pixels
+OK   DJI_0043_2: 380 frames, 0 missing, 0 frames / 0 pixels differ of 1295764 label pixels
+OK   DJI_0057_1: 560 frames, 0 missing, 0 frames / 0 pixels differ of 188769 label pixels
+OK   DJI_0030_9: 590 frames, 0 missing, 0 frames / 0 pixels differ of 618742 label pixels
+OK   DJI_0121_2: 350 frames, 0 missing, 0 frames / 0 pixels differ of 142984 label pixels
+OK   DJI_0123_6: 310 frames, 0 missing, 0 frames / 0 pixels differ of 34078 label pixels
+OK   DJI_0145_1: 280 frames, 0 missing, 0 frames / 0 pixels differ of 15447 label pixels
+OK   DJI_0125_1: 440 frames, 0 missing, 0 frames / 0 pixels differ of 21871 label pixels
+OK   DJI_0143_1: 430 frames, 0 missing, 0 frames / 0 pixels differ of 20685 label pixels
+OK   DJI_0163_1: 470 frames, 0 missing, 0 frames / 0 pixels differ of 31071 label pixels
+OK   DJI_0131_2: 550 frames, 0 missing, 0 frames / 0 pixels differ of 31113 label pixels
+OK   DJI_0177_2: 360 frames, 0 missing, 0 frames / 0 pixels differ of 17365 label pixels
+OK   DJI_0127_1: 500 frames, 0 missing, 0 frames / 0 pixels differ of 26851 label pixels
+OK   DJI_0175_2: 450 frames, 0 missing, 0 frames / 0 pixels differ of 28632 label pixels
+OK   DJI_0229_2: 480 frames, 0 missing, 0 frames / 0 pixels differ of 555391 label pixels
+OK   DJI_0157_2: 470 frames, 0 missing, 0 frames / 0 pixels differ of 29699 label pixels
+OK   DJI_0271_2: 70 frames, 0 missing, 0 frames / 0 pixels differ of 25237 label pixels
+OK   DJI_0217_2: 380 frames, 0 missing, 0 frames / 0 pixels differ of 190359 label pixels
+OK   DJI_0243_2: 340 frames, 0 missing, 0 frames / 0 pixels differ of 112867 label pixels
+OK   DJI_0257_5: 260 frames, 0 missing, 0 frames / 0 pixels differ of 29030 label pixels
+OK   DJI_0241_2: 510 frames, 0 missing, 0 frames / 0 pixels differ of 212336 label pixels
+OK   DJI_0285_3: 182 frames, 0 missing, 0 frames / 0 pixels differ of 10644 label pixels
+OK   DJI_0287_1: 273 frames, 0 missing, 0 frames / 0 pixels differ of 51817 label pixels
+OK   DJI_0253_3: 520 frames, 0 missing, 0 frames / 0 pixels differ of 55676 label pixels
+OK   DJI_0253_1: 1090 frames, 0 missing, 0 frames / 0 pixels differ of 217852 label pixels
+OK   DJI_0253_2: 580 frames, 0 missing, 0 frames / 0 pixels differ of 66264 label pixels
+OK   DJI_0287_2: 490 frames, 0 missing, 0 frames / 0 pixels differ of 45259 label pixels
+OK   DJI_0293_1: 363 frames, 0 missing, 0 frames / 0 pixels differ of 19867 label pixels
+OK   DJI_0295_3: 550 frames, 0 missing, 0 frames / 0 pixels differ of 84065 label pixels
+OK   DJI_0305_3: 333 frames, 0 missing, 0 frames / 0 pixels differ of 67223 label pixels
+OK   DJI_0305_7: 340 frames, 0 missing, 0 frames / 0 pixels differ of 104379 label pixels
+OK   DJI_0277_1: 550 frames, 0 missing, 0 frames / 0 pixels differ of 332944 label pixels
+OK   DJI_0273_1: 1213 frames, 0 missing, 0 frames / 0 pixels differ of 204050 label pixels
+OK   DJI_0309_1: 432 frames, 0 missing, 0 frames / 0 pixels differ of 18898 label pixels
+OK   DJI_0307_1: 250 frames, 0 missing, 0 frames / 0 pixels differ of 25115 label pixels
+OK   DJI_0319_2: 598 frames, 0 missing, 0 frames / 0 pixels differ of 426184 label pixels
+OK   DJI_0049_2: 90 frames, 0 missing, 0 frames / 0 pixels differ of 43173 label pixels
+OK   DJI_0309_2: 598 frames, 0 missing, 0 frames / 0 pixels differ of 95076 label pixels
+OK   DJI_0323_2: 593 frames, 0 missing, 0 frames / 0 pixels differ of 245855 label pixels
+OK   DJI_0109_1: 90 frames, 0 missing, 0 frames / 0 pixels differ of 5071 label pixels
+OK   DJI_0119_2: 180 frames, 0 missing, 0 frames / 0 pixels differ of 26390 label pixels
+OK   DJI_0173_2: 450 frames, 0 missing, 0 frames / 0 pixels differ of 43065 label pixels
+OK   DJI_0159_2: 250 frames, 0 missing, 0 frames / 0 pixels differ of 11980 label pixels
+OK   DJI_0155_2: 410 frames, 0 missing, 0 frames / 0 pixels differ of 23675 label pixels
+OK   DJI_0307_2: 180 frames, 0 missing, 0 frames / 0 pixels differ of 10093 label pixels
+OK   DJI_0277_2: 366 frames, 0 missing, 0 frames / 0 pixels differ of 69031 label pixels
+OK   DJI_0257_2: 590 frames, 0 missing, 0 frames / 0 pixels differ of 164018 label pixels
+OK   DJI_0129_2: 590 frames, 0 missing, 0 frames / 0 pixels differ of 39059 label pixels
+OK   DJI_0255_1: 600 frames, 0 missing, 0 frames / 0 pixels differ of 36229 label pixels
+OK   DJI_0303_2: 577 frames, 0 missing, 0 frames / 0 pixels differ of 166436 label pixels
+OK   DJI_0237_2: 410 frames, 0 missing, 0 frames / 0 pixels differ of 339969 label pixels
+OK   DJI_0221_2: 590 frames, 0 missing, 0 frames / 0 pixels differ of 60514 label pixels
+OK   DJI_0309_4: 603 frames, 0 missing, 0 frames / 0 pixels differ of 89390 label pixels
+
+60/60 clips: labels of rule paper_k6_floor equal /data/RGB-T/segmentations
