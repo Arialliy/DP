@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "dataset_root": "/home/ly/DeepPro-main/datasets/NUDT-MIRSDT",
+  "official_files_checked": 48122,
+  "missing_files": [],
+  "hash_mismatches": [],
+  "extra_files_outside_loader_directories": [],
+  "reference_manifest": "/home/ly/DeepPro-main/reproduction/nudt_readme_20261125/data_audit/members.json",
+  "reference_manifest_sha256": "21540a9803bb368de0b84d6d4c823c0e77fe8cb1d1a357f18824409a0db160b7",
+  "completed_utc": "2026-11-25T12:16:32.047769+00:00"
+}

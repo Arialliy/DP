@@ -1,0 +1,55 @@
+{
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "packages": {
+    "numpy": "2.3.5",
+    "Pillow": "12.1.1",
+    "scipy": "1.18.1"
+  },
+  "connectivity": 8,
+  "counting_backend": "scipy.ndimage.label",
+  "VT_ROOT": "/home/md0/ly/DeepPro-main/datasets/RGBT-Tiny",
+  "OFFICIAL_LISTS": "/home/md0/ly/DeepPro-main/datasets/RGB-T",
+  "tests": {
+    "script": "/home/md0/ly/DeepPro-main/datasets/paper-masks/code/test_gaussian_masks.py",
+    "passed": 8,
+    "exit_code": 0
+  },
+  "ks": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12
+  ],
+  "storage": [
+    "round",
+    "floor"
+  ],
+  "ignored": [
+    false,
+    true
+  ],
+  "nproc": 15,
+  "source_sha256": {
+    "MASK_FILES.md": "df973415a985983d107f443924f0394f37f27ce8e28b836bd72fcda555cad8aa",
+    "code/check_mask_protocol.py": "9e9171d702f4e52e7e9cccc75a58aedcc7be2d533fd81e8db5bed9c136e5cd90",
+    "code/export_masks.py": "8cd7578c9a8dc1d8209157e1daa3fdb8376ebf3d46e9cc49f7e00388d1d784a4",
+    "code/gaussian_masks.py": "5e9050c7791b2684149bb6a2bcebfa6dbd88a6ed317cbbc77f7c58ed34c2066a",
+    "code/test_gaussian_masks.py": "33345a8d6c81434b3d94b02f04aa9a9437bb75a0426055a7f75439c4338025fb",
+    "code/vtdata.py": "3037f966c495a3bd6606e9853552d779bf0ec0e640b16083d31e193a966850e4",
+    "docs/MASKS.md": "59d47b7cc6d3acd62dbcb128e9f0132a2449a87acdbc220f1b277db4d64cb560"
+  },
+  "adapter_sha256": "f7f061fcc05a8074f915bfe5718275cd901188b872f0b79b1941d807e2ea9149",
+  "reference_log": "log/sem_seg/RGB-T__2025-01-14_15-27__SoftLoUloss_DeepPro-Plus_DataL40/eval_ShootingRules_LocLen2_4.txt",
+  "adaptation": "tracking_id converted to integer track_id in memory; original JSON and supplied paper-masks source unchanged",
+  "export_status": "not_started_pending_parameter_review",
+  "check_status": "completed",
+  "check_exit_code": 0,
+  "completed_at": "2026-11-26T14:47:52.631270+08:00",
+  "exact_variants": [],
+  "best_variant": "k6_floor_without_ignored"
+}

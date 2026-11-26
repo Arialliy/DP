@@ -1,0 +1,20 @@
+COMMAND
+docker run --rm --network none --cpus 4 --memory 8g --entrypoint python --user 1000:1000 -v /home/ly/DeepPro-main:/official:ro -v /home/ly/DeepPro-main/datasets/NUDT-MIRSDT:/data:ro -v /home/ly/DeepPro-main/reproduction/nudt_readme_20261125:/run:ro -w /official -e OMP_NUM_THREADS=4 -e MKL_NUM_THREADS=4 -e OPENBLAS_NUM_THREADS=4 -e TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1 -e PYTHONDONTWRITEBYTECODE=1 -e PYTHONUNBUFFERED=1 -e MPLCONFIGDIR=/tmp/mpl sha256:7d656a4ae1641f8dd9e0d29cd04ceedf61d349a7b7714508a804275f70e842b7 /run/preflight.py --device cpu
+
+STDOUT
+
+STDERR
+Traceback (most recent call last):
+  File "/run/preflight.py", line 43, in <module>
+    dataset = TrainIRSeqDataLoader('NUDT-MIRSDT', '/data', 40, 0.1, 128)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/official/data_utils/TrainDataLoader.py", line 163, in __init__
+    sample = [(os.path.join(image_root, images[x]), os.path.join(label_root, labels[x]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/official/data_utils/TrainDataLoader.py", line 163, in <listcomp>
+    sample = [(os.path.join(image_root, images[x]), os.path.join(label_root, labels[x]))
+                                                                             ~~~~~~^^^
+IndexError: index 32 is out of bounds for axis 0 with size 32
+
+RETURNCODE
+1

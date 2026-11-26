@@ -1,0 +1,4 @@
+WITNESS {"device": "cpu", "numpy": "1.23.5", "original_ragged_list_sampler": "PASS", "source_files_checked": 38, "test_sequences": 20, "torch": "2.7.0+cu128", "training_batch_shape": [4, 1, 40, 128, 128], "training_samples": 768, "updates_per_epoch": 192}
+
+/official/data_utils/TrainDataLoader.py:65: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  sample = np.random.choice(self.samplelist, p=self.sample_p)

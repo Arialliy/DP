@@ -1,0 +1,59 @@
+test2017: adapted 189101 tracking_id fields in memory
+DJI_0049_2: 90 frames, 692 boxes (0 under 3 px), log 602
+DJI_0109_1: 90 frames, 90 boxes (0 under 3 px), log 90
+DJI_0119_2: 180 frames, 360 boxes (0 under 3 px), log 360
+DJI_0307_2: 180 frames, 161 boxes (0 under 3 px), log 161
+DJI_0159_2: 250 frames, 250 boxes (0 under 3 px), log 250
+DJI_0277_2: 366 frames, 985 boxes (0 under 3 px), log 985
+DJI_0155_2: 410 frames, 410 boxes (0 under 3 px), log 410
+DJI_0173_2: 450 frames, 450 boxes (0 under 3 px), log 450
+DJI_0237_2: 410 frames, 3717 boxes (0 under 3 px), log 2947
+DJI_0255_1: 600 frames, 600 boxes (0 under 3 px), log 600
+DJI_0303_2: 577 frames, 1487 boxes (0 under 3 px), log 985
+DJI_0129_2: 590 frames, 590 boxes (0 under 3 px), log 590
+DJI_0257_2: 590 frames, 1126 boxes (0 under 3 px), log 1126
+DJI_0221_2: 590 frames, 697 boxes (0 under 3 px), log 697
+DJI_0309_4: 603 frames, 1050 boxes (0 under 3 px), log 1050
+
+log total 11303 over 15 clips; boxes drawn (no ignored) 12665
+variant                              total  exact  |diff|  worst clips
+k6_floor_without_ignored             11300  13/15       5  DJI_0237_2:-4 DJI_0303_2:+1
+k6_floor_with_ignored                11300  13/15       5  DJI_0237_2:-4 DJI_0303_2:+1
+k7_round_without_ignored             11362  13/15      59  DJI_0303_2:+51 DJI_0237_2:+8
+k7_round_with_ignored                11362  13/15      59  DJI_0303_2:+51 DJI_0237_2:+8
+k7_floor_without_ignored             11432  13/15     129  DJI_0303_2:+103 DJI_0237_2:+26
+k7_floor_with_ignored                11432  13/15     129  DJI_0303_2:+103 DJI_0237_2:+26
+k6_round_without_ignored             11139  13/15     164  DJI_0303_2:-99 DJI_0237_2:-65
+k6_round_with_ignored                11139  13/15     164  DJI_0303_2:-99 DJI_0237_2:-65
+legacy_sigma_sixth                   11139  13/15     164  DJI_0303_2:-99 DJI_0237_2:-65
+k8_round_without_ignored             11603  13/15     300  DJI_0303_2:+163 DJI_0237_2:+137
+k8_round_with_ignored                11603  13/15     300  DJI_0303_2:+163 DJI_0237_2:+137
+k5_floor_without_ignored             10957  13/15     346  DJI_0303_2:-241 DJI_0237_2:-105
+k5_floor_with_ignored                10957  13/15     346  DJI_0303_2:-241 DJI_0237_2:-105
+k5_round_without_ignored             10855  13/15     448  DJI_0303_2:-279 DJI_0237_2:-169
+k5_round_with_ignored                10855  13/15     448  DJI_0303_2:-279 DJI_0237_2:-169
+k4_floor_without_ignored             10691  13/15     612  DJI_0303_2:-362 DJI_0237_2:-250
+k4_floor_with_ignored                10691  13/15     612  DJI_0303_2:-362 DJI_0237_2:-250
+k8_floor_without_ignored             11947  13/15     644  DJI_0237_2:+377 DJI_0303_2:+267
+k8_floor_with_ignored                11947  13/15     644  DJI_0237_2:+377 DJI_0303_2:+267
+k4_round_without_ignored             10651  13/15     652  DJI_0303_2:-382 DJI_0237_2:-270
+k4_round_with_ignored                10651  13/15     652  DJI_0303_2:-382 DJI_0237_2:-270
+k3_floor_without_ignored             10528  13/15     775  DJI_0303_2:-423 DJI_0237_2:-352
+k3_floor_with_ignored                10528  13/15     775  DJI_0303_2:-423 DJI_0237_2:-352
+k3_round_without_ignored             10509  13/15     794  DJI_0303_2:-424 DJI_0237_2:-370
+k3_round_with_ignored                10509  13/15     794  DJI_0303_2:-424 DJI_0237_2:-370
+k10_round_without_ignored            12193  13/15     890  DJI_0237_2:+565 DJI_0303_2:+325
+k10_round_with_ignored               12193  13/15     890  DJI_0237_2:+565 DJI_0303_2:+325
+k10_floor_without_ignored            12212  13/15     909  DJI_0237_2:+570 DJI_0303_2:+339
+k10_floor_with_ignored               12212  13/15     909  DJI_0237_2:+570 DJI_0303_2:+339
+k12_round_without_ignored            12352  12/15    1049  DJI_0237_2:+600 DJI_0303_2:+372 DJI_0049_2:+77
+k12_round_with_ignored               12352  12/15    1049  DJI_0237_2:+600 DJI_0303_2:+372 DJI_0049_2:+77
+k12_floor_without_ignored            12411  12/15    1108  DJI_0237_2:+637 DJI_0303_2:+394 DJI_0049_2:+77
+k12_floor_with_ignored               12411  12/15    1108  DJI_0237_2:+637 DJI_0303_2:+394 DJI_0049_2:+77
+k2_floor_without_ignored              9872  11/15    1431  DJI_0237_2:-845 DJI_0303_2:-424 DJI_0277_2:-158
+k2_floor_with_ignored                 9872  11/15    1431  DJI_0237_2:-845 DJI_0303_2:-424 DJI_0277_2:-158
+k2_round_without_ignored              9820  11/15    1483  DJI_0237_2:-864 DJI_0303_2:-424 DJI_0277_2:-190
+k2_round_with_ignored                 9820  11/15    1483  DJI_0237_2:-864 DJI_0303_2:-424 DJI_0277_2:-190
+
+reproduce every clip exactly: none
+wrote datasets/RGBT-Tiny/mask_protocol/check.json

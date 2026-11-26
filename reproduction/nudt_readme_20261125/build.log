@@ -1,0 +1,131 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 206B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/deeppro-official-eval:20261009
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 257B done
+#4 DONE 0.0s
+
+#5 [1/3] FROM docker.io/library/deeppro-official-eval:20261009
+#5 DONE 0.0s
+
+#6 [2/3] COPY requirements-compat.txt /tmp/requirements-compat.txt
+#6 DONE 0.0s
+
+#7 [3/3] RUN python -m pip install --no-cache-dir -r /tmp/requirements-compat.txt
+#7 1.488 Collecting numpy==1.23.5 (from -r /tmp/requirements-compat.txt (line 1))
+#7 2.179   Downloading numpy-1.23.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.3 kB)
+#7 2.581 Collecting scipy==1.10.1 (from -r /tmp/requirements-compat.txt (line 2))
+#7 2.744   Downloading scipy-1.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (58 kB)
+#7 3.108 Collecting scikit-image==0.21.0 (from -r /tmp/requirements-compat.txt (line 3))
+#7 3.270   Downloading scikit_image-0.21.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (14 kB)
+#7 3.605 Collecting scikit-learn==1.3.2 (from -r /tmp/requirements-compat.txt (line 4))
+#7 3.758   Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+#7 4.018 Collecting opencv-python-headless==4.8.1.78 (from -r /tmp/requirements-compat.txt (line 5))
+#7 4.152   Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+#7 4.497 Collecting matplotlib==3.7.5 (from -r /tmp/requirements-compat.txt (line 6))
+#7 4.631   Downloading matplotlib-3.7.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.7 kB)
+#7 4.878 Collecting contourpy==1.1.1 (from -r /tmp/requirements-compat.txt (line 7))
+#7 5.056   Downloading contourpy-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.9 kB)
+#7 5.298 Collecting PyWavelets==1.4.1 (from -r /tmp/requirements-compat.txt (line 8))
+#7 5.471   Downloading PyWavelets-1.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.9 kB)
+#7 5.902 Collecting Pillow==9.5.0 (from -r /tmp/requirements-compat.txt (line 9))
+#7 6.073   Downloading Pillow-9.5.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+#7 6.266 Collecting imageio==2.31.6 (from -r /tmp/requirements-compat.txt (line 10))
+#7 6.427   Downloading imageio-2.31.6-py3-none-any.whl.metadata (4.6 kB)
+#7 6.670 Collecting tifffile==2023.7.10 (from -r /tmp/requirements-compat.txt (line 11))
+#7 6.832   Downloading tifffile-2023.7.10-py3-none-any.whl.metadata (31 kB)
+#7 6.885 Requirement already satisfied: networkx>=2.8 in /opt/conda/lib/python3.11/site-packages (from scikit-image==0.21.0->-r /tmp/requirements-compat.txt (line 3)) (3.4.2)
+#7 6.913 Requirement already satisfied: packaging>=21 in /opt/conda/lib/python3.11/site-packages (from scikit-image==0.21.0->-r /tmp/requirements-compat.txt (line 3)) (24.2)
+#7 6.913 Requirement already satisfied: lazy_loader>=0.2 in /opt/conda/lib/python3.11/site-packages (from scikit-image==0.21.0->-r /tmp/requirements-compat.txt (line 3)) (0.4)
+#7 6.925 Requirement already satisfied: joblib>=1.1.1 in /opt/conda/lib/python3.11/site-packages (from scikit-learn==1.3.2->-r /tmp/requirements-compat.txt (line 4)) (1.4.2)
+#7 6.926 Requirement already satisfied: threadpoolctl>=2.0.0 in /opt/conda/lib/python3.11/site-packages (from scikit-learn==1.3.2->-r /tmp/requirements-compat.txt (line 4)) (3.6.0)
+#7 6.955 Requirement already satisfied: cycler>=0.10 in /opt/conda/lib/python3.11/site-packages (from matplotlib==3.7.5->-r /tmp/requirements-compat.txt (line 6)) (0.12.1)
+#7 6.956 Requirement already satisfied: fonttools>=4.22.0 in /opt/conda/lib/python3.11/site-packages (from matplotlib==3.7.5->-r /tmp/requirements-compat.txt (line 6)) (4.56.0)
+#7 6.956 Requirement already satisfied: kiwisolver>=1.0.1 in /opt/conda/lib/python3.11/site-packages (from matplotlib==3.7.5->-r /tmp/requirements-compat.txt (line 6)) (1.4.8)
+#7 6.966 Requirement already satisfied: pyparsing>=2.3.1 in /opt/conda/lib/python3.11/site-packages (from matplotlib==3.7.5->-r /tmp/requirements-compat.txt (line 6)) (3.2.3)
+#7 6.967 Requirement already satisfied: python-dateutil>=2.7 in /opt/conda/lib/python3.11/site-packages (from matplotlib==3.7.5->-r /tmp/requirements-compat.txt (line 6)) (2.9.0.post0)
+#7 7.001 Requirement already satisfied: six>=1.5 in /opt/conda/lib/python3.11/site-packages (from python-dateutil>=2.7->matplotlib==3.7.5->-r /tmp/requirements-compat.txt (line 6)) (1.17.0)
+#7 7.174 Downloading numpy-1.23.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+#7 8.405    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 14.3 MB/s eta 0:00:00
+#7 8.568 Downloading scipy-1.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.1 MB)
+#7 9.585    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.1/34.1 MB 33.8 MB/s eta 0:00:00
+#7 9.772 Downloading scikit_image-0.21.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.7 MB)
+#7 10.08    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 46.1 MB/s eta 0:00:00
+#7 10.24 Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.9 MB)
+#7 10.60    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 31.1 MB/s eta 0:00:00
+#7 10.76 Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.1 MB)
+#7 12.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.1/49.1 MB 29.6 MB/s eta 0:00:00
+#7 12.58 Downloading matplotlib-3.7.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+#7 13.02    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 27.0 MB/s eta 0:00:00
+#7 13.18 Downloading contourpy-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (302 kB)
+#7 13.54 Downloading PyWavelets-1.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.0 MB)
+#7 13.93    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 18.1 MB/s eta 0:00:00
+#7 14.09 Downloading Pillow-9.5.0-cp311-cp311-manylinux_2_28_x86_64.whl (3.4 MB)
+#7 14.26    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 19.7 MB/s eta 0:00:00
+#7 14.41 Downloading imageio-2.31.6-py3-none-any.whl (313 kB)
+#7 14.57 Downloading tifffile-2023.7.10-py3-none-any.whl (220 kB)
+#7 14.95 Installing collected packages: Pillow, numpy, tifffile, scipy, PyWavelets, opencv-python-headless, imageio, contourpy, scikit-learn, scikit-image, matplotlib
+#7 14.95   Attempting uninstall: Pillow
+#7 14.96     Found existing installation: pillow 11.0.0
+#7 14.96     Uninstalling pillow-11.0.0:
+#7 15.04       Successfully uninstalled pillow-11.0.0
+#7 15.26   Attempting uninstall: numpy
+#7 15.26     Found existing installation: numpy 2.2.5
+#7 15.32     Uninstalling numpy-2.2.5:
+#7 15.64       Successfully uninstalled numpy-2.2.5
+#7 17.17   Attempting uninstall: tifffile
+#7 17.18     Found existing installation: tifffile 2025.5.10
+#7 17.18     Uninstalling tifffile-2025.5.10:
+#7 17.20       Successfully uninstalled tifffile-2025.5.10
+#7 17.32   Attempting uninstall: scipy
+#7 17.33     Found existing installation: scipy 1.16.2
+#7 17.43     Uninstalling scipy-1.16.2:
+#7 18.04       Successfully uninstalled scipy-1.16.2
+#7 20.03   Attempting uninstall: opencv-python-headless
+#7 20.03     Found existing installation: opencv-python-headless 4.12.0.88
+#7 20.05     Uninstalling opencv-python-headless-4.12.0.88:
+#7 20.36       Successfully uninstalled opencv-python-headless-4.12.0.88
+#7 21.18   Attempting uninstall: imageio
+#7 21.18     Found existing installation: imageio 2.37.0
+#7 21.19     Uninstalling imageio-2.37.0:
+#7 21.22       Successfully uninstalled imageio-2.37.0
+#7 21.36   Attempting uninstall: contourpy
+#7 21.37     Found existing installation: contourpy 1.3.2
+#7 21.37     Uninstalling contourpy-1.3.2:
+#7 21.38       Successfully uninstalled contourpy-1.3.2
+#7 21.40   Attempting uninstall: scikit-learn
+#7 21.41     Found existing installation: scikit-learn 1.5.2
+#7 21.48     Uninstalling scikit-learn-1.5.2:
+#7 21.88       Successfully uninstalled scikit-learn-1.5.2
+#7 23.24   Attempting uninstall: scikit-image
+#7 23.25     Found existing installation: scikit-image 0.25.2
+#7 23.28     Uninstalling scikit-image-0.25.2:
+#7 23.47       Successfully uninstalled scikit-image-0.25.2
+#7 23.91   Attempting uninstall: matplotlib
+#7 23.92     Found existing installation: matplotlib 3.11.2
+#7 23.96     Uninstalling matplotlib-3.11.2:
+#7 24.43       Successfully uninstalled matplotlib-3.11.2
+#7 25.28 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+#7 25.28 ultralytics 8.3.203 requires opencv-python>=4.6.0, which is not installed.
+#7 25.28 ultralytics 8.3.203 requires polars, which is not installed.
+#7 25.28 ultralytics 8.3.203 requires ultralytics-thop>=2.0.0, which is not installed.
+#7 25.28 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#7 25.28 Successfully installed Pillow-9.5.0 PyWavelets-1.4.1 contourpy-1.1.1 imageio-2.31.6 matplotlib-3.7.5 numpy-1.23.5 opencv-python-headless-4.8.1.78 scikit-image-0.21.0 scikit-learn-1.3.2 scipy-1.10.1 tifffile-2023.7.10
+#7 DONE 27.0s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 4.0s done
+#8 writing image sha256:7d656a4ae1641f8dd9e0d29cd04ceedf61d349a7b7714508a804275f70e842b7 done
+#8 naming to docker.io/library/deeppro-readme-numpy123:20261125 done
+#8 DONE 4.0s

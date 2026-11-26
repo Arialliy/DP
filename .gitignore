@@ -1,0 +1,44 @@
+# Local Python environments and generated caches.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.PYC
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Machine-local files and credentials.
+.DS_Store
+._*
+__MACOSX/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pid
+*.lock
+.aris/
+
+# Dataset assets remain local. Keep split lists and preparation/audit tools.
+/datasets/**
+!/datasets/**/
+!/datasets/**/*.txt
+!/datasets/paper-masks/**
+!/datasets/RGBT-Tiny/mask_protocol/**
+
+# Downloaded archives are not part of the source release.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Apply these again after the dataset exceptions above.
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+__MACOSX/
